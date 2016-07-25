@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../../modules/@angular/platform-server/index.ts"],"names":[],"mappings":"AAAA,SAAQ,yBAAyB,EAAE,eAAe,EAAE,cAAc,QAAO,cAAc,CAAC","sourcesContent":["export {SERVER_PLATFORM_PROVIDERS, serverBootstrap, serverPlatform} from './src/server';\n\ninterface DecoratorInvocation {\n  type: Function;\n  args?: any[];\n}\n"]}

@@ -1,0 +1,51 @@
+{
+  "name": "@angular/router-deprecated",
+  "version": "2.0.0-rc.2",
+  "main": "index.js",
+  "jsnext:main": "esm/index.js",
+  "typins": "index.d.ts",
+  "author": {
+    "name": "angular"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "^2.0.0-rc",
+    "@angular/common": "^2.0.0-rc",
+    "@angular/platform-browser": "^2.0.0-rc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular/issues"
+  },
+  "homepage": "https://github.com/angular/angular#readme",
+  "_id": "@angular/router-deprecated@2.0.0-rc.2",
+  "scripts": {},
+  "_shasum": "6ffdf75f6090a48e9f084a15aa75e7ce1389be53",
+  "_from": "@angular/router-deprecated@2.0.0-rc.2",
+  "_resolved": "https://registry.npmjs.org/@angular/router-deprecated/-/router-deprecated-2.0.0-rc.2.tgz",
+  "_npmVersion": "3.9.2",
+  "_nodeVersion": "5.4.1",
+  "_npmUser": {
+    "name": "angular",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "6ffdf75f6090a48e9f084a15aa75e7ce1389be53",
+    "tarball": "https://registry.npmjs.org/@angular/router-deprecated/-/router-deprecated-2.0.0-rc.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angular",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/router-deprecated-2.0.0-rc.2.tgz_1466015704080_0.16310800914652646"
+  },
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}

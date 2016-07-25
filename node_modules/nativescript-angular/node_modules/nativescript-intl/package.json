@@ -1,0 +1,59 @@
+{
+  "name": "nativescript-intl",
+  "version": "0.0.2",
+  "description": "Provides API for using Native date, time and number formatting with an API similar to Intl.js",
+  "main": "nativescript-intl.js",
+  "nativescript": {
+    "platforms": {
+      "android": "1.7.0",
+      "ios": "1.7.0"
+    }
+  },
+  "keywords": [
+    "NativeScript",
+    "localization",
+    "globalization",
+    "formatting",
+    "currency",
+    "nativescript-angular"
+  ],
+  "author": {
+    "name": "Nedyalko Nikolov",
+    "email": "nedyalko.nikolov@telerik.com"
+  },
+  "_id": "nativescript-intl@0.0.2",
+  "_shasum": "72e0ab1084e4eeede265e49b5098ace5fed16a1b",
+  "_resolved": "https://registry.npmjs.org/nativescript-intl/-/nativescript-intl-0.0.2.tgz",
+  "_from": "nativescript-intl@>=0.0.2 <0.0.3",
+  "scripts": {},
+  "_npmVersion": "2.14.12",
+  "_nodeVersion": "4.2.4",
+  "_npmUser": {
+    "name": "nsndeck",
+    "email": "nedyalko.nikolov@telerik.com"
+  },
+  "dist": {
+    "shasum": "72e0ab1084e4eeede265e49b5098ace5fed16a1b",
+    "tarball": "https://registry.npmjs.org/nativescript-intl/-/nativescript-intl-0.0.2.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "hdeshev",
+      "email": "hristo@deshev.com"
+    },
+    {
+      "name": "nsndeck",
+      "email": "nedyalko.nikolov@telerik.com"
+    },
+    {
+      "name": "tns-bot",
+      "email": "nativescript@telerik.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/nativescript-intl-0.0.2.tgz_1458736653372_0.645918955327943"
+  },
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}

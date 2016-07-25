@@ -1,0 +1,49 @@
+{
+  "name": "@angular/common",
+  "version": "2.0.0-rc.3",
+  "main": "index.js",
+  "jsnext:main": "esm/index.js",
+  "typings": "index.d.ts",
+  "author": {
+    "name": "angular"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "2.0.0-rc.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angular/angular.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angular/angular/issues"
+  },
+  "homepage": "https://github.com/angular/angular#readme",
+  "_id": "@angular/common@2.0.0-rc.3",
+  "scripts": {},
+  "_shasum": "1e5680ff0858aee51b204d5ce5a024ca182ba852",
+  "_from": "@angular/common@2.0.0-rc.3",
+  "_resolved": "https://registry.npmjs.org/@angular/common/-/common-2.0.0-rc.3.tgz",
+  "_npmVersion": "3.9.2",
+  "_nodeVersion": "5.4.1",
+  "_npmUser": {
+    "name": "angular",
+    "email": "angular-core+npm@google.com"
+  },
+  "dist": {
+    "shasum": "1e5680ff0858aee51b204d5ce5a024ca182ba852",
+    "tarball": "https://registry.npmjs.org/@angular/common/-/common-2.0.0-rc.3.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "angular",
+      "email": "angular-core+npm@google.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/common-2.0.0-rc.3.tgz_1466553873189_0.29696530289947987"
+  },
+  "directories": {},
+  "readme": "ERROR: No README data found!"
+}

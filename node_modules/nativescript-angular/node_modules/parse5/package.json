@@ -1,0 +1,86 @@
+{
+  "name": "parse5",
+  "description": "WHATWG HTML5 specification-compliant, fast and ready for production HTML parsing/serialization toolset for Node and io.js.",
+  "version": "1.4.2",
+  "author": {
+    "name": "Ivan Nikulin",
+    "email": "ifaaan@gmail.com",
+    "url": "https://github.com/inikulin"
+  },
+  "contributors": [
+    {
+      "name": "Sebastian Mayr",
+      "email": "sebmaster16@gmail.com",
+      "url": "http://blog.smayr.name"
+    },
+    {
+      "name": "Sean Lang",
+      "email": "slang800@gmail.com",
+      "url": "http://slang.cx"
+    },
+    {
+      "name": "Alan Clarke",
+      "url": "https://github.com/alanclarke"
+    }
+  ],
+  "homepage": "http://inikulin.github.io/parse5/",
+  "devDependencies": {
+    "mocha": "1.21.4"
+  },
+  "keywords": [
+    "html",
+    "parser",
+    "html5",
+    "WHATWG",
+    "specification",
+    "fast",
+    "html parser",
+    "html5 parser",
+    "htmlparser",
+    "parse5",
+    "serializer",
+    "html serializer",
+    "htmlserializer",
+    "sax",
+    "simple api"
+  ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://raw.github.com/inikulin/parse5/master/LICENSE"
+    }
+  ],
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/inikulin/parse5.git"
+  },
+  "scripts": {
+    "test": "node test/run_tests.js"
+  },
+  "gitHead": "bc8862ca7c94ad7704fd134d7208223814825acc",
+  "bugs": {
+    "url": "https://github.com/inikulin/parse5/issues"
+  },
+  "_id": "parse5@1.4.2",
+  "_shasum": "43241c1609cc94bd007f5dcfa21218b37dbcfbe7",
+  "_from": "parse5@1.4.2",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "inikulin",
+    "email": "ifaaan@gmail.com"
+  },
+  "maintainers": [
+    {
+      "name": "inikulin",
+      "email": "ifaaan@gmail.com"
+    }
+  ],
+  "dist": {
+    "shasum": "43241c1609cc94bd007f5dcfa21218b37dbcfbe7",
+    "tarball": "https://registry.npmjs.org/parse5/-/parse5-1.4.2.tgz"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/parse5/-/parse5-1.4.2.tgz",
+  "readme": "ERROR: No README data found!"
+}

@@ -1,0 +1,1 @@
+{"version":3,"file":"testing.js","sourceRoot":"","sources":["../../../../modules/@angular/platform-server/testing.ts"],"names":[],"mappings":"AAAA,cAAc,kBAAkB,CAAC","sourcesContent":["export * from './testing/server';\n\ninterface DecoratorInvocation {\n  type: Function;\n  args?: any[];\n}\n"]}
