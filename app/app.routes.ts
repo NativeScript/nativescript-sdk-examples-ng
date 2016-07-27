@@ -9,6 +9,9 @@ import { ButtonTapEventComponent } from "./button/tap-event/tap-event.component"
 import { NgForExamplesComponent } from "./repeater/ngfor-examples.component";
 import { NgForRepeatItemsComponent } from "./repeater/repeat-items/repeat-items.component";
 
+import { ProgressExamplesComponent } from "./progress/progress-examples.component";
+import { CreatingProgressComponent } from "./progress/creating-progress/creating-progress.component";
+
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
 
@@ -17,10 +20,16 @@ export const routes: RouterConfig = [
   { path: "buttonTapEventExampleComponent", component: ButtonTapEventComponent, data: { title: "Tap Event" } },
 
   { path: "ngForExampleComponent", component: NgForExamplesComponent, data: { title: "*ngFor" } },
-  { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor Repeat Items" } }
+  { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor Repeat Items" } },
+
+  { path: "progressExamplesComponent", component: ProgressExamplesComponent, data: { title: "Progress" } },
+  { path: "creatingProgressExampleComponent", component: CreatingProgressComponent, data: { title: "Progress" } }  
 ];
 
 export const APP_ROUTER_PROVIDERS = [
   nsProvideRouter(routes, { })
 ];
+
+
+ 
 
