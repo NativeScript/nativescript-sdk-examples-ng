@@ -9,6 +9,7 @@
         "noImplicitAny": false,
         "noImplicitUseStrict": true,
         "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
         "pretty": true
     },
     "exclude": [
