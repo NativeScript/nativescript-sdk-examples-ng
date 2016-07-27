@@ -11,6 +11,7 @@ import { NgForRepeatItemsComponent } from "./repeater/repeat-items/repeat-items.
 
 import { ProgressExamplesComponent } from "./progress/progress-examples.component";
 import { CreatingProgressComponent } from "./progress/creating-progress/creating-progress.component";
+import { SettingProgressComponent } from "./progress/setting-progress/setting-progress.component";
 
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
@@ -23,7 +24,8 @@ export const routes: RouterConfig = [
   { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor Repeat Items" } },
 
   { path: "progressExamplesComponent", component: ProgressExamplesComponent, data: { title: "Progress" } },
-  { path: "creatingProgressExampleComponent", component: CreatingProgressComponent, data: { title: "Progress" } }  
+  { path: "creatingProgressExampleComponent", component: CreatingProgressComponent, data: { title: "Creating Progress" } },
+  { path: "settingProgressExampleComponent", component: SettingProgressComponent, data: { title: "Setting up Progress" } }    
 ];
 
 export const APP_ROUTER_PROVIDERS = [
