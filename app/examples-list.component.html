@@ -12,5 +12,7 @@
             <Button class="nav-button" text="Layouts" (tap)="navigate()" url="./layouts/page"></Button>
 
             <Button class="nav-button" text="Time Picker" (tap)="navigate()" url="./time-picker/page" ></Button>
+
+            <Button class="nav-button" text="*ngFor" [nsRouterLink]="['/ngForExampleComponent']"></Button> 
         </StackLayout>
 </ScrollView>
