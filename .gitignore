@@ -1,0 +1,13 @@
+/platforms
+/hooks
+/node_modules
+/lib
+/debugger
+/dist
+
+/app/**/*.map
+/app/**/*.js
+
+.DS_Store
+.vscode/
+**/*.log

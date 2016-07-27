@@ -1,0 +1,16 @@
+<ScrollView exampleTitle>
+        <StackLayout class="nav-button-container">
+            <Button class="nav-button" text="Action Bar" (tap)="navigate($event)" url="./action-bar/page"></Button>
+            <Button class="nav-button" text="Activity Indicator" (tap)="navigate()" url="./activity-indicator/page"></Button>
+            <Button class="nav-button" text="Animation" (tap)="navigate()" url="./animation/page"></Button>
+            <Button class="nav-button" text="Border" (tap)="navigate()" url="./border/page"></Button>
+
+            <Button class="nav-button" text="Button" [nsRouterLink]="['/buttonExamplesComponent']" ></Button>
+
+            <Button class="nav-button" text="Date Picker" (tap)="navigate()" url="./date-picker/page"></Button>
+            <Button class="nav-button" text="Dialogs" (tap)="navigate()" url="./dialogs/page"></Button>
+            <Button class="nav-button" text="Layouts" (tap)="navigate()" url="./layouts/page"></Button>
+
+            <Button class="nav-button" text="Time Picker" (tap)="navigate()" url="./time-picker/page" ></Button>
+        </StackLayout>
+</ScrollView>

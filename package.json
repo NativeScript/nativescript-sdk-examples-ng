@@ -1,26 +1,59 @@
 {
-  "description": "NativeScript Application",
-  "license": "SEE LICENSE IN <your-license-filename>",
-  "readme": "NativeScript Application",
-  "repository": "<fill-your-repository-here>",
+  "name": "nativescript-sdk-examples-ng",
+  "description": "NativeScript & Angular 2 SDK Examples",  
+  "author": "Telerik <support@telerik.com>",
+  "version": "0.1.0",  
+  "homepage": "https://github.com/NativeScript/nativescript-sdk-examples-ng",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NativeScript/nativescript-sdk-examples-ng"
+  },
+  "bugs": {
+    "url": "https://github.com/NativeScript/nativescript-sdk-examples-ng/issues"
+  },
+  "keywords": [
+    "NativeScript",
+    "Angular",
+    "SDK",
+    "example",
+    "documentation"
+  ],
+  "license": "Apache-2.0",
   "nativescript": {
-    "id": "org.nativescript.nativescriptsdkexamplesng"
+    "id": "org.nativescript.nativescriptsdkexamplesng",
+    "tns-android": {
+      "version": "2.1.1"
+    }
   },
   "dependencies": {
-    "@angular/common": "2.0.0-rc.3",
-    "@angular/compiler": "2.0.0-rc.3",
-    "@angular/core": "2.0.0-rc.3",
-    "@angular/http": "2.0.0-rc.3",
-    "@angular/platform-browser": "2.0.0-rc.3",
-    "@angular/platform-browser-dynamic": "2.0.0-rc.3",
-    "@angular/platform-server": "2.0.0-rc.3",
-    "@angular/router": "3.0.0-alpha.7",
+    "@angular/common": "2.0.0-rc.4",
+    "@angular/compiler": "2.0.0-rc.4",
+    "@angular/core": "2.0.0-rc.4",
+    "@angular/http": "2.0.0-rc.4",
+    "@angular/platform-browser": "2.0.0-rc.4",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.4",
+    "@angular/platform-server": "2.0.0-rc.4",
+    "@angular/router": "3.0.0-beta.2",
     "@angular/router-deprecated": "2.0.0-rc.2",
-    "nativescript-angular": "0.2.0",
-    "tns-core-modules": "^2.1.0"
+    "nativescript-angular": "next",
+    "tns-core-modules": "next",
+    "rxjs": "5.0.0-beta.6",
+    "zone.js": "^0.6.12"
   },
   "devDependencies": {
+    "babel-traverse": "6.11.4",
+    "babel-types": "6.11.1",
+    "babylon": "6.8.4",
+    "lazy": "1.0.11",
     "nativescript-dev-typescript": "^0.3.2",
+    "tslint": "^3.13.0",
     "typescript": "^1.8.10"
+  },
+  "scripts": {
+    "pretsc": "npm install",
+    "tsc": "tsc",
+    "pretslint": "npm run tsc",
+    "tslint": "tslint app/**/*.ts",
+    "prebuild": "npm run tslint"
   }
 }

@@ -1,9 +1,13 @@
-﻿button, label, stack-layout {
-    horizontal-align: center;    
-}
-
-button {
-    font-size: 36;
+﻿.nav-button {
+    /*color: rgb(171, 184, 254);*/
+    color: white;
+    background-color: rgb(60, 89, 253);
+    font-size: 16;
+    font-family: sans-serif;
+    border-radius: 45;
+    margin-top: 10;
+    margin-left: 5;
+    margin-right: 5;  
 }
 
 .title {
