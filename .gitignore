@@ -9,5 +9,4 @@
 /app/**/*.js
 
 .DS_Store
-.vscode/
 **/*.log
