@@ -6,8 +6,8 @@ import { ButtonExamplesComponent } from "./button/button-examples.component";
 import { ButtonTextComponent } from "./button/text/text.component";
 import { ButtonTapEventComponent } from "./button/tap-event/tap-event.component";
 
-import { NgForExamplesComponent } from "./repeater/ngfor-examples.component";
-import { NgForRepeatItemsComponent } from "./repeater/repeat-items/repeat-items.component";
+import { NgForExamplesComponent } from "./ngfor/ngfor-examples.component";
+import { NgForRepeatItemsComponent } from "./ngfor/ngfor-items/repeat-items.component";
 
 import { ProgressExamplesComponent } from "./progress/progress-examples.component";
 import { CreatingProgressComponent } from "./progress/creating-progress/creating-progress.component";

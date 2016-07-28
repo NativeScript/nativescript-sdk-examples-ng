@@ -4,7 +4,7 @@ ListView {
 }
 
 Label {
-    horizontal-align:center;
+    padding: 5;
 }
 
 /* >> listview-customize-css */

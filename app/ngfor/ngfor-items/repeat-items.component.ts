@@ -6,9 +6,10 @@ import { fruits } from "./fruits";
 
 // >> ngfor-bind-items-code 
 @Component({
-    selector: 'repeat-items-component',
+    selector: 'ngfor-component',
+    styleUrls:["ngfor/ngfor-items/repeat-items.component.css"],
     directives: [COMMON_DIRECTIVES],
-    templateUrl: "repeater/repeat-items/repeat-items.component.html",
+    templateUrl: "ngfor/ngfor-items/repeat-items.component.html",
 })
 
 export class NgForRepeatItemsComponent {

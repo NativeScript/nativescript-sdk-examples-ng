@@ -1,0 +1,13 @@
+.cell {
+    background-color: rgb(60, 89, 253);
+    color: white;
+    font-size: 18;
+    font-family: sans-serif;
+    border-radius: 20;
+    margin-left: 10;
+    margin-right: 10;
+    margin-bottom: 5;
+    padding-left: 20;
+    padding-top: 5;
+    padding-bottom: 5;
+}
