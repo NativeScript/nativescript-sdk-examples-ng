@@ -1,0 +1,30 @@
+ListView {
+    font-size: 24;
+    padding: 10;
+}
+
+Label {
+    horizontal-align:center;
+}
+
+/* >> listview-customize-css */
+.third {
+    background-color: darkorange;
+    color: whitesmoke;
+    margin: 5;
+}
+
+.header {
+    background-color: darkblue;
+    color: lightseagreen;
+    margin: 20;
+    height: 50;
+}
+
+.footer {
+    background-color: darkred;
+    color: lightyellow;
+    margin: 20; 
+    height: 50;
+}
+/* << listview-customize-css */
