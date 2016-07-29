@@ -16,6 +16,7 @@ import { SettingProgressComponent } from "./progress/setting-progress/setting-pr
 import { ListViewExamplesComponent } from "./listview/listview-examples.component";
 import { CreatingListViewComponent } from "./listview/creating-listview/creating-listview.component";
 import { CustomizingListViewComponent } from "./listview/customizing-listview/customizing-listview.component";
+import { UsingItemTemplateComponent } from "./listview/using-item-template/using-item-template.component";
 
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
@@ -27,7 +28,7 @@ export const routes: RouterConfig = [
   { path: "listViewExamplesComponent", component: ListViewExamplesComponent, data: { title: "ListView" } },
   { path: "creatingListViewExampleComponent", component: CreatingListViewComponent, data: { title: "Creating ListView" } },
   { path: "customizingListViewExampleComponent", component: CustomizingListViewComponent, data: { title: "Customizing ListView" } },
-  // { path: "usingItemTemplateExampleComponent", component: ProgressExamplesComponent, data: { title: "Using ListView Item Template" } },
+  { path: "usingItemTemplateExampleComponent", component: UsingItemTemplateComponent, data: { title: "Using ListView Item Template" } },
   // { path: "usingAsyncPipeExampleComponent", component: ProgressExamplesComponent, data: { title: "Using Async Pipe" } },
 
   { path: "progressExamplesComponent", component: ProgressExamplesComponent, data: { title: "Progress" } },
@@ -42,4 +43,5 @@ export const routes: RouterConfig = [
 export const APP_ROUTER_PROVIDERS = [
   nsProvideRouter(routes, { })
 ];
+  
   

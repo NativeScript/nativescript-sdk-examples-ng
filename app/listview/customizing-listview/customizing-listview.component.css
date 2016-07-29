@@ -3,28 +3,38 @@ ListView {
     padding: 10;
 }
 
+
+StackLayout {
+    background-color: whitesmoke;
+    color: darkcyan;
+    margin: 5;
+}
+
 Label {
     padding: 5;
+    horizontal-align:center;
 }
 
 /* >> listview-customize-css */
 .third {
-    background-color: darkorange;
+    background-color: darkcyan;
     color: whitesmoke;
     margin: 5;
 }
 
 .header {
-    background-color: darkblue;
-    color: lightseagreen;
+    background-color: orangered;
+    color: whitesmoke;
     margin: 20;
     height: 50;
+    border-radius: 20;
 }
 
 .footer {
-    background-color: darkred;
-    color: lightyellow;
+    background-color: orangered;
+    color: whitesmoke;
     margin: 20; 
     height: 50;
+    border-radius: 20;
 }
 /* << listview-customize-css */

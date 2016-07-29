@@ -4,6 +4,8 @@
     font-size: 18;
     font-family: sans-serif;
     border-radius: 20;
+    border-width: 2;
+    border-color: darkgrey;
     margin-left: 10;
     margin-right: 10;
     margin-bottom: 5;
