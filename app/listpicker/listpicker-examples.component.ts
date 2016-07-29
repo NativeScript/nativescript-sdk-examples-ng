@@ -3,10 +3,10 @@ import { COMMON_DIRECTIVES } from '../directives';
 import { NS_ROUTER_DIRECTIVES } from 'nativescript-angular/router';
 
 @Component({
-    selector: 'listview-component',
+    selector: 'listpicker-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'listview/listview-examples.component.html'
+    templateUrl: 'listpicker/listpicker-examples.component.html'
 })
 
-export class ListViewExamplesComponent {
+export class ListPickerExamplesComponent {
 }

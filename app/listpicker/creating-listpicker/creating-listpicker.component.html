@@ -1,0 +1,12 @@
+<GridLayout row="*" exampleTitle>
+     <!-- >> creating-listpicker-html --> 
+    <ListPicker #picker 
+            class="picker" 
+            [items]="pokemons" 
+            [selectedIndex]="selectedIndex" 
+            (selectedIndexChange)="selectedIndexChanged(picker)"
+            verticalAlignment="center" 
+            horizontalAlignment="center">
+    </ListPicker>
+     <!-- << creating-listpicker-html --> 
+</GridLayout>

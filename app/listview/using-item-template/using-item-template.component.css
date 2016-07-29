@@ -1,4 +1,8 @@
 
+GridLayout {
+    margin: 10;
+}
+
 .model {
     background-color: whitesmoke;
     color: dodgerblue;
@@ -23,8 +27,8 @@
     background-color: dodgerblue;
     color: whitesmoke;
     margin: 20;
-    height: 50;
+    height: 80;
     border-radius: 20;
-    padding: 10;
+    padding: 5;
 }
 
