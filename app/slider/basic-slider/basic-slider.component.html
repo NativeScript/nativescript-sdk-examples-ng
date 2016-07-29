@@ -1,0 +1,14 @@
+<StackLayout exampleTitle>
+    <GridLayout rows="auto auto" columns="50 * 50">
+        <Label [text]="labeltext" textWrap="true" row="0" colSpan="3"></Label>
+        <Label text="0xe90b" textWrap="true" row="1" col="0" fontSize="15" class="icon" ></Label>
+        <Slider #sl minValue="10" maxValue="70" value="sliderValue" (valueChange)="labeltext=sl.value" row="1" col="1"></Slider>
+        <Label text="0xe90b" textWrap="true" row="1" col="2" fontSize="20" class="icon" ></Label>
+    </GridLayout>
+    <GridLayout rows="auto auto" columns="50 * 50">
+        <Label [text]="text" textWrap="true" row="0" colSpan="3"></Label>
+        <Label text="&#xe90f" textWrap="true" row="1" col="0" fontSize="15" class="icon" ></Label>
+        <Slider #sl2 color="green" minValue="10" maxValue="70" value="sliderValue2" (valueChange)="text=sl2.value" row="1" col="1"></Slider>
+        <Label text="&#xe90f" textWrap="true" row="1" col="2" fontSize="20" class="icon" ></Label>
+    </GridLayout>
+</StackLayout>

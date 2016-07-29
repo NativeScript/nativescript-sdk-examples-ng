@@ -20,11 +20,11 @@
   ],
   "license": "Apache-2.0",
   "nativescript": {
-    "id": "org.nativescript.sdkexamplesng",
-    "tns-ios": {
+    "id": "org.nativescript.nativescriptsdkexamplesng",
+    "tns-android": {
       "version": "2.1.1"
     },
-    "tns-android": {
+    "tns-ios": {
       "version": "2.1.1"
     }
   },
