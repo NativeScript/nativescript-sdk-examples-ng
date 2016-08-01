@@ -1,7 +1,5 @@
 import { Component } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
-import { EventData } from "data/observable";
-import { Page } from "ui/page";
 import observable = require("data/observable");
 
 @Component({
