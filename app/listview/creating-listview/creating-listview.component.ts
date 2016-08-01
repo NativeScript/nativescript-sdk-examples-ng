@@ -1,0 +1,41 @@
+// >> listview-create-code 
+import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
+// >> hide
+import { COMMON_DIRECTIVES } from '../../directives';
+// << hide
+
+class Country {
+    constructor(public name: string) { }
+}
+
+var europianCountries = ["Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic",
+"Denmark", "Estonia", "Finland", "France","Germany", "Greece", "Hungary", "Ireland", "Italy", 
+"Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands","Poland", "Portugal", "Romania", "Slovakia", 
+"Slovenia","Spain", "Sweden", "United Kingdom"];
+            
+@Component({
+    selector: "creating-listview",
+    styleUrls:["listview/creating-listview/creating-listview.component.css"],
+    // >> hide
+    directives: [COMMON_DIRECTIVES],
+    // << hide
+    templateUrl: "listview/creating-listview/creating-listview.component.html",
+    changeDetection: ChangeDetectionStrategy.OnPush
+})
+export class CreatingListViewComponent {
+    public countries: Array<Country>;
+
+    constructor() {
+        this.countries = [];
+
+        for (var i = 0; i < europianCountries.length; i++) {
+            this.countries.push(new Country(europianCountries[i]));
+
+        }
+    }
+
+    public onItemTap(args) {
+        console.log("Item Tapped at cell index: " + args.index);
+    }
+}
+// << listview-create-code 

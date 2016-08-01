@@ -1,0 +1,40 @@
+ListView {
+    font-size: 24;
+    padding: 10;
+}
+
+
+StackLayout {
+    background-color: whitesmoke;
+    color: darkcyan;
+    margin: 5;
+}
+
+Label {
+    padding: 5;
+    horizontal-align:center;
+}
+
+/* >> listview-customize-css */
+.third {
+    background-color: darkcyan;
+    color: whitesmoke;
+    margin: 5;
+}
+
+.header {
+    background-color: orangered;
+    color: whitesmoke;
+    margin: 20;
+    height: 50;
+    border-radius: 20;
+}
+
+.footer {
+    background-color: orangered;
+    color: whitesmoke;
+    margin: 20; 
+    height: 50;
+    border-radius: 20;
+}
+/* << listview-customize-css */

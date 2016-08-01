@@ -1,0 +1,16 @@
+ListView {
+    font-size: 24;
+    padding: 10;
+}
+
+.odd {
+    background-color: darkcyan;
+    color: whitesmoke;
+    margin: 5;
+}
+
+.even {
+    background-color: whitesmoke;
+    color: darkcyan;
+    margin: 5;
+}

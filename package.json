@@ -75,3 +75,81 @@
     "show-preview": "opener https://github.com/NativeScript/nativescript-sdk-examples-preview/blob/master/sdk-examples.md"
   }
 }
+=======
+	"name": "nativescript-sdk-examples-ng",
+	"description": "NativeScript & Angular 2 SDK Examples",
+	"author": "Telerik <support@telerik.com>",
+	"version": "0.1.0",
+	"homepage": "https://github.com/NativeScript/nativescript-sdk-examples-ng",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/NativeScript/nativescript-sdk-examples-ng"
+	},
+	"bugs": {
+		"url": "https://github.com/NativeScript/nativescript-sdk-examples-ng/issues"
+	},
+	"keywords": [
+		"NativeScript",
+		"Angular",
+		"SDK",
+		"example",
+		"documentation"
+	],
+	"license": "Apache-2.0",
+	"nativescript": {
+		"id": "org.nativescript.nativescriptsdkexamplesng",
+		"tns-ios": {
+			"version": "2.1.1"
+		},
+		"tns-android": {
+			"version": "2.1.1"
+		}
+	},
+	"dependencies": {
+		"@angular/common": "2.0.0-rc.4",
+		"@angular/compiler": "2.0.0-rc.4",
+		"@angular/core": "2.0.0-rc.4",
+		"@angular/http": "2.0.0-rc.4",
+		"@angular/platform-browser": "2.0.0-rc.4",
+		"@angular/platform-browser-dynamic": "2.0.0-rc.4",
+		"@angular/platform-server": "2.0.0-rc.4",
+		"@angular/router": "3.0.0-beta.2",
+		"@angular/router-deprecated": "2.0.0-rc.2",
+		"nativescript-angular": "next",
+		"tns-core-modules": "next",
+		"rxjs": "5.0.0-beta.6",
+		"zone.js": "^0.6.12"
+	},
+	"devDependencies": {
+		"babel-traverse": "6.11.4",
+		"babel-types": "6.11.1",
+		"babylon": "6.8.4",
+		"lazy": "1.0.11",
+		"nativescript-dev-typescript": "^0.3.2",
+		"tslint": "^3.13.0",
+		"typescript": "^1.8.10",
+		"fs-extra": "^0.30.0",
+		"glob": "^7.0.5",
+		"markdown-snippet-injector": "^0.2.0",
+		"opener": "^1.4.1",
+		"rimraf": "^2.5.3",
+		"tar.gz": "^1.0.5",
+		"tns-platform-declarations": "^2.0.0"
+	},
+	"scripts": {
+		"pretsc": "npm install",
+		"tsc": "tsc",
+		"pretslint": "npm run tsc",
+		"tslint": "tslint app/**/*.ts",
+		"prebuild": "npm run tslint",
+		"build": "node scripts/build.js",
+		"postbuild": "npm run inject && npm run archive",
+		"inject": "mdinject --root=app --docsroot=dist/sdk-examples --sourceext=\".ts|.css|.html\" --snippettitles=\"TypeScript|CSS|HTML\"",
+		"archive": "node scripts/archive.js",
+		"prepush-to-github": "npm run build",
+		"push-to-github": "(cd dist/sdk-examples && rimraf .git && git init && git add *.md && git add *.png && git commit -m \"nativescript-sdk-examples build preview\" && git remote add origin git@github.com:NativeScript/nativescript-sdk-examples-preview.git && git push -u --force origin master)",
+		"preshow-preview": "npm run push-to-github",
+		"show-preview": "opener https://github.com/NativeScript/nativescript-sdk-examples-preview/blob/master/sdk-examples.md"
+	}
+}
+>>>>>>> master

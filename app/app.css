@@ -10,6 +10,10 @@
     margin-right: 5;  
 }
 
+.nav-button-container {
+    padding: 10;
+}
+
 .title {
     font-size: 30;
     margin: 20;
@@ -20,7 +24,25 @@
     color: #284848;
     text-align: center;
     margin: 0 20;
-} 
+}
 .icon{
     font-family: 'icomoon';
+}
+
+.label1 {
+    font-size: 15;
+    background-color: #0099CC;
+    margin: 2;
+}
+
+.label2 {
+    font-size: 15;
+    background-color: #CCFFFF;
+    margin: 2;
+}
+
+.label3 {
+    font-size: 15;
+    background-color: #8C489F;
+    margin: 2;
 }
