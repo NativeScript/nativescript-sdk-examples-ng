@@ -1,0 +1,34 @@
+
+GridLayout {
+    margin: 10;
+}
+
+.model {
+    background-color: whitesmoke;
+    color: dodgerblue;
+    margin: 5;
+    padding-left: 10;
+    border-width: 1;
+    border-color: dodgerblue;
+    border-radius: 10;
+}
+
+.name {
+    font-size: 18;
+    font-weight: bold;
+}
+
+.speed {
+    font-size: 14;
+    color: dimgray;
+}
+
+.title {
+    background-color: dodgerblue;
+    color: whitesmoke;
+    margin: 20;
+    height: 80;
+    border-radius: 20;
+    padding: 5;
+}
+

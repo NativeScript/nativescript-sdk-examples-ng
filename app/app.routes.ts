@@ -39,6 +39,26 @@ import { WrapLayoutComponent } from "./layouts/wrap-layout/wrap-layout.component
 import { TimePickerExamplesComponent } from "./time-picker/time-picker-examples.component";
 import { ConfigureTimePickerComponent } from "./time-picker/configure-time-picker/configure-time-picker.component";
 
+import { LabelExamplesComponent } from "./label/label-examples.component";
+import { CreatingLabelComponent } from "./label/creating-label/creating-label.component";
+
+import { ListPickerExamplesComponent } from "./listpicker/listpicker-examples.component";
+import { CreatingListPickerComponent } from "./listpicker/creating-listpicker/creating-listpicker.component";
+import { UsingSelectedIndexExampleComponent } from "./listpicker/using-selected-index/using-selected-index.component";
+
+import { ListViewExamplesComponent } from "./listview/listview-examples.component";
+import { CreatingListViewComponent } from "./listview/creating-listview/creating-listview.component";
+import { CustomizingListViewComponent } from "./listview/customizing-listview/customizing-listview.component";
+import { UsingItemTemplateComponent } from "./listview/using-item-template/using-item-template.component";
+import { UsingAsyncPipeComponent } from "./listview/using-async-pipe/using-async-pipe.component";
+
+import { ProgressExamplesComponent } from "./progress/progress-examples.component";
+import { CreatingProgressComponent } from "./progress/creating-progress/creating-progress.component";
+import { SettingProgressComponent } from "./progress/setting-progress/setting-progress.component";
+
+import { NgForExamplesComponent } from "./ngfor/ngfor-examples.component";
+import { NgForRepeatItemsComponent } from "./ngfor/ngfor-items/repeat-items.component";
+
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
 
@@ -78,8 +98,30 @@ export const routes: RouterConfig = [
 
   { path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "Time Picker" } },
   { path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure Time Picker" } },
+
+  { path: "labelExamplesComponent", component: LabelExamplesComponent, data: { title: "Label" } },
+  { path: "creatingLabelExampleComponent", component: CreatingLabelComponent, data: { title: "Creating Label" } },
+
+  { path: "listPickerExamplesComponent", component: ListPickerExamplesComponent, data: { title: "ListPicker" } },
+  { path: "creatingListPickerExampleComponent", component: CreatingListPickerComponent, data: { title: "Create ListPicker" } },
+  { path: "usingSelectedIndexExampleComponent", component: UsingSelectedIndexExampleComponent, data: { title: "Using selectedIndex" } },
+  
+  { path: "listViewExamplesComponent", component: ListViewExamplesComponent, data: { title: "ListView" } },
+  { path: "creatingListViewExampleComponent", component: CreatingListViewComponent, data: { title: "Creating ListView" } },
+  { path: "customizingListViewExampleComponent", component: CustomizingListViewComponent, data: { title: "Customizing ListView" } },
+  { path: "usingItemTemplateExampleComponent", component: UsingItemTemplateComponent, data: { title: "Using ListView Item Template" } },
+  { path: "usingAsyncPipeExampleComponent", component: UsingAsyncPipeComponent, data: { title: "Using Async Pipe" } },
+
+  { path: "progressExamplesComponent", component: ProgressExamplesComponent, data: { title: "Progress" } },
+  { path: "creatingProgressExampleComponent", component: CreatingProgressComponent, data: { title: "Creating Progress" } },
+  { path: "settingProgressExampleComponent", component: SettingProgressComponent, data: { title: "Setting up Progress" } },   
+
+  { path: "ngForExampleComponent", component: NgForExamplesComponent, data: { title: "*ngFor" } },
+  { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor Repeat Items" } }
 ];
 
 export const APP_ROUTER_PROVIDERS = [
   nsProvideRouter(routes, { })
 ];
+  
+  
