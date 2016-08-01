@@ -23,6 +23,15 @@ import { SegmentedBarViewsComponent } from "./segmented-bar/segmented-bar-views/
 
 import { SliderExamplesComponent } from "./slider/slider-examples.component";
 import { BasicSliderComponent } from "./slider/basic-slider/basic-slider.component";
+import { SliderAccessValueComponent } from "./slider/slider-access-value-code/slider-access-value.component";
+
+import { SwitchExamplesComponent } from "./switch/switch-examples.component";
+import { BasicSwitchComponent } from "./switch/basic-switch/basic-switch.component";
+import { DisableSwitchComponent } from "./switch/disable-switch/disable-switch.component";
+import { StylingSwitchComponent } from "./switch/styling-switch/styling-switch.component";
+
+import { TabViewExamplesComponent } from "./tab-view/tab-view-examples.component";
+import { BacisTabViewComponent } from "./tab-view/basic-tab-view/basic-tab-view.component";
 
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
@@ -42,7 +51,14 @@ export const routes: RouterConfig = [
   { path: "basicSegmentedBarComponent", component: BasicSegmentedBarComponent, data: { title: "Basic Segmented Bar" } },
   { path: "segmentedBarViewsComponent", component: SegmentedBarViewsComponent, data: { title: "Segmented Bar View Change" } },
   { path: "sliderExamplesComponent", component: SliderExamplesComponent, data: { title: "Slider" } },
-  { path: "basicSliderComponent", component: BasicSliderComponent, data: { title: "Basic Slider" } }
+  { path: "basicSliderComponent", component: BasicSliderComponent, data: { title: "Basic Slider" } },
+  { path: "accessSliderValueComponent", component: SliderAccessValueComponent, data: { title: "Slider Value Slider" } },
+  { path: "switchExamplesComponent", component: SwitchExamplesComponent, data: { title: "Switch" } },
+  { path: "basicSwitchComponent", component: BasicSwitchComponent, data: { title: "Basic Switch" } },
+  { path: "diableSwitchComponent", component: DisableSwitchComponent, data: { title: "Disable Switch Component" } },
+  { path: "stylingSwitchComponent", component: StylingSwitchComponent, data: { title: "Styling Switch Component" } },
+  { path: "tabViewExamplesComponent", component: TabViewExamplesComponent, data: { title: "Tab View" } },
+  { path: "basicTabViewExamplesComponent", component: BacisTabViewComponent, data: { title: "Basic Tab View" } }
 ];
 
 export const APP_ROUTER_PROVIDERS = [

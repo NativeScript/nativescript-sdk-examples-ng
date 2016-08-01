@@ -1,5 +1,5 @@
-Setting basic SearchBar in the html code.
-<snippet id='scroll-view-verical-xml'/>
+Creating sample `Slider` from XML:
+<snippet id='slider-basic-xml'/>
 
-Handling SearchBar `submit` event.
-<snippet id='search-bar-submit-event-code'/>
+Handling `DataBind` from the `XML` code and changing `Label` `fontSize`
+<snippet id='slider-binding-xml'/>

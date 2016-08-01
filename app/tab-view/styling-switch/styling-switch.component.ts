@@ -2,14 +2,15 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { EventData } from "data/observable";
 import { COMMON_DIRECTIVES } from '../../directives';
 import { SegmentedBarItem } from "ui/segmented-bar";
-
+// >> slide-code-default-value
 @Component({
-    selector: 'basic-slider-component',
+    selector: 'styling-component',
     directives: [COMMON_DIRECTIVES],
-    templateUrl: 'slider/basic-slider/basic-slider.component.html',
-    styleUrls:['slider/basic-slider/style.css'],
+    templateUrl: 'switch/styling-switch/styling-switch.component.html',
+    styleUrls:["switch/styling-switch/style.css"]
 })
 
-export class BasicSliderComponent {
-    public labeltext = 0;
+export class StylingSwitchComponent {
+
 }
+// << slide-code-default-value

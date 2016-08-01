@@ -1,0 +1,1 @@
+Scrollable view allows you do display scrollable area in your application, which have content that is larger than its bounds.

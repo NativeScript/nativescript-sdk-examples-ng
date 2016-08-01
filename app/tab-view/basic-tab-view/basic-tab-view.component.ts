@@ -2,14 +2,14 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { EventData } from "data/observable";
 import { COMMON_DIRECTIVES } from '../../directives';
 import { SegmentedBarItem } from "ui/segmented-bar";
-
+// >> switch-event-handle-code
 @Component({
-    selector: 'basic-slider-component',
+    selector: 'basic-tab-view-component',
     directives: [COMMON_DIRECTIVES],
-    templateUrl: 'slider/basic-slider/basic-slider.component.html',
-    styleUrls:['slider/basic-slider/style.css'],
+    templateUrl: 'tab-view/basic-tab-view/basic-tab-view.component.html'
 })
 
-export class BasicSliderComponent {
-    public labeltext = 0;
+export class BacisTabViewComponent {
+   
 }
+// << switch-event-handle-code

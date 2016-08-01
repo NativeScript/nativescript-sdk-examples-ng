@@ -1,0 +1,12 @@
+<StackLayout exampleTitle>
+    <!-- >> switch-basic-xml -->
+    <GridLayout rows="auto auto auto" columns="* auto">
+        <Label [text]="firstSwitchState" textWrap="true" row="0" col="0"></Label>
+        <Switch class="firstSwtichStyle" #sw1 checked="true" (checkedChange)="firstSwitchState=sw1.checked" row="0" col="1"></Switch>
+        <Label [text]="secondSwitchState" textWrap="true" row="1" col="0"></Label>
+        <Switch id="secondSwitchStyle" #sw2 checked="false" (checkedChange)="secondSwitchState=sw2.checked" row="1" col="1"></Switch>
+        <Label [text]="thirdSwitchState" textWrap="true" row="2" col="0"></Label>
+        <Switch class="thirdSwitchStyle" #sw3 checked="true" (checkedChange)="thirdSwitchState=sw3.checked" row="2" col="1"></Switch>
+    </GridLayout>
+    <!-- << switch-binding-xml -->
+</StackLayout>
