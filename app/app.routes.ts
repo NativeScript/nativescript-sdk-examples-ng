@@ -6,6 +6,13 @@ import { ButtonExamplesComponent } from "./button/button-examples.component";
 import { ButtonTextComponent } from "./button/text/text.component";
 import { ButtonTapEventComponent } from "./button/tap-event/tap-event.component";
 
+import { LabelExamplesComponent } from "./label/label-examples.component";
+import { CreatingLabelComponent } from "./label/creating-label/creating-label.component";
+
+import { ListPickerExamplesComponent } from "./listpicker/listpicker-examples.component";
+import { CreatingListPickerComponent } from "./listpicker/creating-listpicker/creating-listpicker.component";
+import { UsingSelectedIndexExampleComponent } from "./listpicker/using-selected-index/using-selected-index.component";
+
 import { ListViewExamplesComponent } from "./listview/listview-examples.component";
 import { CreatingListViewComponent } from "./listview/creating-listview/creating-listview.component";
 import { CustomizingListViewComponent } from "./listview/customizing-listview/customizing-listview.component";
@@ -19,9 +26,6 @@ import { SettingProgressComponent } from "./progress/setting-progress/setting-pr
 import { NgForExamplesComponent } from "./ngfor/ngfor-examples.component";
 import { NgForRepeatItemsComponent } from "./ngfor/ngfor-items/repeat-items.component";
 
-import { ListPickerExamplesComponent } from "./listpicker/listpicker-examples.component";
-import { CreatingListPickerComponent } from "./listpicker/creating-listpicker/creating-listpicker.component";
-
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
 
@@ -29,8 +33,13 @@ export const routes: RouterConfig = [
   { path: "buttonTextExampleComponent", component: ButtonTextComponent, data: { title: "Text" } },
   { path: "buttonTapEventExampleComponent", component: ButtonTapEventComponent, data: { title: "Tap Event" } },
 
+
+  { path: "labelExamplesComponent", component: LabelExamplesComponent, data: { title: "Label" } },
+  { path: "creatingLabelExampleComponent", component: CreatingLabelComponent, data: { title: "Creating Label" } },
+
   { path: "listPickerExamplesComponent", component: ListPickerExamplesComponent, data: { title: "ListPicker" } },
   { path: "creatingListPickerExampleComponent", component: CreatingListPickerComponent, data: { title: "Create ListPicker" } },
+  { path: "usingSelectedIndexExampleComponent", component: UsingSelectedIndexExampleComponent, data: { title: "Using selectedIndex" } },
   
   { path: "listViewExamplesComponent", component: ListViewExamplesComponent, data: { title: "ListView" } },
   { path: "creatingListViewExampleComponent", component: CreatingListViewComponent, data: { title: "Creating ListView" } },
