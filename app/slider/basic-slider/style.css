@@ -1,0 +1,14 @@
+button, label, stack-layout {
+    horizontal-align: center;    
+}
+
+.message {
+    font-size: 20;
+    color: #284848;
+    text-align: center;
+    margin: 0 20;
+} 
+
+.icon {
+   font-family: 'icomoon';
+}

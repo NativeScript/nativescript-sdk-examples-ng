@@ -1,0 +1,14 @@
+<StackLayout exampleTitle>
+    <!-- >> clear-text-search-bar-xml -->
+    <GridLayout rows="auto *" columns="*">
+        <SearchBar row="0" #sb hint="Search" (clear)="onClear" [text]="searchPhrase" (submit)="onSubmit(sb.text)"></SearchBar>
+        <ListView row="1" [items]="myItems">
+            <template let-item="item" >
+                <StackLayout>
+                    <Label [text]='item.name'></Label>
+                </StackLayout>
+            </template>
+        </ListView>
+    </GridLayout>
+    <!-- << clear-text-search-bar-xml -->
+</StackLayout>
