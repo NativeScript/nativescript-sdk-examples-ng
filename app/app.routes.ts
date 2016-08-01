@@ -98,6 +98,7 @@ export const routes: RouterConfig = [
 
   { path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "Time Picker" } },
   { path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure Time Picker" } },
+
   { path: "labelExamplesComponent", component: LabelExamplesComponent, data: { title: "Label" } },
   { path: "creatingLabelExampleComponent", component: CreatingLabelComponent, data: { title: "Creating Label" } },
 
@@ -117,7 +118,6 @@ export const routes: RouterConfig = [
 
   { path: "ngForExampleComponent", component: NgForExamplesComponent, data: { title: "*ngFor" } },
   { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor Repeat Items" } }
-
 ];
 
 export const APP_ROUTER_PROVIDERS = [
