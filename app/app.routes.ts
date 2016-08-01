@@ -59,6 +59,9 @@ import { SettingProgressComponent } from "./progress/setting-progress/setting-pr
 import { NgForExamplesComponent } from "./ngfor/ngfor-examples.component";
 import { NgForRepeatItemsComponent } from "./ngfor/ngfor-items/repeat-items.component";
 
+import { ImageExamplesComponent } from "./image/image-examples.component";
+import { CreatingImageExampleComponent } from "./image/creating-image/creating-image.component";
+
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
 
@@ -98,6 +101,9 @@ export const routes: RouterConfig = [
 
   { path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "Time Picker" } },
   { path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure Time Picker" } },
+
+  { path: "imageExamplesComponent", component: ImageExamplesComponent, data: { title: "Image" } },
+  { path: "creatingImageExampleComponent", component: CreatingImageExampleComponent, data: { title: "Creating Image" } },
 
   { path: "labelExamplesComponent", component: LabelExamplesComponent, data: { title: "Label" } },
   { path: "creatingLabelExampleComponent", component: CreatingLabelComponent, data: { title: "Creating Label" } },

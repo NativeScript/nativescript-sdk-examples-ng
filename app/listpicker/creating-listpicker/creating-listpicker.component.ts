@@ -1,6 +1,5 @@
 // >> creating-listpicker-code 
-import { Component, ViewChild, ElementRef, AfterViewInit }  from "@angular/core";
-import { ListPicker } from "ui/list-picker";
+import { Component }  from "@angular/core";
 // >> hide
 import { COMMON_DIRECTIVES } from '../../directives';
 // << hide

@@ -1,5 +1,5 @@
 // >> creating-label-code 
-import { Component, ViewChild, ElementRef }  from "@angular/core";
+import { Component }  from "@angular/core";
 import { Label } from "ui/label";
 import { Observable } from "data/observable";
 
