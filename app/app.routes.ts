@@ -62,6 +62,9 @@ import { NgForRepeatItemsComponent } from "./ngfor/ngfor-items/repeat-items.comp
 import { ImageExamplesComponent } from "./image/image-examples.component";
 import { CreatingImageExampleComponent } from "./image/creating-image/creating-image.component";
 
+import { HtmlViewxamplesComponent } from "./htmlview/htmlview-examples.component";
+import { CreatingHtmlViewExampleComponent } from "./htmlview/creating-htmlview/creating-htmlview.component";
+
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
 
@@ -123,7 +126,11 @@ export const routes: RouterConfig = [
   { path: "settingProgressExampleComponent", component: SettingProgressComponent, data: { title: "Setting up Progress" } },   
 
   { path: "ngForExampleComponent", component: NgForExamplesComponent, data: { title: "*ngFor" } },
-  { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor Repeat Items" } }
+  { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor Repeat Items" } },
+
+  { path: "htmlViewExamplesComponent", component: HtmlViewxamplesComponent, data: { title: "HtmlView" } },
+  { path: "creatingHtmlViewExampleComponent", component: CreatingHtmlViewExampleComponent, data: { title: "Creating HtmlView" } },
+  
 ];
 
 export const APP_ROUTER_PROVIDERS = [
