@@ -75,7 +75,6 @@ import { BasicSearchBarComponent } from "./search-bar/basic-search-bar/basic-sea
 import { ClearSearchBarComponent } from "./search-bar/clear-search-bar/clear-search-bar.component";
 import { SearchBarBindingComponent } from "./search-bar/search-bar-binding/search-bar-binding.component";
 
-
 import { SegmentedBarExamplesComponent } from "./segmented-bar/segmented-bar-examples.component";
 import { BasicSegmentedBarComponent } from "./segmented-bar/basic-segmented-bar/basic-segmented-bar.component";
 import { SegmentedBarViewsComponent } from "./segmented-bar/segmented-bar-views/segmented-bar-views.component";
@@ -92,6 +91,16 @@ import { StylingSwitchComponent } from "./switch/styling-switch/styling-switch.c
 import { TabViewExamplesComponent } from "./tab-view/tab-view-examples.component";
 import { BacisTabViewComponent } from "./tab-view/basic-tab-view/basic-tab-view.component";
 
+import { GesturesExamplesComponent } from "./gestures/gestures-examples.component";
+
+import { TapExampleComponent } from "./gestures/tap/tap.component";
+import { DoubleTapExampleComponent } from "./gestures/double-tap/double-tap.component";
+import { LongPressExampleComponent } from "./gestures/long-press/long-press.component";
+import { SwipeExampleComponent } from "./gestures/swipe/swipe.component";
+import { PanExampleComponent } from "./gestures/pan/pan.component";
+import { PinchExampleComponent } from "./gestures/pinch/pinch.component";
+import { RotationExampleComponent } from "./gestures/rotation/rotation.component";
+import { TouchExampleComponent } from "./gestures/touch/touch.component";
 
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
@@ -179,7 +188,16 @@ export const routes: RouterConfig = [
 
   { path: "htmlViewExamplesComponent", component: HtmlViewxamplesComponent, data: { title: "HtmlView" } },
   { path: "creatingHtmlViewExampleComponent", component: CreatingHtmlViewExampleComponent, data: { title: "Creating HtmlView" } },
-  
+
+  { path: "gesturesExamplesComponent", component: GesturesExamplesComponent, data: { title: "Gestures" } },
+  { path: "tapGestureExampleComponent", component: TapExampleComponent, data: { title: "Tap" } },
+  { path: "doubleTapGestureExampleComponent", component: DoubleTapExampleComponent, data: { title: "Double Tap" } },
+  { path: "longPressGestureExampleComponent", component: LongPressExampleComponent, data: { title: "Long Press" } },
+  { path: "swipeGestureExampleComponent", component: SwipeExampleComponent, data: { title: "Swipe" } },
+  { path: "panGestureExampleComponent", component: PanExampleComponent, data: { title: "Pan" } },
+  { path: "pinchGestureExampleComponent", component: PinchExampleComponent, data: { title: "Pinch" } },
+  { path: "rotationGestureExampleComponent", component: RotationExampleComponent, data: { title: "Rotation" } },
+  { path: "touchGestureExampleComponent", component: TouchExampleComponent, data: { title: "Touch" } },
 ];
 
 export const APP_ROUTER_PROVIDERS = [

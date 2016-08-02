@@ -1,0 +1,8 @@
+<StackLayout exampleTitle>
+    <Label text="Apply Touch gesture inside the box"></Label>
+    <!-- >> touch-html -->
+    <GridLayout (touch)="onTouch($event)"></GridLayout>
+    <Label [text]="'Box touched at X: ' + coordX" textWrap="true"></Label>
+    <Label [text]="'Box touched at Y: ' + coordY" textWrap="true"></Label>
+    <!-- << touch-html -->
+</StackLayout>
