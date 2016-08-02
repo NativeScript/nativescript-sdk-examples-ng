@@ -1,0 +1,31 @@
+<StackLayout exampleTitle>
+    <!-- >> slider-value-xml -->
+    <GridLayout rows="auto" columns="50 * 50">
+        <Label text="&#xe9d4;" textWrap="true" row="10" col="0" fontSize="15" class="icon" ></Label>
+        <Slider #sl minValue="10" maxValue="70" [(ngModel)]="sliderValue" (valueChange)="sliderValueChange" row="0" col="1"></Slider>
+        <Label text="&#xe9d4;" textWrap="true" row="0" col="2" fontSize="20" class="icon" ></Label>
+    </GridLayout>
+    <GridLayout rows="auto" columns="50 * 50">
+        <Label text="&#xe9d5;" textWrap="true" row="0" col="0" fontSize="15" class="icon" ></Label>
+        <Slider #sl minValue="5" maxValue="100" [(ngModel)]="sliderValue2" (valueChange)="sliderValueChange2" color="green" row="0" col="1"></Slider>
+        <Label text="&#xe9d5;" textWrap="true" row="0" col="2" fontSize="20" class="icon" ></Label>
+    </GridLayout>
+    <GridLayout rows="auto" columns="50 * 50">
+        <Label text="&#xe9d6;" textWrap="true" row="0" col="0" fontSize="15" class="icon" ></Label>
+        <Slider #sl minValue="5" maxValue="100" [(ngModel)]="sliderValue3" (valueChange)="sliderValueChange3" color="green" row="0" col="1"></Slider>
+        <Label text="&#xe9d6;" textWrap="true" row="0" col="2" fontSize="20" class="icon" ></Label>
+    </GridLayout>
+    <GridLayout rows="auto" columns="50 * 50">
+        <Label text="&#xea26;" textWrap="true" row="0" col="0" fontSize="15" class="icon" ></Label>
+        <Slider #sl minValue="5" maxValue="100" [(ngModel)]="sliderValue4" (valueChange)="sliderValueChange4" color="green" row="0" col="1"></Slider>
+        <Label text="&#xea26;" textWrap="true" row="0" col="2" fontSize="20" class="icon" ></Label>
+    </GridLayout>
+    <GridLayout rows="auto" columns="50 * 50">
+        <Label text="&#xe90b;" textWrap="true" row="0" col="0" fontSize="15" class="icon" ></Label>
+        <Slider #sl minValue="5" maxValue="100" [(ngModel)]="sliderValue5" (valueChange)="sliderValueChange5" color="green" row="0" col="1"></Slider>
+        <Label text="&#xe90b;" textWrap="true" row="0" col="2" fontSize="20" class="icon" ></Label>
+    </GridLayout>
+    
+    <Button text="Review result" (tap)="onTap()"></Button>
+    <!-- << slider-value-xml -->
+</StackLayout>

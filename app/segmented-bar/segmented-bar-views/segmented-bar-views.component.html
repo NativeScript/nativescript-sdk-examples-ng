@@ -1,0 +1,21 @@
+<StackLayout exampleTitle>
+    <SegmentedBar #sb [items]="Items" [selectedIndex]="index" (selectedIndexChange)="onChange(sb.selectedIndex)">
+    </SegmentedBar>
+    <StackLayout visibility="{{ visibility1 ? 'visible' : 'collapsed' }}">
+        <Label text="Sample page 1" class="title"></Label>
+        
+        <Button text="TAP" (tap)="onTap()"></Button>
+    </StackLayout>
+
+    <StackLayout visibility="{{ visibility2 ? 'visible' : 'collapsed' }}">
+        <Label text="Sample page 2" class="title"></Label>
+        
+        <Button text="TAP" (tap)="onTap()"></Button>
+    </StackLayout>
+
+    <StackLayout visibility="{{ visibility3 ? 'visible' : 'collapsed' }}">
+        <Label text="Sample page 3" class="title"></Label>
+        
+        <Button text="TAP" (tap)="onTap()"></Button>
+    </StackLayout>
+</StackLayout>

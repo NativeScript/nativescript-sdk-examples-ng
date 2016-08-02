@@ -1,0 +1,1 @@
+SearchBar module represents UI component similer to `UISearchBar` in iOS and `SearchView` for Android, which allows you to to create simple filter for the the content in the app. This module gives you the simple way to handle `submit` event and searchbar bar `clear` event.
