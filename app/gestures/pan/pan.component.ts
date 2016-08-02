@@ -31,4 +31,4 @@ export class PanExampleComponent {
         this.state = args.state;
     }
 }
-// << dpan-code
+// << pan-code
