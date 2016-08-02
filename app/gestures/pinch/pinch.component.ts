@@ -29,6 +29,7 @@ export class PinchExampleComponent {
         this.scale = args.scale;
         this.state - args.state;
 
+        // >> (hide)
         var grid = <GridLayout>args.object;
 
         if (args.state === 1) {
@@ -53,6 +54,7 @@ export class PinchExampleComponent {
             grid.scaleX = newScale;
             grid.scaleY = newScale;
         }
+         // << (hide)
     }    
 }
 // << pinch-code
