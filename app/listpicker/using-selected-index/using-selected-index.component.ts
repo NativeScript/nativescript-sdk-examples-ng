@@ -1,9 +1,9 @@
 // >> using-selected-index-code 
 import { Component }  from "@angular/core";
 import { ListPicker } from "ui/list-picker";
-// >> hide
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
-// << hide
+// << (hide)
 
 var pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 "Dugtrio", "Meowth", "Persian", "Psyduck", "Arcanine", "Poliwrath", "Machoke"];
@@ -11,9 +11,9 @@ var pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 @Component({
     selector: "creating-listpicker",
     styleUrls:["listpicker/using-selected-index/using-selected-index.component.css"],
-    // >> hide
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
-    // << hide
+    // << (hide)
     templateUrl: "listpicker/using-selected-index/using-selected-index.component.html"
 })
 export class UsingSelectedIndexExampleComponent {

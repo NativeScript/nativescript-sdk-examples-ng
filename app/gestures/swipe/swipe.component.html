@@ -1,0 +1,8 @@
+<StackLayout exampleTitle>
+    <Label text="Apply Swipe gesture inside the box"></Label>
+    <!-- >> swipe-html -->
+    <GridLayout (swipe)="onSwipe($event)"></GridLayout>
+    <!-- << swipe-html -->
+    <Label [text]="'Swipe direction : ' + direction" textWrap="true"></Label>
+    
+</StackLayout>

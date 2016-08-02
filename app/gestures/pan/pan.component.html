@@ -1,0 +1,9 @@
+<StackLayout exampleTitle>
+    <Label text="Apply Pan gesture inside the box"></Label>
+    <!-- >> pan-html -->
+    <GridLayout (pan)="onPan($event)"></GridLayout>
+    <!-- << pan-html -->
+    <Label [text]="'Pan deltaX: ' + deltaX" textWrap="true"></Label>
+    <Label [text]="'Pan deltaY: ' + deltaY" textWrap="true"></Label>
+    <Label [text]="'Pan state: ' + state" textWrap="true"></Label>
+</StackLayout>

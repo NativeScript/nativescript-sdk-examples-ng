@@ -1,14 +1,14 @@
 // >> progress-create-code 
 import { Component, OnInit }  from "@angular/core";
-// >> hide
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
-// << hide
+// << (hide)
 
 @Component({
     selector: "creating-progress",
-    // >> hide
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
-    // << hide
+    // << (hide)
     templateUrl: "progress/creating-progress/creating-progress.component.html",
 })
 export class CreatingProgressComponent implements OnInit {

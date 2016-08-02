@@ -1,0 +1,23 @@
+StackLayout {
+    padding: 10;
+}
+
+Label {
+    horizontal-align: center;
+    font-size: 18;
+}
+
+GridLayout {
+    margin: 30;
+    width: 300;
+    height: 300;
+    background-color: blue;
+    border-width: 1;
+    border-color: white;
+    border-radius: 20;  
+}
+
+Image {
+    horizontal-align: center;
+    vertical-align: center;
+}

@@ -6,9 +6,9 @@ import { Progress } from "ui/progress";
 
 @Component({
     selector: "setting-progress",
-    // >> hide
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
-    // << hide
+    // << (hide)
     templateUrl: "progress/setting-progress/setting-progress.component.html",
 })
 
