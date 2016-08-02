@@ -1,0 +1,7 @@
+<StackLayout exampleTitle>
+   <Button text="Enable/Disable To Edit Text View" (tap)="disableTextView()"></Button>
+   <Button text="Show Text" (tap)="showText()"></Button>
+
+    <TextView hint="Enter sample" [(ngModel)]="tvtext" [editable]="editState"></TextView>
+
+</StackLayout>

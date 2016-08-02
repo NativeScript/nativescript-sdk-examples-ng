@@ -1,0 +1,11 @@
+<StackLayout exampleTitle>
+    <Label [text]="firstLabel" textWrap="true"></Label>
+    <TextField hint="Enter text" autocorrect="false" #tx (textChange)="firstLabel=tx.text"></TextField>
+
+
+    <TextField hint="Enter some text and click the button" autocorrect="false" #secondtx ></TextField>
+    <Button text="Button" (tap)="showAlert(secondtx.text)"></Button>
+    
+    
+    
+</StackLayout>

@@ -9,7 +9,7 @@ import { SegmentedBarItem } from "ui/segmented-bar";
     templateUrl: 'tab-view/basic-tab-view/basic-tab-view.component.html'
 })
 
-export class BacisTabViewComponent {
-   
+export class BasicTabViewComponent {
+   public tabindex = 1;
 }
 // << switch-event-handle-code

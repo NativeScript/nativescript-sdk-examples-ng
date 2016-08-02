@@ -1,0 +1,7 @@
+<StackLayout exampleTitle>
+   <GridLayout columns="* auto">
+       <TextField col="0" hint="Enter URL" [(ngModel)]="url"></TextField>
+       <Button class="icon" text="&#xe916;" (tap)="loadPage()"></Button>   
+   </GridLayout>
+    <WebView #wv (loadFinished)="" [src]="webviewsrc"></WebView>
+</StackLayout>
