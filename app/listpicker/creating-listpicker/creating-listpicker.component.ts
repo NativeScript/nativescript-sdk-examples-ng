@@ -1,8 +1,8 @@
 // >> creating-listpicker-code 
 import { Component }  from "@angular/core";
-// >> hide
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
-// << hide
+// << (hide)
 
 var pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 "Dugtrio", "Meowth", "Persian", "Psyduck", "Arcanine", "Poliwrath", "Machoke"];
@@ -10,9 +10,9 @@ var pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 @Component({
     selector: "creating-listpicker",
     styleUrls:["listpicker/creating-listpicker/creating-listpicker.component.css"],
-    // >> hide
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
-    // << hide
+    // << (hide)
     templateUrl: "listpicker/creating-listpicker/creating-listpicker.component.html"
 })
 export class CreatingListPickerComponent {
