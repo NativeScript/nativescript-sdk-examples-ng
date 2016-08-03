@@ -4,11 +4,11 @@ In the code snippets below we will show how to:
 - create a custom Listview footer
 - customize every third ListView item.
 
-HTML
-<snippet id='listview-customize-html'/>
+HTML:
+    <snippet id='listview-customize-html'/>
 
-TypeScript
-<snippet id='listview-customize-code'/>
+TypeScript:
+    <snippet id='listview-customize-code'/>
 
-CSS
-<snippet id='listview-customize-css'/>
+CSS:
+    <snippet id='listview-customize-css'/>

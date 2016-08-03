@@ -106,6 +106,11 @@ import { NgIfExamplesComponent } from "./ngif/ngif-examples.component";
 import { UsingNgIfComponent } from "./ngif/using-ngif/using-ngif.component";
 import { UsingNgIfForPlatformSpecificComponent } from "./ngif/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component";
 
+
+import { CustomDirectiveExamplesComponent } from "./custom-directive/custom-directive-examples.component";
+import { CreateCustomDirectiveExampleComponent } from "./custom-directive/create-custom-directive/create-custom-directive.component";
+import { UnlessDirectiveExampleComponent } from "./custom-directive/unless-directive/unless-directive.component";
+
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
 
@@ -206,6 +211,11 @@ export const routes: RouterConfig = [
   { path: "ngIfExampleComponent", component: NgIfExamplesComponent, data: { title: "*ngIf" } },
   { path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf Basic Usage" } },
   { path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf Hiding Elements" } },
+
+  { path: "customDirectiveExampleComponent", component: CustomDirectiveExamplesComponent, data: { title: "Custom *ng Directives" } },
+  { path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create Custom *ng Directive" } },
+  { path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless Directive Example" } },
+  
   
 ];
 
