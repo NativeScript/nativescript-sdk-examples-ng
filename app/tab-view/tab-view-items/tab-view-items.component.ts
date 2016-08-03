@@ -4,7 +4,6 @@ import { COMMON_DIRECTIVES } from '../../directives';
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label"
 
-// >> slide-code-default-value
 @Component({
     selector: 'tab-view-items-component',
     directives: [COMMON_DIRECTIVES],
@@ -50,4 +49,3 @@ export class TabViewItemsComponent {
 
 
 }
-// << slide-code-default-value

@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
+import {setTimeout} from "timer"
 
 @Component({
     selector: 'scroll-event-component',
@@ -11,6 +12,9 @@ export class ScrollEventComponent {
     public status = "not scrolling";
     public onscroll(){
         this.status="scrolling";
+        var that =this;
+        setTimeout(function(){
+            that.status="not scrolling";
+        },300);
     }
 }
-

@@ -98,6 +98,11 @@ import { BasicTextViewComponent } from "./text-view/basic-text-view/basic-text-v
 
 import { WebViewExamplesComponent } from "./web-view/web-view-examples.component";
 import { BasicWebViewComponent } from "./web-view/basic-web-view/basic-web-view.component";
+import { WebViewHtmlComponent } from "./web-view/web-view-html/web-view-html.component";
+
+import { StyleExamplesComponent } from "./style/style-examples.component";
+import { StyleCSSFileComponent } from "./style/style-css-file/style-css-file.component";
+import { ApplyStyleCodeComponent } from "./style/apply-style-via-code/apply-style-code.component";
 
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
@@ -147,6 +152,10 @@ export const routes: RouterConfig = [
   { path: "basicTextViewComponent", component: BasicTextViewComponent, data: { title: "Basic Text View" } },
   { path: "webViewExamplesComponent", component: WebViewExamplesComponent, data: { title: "Web View" } },
   { path: "basicWebViewComponent", component: BasicWebViewComponent, data: { title: "Basic Web View" } },
+  { path: "webViewHtmlComponent", component: WebViewHtmlComponent, data: { title: "Web View HTML code" } },
+  { path: "styleExamplesComponent", component: StyleExamplesComponent, data: { title: "Style" } },
+  { path: "styleCSSFileComponent", component: StyleCSSFileComponent, data: { title: "Add style via CSS file" } },
+  { path: "applyStyleViaCodeComponent", component: ApplyStyleCodeComponent, data: { title: "Apply style using code" } },
 
 
   { path: "buttonTextComponent", component: ButtonTextComponent, data: { title: "Text" } },

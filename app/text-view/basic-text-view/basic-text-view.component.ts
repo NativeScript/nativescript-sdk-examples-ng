@@ -2,7 +2,6 @@ import {Component, OnInit, ElementRef, ViewChild} from "@angular/core";
 import { EventData } from "data/observable";
 import { COMMON_DIRECTIVES } from '../../directives';
 
-// >> switch-event-handle-code
 @Component({
     selector: 'basic-text-view-component',
     directives: [COMMON_DIRECTIVES],
@@ -30,5 +29,3 @@ export class BasicTextViewComponent {
     }
 
 }
-// << switch-event-handle-code
-

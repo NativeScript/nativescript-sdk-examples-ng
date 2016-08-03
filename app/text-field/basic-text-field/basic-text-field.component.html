@@ -1,25 +1,23 @@
 <StackLayout exampleTitle>
-   <GridLayout rows="auto auto auto auto auto auto 50 auto" columns="* 50 *">
+   <GridLayout rows="auto auto auto auto auto auto 50" columns="* 50 *">
        <Image class=".imgStyle" src="res://icon" row="0" col="1"></Image>
 
        <Label text="Enter your: " row="1" col="0" textWrap="true"></Label>
-       <TextField hint="Nikname" text="" row="1" col="1" colSpan="2" ></TextField>
+       <TextField hint="Nikname" text="" row="1" col="1" colSpan="2" returnKeyType="next"></TextField>
 
        <Label text="Enter your: " row="2" col="0" textWrap="true"></Label>
-       <TextField hint="Username" text="" row="2" col="1" colSpan="2" ></TextField>
+       <TextField hint="Username" text="" row="2" col="1" colSpan="2" returnKeyType="next"></TextField>
 
        <Label text="Enter your: " row="3" col="0" textWrap="true"></Label>
-       <TextField hint="Password" autocorrect="false"  secure="true" text="" row="3" col="1" colSpan="2" ></TextField>
+       <TextField hint="Password" autocorrect="false"  secure="true" text="" row="3" col="1" colSpan="2" returnKeyType="next"></TextField>
 
        <Label text="Enter your: " row="4" col="0" textWrap="true"></Label>
-       <TextField autocorrect="true" hint="Country" text="" row="4" col="1" colSpan="2" ></TextField>
+       <TextField autocorrect="true" hint="Country" text="" row="4" col="1" colSpan="2" returnKeyType="next"></TextField>
 
        <Label text="Enter your: " row="5" col="0" textWrap="true"></Label>
-       <TextField  hint="Birth date" [text]='birthDate | date:"MM/dd/yy"' (tap)="showDatePicker()" row="5" col="1" colSpan="2" ></TextField>
+       <TextField id="textFieldBDate" hint="Birth date" [text]='birthDate | date:"MM/dd/yy"' (tap)="showDatePicker()" row="5" col="1" colSpan="2" returnKeyType="done" (returnPress)="submit()"></TextField>
+
        <Button row="6" colSpan="3" text="Tap to enter the date" (tap)="enterDate()" [visibility]="isButtonVisible ? 'visible' : 'collapsed'"></Button>
-       
-       <DatePicker row="6" colSpan="3"  #dp [visibility]="isItemVisible ? 'visible' : 'collapsed'"></DatePicker>
-       
-       
    </GridLayout>
+   <DatePicker id="datePicker" #dp [visibility]="isItemVisible ? 'visible' : 'collapsed'"></DatePicker>
 </StackLayout>

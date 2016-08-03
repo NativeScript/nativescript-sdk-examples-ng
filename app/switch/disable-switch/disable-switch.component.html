@@ -1,5 +1,5 @@
 <StackLayout exampleTitle>
-    <!-- >> switch-basic-xml -->
+    <!-- >> switch-view-xml -->
     <GridLayout rows="auto auto auto auto" columns="* auto">
         <Label [text]="firstSwitchState" textWrap="true" row="0" col="0"></Label>
         <Switch #sw1 checked="true" (checkedChange)="firstSwitchState=sw1.checked" row="0" col="1"></Switch>
@@ -9,5 +9,5 @@
         <Switch #sw3 checked="true" (checkedChange)="thirdSwitchState=sw3.checked" row="2" col="1"></Switch>   
         <Button text="Disable switchs" (tap)="onTap()" row="3" calSpan="2"></Button>
     </GridLayout>
-    <!-- << switch-binding-xml -->
+    <!-- << switch-view-xml -->
 </StackLayout>

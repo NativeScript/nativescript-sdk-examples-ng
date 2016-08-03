@@ -1,5 +1,5 @@
-Setting Sliders in from `XML`:
-<snippet id='slider-value-xml'/>
+Setting `Switch` component in  `HTML` code:
+<snippet id='switch-styling-xml'/>
 
-Setting the default values of the `Sliders` and review result via `Alert`
-<snippet id='slide-code-default-value'/>
+Style `Switch` component using `CSS`
+<snippet id='switch-style-css'/>

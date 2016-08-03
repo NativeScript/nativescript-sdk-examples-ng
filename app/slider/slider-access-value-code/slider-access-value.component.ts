@@ -2,7 +2,6 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { EventData } from "data/observable";
 import { COMMON_DIRECTIVES } from '../../directives';
 import { SegmentedBarItem } from "ui/segmented-bar";
-// >> slide-code-default-value
 @Component({
     selector: 'slider-access-value-component',
     directives: [COMMON_DIRECTIVES],
@@ -29,4 +28,3 @@ export class SliderAccessValueComponent {
 
 
 }
-// << slide-code-default-value

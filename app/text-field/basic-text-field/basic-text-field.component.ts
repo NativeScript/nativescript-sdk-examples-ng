@@ -4,7 +4,8 @@ import { COMMON_DIRECTIVES } from '../../directives';
 import {DatePicker} from "ui/date-picker";
 import {TextField} from "ui/text-field";
 import {Page} from "ui/page";
-// >> switch-event-handle-code
+import {setTimeout} from "timer"
+
 @Component({
     selector: 'basic-text-field-component',
     directives: [COMMON_DIRECTIVES],
@@ -21,7 +22,7 @@ export class BasicTextFieldComponent {
     }
 
     ngOnInit() {
-        let datePicker = this.page.getViewById<DatePicker>("dp");
+        let datePicker = this.page.getViewById<DatePicker>("datePicker");
         datePicker.year = 1980;
         datePicker.month = 2;
         datePicker.day = 9;
@@ -31,17 +32,33 @@ export class BasicTextFieldComponent {
 
 
     enterDate(){
-        let datePicker = this.page.getViewById<DatePicker>("dp");
+        let datePicker = this.page.getViewById<DatePicker>("datePicker");
         var selectedDate = new Date(datePicker.year, datePicker.month - 1, datePicker.day);
         this.birthDate=selectedDate;
+        this.isButtonVisible=false;
+        this.isItemVisible=false;
     }
 
     showDatePicker(){
+        let textFielsBDate = this.page.getViewById<TextField>("textFieldBDate");
         this.isButtonVisible=true;
         this.isItemVisible=true;
+
+        setTimeout(function(){
+            textFielsBDate.dismissSoftInput();
+        },100);
+        
+    }
+
+    submit(){
+        let textFielsBDate = this.page.getViewById<TextField>("textFieldBDate");
+        this.isButtonVisible=true;
+        this.isItemVisible=true;
+
+        setTimeout(function(){
+            textFielsBDate.dismissSoftInput();
+        },100);
     }
 
 
 }
-// << switch-event-handle-code
-

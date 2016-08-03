@@ -1,7 +1,9 @@
 <StackLayout exampleTitle>
-   <GridLayout columns="* auto">
-       <TextField col="0" hint="Enter URL" [(ngModel)]="url"></TextField>
-       <Button class="icon" text="&#xe916;" (tap)="loadPage()"></Button>   
+   <GridLayout  rows="100" columns="50 * 50">
+       <Button row="0" col="0" class="icon" text="&#xe94d;" (tap)="goBack()"></Button>   
+       <TextField id="urlField" row="0" col="1" hint="Enter URL" [(ngModel)]="url"  returnKeyType="done"
+        (returnPress)="submit()"></TextField>
+       <Button row="0" col="2" class="icon" text="&#xe916;" (tap)="loadPage()"></Button>   
    </GridLayout>
-    <WebView #wv (loadFinished)="" [src]="webviewsrc"></WebView>
+    <WebView id="wv"  [src]="webviewsrc"></WebView>
 </StackLayout>

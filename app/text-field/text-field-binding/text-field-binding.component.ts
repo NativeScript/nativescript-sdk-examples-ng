@@ -4,7 +4,6 @@ import { COMMON_DIRECTIVES } from '../../directives';
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label"
 
-// >> slide-code-default-value
 @Component({
     selector: 'text-field-binding-component',
     directives: [COMMON_DIRECTIVES],
@@ -15,5 +14,7 @@ export class TextFieldBindingComponent {
   public showAlert(result){
       alert("Text: "+result);
   }
+  submit(result){
+      alert("Text: "+result);
+  }
 }
-// << slide-code-default-value
