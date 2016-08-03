@@ -1,9 +1,9 @@
 // >> using-item-template-code 
 import { Component, ChangeDetectionStrategy, Input, ElementRef }  from "@angular/core";
 import { SetupItemViewArgs, ListViewComponent } from "nativescript-angular/directives";
-// >> hide
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
-// << hide
+// << (hide)
 
 @Component({
     selector: 'item-component',

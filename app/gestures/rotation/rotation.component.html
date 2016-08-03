@@ -1,0 +1,8 @@
+<StackLayout exampleTitle>
+    <Label text="Apply Rotation gesture inside the box"></Label>
+    <!-- >> rotation-html -->
+    <GridLayout (rotation)="onRotation($event)"></GridLayout>
+    <!-- << rotation-html -->
+    <Label [text]="'Rotation angle: ' + angle" textWrap="true"></Label>
+    <Label [text]="'Rotation state: ' + state" textWrap="true"></Label>    
+</StackLayout>

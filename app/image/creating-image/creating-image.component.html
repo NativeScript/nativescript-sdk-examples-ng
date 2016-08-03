@@ -1,0 +1,17 @@
+<ScrollView>
+    <StackLayout #st exampleTitle>
+        <!-- >> creating-image-html -->
+        <!-- Load image from App_Resources -->
+        <Image src="res://icon" stretch="none"></Image>
+        <Label text="Image loaded from resources" textWrap="true"></Label>
+        
+        <!-- Load image from app/images folder -->
+        <Image src="~/images/logo.png" stretch="none"></Image>
+        <Label text="Image loaded from custom folder" textWrap="true"></Label>
+
+        <!-- Load image from url -->
+        <Image src="https://docs.nativescript.org/angular/img/cli-getting-started/angular/chapter0/NativeScript_Angular_logo.png" stretch="none"></Image>
+        <Label text="Image loaded from URL" textWrap="true"></Label>
+        <!-- << creating-image-html -->   
+    </StackLayout>
+</ScrollView>

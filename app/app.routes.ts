@@ -59,6 +59,12 @@ import { SettingProgressComponent } from "./progress/setting-progress/setting-pr
 import { NgForExamplesComponent } from "./ngfor/ngfor-examples.component";
 import { NgForRepeatItemsComponent } from "./ngfor/ngfor-items/repeat-items.component";
 
+import { ImageExamplesComponent } from "./image/image-examples.component";
+import { CreatingImageExampleComponent } from "./image/creating-image/creating-image.component";
+
+import { HtmlViewxamplesComponent } from "./htmlview/htmlview-examples.component";
+import { CreatingHtmlViewExampleComponent } from "./htmlview/creating-htmlview/creating-htmlview.component";
+
 import { ScrollViewExamplesComponent } from "./scroll-view/scroll-view-examples.component";
 import { ScrollViewHorizontalComponent } from "./scroll-view/horizontal/scroll-view-horizontal.component";
 import { ScrollViewVerticalComponent } from "./scroll-view/vertical/scroll-view-vertical.component";
@@ -68,7 +74,6 @@ import { SearchBarExamplesComponent } from "./search-bar/search-bar-examples.com
 import { BasicSearchBarComponent } from "./search-bar/basic-search-bar/basic-search-bar.component";
 import { ClearSearchBarComponent } from "./search-bar/clear-search-bar/clear-search-bar.component";
 import { SearchBarBindingComponent } from "./search-bar/search-bar-binding/search-bar-binding.component";
-
 
 import { SegmentedBarExamplesComponent } from "./segmented-bar/segmented-bar-examples.component";
 import { BasicSegmentedBarComponent } from "./segmented-bar/basic-segmented-bar/basic-segmented-bar.component";
@@ -104,6 +109,21 @@ import { StyleExamplesComponent } from "./style/style-examples.component";
 import { StyleCSSFileComponent } from "./style/style-css-file/style-css-file.component";
 import { ApplyStyleCodeComponent } from "./style/apply-style-via-code/apply-style-code.component";
 
+import { GesturesExamplesComponent } from "./gestures/gestures-examples.component";
+
+import { TapExampleComponent } from "./gestures/tap/tap.component";
+import { DoubleTapExampleComponent } from "./gestures/double-tap/double-tap.component";
+import { LongPressExampleComponent } from "./gestures/long-press/long-press.component";
+import { SwipeExampleComponent } from "./gestures/swipe/swipe.component";
+import { PanExampleComponent } from "./gestures/pan/pan.component";
+import { PinchExampleComponent } from "./gestures/pinch/pinch.component";
+import { RotationExampleComponent } from "./gestures/rotation/rotation.component";
+import { TouchExampleComponent } from "./gestures/touch/touch.component";
+
+import { NgIfExamplesComponent } from "./ngif/ngif-examples.component";
+import { UsingNgIfComponent } from "./ngif/using-ngif/using-ngif.component";
+import { UsingNgIfForPlatformSpecificComponent } from "./ngif/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component";
+
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
 
@@ -123,7 +143,6 @@ export const routes: RouterConfig = [
   { path: "borderExamplesComponent", component: BorderExamplesComponent, data: { title: "Border" } },
   { path: "declareBorderComponent", component: DeclareBorderComponent, data: { title: "Declare Border" } },
 
-  { path: "buttonExamplesComponent", component: ButtonExamplesComponent, data: { title: "Button" } },
   { path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "Scroll View" } },
   { path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal Orientation" } },
   { path: "scrollViewVertivalExampleComponent", component: ScrollViewVerticalComponent, data: { title: "Vertical Orientation" } },
@@ -158,6 +177,7 @@ export const routes: RouterConfig = [
   { path: "applyStyleViaCodeComponent", component: ApplyStyleCodeComponent, data: { title: "Apply style using code" } },
 
 
+  { path: "buttonExamplesComponent", component: ButtonExamplesComponent, data: { title: "Button" } },
   { path: "buttonTextComponent", component: ButtonTextComponent, data: { title: "Text" } },
   { path: "buttonTapEventComponent", component: ButtonTapEventComponent, data: { title: "Tap Event" } },
   { path: "buttonBindingTextComponent", component: ButtonBindingTextComponent, data: { title: "Binding Text" } },
@@ -178,6 +198,9 @@ export const routes: RouterConfig = [
   { path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "Time Picker" } },
   { path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure Time Picker" } },
 
+  { path: "imageExamplesComponent", component: ImageExamplesComponent, data: { title: "Image" } },
+  { path: "creatingImageExampleComponent", component: CreatingImageExampleComponent, data: { title: "Creating Image" } },
+
   { path: "labelExamplesComponent", component: LabelExamplesComponent, data: { title: "Label" } },
   { path: "creatingLabelExampleComponent", component: CreatingLabelComponent, data: { title: "Creating Label" } },
 
@@ -196,7 +219,25 @@ export const routes: RouterConfig = [
   { path: "settingProgressExampleComponent", component: SettingProgressComponent, data: { title: "Setting up Progress" } },   
 
   { path: "ngForExampleComponent", component: NgForExamplesComponent, data: { title: "*ngFor" } },
-  { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor Repeat Items" } }
+  { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor Repeat Items" } },
+
+  { path: "htmlViewExamplesComponent", component: HtmlViewxamplesComponent, data: { title: "HtmlView" } },
+  { path: "creatingHtmlViewExampleComponent", component: CreatingHtmlViewExampleComponent, data: { title: "Creating HtmlView" } },
+
+  { path: "gesturesExamplesComponent", component: GesturesExamplesComponent, data: { title: "Gestures" } },
+  { path: "tapGestureExampleComponent", component: TapExampleComponent, data: { title: "Tap" } },
+  { path: "doubleTapGestureExampleComponent", component: DoubleTapExampleComponent, data: { title: "Double Tap" } },
+  { path: "longPressGestureExampleComponent", component: LongPressExampleComponent, data: { title: "Long Press" } },
+  { path: "swipeGestureExampleComponent", component: SwipeExampleComponent, data: { title: "Swipe" } },
+  { path: "panGestureExampleComponent", component: PanExampleComponent, data: { title: "Pan" } },
+  { path: "pinchGestureExampleComponent", component: PinchExampleComponent, data: { title: "Pinch" } },
+  { path: "rotationGestureExampleComponent", component: RotationExampleComponent, data: { title: "Rotation" } },
+  { path: "touchGestureExampleComponent", component: TouchExampleComponent, data: { title: "Touch" } },
+
+  { path: "ngIfExampleComponent", component: NgIfExamplesComponent, data: { title: "*ngIf" } },
+  { path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf Basic Usage" } },
+  { path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf Hiding Elements" } },
+  
 ];
 
 export const APP_ROUTER_PROVIDERS = [
