@@ -1,0 +1,9 @@
+Label {
+    font-size: 18;
+}
+
+TextView {
+    font-size: 24;
+    background-color: blue;
+    color: whitesmoke;
+}
