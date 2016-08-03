@@ -1,5 +1,4 @@
 <StackLayout exampleTitle>
-    <!-- >> slider-value-xml -->
     <GridLayout rows="auto" columns="50 * 50">
         <Label text="&#xe9d4;" textWrap="true" row="10" col="0" fontSize="15" class="icon" ></Label>
         <Slider #sl minValue="10" maxValue="70" [(ngModel)]="sliderValue" (valueChange)="sliderValueChange" row="0" col="1"></Slider>
@@ -27,5 +26,4 @@
     </GridLayout>
     
     <Button text="Review result" (tap)="onTap()"></Button>
-    <!-- << slider-value-xml -->
 </StackLayout>

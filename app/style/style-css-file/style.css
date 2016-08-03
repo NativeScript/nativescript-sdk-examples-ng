@@ -2,6 +2,15 @@ button, label, stack-layout {
     horizontal-align: center;    
 }
 
+button {
+    font-size: 36;
+}
+
+.title {
+    font-size: 30;
+    margin: 20;
+}
+
 .message {
     font-size: 20;
     color: #284848;
@@ -9,6 +18,6 @@ button, label, stack-layout {
     margin: 0 20;
 } 
 
-.icon {
-   font-family: 'icomoon';
+#labelStyle{
+    background-color: #564448;
 }

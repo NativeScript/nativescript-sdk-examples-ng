@@ -1,5 +1,5 @@
-Setting Sliders in from `XML`:
-<snippet id='slider-value-xml'/>
+Setting `Switch` in `HTML` code:
+<snippet id='switch-view-xml'/>
 
-Setting the default values of the `Sliders` and review result via `Alert`
-<snippet id='slide-code-default-value'/>
+Disable `Switch` control via setting `isEnable` proeprty to false
+<snippet id='disable-switch-code'/>

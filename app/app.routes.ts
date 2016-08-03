@@ -89,7 +89,25 @@ import { DisableSwitchComponent } from "./switch/disable-switch/disable-switch.c
 import { StylingSwitchComponent } from "./switch/styling-switch/styling-switch.component";
 
 import { TabViewExamplesComponent } from "./tab-view/tab-view-examples.component";
-import { BacisTabViewComponent } from "./tab-view/basic-tab-view/basic-tab-view.component";
+import { BasicTabViewComponent } from "./tab-view/basic-tab-view/basic-tab-view.component";
+import { TabViewItemsComponent } from "./tab-view/tab-view-items/tab-view-items.component";
+
+import { TextFieldExamplesComponent } from "./text-field/text-field-examples.component";
+import { BasicTextFieldComponent } from "./text-field/basic-text-field/basic-text-field.component";
+import { TextFieldBindingComponent } from "./text-field/text-field-binding/text-field-binding.component";
+
+
+import { TextViewExamplesComponent } from "./text-view/text-view-examples.component";
+import { BasicTextViewComponent } from "./text-view/basic-text-view/basic-text-view.component";
+
+
+import { WebViewExamplesComponent } from "./web-view/web-view-examples.component";
+import { BasicWebViewComponent } from "./web-view/basic-web-view/basic-web-view.component";
+import { WebViewHtmlComponent } from "./web-view/web-view-html/web-view-html.component";
+
+import { StyleExamplesComponent } from "./style/style-examples.component";
+import { StyleCSSFileComponent } from "./style/style-css-file/style-css-file.component";
+import { ApplyStyleCodeComponent } from "./style/apply-style-via-code/apply-style-code.component";
 
 import { GesturesExamplesComponent } from "./gestures/gestures-examples.component";
 
@@ -144,7 +162,20 @@ export const routes: RouterConfig = [
   { path: "diableSwitchComponent", component: DisableSwitchComponent, data: { title: "Disable Switch Component" } },
   { path: "stylingSwitchComponent", component: StylingSwitchComponent, data: { title: "Styling Switch Component" } },
   { path: "tabViewExamplesComponent", component: TabViewExamplesComponent, data: { title: "Tab View" } },
-  { path: "basicTabViewExamplesComponent", component: BacisTabViewComponent, data: { title: "Basic Tab View" } },
+  { path: "basicTabViewExamplesComponent", component: BasicTabViewComponent, data: { title: "Basic Tab View" } },
+  { path: "tabViewItemsExamplesComponent", component: TabViewItemsComponent, data: { title: "Tab View Items" } },
+  { path: "textFieldExamplesComponent", component: TextFieldExamplesComponent, data: { title: "Text Field" } },
+  { path: "basicTextFieldComponent", component: BasicTextFieldComponent, data: { title: "Basic TextField" } },
+  { path: "textFieldBindingComponent", component: TextFieldBindingComponent, data: { title: "Text Field Binding" } },
+  { path: "textViewExamplesComponent", component: TextViewExamplesComponent, data: { title: "Text View" } },
+  { path: "basicTextViewComponent", component: BasicTextViewComponent, data: { title: "Basic Text View" } },
+  { path: "webViewExamplesComponent", component: WebViewExamplesComponent, data: { title: "Web View" } },
+  { path: "basicWebViewComponent", component: BasicWebViewComponent, data: { title: "Basic Web View" } },
+  { path: "webViewHtmlComponent", component: WebViewHtmlComponent, data: { title: "Web View HTML code" } },
+  { path: "styleExamplesComponent", component: StyleExamplesComponent, data: { title: "Style" } },
+  { path: "styleCSSFileComponent", component: StyleCSSFileComponent, data: { title: "Add style via CSS file" } },
+  { path: "applyStyleViaCodeComponent", component: ApplyStyleCodeComponent, data: { title: "Apply style using code" } },
+
 
   { path: "buttonExamplesComponent", component: ButtonExamplesComponent, data: { title: "Button" } },
   { path: "buttonTextComponent", component: ButtonTextComponent, data: { title: "Text" } },

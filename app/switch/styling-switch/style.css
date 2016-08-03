@@ -1,3 +1,4 @@
+/* >> switch-style-css */
 .firstSwtichStyle{
     background-color: "green";
     color:"red";
@@ -11,3 +12,4 @@
     opacity: 0.5;
     background: green;
 }
+/* << switch-style-css */

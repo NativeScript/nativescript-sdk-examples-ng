@@ -14,7 +14,7 @@ class DataItem {
 })
 
 export class ClearSearchBarComponent {
-    // >> clear-search-bar-code
+    // >> clear-search-bar-submit
     private arrayItem:Array<DataItem>;
     public myItems: Array<DataItem>;
     public searchPhrase:string;
@@ -49,5 +49,5 @@ export class ClearSearchBarComponent {
     public onClear(){
         this.searchPhrase="";
     }
-    // << clear-search-bar-code
+    // << clear-search-bar-submit
 }

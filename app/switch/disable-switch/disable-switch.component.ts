@@ -2,7 +2,7 @@ import {Component, ViewChild, ElementRef} from "@angular/core";
 import { EventData } from "data/observable";
 import { COMMON_DIRECTIVES } from '../../directives';
 import { Switch } from "ui/switch"
-// >> slide-code-default-value
+// >> disable-switch-code
 @Component({
     selector: 'disable-switch-component',
     directives: [COMMON_DIRECTIVES],
@@ -28,4 +28,4 @@ export class DisableSwitchComponent {
 
 
 }
-// << slide-code-default-value
+// << disable-switch-code

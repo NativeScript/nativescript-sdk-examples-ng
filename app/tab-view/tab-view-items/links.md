@@ -1,3 +1,3 @@
-[Switch Class](https://docs.nativescript.org/api-reference/classes/_ui_switch_.switch.html)
+[TabView Class](https://docs.nativescript.org/api-reference/modules/_ui_tab_view_.html)
 
-[Switch Cookbook](http://docs.nativescript.org/cookbook/ui/switch)
+[TabView Cookbook](https://docs.nativescript.org/cookbook/ui/tab-view)

@@ -1,8 +1,8 @@
 <StackLayout exampleTitle>
-    <!-- >> clear-text-search-bar-xml -->
+    <!-- >> search-bar-xml-binding -->
     <GridLayout rows="auto auto" columns="*">
         <SearchBar #sb hint="Search" [text]="searchPhrase" (textChange)="prop=sb.text" row="0"></SearchBar>
         <Label [text]="'Your are searching for '+prop" textWrap="true" row="1" fontSize="10"></Label>
     </GridLayout>
-    <!-- << clear-text-search-bar-xml -->
+    <!-- << search-bar-xml-binding -->
 </StackLayout>
