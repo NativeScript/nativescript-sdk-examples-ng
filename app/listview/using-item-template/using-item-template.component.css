@@ -5,11 +5,11 @@ GridLayout {
 
 .model {
     background-color: whitesmoke;
-    color: dodgerblue;
+    color: blue;
     margin: 5;
     padding-left: 10;
     border-width: 1;
-    border-color: dodgerblue;
+    border-color: blue;
     border-radius: 10;
 }
 
@@ -24,7 +24,7 @@ GridLayout {
 }
 
 .title {
-    background-color: dodgerblue;
+    background-color: blue;
     color: whitesmoke;
     margin: 20;
     height: 80;

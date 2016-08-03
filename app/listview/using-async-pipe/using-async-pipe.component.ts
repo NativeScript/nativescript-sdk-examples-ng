@@ -29,7 +29,7 @@ export class UsingAsyncPipeComponent {
     constructor() {
         var items = [];
         for (var i = 0; i < 3; i++) {
-            items.push(new DataItem(i, "data item " + i));
+            items.push(new DataItem(i, "data item"));
         }
 
         var subscr;
