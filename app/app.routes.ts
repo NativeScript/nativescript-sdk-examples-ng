@@ -102,6 +102,10 @@ import { PinchExampleComponent } from "./gestures/pinch/pinch.component";
 import { RotationExampleComponent } from "./gestures/rotation/rotation.component";
 import { TouchExampleComponent } from "./gestures/touch/touch.component";
 
+import { NgIfExamplesComponent } from "./ngif/ngif-examples.component";
+import { UsingNgIfComponent } from "./ngif/using-ngif/using-ngif.component";
+import { UsingNgIfForPlatformSpecificComponent } from "./ngif/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component";
+
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
 
@@ -198,6 +202,11 @@ export const routes: RouterConfig = [
   { path: "pinchGestureExampleComponent", component: PinchExampleComponent, data: { title: "Pinch" } },
   { path: "rotationGestureExampleComponent", component: RotationExampleComponent, data: { title: "Rotation" } },
   { path: "touchGestureExampleComponent", component: TouchExampleComponent, data: { title: "Touch" } },
+
+  { path: "ngIfExampleComponent", component: NgIfExamplesComponent, data: { title: "*ngIf" } },
+  { path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf Basic Usage" } },
+  { path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf Hiding Elements" } },
+  
 ];
 
 export const APP_ROUTER_PROVIDERS = [

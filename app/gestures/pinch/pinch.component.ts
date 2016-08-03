@@ -27,28 +27,12 @@ export class PinchExampleComponent {
         console.log("Pinch scale: " + args.scale + " state: " + args.state);
 
         this.scale = args.scale;
-        this.state - args.state;
+        this.state = args.state;
 
         // >> (hide)
         var grid = <GridLayout>args.object;
 
-        if (args.state === 1) {
-            const newOriginX = args.getFocusX() - grid.translateX;
-            const newOriginY = args.getFocusY() - grid.translateY;
-
-            const oldOriginX = grid.originX * grid.getMeasuredWidth();
-            const oldOriginY = grid.originY * grid.getMeasuredHeight();
-
-            grid.translateX += (oldOriginX - newOriginX) * (1 - grid.scaleX);
-            grid.translateY += (oldOriginY - newOriginY) * (1 - grid.scaleY);
-
-            grid.originX = newOriginX / grid.getMeasuredWidth();
-            grid.originY = newOriginY / grid.getMeasuredHeight();
-
-            startScale = grid.scaleX;
-        }
-
-        else if (args.scale && args.scale !== 1) {
+        if (args.scale && args.scale !== 1) {
             let newScale = startScale * args.scale;
 
             grid.scaleX = newScale;
