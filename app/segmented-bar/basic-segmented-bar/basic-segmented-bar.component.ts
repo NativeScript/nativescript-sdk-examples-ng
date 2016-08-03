@@ -11,6 +11,7 @@ import { SegmentedBarItem } from "ui/segmented-bar";
 })
 
 export class BasicSegmentedBarComponent {
+    // >> add-segmentedbar-items
     public myItems:Array<SegmentedBarItem>;
 
     constructor(){
@@ -22,4 +23,5 @@ export class BasicSegmentedBarComponent {
         }
         console.log("array length"+this.myItems.length);
     }
+    // << add-segmentedbar-items
 }

@@ -1,4 +1,5 @@
 <StackLayout exampleTitle>
+    <!-- >> sample-ui-textfield-html -->
    <GridLayout rows="auto auto auto auto auto auto 50" columns="* 50 *">
        <Image class=".imgStyle" src="res://icon" row="0" col="1"></Image>
 
@@ -20,4 +21,5 @@
        <Button row="6" colSpan="3" text="Tap to enter the date" (tap)="enterDate()" [visibility]="isButtonVisible ? 'visible' : 'collapsed'"></Button>
    </GridLayout>
    <DatePicker id="datePicker" #dp [visibility]="isItemVisible ? 'visible' : 'collapsed'"></DatePicker>
+   <!-- << sample-ui-textfield-html -->
 </StackLayout>

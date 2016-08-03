@@ -11,9 +11,10 @@ import { Label } from "ui/label";
 })
 
 export class WebViewHtmlComponent {
+    // >> web-view-src-local-file
     public firstWebViewSRC = '<!DOCTYPE html><html><head><title>MyTitle</title><meta charset="utf-8" /></head><body><span style="color:red; text-align: center;">First WebView</span></body></html>';
 
 
     public secondWebViewSRC = "~/web-view/web-view-html/test.html";
-
+    // << web-view-src-local-file
 }

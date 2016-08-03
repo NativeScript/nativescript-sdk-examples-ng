@@ -13,7 +13,7 @@ import { Label } from "ui/label";
 
 export class ApplyStyleCodeComponent implements OnInit{
     
-    
+    // >> setting-style-via-code
     constructor(private page: Page) {
 
     }
@@ -36,7 +36,7 @@ export class ApplyStyleCodeComponent implements OnInit{
           layout.addChild(newlabel);
        
     }
-
+    // << setting-style-via-code
     public counter: number = 16;
 
     public get message(): string {
@@ -50,5 +50,5 @@ export class ApplyStyleCodeComponent implements OnInit{
     public onTap() {
         this.counter--;
     }
-        
+    
 }

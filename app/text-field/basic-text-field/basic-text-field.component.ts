@@ -14,6 +14,9 @@ import {setTimeout} from "timer"
 })
 
 export class BasicTextFieldComponent {
+
+
+    // >> textfield-handle-submit-event
     public birthDate;
     public isButtonVisible = false;
     public isItemVisible = false;
@@ -60,5 +63,5 @@ export class BasicTextFieldComponent {
         },100);
     }
 
-
+    // << textfield-handle-submit-event
 }

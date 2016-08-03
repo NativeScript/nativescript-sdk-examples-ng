@@ -1,5 +1,5 @@
-Creating sample `Switch` from XML:
-<snippet id='switch-binding-xml'/>
+Setting TextView in HTML:
+<snippet id='textview-html'/>
 
-Handling `changeChange` event and setting default value. 
-<snippet id='switch-event-handle-code'/>
+Disable/Enable edit TextView:
+<snippet id='textview-edit-disable-code'/>

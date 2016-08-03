@@ -12,6 +12,7 @@ import {TextField} from "ui/text-field"
 })
 
 export class BasicWebViewComponent implements OnInit {
+    // >> setting-url-webview
     public url="https://www.nativescript.org";
     public webviewsrc="https://www.nativescript.org";
     
@@ -57,6 +58,6 @@ export class BasicWebViewComponent implements OnInit {
         this.webviewsrc = "https://"+this.url;
     }
     
-
+    // << setting-url-webview
 
 }

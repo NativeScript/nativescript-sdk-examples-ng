@@ -9,6 +9,7 @@ import { SegmentedBarItem } from "ui/segmented-bar";
 })
 
 export class SliderAccessValueComponent {
+    // >> slider-setting-default-values
     public sliderValue = 10;
     public sliderValue2 = 40;
     public sliderValue3 = 30;
@@ -25,6 +26,6 @@ export class SliderAccessValueComponent {
         alert(alertView);
     }
 
-
+    // << slider-setting-default-values
 
 }

@@ -11,10 +11,12 @@ import { Label } from "ui/label"
 })
 
 export class TextFieldBindingComponent {
+    // >> textfield-binding-show-result
   public showAlert(result){
       alert("Text: "+result);
   }
   submit(result){
       alert("Text: "+result);
   }
+  // << textfield-binding-show-result
 }

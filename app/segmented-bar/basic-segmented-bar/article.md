@@ -1,5 +1,5 @@
-Setting basic SearchBar in the html code.
-<snippet id='scroll-view-verical-xml'/>
+Setting SegmentedBar in HTML:
+<snippet id='segmentedBar-basic-xml'/>
 
-Handling SearchBar `submit` event.
-<snippet id='search-bar-submit-event-code'/>
+Setting SegmentedBar items in TypeScript
+<snippet id='add-segmentedbar-items'/>

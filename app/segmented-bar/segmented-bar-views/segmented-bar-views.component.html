@@ -1,4 +1,5 @@
 <StackLayout exampleTitle>
+    <!-- >> segmentedbar-show-views -->
     <SegmentedBar #sb [items]="Items" [selectedIndex]="index" (selectedIndexChange)="onChange(sb.selectedIndex)">
     </SegmentedBar>
     <StackLayout visibility="{{ visibility1 ? 'visible' : 'collapsed' }}">
@@ -18,4 +19,5 @@
         
         <Button text="TAP" (tap)="onTap()"></Button>
     </StackLayout>
+    <!-- << segmentedbar-show-views -->
 </StackLayout>

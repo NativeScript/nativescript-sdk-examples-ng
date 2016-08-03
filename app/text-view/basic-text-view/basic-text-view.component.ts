@@ -10,7 +10,7 @@ import { COMMON_DIRECTIVES } from '../../directives';
 
 export class BasicTextViewComponent {
 
-
+    // >> textview-edit-disable-code
     public editState = true;
     public tvtext = "";
 
@@ -27,5 +27,5 @@ export class BasicTextViewComponent {
     showText(){
         alert("Text: "+this.tvtext);
     }
-
+    // << textview-edit-disable-code
 }

@@ -1,4 +1,5 @@
 <StackLayout exampleTitle>
+    <!-- >> web-view-html -->
    <GridLayout  rows="100" columns="50 * 50">
        <Button row="0" col="0" class="icon" text="&#xe94d;" (tap)="goBack()"></Button>   
        <TextField id="urlField" row="0" col="1" hint="Enter URL" [(ngModel)]="url"  returnKeyType="done"
@@ -6,4 +7,5 @@
        <Button row="0" col="2" class="icon" text="&#xe916;" (tap)="loadPage()"></Button>   
    </GridLayout>
     <WebView id="wv"  [src]="webviewsrc"></WebView>
+    <!-- << web-view-html -->
 </StackLayout>

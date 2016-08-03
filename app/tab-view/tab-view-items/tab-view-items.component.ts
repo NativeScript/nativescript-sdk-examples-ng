@@ -11,7 +11,7 @@ import { Label } from "ui/label"
 })
 
 export class TabViewItemsComponent {
-
+    // >> add-items-code
    public tabviewitems:Array<any>;
 
    constructor()
@@ -46,6 +46,6 @@ export class TabViewItemsComponent {
    public tabViewIndexChange(result){
        alert("Tab View selected index: "+result);
    }
-
+   // << add-items-code
 
 }

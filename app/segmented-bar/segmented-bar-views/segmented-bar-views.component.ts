@@ -11,6 +11,7 @@ import { SegmentedBarItem } from "ui/segmented-bar";
 })
 
 export class SegmentedBarViewsComponent {
+    // >> segmentedbar-items-setting-visibility
     public Items:Array<SegmentedBarItem>;
     public index = 0;
     public visibility1 = true;
@@ -56,6 +57,5 @@ export class SegmentedBarViewsComponent {
     public onTap(){
         alert("Selected index "+this.index);
     }
-
-
+    // << segmentedbar-items-setting-visibility
 }
