@@ -4,13 +4,13 @@ ListView {
 }
 
 .odd {
-    background-color: darkcyan;
+    background-color: blue;
     color: whitesmoke;
     margin: 5;
 }
 
 .even {
     background-color: whitesmoke;
-    color: darkcyan;
+    color: blue;
     margin: 5;
 }

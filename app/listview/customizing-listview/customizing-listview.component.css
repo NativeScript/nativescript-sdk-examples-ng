@@ -6,7 +6,7 @@ ListView {
 
 StackLayout {
     background-color: whitesmoke;
-    color: darkcyan;
+    color: blue;
     margin: 5;
 }
 
@@ -17,7 +17,7 @@ Label {
 
 /* >> listview-customize-css */
 .third {
-    background-color: darkcyan;
+    background-color: blue;
     color: whitesmoke;
     margin: 5;
 }

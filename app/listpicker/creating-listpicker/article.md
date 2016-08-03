@@ -1,5 +1,5 @@
-HTML
-<snippet id='creating-listpicker-html'/>
+HTML:
+    <snippet id='creating-listpicker-html'/>
 
-TypeScript
-<snippet id='creating-listpicker-code'/>
+TypeScript:
+    <snippet id='creating-listpicker-code'/>
