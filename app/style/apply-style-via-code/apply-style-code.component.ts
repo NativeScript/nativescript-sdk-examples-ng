@@ -1,5 +1,4 @@
-import {Component, ViewChild, OnInit, ElementRef} from "@angular/core";
-import { EventData } from "data/observable";
+import {Component, OnInit} from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
 import { Page } from "ui/page"
 import { StackLayout } from "ui/layouts/stack-layout";
@@ -20,7 +19,6 @@ export class ApplyStyleCodeComponent implements OnInit{
 
     ngOnInit() {
         let layout:StackLayout = this.page.getViewById<StackLayout>("mainlayout");
-
 
           this.page.css = "button, label, stack-layout {horizontal-align: center;}";
           this.page.css = "button {font-size: 36;}"

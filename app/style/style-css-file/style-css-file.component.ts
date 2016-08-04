@@ -1,9 +1,5 @@
-import {Component, OnInit, ElementRef, ViewChild} from "@angular/core";
-import { EventData } from "data/observable";
+import { Component } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
-import {WebView, LoadEventData} from "ui/web-view";
-import {Page} from "ui/page";
-import {TextField} from "ui/text-field"
 
 @Component({
     selector: 'style-css-file-component',

@@ -1,5 +1,4 @@
 import {Component, ViewChild, ElementRef} from "@angular/core";
-import { EventData } from "data/observable";
 import { COMMON_DIRECTIVES } from '../../directives';
 import { Switch } from "ui/switch"
 // >> disable-switch-code
@@ -24,8 +23,6 @@ export class DisableSwitchComponent {
         secondsw.isEnabled = false;
         thirdsw.isEnabled = false;
     }
-
-
 
 }
 // << disable-switch-code

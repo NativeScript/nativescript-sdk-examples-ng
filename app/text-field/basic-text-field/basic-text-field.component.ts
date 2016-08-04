@@ -1,5 +1,4 @@
-import {Component, OnInit, ElementRef, ViewChild} from "@angular/core";
-import { EventData } from "data/observable";
+import { Component } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
 import {DatePicker} from "ui/date-picker";
 import {TextField} from "ui/text-field";
@@ -14,7 +13,6 @@ import {setTimeout} from "timer"
 })
 
 export class BasicTextFieldComponent {
-
 
     // >> textfield-handle-submit-event
     public birthDate;
@@ -32,7 +30,6 @@ export class BasicTextFieldComponent {
         datePicker.minDate = new Date(1975, 0, 29);
         datePicker.maxDate = new Date(2045, 4, 12);
     }
-
 
     enterDate(){
         let datePicker = this.page.getViewById<DatePicker>("datePicker");

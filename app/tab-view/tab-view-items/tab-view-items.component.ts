@@ -1,5 +1,4 @@
-import {Component, ViewChild, ElementRef} from "@angular/core";
-import { EventData } from "data/observable";
+import { Component } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label"
@@ -37,9 +36,6 @@ export class TabViewItemsComponent {
        this.tabviewitems.push({"title":"Tab1", "view":innerFirstStackLayout});
        this.tabviewitems.push({"title":"Tab2", "view":innerSecondStackLayout});
        this.tabviewitems.push({"title":"Tab3", "view":innerThirdStackLayout});
-
-
-
 
    }
 

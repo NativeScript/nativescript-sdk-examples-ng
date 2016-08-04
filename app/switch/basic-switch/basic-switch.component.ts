@@ -1,7 +1,5 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { EventData } from "data/observable";
+import { Component } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
-import { SegmentedBarItem } from "ui/segmented-bar";
 // >> switch-event-handle-code
 @Component({
     selector: 'basic-switch-component',

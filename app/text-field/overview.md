@@ -1,1 +1,2 @@
-Scrollable view allows you do display scrollable area in your application, which have content that is larger than its bounds.
+TextField allows you to type text in your app. I case you want to use some field for typing a password or some other personal information you could secure the content by setting `secure` property to true.
+Another useful feature for Angular2 project is using `pipes`, which could help you to specify the text format. 

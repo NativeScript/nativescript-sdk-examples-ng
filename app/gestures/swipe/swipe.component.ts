@@ -1,6 +1,5 @@
 import { Component}  from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
-import { GridLayout } from "ui/layouts/grid-layout";
 // >> swipe-code 
 import { SwipeGestureEventData } from "ui/gestures";
 

@@ -1,5 +1,4 @@
-import {Component, OnInit, ElementRef, ViewChild} from "@angular/core";
-import { EventData } from "data/observable";
+import {Component, OnInit} from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
 import {WebView, LoadEventData} from "ui/web-view";
 import {Page} from "ui/page";
@@ -15,7 +14,6 @@ export class BasicWebViewComponent implements OnInit {
     // >> setting-url-webview
     public url="https://www.nativescript.org";
     public webviewsrc="https://www.nativescript.org";
-    
     
     constructor(private page: Page) {
     }
@@ -35,14 +33,11 @@ export class BasicWebViewComponent implements OnInit {
         });
     }
         
-    
-
     loadPage(){
         let textField:TextField = this.page.getViewById<TextField>("urlField");
         this.webviewsrc = "https://"+this.url;
         textField.dismissSoftInput();
     }
-
 
     goBack(){
         let webview:WebView = this.page.getViewById<WebView>("wv");
@@ -50,9 +45,6 @@ export class BasicWebViewComponent implements OnInit {
             webview.goBack();
         }
     }
-
-
-
 
     submit(){
         this.webviewsrc = "https://"+this.url;

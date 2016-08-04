@@ -1,5 +1,4 @@
-import {Component, OnInit, ElementRef, ViewChild} from "@angular/core";
-import { EventData } from "data/observable";
+import { Component } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
 
 @Component({
@@ -13,7 +12,6 @@ export class BasicTextViewComponent {
     // >> textview-edit-disable-code
     public editState = true;
     public tvtext = "";
-
 
     disableTextView(){
         if(this.editState){

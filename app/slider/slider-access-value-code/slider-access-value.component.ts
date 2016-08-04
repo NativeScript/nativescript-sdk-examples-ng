@@ -1,7 +1,6 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { EventData } from "data/observable";
+import { Component } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
-import { SegmentedBarItem } from "ui/segmented-bar";
+
 @Component({
     selector: 'slider-access-value-component',
     directives: [COMMON_DIRECTIVES],
@@ -15,7 +14,6 @@ export class SliderAccessValueComponent {
     public sliderValue3 = 30;
     public sliderValue4 = 80;
     public sliderValue5 = 100;
-
 
     public onTap(){
         var alertView = "First Slider"+this.sliderValue+"\n"+
