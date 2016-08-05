@@ -1,10 +1,6 @@
 import { Component} from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
 
-class DataItem {
-    constructor(public name: string) { }
-}
-
 @Component({
     selector: 'search-bar-binding-component',
     directives: [COMMON_DIRECTIVES],

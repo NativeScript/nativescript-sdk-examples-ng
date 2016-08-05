@@ -1,16 +1,21 @@
+// >> add-items-code
 import { Component } from "@angular/core";
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide)
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label"
 
 @Component({
     selector: 'tab-view-items-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    // << (hide)
     templateUrl: 'tab-view/tab-view-items/tab-view-items.component.html',
 })
 
 export class TabViewItemsComponent {
-    // >> add-items-code
+    
    public tabviewitems:Array<any>;
 
    constructor()
@@ -42,6 +47,6 @@ export class TabViewItemsComponent {
    public tabViewIndexChange(result){
        alert("Tab View selected index: "+result);
    }
-   // << add-items-code
 
 }
+// << add-items-code

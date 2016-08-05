@@ -1,10 +1,15 @@
-import {Component, ViewChild, ElementRef} from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
-import { Switch } from "ui/switch"
 // >> disable-switch-code
+import {Component, ViewChild, ElementRef} from "@angular/core";
+// >> (hide)
+import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide)
+import { Switch } from "ui/switch"
+
 @Component({
     selector: 'disable-switch-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    // << (hide)
     templateUrl: 'switch/disable-switch/disable-switch.component.html',
 })
 

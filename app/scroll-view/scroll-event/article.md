@@ -3,4 +3,4 @@ Setting ScrollView scroll event in xml.
 
 Declaring scroll method in the code.
 
-<snippet id='scroll-view-horizontal-code'/>
+<snippet id='scroll-view-event-code'/>

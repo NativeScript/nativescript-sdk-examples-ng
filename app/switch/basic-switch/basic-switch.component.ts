@@ -1,9 +1,14 @@
-import { Component } from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 // >> switch-event-handle-code
+import { Component } from "@angular/core";
+// >> (hide)
+import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide0)
+
 @Component({
     selector: 'basic-switch-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    // << (hide)
     templateUrl: 'switch/basic-switch/basic-switch.component.html'
 })
 

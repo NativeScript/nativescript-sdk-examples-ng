@@ -1,5 +1,8 @@
+// >> textfield-handle-submit-event
 import { Component } from "@angular/core";
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide)
 import {DatePicker} from "ui/date-picker";
 import {TextField} from "ui/text-field";
 import {Page} from "ui/page";
@@ -7,14 +10,14 @@ import {setTimeout} from "timer"
 
 @Component({
     selector: 'basic-text-field-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
-    templateUrl: 'text-field/basic-text-field/basic-text-field.component.html',
-    styleUrls:["text-field/basic-text-field/style.css"]
+    // << (hide)
+    templateUrl: 'text-field/basic-text-field/basic-text-field.component.html'
 })
 
 export class BasicTextFieldComponent {
 
-    // >> textfield-handle-submit-event
     public birthDate;
     public isButtonVisible = false;
     public isItemVisible = false;
@@ -60,5 +63,5 @@ export class BasicTextFieldComponent {
         },100);
     }
 
-    // << textfield-handle-submit-event
 }
+// << textfield-handle-submit-event

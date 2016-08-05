@@ -1,18 +1,22 @@
+// >> setting-style-via-code
 import {Component, OnInit} from "@angular/core";
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
+// >> (hide)
 import { Page } from "ui/page"
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
 
 @Component({
     selector: 'apply-style-code-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    // << (hide)
     templateUrl: 'style/apply-style-via-code/apply-style-code.component.html'
 })
 
 export class ApplyStyleCodeComponent implements OnInit{
     
-    // >> setting-style-via-code
     constructor(private page: Page) {
 
     }
@@ -34,7 +38,7 @@ export class ApplyStyleCodeComponent implements OnInit{
           layout.addChild(newlabel);
        
     }
-    // << setting-style-via-code
+    
     public counter: number = 16;
 
     public get message(): string {
@@ -50,3 +54,4 @@ export class ApplyStyleCodeComponent implements OnInit{
     }
     
 }
+// << setting-style-via-code
