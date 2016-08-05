@@ -1,5 +1,5 @@
 // >> using-async-pipe-code
-import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Observable as RxObservable } from 'rxjs/Observable';
 
 export class DataItem {

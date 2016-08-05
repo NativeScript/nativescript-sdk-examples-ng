@@ -1,8 +1,5 @@
 // >> creating-label-code 
 import { Component }  from "@angular/core";
-import { Label } from "ui/label";
-import { Observable } from "data/observable";
-
 // >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
 // << (hide)

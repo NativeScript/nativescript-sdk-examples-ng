@@ -1,6 +1,5 @@
 // >> using-item-template-code 
-import { Component, ChangeDetectionStrategy, Input, ElementRef }  from "@angular/core";
-import { SetupItemViewArgs, ListViewComponent } from "nativescript-angular/directives";
+import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
 // >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
 // << (hide)
@@ -17,7 +16,6 @@ import { COMMON_DIRECTIVES } from '../../directives';
 })
 export class ItemComponent {
     @Input() data: any;
-    constructor() { }
 }
 
 @Component({
@@ -38,7 +36,6 @@ export class ItemComponent {
 })
 export class UsingItemTemplateComponent {
     public manufacturers: Array<any>;
-    private counter: number;
 
     constructor() {
         var bugatti = [{"model": "Bugatti Chiron", "speed" : "261"}, {"model": "Bugatti Veyron Super Sport", "speed" : "268"}];
@@ -48,5 +45,3 @@ export class UsingItemTemplateComponent {
     }
 }
 // << using-item-template-code 
-
-

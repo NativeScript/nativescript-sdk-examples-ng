@@ -1,5 +1,4 @@
 import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { EventData } from "data/observable";
 import { COMMON_DIRECTIVES } from '../../directives';
 
 class DataItem {
@@ -39,7 +38,7 @@ export class ClearSearchBarComponent {
         var searchValue = value.toLowerCase();
         if(value !== "" ){
             for(var i=0; i<this.arrayItem.length; i++){
-                if(this.arrayItem[i].name.toLowerCase().indexOf(value) !== -1){
+                if(this.arrayItem[i].name.toLowerCase().indexOf(searchValue) !== -1){
                     this.myItems.push(this.arrayItem[i]);
                 }
             }
