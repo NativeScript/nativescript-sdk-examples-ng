@@ -2,7 +2,7 @@
 import { Component } from "@angular/core";
 // >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide0)
+// << (hide)
 
 @Component({
     selector: 'basic-switch-component',

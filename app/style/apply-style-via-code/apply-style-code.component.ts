@@ -2,7 +2,7 @@
 import {Component, OnInit} from "@angular/core";
 // >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
-// >> (hide)
+// << (hide)
 import { Page } from "ui/page"
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
