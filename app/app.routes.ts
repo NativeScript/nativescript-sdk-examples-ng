@@ -95,6 +95,9 @@ import { UsingNgIfForPlatformSpecificComponent } from "./ngif/using-ngif-for-pla
 import { CustomDirectiveExamplesComponent } from "./custom-directive/custom-directive-examples.component";
 import { CreateCustomDirectiveExampleComponent } from "./custom-directive/create-custom-directive/create-custom-directive.component";
 import { UnlessDirectiveExampleComponent } from "./custom-directive/unless-directive/unless-directive.component";
+import { NgISwitchExamplesComponent } from "./ngswitch/ngswitch-examples.component";
+import { UsingNgSwitchExamplesComponent } from "./ngswitch/ngswitch-usage/ngswitch-usage.component";
+
 
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "Examples List" } },
@@ -191,7 +194,9 @@ export const routes: RouterConfig = [
   { path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf Hiding Elements" } },
   { path: "customDirectiveExampleComponent", component: CustomDirectiveExamplesComponent, data: { title: "Custom *ng Directives" } },
   { path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create Custom *ng Directive" } },
-  { path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless Directive Example" } } 
+  { path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless Directive Example" } }, 
+  { path: "ngSwitchExampleComponent", component: NgISwitchExamplesComponent, data: { title: "*ngSwitch" } },
+  { path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch Basic Usage" } },  
 ];
 
 export const APP_ROUTER_PROVIDERS = [
