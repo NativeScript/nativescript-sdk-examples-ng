@@ -5,10 +5,10 @@ In the code snippets below we will show how to:
 - customize every third ListView item.
 
 HTML:
-    <snippet id='listview-customize-html'/>
+<snippet id='listview-customize-html'/>
 
 TypeScript:
-    <snippet id='listview-customize-code'/>
+<snippet id='listview-customize-code'/>
 
 CSS:
-    <snippet id='listview-customize-css'/>
+<snippet id='listview-customize-css'/>

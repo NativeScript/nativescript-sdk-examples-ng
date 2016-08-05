@@ -1,2 +1,2 @@
 SearchBar binding example in HTML.
-<snippet id='search-bar-xml-binding'/>
+<snippet id='search-bar-html-binding'/>

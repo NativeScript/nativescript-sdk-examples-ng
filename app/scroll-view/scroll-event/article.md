@@ -1,5 +1,5 @@
 Setting ScrollView scroll event in xml.
-<snippet id='scroll-event-xml'/>
+<snippet id='scroll-event-html'/>
 
 Declaring scroll method in the code.
 

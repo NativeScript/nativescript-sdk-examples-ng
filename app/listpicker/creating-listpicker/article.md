@@ -1,5 +1,5 @@
 HTML:
-    <snippet id='creating-listpicker-html'/>
+<snippet id='creating-listpicker-html'/>
 
 TypeScript:
-    <snippet id='creating-listpicker-code'/>
+<snippet id='creating-listpicker-code'/>
