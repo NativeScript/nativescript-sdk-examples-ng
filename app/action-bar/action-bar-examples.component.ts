@@ -1,12 +1,29 @@
-import { Component } from "@angular/core";
-import { COMMON_DIRECTIVES } from '../directives';
+import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
 import { NS_ROUTER_DIRECTIVES } from 'nativescript-angular/router';
+import { COMMON_DIRECTIVES } from './../directives';
+import { Link } from "./../link";
 
+var menuLinks = [
+    new Link("Action Items", "/actionItemsComponent"),
+    new Link("Navigation Button", "/navigationButtonComponent"),
+    new Link("Title", "/titleComponent")
+];
+     
 @Component({
     selector: 'action-bar-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'action-bar/action-bar-examples.component.html'
+    templateUrl: 'action-bar/action-bar-examples.component.html',
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class ActionBarExamplesComponent {
+    public links: Array<Link>;
+
+    constructor() {
+        this.links = [];
+
+        for (var i = 0; i < menuLinks.length; i++) {
+            this.links.push(menuLinks[i]);
+        }
+    }
 }

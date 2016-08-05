@@ -1,8 +1,8 @@
 <StackLayout exampleTitle margin="5">
     <Label text="Modify button text: " margin-left="10"></Label>
-    <TextField [(ngModel)]='model.content'></TextField>
+    <TextField [(ngModel)]="content"></TextField>
 
     <!-- >> button-binding-text-html -->
-    <Button id="button" text ='{{ model.content }}'></Button>
+    <Button id="button" [text]="content"></Button>
     <!-- << button-binding-text-html -->
   </StackLayout>

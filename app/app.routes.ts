@@ -191,8 +191,7 @@ export const routes: RouterConfig = [
   { path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf Hiding Elements" } },
   { path: "customDirectiveExampleComponent", component: CustomDirectiveExamplesComponent, data: { title: "Custom *ng Directives" } },
   { path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create Custom *ng Directive" } },
-  { path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless Directive Example" } },
-   
+  { path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless Directive Example" } } 
 ];
 
 export const APP_ROUTER_PROVIDERS = [

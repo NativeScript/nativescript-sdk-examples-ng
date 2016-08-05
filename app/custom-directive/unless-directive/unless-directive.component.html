@@ -7,7 +7,7 @@
     <GridLayout *myUnless="condition" width="300" height="300" borderRadius="150" backgroundColor="green">
         <Label text="Access granted!" textWrap="true"></Label>
     </GridLayout>
-    <GridLayout myUnless="!condition" width="300" height="300" borderRadius="150" backgroundColor="red">
+    <GridLayout *myUnless="!condition" width="300" height="300" borderRadius="150" backgroundColor="red">
         <Label text="You shell not pass!" textWrap="true"></Label>
     </GridLayout>
     <!-- << unless-directive-html -->

@@ -1,6 +1,5 @@
 import { Component } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
-import observable = require("data/observable");
 
 @Component({
     selector: 'button-component',
@@ -9,10 +8,9 @@ import observable = require("data/observable");
 })
 
 export class ButtonBindingTextComponent {      
-   model : observable.Observable;
+   public content : string;
 
    constructor() {
-    this.model = new observable.Observable();
-    this.model.set("content", "Button Text");
+    this.content = "Test Button";
   }
 }

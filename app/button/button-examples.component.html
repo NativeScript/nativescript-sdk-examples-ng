@@ -1,7 +1,9 @@
-<ScrollView exampleTitle>
-    <StackLayout class="nav-button-container">
-      <Button class="nav-button" text="Tap Event" [nsRouterLink]="['/buttonTapEventComponent']"></Button>
-      <Button class="nav-button" text="Text" [nsRouterLink]="['/buttonTextComponent']"></Button>      
-      <Button class="nav-button" text="Binding Text" [nsRouterLink]="['/buttonBindingTextComponent']"></Button>      
-    </StackLayout>   
-</ScrollView>
+<GridLayout rows="*" exampleTitle>
+    <ListView [items]="links">
+        <template let-item="item">
+            <StackLayout class="cell">
+                <Label [text]="item.title" [nsRouterLink]="item.link"></Label>
+            </StackLayout>
+        </template>
+    </ListView>
+</GridLayout>

@@ -1,6 +1,9 @@
-<ScrollView exampleTitle>
-    <StackLayout class="nav-button-container">
-      <Button class="nav-button" text="Basic Slider" [nsRouterLink]="['/basicSliderComponent']"></Button>
-      <Button class="nav-button" text="Segmented Bar View Change" [nsRouterLink]="['/accessSliderValueComponent']"></Button>    
-    </StackLayout>
-</ScrollView>
+<GridLayout rows="*" exampleTitle>
+    <ListView [items]="links">
+        <template let-item="item">
+            <StackLayout class="cell">
+                <Label [text]="item.title" [nsRouterLink]="item.link"></Label>
+            </StackLayout>
+        </template>
+    </ListView>
+</GridLayout>
