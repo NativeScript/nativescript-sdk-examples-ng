@@ -33,7 +33,8 @@ var mainMenuLinks = [
     new Link("Progress", "/progressExamplesComponent"),
     new Link("*ngFor Directive", "/ngForExampleComponent"),
     new Link("*ngIf Directive", "/ngIfExampleComponent"),
-    new Link("*ng Custom Directive", "/customDirectiveExampleComponent")
+    new Link("*ng Custom Directive", "/customDirectiveExampleComponent"),
+    new Link("*ngSwitch Directive", "/ngSwitchExampleComponent"),
 ];
      
 @Component({
