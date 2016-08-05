@@ -1,5 +1,5 @@
 HTML:
-    <snippet id='using-selected-index-html'/>
+<snippet id='using-selected-index-html'/>
 
 TypeScript:
-	<snippet id='using-selected-index-code'/>
+<snippet id='using-selected-index-code'/>

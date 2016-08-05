@@ -1,5 +1,5 @@
 <StackLayout exampleTitle>
-    <!-- >> clear-text-search-bar-xml -->
+    <!-- >> clear-text-search-bar-html -->
     <GridLayout rows="auto *" columns="*">
         <SearchBar row="0" #sb hint="Search" (clear)="onClear" [text]="searchPhrase" (submit)="onSubmit(sb.text)"></SearchBar>
         <ListView row="1" [items]="myItems">
@@ -10,5 +10,5 @@
             </template>
         </ListView>
     </GridLayout>
-    <!-- << clear-text-search-bar-xml -->
+    <!-- << clear-text-search-bar-html -->
 </StackLayout>

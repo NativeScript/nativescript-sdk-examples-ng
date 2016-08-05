@@ -3,7 +3,7 @@
     <GridLayout rows="auto auto" columns="50 * 50">
         <Label [text]="labeltext" textWrap="true" row="0" colSpan="3"></Label>
         <Label text="&#xe90b;" textWrap="true" row="1" col="0" fontSize="15" class="icon" ></Label>
-        <Slider #sl minValue="10" maxValue="70" value="sliderValue" (valueChange)="labeltext=sl.value" row="1" col="1"></Slider>
+        <Slider #slfirst minValue="10" maxValue="70" (valueChange)="labeltext=slfirst.value" row="1" col="1"></Slider>
         <Label text="&#xe90b;" textWrap="true" row="1" col="2" fontSize="20" class="icon" ></Label>
     </GridLayout>
 

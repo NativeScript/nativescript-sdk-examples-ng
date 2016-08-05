@@ -12,7 +12,8 @@ import {TextField} from "ui/text-field"
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
     // << (hide)
-    templateUrl: 'web-view/basic-web-view/basic-web-view.component.html'
+    templateUrl: 'web-view/basic-web-view/basic-web-view.component.html',
+    styleUrls:["web-view/basic-web-view/style.css"]
 })
 
 export class BasicWebViewComponent implements OnInit {
@@ -41,7 +42,7 @@ export class BasicWebViewComponent implements OnInit {
     loadPage(){
         let textField:TextField = this.page.getViewById<TextField>("urlField");
 
-        if(this.url.substring(0, 4) == 'http'){
+        if(this.url.substring(0, 4) === 'http'){
             this.webviewsrc = this.url;
             textField.dismissSoftInput();
         }else{

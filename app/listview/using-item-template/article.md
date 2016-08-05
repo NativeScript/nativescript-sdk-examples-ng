@@ -4,4 +4,4 @@ As shown just creating a custom component and add it to directives of the host c
 Another interesting part is how data is passed to the child control (via @Input decorator).
 
 TypeScript:
-    <snippet id='using-item-template-code'/>
+<snippet id='using-item-template-code'/>
