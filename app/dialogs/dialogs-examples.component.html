@@ -1,3 +1,9 @@
-<StackLayout exampleTitle class="nav-button-container">
-      <Button class="nav-button" text="Display Dialogs" [nsRouterLink]="['/displayDialogsComponent']"></Button>   
-</StackLayout>
+<GridLayout rows="*" exampleTitle>
+    <ListView [items]="links">
+        <template let-item="item">
+            <StackLayout class="cell">
+                <Label [text]="item.title" [nsRouterLink]="item.link"></Label>
+            </StackLayout>
+        </template>
+    </ListView>
+</GridLayout>

@@ -1,7 +1,9 @@
- <ScrollView exampleTitle>
-    <StackLayout class="nav-button-container">
-      <Button class="nav-button" text="Animating Properties" [nsRouterLink]="['/animatingPropertiesComponent']"></Button>   
-      <Button class="nav-button" text="Chaining Animation" [nsRouterLink]="['/chainingAnimationsComponent']"></Button>
-      <Button class="nav-button" text="Animating Multiple Views Simultaneously" [nsRouterLink]="['/multipleViewsComponent']" ></Button>
-    </StackLayout>
-  </ScrollView>
+<GridLayout rows="*" exampleTitle>
+    <ListView [items]="links">
+        <template let-item="item">
+            <StackLayout class="cell">
+                <Label [text]="item.title" [nsRouterLink]="item.link"></Label>
+            </StackLayout>
+        </template>
+    </ListView>
+</GridLayout>

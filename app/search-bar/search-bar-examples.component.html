@@ -1,7 +1,9 @@
-<ScrollView exampleTitle>
-    <StackLayout class="nav-button-container">
-      <Button class="nav-button" text="Basic Search Bar" [nsRouterLink]="['/basicSearchBarComponent']"></Button>   
-      <Button class="nav-button" text="Clear Search Bar" [nsRouterLink]="['/clearSearchBarComponent']"></Button>  
-      <Button class="nav-button" text="Search Bar Binding" [nsRouterLink]="['/searchBarBindingComponent']"></Button>      
-    </StackLayout>
-</ScrollView>
+<GridLayout rows="*" exampleTitle>
+    <ListView [items]="links">
+        <template let-item="item">
+            <StackLayout class="cell">
+                <Label [text]="item.title" [nsRouterLink]="item.link"></Label>
+            </StackLayout>
+        </template>
+    </ListView>
+</GridLayout>
