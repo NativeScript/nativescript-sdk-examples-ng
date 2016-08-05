@@ -1,10 +1,5 @@
 import { Component} from "@angular/core";
-import { EventData } from "data/observable";
 import { COMMON_DIRECTIVES } from '../../directives';
-
-class DataItem {
-    constructor(public name: string) { }
-}
 
 @Component({
     selector: 'search-bar-binding-component',

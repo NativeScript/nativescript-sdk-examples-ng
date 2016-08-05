@@ -1,6 +1,5 @@
 // >> using-selected-index-code 
 import { Component }  from "@angular/core";
-import { ListPicker } from "ui/list-picker";
 // >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
 // << (hide)

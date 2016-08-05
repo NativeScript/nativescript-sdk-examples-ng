@@ -1,5 +1,5 @@
-Setting basic SearchBar in the html code.
-<snippet id='scroll-view-verical-xml'/>
+SegmentedBar in HTML
+<snippet id='segmentedbar-show-views'/>
 
-Handling SearchBar `submit` event.
-<snippet id='search-bar-submit-event-code'/>
+Setting items in SegmentedBar and setting visibility of the views
+<snippet id='segmentedbar-items-setting-visibility'/>

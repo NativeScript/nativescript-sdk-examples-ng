@@ -1,1 +1,1 @@
-Scrollable view allows you do display scrollable area in your application, which have content that is larger than its bounds.
+TextView component could be use to type large text in your app. The component could be use also only to show a conten via setting `editable` property to `false`.

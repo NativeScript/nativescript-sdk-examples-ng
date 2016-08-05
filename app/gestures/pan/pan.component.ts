@@ -1,5 +1,4 @@
 import { Component}  from "@angular/core";
-import { GridLayout } from "ui/layouts/grid-layout";
 import { COMMON_DIRECTIVES } from '../../directives';
 
 // >> pan-code 

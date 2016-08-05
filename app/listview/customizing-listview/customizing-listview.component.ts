@@ -1,6 +1,6 @@
 // >> listview-customize-code 
-import { Component, ChangeDetectionStrategy, Input, ElementRef }  from "@angular/core";
-import { SetupItemViewArgs, ListViewComponent } from "nativescript-angular/directives";
+import { Component, ChangeDetectionStrategy, ElementRef }  from "@angular/core";
+import { SetupItemViewArgs } from "nativescript-angular/directives";
 // >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
 // << (hide)
@@ -25,7 +25,6 @@ var items = ["ALL Heroes (header)", "Razor", "Rubick", "Phantom Lancer", "Legion
 })
 export class CustomizingListViewComponent {
     public dataItems: Array<Item>;
-
 
     constructor(public elementRef: ElementRef) {
         this.dataItems = [];

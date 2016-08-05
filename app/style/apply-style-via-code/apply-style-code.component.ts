@@ -1,18 +1,21 @@
-import {Component, ViewChild, OnInit, ElementRef} from "@angular/core";
-import { EventData } from "data/observable";
+// >> setting-style-via-code
+import {Component, OnInit} from "@angular/core";
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide)
 import { Page } from "ui/page"
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
 
 @Component({
     selector: 'apply-style-code-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    // << (hide)
     templateUrl: 'style/apply-style-via-code/apply-style-code.component.html'
 })
 
 export class ApplyStyleCodeComponent implements OnInit{
-    
     
     constructor(private page: Page) {
 
@@ -20,7 +23,6 @@ export class ApplyStyleCodeComponent implements OnInit{
 
     ngOnInit() {
         let layout:StackLayout = this.page.getViewById<StackLayout>("mainlayout");
-
 
           this.page.css = "button, label, stack-layout {horizontal-align: center;}";
           this.page.css = "button {font-size: 36;}"
@@ -36,7 +38,7 @@ export class ApplyStyleCodeComponent implements OnInit{
           layout.addChild(newlabel);
        
     }
-
+    
     public counter: number = 16;
 
     public get message(): string {
@@ -50,5 +52,6 @@ export class ApplyStyleCodeComponent implements OnInit{
     public onTap() {
         this.counter--;
     }
-        
+    
 }
+// << setting-style-via-code

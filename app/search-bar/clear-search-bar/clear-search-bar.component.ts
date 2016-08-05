@@ -1,20 +1,23 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { EventData } from "data/observable";
-import { COMMON_DIRECTIVES } from '../../directives';
 
+// >> clear-search-bar-submit
+import { Component, ChangeDetectionStrategy } from "@angular/core";
+// >> (hide)
+import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide)
 class DataItem {
     constructor(public name: string) { }
 }
 
 @Component({
     selector: 'clear-search-bar-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    // << (hide)
     templateUrl: 'search-bar/clear-search-bar/clear-search-bar.component.html',
     changeDetection:ChangeDetectionStrategy.OnPush
 })
 
 export class ClearSearchBarComponent {
-    // >> clear-search-bar-submit
     private arrayItem:Array<DataItem>;
     public myItems: Array<DataItem>;
     public searchPhrase:string;
@@ -39,7 +42,7 @@ export class ClearSearchBarComponent {
         var searchValue = value.toLowerCase();
         if(value !== "" ){
             for(var i=0; i<this.arrayItem.length; i++){
-                if(this.arrayItem[i].name.toLowerCase().indexOf(value) !== -1){
+                if(this.arrayItem[i].name.toLowerCase().indexOf(searchValue) !== -1){
                     this.myItems.push(this.arrayItem[i]);
                 }
             }
@@ -49,5 +52,6 @@ export class ClearSearchBarComponent {
     public onClear(){
         this.searchPhrase="";
     }
-    // << clear-search-bar-submit
+    
 }
+// << clear-search-bar-submit

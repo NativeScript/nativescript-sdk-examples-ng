@@ -1,6 +1,5 @@
 // >> creating-htmlview-code 
 import { Component}  from "@angular/core";
-import htmlViewModule = require("ui/html-view");
 
 // >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';

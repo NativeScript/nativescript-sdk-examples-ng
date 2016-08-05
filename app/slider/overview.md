@@ -1,1 +1,2 @@
-Scrollable view allows you do display scrollable area in your application, which have content that is larger than its bounds.
+Using NativeScript Slider Module allows you to create component, which reflect intensity levels.
+This component gives a way to allow user to select value form specific range via setting the `minValue` and `maxValue` of the component.

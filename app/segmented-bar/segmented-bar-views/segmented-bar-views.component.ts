@@ -1,16 +1,21 @@
+// >> segmentedbar-items-setting-visibility
 import { Component } from "@angular/core";
-import { EventData } from "data/observable";
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide)
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
     selector: 'segmented-bar-views-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    // << (hide)
     styleUrls:['segmented-bar/segmented-bar-views/style.css'],
     templateUrl: 'segmented-bar/segmented-bar-views/segmented-bar-views.component.html'
 })
 
 export class SegmentedBarViewsComponent {
+    
     public Items:Array<SegmentedBarItem>;
     public index = 0;
     public visibility1 = true;
@@ -56,6 +61,6 @@ export class SegmentedBarViewsComponent {
     public onTap(){
         alert("Selected index "+this.index);
     }
-
-
+    
 }
+// << segmentedbar-items-setting-visibility

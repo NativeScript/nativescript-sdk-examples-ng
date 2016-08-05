@@ -1,19 +1,21 @@
-import {Component, OnInit, ElementRef, ViewChild} from "@angular/core";
-import { EventData } from "data/observable";
+// >> textview-edit-disable-code
+import { Component } from "@angular/core";
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide)
 
 @Component({
     selector: 'basic-text-view-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    // << (hide)
     templateUrl: 'text-view/basic-text-view/basic-text-view.component.html'
 })
 
 export class BasicTextViewComponent {
 
-
     public editState = true;
     public tvtext = "";
-
 
     disableTextView(){
         if(this.editState){
@@ -27,5 +29,6 @@ export class BasicTextViewComponent {
     showText(){
         alert("Text: "+this.tvtext);
     }
-
+    
 }
+// << textview-edit-disable-code

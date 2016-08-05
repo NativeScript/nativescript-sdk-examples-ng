@@ -1,11 +1,14 @@
-import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { EventData } from "data/observable";
-import { COMMON_DIRECTIVES } from '../../directives';
-import { SegmentedBarItem } from "ui/segmented-bar";
 // >> switch-event-handle-code
+import { Component } from "@angular/core";
+// >> (hide)
+import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide)
+
 @Component({
     selector: 'basic-switch-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    // << (hide)
     templateUrl: 'switch/basic-switch/basic-switch.component.html'
 })
 

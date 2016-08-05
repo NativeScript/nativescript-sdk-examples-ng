@@ -1,6 +1,8 @@
-import {Component, OnInit, ElementRef, ViewChild} from "@angular/core";
-import { EventData } from "data/observable";
+// >> textfield-handle-submit-event
+import { Component } from "@angular/core";
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide)
 import {DatePicker} from "ui/date-picker";
 import {TextField} from "ui/text-field";
 import {Page} from "ui/page";
@@ -8,12 +10,14 @@ import {setTimeout} from "timer"
 
 @Component({
     selector: 'basic-text-field-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
-    templateUrl: 'text-field/basic-text-field/basic-text-field.component.html',
-    styleUrls:["text-field/basic-text-field/style.css"]
+    // << (hide)
+    templateUrl: 'text-field/basic-text-field/basic-text-field.component.html'
 })
 
 export class BasicTextFieldComponent {
+
     public birthDate;
     public isButtonVisible = false;
     public isItemVisible = false;
@@ -29,7 +33,6 @@ export class BasicTextFieldComponent {
         datePicker.minDate = new Date(1975, 0, 29);
         datePicker.maxDate = new Date(2045, 4, 12);
     }
-
 
     enterDate(){
         let datePicker = this.page.getViewById<DatePicker>("datePicker");
@@ -60,5 +63,5 @@ export class BasicTextFieldComponent {
         },100);
     }
 
-
 }
+// << textfield-handle-submit-event

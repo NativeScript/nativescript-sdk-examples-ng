@@ -1,17 +1,21 @@
-import {Component, ViewChild, ElementRef} from "@angular/core";
-import { EventData } from "data/observable";
+// >> add-items-code
+import { Component } from "@angular/core";
+// >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
+// << (hide)
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label"
 
 @Component({
     selector: 'tab-view-items-component',
+    // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    // << (hide)
     templateUrl: 'tab-view/tab-view-items/tab-view-items.component.html',
 })
 
 export class TabViewItemsComponent {
-
+    
    public tabviewitems:Array<any>;
 
    constructor()
@@ -38,14 +42,11 @@ export class TabViewItemsComponent {
        this.tabviewitems.push({"title":"Tab2", "view":innerSecondStackLayout});
        this.tabviewitems.push({"title":"Tab3", "view":innerThirdStackLayout});
 
-
-
-
    }
 
    public tabViewIndexChange(result){
        alert("Tab View selected index: "+result);
    }
 
-
 }
+// << add-items-code

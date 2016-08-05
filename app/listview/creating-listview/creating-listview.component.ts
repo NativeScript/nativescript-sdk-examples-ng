@@ -1,5 +1,5 @@
 // >> listview-create-code 
-import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
+import { Component, ChangeDetectionStrategy }  from "@angular/core";
 // >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
 // << (hide)

@@ -1,1 +1,1 @@
-Scrollable view allows you do display scrollable area in your application, which have content that is larger than its bounds.
+WebView component inside the Angular project could be use to display web content from the network by edding the page url in the WebView `src` property  or to display local html file by addint the path to the file. 
