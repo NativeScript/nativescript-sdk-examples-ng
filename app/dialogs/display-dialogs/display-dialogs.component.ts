@@ -58,7 +58,9 @@ export class DisplayDialogsComponent {
             title: "Login",
             message: "Login",
             username: "john_doe",
-            password: ""
+            password: "", 
+            okButtonText: "Ok",
+            cancelButtonText: "Cancel"
         };
         dialogs.login(options).then((loginResult: dialogs.LoginResult) => {
             console.log(loginResult.result);
@@ -71,7 +73,9 @@ export class DisplayDialogsComponent {
         var options = {
             title: "Name",
             defaultText: "Enter your name",
-            inputType: dialogs.inputType.text
+            inputType: dialogs.inputType.text, 
+            okButtonText: "Ok",
+            cancelButtonText: "Cancel"
         };
         dialogs.prompt(options).then((result: dialogs.PromptResult) => {
             console.log("Hello, " + result.text);
