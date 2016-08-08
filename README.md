@@ -54,7 +54,7 @@ Attaching the tap event handler from code:
 
 |Android|iOS|
 |---|---|
-|![Android](app/button-tap-event/android.png "Android")|![iOS](app/button-tap-event/ios.png "iOS")|
+|![Android](app/button/tap-event/android.png "Android")|![iOS](app/button/tap-event/ios.png "iOS")|
 
 6. Finally, add your example page to the main page navigation list:
 
