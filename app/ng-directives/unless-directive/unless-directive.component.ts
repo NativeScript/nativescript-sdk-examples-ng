@@ -7,11 +7,11 @@ import { COMMON_DIRECTIVES } from '../../directives';
 
 @Component({
     selector: 'unless-directive-component',
-    styleUrls:["custom-directive/unless-directive/unless-directive.component.css"],
+    styleUrls:["ng-directives/unless-directive/unless-directive.component.css"],
     // >> (hide)
     directives: [UnlessDirective, COMMON_DIRECTIVES],
     // << (hide)
-    templateUrl: "custom-directive/unless-directive/unless-directive.component.html",
+    templateUrl: "ng-directives/unless-directive/unless-directive.component.html",
 })
 export class UnlessDirectiveExampleComponent {
 

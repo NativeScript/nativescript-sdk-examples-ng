@@ -7,11 +7,11 @@ import { COMMON_DIRECTIVES } from '../../directives';
 
 @Component({
     selector: 'ngif-for-platform-specific-component',
-    styleUrls:["ngif/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component.css"],
+    styleUrls:["ng-directives/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component.css"],
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
     // << (hide)
-    templateUrl: "ngif/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component.html",
+    templateUrl: "ng-directives/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component.html",
 })
 
 export class UsingNgIfForPlatformSpecificComponent implements OnInit {

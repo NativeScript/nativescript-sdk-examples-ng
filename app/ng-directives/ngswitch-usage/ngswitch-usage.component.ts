@@ -9,7 +9,7 @@ import { COMMON_DIRECTIVES } from '../../directives';
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
     // << (hide)
-    templateUrl: "ngswitch/ngswitch-usage/ngswitch-usage.component.html",
+    templateUrl: "ng-directives/ngswitch-usage/ngswitch-usage.component.html",
 })
 
 export class UsingNgSwitchExamplesComponent {

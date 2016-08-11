@@ -8,11 +8,11 @@ import { fruits } from "./fruits";
 // >> ngfor-bind-items-code 
 @Component({
     selector: 'ngfor-component',
-    styleUrls:["ngfor/ngfor-items/repeat-items.component.css"],
+    styleUrls:["ng-directives/ngfor-items/repeat-items.component.css"],
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
     // << (hide)
-    templateUrl: "ngfor/ngfor-items/repeat-items.component.html",
+    templateUrl: "ng-directives/ngfor-items/repeat-items.component.html",
 })
 
 export class NgForRepeatItemsComponent {
