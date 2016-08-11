@@ -1,14 +1,15 @@
 <StackLayout exampleTitle  class="example-container">
     <!-- >> unless-directive-html -->
-    <TextView text="The custom *myUnless directive will execute the block if the condition is False (the opposite of *ngIf)" editable="false"></TextView>     
-    <TextField hint="Enter your age greater then 18 to pass: " [(ngModel)]="age"></TextField>
-    <Button text="Go!" (tap)="onTap()"></Button>
+    <TextView text="The custom *myUnless directive will execute the block if the condition is False (the opposite of *ngIf)" editable="false"></TextView>  
 
-    <GridLayout *myUnless="condition" width="300" height="300" borderRadius="150" backgroundColor="green">
+    <TextField hint="Enter your age to check access: " [(ngModel)]="age"></TextField>
+    <Button text="Check Access!" (tap)="onTap()"></Button>
+
+    <GridLayout *myUnless="condition" width="250" height="250" borderRadius="125" backgroundColor="green">
         <Label text="Access granted!" textWrap="true"></Label>
     </GridLayout>
-    <GridLayout *myUnless="!condition" width="300" height="300" borderRadius="150" backgroundColor="red">
-        <Label text="You shell not pass!" textWrap="true"></Label>
+    <GridLayout *myUnless="!condition" width="250" height="250" borderRadius="125" backgroundColor="red">
+        <Label text="Access not granted!" textWrap="true"></Label>
     </GridLayout>
     <!-- << unless-directive-html -->
 </StackLayout>

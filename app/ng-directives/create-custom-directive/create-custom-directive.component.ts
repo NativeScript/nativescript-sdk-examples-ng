@@ -27,9 +27,9 @@ export class IfIosDirective {
 
 @Component({
     selector: 'create-custom-directive',
-    styleUrls:["custom-directive/create-custom-directive/create-custom-directive.component.css"],
+    styleUrls:["ng-directives/create-custom-directive/create-custom-directive.component.css"],
     directives: [COMMON_DIRECTIVES, IfIosDirective, IfAndroidDirective],
-    templateUrl: "custom-directive/create-custom-directive/create-custom-directive.component.html",
+    templateUrl: "ng-directives/create-custom-directive/create-custom-directive.component.html",
 })
 
 export class CreateCustomDirectiveExampleComponent{
