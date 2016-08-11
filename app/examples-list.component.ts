@@ -13,7 +13,7 @@ var mainMenuLinks = [
     new Link("DatePicker", "/datePickerExamplesComponent"),
     new Link("Dialogs", "/dialogsExamplesComponent"),
     new Link("Layouts", "/layoutsExamplesComponent"),
-    new Link("Ng directives", "/ngDirectivesExamplesComponent"),
+    new Link("*ng directives", "/ngDirectivesExamplesComponent"),
     new Link("TimePicker", "/timePickerExamplesComponent"),
     new Link("ScrollView", "/scrollViewExampleComponent"),
     new Link("SearchBar", "/searchBarExampleComponent"),
