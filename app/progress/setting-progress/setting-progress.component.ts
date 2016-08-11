@@ -19,7 +19,11 @@ export class SettingProgressComponent implements OnInit {
     ngOnInit() {
         let myProgress: Progress = this.progress.nativeElement;
         myProgress.maxValue = 120;
-        myProgress.value = 45;
+        myProgress.value = 10;
+        
+        setInterval(function() {
+            myProgress.value += 3;
+        }, 100);
     }
 }
 // << progress-setting-code 
