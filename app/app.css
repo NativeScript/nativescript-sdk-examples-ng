@@ -43,3 +43,7 @@
 ListView {
     margin: 8;
 }
+
+.icon{
+    font-family: 'icomoon';
+}
