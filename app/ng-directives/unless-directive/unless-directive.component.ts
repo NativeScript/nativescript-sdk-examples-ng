@@ -19,7 +19,6 @@ export class UnlessDirectiveExampleComponent {
     public condition: boolean;
 
     constructor() {
-        this.age = 0;
         this.condition = true;
     }
 

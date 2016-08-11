@@ -9,5 +9,4 @@ import { COMMON_DIRECTIVES } from '../../directives';
 })
 
 export class StylingSwitchComponent {
-
 }

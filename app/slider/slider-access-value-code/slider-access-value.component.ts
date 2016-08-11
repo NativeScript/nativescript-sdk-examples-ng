@@ -20,11 +20,11 @@ export class SliderAccessValueComponent {
     public sliderValue5 = 100;
 
     public onTap(){
-        var alertView = "First Slider"+this.sliderValue+"\n"+
-        "Second Slider"+this.sliderValue2+"\n"+
-        "Third Slider"+this.sliderValue3+"\n"+
-        "Fourth Slider"+this.sliderValue4+"\n"+
-        "Fifth Slider"+this.sliderValue5;
+        var alertView = "First Slider: "+this.sliderValue+"\n"+
+        "Second Slider: "+this.sliderValue2+"\n"+
+        "Third Slider: "+this.sliderValue3+"\n"+
+        "Fourth Slider: "+this.sliderValue4+"\n"+
+        "Fifth Slider: "+this.sliderValue5;
         alert(alertView);
     }
 

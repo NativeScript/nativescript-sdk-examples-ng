@@ -9,27 +9,17 @@ export class DataItem {
 @Component({
     selector: 'list-test-async',
     styleUrls:["listview/using-async-pipe/using-async-pipe.component.css"],    
-    template: `
-    <GridLayout exampleTitle>
-        <ListView [items]="myItems | async">
-            <template let-item="item" let-i="index" let-odd="odd" let-even="even">
-                <StackLayout [class.odd]="odd" [class.even]="even" orientation="horizontal">
-                    <Label [text]='(i + 1) +".) "' fontSize="14"></Label>
-                    <Label [text]='item.name'></Label>
-                </StackLayout>
-            </template>
-        </ListView>
-    </GridLayout>
-    `,
+    templateUrl: "listview/using-async-pipe/using-async-pipe.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
+
 export class UsingAsyncPipeComponent {
     public myItems: RxObservable<Array<DataItem>>;
 
     constructor() {
         var items = [];
         for (var i = 0; i < 3; i++) {
-            items.push(new DataItem(i, "data item"));
+            items.push(new DataItem(i, "data item " + i));
         }
 
         var subscr;
@@ -37,14 +27,14 @@ export class UsingAsyncPipeComponent {
             subscr = subscriber;
             subscriber.next(items);
             return function () {
-                console.log("Unsubscribe called!!!");
+                console.log("Unsubscribe called!");
             }
         });
 
         let counter = 2;
         let intervalId = setInterval(() => {
             counter++;
-            items.push(new DataItem(counter + 1, "data item"));
+            items.push(new DataItem(counter + 1, "data item " + (counter + 1)));
             subscr.next(items);
         }, 1000);
 

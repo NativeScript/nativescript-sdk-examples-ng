@@ -1,6 +1,5 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
-import { Page } from "ui/page";
 import { TimePicker } from "ui/time-picker";
 
 @Component({
@@ -9,13 +8,9 @@ import { TimePicker } from "ui/time-picker";
     templateUrl: 'time-picker/configure-time-picker/configure-time-picker.component.html'
 })
 
-export class ConfigureTimePickerComponent implements OnInit {
+export class ConfigureTimePickerComponent {
 
-    constructor(private page: Page) {
-    }
-
-    ngOnInit() {
-        let timePicker = this.page.getViewById<TimePicker>("timePicker");
+    configure(timePicker: TimePicker) {
         // >> time-picker-configure-code
         timePicker.hour = 9;
         timePicker.minute = 25;

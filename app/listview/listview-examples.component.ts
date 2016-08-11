@@ -1,13 +1,13 @@
-import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
+import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { NS_ROUTER_DIRECTIVES } from 'nativescript-angular/router';
 import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Creating ListView", "/creatingListViewExampleComponent"),
-    new Link("Customizing ListView", "/customizingListViewExampleComponent"),
-    new Link("Using Item Template", "/usingItemTemplateExampleComponent"),
-    new Link("Using Async Pipe", "/usingAsyncPipeExampleComponent")
+    new Link("Create ListView", "/creatingListViewExampleComponent"),
+    new Link("Customize ListView", "/customizingListViewExampleComponent"),
+    new Link("Use item template", "/usingItemTemplateExampleComponent"),
+    new Link("Use async pipe", "/usingAsyncPipeExampleComponent")
 ];
      
 @Component({

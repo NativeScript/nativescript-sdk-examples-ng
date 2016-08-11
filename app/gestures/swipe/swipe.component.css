@@ -9,9 +9,9 @@ Label {
 
 GridLayout {
     margin: 30;
-    width: 300;
-    height: 300;
-    background-color: blue;
+    width: 200;
+    height: 200;
+    background-color: #0099CC;
     border-width: 1;
     border-color: white;
     border-radius: 20;  

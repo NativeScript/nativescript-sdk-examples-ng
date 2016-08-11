@@ -1,18 +1,15 @@
 /* >> listview-create-css */
 ListView {
-    font-size: 24;
+    font-size: 15;
     padding: 10;
 }
 
 .odd {
-    background-color: blue;
-    color: whitesmoke;
     margin: 5;
 }
 
 .even {
-    background-color: whitesmoke;
-    color: blue;
+    color: #0099CC;
     margin: 5;
 }
 /* << listview-create-css */

@@ -56,8 +56,7 @@
 		"markdown-snippet-injector": "^0.2.0",
 		"opener": "^1.4.1",
 		"rimraf": "^2.5.3",
-		"tar.gz": "^1.0.5",
-		"tns-platform-declarations": "^2.0.0"
+		"tar.gz": "^1.0.5"
 	},
 	"scripts": {
 		"pretsc": "npm install",

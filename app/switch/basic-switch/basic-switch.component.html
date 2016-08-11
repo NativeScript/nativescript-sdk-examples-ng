@@ -1,6 +1,6 @@
-<StackLayout exampleTitle>
+<StackLayout exampleTitle class="example-container">
     <!-- >> switch-binding-html -->
-    <GridLayout rows="auto auto" columns="* auto">
+    <GridLayout rows="auto auto" columns="90 *" margin="5">
         <Label [text]="firstSwitchState" textWrap="true" row="0" col="0"></Label>
         <Switch #sw1 [checked]="FirstSwitchValue" (checkedChange)="FirstCheckChange(sw1.checked)" row="0" col="1"></Switch>
         <Label [text]="secondSwitchState" textWrap="true" row="1" col="0"></Label>

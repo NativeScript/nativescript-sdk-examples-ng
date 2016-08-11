@@ -14,8 +14,8 @@ import { COMMON_DIRECTIVES } from '../../directives';
 })
 export class CreatingLabelComponent {
 
-    public oneway = "One way binded Label";
-    public twoway = "Two way binded label!";
+    public oneway = "One way bound label";
+    public twoway = "Two way bound label";
     public counter : number;
 
     constructor() { 
@@ -23,7 +23,7 @@ export class CreatingLabelComponent {
     }
 
     changeLabelText() {
-        this.twoway += "Two way binded label!";
+        this.twoway += " Two way bound label ";
         this.counter += 1;
     }
 }

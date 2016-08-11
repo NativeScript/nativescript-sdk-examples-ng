@@ -2,9 +2,9 @@
 Label {
     font-size: 18;
     font-family: sans-serif;
-    color: blue;
+    color: #0099CC;
     border-width: 1;
-    border-color: blue;
+    border-color: #0099CC;
     border-radius: 5;
     padding: 10;
     margin: 3;
@@ -13,5 +13,5 @@ Label {
 Button {
     font-size: 18;
     color: white;
-    background-color: blue;
+    background-color: #0099CC;
 }

@@ -4,13 +4,11 @@ GridLayout {
 }
 
 .model {
-    background-color: whitesmoke;
-    color: blue;
     margin: 5;
     padding-left: 10;
     border-width: 1;
-    border-color: blue;
-    border-radius: 10;
+    border-color: #0099CC;
+    border-radius: 5;
 }
 
 .name {
@@ -24,9 +22,9 @@ GridLayout {
 }
 
 .title {
-    background-color: blue;
-    color: whitesmoke;
-    margin: 20;
+    color: #0099CC;
+    margin-top: 20;
+    margin-bottom: 20;
     height: 80;
     border-radius: 20;
     padding: 5;

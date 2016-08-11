@@ -1,12 +1,12 @@
-import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
+import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { NS_ROUTER_DIRECTIVES } from 'nativescript-angular/router';
 import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Basic Search Bar", "/basicSearchBarComponent"),
-    new Link("Clear Search Bar", "/clearSearchBarComponent"),
-    new Link("Search Bar Binding", "/searchBarBindingComponent")
+    new Link("Basic SearchBar", "/basicSearchBarComponent"),
+    new Link("Clear SearchBar", "/clearSearchBarComponent"),
+    new Link("SearchBar binding", "/searchBarBindingComponent")
 ];
      
 @Component({

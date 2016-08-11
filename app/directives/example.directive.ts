@@ -5,9 +5,9 @@ import { Page } from "ui/page";
 @Directive({
     selector: "[exampleTitle]"
 })
+
 export class ExampleTitleDirective {
      constructor(route: ActivatedRoute, page:Page) {
         page.actionBar.title = route.snapshot.data["title"];
-        console.log("Title: " + page.actionBar.title);
     }
 }

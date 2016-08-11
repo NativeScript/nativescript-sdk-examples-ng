@@ -13,7 +13,7 @@ export class DisplayDialogsComponent {
     displayActionDialog() {
         // >> action-dialog-code
         var options = {
-            title: "Race Selection",
+            title: "Race selection",
             message: "Choose your race",
             cancelButtonText: "Cancel",
             actions: ["Human", "Elf", "Dwarf", "Orc", "Unicorn"]
@@ -27,12 +27,12 @@ export class DisplayDialogsComponent {
     displayAlertDialog() {
         // >> alert-dialog-code
         var options = {
-            title: "Race Selection",
-            message: "Race Chosen: Unicorn",
+            title: "Race selection",
+            message: "Race chosen: Unicorn",
             okButtonText: "OK"
         };
         dialogs.alert(options).then(() => {
-            console.log("Race Chosen!");
+            console.log("Race chosen!");
         });
         // << alert-dialog-code
     }
@@ -40,7 +40,7 @@ export class DisplayDialogsComponent {
     displayConfirmDialog() {
         // >> confirm-dialog-code
         var options = {
-            title: "Race Selection",
+            title: "Race selection",
             message: "Are you sure you want to be a Unicorn?",
             okButtonText: "Yes",
             cancelButtonText: "No",
