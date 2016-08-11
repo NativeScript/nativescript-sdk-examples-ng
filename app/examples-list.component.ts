@@ -6,7 +6,7 @@ import { Link } from "./link";
 
 var mainMenuLinks = [
     new Link("ActionBar", "/actionBarExamplesComponent"),
-    new Link("Activity Indicator", "/activityIndicatorExamplesComponent"),
+    new Link("ActivityIndicator", "/activityIndicatorExamplesComponent"),
     new Link("Animation", "/animationsExamplesComponent"),
     new Link("Border", "/borderExamplesComponent"),
     new Link("Button", "/buttonExamplesComponent"),
