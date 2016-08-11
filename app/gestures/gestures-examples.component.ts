@@ -1,12 +1,12 @@
-import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
+import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { NS_ROUTER_DIRECTIVES } from 'nativescript-angular/router';
 import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
     new Link("Tap", "/tapGestureExampleComponent"),
-    new Link("Double Tap", "/doubleTapGestureExampleComponent"),
-    new Link("Long Press", "/longPressGestureExampleComponent"),
+    new Link("Double tap", "/doubleTapGestureExampleComponent"),
+    new Link("Long press", "/longPressGestureExampleComponent"),
     new Link("Swipe", "/swipeGestureExampleComponent"),
     new Link("Pan", "/panGestureExampleComponent"),
     new Link("Pinch", "/pinchGestureExampleComponent"),

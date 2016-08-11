@@ -6,7 +6,7 @@ import { COMMON_DIRECTIVES } from '../../directives';
 
 @Component({
     selector: 'item-component',
-    styleUrls:["listview/using-item-template/using-item-template.component.css"],
+    styleUrls: ["listview/using-item-template/using-item-template.component.css"],
     template: `
         <StackLayout *ngFor="let element of data.list" class="model">
             <Label [text]="element.model" class="name"></Label>
@@ -20,28 +20,19 @@ export class ItemComponent {
 
 @Component({
     selector: 'using-item-template',
-    styleUrls:["listview/using-item-template/using-item-template.component.css"],
+    styleUrls: ["listview/using-item-template/using-item-template.component.css"],
     directives: [COMMON_DIRECTIVES, ItemComponent],
-    template: `
-        <GridLayout rows="50, *" exampleTitle>
-            <Label text="Top Cars" row="0" class="title" textWrap="true"></Label>
-            <ListView [items]="manufacturers" row="1" >
-                <template let-item="item">
-                    <item-component [data]="item"></item-component>
-                </template>
-            </ListView>
-        </GridLayout>
-    `,
+    templateUrl: "listview/using-item-template/using-item-template.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UsingItemTemplateComponent {
     public manufacturers: Array<any>;
 
     constructor() {
-        var bugatti = [{"model": "Bugatti Chiron", "speed" : "261"}, {"model": "Bugatti Veyron Super Sport", "speed" : "268"}];
-        var mclaren = [{"model": "McLaren P1", "speed" : "211"}, {"model": "McLaren F1", "speed" : "242"}];
-        var jaguar = [{"model": "Jaguar XJ220", "speed": 217}];
-        this.manufacturers = [{"list": bugatti}, {"list": mclaren}, {"list": jaguar}];
+        var bugatti = [{ "model": "Bugatti Chiron", "speed": "261" }, { "model": "Bugatti Veyron Super Sport", "speed": "268" }];
+        var mclaren = [{ "model": "McLaren P1", "speed": "211" }, { "model": "McLaren F1", "speed": "242" }];
+        var jaguar = [{ "model": "Jaguar XJ220", "speed": 217 }];
+        this.manufacturers = [{ "list": bugatti }, { "list": mclaren }, { "list": jaguar }];
     }
 }
 // << using-item-template-code 

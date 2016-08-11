@@ -1,4 +1,4 @@
-<StackLayout exampleTitle>
+<StackLayout exampleTitle class="example-container">
     <!-- >> creating-label-html -->
     <!-- basic Label usage-->
     <Label text="Label (no binding)" textWrap="true"></Label>
@@ -7,8 +7,8 @@
     <Label [text]="oneway" textWrap="true"></Label> 
 
     <!-- Label with two-way binding -->
-    <Button text="Change Label text" (tap)="changeLabelText()"></Button> 
-    <Label [text]="counter + ' times two-way label has been changed!'" textWrap="true"></Label>
+    <Button text="Change label text" (tap)="changeLabelText()"></Button> 
+    <Label [text]="counter + ' times two-way label has been changed'" textWrap="true"></Label>
     <Label #lb [text]="twoway" [textChange]="twoway" textWrap="true"></Label> 
     <!-- << creating-label-html -->   
 </StackLayout>

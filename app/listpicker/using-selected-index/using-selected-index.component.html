@@ -1,17 +1,10 @@
-<GridLayout rows="auto, auto" exampleTitle>
-        <!-- >> using-selected-index-html --> 
+<GridLayout rows="auto, auto" exampleTitle class="example-container">
+        <!-- >> using-selected-index-html -->
         <StackLayout row="0">
-            <Label text="Use the slider to change ListPicker's selectedIndex" textWrap="true"></Label>    
-            <Slider #sl [minValue]="0" [maxValue]="pokemons.length - 1" [(ngModel)]="newIndexValue" ></Slider>            
+                <Label text="Use the slider to change ListPicker's selectedIndex" textWrap="true"></Label>
+                <Slider #sl [minValue]="0" [maxValue]="pokemons.length - 1" [(ngModel)]="newIndexValue"></Slider>
         </StackLayout>
-        <ListPicker #picker 
-                row="1"
-                class="picker" 
-                [items]="pokemons" 
-                [selectedIndex]="newIndexValue" 
-                (selectedIndexChange)="selectedIndexChanged(picker)"
-                verticalAlignment="center" 
-                horizontalAlignment="center">
+        <ListPicker #picker row="1" class="picker" [items]="pokemons" [selectedIndex]="newIndexValue" (selectedIndexChange)="selectedIndexChanged(picker)">
         </ListPicker>
-        <!-- << using-selected-index-html --> 
+        <!-- << using-selected-index-html -->
 </GridLayout>

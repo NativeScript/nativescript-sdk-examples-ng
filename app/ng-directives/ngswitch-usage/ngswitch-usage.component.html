@@ -1,0 +1,16 @@
+<GridLayout rows="100, *" exampleTitle class="example-container">
+    <!-- >> using-ngswitch-html -->
+    <GridLayout row="0" columns="*, *, *">
+        <Button text=" Show blue " (tap)="onBlue()" col="0"></Button>
+        <Button text=" Show purple " (tap)="onPurple()" col="1"></Button>
+        <Button text=" Show yellow " (tap)="onYellow()" col="2"></Button>
+    </GridLayout>
+
+    <GridLayout row="1" [ngSwitch]="color" rows="*">
+        <GridLayout *ngSwitchCase="'purple'" backgroundColor="#8C489F"></GridLayout>
+        <GridLayout *ngSwitchCase="'blue'" backgroundColor="#0077AF"></GridLayout>
+        <GridLayout *ngSwitchCase="'yellow'" backgroundColor="#FFFF66"></GridLayout>
+        <GridLayout *ngSwitchDefault backgroundColor="gray"></GridLayout>
+    </GridLayout>
+    <!-- << using-ngswitch-html -->
+</GridLayout>

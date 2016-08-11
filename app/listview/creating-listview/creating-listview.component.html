@@ -1,9 +1,8 @@
-<GridLayout rows="*" exampleTitle>
+<GridLayout exampleTitle class="example-container">
     <!-- >> listview-create-code -->
     <ListView [items]="countries" (itemTap)="onItemTap($event)">
         <template let-country="item" let-i="index" let-odd="odd" let-even="even">
             <StackLayout [class.odd]="odd" [class.even]="even" orientation="horizontal">
-                <Label [text]='(i + 1) +".) "' fontSize="14"></Label>
                 <Label [text]='country.name'></Label>
             </StackLayout>
         </template>

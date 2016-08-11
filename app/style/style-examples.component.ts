@@ -1,11 +1,11 @@
-import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
+import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { NS_ROUTER_DIRECTIVES } from 'nativescript-angular/router';
 import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Add Style via CSS File", "/styleCSSFileComponent"),
-    new Link("Apply Style using Code", "/applyStyleViaCodeComponent")
+    new Link("Add Style via CSS file", "/styleCSSFileComponent"),
+    new Link("Apply Style using code", "/applyStyleViaCodeComponent")
 ];
      
 @Component({

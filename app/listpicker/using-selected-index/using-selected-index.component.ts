@@ -15,6 +15,7 @@ var pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
     // << (hide)
     templateUrl: "listpicker/using-selected-index/using-selected-index.component.html"
 })
+
 export class UsingSelectedIndexExampleComponent {
 
     public pokemons: Array<string>;

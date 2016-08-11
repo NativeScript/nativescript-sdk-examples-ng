@@ -19,8 +19,8 @@ export class UsingNgSwitchExamplesComponent {
         this.color = "blue";
     }
 
-    onRed() {
-        this.color = "red";
+    onPurple() {
+        this.color = "purple";
     }
 
     onYellow() {

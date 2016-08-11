@@ -1,21 +1,10 @@
-﻿.nav-button {
-    /*color: rgb(171, 184, 254);*/
-    color: white;
-    background-color: rgb(60, 89, 253);
-    font-size: 16;
-    font-family: sans-serif;
-    border-radius: 45;
-    margin-top: 10;
-    margin-left: 5;
-    margin-right: 5;  
-}
-
-.nav-button-container {
-    padding: 10;
+﻿.example-container {
+    margin: 15;
+    font-size: 15;
 }
 
 .title {
-    font-size: 30;
+    font-size: 20;
     margin: 20;
 }
 
@@ -44,9 +33,13 @@
     margin: 2;
 }
 
-.cell {
-    height: 44;
-    text-align: center;
-    font-size: 20;
-    color:#0077AF;
+.item {
+    text-align: left;
+    vertical-align: center;
+    font-size: 16;
+    color:#404040;
+}
+
+ListView {
+    margin: 8;
 }

@@ -1,11 +1,11 @@
-import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
+import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { NS_ROUTER_DIRECTIVES } from 'nativescript-angular/router';
 import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Action Items", "/actionItemsComponent"),
-    new Link("Navigation Button", "/navigationButtonComponent"),
+    new Link("Action items", "/actionItemsComponent"),
+    new Link("Navigation button", "/navigationButtonComponent"),
     new Link("Title", "/titleComponent")
 ];
      

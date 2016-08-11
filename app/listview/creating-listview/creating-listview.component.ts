@@ -30,7 +30,6 @@ export class CreatingListViewComponent {
 
         for (var i = 0; i < europianCountries.length; i++) {
             this.countries.push(new Country(europianCountries[i]));
-
         }
     }
 

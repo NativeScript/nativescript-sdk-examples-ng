@@ -11,7 +11,7 @@ import ImageSourceModule = require("image-source");
 
 @Component({
     selector: "creating-image",
-    styleUrls:["image/creating-image/creating-image.component.css"],
+    styleUrls: ["image/creating-image/creating-image.component.css"],
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
     // << (hide)
@@ -35,9 +35,9 @@ export class CreatingImageExampleComponent implements OnInit {
         this.newLabel = new Label();
         this.newLabel.text = "Image loaded from code behind";
         this.newLabel.style.margin = "10";
-
-        stackView.addChild(this.newImage);
+        
         stackView.addChild(this.newLabel);
+        stackView.addChild(this.newImage);
     }
 }
 // << creating-image-code

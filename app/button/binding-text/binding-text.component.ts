@@ -11,6 +11,6 @@ export class ButtonBindingTextComponent {
    public content : string;
 
    constructor() {
-    this.content = "Test Button";
+    this.content = "Test button";
   }
 }

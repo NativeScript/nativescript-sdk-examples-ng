@@ -1,8 +1,8 @@
-<StackLayout exampleTitle>
+<StackLayout exampleTitle class="example-container">
     <!-- >> clear-text-search-bar-html -->
     <GridLayout rows="auto *" columns="*">
         <SearchBar row="0" #sb hint="Search" (clear)="onClear" [text]="searchPhrase" (submit)="onSubmit(sb.text)"></SearchBar>
-        <ListView row="1" [items]="myItems">
+        <ListView row="1" [items]="myItems" margin="5" rowHeight="25">
             <template let-item="item" >
                 <StackLayout>
                     <Label [text]='item.name'></Label>

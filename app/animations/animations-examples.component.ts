@@ -1,12 +1,12 @@
-import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
+import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { NS_ROUTER_DIRECTIVES } from 'nativescript-angular/router';
 import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Animating Properties", "/animatingPropertiesComponent"),
-    new Link("Chaining Animation", "/chainingAnimationsComponent"),
-    new Link("Animating Multiple Views Simultaneously", "/multipleViewsComponent"),    
+    new Link("Animate properties", "/animatingPropertiesComponent"),
+    new Link("Chaining animation", "/chainingAnimationsComponent"),
+    new Link("Animate multiple views", "/multipleViewsComponent"),    
 ];
      
 @Component({
