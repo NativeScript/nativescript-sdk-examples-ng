@@ -9,7 +9,8 @@ import { COMMON_DIRECTIVES } from '../../directives';
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
     // << (hide)
-    templateUrl: 'text-field/text-field-binding/text-field-binding.component.html',
+    templateUrl: 'text-field/text-field-binding/text-field-binding.component.html',    
+    styleUrls: ["text-field/text-field.style.css"]
 })
 
 export class TextFieldBindingComponent {

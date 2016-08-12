@@ -11,6 +11,7 @@ import { Switch } from "ui/switch"
     directives: [COMMON_DIRECTIVES],
     // << (hide)
     templateUrl: 'switch/disable-switch/disable-switch.component.html',
+    styleUrls: ["switch/switch.style.css"],
 })
 
 export class DisableSwitchComponent {
@@ -19,10 +20,10 @@ export class DisableSwitchComponent {
     @ViewChild("sw2") secondSwitch: ElementRef;
     @ViewChild("sw3") thirdSwitch: ElementRef;
 
-    public onTap(){
-        let firstsw:Switch = <Switch>this.firstSwitch.nativeElement;
-        let secondsw:Switch = <Switch>this.secondSwitch.nativeElement;
-        let thirdsw:Switch = <Switch>this.thirdSwitch.nativeElement;
+    public onTap() {
+        let firstsw: Switch = <Switch>this.firstSwitch.nativeElement;
+        let secondsw: Switch = <Switch>this.secondSwitch.nativeElement;
+        let thirdsw: Switch = <Switch>this.thirdSwitch.nativeElement;
 
         firstsw.isEnabled = false;
         secondsw.isEnabled = false;

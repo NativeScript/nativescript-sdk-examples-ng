@@ -9,30 +9,31 @@ import { COMMON_DIRECTIVES } from '../../directives';
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
     // << (hide)
-    templateUrl: 'switch/basic-switch/basic-switch.component.html'
+    templateUrl: 'switch/basic-switch/basic-switch.component.html',
+    styleUrls: ["switch/switch.style.css"],
 })
 
 export class BasicSwitchComponent {
     public FirstSwitchValue = false;
-    public SecondSwitchValue =true;
+    public SecondSwitchValue = true;
 
     public firstSwitchState = "off";
     public secondSwitchState = "on";
 
-    public FirstCheckChange(result){
-        if(result){
+    public FirstCheckChange(result) {
+        if (result) {
             this.firstSwitchState = "on";
         }
-        else{
+        else {
             this.firstSwitchState = "off";
         }
     }
 
-    public SecondCheckChange(result){
-        if(result){
+    public SecondCheckChange(result) {
+        if (result) {
             this.secondSwitchState = "on";
         }
-        else{
+        else {
             this.secondSwitchState = "off";
         }
     }
