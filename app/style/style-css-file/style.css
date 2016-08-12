@@ -4,11 +4,11 @@ button, label, stack-layout {
 }
 
 button {
-    font-size: 36;
+    font-size: 30;
 }
 
 .title {
-    font-size: 30;
+    font-size: 25;
     margin: 20;
 }
 
@@ -20,6 +20,6 @@ button {
 } 
 
 #labelStyle{
-    background-color: #564448;
+    background-color: #FFFF66;
 }
 /* << style-via-css */

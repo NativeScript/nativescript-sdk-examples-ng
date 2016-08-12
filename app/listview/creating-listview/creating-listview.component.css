@@ -4,12 +4,7 @@ ListView {
     padding: 10;
 }
 
-.odd {
-    margin: 5;
-}
-
 .even {
     color: #0099CC;
-    margin: 5;
 }
 /* << listview-create-css */

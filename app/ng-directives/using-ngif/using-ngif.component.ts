@@ -6,7 +6,6 @@ import { COMMON_DIRECTIVES } from '../../directives';
 
 @Component({
     selector: 'ngif-component',
-    styleUrls:["ng-directives/using-ngif/using-ngif.component.css"],
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
     // << (hide)

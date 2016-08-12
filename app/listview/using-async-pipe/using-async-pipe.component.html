@@ -1,5 +1,5 @@
 <GridLayout exampleTitle class="example-container">
-    <ListView [items]="myItems | async" rowHeight="20">
+    <ListView [items]="myItems | async" rowHeight="44">
         <template let-item="item" let-i="index" let-odd="odd" let-even="even">
             <StackLayout [class.odd]="odd" [class.even]="even" orientation="horizontal">
                 <Label [text]='item.name'></Label>

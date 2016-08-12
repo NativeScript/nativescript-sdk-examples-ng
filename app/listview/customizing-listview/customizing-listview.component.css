@@ -1,39 +1,33 @@
-ListView {
-    font-size: 15;
-    padding: 10;
-}
-
-
 StackLayout {
     background-color: whitesmoke;
     color: #0099CC;
-    margin: 5;
-}
-
-Label {
     padding: 5;
+    vertical-align: center;
+    font-size: 15;
 }
 
 /* >> listview-customize-css */
 .third {
     background-color: #0099CC;
     color: whitesmoke;
-    margin: 5;
+    padding: 5;
 }
 
 .header {
     background-color: #8C489F;
     color: whitesmoke;
-    margin: 20;
-    height: 50;
+    margin-top: 20;
+    margin-bottom: 20;
+    height: 30;
     border-radius: 5;
 }
 
 .footer {
     background-color: #8C489F;
     color: whitesmoke;
-    margin: 20; 
-    height: 50;
+    margin-top: 20;
+    margin-bottom: 20;
+    height: 30;
     border-radius: 5;
 }
 /* << listview-customize-css */

@@ -1,0 +1,28 @@
+.example-container {    
+    font-size: 15;
+    padding:15
+}
+
+Button {
+    background-color: #30BCFF;
+    color: #FFFFFF;
+    margin-top: 10;
+    margin-bottom: 10;
+    height: 38;
+    font-size: 15;
+    border-radius: 2;
+}
+
+TextField, TextView {
+    border-color: lightgray;
+    border-width: 1;
+    border-radius: 2;
+    margin-top: 10;
+    height: 38;
+    font-size: 15;
+}
+
+ListView {
+    padding: 15;
+    font-size: 15;   
+}

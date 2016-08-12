@@ -1,14 +1,10 @@
-<StackLayout exampleTitle class="example-container">
-    <!-- >> clear-text-search-bar-html -->
-    <GridLayout rows="auto *" columns="*">
+<GridLayout rows="auto *" exampleTitle>
+         <!-- >> clear-text-search-bar-html -->
         <SearchBar row="0" #sb hint="Search" (clear)="onClear" [text]="searchPhrase" (submit)="onSubmit(sb.text)"></SearchBar>
-        <ListView row="1" [items]="myItems" margin="5" rowHeight="25">
+        <ListView row="1" [items]="myItems" rowHeight="44" marginTop="20" padding="15">
             <template let-item="item" >
-                <StackLayout>
-                    <Label [text]='item.name'></Label>
-                </StackLayout>
+                <Label [text]='item.name'></Label>
             </template>
         </ListView>
-    </GridLayout>
-    <!-- << clear-text-search-bar-html -->
-</StackLayout>
+         <!-- << clear-text-search-bar-html -->
+</GridLayout>

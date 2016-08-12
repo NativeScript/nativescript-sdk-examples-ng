@@ -30,7 +30,7 @@ export class ApplyStyleCodeComponent implements OnInit{
           this.page.css = ".message {font-size: 20; color: #284848; text-align: center; margin: 0 20;}";
           this.page.css = "#labelStyle{ background-color: #564448; }";
 
-          this.page.css = "#newLabelStyle{ color: red; }";
+          this.page.css = "#newLabelStyle{ color: #8C489F; }";
           var newlabel = new Label();
           newlabel.text="New label";
           newlabel.id="newLabelStyle";
