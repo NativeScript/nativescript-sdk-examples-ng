@@ -6,11 +6,11 @@ import { Link } from "./../link";
 var menuLinks = [
     new Link("Basic TextView", "/basicTextViewComponent")
 ];
-     
+
 @Component({
     selector: 'text-view-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'text-view/text-view-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

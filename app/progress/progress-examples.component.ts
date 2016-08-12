@@ -5,13 +5,13 @@ import { Link } from "./../link";
 
 var menuLinks = [
     new Link("Create Progress", "/creatingProgressExampleComponent"),
-    new Link("Set up Progress", "/settingProgressExampleComponent")    
+    new Link("Set up Progress", "/settingProgressExampleComponent")
 ];
-     
+
 @Component({
     selector: 'progress-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'progress/progress-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

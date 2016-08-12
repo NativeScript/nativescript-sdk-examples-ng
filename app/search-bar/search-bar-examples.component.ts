@@ -8,11 +8,11 @@ var menuLinks = [
     new Link("Clear SearchBar", "/clearSearchBarComponent"),
     new Link("SearchBar binding", "/searchBarBindingComponent")
 ];
-     
+
 @Component({
     selector: 'search-bar-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'search-bar/search-bar-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

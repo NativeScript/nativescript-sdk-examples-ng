@@ -7,11 +7,11 @@ var menuLinks = [
     new Link("Add Style via CSS file", "/styleCSSFileComponent"),
     new Link("Apply Style using code", "/applyStyleViaCodeComponent")
 ];
-     
+
 @Component({
     selector: 'style-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'style/style-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

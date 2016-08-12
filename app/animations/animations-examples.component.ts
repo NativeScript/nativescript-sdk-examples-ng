@@ -6,13 +6,13 @@ import { Link } from "./../link";
 var menuLinks = [
     new Link("Animate properties", "/animatingPropertiesComponent"),
     new Link("Chaining animation", "/chainingAnimationsComponent"),
-    new Link("Animate multiple views", "/multipleViewsComponent"),    
+    new Link("Animate multiple views", "/multipleViewsComponent"),
 ];
-     
+
 @Component({
     selector: 'animations-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'animations/animations-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

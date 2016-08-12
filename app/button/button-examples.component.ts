@@ -8,11 +8,11 @@ var menuLinks = [
     new Link("Text", "/buttonTextComponent"),
     new Link("Binding text", "/buttonBindingTextComponent"),
 ];
-     
+
 @Component({
     selector: 'button-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'button/button-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

@@ -12,7 +12,7 @@ var menuLinks = [
 @Component({
     selector: 'scroll-view-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'scroll-view/scroll-view-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

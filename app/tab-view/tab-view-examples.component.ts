@@ -12,7 +12,7 @@ var menuLinks = [
 @Component({
     selector: 'tab-view-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'tab-view/tab-view-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

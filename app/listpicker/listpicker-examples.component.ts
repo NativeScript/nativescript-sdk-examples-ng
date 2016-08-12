@@ -7,11 +7,11 @@ var menuLinks = [
     new Link("Create ListPicker", "/creatingListPickerExampleComponent"),
     new Link("Use selected index", "/usingSelectedIndexExampleComponent")
 ];
-     
+
 @Component({
     selector: 'listpicker-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'listpicker/listpicker-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
