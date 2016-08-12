@@ -185,7 +185,7 @@ export const routes: RouterConfig = [
   { path: "rotationGestureExampleComponent", component: RotationExampleComponent, data: { title: "Rotation" } },
   { path: "touchGestureExampleComponent", component: TouchExampleComponent, data: { title: "Touch" } },
 
-  { path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular-specific directives" } },
+  { path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } },
   { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } },
   { path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf basic usage" } },
   { path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf hiding elements" } },
