@@ -8,13 +8,13 @@ var menuLinks = [
     new Link("DockLayout", "/dockLayoutComponent"),
     new Link("GridLayout", "/gridLayoutComponent"),
     new Link("StackLayout", "/stackLayoutComponent"),
-    new Link("WrapLayout", "/wrapLayoutComponent") 
+    new Link("WrapLayout", "/wrapLayoutComponent")
 ];
-     
+
 @Component({
     selector: 'layouts-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'layouts/layouts-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

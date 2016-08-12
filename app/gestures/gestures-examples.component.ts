@@ -11,13 +11,13 @@ var menuLinks = [
     new Link("Pan", "/panGestureExampleComponent"),
     new Link("Pinch", "/pinchGestureExampleComponent"),
     new Link("Rotation", "/rotationGestureExampleComponent"),
-    new Link("Touch", "/touchGestureExampleComponent"),    
+    new Link("Touch", "/touchGestureExampleComponent"),
 ];
-     
+
 @Component({
     selector: 'gestures-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'gestures/gestures-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

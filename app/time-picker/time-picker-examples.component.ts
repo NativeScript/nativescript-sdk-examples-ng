@@ -6,11 +6,11 @@ import { Link } from "./../link";
 var menuLinks = [
     new Link("Configure TimePicker", "/configureTimePickerComponent")
 ];
-     
+
 @Component({
     selector: 'time-picker-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'time-picker/time-picker-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

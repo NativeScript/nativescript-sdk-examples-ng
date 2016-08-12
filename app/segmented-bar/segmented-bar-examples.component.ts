@@ -7,11 +7,11 @@ var menuLinks = [
     new Link("Basic SegmentedBar", "/basicSegmentedBarComponent"),
     new Link("SegmentedBar view change", "/segmentedBarViewsComponent")
 ];
-     
+
 @Component({
     selector: 'segmented-bar-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'segmented-bar/segmented-bar-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

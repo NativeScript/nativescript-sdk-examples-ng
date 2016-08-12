@@ -6,11 +6,11 @@ import { Link } from "./../link";
 var menuLinks = [
     new Link("Configure DatePicker", "/configureDatePickerComponent"),
 ];
-     
+
 @Component({
     selector: 'date-picker-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'date-picker/date-picker-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

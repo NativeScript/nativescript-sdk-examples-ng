@@ -12,7 +12,7 @@ var menuLinks = [
 @Component({
     selector: 'switch-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'switch/switch-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     styleUrls: ["switch/switch.style.css"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })

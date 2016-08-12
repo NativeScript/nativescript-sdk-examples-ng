@@ -6,11 +6,11 @@ import { Link } from "./../link";
 var menuLinks = [
     new Link("Display dialogs", "/displayDialogsComponent"),
 ];
-     
+
 @Component({
     selector: 'dialog-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'dialogs/dialogs-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

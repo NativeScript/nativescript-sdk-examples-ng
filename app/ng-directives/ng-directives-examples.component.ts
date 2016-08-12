@@ -16,7 +16,7 @@ var menuLinks = [
 @Component({
     selector: 'ng-directives-examples-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'ng-directives/ng-directives-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

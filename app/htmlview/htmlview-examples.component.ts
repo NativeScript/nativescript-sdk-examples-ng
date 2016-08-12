@@ -4,13 +4,13 @@ import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Create HtmlView", "/creatingHtmlViewExampleComponent") 
+    new Link("Create HtmlView", "/creatingHtmlViewExampleComponent")
 ];
-     
+
 @Component({
     selector: 'htmlview-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'htmlview/htmlview-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

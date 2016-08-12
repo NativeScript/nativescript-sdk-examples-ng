@@ -4,13 +4,13 @@ import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Create Label", "/creatingLabelExampleComponent") 
+    new Link("Create Label", "/creatingLabelExampleComponent")
 ];
-     
+
 @Component({
     selector: 'label-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'label/label-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

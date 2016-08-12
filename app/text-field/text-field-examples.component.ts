@@ -7,11 +7,11 @@ var menuLinks = [
     new Link("Basic TextField", "/basicTextFieldComponent"),
     new Link("TextField binding", "/textFieldBindingComponent")
 ];
-     
+
 @Component({
     selector: 'text-field-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'text-field/text-field-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

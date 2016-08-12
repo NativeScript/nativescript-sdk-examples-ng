@@ -7,11 +7,11 @@ var menuLinks = [
     new Link("Basic Slider", "/basicSliderComponent"),
     new Link("Access Slider's value", "/accessSliderValueComponent")
 ];
-     
+
 @Component({
     selector: 'slider-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'slider/slider-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

@@ -9,11 +9,11 @@ var menuLinks = [
     new Link("Use item template", "/usingItemTemplateExampleComponent"),
     new Link("Use async pipe", "/usingAsyncPipeExampleComponent")
 ];
-     
+
 @Component({
     selector: 'listview-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'listview/listview-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

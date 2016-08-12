@@ -8,11 +8,11 @@ var menuLinks = [
     new Link("Navigation button", "/navigationButtonComponent"),
     new Link("Title", "/titleComponent")
 ];
-     
+
 @Component({
     selector: 'action-bar-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'action-bar/action-bar-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

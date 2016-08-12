@@ -7,11 +7,11 @@ var menuLinks = [
     new Link("WebView code", "/basicWebViewComponent"),
     new Link("WebView HTML", "/webViewHtmlComponent")
 ];
-     
+
 @Component({
     selector: 'web-view-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'web-view/web-view-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

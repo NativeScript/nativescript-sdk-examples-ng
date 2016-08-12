@@ -6,11 +6,11 @@ import { Link } from "./../link";
 var menuLinks = [
     new Link("Set busy property", "/settingBusyComponent")
 ];
-     
+
 @Component({
     selector: 'activity-indicator-examples-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
-    templateUrl: 'activity-indicator/activity-indicator-examples.component.html',
+    templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
