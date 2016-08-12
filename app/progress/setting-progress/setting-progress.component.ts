@@ -22,7 +22,7 @@ export class SettingProgressComponent implements OnInit {
         myProgress.value = 10;
         
         setInterval(function() {
-            myProgress.value += 3;
+            myProgress.value += 2;
         }, 100);
     }
 }
