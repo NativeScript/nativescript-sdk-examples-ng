@@ -1,6 +1,6 @@
-﻿.example-container {
-    margin: 15;
+﻿.example-container {    
     font-size: 15;
+    padding: 16;
 }
 
 .title {
@@ -38,8 +38,5 @@
     vertical-align: center;
     font-size: 16;
     color:#404040;
-}
-
-ListView {
-    margin: 8;
+    padding-left: 15;
 }

@@ -8,11 +8,12 @@ var menuLinks = [
     new Link("Disable Switch", "/diableSwitchComponent"),
     new Link("Styling Switch", "/stylingSwitchComponent")
 ];
-     
+
 @Component({
     selector: 'switch-component',
     directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
     templateUrl: 'switch/switch-examples.component.html',
+    styleUrls: ["switch/switch.style.css"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

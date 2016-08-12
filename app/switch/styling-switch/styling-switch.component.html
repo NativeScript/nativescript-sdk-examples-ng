@@ -2,7 +2,7 @@
     <!-- >> switch-styling-html -->
     <GridLayout rows="auto auto auto" columns="* auto" margin="5">
         <Label [text]="sw1.checked" textWrap="true" row="0" col="0"></Label>
-        <Switch #sw1  class="firstSwtichStyle" checked="true" row="0" col="1"></Switch>
+        <Switch #sw1  class="firstSwitchStyle" checked="true" row="0" col="1"></Switch>
         <Label [text]="sw2.checked" textWrap="true" row="1" col="0"></Label>
         <Switch #sw2  class="secondSwitchStyle" checked="false" (checkedChange)="secondSwitchState=sw2.checked" row="1" col="1"></Switch>
         <Label [text]="sw3.checked" textWrap="true" row="2" col="0"></Label>

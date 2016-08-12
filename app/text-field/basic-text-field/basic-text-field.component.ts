@@ -11,7 +11,8 @@ import {setTimeout} from "timer"
 @Component({
     selector: 'basic-text-field-component',
     // >> (hide)
-    directives: [COMMON_DIRECTIVES],
+    directives: [COMMON_DIRECTIVES],    
+    styleUrls: ["text-field/text-field.style.css"],
     // << (hide)
     templateUrl: 'text-field/basic-text-field/basic-text-field.component.html'
 })
