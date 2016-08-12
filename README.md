@@ -1,5 +1,3 @@
-K 1249246
-
 # NativeScript SDK Examples
 A NativeScript project that automatically produces the SDK Examples article.
 
