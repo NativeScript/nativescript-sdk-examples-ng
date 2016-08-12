@@ -1,8 +1,8 @@
 <GridLayout rows="*" exampleTitle>
     <ListView [items]="links" rowHeight="44">
         <template let-item="item">
-            <GridLayout>
-                <Label [text]="item.title" class="item" [nsRouterLink]="item.link"></Label>
+            <GridLayout rows="*" [nsRouterLink]="item.link" >
+                <Label [text]="item.title" class="item"></Label>
             </GridLayout>
         </template>
     </ListView>
