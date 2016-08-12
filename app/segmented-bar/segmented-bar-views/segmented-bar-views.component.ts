@@ -21,7 +21,9 @@ export class SegmentedBarViewsComponent {
     public visibility1 = true;
     public visibility2 = false;
     public visibility3 = false;
-
+    // >> (hide)
+    public state = 0;
+    // << (hide)
     constructor() {
         this.Items = [];
         for (var i = 1; i < 4; i++) {
@@ -32,7 +34,16 @@ export class SegmentedBarViewsComponent {
     }
 
     public onChange(value) {
+        // >> (hide)
+        var that=this;
+        console.log("tap");
+        if(this.state > 0){
+        // << (hide)
         alert("Selected index: " + value);
+         // >> (hide)
+        }
+        this.state++;
+        // << (hide)
         this.index = value;
         switch (value) {
             case 0:
@@ -59,7 +70,9 @@ export class SegmentedBarViewsComponent {
     }
 
     public onTap() {
-        alert("Selected index " + this.index);
+        
+            alert("Selected index " + this.index);
+       
     }
 
 }

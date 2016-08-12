@@ -17,7 +17,7 @@ import { SegmentedBarItem } from "ui/segmented-bar";
 export class BasicSegmentedBarComponent {
 
     public myItems: Array<SegmentedBarItem>;
-
+    public prop = 0;
     constructor() {
         this.myItems = [];
         for (var i = 1; i < 5; i++) {

@@ -35,7 +35,7 @@ export class BasicWebViewComponent implements OnInit {
             else {
                 message = "Error loading " + args.url + ": " + args.error;
             }
-            alert("WeView message: "+message);
+            alert("WebView message - " + message);
         });
     }
         
