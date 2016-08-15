@@ -1,7 +1,7 @@
 <ListView [items]="links" exampleTitle rowHeight="44">
     <template let-item="item">
         <GridLayout rows="*" [nsRouterLink]="item.link" class="item" >
-            <Label [text]="item.title" ></Label>
+            <Label [text]="item.title" android:class="label-item" ></Label>
         </GridLayout>
     </template>
 </ListView>

@@ -2,3 +2,7 @@
     font-size: 15;
     padding: 16;
 }
+
+.label-item {
+    vertical-align: center;
+}
