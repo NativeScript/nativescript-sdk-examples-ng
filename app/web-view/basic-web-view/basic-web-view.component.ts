@@ -18,8 +18,8 @@ import {TextField} from "ui/text-field"
 
 export class BasicWebViewComponent implements OnInit {
     
-    public url="https://www.nativescript.org";
-    public webviewsrc="https://www.nativescript.org";
+    public url="https://www.google.com";
+    public webviewsrc="https://www.google.com";
     
     constructor(private page: Page) {
     }
