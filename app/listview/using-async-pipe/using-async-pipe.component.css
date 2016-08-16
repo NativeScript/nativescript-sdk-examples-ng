@@ -4,10 +4,16 @@ ListView {
 }
 
 .odd {
-    margin: 5;
+    margin: 5;    
+    vertical-align: center;
 }
 
 .even {
     color: #0099CC;
-    margin: 5;
+    margin: 5;    
+    vertical-align: center;
+}
+
+.label-item {
+    vertical-align: center;
 }

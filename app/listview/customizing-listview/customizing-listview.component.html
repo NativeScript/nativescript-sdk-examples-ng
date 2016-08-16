@@ -1,10 +1,10 @@
-<GridLayout rows="*" exampleTitle class="example-container">
+<GridLayout rows="*" exampleTitle toggleNavButton class="example-container">
     <!-- >> listview-customize-code -->
     <ListView [items]="dataItems" (setupItemView)="onSetupItemView($event)" rowHeight="44">
         <template let-dataitem="item" let-i="index" let-third="third" let-header="header" let-footer="footer">
-            <StackLayout [class.third]="third" [class.header]="header" [class.footer]="footer">
-                <Label [text]='dataitem.name' textWrap="false"></Label>
-            </StackLayout>
+            <GridLayout [class.third]="third" [class.header]="header" [class.footer]="footer">
+                <Label [text]="dataitem.name" android:class="label-item"></Label>
+            </GridLayout>
         </template>
     </ListView>
     <!-- << listview-customize-code -->

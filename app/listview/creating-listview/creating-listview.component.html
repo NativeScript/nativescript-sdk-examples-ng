@@ -1,8 +1,10 @@
-<GridLayout exampleTitle class="example-container">
+<GridLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> listview-create-code -->
     <ListView [items]="countries" (itemTap)="onItemTap($event)" rowHeight="44">
         <template let-country="item" let-i="index" let-odd="odd" let-even="even">
-            <Label [text]='country.name' [class.odd]="odd" [class.even]="even"></Label>
+            <GridLayout [class.odd]="odd" [class.even]="even">
+                <Label [text]="country.name" android:class="label-item"></Label>
+            </GridLayout>
         </template>
     </ListView>
     <!-- << listview-create-code -->

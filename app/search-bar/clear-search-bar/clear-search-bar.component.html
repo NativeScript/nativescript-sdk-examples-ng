@@ -1,10 +1,10 @@
-<GridLayout rows="auto *" exampleTitle>
-         <!-- >> clear-text-search-bar-html -->
-        <SearchBar row="0" #sb hint="Search" (clear)="onClear" [text]="searchPhrase" (submit)="onSubmit(sb.text)"></SearchBar>
-        <ListView row="1" [items]="myItems" rowHeight="44" marginTop="20" padding="15">
-            <template let-item="item" >
-                <Label [text]='item.name'></Label>
-            </template>
-        </ListView>
-         <!-- << clear-text-search-bar-html -->
+<GridLayout rows="auto *" exampleTitle toggleNavButton>
+    <!-- >> clear-text-search-bar-html -->
+    <SearchBar row="0" #sb hint="Search" (clear)="onClear" [text]="searchPhrase" (submit)="onSubmit(sb.text)"></SearchBar>
+    <ListView row="1" [items]="myItems" rowHeight="44" marginTop="20" padding="15">
+        <template let-item="item">
+            <Label [text]='item.name' class="item"></Label>
+        </template>
+    </ListView>
+    <!-- << clear-text-search-bar-html -->
 </GridLayout>
