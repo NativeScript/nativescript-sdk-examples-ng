@@ -6,3 +6,9 @@
 .label-item {
     vertical-align: center;
 }
+
+TextField, TextView {
+    margin-top: 10;
+    height: 38;
+    font-size: 15;
+}

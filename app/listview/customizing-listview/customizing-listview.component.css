@@ -30,4 +30,12 @@ StackLayout {
     height: 30;
     border-radius: 5;
 }
+
+.item {
+    text-align: left;
+    vertical-align: center;
+    font-size: 16;
+    color:#404040;
+    padding-left: 15;
+}
 /* << listview-customize-css */

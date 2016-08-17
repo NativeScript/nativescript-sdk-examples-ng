@@ -1,9 +1,9 @@
-<GridLayout exampleTitle class="example-container">
+<GridLayout exampleTitle toggleNavButton class="example-container">
     <ListView [items]="myItems | async" rowHeight="44">
         <template let-item="item" let-i="index" let-odd="odd" let-even="even">
-            <StackLayout [class.odd]="odd" [class.even]="even" orientation="horizontal">
-                <Label [text]='item.name'></Label>
-            </StackLayout>
+            <GridLayout [class.odd]="odd" [class.even]="even">
+                <Label [text]="item.name" android:class="label-item"></Label>
+            </GridLayout>
         </template>
     </ListView>
 </GridLayout>
