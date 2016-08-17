@@ -35,7 +35,6 @@ export class SegmentedBarViewsComponent {
 
     public onChange(value) {
         // >> (hide)
-        var that=this;
         console.log("tap");
         if(this.state > 0){
         // << (hide)
