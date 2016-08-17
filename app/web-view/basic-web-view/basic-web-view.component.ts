@@ -59,7 +59,14 @@ export class BasicWebViewComponent implements OnInit {
     }
 
     submit(){
-        this.webviewsrc = "https://"+this.url;
+        let textField:TextField = this.page.getViewById<TextField>("urlField");
+
+        if(this.url.substring(0, 4) === 'http'){
+            this.webviewsrc = this.url;
+            textField.dismissSoftInput();
+        }else{
+            alert("Please, add `http://` or `https://` in front of the URL string");
+        }
     }
 
 }

@@ -1,11 +1,15 @@
 <StackLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> web-view-html -->
-   <GridLayout  rows="75" columns="50 * 50">
-       <Button row="0" col="0" class="icon" text="&#xea44;" (tap)="goBack()"></Button>   
-       <TextField id="urlField" row="0" col="1" hint="Enter URL" [(ngModel)]="url"  returnKeyType="done"
-        (returnPress)="submit()"></TextField>
-       <Button row="0" col="2" class="icon" text="&#xea42;" (tap)="loadPage()"></Button>   
-   </GridLayout>
-    <WebView id="wv"  [src]="webviewsrc"></WebView>
+    <GridLayout rows="75 *" >
+        <GridLayout row="0" rows="*" columns="50 * 50">
+            <Button row="0" col="0" class="icon" text="&#xea44;" (tap)="goBack()"></Button>   
+            <TextField id="urlField" row="0" col="1" hint="Enter URL" [(ngModel)]="url"  returnKeyType="done"
+                (returnPress)="submit()" autocorrect="false"
+        autocapitalizationType="none" ></TextField>
+            <Button row="0" col="2" class="icon" text="&#xea42;" (tap)="loadPage()"></Button>   
+        </GridLayout>
+        <WebView row="1" id="wv"  [src]="webviewsrc"></WebView>
+    </GridLayout>
+   
     <!-- << web-view-html -->
 </StackLayout>
