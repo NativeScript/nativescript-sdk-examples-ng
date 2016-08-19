@@ -3,7 +3,7 @@
     padding:15
 }
 
-Button {
+Page Button {
     background-color: #30BCFF;
     color: #FFFFFF;
     margin-top: 10;
@@ -11,6 +11,10 @@ Button {
     height: 38;
     font-size: 15;
     border-radius: 2;
+}
+
+ Button {
+    font-size: 15;
 }
 
 TextField, TextView {

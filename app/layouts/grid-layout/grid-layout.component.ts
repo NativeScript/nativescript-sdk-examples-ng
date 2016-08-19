@@ -27,7 +27,7 @@ export class GridLayoutComponent implements OnInit {
         gridLayout.addRow(newRow);
 
         var label = new Label();
-        label.text = "colSpan:3/row:2";
+        label.text = "colSpan:3 row:2";
         gridLayout.addChild(label);
 
         GridLayout.setColumnSpan(label, 3);
