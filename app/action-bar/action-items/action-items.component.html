@@ -6,9 +6,10 @@
   <ActionItem>
     <Label text="Custom item" color="#8C489F" margin="5"></Label>
   </ActionItem>
-  <!-- << action-bar-custom-action-item-html -->  
+  <!-- << action-bar-custom-action-item-html -->
   <!-- >> action-bar-platform-specific-icons-html -->
-  <ActionItem ios.systemIcon="12" android.systemIcon = "ic_menu_search"></ActionItem>
+  <ActionItem ios.systemIcon="12" android.systemIcon="ic_menu_search"></ActionItem>
   <!-- << action-bar-platform-specific-icons-html -->
+  <NavigationButton android.systemIcon="ic_menu_back" (tap)="goBack()"></NavigationButton>
 </ActionBar>
 <!-- << action-bar-action-items-html -->
