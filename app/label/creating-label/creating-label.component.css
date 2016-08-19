@@ -1,12 +1,13 @@
 /* >> creating-label-css */
 Label {
-    font-size: 18;
+    font-size: 15;
     font-family: sans-serif;
     color: #0099CC;
     border-width: 1;
     border-color: #0099CC;
     border-radius: 2;
     padding: 10;
+    height: 38;
     margin: 3;
 }
 /* << creating-label-css */

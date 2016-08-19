@@ -3,21 +3,15 @@
     <SegmentedBar #sb [items]="Items" [selectedIndex]="index" (selectedIndexChange)="onChange(sb.selectedIndex)">
     </SegmentedBar>
     <StackLayout visibility="{{ visibility1 ? 'visible' : 'collapsed' }}">
-        <Label text="Sample page 1" class="title"></Label>
-        
-        <Button text="TAP" (tap)="onTap()" backgroundColor="#8C489F"></Button>
+        <Label [text]='selectedIndex' class="title"></Label>
     </StackLayout>
 
     <StackLayout visibility="{{ visibility2 ? 'visible' : 'collapsed' }}">
-        <Label text="Sample page 2" class="title"></Label>
-        
-        <Button text="TAP" (tap)="onTap()" backgroundColor="#8C489F"></Button>
+         <Label [text]='selectedIndex' class="title"></Label>
     </StackLayout>
 
     <StackLayout visibility="{{ visibility3 ? 'visible' : 'collapsed' }}">
-        <Label text="Sample page 3" class="title"></Label>
-        
-        <Button text="TAP" (tap)="onTap()"> backgroundColor="#8C489F"</Button>
+         <Label [text]='selectedIndex' class="title"></Label>
     </StackLayout>
     <!-- << segmentedbar-show-views -->
 </StackLayout>

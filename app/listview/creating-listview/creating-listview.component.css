@@ -3,15 +3,4 @@ ListView {
     font-size: 15;
     padding: 10;
 }
-
-.even {
-    color: #0099CC;
-    vertical-align: center;
-}
 /* << listview-create-css */
-
-.odd {
-    text-align: left;
-    vertical-align: center;
-    color:#404040;
-}

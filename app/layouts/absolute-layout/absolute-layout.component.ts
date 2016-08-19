@@ -22,15 +22,15 @@ export class AbsoluteLayoutComponent implements OnInit {
         // >> absolute-layout-code
         var firstLabel = new Label();
 
-        AbsoluteLayout.setLeft(firstLabel, 125);
+        AbsoluteLayout.setLeft(firstLabel, 175);
         AbsoluteLayout.setTop(firstLabel, 50);
-        firstLabel.width = 110;
+        firstLabel.width = 170;
         firstLabel.height = 100;
 
         absoluteLayout.addChild(firstLabel);
         // << absolute-layout-code
 
-        firstLabel.text = "Left: 125, Top: 50";
+        firstLabel.text = "Left: 175, Top: 50";
         firstLabel.style.backgroundColor = new Color("#CCFFFF");
 
         var secondLabel = new Label();
@@ -38,7 +38,7 @@ export class AbsoluteLayoutComponent implements OnInit {
         // In absolute layout place of an UI element is determined by 4 parameters : left, top, width and height.
         AbsoluteLayout.setLeft(secondLabel, 70);
         AbsoluteLayout.setTop(secondLabel, 200);
-        secondLabel.width = 170;
+        secondLabel.width = 200;
         secondLabel.height = 30;
         secondLabel.text = "Left: 70, Top: 200";
         absoluteLayout.addChild(secondLabel);

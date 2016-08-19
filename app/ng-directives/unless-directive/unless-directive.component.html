@@ -1,9 +1,9 @@
 <StackLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> unless-directive-html -->
-    <TextView text="The custom *myUnless directive will execute the block if the condition is False (the opposite of *ngIf)" editable="false"></TextView>  
+    <TextView text="The custom *myUnless directive will execute the block if the condition is False (the opposite of *ngIf)" editable="false" height="75"></TextView>  
 
     <TextField hint="Enter your age to check access: " [(ngModel)]="age"></TextField>
-    <Button text="Check Access!" (tap)="onTap()"></Button>
+    <Button text="Check Access" (tap)="onTap()"></Button>
 
     <GridLayout *myUnless="condition" width="250" height="250" borderRadius="125" backgroundColor="green">
         <Label text="Access granted!" textWrap="true"></Label>
