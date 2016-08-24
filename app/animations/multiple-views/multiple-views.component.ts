@@ -12,7 +12,8 @@ var view4: View;
 @Component({
     selector: 'animations-component',
     directives: [COMMON_DIRECTIVES],
-    templateUrl: 'animations/multiple-views/multiple-views.component.html'
+    templateUrl: 'animations/multiple-views/multiple-views.component.html',
+    styleUrls:["animations/style.css"],
 })
 
 export class MultipleViewsComponent implements OnInit {

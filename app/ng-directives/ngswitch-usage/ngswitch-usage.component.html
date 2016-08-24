@@ -7,10 +7,10 @@
     </GridLayout>
 
     <GridLayout row="1" [ngSwitch]="color" rows="*">
-        <GridLayout *ngSwitchCase="'purple'" backgroundColor="#8C489F"></GridLayout>
-        <GridLayout *ngSwitchCase="'blue'" backgroundColor="#0077AF"></GridLayout>
-        <GridLayout *ngSwitchCase="'yellow'" backgroundColor="#FFFF66"></GridLayout>
-        <GridLayout *ngSwitchDefault backgroundColor="gray"></GridLayout>
+        <GridLayout *ngSwitchCase="'purple'" backgroundColor="#8C489F"  borderRadius="2"></GridLayout>
+        <GridLayout *ngSwitchCase="'blue'" backgroundColor="#0077AF"  borderRadius="2"></GridLayout>
+        <GridLayout *ngSwitchCase="'yellow'" backgroundColor="#FFFF66"  borderRadius="2"></GridLayout>
+        <GridLayout *ngSwitchDefault backgroundColor="gray" borderRadius="2"></GridLayout>
     </GridLayout>
     <!-- << using-ngswitch-html -->
 </GridLayout>

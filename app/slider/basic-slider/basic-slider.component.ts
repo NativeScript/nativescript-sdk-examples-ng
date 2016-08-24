@@ -5,7 +5,7 @@ import { COMMON_DIRECTIVES } from '../../directives';
     selector: 'basic-slider-component',
     directives: [COMMON_DIRECTIVES],
     templateUrl: 'slider/basic-slider/basic-slider.component.html',
-    styleUrls:['slider/basic-slider/style.css'],
+    styleUrls:['slider/style.css']
 })
 
 export class BasicSliderComponent {

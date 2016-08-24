@@ -3,15 +3,15 @@
     <SegmentedBar #sb [items]="Items" [selectedIndex]="index" (selectedIndexChange)="onChange(sb.selectedIndex)">
     </SegmentedBar>
     <StackLayout visibility="{{ visibility1 ? 'visible' : 'collapsed' }}">
-        <Label [text]='selectedIndex' class="title"></Label>
+        <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
     </StackLayout>
 
     <StackLayout visibility="{{ visibility2 ? 'visible' : 'collapsed' }}">
-         <Label [text]='selectedIndex' class="title"></Label>
+        <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
     </StackLayout>
 
     <StackLayout visibility="{{ visibility3 ? 'visible' : 'collapsed' }}">
-         <Label [text]='selectedIndex' class="title"></Label>
+        <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
     </StackLayout>
     <!-- << segmentedbar-show-views -->
 </StackLayout>

@@ -1,7 +1,7 @@
 <StackLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> segmentedBar-basic-html -->
-    <SegmentedBar #sb [items]="myItems" selectedIndex="0" (selectedIndexChange)="prop=sb.selectedIndex">
+    <SegmentedBar #sb [items]="myItems" selectedIndex="0" (selectedIndexChange)="prop='Item '+ sb.selectedIndex">
     </SegmentedBar>
-    <Label [text]="prop" textWrap="true" vertical-align="center" fontSize="20" margin="10"></Label>
+    <Label [text]="prop" textWrap="true" vertical-align="center" margin="10"></Label>
     <!-- << segmentedBar-basic-html -->
 </StackLayout>
