@@ -105,12 +105,6 @@ function build(){
             var linkToSource = "[Demo Source](" + githubDirUrl + ")"
             fs.appendFileSync(bigArticleFile, linkToSource + "\n\n", {encoding: 'utf8'});
 
-            var linksFile = path.join(articleDirName, "links.md");
-            if (fs.existsSync(linksFile)){
-                var linksContents = fs.readFileSync(linksFile, {encoding: 'utf8'});
-                fs.appendFileSync(bigArticleFile, linksContents + "\n\n", {encoding: 'utf8'});
-            }
-
             // Horizontal Line
             fs.appendFileSync(bigArticleFile, "---\n\n", {encoding: 'utf8'});
 
