@@ -69,8 +69,8 @@
 		"inject": "mdinject --root=app --docsroot=dist/sdk-examples --sourceext=\".ts|.css|.html\" --snippettitles=\"TypeScript|CSS|HTML\"",
 		"archive": "node scripts/archive.js",
 		"prepush-to-github": "npm run build",
-		"push-to-github": "(cd dist/sdk-examples && rimraf .git && git init && git add *.md && git add *.png && git commit -m \"nativescript-sdk-examples build preview\" && git remote add origin git@github.com:NativeScript/nativescript-sdk-examples-preview.git && git push -u --force origin master)",
+		"push-to-github": "(cd dist/sdk-examples && rimraf .git && git init && git add -A && git commit -m \"nativescript-sdk-examples build preview\" && git remote add origin git@github.com:NativeScript/nativescript-sdk-examples-preview.git && git push -u --force origin master)",
 		"preshow-preview": "npm run push-to-github",
-		"show-preview": "opener https://github.com/NativeScript/nativescript-sdk-examples-preview/blob/master/sdk-examples.md"
+		"show-preview": "opener https://github.com/NativeScript/nativescript-sdk-examples-preview"
 	}
 }

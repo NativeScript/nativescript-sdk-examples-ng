@@ -1,1 +1,0 @@
-Every NativeScript application is composed of visual widgets called components. Components enable you to quickly define the interface of your application. Components provide built-in functionality and can be further customized to fit your particular needs.
