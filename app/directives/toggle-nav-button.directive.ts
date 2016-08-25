@@ -22,8 +22,7 @@ export class ToggleNavButtonDirective {
         navigationButton.visibility = "visible";
 
         if (app.android) {
-            navigationButton.android.systemIcon = "ic_menu_back";
-
+            navigationButton.icon = "res://ic_arrow_back_black_24dp"
             navigationButton.on("tap", (args: EventData) => {
                 this.routerExtensions.backToPreviousPage();
             });

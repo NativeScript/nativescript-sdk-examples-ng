@@ -12,4 +12,5 @@ TextField, TextView {
     padding: 8;
     height: 38;
     font-size: 15;
+    text-align: justify;
 }
