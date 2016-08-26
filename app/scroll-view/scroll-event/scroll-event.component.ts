@@ -9,6 +9,7 @@ import {setTimeout} from "timer"
     selector: 'scroll-event-component',
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    styleUrls: ["scroll-view/scroll-event/style.css"],
     // << (hide)
     templateUrl: 'scroll-view/scroll-event/scroll-event.component.html'
 })

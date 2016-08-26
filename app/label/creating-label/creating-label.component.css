@@ -6,8 +6,7 @@ Label {
     border-width: 1;
     border-color: #0099CC;
     border-radius: 2;
-    padding: 10;
-    height: 38;
+    padding: 8;
     margin: 3;
 }
 /* << creating-label-css */
@@ -15,6 +14,5 @@ Button {
     font-size: 15;
     color: white;
     background-color: #0099CC;
-    margin-left: 3;
-    margin-right: 3;
+    height: 52;
 }

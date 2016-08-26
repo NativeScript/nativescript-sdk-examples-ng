@@ -8,6 +8,7 @@ import { COMMON_DIRECTIVES } from '../../directives';
     selector: 'web-view-html-component',
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    styleUrls: ["web-view/style.css"],
     // << (hide)
     templateUrl: 'web-view/web-view-html/web-view-html.component.html',
 })

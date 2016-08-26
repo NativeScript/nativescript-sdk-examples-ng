@@ -11,8 +11,6 @@ import { AnimationsExamplesComponent } from "./animations/animations-examples.co
 import { AnimatingPropertiesComponent} from "./animations/animating-properties/animating-properties.component";
 import { ChainingAnimationsComponent } from "./animations/chaining-animations/chaining-animations.component";
 import { MultipleViewsComponent } from "./animations/multiple-views/multiple-views.component";
-import { BorderExamplesComponent } from "./border/border-examples.component";
-import { DeclareBorderComponent } from "./border/declare-border/declare-border.component";
 import { ButtonExamplesComponent } from "./button/button-examples.component";
 import { ButtonTextComponent } from "./button/text/text.component";
 import { ButtonTapEventComponent } from "./button/tap-event/tap-event.component";
@@ -107,8 +105,6 @@ export const routes: RouterConfig = [
   { path: "animatingPropertiesComponent", component: AnimatingPropertiesComponent, data: { title: "Animate properties" } },
   { path: "chainingAnimationsComponent", component: ChainingAnimationsComponent, data: { title: "Chaining animations" } },
   { path: "multipleViewsComponent", component: MultipleViewsComponent, data: { title: "Animate multiple views" } },
-  { path: "borderExamplesComponent", component: BorderExamplesComponent, data: { title: "Border" } },
-  { path: "declareBorderComponent", component: DeclareBorderComponent, data: { title: "Declare Border" } },
   { path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } },
   { path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } },
   { path: "scrollViewVertivalExampleComponent", component: ScrollViewVerticalComponent, data: { title: "Vertical orientation" } },
@@ -119,10 +115,10 @@ export const routes: RouterConfig = [
   { path: "searchBarBindingComponent", component: SearchBarBindingComponent, data: { title: "SearchBar property binding" } },
   { path: "segmentedBarExamplesComponent", component: SegmentedBarExamplesComponent, data: { title: "SegmentedBar" } },
   { path: "basicSegmentedBarComponent", component: BasicSegmentedBarComponent, data: { title: "Basic SegmentedBar" } },
-  { path: "segmentedBarViewsComponent", component: SegmentedBarViewsComponent, data: { title: "SegmentedBar view change" } },
+  { path: "segmentedBarViewsComponent", component: SegmentedBarViewsComponent, data: { title: "SelectedIndexChange" } },
   { path: "sliderExamplesComponent", component: SliderExamplesComponent, data: { title: "Slider" } },
   { path: "basicSliderComponent", component: BasicSliderComponent, data: { title: "Basic Slider" } },
-  { path: "accessSliderValueComponent", component: SliderAccessValueComponent, data: { title: "Slider value" } },
+  { path: "accessSliderValueComponent", component: SliderAccessValueComponent, data: { title: "Slider's value" } },
   { path: "switchExamplesComponent", component: SwitchExamplesComponent, data: { title: "Switch" } },
   { path: "basicSwitchComponent", component: BasicSwitchComponent, data: { title: "Basic Switch" } },
   { path: "diableSwitchComponent", component: DisableSwitchComponent, data: { title: "Disable Switch component" } },
@@ -137,7 +133,7 @@ export const routes: RouterConfig = [
   { path: "basicTextViewComponent", component: BasicTextViewComponent, data: { title: "Basic TextView" } },
   { path: "webViewExamplesComponent", component: WebViewExamplesComponent, data: { title: "WebView" } },
   { path: "basicWebViewComponent", component: BasicWebViewComponent, data: { title: "Basic WebView" } },
-  { path: "webViewHtmlComponent", component: WebViewHtmlComponent, data: { title: "WebView HTML code" } },
+  { path: "webViewHtmlComponent", component: WebViewHtmlComponent, data: { title: "HTML as source of WebView" } },
   { path: "styleExamplesComponent", component: StyleExamplesComponent, data: { title: "Style" } },
   { path: "styleCSSFileComponent", component: StyleCSSFileComponent, data: { title: "Add style via CSS file" } },
   { path: "applyStyleViaCodeComponent", component: ApplyStyleCodeComponent, data: { title: "Apply style using code" } },

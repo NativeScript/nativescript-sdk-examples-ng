@@ -37,3 +37,8 @@
     color:#404040;
     padding-left: 15;
 }
+
+SearchBar {
+    font-size: 13;
+    padding: 15;
+}

@@ -25,16 +25,19 @@ export class TabViewItemsComponent {
 
        var innerFirstStackLayout = new StackLayout();
        var firstLabel = new Label();
+       firstLabel.margin = "15";
        firstLabel.text="Label first page";
        innerFirstStackLayout.addChild(firstLabel);
 
        var innerSecondStackLayout = new StackLayout();
        var secondLabel = new Label();
+       secondLabel.margin = "15";
        secondLabel.text="Label second page";
        innerSecondStackLayout.addChild(secondLabel);
 
        var innerThirdStackLayout = new StackLayout();
        var thirdLabel = new Label();
+       thirdLabel.margin = "15";
        thirdLabel.text="Label third page";
        innerThirdStackLayout.addChild(thirdLabel);
 
