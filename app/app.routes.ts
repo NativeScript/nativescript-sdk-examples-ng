@@ -94,7 +94,7 @@ import { UnlessDirectiveExampleComponent } from "./ng-directives/unless-directiv
 import { UsingNgSwitchExamplesComponent } from "./ng-directives/ngswitch-usage/ngswitch-usage.component";
 
 export const routes: RouterConfig = [
-  { path: "", component: ExamplesListComponent, data: { title: "Examples" } },
+  { path: "", component: ExamplesListComponent, data: { title: "NativeScript SDK Examples" } },
   { path: "actionBarExamplesComponent", component: ActionBarExamplesComponent, data: { title: "ActionBar" } },
   { path: "actionItemsComponent", component: ActionItemsComponent, data: { title: "Action items" } },
   { path: "navigationButtonComponent", component: NavigationButtonComponent, data: { title: "Navigation button" } },

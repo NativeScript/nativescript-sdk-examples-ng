@@ -24,6 +24,7 @@ TextField, TextView {
     margin-top: 10;
     height: 38;
     font-size: 15;
+    padding-left: 8;
 }
 
 ListView {

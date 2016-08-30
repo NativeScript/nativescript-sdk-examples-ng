@@ -3,15 +3,15 @@ ListView {
     padding: 10;
 }
 
-.odd {
-    margin: 5;    
+.odd { 
     vertical-align: center;
+    padding: 15;
 }
 
 .even {
     color: #0099CC;
-    margin: 5;    
     vertical-align: center;
+    padding: 15;
 }
 
 .label-item {

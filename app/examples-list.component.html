@@ -1,6 +1,6 @@
 <ListView [items]="links" exampleTitle toggleNavButton rowHeight="44">
     <template let-item="item">
-        <GridLayout [nsRouterLink]="item.link" class="item" >
+        <GridLayout [nsRouterLink]="item.link" class="item" height="44">
             <Label [text]="item.title" android:class="label-item" ></Label>
         </GridLayout>
     </template>

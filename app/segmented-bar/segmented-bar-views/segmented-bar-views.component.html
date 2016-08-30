@@ -1,6 +1,6 @@
 <StackLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> segmentedbar-show-views -->
-    <SegmentedBar #sb [items]="Items" [selectedIndex]="index" (selectedIndexChange)="onChange(sb.selectedIndex)">
+    <SegmentedBar #sb [items]="Items" (selectedIndexChange)="onChange(sb.selectedIndex)">
     </SegmentedBar>
     <StackLayout visibility="{{ visibility1 ? 'visible' : 'collapsed' }}">
         <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
