@@ -30,11 +30,11 @@ export class CreatingImageExampleComponent implements OnInit {
         this.newImage = new Image();
         this.newImage.imageSource = ImageSourceModule.fromResource("icon");
         this.newImage.stretch = "none";
-        this.newImage.style.margin = "20";
+        this.newImage.style.margin = "15";
 
         this.newLabel = new Label();
         this.newLabel.text = "Image loaded from code behind";
-        this.newLabel.style.margin = "10";
+        this.newLabel.style.margin = "15";
         
         stackView.addChild(this.newLabel);
         stackView.addChild(this.newImage);

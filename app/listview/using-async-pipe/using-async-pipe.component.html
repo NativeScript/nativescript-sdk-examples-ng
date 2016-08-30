@@ -1,4 +1,4 @@
-<GridLayout exampleTitle toggleNavButton class="example-container">
+<GridLayout exampleTitle toggleNavButton >
     <ListView [items]="myItems | async" rowHeight="44">
         <template let-item="item" let-i="index" let-odd="odd" let-even="even">
             <GridLayout [class.odd]="odd" [class.even]="even">

@@ -1,8 +1,8 @@
-<GridLayout exampleTitle toggleNavButton class="example-container">
+<GridLayout exampleTitle toggleNavButton>
     <!-- >> listview-create-code -->
     <ListView [items]="countries" (itemTap)="onItemTap($event)" rowHeight="44">
         <template let-country="item" let-i="index" let-odd="odd" let-even="even">
-            <GridLayout >
+            <GridLayout ios:class="item">
                 <Label [text]="country.name" android:class="label-item"></Label>
             </GridLayout>
         </template>
