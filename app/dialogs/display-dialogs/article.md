@@ -14,7 +14,7 @@ Confirm Dialog will expect the user to accept or reject the action that is about
 
 
 
-Login Dialog will wait for the user to input its credentials: 
+Login Dialog will wait for the user to input its credentials 
 <snippet id='login-dialog-code'/>
 
 

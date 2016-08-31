@@ -6,3 +6,10 @@ Specific `SegmentedBar` properties:
  - items
  - selectedIndex
  - selectedIndexChange
+
+
+**Native Component**
+
+| Android                | iOS      |
+|:-----------------------|:---------|
+| [android.widget.TabHost](http://developer.android.com/reference/android/widget/TabHost.html) | [UISegmentedControl](https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UISegmentedControl_Class/index.html) |

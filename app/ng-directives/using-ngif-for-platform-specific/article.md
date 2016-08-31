@@ -1,7 +1,7 @@
 `*ngIf` structural directive example usage for platform specific elements
 
-HTML:
+HTML
 <snippet id='using-ngif-platform-html'/>
 
-TypeScript:
+TypeScript
 <snippet id='using-ngif-platform-code'/>

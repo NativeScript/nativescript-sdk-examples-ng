@@ -1,5 +1,5 @@
 <GridLayout rows="*" exampleTitle toggleNavButton>
-    <!-- >> listview-customize-code -->
+    <!-- >> listview-customize-html -->
     <ListView [items]="dataItems" (setupItemView)="onSetupItemView($event)" rowHeight="44">
         <template let-dataitem="item" let-i="index" let-third="third" let-header="header" let-footer="footer">
             <GridLayout [class.third]="third" [class.header]="header" [class.footer]="footer" class="item" >
@@ -7,5 +7,5 @@
             </GridLayout>
         </template>
     </ListView>
-    <!-- << listview-customize-code -->
+    <!-- << listview-customize-html -->
 </GridLayout>
