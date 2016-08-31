@@ -92,6 +92,8 @@ import { UsingNgIfForPlatformSpecificComponent } from "./ng-directives/using-ngi
 import { CreateCustomDirectiveExampleComponent } from "./ng-directives/create-custom-directive/create-custom-directive.component";
 import { UnlessDirectiveExampleComponent } from "./ng-directives/unless-directive/unless-directive.component";
 import { UsingNgSwitchExamplesComponent } from "./ng-directives/ngswitch-usage/ngswitch-usage.component";
+import { FormattedStringExamplesComponent } from "./formatted-string/formated-string-examples.component";
+import { CreateFormattedStringComponent } from "./formatted-string/create-formatted-string/create-formatted-string.component";
 
 export const routes: RouterConfig = [
   { path: "", component: ExamplesListComponent, data: { title: "NativeScript SDK Examples" } },
@@ -188,6 +190,9 @@ export const routes: RouterConfig = [
   { path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create custom *ng directive" } },
   { path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } },
   { path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } },
+  
+  { path: "formattedStringExamplesComponent", component: FormattedStringExamplesComponent, data: { title: "Formatted String" } },
+  { path: "createFormattedStringExampleComponent", component: CreateFormattedStringComponent, data: { title: "Create Formatted String" } },
 ];
 
 export const APP_ROUTER_PROVIDERS = [
