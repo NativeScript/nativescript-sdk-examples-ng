@@ -22,24 +22,23 @@
 	"nativescript": {
 		"id": "org.nativescript.nativescriptsdkexamplesng",
 		"tns-ios": {
-			"version": "2.2.0"
+			"version": "2.2.1"
 		},
 		"tns-android": {
 			"version": "2.2.0"
 		}
 	},
 	"dependencies": {
-		"@angular/common": "2.0.0-rc.4",
-		"@angular/compiler": "2.0.0-rc.4",
-		"@angular/core": "2.0.0-rc.4",
-		"@angular/http": "2.0.0-rc.4",
-		"@angular/platform-browser": "2.0.0-rc.4",
-		"@angular/platform-browser-dynamic": "2.0.0-rc.4",
-		"@angular/platform-server": "2.0.0-rc.4",
-		"@angular/router": "3.0.0-beta.2",
-		"@angular/router-deprecated": "2.0.0-rc.2",
-		"nativescript-angular": "next",
-		"tns-core-modules": "next",
+		"@angular/core": "2.0.0-rc.5",
+		"@angular/common": "2.0.0-rc.5",
+		"@angular/compiler": "2.0.0-rc.5",
+		"@angular/http": "2.0.0-rc.5",
+		"@angular/platform-browser": "2.0.0-rc.5",
+		"@angular/platform-browser-dynamic": "2.0.0-rc.5",
+		"@angular/platform-server": "2.0.0-rc.5",
+		"@angular/router": "3.0.0-rc.1",
+		"nativescript-angular": "0.4.0",
+		"tns-core-modules": "2.2.1",
 		"rxjs": "5.0.0-beta.6",
 		"zone.js": "^0.6.12"
 	},
@@ -69,8 +68,8 @@
 		"inject": "mdinject --root=app --docsroot=dist/sdk-examples --sourceext=\".ts|.css|.html\" --snippettitles=\"TypeScript|CSS|HTML\"",
 		"archive": "node scripts/archive.js",
 		"prepush-to-github": "npm run build",
-		"push-to-github": "(cd dist/sdk-examples && rimraf .git && git init && git add *.md && git add *.png && git commit -m \"nativescript-sdk-examples build preview\" && git remote add origin git@github.com:NativeScript/nativescript-sdk-examples-preview.git && git push -u --force origin master)",
+		"push-to-github": "(cd dist/sdk-examples && rimraf .git && git init && git add -A && git commit -m \"nativescript-sdk-examples build preview\" && git remote add origin git@github.com:NativeScript/nativescript-sdk-examples-preview.git && git push -u --force origin master)",
 		"preshow-preview": "npm run push-to-github",
-		"show-preview": "opener https://github.com/NativeScript/nativescript-sdk-examples-preview/blob/master/sdk-examples.md"
+		"show-preview": "opener https://github.com/NativeScript/nativescript-sdk-examples-preview"
 	}
 }

@@ -2,7 +2,7 @@ import { Color } from "color";
 import { Component, OnInit } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
 import { GridLayout} from "ui/layouts/grid-layout"
-import { Label } from "ui/label"
+import { Button } from "ui/button"
 import { Page } from "ui/page";
 
 var layout = require("ui/layouts/grid-layout");
@@ -20,19 +20,19 @@ export class GridLayoutComponent implements OnInit {
 
     ngOnInit() {
         let gridLayout = this.page.getViewById<GridLayout>("gridLayout");
-        gridLayout.style.backgroundColor = new Color("#F1F0FF");
 
         // >> grid-layout-code
         var newRow = new layout.ItemSpec(1, layout.GridUnitType.star);
         gridLayout.addRow(newRow);
 
-        var label = new Label();
-        label.text = "colSpan:3/row:2";
-        gridLayout.addChild(label);
+        var button = new Button();
+        button.text = "6";
+        gridLayout.addChild(button);
 
-        GridLayout.setColumnSpan(label, 3);
-        GridLayout.setRow(label, 2);
+        GridLayout.setColumnSpan(button, 3);
+        GridLayout.setRow(button, 3);
         // << grid-layout-code
-        label.cssClass = "label2"
+
+        button.backgroundColor = new Color("#CCFFFF");
     }
 }

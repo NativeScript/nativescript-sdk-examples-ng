@@ -1,21 +1,19 @@
-<StackLayout exampleTitle  class="example-container">
+<StackLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> sample-ui-textfield-html -->
    <GridLayout rows="auto auto auto auto auto auto 50" columns="100 *">
-       <Image class=".imgStyle" src="res://icon" row="0" col="1"></Image>
-
-       <Label text="Nickname: " row="1" col="0" textWrap="true"></Label>
+       <Label text="Nickname " row="1" col="0" textWrap="true"></Label>
        <TextField hint="Enter your nickname" text="" row="1" col="1" returnKeyType="next" ></TextField>
 
-       <Label text="Username: " row="2" col="0" textWrap="true"></Label>
+       <Label text="Username " row="2" col="0" textWrap="true"></Label>
        <TextField hint="Enter your username" text="" row="2" col="1"  returnKeyType="next"></TextField>
 
-       <Label text="Password: " row="3" col="0" textWrap="true"></Label>
+       <Label text="Password " row="3" col="0" textWrap="true"></Label>
        <TextField hint="Enter your password" autocorrect="false"  secure="true" text="" row="3" col="1" returnKeyType="next"></TextField>
 
-       <Label text="Country: " row="4" col="0" textWrap="true"></Label>
+       <Label text="Country " row="4" col="0" textWrap="true"></Label>
        <TextField autocorrect="true" hint="Enter your country" text="" row="4" col="1" returnKeyType="next"></TextField>
 
-       <Label text="Birth date: " row="5" col="0" textWrap="true"></Label>
+       <Label text="Birth date " row="5" col="0" textWrap="true"></Label>
        <TextField id="textFieldBDate" hint="Enter your birth date" [text]='birthDate | date:"MM/dd/yy"' (tap)="showDatePicker()" row="5" col="1" returnKeyType="done" (returnPress)="submit()"></TextField>
 
        <Button row="6" colSpan="3" text="Tap to enter the date" (tap)="enterDate()" [visibility]="isButtonVisible ? 'visible' : 'collapsed'"></Button>

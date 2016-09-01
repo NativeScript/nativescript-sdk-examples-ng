@@ -8,6 +8,7 @@ import { COMMON_DIRECTIVES } from '../../directives';
     selector: 'basic-text-view-component',
     // >> (hide)
     directives: [COMMON_DIRECTIVES],
+    styleUrls: ["text-view/basic-text-view/style.css"],
     // << (hide)
     templateUrl: 'text-view/basic-text-view/basic-text-view.component.html'
 })

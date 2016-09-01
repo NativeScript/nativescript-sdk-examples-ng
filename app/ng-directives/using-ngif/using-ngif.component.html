@@ -1,6 +1,6 @@
-<StackLayout exampleTitle class="example-container">
+<StackLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> using-ngif-html -->
-    <Button text="Show/hide block" (tap)="onTap()"></Button>
-    <GridLayout *ngIf="isVisible" width="200" height="200" backgroundColor="#8C489F"></GridLayout>
+    <Button text="Show/hide block" (tap)="onTap()" margin="7"></Button>
+    <GridLayout *ngIf="isVisible"  backgroundColor="#8C489F" margin="10" borderRadius="2" height="300"></GridLayout>
     <!-- << using-ngif-html -->
 </StackLayout>

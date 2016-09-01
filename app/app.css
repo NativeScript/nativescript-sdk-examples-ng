@@ -37,3 +37,12 @@
     color:#404040;
     padding-left: 15;
 }
+
+.label-item {
+    vertical-align: center;
+}
+
+SearchBar {
+    font-size: 13;
+    padding: 15;
+}

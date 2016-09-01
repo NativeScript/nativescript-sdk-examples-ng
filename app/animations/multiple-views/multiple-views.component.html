@@ -1,10 +1,14 @@
-<StackLayout exampleTitle class="example-container">
-    <Button text="Animate" (tap)="animate()"></Button>
-    <Button text="Reset" (tap)="reset()"></Button>
-    <AbsoluteLayout width="300" height="300" backgroundColor="LightGray">
-      <Label id="view1" text="{N}" width="100" height="100" left="0" top="0" style.textAlignment="center" backgroundColor="#0099CC" style.fontSize="30"></Label>
-      <Label id="view2" text="{N}" width="100" height="100" left="200" top="0" style.textAlignment="center" backgroundColor="#CCFFFF" style.fontSize="30"></Label>
-      <Label id="view3" text="{N}" width="100" height="100" left="200" top="200" style.textAlignment="center" backgroundColor="#8C489F" style.fontSize="30"></Label>
-      <Label id="view4" text="{N}" width="100" height="100" left="0" top="200" style.textAlignment="center" backgroundColor="#AA0078" style.fontSize="30"></Label>
-    </AbsoluteLayout>
+<StackLayout exampleTitle toggleNavButton class="example-container">
+  <Button text="Animate" (tap)="animate()" android:width="306" ios:width="300" marginBottom="20" marginTop="10"></Button>
+  <Button text="Reset" (tap)="reset()" android:width="306" ios:width="300"  marginBottom="20" marginTop="0"></Button>
+  <AbsoluteLayout height="300" width="300" backgroundColor="LightGray" borderRadius="2">
+    <Label id="view1" text="{N}" width="100" height="100" left="0" top="0" style.textAlignment="center" backgroundColor="#0099CC"
+      style.fontSize="30"  borderRadius="2"></Label>
+    <Label id="view2" text="{N}" width="100" height="100" left="200" top="0" style.textAlignment="center" backgroundColor="#CCFFFF"
+      style.fontSize="30"  borderRadius="2"></Label>
+    <Label id="view3" text="{N}" width="100" height="100" left="200" top="200" style.textAlignment="center" backgroundColor="#8C489F"
+      style.fontSize="30"  borderRadius="2"></Label>
+    <Label id="view4" text="{N}" width="100" height="100" left="0" top="200" style.textAlignment="center" backgroundColor="#AA0078"
+      style.fontSize="30" borderRadius="2"></Label>
+  </AbsoluteLayout>
 </StackLayout>

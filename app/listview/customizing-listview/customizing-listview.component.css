@@ -1,16 +1,15 @@
-StackLayout {
-    background-color: whitesmoke;
-    color: #0099CC;
-    padding: 5;
-    vertical-align: center;
+ListView {
     font-size: 15;
+    padding: 10;
 }
 
 /* >> listview-customize-css */
 .third {
     background-color: #0099CC;
     color: whitesmoke;
-    padding: 5;
+    text-align: left;
+    vertical-align: center;
+    margin-bottom: 6;
 }
 
 .header {
@@ -18,8 +17,8 @@ StackLayout {
     color: whitesmoke;
     margin-top: 20;
     margin-bottom: 20;
-    height: 30;
-    border-radius: 5;
+    height: 44;
+    border-radius: 3;
 }
 
 .footer {
@@ -27,7 +26,13 @@ StackLayout {
     color: whitesmoke;
     margin-top: 20;
     margin-bottom: 20;
-    height: 30;
-    border-radius: 5;
+    height: 44;
+    border-radius: 3;
+    padding-left: 15;
+}
+
+.item {
+    text-align: left;
+    vertical-align: center;
 }
 /* << listview-customize-css */

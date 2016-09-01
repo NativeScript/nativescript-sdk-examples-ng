@@ -1,2 +1,2 @@
-Setting TabView in HTML:
+Set TabView in HTML
 <snippet id='basic-tab-view-html'/>

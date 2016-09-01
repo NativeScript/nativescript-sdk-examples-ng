@@ -7,7 +7,7 @@ The `position` option is platform-specific. The available values are as follows:
 * Android - `actionBar`, `actionBarIfRoom` and `popup`. The default is `actionBar`.
 * iOS - `left` and `right`. The default is `left`.
 
-An ActionItem can be easily customized by placing whichever element you need directly inside:
+An ActionItem can be easily customized by placing whichever element you need directly inside.
 <snippet id='action-bar-custom-action-item-html'/>
 
 Furthermore, an item can have platform-specific icons that can be set with the corresponding `systemIcon` value. For example:

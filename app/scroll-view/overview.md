@@ -6,3 +6,5 @@ The possible values of `orientation` are:
  - `vertical`
  
 It is possible to handle the `scroll` event of the View by binding to the ScrollView’s `scroll` event.
+
+**API Reference for the** [ScrollView Class](http://docs.nativescript.org/api-reference/modules/_ui_scroll_view_.html)

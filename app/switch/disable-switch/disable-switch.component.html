@@ -1,4 +1,4 @@
-<StackLayout exampleTitle class="example-container">
+<StackLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> switch-view-html -->
     <GridLayout rows="auto auto auto auto" columns="* auto" margin="5">
         <Label [text]="sw1.isEnabled ? 'enabled' : 'disabled'" textWrap="true" row="0" col="0" margin="2"></Label>
@@ -7,7 +7,7 @@
         <Switch #sw2 checked="false" (checkedChange)="secondSwitchState=sw2.checked" row="1" col="1" ></Switch>
         <Label [text]="sw3.isEnabled ? 'enabled' : 'disabled'" textWrap="true" row="2" col="0" margin="2"></Label>
         <Switch #sw3 checked="true" (checkedChange)="thirdSwitchState=sw3.checked" row="2" col="1"></Switch>   
-        <Button text="Disable switches" (tap)="onTap()" row="3" calSpan="2"></Button>
+        <Button text="Disable switches" (tap)="onTap()" row="3" calSpan="2" horizontalAlignment="stretch"></Button>
     </GridLayout>
     <!-- << switch-view-html -->
 </StackLayout>

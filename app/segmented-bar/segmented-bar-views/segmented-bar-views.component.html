@@ -1,23 +1,17 @@
-<StackLayout exampleTitle class="example-container">
+<StackLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> segmentedbar-show-views -->
-    <SegmentedBar #sb [items]="Items" [selectedIndex]="index" (selectedIndexChange)="onChange(sb.selectedIndex)">
+    <SegmentedBar #sb [items]="Items" (selectedIndexChange)="onChange(sb.selectedIndex)">
     </SegmentedBar>
     <StackLayout visibility="{{ visibility1 ? 'visible' : 'collapsed' }}">
-        <Label text="Sample page 1" class="title"></Label>
-        
-        <Button text="TAP" (tap)="onTap()" backgroundColor="#8C489F"></Button>
+        <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
     </StackLayout>
 
     <StackLayout visibility="{{ visibility2 ? 'visible' : 'collapsed' }}">
-        <Label text="Sample page 2" class="title"></Label>
-        
-        <Button text="TAP" (tap)="onTap()" backgroundColor="#8C489F"></Button>
+        <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
     </StackLayout>
 
     <StackLayout visibility="{{ visibility3 ? 'visible' : 'collapsed' }}">
-        <Label text="Sample page 3" class="title"></Label>
-        
-        <Button text="TAP" (tap)="onTap()"> backgroundColor="#8C489F"</Button>
+        <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
     </StackLayout>
     <!-- << segmentedbar-show-views -->
 </StackLayout>

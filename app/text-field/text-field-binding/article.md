@@ -1,5 +1,5 @@
-Setting TextFields in HTML:
+Set TextFields in HTML
 <snippet id='textfield-binding-html'/>
 
-Handle TextField returnPress event:
+Handle TextField returnPress event
 <snippet id='textfield-binding-show-result'/>

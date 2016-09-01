@@ -17,7 +17,7 @@ import { SegmentedBarItem } from "ui/segmented-bar";
 export class SegmentedBarViewsComponent {
 
     public Items: Array<SegmentedBarItem>;
-    public index = 0;
+    public selectedIndex = 0;
     public visibility1 = true;
     public visibility2 = false;
     public visibility3 = false;
@@ -31,20 +31,11 @@ export class SegmentedBarViewsComponent {
             tmpSegmentedBar.title = "View " + i;
             this.Items.push(tmpSegmentedBar);
         }
+        this.selectedIndex = 0;
     }
 
     public onChange(value) {
-        // >> (hide)
-        var that=this;
-        console.log("tap");
-        if(this.state > 0){
-        // << (hide)
-        alert("Selected index: " + value);
-         // >> (hide)
-        }
-        this.state++;
-        // << (hide)
-        this.index = value;
+        this.selectedIndex = value;
         switch (value) {
             case 0:
                 this.visibility1 = true;
@@ -67,12 +58,6 @@ export class SegmentedBarViewsComponent {
             default:
                 break;
         }
-    }
-
-    public onTap() {
-        
-            alert("Selected index " + this.index);
-       
     }
 
 }

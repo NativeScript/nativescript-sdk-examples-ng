@@ -1,7 +1,7 @@
 import { Color } from "color";
 import { Component, OnInit } from "@angular/core";
 import { COMMON_DIRECTIVES } from '../../directives';
-import { Label } from "ui/label"
+import { Button } from "ui/button"
 import { Page } from "ui/page";
 import { StackLayout} from "ui/layouts/stack-layout"
 
@@ -18,21 +18,20 @@ export class StackLayoutComponent implements OnInit {
 
     ngOnInit() {
         let stackLayout = this.page.getViewById<StackLayout>("stackLayout");
-        stackLayout.style.backgroundColor = new Color("#F1F0FF");
 
         // >> stack-layout-code
-        var firstLabel = new Label();
-        firstLabel.text = "Label 2";
-        firstLabel.style.backgroundColor = new Color("#CCFFFF");
-        firstLabel.style.width = 90;
+        var firstButton = new Button();
+        firstButton.text = "Button 2";
+        firstButton.style.backgroundColor = new Color("#CCFFFF");
+        firstButton.style.width = 100;
 
-        stackLayout.addChild(firstLabel);
+        stackLayout.addChild(firstButton);
         // << stack-layout-code
 
-        var secondLabel = new Label();
-        secondLabel.text = "Label 3";
-        secondLabel.style.backgroundColor = new Color("#8C489F");
-        secondLabel.style.width = 80;
-        stackLayout.addChild(secondLabel);
+        var secondButton = new Button();
+        secondButton.text = "Button 3";
+        secondButton.style.backgroundColor = new Color("#8C489F");
+        secondButton.style.width = 100;
+        stackLayout.addChild(secondButton);
     }
 }

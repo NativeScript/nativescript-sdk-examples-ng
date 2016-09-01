@@ -29,42 +29,40 @@ function build(){
     rimraf.sync(distDir);
     fs.mkdirSync(distDir);
 
-    var articleDir = path.join(distDir, "sdk-examples");
-    fs.mkdirSync(articleDir);
-    
-    // Create the sdk-examples-toc.md file which will show links to on the left.
-    var tocFile = path.join(articleDir, "sdk-examples-toc.md");
-    fs.writeFileSync(tocFile, "", {encoding: 'utf8'});
+    var articlesDir = path.join(distDir, "sdk-examples");
+    fs.mkdirSync(articlesDir);
 
-    // Create the big article file sdk-examples.md
-    var bigArticleFile = path.join(articleDir, "sdk-examples.md");
-    fs.writeFileSync(bigArticleFile, "# NativeScript SDK Examples\n\n", {encoding: 'utf8'});
+    var imgDir = path.join(articlesDir, "img");
+    fs.mkdirSync(imgDir);
     
     var appDir = path.join(cwd, "app");
 
-    // Main Content
-    var mainContent = fs.readFileSync(path.join(appDir, "main.md"), {encoding: 'utf8'});
-    fs.appendFileSync(bigArticleFile, mainContent + "\n\n", {encoding: 'utf8'});
-
-    fs.appendFileSync(tocFile, "- [NativeScript SDK Examples](./sdk-examples.md#nativescript-sdk-examples)\n\n", {encoding: 'utf8'});
-    
     // Gather all component overviews
     var components = glob.sync(appDir + "/**/overview.md").sort(compareFiles);
+    var jenkinsPosition = 0;
     components.forEach(function(overview){
         var componentDirName = path.dirname(overview);
         var componentHeader = path.basename(componentDirName);
                 
-        // Component Header
-        var componentPrettyHeader = prettify(componentHeader);
-        fs.appendFileSync(bigArticleFile, "## " + componentPrettyHeader + "\n\n", {encoding: 'utf8'});
-        
-        // Component Content
-        var overviewContents = fs.readFileSync(overview, {encoding: 'utf8'});
-        fs.appendFileSync(bigArticleFile, overviewContents + "\n\n", {encoding: 'utf8'});
+        // Create the component article file, i.e. button.md
+        var componentArticleFile = path.join(articlesDir, componentHeader + ".md");
 
-        // Component TOC Entry
-        var componentTOCEntry = "\t- ["+componentPrettyHeader+"](./sdk-examples.md#"+componentHeader+")";
-        fs.appendFileSync(tocFile, componentTOCEntry + "\n\n", {encoding: 'utf8'});
+        var componentPrettyHeader = prettify(componentHeader);
+
+        // Jenkins Header
+        fs.appendFileSync(componentArticleFile, "---\n", {encoding: 'utf8'});
+        fs.appendFileSync(componentArticleFile, "title: " + componentPrettyHeader + "\n", {encoding: 'utf8'});
+        fs.appendFileSync(componentArticleFile, "description: " + componentPrettyHeader + " SDK Examples" + "\n", {encoding: 'utf8'});
+        fs.appendFileSync(componentArticleFile, "position: " + jenkinsPosition++ + "\n", {encoding: 'utf8'});
+        fs.appendFileSync(componentArticleFile, "slug: " + componentHeader + "\n", {encoding: 'utf8'});
+        fs.appendFileSync(componentArticleFile, "---\n\n", {encoding: 'utf8'});
+        
+        // Component Markdown Header
+        fs.appendFileSync(componentArticleFile, "# " + componentPrettyHeader + "\n\n", {encoding: 'utf8'});
+        
+        // Component Overview
+        var overviewContents = fs.readFileSync(overview, {encoding: 'utf8'});
+        fs.appendFileSync(componentArticleFile, overviewContents + "\n\n", {encoding: 'utf8'});
 
         var articles = glob.sync(componentDirName + "/**/article.md").sort(compareFiles);
         
@@ -75,50 +73,39 @@ function build(){
 
             // Header
             var prettyArticleHeader = prettify(articleHeader);
-            fs.appendFileSync(bigArticleFile, "### " + prettyArticleHeader + "\n\n", {encoding: 'utf8'});
+            fs.appendFileSync(componentArticleFile, "## " + prettyArticleHeader + "\n\n", {encoding: 'utf8'});
 
             // Content
             var articleContents = fs.readFileSync(article, {encoding: 'utf8'});
-            fs.appendFileSync(bigArticleFile, articleContents + "\n\n", {encoding: 'utf8'});
+            fs.appendFileSync(componentArticleFile, articleContents + "\n\n", {encoding: 'utf8'});
             
             // Images
             let androidImage = path.join(articleDirName, "android.png");
             let iosImage = path.join(articleDirName, "ios.png");
             if (fs.existsSync(androidImage) && fs.existsSync(iosImage)){
-                let newAndroidFileName = articleHeader + "-android.png";
-                fs.copySync(androidImage, path.join(articleDir, newAndroidFileName));    
+                let newAndroidFileName = componentHeader + "-" + articleHeader + "-android.png";
+                fs.copySync(androidImage, path.join(imgDir, newAndroidFileName));    
                 
-                let newiOSFileName = articleHeader + "-ios.png";
-                fs.copySync(iosImage, path.join(articleDir, newiOSFileName));    
+                let newiOSFileName = componentHeader + "-" + articleHeader + "-ios.png";
+                fs.copySync(iosImage, path.join(imgDir, newiOSFileName));    
 
-                fs.appendFileSync(bigArticleFile, "|Android|iOS|\n", {encoding: 'utf8'});
-                fs.appendFileSync(bigArticleFile, "|---|---|\n", {encoding: 'utf8'});
-                fs.appendFileSync(bigArticleFile, "|![Android]("+newAndroidFileName+" \"Android\")|![iOS]("+newiOSFileName+" \"iOS\")|\n\n", {encoding: 'utf8'});
+                fs.appendFileSync(componentArticleFile, "|Android|iOS|\n", {encoding: 'utf8'});
+                fs.appendFileSync(componentArticleFile, "|---|---|\n", {encoding: 'utf8'});
+                fs.appendFileSync(componentArticleFile, "|![Android](img/"+newAndroidFileName+" \"Android\")|![iOS](img/"+newiOSFileName+" \"iOS\")|\n\n", {encoding: 'utf8'});
             }
 
             // Links
             var githubDirUrl = pjson.homepage + "/edit/master/" + path.relative(cwd, articleDirName).replace(/\\/g, "/");
 
             var linkToDocument = "[Improve this document](" + githubDirUrl + "/" + path.basename(article) + ")"
-            fs.appendFileSync(bigArticleFile, linkToDocument + "\n\n", {encoding: 'utf8'});
+            fs.appendFileSync(componentArticleFile, linkToDocument + "\n\n", {encoding: 'utf8'});
             
             var linkToSource = "[Demo Source](" + githubDirUrl + ")"
-            fs.appendFileSync(bigArticleFile, linkToSource + "\n\n", {encoding: 'utf8'});
-
-            var linksFile = path.join(articleDirName, "links.md");
-            if (fs.existsSync(linksFile)){
-                var linksContents = fs.readFileSync(linksFile, {encoding: 'utf8'});
-                fs.appendFileSync(bigArticleFile, linksContents + "\n\n", {encoding: 'utf8'});
-            }
+            fs.appendFileSync(componentArticleFile, linkToSource + "\n\n", {encoding: 'utf8'});
 
             // Horizontal Line
-            fs.appendFileSync(bigArticleFile, "---\n\n", {encoding: 'utf8'});
-
-            // Add an entry to the TOC
-            var articleTOCEntry = "\t\t- ["+prettyArticleHeader+"](./sdk-examples.md#"+articleHeader+")";
-            fs.appendFileSync(tocFile, articleTOCEntry + "\n\n", {encoding: 'utf8'});
+            fs.appendFileSync(componentArticleFile, "---\n\n", {encoding: 'utf8'});
         });
-
     });
 }
 

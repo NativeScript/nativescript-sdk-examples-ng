@@ -1,9 +1,10 @@
-<StackLayout exampleTitle class="example-container">
+<StackLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> scroll-event-html -->
-    <Label [text]="status" textWrap="true" height="50px" backgroundColor="#0099CC" class="label1"></Label>
-    
+    <StackLayout borderRadius="2" backgroundColor="#0099CC" marginBottom="20" height="50px" >
+        <Label [text]="status" class="header-label"></Label>
+    </StackLayout>
     <ScrollView (scroll)="onscroll()">
-        <GridLayout  rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
+        <GridLayout rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
             <Label height="50" row="0" text="Title 1"></Label>
             <Label height="50" row="1" text="Title 2"></Label>
             <Label height="50" row="2" text="Title 3"></Label>

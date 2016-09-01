@@ -1,6 +1,6 @@
 The ActionBar has a navigation button (a.k.a back button) that is used for moving around the application. 
 
-It can be set through the NavigationButton element:
+It can be set through the NavigationButton element.
 <snippet id='action-bar-navigation-button-html'/>
 
 Setting text for the navigation button is not supported on Android. You can, however, use the `icon` or `android.systemIcon` attributes to set the image of the navigation button on Android.

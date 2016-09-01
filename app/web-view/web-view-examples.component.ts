@@ -4,8 +4,8 @@ import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("WebView code", "/basicWebViewComponent"),
-    new Link("WebView HTML", "/webViewHtmlComponent")
+    new Link("Basic WebView", "/basicWebViewComponent"),
+    new Link("HTML as source of WebView", "/webViewHtmlComponent")
 ];
 
 @Component({

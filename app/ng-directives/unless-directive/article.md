@@ -1,11 +1,11 @@
-Creating custom Unless directive example:
+Create custom Unless directive example:
 
-Directive code:
+Directive code
 <snippet id='directive-code '/>
 
-Setting it in HTML:
+Set it in HTML
 <snippet id='unless-directive-html'/>
 
-Setting in code:
+Set in code
 <snippet id='unless-directive-code'/>
 

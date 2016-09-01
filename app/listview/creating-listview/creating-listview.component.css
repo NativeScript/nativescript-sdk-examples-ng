@@ -1,10 +1,6 @@
 /* >> listview-create-css */
 ListView {
     font-size: 15;
-    padding: 10;
-}
-
-.even {
-    color: #0099CC;
+    padding: 15;
 }
 /* << listview-create-css */

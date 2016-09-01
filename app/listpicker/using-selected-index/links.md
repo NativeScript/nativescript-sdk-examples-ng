@@ -1,1 +1,0 @@
-[ListPickerClass](https://docs.nativescript.org/api-reference/classes/_ui_list_picker_.listpicker.html)

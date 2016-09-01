@@ -1,7 +1,7 @@
-<StackLayout exampleTitle class="example-container">
-    <Button text="Animate" (tap)="animate(target)"></Button>
+<StackLayout exampleTitle toggleNavButton class="example-container">
+    <Button text="Animate" (tap)="animate(target)" margin="20" android:width="306" ios:width="300" ></Button>
     
-    <AbsoluteLayout width="300" height="300" backgroundColor="LightGray">
+    <AbsoluteLayout width="300" height="300" backgroundColor="LightGray" borderRadius="2" >
       <Image #target src="res://icon" horizontalAlignment="center" verticalAlignment="center"></Image>
     </AbsoluteLayout>
 </StackLayout>

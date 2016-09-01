@@ -2,3 +2,15 @@
     font-size: 15;
     padding: 16;
 }
+
+.label-item {
+    vertical-align: center;
+}
+
+TextField, TextView {
+    margin-top: 10;
+    padding: 8;
+    height: 38;
+    font-size: 15;
+    text-align: justify;
+}

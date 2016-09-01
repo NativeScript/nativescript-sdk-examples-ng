@@ -3,7 +3,7 @@
     padding:15
 }
 
-Button {
+Page Button {
     background-color: #30BCFF;
     color: #FFFFFF;
     margin-top: 10;
@@ -13,6 +13,10 @@ Button {
     border-radius: 2;
 }
 
+ Button {
+    font-size: 15;
+}
+
 TextField, TextView {
     border-color: lightgray;
     border-width: 1;
@@ -20,6 +24,7 @@ TextField, TextView {
     margin-top: 10;
     height: 38;
     font-size: 15;
+    padding-left: 8;
 }
 
 ListView {

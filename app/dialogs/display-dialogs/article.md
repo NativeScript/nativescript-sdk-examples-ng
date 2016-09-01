@@ -14,7 +14,7 @@ A Confirm Dialog will expect the user to accept or reject the action that is abo
 
 
 
-A Login Dialog will wait for the user to input its credentials: 
+A Login Dialog will wait for the user to input their credentials: 
 <snippet id='login-dialog-code'/>
 
 

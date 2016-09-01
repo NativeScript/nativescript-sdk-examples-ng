@@ -3,6 +3,7 @@
 import { Component, ChangeDetectionStrategy } from "@angular/core";
 // >> (hide)
 import { COMMON_DIRECTIVES } from '../../directives';
+import { ObservableArray } from "data/observable-array";
 // << (hide)
 class DataItem {
     constructor(public name: string) { }
@@ -14,44 +15,50 @@ class DataItem {
     directives: [COMMON_DIRECTIVES],
     // << (hide)
     templateUrl: 'search-bar/clear-search-bar/clear-search-bar.component.html',
-    changeDetection:ChangeDetectionStrategy.OnPush
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 
 export class ClearSearchBarComponent {
-    private arrayItem:Array<DataItem>;
-    public myItems: Array<DataItem>;
-    public searchPhrase:string;
+    private arrayItems: Array<DataItem>;
+    public myItems: ObservableArray<DataItem>;
+    public searchPhrase: string;
 
     constructor() {
-        this.searchPhrase="";
-        this.arrayItem=[];
-        this.myItems=[];
-        this.arrayItem.push(new DataItem("United States"));
-        this.arrayItem.push(new DataItem("Bulgaria"));
-        this.arrayItem.push(new DataItem("Germany"));
-        this.arrayItem.push(new DataItem("Denmark"));
-        this.arrayItem.push(new DataItem("India"));
-        this.arrayItem.push(new DataItem("Spain"));
-        this.arrayItem.push(new DataItem("Italy"));
-        this.myItems=this.arrayItem;
+        this.searchPhrase = "";
+        this.arrayItems = [];
+        this.myItems = new ObservableArray<DataItem>();
+
+        this.arrayItems.push(new DataItem("United States"));
+        this.arrayItems.push(new DataItem("Bulgaria"));
+        this.arrayItems.push(new DataItem("Germany"));
+        this.arrayItems.push(new DataItem("Denmark"));
+        this.arrayItems.push(new DataItem("India"));
+        this.arrayItems.push(new DataItem("Spain"));
+        this.arrayItems.push(new DataItem("Italy"));
+
+        this.myItems = new ObservableArray<DataItem>(this.arrayItems);
     }
 
-    public onSubmit(value){
-        alert("You are searching for "+value);
-        this.myItems=[];
+    public onSubmit(value) {
+        this.myItems = new ObservableArray<DataItem>();
         var searchValue = value.toLowerCase();
-        if(value !== "" ){
-            for(var i=0; i<this.arrayItem.length; i++){
-                if(this.arrayItem[i].name.toLowerCase().indexOf(searchValue) !== -1){
-                    this.myItems.push(this.arrayItem[i]);
+        if (value !== "") {
+            for (var i = 0; i < this.arrayItems.length; i++) {
+                if (this.arrayItems[i].name.toLowerCase().indexOf(searchValue) !== -1) {
+                    this.myItems.push(this.arrayItems[i]);
                 }
             }
         }
     }
 
-    public onClear(){
-        this.searchPhrase="";
+    public onClear() {
+        this.searchPhrase = "";
+        this.myItems = new ObservableArray<DataItem>();
+        
+        this.arrayItems.forEach(item => {
+            this.myItems.push(item);
+        });
     }
-    
+
 }
 // << clear-search-bar-submit

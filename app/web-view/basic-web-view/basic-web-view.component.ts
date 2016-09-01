@@ -18,8 +18,8 @@ import {TextField} from "ui/text-field"
 
 export class BasicWebViewComponent implements OnInit {
     
-    public url="https://www.nativescript.org";
-    public webviewsrc="https://www.nativescript.org";
+    public url="https://www.google.com";
+    public webviewsrc="https://www.google.com";
     
     constructor(private page: Page) {
     }
@@ -58,8 +58,15 @@ export class BasicWebViewComponent implements OnInit {
         }
     }
 
-    submit(){
-        this.webviewsrc = "https://"+this.url;
+    submit(args:string){
+        let textField:TextField = this.page.getViewById<TextField>("urlField");
+
+        if(args.substring(0, 4) === 'http'){
+            this.webviewsrc = args;
+            textField.dismissSoftInput();
+        }else{
+            alert("Please, add `http://` or `https://` in front of the URL string");
+        }
     }
 
 }

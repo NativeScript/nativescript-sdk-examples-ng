@@ -1,8 +1,9 @@
 Image {
-    margin: 20;
+    margin: 15;
 }
 
 Label {
-    margin-left: 10;
-    margin-bottom: 10;
+    margin-left: 15;
+    margin-top: 20;
+    margin-bottom: 5;
 }

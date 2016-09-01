@@ -1,1 +1,0 @@
-[*ngFor Reference](https://angular.io/docs/ts/latest/guide/displaying-data.html#!#ngFor)

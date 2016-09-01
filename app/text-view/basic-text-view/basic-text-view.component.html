@@ -1,7 +1,7 @@
-<StackLayout exampleTitle class="example-container">
+<StackLayout exampleTitle toggleNavButton class="example-container">
     <!-- >> textview-html -->
     <Button text="Enable/disable editting of TextView" (tap)="disableTextView()"></Button>
     <Button text="Show text" (tap)="showText()" ></Button>
-    <TextView hint="Enter sample" [(ngModel)]="tvtext" [editable]="editState"></TextView>
+    <TextView hint="Enter text" [(ngModel)]="tvtext" [editable]="editState"></TextView>
     <!-- << textview-html -->
 </StackLayout>

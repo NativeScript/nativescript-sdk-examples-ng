@@ -1,31 +1,31 @@
-<StackLayout exampleTitle class="example-container">
-    <!-- slider-values-xml -->
+<StackLayout exampleTitle toggleNavButton class="example-container">
+    <!-- >> slider-values-xml -->
     <GridLayout rows="auto" columns="50 * 50">
-        <Label text="&#xe9d4;" textWrap="true" row="10" col="0" fontSize="15" class="icon" ></Label>
-        <Slider #sl minValue="10" maxValue="70" [(ngModel)]="sliderValue" (valueChange)="sliderValueChange" row="0" col="1"></Slider>
-        <Label text="&#xe9d4;" textWrap="true" row="0" col="2" fontSize="20" class="icon" ></Label>
+        <Label text="10" textWrap="true" row="10" col="0"></Label>
+        <Slider #sl minValue="10" maxValue="70" [(ngModel)]="sliderValue1" (valueChange)="sliderValueChange" row="0" col="1"></Slider>
+        <Label text="70" textWrap="true" row="0" col="2"></Label>
     </GridLayout>
     <GridLayout rows="auto" columns="50 * 50">
-        <Label text="&#xe9d5;" textWrap="true" row="0" col="0" fontSize="15" class="icon" ></Label>
-        <Slider #sl minValue="5" maxValue="100" [(ngModel)]="sliderValue2" (valueChange)="sliderValueChange2" color="green" row="0" col="1"></Slider>
-        <Label text="&#xe9d5;" textWrap="true" row="0" col="2" fontSize="20" class="icon" ></Label>
+        <Label text="33" textWrap="true" row="0" col="0"></Label>
+        <Slider #sl minValue="33" maxValue="133" [(ngModel)]="sliderValue2" (valueChange)="sliderValueChange2" row="0" col="1"></Slider>
+        <Label text="133" textWrap="true" row="0" col="2"></Label>
     </GridLayout>
     <GridLayout rows="auto" columns="50 * 50">
-        <Label text="&#xe9d6;" textWrap="true" row="0" col="0" fontSize="15" class="icon" ></Label>
-        <Slider #sl minValue="5" maxValue="100" [(ngModel)]="sliderValue3" (valueChange)="sliderValueChange3" color="green" row="0" col="1"></Slider>
-        <Label text="&#xe9d6;" textWrap="true" row="0" col="2" fontSize="20" class="icon" ></Label>
+        <Label text="15" textWrap="true" row="0" col="0"></Label>
+        <Slider #sl minValue="15" maxValue="1000" [(ngModel)]="sliderValue3" (valueChange)="sliderValueChange3" row="0" col="1"></Slider>
+        <Label text="1000" textWrap="true" row="0" col="2"></Label>
     </GridLayout>
     <GridLayout rows="auto" columns="50 * 50">
-        <Label text="&#xea26;" textWrap="true" row="0" col="0" fontSize="15" class="icon" ></Label>
-        <Slider #sl minValue="5" maxValue="100" [(ngModel)]="sliderValue4" (valueChange)="sliderValueChange4" color="green" row="0" col="1"></Slider>
-        <Label text="&#xea26;" textWrap="true" row="0" col="2" fontSize="20" class="icon" ></Label>
+        <Label text="0" textWrap="true" row="0" col="0"></Label>
+        <Slider #sl minValue="0" maxValue="100" [(ngModel)]="sliderValue4" (valueChange)="sliderValueChange4" row="0" col="1"></Slider>
+        <Label text="100" textWrap="true" row="0" col="2"></Label>
     </GridLayout>
     <GridLayout rows="auto" columns="50 * 50">
-        <Label text="&#xe90b;" textWrap="true" row="0" col="0" fontSize="15" class="icon" ></Label>
-        <Slider #sl minValue="5" maxValue="100" [(ngModel)]="sliderValue5" (valueChange)="sliderValueChange5" color="green" row="0" col="1"></Slider>
-        <Label text="&#xe90b;" textWrap="true" row="0" col="2" fontSize="20" class="icon" ></Label>
+        <Label text="5" textWrap="true" row="0" col="0"></Label>
+        <Slider #sl minValue="5" maxValue="99" [(ngModel)]="sliderValue5" (valueChange)="sliderValueChange5" row="0" col="1"></Slider>
+        <Label text="99" textWrap="true" row="0" col="2"></Label>
     </GridLayout>
-    
-    <Button text="Review result" (tap)="onTap()"></Button>
-    <!-- slider-values-xml -->
+
+    <Button text="Review results" (tap)="onTap()" horizontalAlignment="stretch"></Button>
+    <!-- << slider-values-xml -->
 </StackLayout>

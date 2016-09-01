@@ -1,1 +1,0 @@
-[Label Class](https://docs.nativescript.org/api-reference/classes/_ui_label_.label.html)
