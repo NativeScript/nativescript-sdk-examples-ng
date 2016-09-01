@@ -46,3 +46,17 @@ SearchBar {
     font-size: 13;
     padding: 15;
 }
+
+.text-field-font-serif{
+   font-family: 'RobotoSlab-Regular';
+   font-size: 20;
+}
+.text-field-font-sans-serif{
+   font-family: 'Roboto-Medium', sans-serif;
+   font-size: 20;
+}
+
+.text-field-font-monospace{
+   font-family: 'RobotoMono-Medium', monospace;
+   font-size: 20;
+}
