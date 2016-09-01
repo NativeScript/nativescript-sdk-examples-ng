@@ -1,5 +1,7 @@
 TextView component could be use to type large text in your app. The component could be use also only to show a conten via setting `editable` property to `false`.
 
+**API Reference for** [TextView Class](http://docs.nativescript.org/api-reference/modules/_ui_text_view_.html)
+
 **Native Component**
 
 | Android               | iOS      |

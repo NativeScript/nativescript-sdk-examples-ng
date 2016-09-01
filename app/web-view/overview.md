@@ -1,5 +1,7 @@
 WebView component inside the Angular project could be use to display web content from the network by edding the page url in the WebView `src` property  or to display local html file by addint the path to the file.
 
+**API Reference for** [WebView Class](http://docs.nativescript.org/api-reference/modules/_ui_web_view_.html)
+
 **Native Component**
 
 | Android                | iOS      |

@@ -8,6 +8,8 @@ Specific `SegmentedBar` properties:
  - selectedIndexChange
 
 
+**API Reference for** [SegementedBar Class](http://docs.nativescript.org/api-reference/modules/_ui_segmented_bar_.html)
+
 **Native Component**
 
 | Android                | iOS      |

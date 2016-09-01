@@ -1,5 +1,7 @@
 NativeScript provides a TimePicker control that enables the user to choose a time as a ready-to-use dialog. Every time part can be picked separatedly by its corresponding section of the control - for hour, minutes and AM/PM.
 
+**API Reference for** [TimePicker Class](http://docs.nativescript.org/api-reference/modules/_ui_time_picker_.html)
+
 **Native Component**
 
 | Android                | iOS      |
