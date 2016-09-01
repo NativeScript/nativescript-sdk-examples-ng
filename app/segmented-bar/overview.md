@@ -1,8 +1,7 @@
-Using SegementedBar inside the Angular2 project gives a simple way to define colection of tabbed views 
-and away to handle selected view index inside the bar. 
-Using `selectedIndexChange` property of the SegmentedBar will notify you for every changes of the `selectedIndex`.  
+Using a SegementedBar inside an Angular 2 project gives you a simple way to define a collection of tabbed views.
+Using the SegmentedBar’s `selectedIndexChange` property notifies you for every changes of the component’s `selectedIndex`.
 
-Specific `SegmentedBar` properties:
- - items
- - selectedIndex
- - selectedIndexChange
+The specific `SegmentedBar` properties are:
+ - `items`
+ - `selectedIndex`
+ - `selectedIndexChange`

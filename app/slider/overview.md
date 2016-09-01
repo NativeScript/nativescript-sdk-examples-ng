@@ -1,2 +1,1 @@
-Using NativeScript Slider Module allows you to create component, which reflect intensity levels.
-This component gives a way to allow user to select value form specific range via setting the `minValue` and `maxValue` of the component.
+Using the NativeScript Slider Module allows you to create a component that allows the user to drag to select a value. You can set the specific range to use by setting the component’s `minValue` and `maxValue`.

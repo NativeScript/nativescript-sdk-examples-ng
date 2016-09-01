@@ -1,7 +1,4 @@
-The text of the button can be either set or bound to a property you want. You can set the Text property directly in the markup or in the code.
+You can set the text of a button with its `text` attribute.
 
-Setting it in HTML:
+Setting the `text` attribute in markup:
 <snippet id='button-text-html'/>
-
-Setting text in code:
-<snippet id='button-text-code'/>

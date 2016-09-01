@@ -1,9 +1,8 @@
-Scrollable view allows you to display scrollable area in your application, which have content that is larger than its bounds.
-ScrollView has orientation property, which allows you to set different orientations to the view:
+The ScrollableView component allows you to display a scrollable area in your application, which has content that is larger than its bounds.
+The ScrollView has an `orientation` property, which allows you to set different orientations to the view:
 
-Possible options `orientation`:
+The possible values of `orientation` are:
  - `horizontal`
- - `verical`
-
+ - `vertical`
  
-For the purpose of the project it is possible to handle `scroll` event of the View by binding `scroll` property of the ScrollView.
+It is possible to handle the `scroll` event of the View by binding to the ScrollView’s `scroll` event.

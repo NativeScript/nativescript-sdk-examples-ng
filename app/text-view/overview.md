@@ -1,1 +1,1 @@
-TextView component could be use to type large text in your app. The component could be use also only to show a conten via setting `editable` property to `false`.
+The TextView component can be used to type large text in your app. The component can also be used show any content by setting the `editable` property to `false`.

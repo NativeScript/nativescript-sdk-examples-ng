@@ -1,1 +1,1 @@
-WebView component inside the Angular project could be use to display web content from the network by edding the page url in the WebView `src` property  or to display local html file by addint the path to the file. 
+The WebView component is used to display web content within your application. You use the control by providing a `src` attribute that points at a URL or a local HTML file.

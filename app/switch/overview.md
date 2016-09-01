@@ -1,4 +1,4 @@
-Switch component is component that has two states - `true` and `false`. 
-The default state of the component is false, however it could be change for the purpose of the app via setting  `checked` property to `true`.
-To handle state change event you could use `checkedChange` property, which would notify the app, when the value has been changed.
-Another useful feature of the component is `isEnable` property, which gives the functionality to make the component unactive.
+The switch component allows users to toggle a control between two states.
+The default state of the component is off, or `false`, however you can change the state by setting the `checked` property to a boolean value.
+To handle the state change event you can use the `checkedChange` property, which notifies the app when the value has changed.
+Another useful feature of the component is the `isEnable` property, which gives the functionality to make the component inactive.
