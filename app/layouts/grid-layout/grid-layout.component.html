@@ -1,11 +1,11 @@
-<ScrollView exampleTitle toggleNavButton class="example-container">
+<StackLayout exampleTitle toggleNavButton >
   <!-- >> grid-layout-html -->
-  <GridLayout id="gridLayout" columns="100, *, auto" rows="auto, *" >
-        <Label text="col:0 row:0" col="0" class="label1"></Label>
-        <Label text="col:1 row:0" col="1" class="label2"></Label>
-        <Label text="col:2 row:0" col="2" class="label1"></Label>
-        // by default column and row are set to 0
-        <Label text="colSpan:3 row:1" row="1" colSpan="3" class="label3"></Label>
-   </GridLayout>
-   <!-- << grid-layout-html -->
-</ScrollView>
+  <GridLayout id="gridLayout" columns="*,*,*" rows="*,*,*,*">
+    <Button text="1" style="background-color: #0099CC; margin: 5;"></Button>
+    <Button text="2" col="1" style="background-color: #FFFF66; margin: 5;"></Button>
+    <Button text="3" col="2" rowSpan="2" style="background-color: #AA0078; margin: 5;"></Button>
+    <Button text="4" row="1" rowSpan="2" colSpan="2" style="background-color: #8C489F; margin: 5;"></Button>
+    <Button text="5" row="2" col="2" style="background-color: #CCFFFF; margin: 5;"></Button>
+  </GridLayout>
+  <!-- << grid-layout-html -->
+</StackLayout>
