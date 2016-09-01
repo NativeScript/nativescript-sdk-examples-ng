@@ -5,13 +5,13 @@ ListView {
 
 .odd { 
     vertical-align: center;
-    padding: 15;
+    padding-left: 15;
 }
 
 .even {
     color: #0099CC;
     vertical-align: center;
-    padding: 15;
+    padding-left: 15;
 }
 
 .label-item {
