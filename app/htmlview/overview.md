@@ -1,6 +1,8 @@
 The HtmlView represents a view with HTML content. 
 Use this component instead of WebView when you want to show just static HTML content.
 
+**API Reference for** [HtmlView Class](http://docs.nativescript.org/api-reference/modules/_ui_html_view_.html)
+
 **Native Component**
 
 | Android                | iOS      |

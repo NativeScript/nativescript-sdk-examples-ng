@@ -1,6 +1,8 @@
 Spinner type module with listed options.
 Using a ListPicker requires the "ui/list-picker" module.
 
+**API Reference for** [ListPicker Class](http://docs.nativescript.org/api-reference/modules/_ui_list_picker_.html)
+
 **Native Component**
 
 | Android                | iOS      |

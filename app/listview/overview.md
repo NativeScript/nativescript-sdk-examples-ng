@@ -2,6 +2,8 @@ Using a ListView control inside Angular 2 app requires some special attention du
 complexity of the NativeScript control like custom item template, bindings and so on. NativeScript-angular plugin 
 provides a custom Angular 2 component which simplifies the way native ListView should be used. 
 
+**API Reference for** [ListView Class](http://docs.nativescript.org/api-reference/modules/_ui_list_view_.html)
+
 **Native Component**
 
 | Android                | iOS      |

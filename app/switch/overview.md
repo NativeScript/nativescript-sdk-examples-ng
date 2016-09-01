@@ -3,6 +3,8 @@ The default state of the component is false, however it could be change for the 
 To handle state change event you could use `checkedChange` property, which would notify the app, when the value has been changed.
 Another useful feature of the component is `isEnable` property, which gives the functionality to make the component unactive.
 
+**API Reference for** [Switch Class](http://docs.nativescript.org/api-reference/modules/_ui_switch_.html)
+
 **Native Component**
 
 | Android               | iOS      |
