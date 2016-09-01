@@ -4,7 +4,7 @@
         <GridLayout row="0" rows="*" columns="50 *" android:class="border-gridLayout" >
             <Button row="0" col="0" class="icon" text="&#xea44;" (tap)="goBack()"></Button>   
             <TextField id="urlField" #tf row="0" col="1" hint="Enter URL" [(ngModel)]="url"  returnKeyType="done"
-                (returnPress)="submit(tf.text)" autocorrect="false" verticalAlignment="center" horizontalAlignment="justify" marginTop="0"
+                (returnPress)="submit(tf.text)" autocorrect="false" verticalAlignment="center" marginTop="0"
                 autocapitalizationType="none" ></TextField>  
         </GridLayout>
         <WebView row="1" id="wv"  [src]="webviewsrc"></WebView>
