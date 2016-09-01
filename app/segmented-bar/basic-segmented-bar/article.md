@@ -1,5 +1,6 @@
-Setting SegmentedBar in HTML:
-<snippet id='segmentedBar-basic-html'/>
+Set SegmentedBar in HTML
 
-Setting SegmentedBar items in TypeScript
+<snippet id='segmentedbar-basic-html'/>
+
+Set SegmentedBar items in TypeScript
 <snippet id='add-segmentedbar-items'/>

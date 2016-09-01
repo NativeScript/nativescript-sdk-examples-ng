@@ -1,5 +1,5 @@
-Creating sample UI:
+Create sample UI
 <snippet id='style-view-html'/>
 
-Add style on `ngOnInit`:
+Add style on `ngOnInit`
 <snippet id='setting-style-via-code'/>

@@ -1,5 +1,5 @@
-Setting Slider in HTML:
+Setting Slider in HTML
 <snippet id='basic-slider-html'/>
 
-CSS:
+CSS
 <snippet id='button-basic-style'/>

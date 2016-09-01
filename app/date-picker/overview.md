@@ -1,1 +1,7 @@
-NativeScript provides a DatePicker control that enables the user to choose a date as a ready-to-use dialog. Every date part can be picked separately by its corresponding section of the control - for day, month and year. 
+NativeScript provides a DatePicker control that enables the user to choose a date as a ready-to-use dialog. Every date part can be picked separately by its corresponding section of the control - for day, month and year.
+
+**Native Component**
+
+| Android                | iOS      |
+|:-----------------------|:---------|
+| [android.widget.DatePicker](http://developer.android.com/reference/android/widget/DatePicker.html) | [UIDatePicker](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDatePicker_Class/index.html) | 
