@@ -64,17 +64,15 @@ function build(){
         var overviewContents = fs.readFileSync(overview, {encoding: 'utf8'});
         fs.appendFileSync(componentArticleFile, overviewContents + "\n\n", {encoding: 'utf8'});
 
+        // Component Images
+        let componentImage = path.join(componentDirName, "image.png");
+        if (fs.existsSync(componentImage)) {
+            let newImageFileName = componentHeader + "-" +  "image.png";
+           
+            fs.copySync(componentImage, path.join(imgDir, newImageFileName));
 
-        // // Images
-        // let image = path.join(componentDirName, "image.png");
-        // if (fs.existsSync(image)) {
-        //     let newImageFileName = componentHeader + "\\" +  "image.png";
-        //     fs.copySync(newImageFileName, path.join(imgDir, newImageFileName));
-
-        //      fs.appendFileSync(componentArticleFile, "|Image|\n", { encoding: 'utf8' });
-        //     fs.appendFileSync(componentArticleFile, "|---|---|\n", { encoding: 'utf8' });
-        //     fs.appendFileSync(componentArticleFile, "|![Image](img/" + newImageFileName + " \"Image\")|\n\n", { encoding: 'utf8' });
-        // }
+            fs.appendFileSync(componentArticleFile, "![Image](img/" + newImageFileName + " \"Image\")\n\n", { encoding: 'utf8' });
+        }
 
         var articles = glob.sync(componentDirName + "/**/article.md").sort(compareFiles);
         
@@ -93,11 +91,13 @@ function build(){
             
             // Article Images
             let articleImage = path.join(articleDirName, "image.png");
+            
             if (fs.existsSync(articleImage)){
                 let newArticleImageFileName = componentHeader + "-" + articleHeader + "-image.png";
-                fs.copySync(articleImage, path.join(imgDir, newArticleImageFileName)); 
+                let joined = path.join(imgDir, newArticleImageFileName);
+                fs.copySync(articleImage, joined); 
 
-                fs.appendFileSync(componentArticleFile, "![Android](img/"+newArticleImageFileName+" \"Android\")\n\n", {encoding: 'utf8'});
+                fs.appendFileSync(componentArticleFile, "![Image](img/"+newArticleImageFileName+" \"Image\")\n\n", {encoding: 'utf8'});
             }
 
             // Links
