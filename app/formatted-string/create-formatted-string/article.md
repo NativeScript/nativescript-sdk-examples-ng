@@ -1,13 +1,13 @@
-Label:
+Label
 <snippet id='formatted-string-label-html'/>
 
 <snippet id='formatted-string-second-label-html'/>
 
-TextField:
+TextField
 <snippet id='formatted-string-textfield-html'/>
 
-TextView:
+TextView
 <snippet id="formatted-string-textview-html"/>
 
-Button:
+Button
 <snippet id="formatted-string-button-html"/>
