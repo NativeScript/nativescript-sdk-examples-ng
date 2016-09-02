@@ -64,6 +64,18 @@ function build(){
         var overviewContents = fs.readFileSync(overview, {encoding: 'utf8'});
         fs.appendFileSync(componentArticleFile, overviewContents + "\n\n", {encoding: 'utf8'});
 
+
+        // // Images
+        // let image = path.join(componentDirName, "image.png");
+        // if (fs.existsSync(image)) {
+        //     let newImageFileName = componentHeader + "\\" +  "image.png";
+        //     fs.copySync(newImageFileName, path.join(imgDir, newImageFileName));
+
+        //      fs.appendFileSync(componentArticleFile, "|Image|\n", { encoding: 'utf8' });
+        //     fs.appendFileSync(componentArticleFile, "|---|---|\n", { encoding: 'utf8' });
+        //     fs.appendFileSync(componentArticleFile, "|![Image](img/" + newImageFileName + " \"Image\")|\n\n", { encoding: 'utf8' });
+        // }
+
         var articles = glob.sync(componentDirName + "/**/article.md").sort(compareFiles);
         
         // Append each example to the big article file.
@@ -79,19 +91,13 @@ function build(){
             var articleContents = fs.readFileSync(article, {encoding: 'utf8'});
             fs.appendFileSync(componentArticleFile, articleContents + "\n\n", {encoding: 'utf8'});
             
-            // Images
-            let androidImage = path.join(articleDirName, "android.png");
-            let iosImage = path.join(articleDirName, "ios.png");
-            if (fs.existsSync(androidImage) && fs.existsSync(iosImage)){
-                let newAndroidFileName = componentHeader + "-" + articleHeader + "-android.png";
-                fs.copySync(androidImage, path.join(imgDir, newAndroidFileName));    
-                
-                let newiOSFileName = componentHeader + "-" + articleHeader + "-ios.png";
-                fs.copySync(iosImage, path.join(imgDir, newiOSFileName));    
+            // Article Images
+            let articleImage = path.join(articleDirName, "image.png");
+            if (fs.existsSync(articleImage)){
+                let newArticleImageFileName = componentHeader + "-" + articleHeader + "-image.png";
+                fs.copySync(articleImage, path.join(imgDir, newArticleImageFileName)); 
 
-                fs.appendFileSync(componentArticleFile, "|Android|iOS|\n", {encoding: 'utf8'});
-                fs.appendFileSync(componentArticleFile, "|---|---|\n", {encoding: 'utf8'});
-                fs.appendFileSync(componentArticleFile, "|![Android](img/"+newAndroidFileName+" \"Android\")|![iOS](img/"+newiOSFileName+" \"iOS\")|\n\n", {encoding: 'utf8'});
+                fs.appendFileSync(componentArticleFile, "![Android](img/"+newArticleImageFileName+" \"Android\")\n\n", {encoding: 'utf8'});
             }
 
             // Links
