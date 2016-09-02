@@ -5,6 +5,3 @@ The AbsoluteLayout will not enforce any layout constraints on its elements and w
 
 A basic usage and definition of AbsoluteLayout and its children in HTML.
 <snippet id='absolute-layout-html'/>
-
-The AbsoluteLayout can be populated in code behind as well.
-<snippet id='absolute-layout-code'/>

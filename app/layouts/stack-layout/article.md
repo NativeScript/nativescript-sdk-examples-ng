@@ -4,6 +4,3 @@ It arranges the elements one next to the other either vertically (from top to bo
 
 A basic usage and definition of StackLayout, its orientation and elements in HTML.
 <snippet id='stack-layout-html'/>
-
-The StackLayout can be populated in code behind as well.
-<snippet id='stack-layout-code'/>
