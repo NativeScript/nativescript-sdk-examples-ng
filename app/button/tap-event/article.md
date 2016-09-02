@@ -1,6 +1,7 @@
-Button component usually is responsible for executing a custom logic on its tap event. Handling it is as easy as attaching to it either in HTML or in code and writing down the actions you need. 
-Attaching the tap event handler from HTML:
+A button component can attach to custom logic with its `tap` event. Handling the event is as easy as using `(tap)` in  HTML, and implementing a tap handler in your component.
+
+Attaching to the `tap` event handler from HTML:
 <snippet id='button-tap-event-html'/>
 
-Attaching the tap event handler from code:
+Implementing the `tap` event handler in a component:
 <snippet id='button-tap-event-code'/>

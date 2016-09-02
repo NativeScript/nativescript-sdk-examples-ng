@@ -1,8 +1,8 @@
-HTML:
+HTML
 <snippet id='listview-create-html'/>
 
-TypeScript:
+TypeScript
 <snippet id='listview-create-code'/>
 
-CSS:
+CSS
 <snippet id='listview-create-css'/>

@@ -1,7 +1,7 @@
-Creating custom directive example:
+Create custom directive example
 
-Setting it in HTML:
+Set it in HTML
 <snippet id='custom-directive-html'/>
 
-Setting in code:
+Set in code
 <snippet id='custom-directive-code'/>

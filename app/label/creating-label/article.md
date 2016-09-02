@@ -1,8 +1,8 @@
-HTML:
+HTML
 <snippet id='creating-label-html'/>
 
-TypeScript:
+TypeScript
 <snippet id='creating-label-code'/>
 
-CSS:
-<snippet id="creating-label-css"/>
+CSS
+<snippet id='creating-label-css'/>

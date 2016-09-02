@@ -34,6 +34,5 @@ ListView {
 .item {
     text-align: left;
     vertical-align: center;
-    padding: 15;
 }
 /* << listview-customize-css */
