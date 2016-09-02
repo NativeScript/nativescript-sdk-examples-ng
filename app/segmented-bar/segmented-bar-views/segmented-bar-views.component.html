@@ -1,17 +1,19 @@
-<StackLayout exampleTitle toggleNavButton class="example-container">
-    <!-- >> segmentedbar-show-views -->
-    <SegmentedBar #sb [items]="Items" (selectedIndexChange)="onChange(sb.selectedIndex)">
-    </SegmentedBar>
-    <StackLayout visibility="{{ visibility1 ? 'visible' : 'collapsed' }}">
-        <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
-    </StackLayout>
+<StackLayout  exampleTitle toggleNavButton>
+    <StackLayout class="example-container">
+        <!-- >> segmentedbar-show-views -->
+        <SegmentedBar #sb [items]="Items" (selectedIndexChange)="onChange(sb.selectedIndex)">
+        </SegmentedBar>
+        <StackLayout visibility="{{ visibility1 ? 'visible' : 'collapsed' }}">
+            <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
+        </StackLayout>
 
-    <StackLayout visibility="{{ visibility2 ? 'visible' : 'collapsed' }}">
-        <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
-    </StackLayout>
+        <StackLayout visibility="{{ visibility2 ? 'visible' : 'collapsed' }}">
+            <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
+        </StackLayout>
 
-    <StackLayout visibility="{{ visibility3 ? 'visible' : 'collapsed' }}">
-        <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
+        <StackLayout visibility="{{ visibility3 ? 'visible' : 'collapsed' }}">
+            <Label [text]="'The new selectedIndex is: ' + selectedIndex" margin="20"></Label>
+        </StackLayout>
+        <!-- << segmentedbar-show-views -->
     </StackLayout>
-    <!-- << segmentedbar-show-views -->
 </StackLayout>

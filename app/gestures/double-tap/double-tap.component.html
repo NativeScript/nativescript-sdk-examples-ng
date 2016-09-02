@@ -1,8 +1,10 @@
-<StackLayout exampleTitle toggleNavButton class="example-container">
-    <Label text="Apply double tap gesture inside the box"></Label>
-    <!-- >> double-tap-html -->
-    <GridLayout (doubleTap)="onDoubleTap($event)">
-        <Image src="res://icon" stretch="none"></Image> 
-    </GridLayout>
-    <!-- << double-tap-html -->
+<StackLayout exampleTitle toggleNavButton>
+    <StackLayout class="example-container">
+        <Label text="Apply double tap gesture inside the box"></Label>
+        <!-- >> double-tap-html -->
+        <GridLayout (doubleTap)="onDoubleTap($event)">
+            <Image src="res://icon" stretch="none"></Image> 
+        </GridLayout>
+        <!-- << double-tap-html -->
+    </StackLayout>
 </StackLayout>
