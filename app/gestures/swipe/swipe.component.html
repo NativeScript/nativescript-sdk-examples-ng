@@ -1,8 +1,9 @@
-<StackLayout exampleTitle toggleNavButton class="example-container">
-    <Label text="Apply swipe gesture inside the box"></Label>
-    <!-- >> swipe-html -->
-    <GridLayout (swipe)="onSwipe($event)"></GridLayout>
-    <!-- << swipe-html -->
-    <Label [text]="'Swipe direction : ' + direction" textWrap="true"></Label>
-    
+<StackLayout exampleTitle toggleNavButton>
+    <StackLayout class="example-container">
+        <Label text="Apply swipe gesture inside the box"></Label>
+        <!-- >> swipe-html -->
+        <GridLayout (swipe)="onSwipe($event)"></GridLayout>
+        <!-- << swipe-html -->
+        <Label [text]="'Swipe direction : ' + direction" textWrap="true"></Label>
+    </StackLayout>
 </StackLayout>

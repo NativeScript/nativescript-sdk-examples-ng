@@ -1,8 +1,10 @@
-<StackLayout exampleTitle toggleNavButton class="example-container">
-  <!-- >> web-view-xml-local-file -->
-    <GridLayout rows="100 *" columns="*">
-        <WebView row="0" col="0" [src]="firstWebViewSRC"></WebView>
-        <WebView row="1" col="0" [src]="secondWebViewSRC"></WebView>
-    </GridLayout>
-    <!-- << web-view-xml-local-file -->
+<StackLayout exampleTitle toggleNavButton>
+    <StackLayout class="example-container">
+    <!-- >> web-view-xml-local-file -->
+        <GridLayout rows="100 *" columns="*">
+            <WebView row="0" col="0" [src]="firstWebViewSRC"></WebView>
+            <WebView row="1" col="0" [src]="secondWebViewSRC"></WebView>
+        </GridLayout>
+        <!-- << web-view-xml-local-file -->
+    </StackLayout>
 </StackLayout>

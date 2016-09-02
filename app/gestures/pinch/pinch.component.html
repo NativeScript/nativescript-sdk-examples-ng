@@ -1,8 +1,10 @@
-<StackLayout exampleTitle toggleNavButton class="example-container">
-    <Label text="Apply pinch gesture inside the box"></Label>
-    <!-- >> pinch-html -->
-    <GridLayout (pinch)="onPinch($event)"></GridLayout>
-    <!-- << pinch-html -->
-    <Label [text]="'Pinch scale: ' + scale" textWrap="true"></Label>
-    <Label [text]="'Pinch state: ' + state" textWrap="true"></Label>
+<StackLayout  exampleTitle toggleNavButton>
+    <StackLayout class="example-container">
+        <Label text="Apply pinch gesture inside the box"></Label>
+        <!-- >> pinch-html -->
+        <GridLayout (pinch)="onPinch($event)"></GridLayout>
+        <!-- << pinch-html -->
+        <Label [text]="'Pinch scale: ' + scale" textWrap="true"></Label>
+        <Label [text]="'Pinch state: ' + state" textWrap="true"></Label>
+    </StackLayout>
 </StackLayout>

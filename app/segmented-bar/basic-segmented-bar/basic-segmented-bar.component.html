@@ -1,8 +1,10 @@
-<StackLayout exampleTitle toggleNavButton class="example-container">
-   
-     <!-- >> segmentedbar-basic-html -->
-    <SegmentedBar #sb [items]="myItems" selectedIndex="0" (selectedIndexChange)="prop='Item '+ sb.selectedIndex">
-    </SegmentedBar>
-    <Label [text]="prop" textWrap="true" vertical-align="center" margin="10"></Label>
-      <!-- << segmentedbar-basic-html -->
+<StackLayout  exampleTitle toggleNavButton>
+  <StackLayout class="example-container">
+    
+      <!-- >> segmentedbar-basic-html -->
+      <SegmentedBar #sb [items]="myItems" selectedIndex="0" (selectedIndexChange)="prop='Item '+ sb.selectedIndex">
+      </SegmentedBar>
+      <Label [text]="prop" textWrap="true" vertical-align="center" margin="10"></Label>
+        <!-- << segmentedbar-basic-html -->
+  </StackLayout>
 </StackLayout>

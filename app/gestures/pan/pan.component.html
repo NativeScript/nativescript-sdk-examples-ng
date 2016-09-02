@@ -1,9 +1,11 @@
-<StackLayout exampleTitle toggleNavButton class="example-container">
-    <Label text="Apply pan gesture inside the box"></Label>
-    <!-- >> pan-html -->
-    <GridLayout (pan)="onPan($event)"></GridLayout>
-    <!-- << pan-html -->
-    <Label [text]="'Pan deltaX: ' + deltaX" textWrap="true"></Label>
-    <Label [text]="'Pan deltaY: ' + deltaY" textWrap="true"></Label>
-    <Label [text]="'Pan state: ' + state" textWrap="true"></Label>
+<StackLayout exampleTitle toggleNavButton>
+    <StackLayout  class="example-container">
+        <Label text="Apply pan gesture inside the box"></Label>
+        <!-- >> pan-html -->
+        <GridLayout (pan)="onPan($event)"></GridLayout>
+        <!-- << pan-html -->
+        <Label [text]="'Pan deltaX: ' + deltaX" textWrap="true"></Label>
+        <Label [text]="'Pan deltaY: ' + deltaY" textWrap="true"></Label>
+        <Label [text]="'Pan state: ' + state" textWrap="true"></Label>
+    </StackLayout>
 </StackLayout>

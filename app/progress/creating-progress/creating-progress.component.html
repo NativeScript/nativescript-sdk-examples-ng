@@ -1,7 +1,9 @@
-<GridLayout row="*" exampleTitle toggleNavButton>
-    <!-- >> progress-create-html -->
-    <StackLayout verticalAlign="center" height="100">
-        <Progress [value]="progressValue" maxValue="100" #myProgress margin="20"></Progress>
-    </StackLayout>
-    <!-- << progress-create-html -->
-</GridLayout>
+<StackLayout exampleTitle toggleNavButton>
+    <GridLayout row="*">
+        <!-- >> progress-create-html -->
+        <StackLayout verticalAlign="center" height="100">
+            <Progress [value]="progressValue" maxValue="100" #myProgress margin="20"></Progress>
+        </StackLayout>
+        <!-- << progress-create-html -->
+    </GridLayout>
+</StackLayout>

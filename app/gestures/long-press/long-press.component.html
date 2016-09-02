@@ -1,10 +1,12 @@
-<StackLayout exampleTitle toggleNavButton class="example-container">
-    <Label text="Apply long press gesture inside the box"></Label>
-    <!-- >> long-press-html -->
-    <GridLayout (longPress)="onLongPress($event)">
-        <!-- >> (hide) -->
-        <Image src="res://icon" stretch="none"></Image> 
-        <!-- << (hide) -->
-    </GridLayout>
-    <!-- << long-press-html -->
+<StackLayout exampleTitle toggleNavButton>
+    <StackLayout class="example-container">
+        <Label text="Apply long press gesture inside the box"></Label>
+        <!-- >> long-press-html -->
+        <GridLayout (longPress)="onLongPress($event)">
+            <!-- >> (hide) -->
+            <Image src="res://icon" stretch="none"></Image> 
+            <!-- << (hide) -->
+        </GridLayout>
+        <!-- << long-press-html -->
+    </StackLayout>
 </StackLayout>

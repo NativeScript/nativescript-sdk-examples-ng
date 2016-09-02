@@ -1,9 +1,11 @@
-<StackLayout exampleTitle toggleNavButton class="example-container">
-    <!-- >> textfield-binding-html -->
-    <TextField hint="Enter text" autocorrect="false" #tx (textChange)="firstLabel=tx.text"></TextField>
-    <Label [text]="'The first input is: ' + firstLabel" textWrap="true" marginBottom="25"></Label>
+<StackLayout  exampleTitle toggleNavButton>  
+    <StackLayout class="example-container">
+        <!-- >> textfield-binding-html -->
+        <TextField hint="Enter text" autocorrect="false" #tx (textChange)="firstLabel=tx.text"></TextField>
+        <Label [text]="'The first input is: ' + firstLabel" textWrap="true" marginBottom="25"></Label>
 
-    <TextField hint="Enter some text and click the button" autocorrect="false" #secondtx returnKeyType="done" (returnPress)="submit(secondtx.text)"></TextField>
-    <Button text="Get the second input" (tap)="showAlert(secondtx.text)"></Button>
-    <!-- << textfield-binding-html -->
+        <TextField hint="Enter some text and click the button" autocorrect="false" #secondtx returnKeyType="done" (returnPress)="submit(secondtx.text)"></TextField>
+        <Button text="Get the second input" (tap)="showAlert(secondtx.text)"></Button>
+        <!-- << textfield-binding-html -->
+    </StackLayout>
 </StackLayout>
