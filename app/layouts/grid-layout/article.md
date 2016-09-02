@@ -4,6 +4,3 @@ The GridLayout is a layout that arranges its child elements in a table structure
 
 A basic usage and definition of GridLayout,its rows and columns and its children in HTML.
 <snippet id='grid-layout-html'/>
-
-The GridLayout's children can be populated in code behind as well. You can also create additional rows and columns and place the newly added item exactly to cell you want it to be.
-<snippet id='grid-layout-code'/>

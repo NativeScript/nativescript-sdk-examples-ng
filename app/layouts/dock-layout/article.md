@@ -5,6 +5,3 @@ To define the docking side of a child element, use its dock property. To dock a 
 
 A basic usage and definition of DockLayout, its elements and setting its stretchLastChild property and in HTML.
 <snippet id='dock-layout-html'/>
-
-The DockLayout can be populated in code behind as well.
-<snippet id='dock-layout-code'/>
