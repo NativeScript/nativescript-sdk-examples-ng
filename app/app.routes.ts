@@ -92,6 +92,8 @@ import { UsingNgIfForPlatformSpecificComponent } from "./ng-directives/using-ngi
 import { CreateCustomDirectiveExampleComponent } from "./ng-directives/create-custom-directive/create-custom-directive.component";
 import { UnlessDirectiveExampleComponent } from "./ng-directives/unless-directive/unless-directive.component";
 import { UsingNgSwitchExamplesComponent } from "./ng-directives/ngswitch-usage/ngswitch-usage.component";
+import { FormattedStringExamplesComponent } from "./formatted-string/formated-string-examples.component";
+import { CreateFormattedStringComponent } from "./formatted-string/create-formatted-string/create-formatted-string.component";
 
 export var routableComponents = [];
 
@@ -183,13 +185,17 @@ export const routes: RouterConfig = [
     routeEntry({ path: "rotationGestureExampleComponent", component: RotationExampleComponent, data: { title: "Rotation" } }),
     routeEntry({ path: "touchGestureExampleComponent", component: TouchExampleComponent, data: { title: "Touch" } }),
 
-    routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
-    routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
-    routeEntry({ path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf basic usage" } }),
-    routeEntry({ path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf hiding elements" } }),
-    routeEntry({ path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create custom *ng directive" } }),
-    routeEntry({ path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } }),
-    routeEntry({ path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } }),
+  { path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } },
+  { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } },
+  { path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf basic usage" } },
+  { path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf hiding elements" } },
+  { path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create custom *ng directive" } },
+  { path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } },
+  { path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } },
+  
+  { path: "formattedStringExamplesComponent", component: FormattedStringExamplesComponent, data: { title: "Formatted String" } },
+  { path: "createFormattedStringExampleComponent", component: CreateFormattedStringComponent, data: { title: "Create Formatted String" } },
+
 ];
 
 function routeEntry(data) {

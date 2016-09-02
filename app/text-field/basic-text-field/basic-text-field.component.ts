@@ -33,6 +33,10 @@ export class BasicTextFieldComponent {
         datePicker.day = 9;
         datePicker.minDate = new Date(1975, 0, 29);
         datePicker.maxDate = new Date(2045, 4, 12);
+
+        let firstTextfield:TextField =<TextField> this.page.getViewById("firstTextFieldId");
+        firstTextfield.focus();
+        
     }
 
     enterDate(){
