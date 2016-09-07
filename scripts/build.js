@@ -37,7 +37,7 @@ function build(){
 
     var appDir = path.join(cwd, "app");
 
-    var mainOverview = path.join(appDir, "overview.md");
+    var mainOverview = path.join(appDir, "global-overview.md");
     fs.copySync(mainOverview, path.join(articlesDir, "overview.md"));
 
     // Gather all component overviews
