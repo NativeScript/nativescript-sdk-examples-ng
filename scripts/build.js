@@ -33,14 +33,18 @@ function build(){
     fs.mkdirSync(articlesDir);
 
     var imgDir = path.join(articlesDir, "img");
-    fs.mkdirSync(imgDir);
-    
+    fs.mkdirSync(imgDir);  
+
     var appDir = path.join(cwd, "app");
 
+    var mainOverview = path.join(appDir, "global-overview.md");
+    fs.copySync(mainOverview, path.join(articlesDir, "overview.md"));
+
     // Gather all component overviews
-    var components = glob.sync(appDir + "/**/overview.md").sort(compareFiles);
-    var jenkinsPosition = 0;
-    components.forEach(function(overview){
+    var components = glob.sync(appDir + "/**/overview.md").sort(compareFiles);  
+
+    var jenkinsPosition = 1;
+    components.forEach(function(overview){        
         var componentDirName = path.dirname(overview);
         var componentHeader = path.basename(componentDirName);
                 
