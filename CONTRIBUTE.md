@@ -7,6 +7,7 @@
 
  - Create a new directory inside a component directory, for example inside the `button` directory. The name of the directory will be prettified and will become the example header, i.e. title. For example, if your directory name is `tap-event` the header will become `Tap Event`, that is, all dashes will be replaced with spaces and all the words will be capitalized.
  - Create a file named `article.md`. Place the article text and code snippet placeholders there. You can place code snippets in TypeScript, XML and CSS. The code snippet placeholder syntax is explained [here](https://github.com/NativeScript/markdown-snippet-injector). Here is a sample article.md file:
+
 ######article.md
 ```
 Attaching the tap event handler from XML:
@@ -16,6 +17,7 @@ Attaching the tap event handler from code:
 <snippet id='button-tap-event-code'/>
 ```
  - Add your example source code files, i.e. `.ts`, `.xml`, and `.css` files. These files should contain the actual code snippets to be injected in `article.md`. For example:
+
 ######page.xml
 ```
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoaded">
