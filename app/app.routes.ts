@@ -18,7 +18,11 @@ import { ButtonBindingTextComponent } from "./button/binding-text/binding-text.c
 import { DatePickerExamplesComponent } from "./date-picker/date-picker-examples.component";
 import { ConfigureDatePickerComponent } from "./date-picker/configure-date-picker/configure-date-picker.component";
 import { DialogsExamplesComponent } from "./dialogs/dialogs-examples.component";
-import { DisplayDialogsComponent } from "./dialogs/display-dialogs/display-dialogs.component";
+import { ActionDialogComponent } from "./dialogs/action-dialog/action-dialog.component";
+import { AlertDialogComponent } from "./dialogs/alert-dialog/alert-dialog.component";
+import { ConfirmDialogComponent } from "./dialogs/confirm-dialog/confirm-dialog.component";
+import { LoginDialogComponent } from "./dialogs/login-dialog/login-dialog.component";
+import { PromptDialogComponent } from "./dialogs/prompt-dialog/prompt-dialog.component";
 import { LayoutsExamplesComponent } from "./layouts/layouts-examples.component";
 import { AbsoluteLayoutComponent } from "./layouts/absolute-layout/absolute-layout.component";
 import { DockLayoutComponent } from "./layouts/dock-layout/dock-layout.component";
@@ -148,7 +152,11 @@ export const routes: RouterConfig = [
     routeEntry({ path: "datePickerExamplesComponent", component: DatePickerExamplesComponent, data: { title: "DatePicker" } }),
     routeEntry({ path: "configureDatePickerComponent", component: ConfigureDatePickerComponent, data: { title: "Configure DatePicker" } }),
     routeEntry({ path: "dialogsExamplesComponent", component: DialogsExamplesComponent, data: { title: "Dialogs" } }),
-    routeEntry({ path: "displayDialogsComponent", component: DisplayDialogsComponent, data: { title: "Display dialogs" } }),
+    routeEntry({ path: "actionDialogComponent", component: ActionDialogComponent, data: { title: "Action dialog" } }),
+    routeEntry({ path: "alertDialogComponent", component: AlertDialogComponent, data: { title: "Alert dialog" } }),
+    routeEntry({ path: "confirmDialogComponent", component: ConfirmDialogComponent, data: { title: "Confirm dialogs" } }),
+    routeEntry({ path: "loginDialogComponent", component: LoginDialogComponent, data: { title: "Login dialogs" } }),
+    routeEntry({ path: "promptDialogComponent", component: PromptDialogComponent, data: { title: "Prompt dialogs" } }),
     routeEntry({ path: "layoutsExamplesComponent", component: LayoutsExamplesComponent, data: { title: "Layouts" } }),
     routeEntry({ path: "absoluteLayoutComponent", component: AbsoluteLayoutComponent, data: { title: "AbsoluteLayout" } }),
     routeEntry({ path: "dockLayoutComponent", component: DockLayoutComponent, data: { title: "DockLayout" } }),
