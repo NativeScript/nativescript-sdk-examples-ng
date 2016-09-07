@@ -1,7 +1,7 @@
 
 ## Add New Component Category
 
-1. Create a new directory inside the `app` directory with the name of the component, for example `action-bar`. The name of the directory will be prettified and will become the component section header. Create a file named `overview.md` and place the general overview text for the component. You **cannot** use code snippets here. 
+ - Create a new directory inside the `app` directory with the name of the component, for example `action-bar`. The name of the directory will be prettified and will become the component section header. Create a file named `overview.md` and place the general overview text for the component. You **cannot** use code snippets here. 
 
 ## Add New Example
 
@@ -91,9 +91,9 @@ To see a GitHub Flavored Markdown preview of the article, execute the following 
 npm run show-preview
 ``` 
 
-Your default browser will open [this](https://github.com/NativeScript/nativescript-sdk-examples-preview/blob/master/sdk-examples.md).
+Your default browser will open [this](https://github.com/NativeScript/nativescript-sdk-examples-preview/).
 
 This command pushes to github.com using SSH, so you might need [generate a new SSH key and add it to the ssh-agent](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) in case you haven't done so already.
 
 ## Bugs, issues and enhancements
-https://github.com/NativeScript/nativescript-sdk-examples/issues
+https://github.com/NativeScript/nativescript-sdk-examples-ng/issues
