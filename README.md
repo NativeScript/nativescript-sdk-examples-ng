@@ -12,4 +12,4 @@ All the samples have automated tests associated with them and you can be sure th
 
 Currently, the samples are written around the specific APIs, but we will be adding more “complete scenarios” implemented out of the box.
 
-We hope you will enjoy using this resource, if you have any feedback please [open an issue.](https://www.google.com/url?q=https://github.com/NativeScript/nativescript-sdk-examples-ng/issues&sa=D&ust=1473249345189000&usg=AFQjCNGFYRJHE_HTzp1dSKpEVkAetwrGJg)
+We hope you will enjoy using this resource, if you have any feedback please [open an issue.](https://github.com/NativeScript/nativescript-sdk-examples-ng/issues)
