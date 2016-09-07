@@ -48,11 +48,11 @@ Attaching the tap event handler from code:
 [Button Cookbook](http://docs.nativescript.org/cookbook/ui/button)
 ```
 
-5. (Optional) Make two screenshots of your example named `android.png` and `ios.png` and add them to the example directory. Here are two sample phone screenshots:
+5. (Optional) Make а screenshot of your example named `image.png` and add it to the example directory. Here is an image with android and ios phone screenshots:
 
-|Android|iOS|
-|---|---|
-|![Android](app/button/tap-event/android.png "Android")|![iOS](app/button/tap-event/ios.png "iOS")|
+|Image|
+|---|
+|![Image](app/button/image.png "Image")|
 
 6. Finally, add your example page to the main page navigation list:
 
