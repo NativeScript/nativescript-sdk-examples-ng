@@ -1,5 +1,5 @@
 ---
-title: NativeScript Code Samples
+title: Overview
 description: Code samples with commont scenarios accomplished with NativeScript
 position: 0
 slug: nativescript-code-samples
