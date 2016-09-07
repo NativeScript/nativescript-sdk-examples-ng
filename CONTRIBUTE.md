@@ -10,61 +10,62 @@
 
 ######article.md
 ```
-Attaching the tap event handler from XML:
-<snippet id='button-tap-event-xml'/>
+Set text in HTML
+<snippet id='button-text-html'/>
 
-Attaching the tap event handler from code:
-<snippet id='button-tap-event-code'/>
+Set text in code
+<snippet id='button-text-code'/>
 ```
- - Add your example source code files, i.e. `.ts`, `.xml`, and `.css` files. These files should contain the actual code snippets to be injected in `article.md`. For example:
+ - Add your example source code files, i.e. `.ts`, `.html`, and `.css` files. These files should contain the actual code snippets to be injected in `article.md`. For example:
 
-######page.xml
+######text.component.html
 ```
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoaded">
-  <StackLayout>
-    <!-- >> button-tap-event-xml -->
-    <Button id="button" text="Tap Me!" tap="onTap"/>
-    <!-- << button-tap-event-xml -->
-  </StackLayout>
-</Page>
-```
-
-######page.ts
-```
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoaded">
-  <StackLayout>
-    <!-- >> button-tap-event-xml -->
-    <Button id="button" text="Tap Me!" tap="onTap"/>
-    <!-- << button-tap-event-xml -->
-  </StackLayout>
-</Page>
-```
- - (Optional) Create a file named `links.md` and place additional links to external resources such as API References or any other materials that are relevant to this particular example. Here is a sample `links.md` file:
-```
-[Button Class](http://docs.nativescript.org/api-reference/classes/_ui_button_.button.html)
-
-[Button Cookbook](http://docs.nativescript.org/cookbook/ui/button)
+<StackLayout exampleTitle toggleNavButton>
+    <StackLayout  class="example-container">
+        <!-- >> button-text-html -->
+        <Button id="button" text="I am a button"></Button>
+        <!-- << button-text-html -->
+    </StackLayout>
+</StackLayout>
 ```
 
+######text.component.ts
+```
+import { Component } from "@angular/core";
+import { COMMON_DIRECTIVES } from '../../directives';
+import { Button } from "ui/button";
+import { Page } from "ui/page";
+
+@Component({
+    selector: 'button-component',
+    directives: [COMMON_DIRECTIVES],
+    templateUrl: 'button/text/text.component.html'
+})
+
+export class ButtonTextComponent {
+}
+```
  - (Optional) Make а screenshot of your example named `image.png` and add it to the example directory. Here is an image with android and ios phone screenshots:
 
 |Image|
 |---|
 |![Image](app/button/image.png "Image")|
 
- - Finally, add your example page to the main page navigation list:
+ - Finally, add your example to the main navigation list:
 
-######app/main-page.xml
+######app/examples-list.component.ts
 ```
-<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoaded">
-  <ScrollView>
-    <StackLayout id="root">
-      <Button text="Button Tap Event" tap="{{ navigate }}" url="./button-tap-event/page"/>
-      <Button text="Button Text" tap="{{ navigate }}" url="./button-text/page"/>
-      <!--Add your sample here-->      
-    </StackLayout>
-  </ScrollView>
-</Page>
+var mainMenuLinks = [
+    new Link("ActionBar", "/actionBarExamplesComponent"),
+    ...
+];
+```
+######app/app.routes.ts
+```
+export const routes: RouterConfig = [
+    routeEntry({ path: "", component: ExamplesListComponent, data: { title: "NativeScript SDK Examples" } }),
+    routeEntry({ path: "actionBarExamplesComponent", component: ActionBarExamplesComponent, data: { title: "ActionBar" } }),
+];
 ```
 
  - Tests
