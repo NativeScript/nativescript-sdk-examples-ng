@@ -98,7 +98,7 @@ import { CreateFormattedStringComponent } from "./formatted-string/create-format
 export var routableComponents = [];
 
 export const routes: RouterConfig = [
-    routeEntry({ path: "", component: ExamplesListComponent, data: { title: "NativeScript SDK Examples" } }),
+    routeEntry({ path: "", component: ExamplesListComponent, data: { title: "NativeScript Code Samples" } }),
     routeEntry({ path: "actionBarExamplesComponent", component: ActionBarExamplesComponent, data: { title: "ActionBar" } }),
     routeEntry({ path: "actionItemsComponent", component: ActionItemsComponent, data: { title: "Action items" } }),
     routeEntry({ path: "navigationButtonComponent", component: NavigationButtonComponent, data: { title: "Navigation button" } }),

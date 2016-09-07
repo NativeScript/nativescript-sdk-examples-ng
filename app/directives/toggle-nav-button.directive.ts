@@ -35,7 +35,7 @@ export class ToggleNavButtonDirective {
     }
 
     toggleNavigationButtonVisibility(button: NavigationButton) {
-        if (button.actionBar.title === "NativeScript SDK Examples") {
+        if (button.actionBar.title === "NativeScript Code Samples") {
             button.visibility = "collapsed";
         }
     }
