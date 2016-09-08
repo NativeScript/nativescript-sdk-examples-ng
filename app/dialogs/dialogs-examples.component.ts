@@ -4,7 +4,11 @@ import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Display dialogs", "/displayDialogsComponent"),
+    new Link("Action dialog", "/actionDialogComponent"),
+    new Link("Alert dialog", "/alertDialogComponent"),
+    new Link("Confirm dialog", "/confirmDialogComponent"),
+    new Link("Login dialog", "/loginDialogComponent"),
+    new Link("Prompt dialog", "/promptDialogComponent")
 ];
 
 @Component({
