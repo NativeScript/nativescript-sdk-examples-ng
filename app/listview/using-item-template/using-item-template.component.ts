@@ -1,8 +1,5 @@
 // >> using-item-template-code 
 import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 @Component({
     selector: 'item-component',
@@ -21,7 +18,6 @@ export class ItemComponent {
 @Component({
     selector: 'using-item-template',
     styleUrls: ["listview/using-item-template/using-item-template.component.css"],
-    directives: [COMMON_DIRECTIVES, ItemComponent],
     templateUrl: "listview/using-item-template/using-item-template.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

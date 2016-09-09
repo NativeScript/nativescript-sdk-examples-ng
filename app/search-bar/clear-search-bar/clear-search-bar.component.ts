@@ -2,7 +2,6 @@
 // >> clear-search-bar-submit
 import { Component, ChangeDetectionStrategy } from "@angular/core";
 // >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
 import { ObservableArray } from "data/observable-array";
 // << (hide)
 class DataItem {
@@ -11,9 +10,6 @@ class DataItem {
 
 @Component({
     selector: 'clear-search-bar-component',
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: 'search-bar/clear-search-bar/clear-search-bar.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })

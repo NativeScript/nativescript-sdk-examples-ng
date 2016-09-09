@@ -3,9 +3,6 @@ import {Component, Directive, ViewContainerRef, TemplateRef, Inject} from '@angu
 import {Device, platformNames} from "platform";
 import {DEVICE} from "nativescript-angular/platform-providers";
 
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 @Directive({ selector: "[ifAndroid]" })
 export class IfAndroidDirective {
@@ -28,7 +25,6 @@ export class IfIosDirective {
 @Component({
     selector: 'create-custom-directive',
     styleUrls:["ng-directives/create-custom-directive/create-custom-directive.component.css"],
-    directives: [COMMON_DIRECTIVES, IfIosDirective, IfAndroidDirective],
     templateUrl: "ng-directives/create-custom-directive/create-custom-directive.component.html",
 })
 

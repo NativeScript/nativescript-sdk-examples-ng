@@ -1,15 +1,9 @@
 // >> segmentedbar-items-setting-visibility
 import { Component } from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
     selector: 'segmented-bar-views-component',
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     styleUrls: ['segmented-bar/segmented-bar-views/style.css'],
     templateUrl: 'segmented-bar/segmented-bar-views/segmented-bar-views.component.html'
 })

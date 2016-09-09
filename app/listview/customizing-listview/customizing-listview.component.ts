@@ -1,9 +1,6 @@
 // >> listview-customize-code 
 import { Component, ChangeDetectionStrategy, ElementRef }  from "@angular/core";
 import { SetupItemViewArgs } from "nativescript-angular/directives";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 class Item {
     constructor(public name: string) { }
@@ -17,9 +14,6 @@ var items = ["ALL Heroes (header)", "Razor", "Rubick", "Phantom Lancer", "Legion
 @Component({
     selector: "customizing-listview",
     styleUrls:["listview/customizing-listview/customizing-listview.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "listview/customizing-listview/customizing-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

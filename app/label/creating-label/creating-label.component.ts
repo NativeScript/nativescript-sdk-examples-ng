@@ -1,15 +1,9 @@
 // >> creating-label-code 
 import { Component }  from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 @Component({
     selector: "creating-label",
     styleUrls:["label/creating-label/creating-label.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "label/creating-label/creating-label.component.html"
 })
 export class CreatingLabelComponent {

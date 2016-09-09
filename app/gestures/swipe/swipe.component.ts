@@ -1,14 +1,10 @@
 import { Component}  from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 // >> swipe-code 
 import { SwipeGestureEventData } from "ui/gestures";
 
 @Component({
     selector: "swipe-gesture",
     styleUrls:["gestures/swipe/swipe.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "gestures/swipe/swipe.component.html"
 })
 

@@ -1,14 +1,10 @@
 // >> scroll-view-event-code
 import { Component } from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 import {setTimeout} from "timer"
 
 @Component({
     selector: 'scroll-event-component',
     // >> (hide)
-    directives: [COMMON_DIRECTIVES],
     styleUrls: ["scroll-view/scroll-event/style.css"],
     // << (hide)
     templateUrl: 'scroll-view/scroll-event/scroll-event.component.html'

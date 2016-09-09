@@ -3,18 +3,12 @@ import { Component, OnInit, ViewChild, ElementRef }  from "@angular/core";
 import { Image } from "ui/image";
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 import ImageSourceModule = require("image-source");
 
 @Component({
     selector: "creating-image",
     styleUrls: ["image/creating-image/creating-image.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "image/creating-image/creating-image.component.html"
 })
 

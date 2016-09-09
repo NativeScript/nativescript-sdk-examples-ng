@@ -1,16 +1,10 @@
 // >> add-items-code
 import { Component } from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label"
 
 @Component({
     selector: 'tab-view-items-component',
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: 'tab-view/tab-view-items/tab-view-items.component.html',
 })
 

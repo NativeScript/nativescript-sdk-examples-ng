@@ -1,13 +1,9 @@
 // >> using-ngswitch-code 
 import { Component } from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 @Component({
     selector: 'ngswitch-component',
     // >> (hide)
-    directives: [COMMON_DIRECTIVES],
     styleUrls:['ng-directives/ngswitch-usage/style.css'],
     // << (hide)
     templateUrl: "ng-directives/ngswitch-usage/ngswitch-usage.component.html",

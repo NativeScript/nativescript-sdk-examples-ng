@@ -1,14 +1,8 @@
 // >> textfield-binding-show-result
 import { Component } from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 @Component({
     selector: 'text-field-binding-component',
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: 'text-field/text-field-binding/text-field-binding.component.html',    
     styleUrls: ["text-field/text-field.style.css"]
 })

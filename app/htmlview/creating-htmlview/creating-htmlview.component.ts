@@ -1,16 +1,9 @@
 // >> creating-htmlview-code 
 import { Component}  from "@angular/core";
 
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
-
 @Component({
     selector: "creating-htmlview",
     styleUrls:["htmlview/creating-htmlview/creating-htmlview.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "htmlview/creating-htmlview/creating-htmlview.component.html"
 })
 

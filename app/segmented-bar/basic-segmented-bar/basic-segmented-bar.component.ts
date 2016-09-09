@@ -1,15 +1,9 @@
 // >> add-segmentedbar-items
 import { Component, ChangeDetectionStrategy } from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
     selector: 'basic-segmented-bar-component',
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: 'segmented-bar/basic-segmented-bar/basic-segmented-bar.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })

@@ -1,12 +1,8 @@
 // >> slider-setting-default-values
 import { Component } from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 @Component({
     selector: 'slider-access-value-component',
     // >> (hide)
-    directives: [COMMON_DIRECTIVES],
     styleUrls: ['slider/style.css'],
     // << (hide)
     templateUrl: 'slider/slider-access-value-code/slider-access-value.component.html',

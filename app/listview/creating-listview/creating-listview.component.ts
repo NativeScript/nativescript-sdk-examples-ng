@@ -1,8 +1,5 @@
 // >> listview-create-code 
 import { Component, ChangeDetectionStrategy }  from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 class Country {
     constructor(public name: string) { }
@@ -16,9 +13,6 @@ var europianCountries = ["Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", 
 @Component({
     selector: "creating-listview",
     styleUrls:["listview/creating-listview/creating-listview.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "listview/creating-listview/creating-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

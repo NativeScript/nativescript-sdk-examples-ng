@@ -1,5 +1,4 @@
 import { Component}  from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 
 // >> pan-code 
 import { PanGestureEventData } from "ui/gestures";
@@ -7,9 +6,6 @@ import { PanGestureEventData } from "ui/gestures";
 @Component({
     selector: "pan-gesture",
     styleUrls:["gestures/pan/pan.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "gestures/pan/pan.component.html"
 })
 

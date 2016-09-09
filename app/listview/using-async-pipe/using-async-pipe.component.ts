@@ -1,4 +1,3 @@
-import { COMMON_DIRECTIVES } from '../../directives';
 // >> using-async-pipe-code
 import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Observable as RxObservable } from 'rxjs/Observable';
@@ -12,9 +11,6 @@ export class DataItem {
     styleUrls: ["listview/using-async-pipe/using-async-pipe.component.css"],
     templateUrl: "listview/using-async-pipe/using-async-pipe.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush,
-      // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
 })
 
 export class UsingAsyncPipeComponent {

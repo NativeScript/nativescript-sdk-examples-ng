@@ -1,6 +1,4 @@
 import { Component, ChangeDetectionStrategy }  from "@angular/core";
-import { NS_ROUTER_DIRECTIVES } from 'nativescript-angular/router';
-import { COMMON_DIRECTIVES } from './directives';
 
 import { Link } from "./link";
 
@@ -37,7 +35,6 @@ var mainMenuLinks = [
 @Component({
     selector: "menulistview",
     templateUrl: 'examples-list.component.html',
-    directives: [NS_ROUTER_DIRECTIVES, COMMON_DIRECTIVES],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

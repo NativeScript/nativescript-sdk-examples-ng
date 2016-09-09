@@ -1,17 +1,11 @@
 // >> setting-style-via-code
 import {Component, OnInit} from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 import { Page } from "ui/page"
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
 
 @Component({
     selector: 'apply-style-code-component',
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: 'style/apply-style-via-code/apply-style-code.component.html'
 })
 

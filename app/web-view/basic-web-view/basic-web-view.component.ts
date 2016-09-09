@@ -1,17 +1,11 @@
 // >> setting-url-webview
 import {Component, OnInit} from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 import {WebView, LoadEventData} from "ui/web-view";
 import {Page} from "ui/page";
 import {TextField} from "ui/text-field"
 
 @Component({
     selector: 'basic-web-view-component',
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: 'web-view/basic-web-view/basic-web-view.component.html',
     styleUrls:["web-view/basic-web-view/style.css"]
 })

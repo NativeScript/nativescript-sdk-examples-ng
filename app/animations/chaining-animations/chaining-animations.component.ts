@@ -1,10 +1,8 @@
 import { Component } from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 import { View } from "ui/core/view";
 
 @Component({
     selector: 'animations-component',
-    directives: [COMMON_DIRECTIVES],
     templateUrl: 'animations/chaining-animations/chaining-animations.component.html'
 })
 
