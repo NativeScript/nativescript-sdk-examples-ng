@@ -4,7 +4,7 @@ import { COMMON_DIRECTIVES } from './../directives';
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link(" Create Formatted String", "/createFormattedStringExampleComponent")
+    new Link("Create Formatted String", "/createFormattedStringExampleComponent")
 ];
 
 @Component({
