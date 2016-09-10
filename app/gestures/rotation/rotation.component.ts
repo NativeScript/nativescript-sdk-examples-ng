@@ -1,5 +1,4 @@
 import { Component}  from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 import { GridLayout } from "ui/layouts/grid-layout";
 // >> rotation-code 
 import { RotationGestureEventData } from "ui/gestures";
@@ -7,9 +6,6 @@ import { RotationGestureEventData } from "ui/gestures";
 @Component({
     selector: "rotation-gesture",
     styleUrls:["gestures/rotation/rotation.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "gestures/rotation/rotation.component.html"
 })
 

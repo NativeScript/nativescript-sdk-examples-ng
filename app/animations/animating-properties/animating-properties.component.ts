@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 import { Color } from "color";
 import { Label } from "ui/label";
 
@@ -7,7 +6,6 @@ var enums = require("ui/enums");
 
 @Component({
     selector: 'animations-component',
-    directives: [COMMON_DIRECTIVES],
     templateUrl: 'animations/animating-properties/animating-properties.component.html'
 })
 

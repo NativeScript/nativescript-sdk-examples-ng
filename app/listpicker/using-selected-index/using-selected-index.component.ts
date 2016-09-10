@@ -1,8 +1,5 @@
 // >> using-selected-index-code 
 import { Component }  from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 var pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 "Dugtrio", "Meowth", "Persian", "Psyduck", "Arcanine", "Poliwrath", "Machoke"];
@@ -10,9 +7,6 @@ var pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 @Component({
     selector: "creating-listpicker",
     styleUrls:["listpicker/using-selected-index/using-selected-index.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "listpicker/using-selected-index/using-selected-index.component.html"
 })
 

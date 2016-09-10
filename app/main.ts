@@ -6,9 +6,20 @@ import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
+import { IfAndroidDirective, IfIosDirective } from "./ng-directives/create-custom-directive/create-custom-directive.component"
+import { UnlessDirective } from "./ng-directives/unless-directive/directive-unless"
+import { ToggleNavButtonDirective } from "./directives/toggle-nav-button.directive"
+import { ExampleTitleDirective } from "./directives/example.directive"
+
 @NgModule({
     declarations: [
-        AppComponent, ...routableComponents
+        AppComponent,
+        IfAndroidDirective,
+        IfIosDirective,
+        UnlessDirective,
+        ToggleNavButtonDirective,
+        ExampleTitleDirective,
+        ...routableComponents,
     ],
     bootstrap: [AppComponent],
     imports: [

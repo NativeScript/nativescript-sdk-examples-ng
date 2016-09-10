@@ -1,9 +1,7 @@
 import { Component } from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 
 @Component({
     selector: 'style-css-file-component',
-    directives: [COMMON_DIRECTIVES],
     templateUrl: 'style/style-css-file/style-css-file.component.html',
     styleUrls:['style/style-css-file/style.css']
 })

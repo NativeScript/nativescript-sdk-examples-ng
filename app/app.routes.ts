@@ -1,5 +1,3 @@
-import { RouterConfig } from "@angular/router";
-import { nsProvideRouter } from "nativescript-angular/router"
 import { ExamplesListComponent } from "./examples-list.component";
 import { ActionBarExamplesComponent } from "./action-bar/action-bar-examples.component";
 import { ActionItemsComponent } from "./action-bar/action-items/action-items.component";
@@ -101,7 +99,7 @@ import { CreateFormattedStringComponent } from "./formatted-string/create-format
 
 export var routableComponents = [];
 
-export const routes: RouterConfig = [
+export const routes = [
     routeEntry({ path: "", component: ExamplesListComponent, data: { title: "NativeScript Code Samples" } }),
     routeEntry({ path: "actionBarExamplesComponent", component: ActionBarExamplesComponent, data: { title: "ActionBar" } }),
     routeEntry({ path: "actionItemsComponent", component: ActionItemsComponent, data: { title: "Action items" } }),
@@ -193,16 +191,16 @@ export const routes: RouterConfig = [
     routeEntry({ path: "rotationGestureExampleComponent", component: RotationExampleComponent, data: { title: "Rotation" } }),
     routeEntry({ path: "touchGestureExampleComponent", component: TouchExampleComponent, data: { title: "Touch" } }),
 
-  { path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } },
-  { path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } },
-  { path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf basic usage" } },
-  { path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf hiding elements" } },
-  { path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create custom *ng directive" } },
-  { path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } },
-  { path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } },
-  
-  { path: "formattedStringExamplesComponent", component: FormattedStringExamplesComponent, data: { title: "Formatted String" } },
-  { path: "createFormattedStringExampleComponent", component: CreateFormattedStringComponent, data: { title: "Create Formatted String" } },
+  routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
+  routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
+  routeEntry({ path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf basic usage" } }),
+  routeEntry({ path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf hiding elements" } }),
+  routeEntry({ path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create custom *ng directive" } }),
+  routeEntry({ path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } }),
+  routeEntry({ path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } }),
+
+  routeEntry({ path: "formattedStringExamplesComponent", component: FormattedStringExamplesComponent, data: { title: "Formatted String" } }),
+  routeEntry({ path: "createFormattedStringExampleComponent", component: CreateFormattedStringComponent, data: { title: "Create Formatted String" } }),
 
 ];
 
@@ -210,7 +208,3 @@ function routeEntry(data) {
     routableComponents.push(data.component)
     return data;
 }
-
-export const APP_ROUTER_PROVIDERS = [
-    nsProvideRouter(routes, {})
-];

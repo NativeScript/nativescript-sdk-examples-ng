@@ -1,8 +1,5 @@
 // >> textfield-handle-submit-event
 import { Component } from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 import {DatePicker} from "ui/date-picker";
 import {TextField} from "ui/text-field";
 import {Page} from "ui/page";
@@ -11,7 +8,6 @@ import {setTimeout} from "timer"
 @Component({
     selector: 'basic-text-field-component',
     // >> (hide)
-    directives: [COMMON_DIRECTIVES],    
     styleUrls: ["text-field/text-field.style.css"],
     // << (hide)
     templateUrl: 'text-field/basic-text-field/basic-text-field.component.html'

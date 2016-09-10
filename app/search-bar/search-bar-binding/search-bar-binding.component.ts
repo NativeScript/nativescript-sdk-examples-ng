@@ -1,12 +1,10 @@
 import { Component} from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 import {Page} from "ui/page";
 import { SearchBar } from "ui/search-bar";
 import { isAndroid } from "platform"
 
 @Component({
     selector: 'search-bar-binding-component',
-    directives: [COMMON_DIRECTIVES],
     templateUrl: 'search-bar/search-bar-binding/search-bar-binding.component.html'
 })
 

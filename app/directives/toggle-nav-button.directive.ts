@@ -1,5 +1,5 @@
 import { ActivatedRoute } from "@angular/router";
-import { Directive } from "@angular/core";
+import { Directive, OnInit } from "@angular/core";
 import { EventData } from "data/observable";
 import { NavigationButton } from "ui/action-bar";
 import { Page } from "ui/page";
@@ -10,11 +10,14 @@ import app = require("application");
     selector: "[toggleNavButton]"
 })
 
-export class ToggleNavButtonDirective {
-    constructor(route: ActivatedRoute, page: Page, private routerExtensions: RouterExtensions) {
+export class ToggleNavButtonDirective implements OnInit {
+    constructor(route: ActivatedRoute, private page: Page, private routerExtensions: RouterExtensions) {
         let navigationButton = this.createNavigationButton();
         page.actionBar.navigationButton = navigationButton;
-        this.toggleNavigationButtonVisibility(page.actionBar.navigationButton);
+    }
+
+    ngOnInit() {
+        this.toggleNavigationButtonVisibility(this.page.actionBar.navigationButton);
     }
 
     createNavigationButton(): NavigationButton {

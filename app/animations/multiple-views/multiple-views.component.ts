@@ -1,5 +1,4 @@
 import { Component, OnInit } from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 import { Page } from "ui/page";
 import { View } from "ui/core/view";
 import animationModule = require("ui/animation");
@@ -11,7 +10,6 @@ var view4: View;
 
 @Component({
     selector: 'animations-component',
-    directives: [COMMON_DIRECTIVES],
     templateUrl: 'animations/multiple-views/multiple-views.component.html',
     styleUrls:["animations/style.css"],
 })

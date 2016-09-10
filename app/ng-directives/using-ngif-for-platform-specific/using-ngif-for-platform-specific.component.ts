@@ -1,16 +1,10 @@
 // >> using-ngif-platform-code 
 import { Component, OnInit } from "@angular/core";
 import application = require("application");
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 @Component({
     selector: 'ngif-for-platform-specific-component',
     styleUrls:["ng-directives/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "ng-directives/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component.html",
 })
 

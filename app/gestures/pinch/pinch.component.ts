@@ -1,5 +1,4 @@
 import { Component}  from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 import { GridLayout } from "ui/layouts/grid-layout";
 // >> pinch-code 
 import { PinchGestureEventData } from "ui/gestures";
@@ -9,9 +8,6 @@ let startScale = 1;
 @Component({
     selector: "pinch-gesture",
     styleUrls:["gestures/pinch/pinch.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "gestures/pinch/pinch.component.html"
 })
 

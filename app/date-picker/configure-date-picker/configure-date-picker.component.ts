@@ -1,15 +1,9 @@
 // >> date-picker-configure-code
 import { Component } from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 import { DatePicker } from "ui/date-picker";
 
 @Component({
     selector: 'date-picker-component',
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: 'date-picker/configure-date-picker/configure-date-picker.component.html'
 })
 

@@ -1,4 +1,3 @@
-import { COMMON_DIRECTIVES } from '../../directives';
 import { Component}  from "@angular/core";
 // >> touch-code 
 import { TouchGestureEventData } from "ui/gestures";
@@ -6,9 +5,6 @@ import { TouchGestureEventData } from "ui/gestures";
 @Component({
     selector: "touch-gesture",
     styleUrls:["gestures/touch/touch.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "gestures/touch/touch.component.html"
 })
 

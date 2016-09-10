@@ -1,5 +1,4 @@
 import { Component}  from "@angular/core";
-import { COMMON_DIRECTIVES } from '../../directives';
 import { GridLayout } from "ui/layouts/grid-layout";
 // >> tap-code 
 import { GestureEventData } from "ui/gestures";
@@ -7,9 +6,6 @@ import { GestureEventData } from "ui/gestures";
 @Component({
     selector: "tap-gestures",
     styleUrls:["gestures/tap/tap.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "gestures/tap/tap.component.html"
 })
 

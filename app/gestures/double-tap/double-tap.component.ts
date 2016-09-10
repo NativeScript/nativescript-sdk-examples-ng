@@ -3,16 +3,10 @@ import { Component}  from "@angular/core";
 import { GestureEventData } from "ui/gestures";
 
 import { GridLayout } from "ui/layouts/grid-layout";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 @Component({
     selector: "double-tap-gesture",
     styleUrls:["gestures/double-tap/double-tap.component.css"],
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "gestures/double-tap/double-tap.component.html"
 })
 

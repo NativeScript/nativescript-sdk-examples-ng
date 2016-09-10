@@ -1,14 +1,8 @@
 // >> using-ngif-code 
 import { Component } from "@angular/core";
-// >> (hide)
-import { COMMON_DIRECTIVES } from '../../directives';
-// << (hide)
 
 @Component({
     selector: 'ngif-component',
-    // >> (hide)
-    directives: [COMMON_DIRECTIVES],
-    // << (hide)
     templateUrl: "ng-directives/using-ngif/using-ngif.component.html",
 })
 
