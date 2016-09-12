@@ -1,6 +1,6 @@
 ---
 title: Overview
-description: Code samples with commont scenarios accomplished with NativeScript
+description: Code samples with common scenarios accomplished with NativeScript
 position: 0
 slug: nativescript-code-samples
 ---
