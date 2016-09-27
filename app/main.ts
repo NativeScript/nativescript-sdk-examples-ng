@@ -11,8 +11,11 @@ import { UnlessDirective } from "./ng-directives/unless-directive/directive-unle
 import { ToggleNavButtonDirective } from "./directives/toggle-nav-button.directive"
 import { ExampleTitleDirective } from "./directives/example.directive"
 
+import { ItemComponent } from "./listview/using-item-template/using-item-template.component";
+
 @NgModule({
     declarations: [
+        ItemComponent,
         AppComponent,
         IfAndroidDirective,
         IfIosDirective,
