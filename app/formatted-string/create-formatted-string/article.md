@@ -1,8 +1,6 @@
 Label
 <snippet id='formatted-string-label-html'/>
 
-<snippet id='formatted-string-second-label-html'/>
-
 TextField
 <snippet id='formatted-string-textfield-html'/>
 

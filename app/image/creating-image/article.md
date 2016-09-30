@@ -3,3 +3,9 @@ Create image via HTML
 
 Create image via TypeScript
 <snippet id='creating-image-code'/>
+
+Load Background Image via CSS
+
+<snippet id='load-image-css'/>
+
+<snippet id='css-load-background'/>

@@ -7,3 +7,27 @@ Label {
     margin-top: 20;
     margin-bottom: 5;
 }
+
+/* >> css-load-background */
+#layoutBackgroundImageURL{
+    background-image: url("https://docs.nativescript.org/angular/img/cli-getting-started/angular/chapter0/NativeScript_Angular_logo.png");
+    background-repeat:no-repeat;
+    height: 200;
+    margin:15;
+}
+
+#layoutBackgroundImageFromFolder{
+    background-image: url("~/images/logo.png");
+    background-repeat:no-repeat;
+    height: 200;
+    margin:15;
+}
+
+
+#layoutBackgroundImageFromRes{
+    background-image: url("res://icon");
+    background-repeat:no-repeat;
+    height: 70;
+    margin:15;
+}
+/* << css-load-background */
