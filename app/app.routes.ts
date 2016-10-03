@@ -96,6 +96,10 @@ import { UnlessDirectiveExampleComponent } from "./ng-directives/unless-directiv
 import { UsingNgSwitchExamplesComponent } from "./ng-directives/ngswitch-usage/ngswitch-usage.component";
 import { FormattedStringExamplesComponent } from "./formatted-string/formated-string-examples.component";
 import { CreateFormattedStringComponent } from "./formatted-string/create-formatted-string/create-formatted-string.component";
+import { TraceExamplesComponent } from "./trace/trace-examples.component";
+import { BasicTraceExampleComponent } from "./trace/basic-trace-example/basic-trace-example.component";
+import { TraceSpecificCategoriesExampleComponent } from "./trace/trace-specific-categories/trace-specific-categories-example.component";
+import { TraceMessagesExampleComponent } from "./trace/trace-messages-example/trace-messages-example.component";
 
 export var routableComponents = [];
 
@@ -201,6 +205,11 @@ export const routes = [
 
   routeEntry({ path: "formattedStringExamplesComponent", component: FormattedStringExamplesComponent, data: { title: "Formatted String" } }),
   routeEntry({ path: "createFormattedStringExampleComponent", component: CreateFormattedStringComponent, data: { title: "Create Formatted String" } }),
+
+  routeEntry({ path: "traceExampleComponent", component: TraceExamplesComponent, data: { title: "Trace module" } }),
+  routeEntry({ path: "basicTraceExampleComponent", component: BasicTraceExampleComponent, data: { title: "Basic trace module example" } }),
+  routeEntry({ path: "traceSpecificCategoriesExampleComponent", component: TraceSpecificCategoriesExampleComponent, data: { title: "Trace specific categories" } }),
+  routeEntry({ path: "traceMessagesExampleComponent", component: TraceMessagesExampleComponent, data: { title: "Write your own trace message" } }),
 
 ];
 

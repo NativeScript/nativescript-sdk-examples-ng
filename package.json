@@ -25,12 +25,12 @@
             "version": "2.3.0"
         },
         "tns-ios": {
-            "version": "2.2.1"
+            "version": "2.3.0"
         }
     },
     "dependencies": {
         "nativescript-angular": "1.0.0",
-        "tns-core-modules": "2.2.1",
+        "tns-core-modules": "2.3.0",
         "nativescript-intl": "^0.0.4",
         "@angular/core": "2.0.1",
         "@angular/common": "2.0.1",
