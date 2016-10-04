@@ -30,7 +30,8 @@ var mainMenuLinks = [
     new Link("ListView", "/listViewExamplesComponent"),
     new Link("Progress", "/progressExamplesComponent"),
     new Link("Formatted String", "/formattedStringExamplesComponent"),
-    new Link("Trace Module Example", "/traceExampleComponent")
+    new Link("Trace Module Example", "/traceExampleComponent"),
+    new Link("Timer Module Example", "/sampleTimerModuleExampleComponent")
 ];
 
 @Component({

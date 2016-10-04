@@ -100,6 +100,9 @@ import { TraceExamplesComponent } from "./trace/trace-examples.component";
 import { BasicTraceExampleComponent } from "./trace/basic-trace-example/basic-trace-example.component";
 import { TraceSpecificCategoriesExampleComponent } from "./trace/trace-specific-categories/trace-specific-categories-example.component";
 import { TraceMessagesExampleComponent } from "./trace/trace-messages-example/trace-messages-example.component";
+import { CustomTraceWriterExampleComponent } from "./trace/custom-tracewriter/custom-tracewriter-example.component";
+import { TimerExamplesComponent } from "./timer/timer-examples.component";
+import { SampleTimerModuleExampleComponent } from "./timer/sample-timer-module-example/sample-timer-module-example";
 
 export var routableComponents = [];
 
@@ -210,6 +213,9 @@ export const routes = [
   routeEntry({ path: "basicTraceExampleComponent", component: BasicTraceExampleComponent, data: { title: "Basic trace module example" } }),
   routeEntry({ path: "traceSpecificCategoriesExampleComponent", component: TraceSpecificCategoriesExampleComponent, data: { title: "Trace specific categories" } }),
   routeEntry({ path: "traceMessagesExampleComponent", component: TraceMessagesExampleComponent, data: { title: "Write your own trace message" } }),
+  routeEntry({ path: "customTraceWriterExampleComponent", component: CustomTraceWriterExampleComponent, data: { title: "Writing a Custom TraceWriter" } }),
+  routeEntry({ path: "timerExamplesComponent", component: TimerExamplesComponent, data: { title: "Timer module" } }),
+  routeEntry({ path: "sampleTimerModuleExampleComponent", component: SampleTimerModuleExampleComponent, data: { title: "Basic timer module example" } }),
 
 ];
 
