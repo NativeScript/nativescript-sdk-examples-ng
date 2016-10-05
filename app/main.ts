@@ -1,5 +1,8 @@
 // this import should be first in order to load some required settings (like globals and reflect-metadata)
 import { platformNativeScriptDynamic, NativeScriptModule } from "nativescript-angular/platform";
+import * as elementRegistryModule from 'nativescript-angular/element-registry';
+import application = require("application");
+import {isIOS} from "platform";
 import { routes, routableComponents } from "./app.routes";
 import { AppComponent } from "./app.component";
 import { NgModule } from "@angular/core";
@@ -10,8 +13,16 @@ import { IfAndroidDirective, IfIosDirective } from "./ng-directives/create-custo
 import { UnlessDirective } from "./ng-directives/unless-directive/directive-unless"
 import { ToggleNavButtonDirective } from "./directives/toggle-nav-button.directive"
 import { ExampleTitleDirective } from "./directives/example.directive"
-
+// import * as googlemapsModule from "nativescript-googlemaps";
 import { ItemComponent } from "./listview/using-item-template/using-item-template.component";
+
+
+// application.on(application.launchEvent, function(args) {
+//     if (isIOS) {
+//         GMSServices.provideAPIKey("AIzaSyDQZOuoz1x-bMki_pbb7AYyU9D8Js4ZpKQ");
+//     }
+// });
+// elementRegistryModule.registerElement("FrescoDrawee", () => googlemapsModule.TnsGoogleMaps);
 
 @NgModule({
     declarations: [

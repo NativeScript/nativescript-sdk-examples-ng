@@ -3,7 +3,8 @@ import { Component } from "@angular/core";
 import {setInterval, setTimeout, clearInterval} from "timer"
 
 @Component({
-    selector: 'time-picker-component',
+    selector: 'timer-module-component',
+    styleUrls:['timer/sample-timer-module-example/sample-timer-module-example.css'],
     templateUrl: 'timer/sample-timer-module-example/sample-timer-module-example.html'
 })
 
@@ -12,6 +13,7 @@ export class SampleTimerModuleExampleComponent {
     public color = ["green", "yellow", "red"];
     public id;
     public status = true;
+    public counter = 0;
 
     constructor(){
         this.buttoncolor = "blue";
@@ -35,6 +37,19 @@ export class SampleTimerModuleExampleComponent {
             }, 1000)
             this.status=true;
         }
+    }
+
+    public increase(){
+        var that = this;
+        setTimeout(function(){
+            that.counter++;
+        }, 2000)
+    }
+    public decrease(){
+        var that = this;
+        setTimeout(function(){
+            that.counter--;
+        }, 2000)
     }
 }
 // << time-picker-configure-code

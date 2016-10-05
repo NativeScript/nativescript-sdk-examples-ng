@@ -103,6 +103,12 @@ import { TraceMessagesExampleComponent } from "./trace/trace-messages-example/tr
 import { CustomTraceWriterExampleComponent } from "./trace/custom-tracewriter/custom-tracewriter-example.component";
 import { TimerExamplesComponent } from "./timer/timer-examples.component";
 import { SampleTimerModuleExampleComponent } from "./timer/sample-timer-module-example/sample-timer-module-example";
+import { PlatformExamplesComponent } from "./platform/platform-examples.component";
+import { PlatformModuleExampleComponent } from "./platform/platform-module-example/platform-module-example";
+import { LocationExamplesComponent } from "./location/location-examples.component";
+import { LocationModuleExampleComponent } from "./location/location-module-example/location-module-example";
+import { FPSExamplesComponent } from "./fpsMeter/fps-meter-examples.component";
+import { FPSMeterModuleExampleComponent } from "./fpsMeter/fps-meter-module-example/fps-meter-module-example";
 
 export var routableComponents = [];
 
@@ -216,6 +222,12 @@ export const routes = [
   routeEntry({ path: "customTraceWriterExampleComponent", component: CustomTraceWriterExampleComponent, data: { title: "Writing a Custom TraceWriter" } }),
   routeEntry({ path: "timerExamplesComponent", component: TimerExamplesComponent, data: { title: "Timer module" } }),
   routeEntry({ path: "sampleTimerModuleExampleComponent", component: SampleTimerModuleExampleComponent, data: { title: "Basic timer module example" } }),
+  routeEntry({ path: "platformExamplesComponent", component: PlatformExamplesComponent, data: { title: "Platform module" } }),
+  routeEntry({ path: "platformModuleExampleComponent", component: PlatformModuleExampleComponent, data: { title: "Platform module example" } }),
+  routeEntry({ path: "locationExamplesComponent", component: LocationExamplesComponent, data: { title: "Location module" } }),
+  routeEntry({ path: "locationModuleExampleComponent", component: LocationModuleExampleComponent, data: { title: "Location module example" } }),
+  routeEntry({ path: "fpsExamplesComponent", component: FPSExamplesComponent, data: { title: "FPS Meter" } }),
+  routeEntry({ path: "fpsMeterModuleExampleComponent", component: FPSMeterModuleExampleComponent, data: { title: "FPS Meter example" } }),
 
 ];
 

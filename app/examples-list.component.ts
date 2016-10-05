@@ -31,7 +31,10 @@ var mainMenuLinks = [
     new Link("Progress", "/progressExamplesComponent"),
     new Link("Formatted String", "/formattedStringExamplesComponent"),
     new Link("Trace Module Example", "/traceExampleComponent"),
-    new Link("Timer Module Example", "/sampleTimerModuleExampleComponent")
+    new Link("Timer Module Example", "/sampleTimerModuleExampleComponent"),
+    new Link("Platform Module Example", "/platformExamplesComponent"),
+    new Link("Location Module Example", "/locationExamplesComponent"),
+    new Link("FPS Meter Example", "/fpsExamplesComponent")
 ];
 
 @Component({
