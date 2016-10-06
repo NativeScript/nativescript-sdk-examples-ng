@@ -1,8 +1,19 @@
-Set WebView in HTML
-<snippet id='web-view-html'/>
+Import Trace Module
 
-Add WebView `src` and handle `loadFinishedEvent` event
-<snippet id='setting-url-webview'/>
+<snippet id="import-trace-methods"/>
 
-CSS
-<snippet id='web-view-basic-css'/>
+Tracing specific categories of events
+
+<snippet id='setting-specific-tracing-categories'/>
+
+Trace add category
+
+<snippet id="trace-add-categories"/>
+
+Check is category setting
+
+<snippet id="check-iscategoryset"/>
+
+Disable tracing
+
+<snippet id="disable-tracing"/>

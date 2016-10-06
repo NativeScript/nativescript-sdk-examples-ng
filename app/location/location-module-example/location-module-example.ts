@@ -1,10 +1,9 @@
-// >> time-picker-configure-code
-import { Component } from "@angular/core";
+import { Component, NgZone } from "@angular/core";
+// >> import-geolocation-plugin
 import {LocationMonitor, Location, getCurrentLocation, isEnabled, distance, enableLocationRequest, watchLocation, clearWatch} from "nativescript-geolocation";
+// << import-geolocation-plugin
 import {SegmentedBarItem} from "ui/segmented-bar";
 import {setInterval} from "timer";
-
-
 
 @Component({
     selector: 'location-module-component',
@@ -17,13 +16,16 @@ export class LocationModuleExampleComponent {
     public distanceResult:string = "0";
     public distance:number =0;
     public index:number = 0;
-    public units;// = ["meters", "kilometers", "miles", "inches"]
+    public units;
 
     public isMonitoring = false;
     public options;
     public listener;
     public monitor_longitude:string = "0";
     public monitor_latitude:string = "0";
+    public monitor_altitude:string = "0";
+    public monitor_direction:string = "0";
+    public monitor_speed:string = "0";
 
     public startpoint_longitude:number = 42.696552;
     public startpoint_latitude:number = 23.32601;
@@ -31,7 +33,7 @@ export class LocationModuleExampleComponent {
     public endpoint_latitude:number = -74.00598;
 
 
-    constructor(){
+    constructor(private zone:NgZone){
         this.units=[];
         var item1 = new SegmentedBarItem();
         item1.title = "meters";
@@ -52,14 +54,15 @@ export class LocationModuleExampleComponent {
             maximumAge:10000,
             timeout:5000
         }
-
+        // >> enable-location-services
         enableLocationRequest(true);
+        // << enable-location-services
     }
 
-
    public isLocationEnabled(){
-       
+       // >> check-is-service-enabled
        var isEnabledProperty = isEnabled();
+       // << check-is-service-enabled
        var message = "Location services are not available";
        if(isEnabledProperty){
            message = "Location services are available";
@@ -67,8 +70,8 @@ export class LocationModuleExampleComponent {
        alert(message);
    }
 
-
    public getDistance(){
+       // >> get-distance
        var startLocation:Location =new Location();
        startLocation.longitude = this.startpoint_longitude;
        startLocation.latitude = this.startpoint_latitude;
@@ -77,7 +80,7 @@ export class LocationModuleExampleComponent {
        endLocation.longitude = this.endpoint_longitude;
        endLocation.latitude = this.endpoint_latitude;
        this.distance = distance(startLocation, endLocation);
-
+       // << get-distance
 
        console.log("distance - "+this.distance);
        switch (this.index) {
@@ -120,8 +123,8 @@ export class LocationModuleExampleComponent {
        }
    }
 
-
    public getLocationOnce(){
+       // >> get-current-location
        getCurrentLocation({ maximumAge: 10000, timeout: 5000 }).then(function (location:Location) {
             console.log('Location received: ' + location);
             alert("Longitude: "+(location.longitude).toFixed(2)+" - Latitude:"+(location.latitude).toFixed(2))
@@ -129,38 +132,33 @@ export class LocationModuleExampleComponent {
             console.log('Location error received: ' + error);
             alert('Location error received: ' + error);
         });
-        Location
+        // << get-current-location
    }
 
-
    public monitor(){
-    console.log("inside the mthod");
-    var that =this;
-    console.log(this.isMonitoring);
+       // >> location-monitoring
        if(this.isMonitoring){
            clearWatch(this.listener);
            this.isMonitoring = false;
        }
        else{
-          this.listener = watchLocation(that.result,
-            function (e) {
-                console.log("Error: " + e.message);
-            }, this.options);
+          this.listener = watchLocation((loc:Location)=>{
+                    if (loc) {
+                            this.zone.run(()=>{
+                                console.log(loc.longitude+" "+loc.latitude);
+                                    this.monitor_longitude = (loc.longitude).toFixed(4);
+                                    this.monitor_latitude = (loc.latitude).toFixed(4);
+                                    this.monitor_altitude = (loc.altitude).toFixed(2);
+                                    this.monitor_direction = (loc.direction).toFixed(2);
+                                    this.monitor_speed = (loc.speed).toFixed(2);
+                            })
+                    }
+                },
+                (e) => {
+                    console.log("Error: " + e.message);
+                }, this.options);
             this.isMonitoring = true;
         }
-   }
-
-
-   public result(loc:Location){
-        if (loc) {
-
-                    console.log(loc.longitude+" "+loc.latitude);
-                    setInterval(function(){
-                        this.monitor_latitude = (loc.longitude).toFixed(5);
-                        this.monitor_latitude = (loc.latitude).toFixed(5);
-                    },1)
-                    
-                }
+        // << location-monitoring
    }
 }
-// << time-picker-configure-code

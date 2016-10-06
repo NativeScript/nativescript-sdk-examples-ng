@@ -109,6 +109,9 @@ import { LocationExamplesComponent } from "./location/location-examples.componen
 import { LocationModuleExampleComponent } from "./location/location-module-example/location-module-example";
 import { FPSExamplesComponent } from "./fpsMeter/fps-meter-examples.component";
 import { FPSMeterModuleExampleComponent } from "./fpsMeter/fps-meter-module-example/fps-meter-module-example";
+import { HTTPModuleComponent } from "./httpModule/http-module-examples.component";
+import { HTTPModulePostExampleComponent } from "./httpModule/http-module-post/http-module-post";
+import { HTTPModuleGetExampleComponent } from "./httpModule/http-module-get/http-module-get";
 
 export var routableComponents = [];
 
@@ -228,6 +231,9 @@ export const routes = [
   routeEntry({ path: "locationModuleExampleComponent", component: LocationModuleExampleComponent, data: { title: "Location module example" } }),
   routeEntry({ path: "fpsExamplesComponent", component: FPSExamplesComponent, data: { title: "FPS Meter" } }),
   routeEntry({ path: "fpsMeterModuleExampleComponent", component: FPSMeterModuleExampleComponent, data: { title: "FPS Meter example" } }),
+  routeEntry({ path: "httpModuleComponent", component: HTTPModuleComponent, data: { title: "HTTP Module" } }),
+  routeEntry({ path: "httpModulePostExampleComponent", component: HTTPModulePostExampleComponent, data: { title: "HTTP Post JSON example" } }),
+  routeEntry({ path: "httpModuleGetExampleComponent", component: HTTPModuleGetExampleComponent, data: { title: "HTTP Get example" } }),
 
 ];
 

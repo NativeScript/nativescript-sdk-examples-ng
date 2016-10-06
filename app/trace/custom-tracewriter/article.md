@@ -1,8 +1,8 @@
-Set WebView in HTML
-<snippet id='web-view-html'/>
+Import Trace Module and Utils Types
+<snippet id='trace-customtracewriter-imports'/>
 
-Add WebView `src` and handle `loadFinishedEvent` event
-<snippet id='setting-url-webview'/>
+Create custom writer
+<snippet id='trace-create-custom-writer'/>
 
-CSS
-<snippet id='web-view-basic-css'/>
+Adding custom trace writer
+<snippet id='trace-add-custom-writer'/>

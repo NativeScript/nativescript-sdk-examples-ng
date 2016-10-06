@@ -1,7 +1,7 @@
-// >> setting-url-webview
 import {Component, OnInit} from "@angular/core";
-import {Page} from "ui/page";
+// >> import-trace-methods
 import {setCategories, enable, disable, categories, addCategories, isCategorySet, enabled, write} from "trace";
+// << import-trace-methods
 import {setTimeout} from "timer"
 
 @Component({
@@ -10,7 +10,9 @@ import {setTimeout} from "timer"
 })
 
 export class TraceSpecificCategoriesExampleComponent{
+   
     constructor(){
+        // >> setting-specific-tracing-categories
         setCategories(categories.concat(
             categories.Binding,
             categories.Layout,
@@ -19,7 +21,7 @@ export class TraceSpecificCategoriesExampleComponent{
             categories.VisualTreeEvents
         ));
         enable();
-
+        // << setting-specific-tracing-categories
 
 
         setTimeout(function(){
@@ -28,7 +30,9 @@ export class TraceSpecificCategoriesExampleComponent{
             console.log("Category: Navigation")
             console.log("-----------------------------------------------------");
             alert("Navigation trace category has been added.");
+            // >> trace-add-categories
             addCategories(categories.Navigation)
+            // << trace-add-categories
         }, 2000);
 
         setTimeout(function(){
@@ -53,17 +57,21 @@ export class TraceSpecificCategoriesExampleComponent{
     }
 
     public checkIsDebugStyleSet(){
+        // >> check-iscategoryset
         if(isCategorySet(categories.Layout)){
             alert("Style category has been set")
         }
         else{
             alert("Style category has not been set")
         }
+        // << check-iscategoryset
     }
 
     public enableTracing(){
         if(enabled == false){
+            // >> disable-tracing
             enable();
+            // << disable-tracing
             alert("Trace has been enabled");
         }
         else{
@@ -79,6 +87,4 @@ export class TraceSpecificCategoriesExampleComponent{
             alert("Trace has been already disabled");
         }
     }
-    
 }
-// << setting-url-webview

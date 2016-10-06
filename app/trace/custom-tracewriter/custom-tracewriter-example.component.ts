@@ -1,9 +1,11 @@
-// >> setting-url-webview
 import {Component, OnInit} from "@angular/core";
 import {Page} from "ui/page";
+// >> trace-customtracewriter-imports
 import {setCategories, enable, categories, write, addCategories, messageType, clearWriters, addWriter} from "trace";
 import {isUndefined} from "utils/types";
+// << trace-customtracewriter-imports
 
+// >> trace-create-custom-writer
 class TimestampConsoleWriter{
     public write(message, category, type){
         if (!console) return;
@@ -25,8 +27,8 @@ class TimestampConsoleWriter{
             break;
         }
     }
-
 }
+// << trace-create-custom-writer
 
 @Component({
     selector: 'custom-tracewriter-example-component',
@@ -35,13 +37,12 @@ class TimestampConsoleWriter{
 
 export class CustomTraceWriterExampleComponent{
     constructor(){
-
+        // >> trace-add-custom-writer
         setCategories(categories.All);
         enable();
         
         clearWriters();
         addWriter(new TimestampConsoleWriter());
-    }
-    
+        // << trace-add-custom-writer
+    }   
 }
-// << setting-url-webview

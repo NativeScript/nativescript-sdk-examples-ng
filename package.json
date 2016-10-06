@@ -23,6 +23,9 @@
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-ios": {
       "version": "2.3.0"
+    },
+    "tns-android": {
+      "version": "2.3.0"
     }
   },
   "dependencies": {
@@ -37,7 +40,6 @@
     "@angular/router": "3.0.1",
     "nativescript-angular": "1.0.0",
     "nativescript-geolocation": "0.0.13",
-    "nativescript-googlemaps": "0.0.3",
     "nativescript-intl": "^0.0.4",
     "tns-core-modules": "2.3.0"
   },

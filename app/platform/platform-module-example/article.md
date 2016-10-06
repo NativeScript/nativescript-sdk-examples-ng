@@ -1,7 +1,5 @@
-TimePicker can be easily configured by setting the required properties.
+Import Platform module
+<snippet id='import-platform-module'/>
 
-HTML
-<snippet id='creating-timepicker-html'/>
-
-TypeScript
-<snippet id='time-picker-configure-code'/>
+Get imformation about the current device and screen
+<snippet id='get-screen-device-info'/>

@@ -1,6 +1,7 @@
-// >> time-picker-configure-code
-import { Component } from "@angular/core";
+import { Component, NgZone } from "@angular/core";
+// >> fps-meter-module-import
 import {start, removeCallback, addCallback, stop} from "fps-meter"
+// << fps-meter-module-import
 
 @Component({
     selector: 'fps-meter-module-component',
@@ -14,24 +15,30 @@ export class FPSMeterModuleExampleComponent {
     public fps:string="0";
     public minfps:string="0";
 
+    constructor(private zone:NgZone){
+
+    }
+
     public fpsmeter(){
         if(this.status){
+            // >> stop-fps-meter
             removeCallback(this.callbackId);
             stop();
+            // << stop-fps-meter
             this.status=false;
         }
         else{
-            var that =this;
-            this.callbackId = addCallback(function (fps: number, minFps: number) {
-                console.info("fps=" + fps + " minFps=" + minFps);
-                that.fps=fps.toFixed(2);
-                that.minfps=minFps.toFixed(2);
-            });
+            // >> start-fps-meter
+                this.callbackId = addCallback((fps: number, minFps: number) => {
+                    this.zone.run(()=>{
+                        this.fps=fps.toFixed(2);
+                        this.minfps=minFps.toFixed(2);
+                    })
+                });
+            
             start();
+            // << start-fps-meter
             this.status=true;
         }
-        
-
     }
 }
-// << time-picker-configure-code

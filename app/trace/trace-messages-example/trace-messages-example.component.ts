@@ -1,4 +1,3 @@
-// >> setting-url-webview
 import {Component, OnInit} from "@angular/core";
 import {Page} from "ui/page";
 import {setCategories, enable, categories, write, addCategories} from "trace"
@@ -10,16 +9,14 @@ import {setCategories, enable, categories, write, addCategories} from "trace"
 
 export class TraceMessagesExampleComponent{
     constructor(){
-        
+        // >> trace-write-method
         enable();
 
         addCategories(categories.Binding);
-        
-        //filter out all trace messages except those that are animation and debug categories
         setCategories(categories.concat(categories.Navigation, categories.Debug));
 
         write("I (heart) NativeScript!", categories.Navigation);
+        // << trace-write-method
     }
     
 }
-// << setting-url-webview

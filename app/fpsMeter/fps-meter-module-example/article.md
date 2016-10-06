@@ -1,7 +1,8 @@
-TimePicker can be easily configured by setting the required properties.
+Import FPS Meter Module
+<snippet id='fps-meter-module-import'/>
 
-HTML
-<snippet id='creating-timepicker-html'/>
+Add Callback method and start logging
+<snippet id='start-fps-meter'/>
 
-TypeScript
-<snippet id='time-picker-configure-code'/>
+Remove Callback method and stop logging
+<snippet id='stop-fps-meter'/>

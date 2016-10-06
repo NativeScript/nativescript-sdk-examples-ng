@@ -1,8 +1,8 @@
-// >> time-picker-configure-code
 import { Component } from "@angular/core";
+// >> import-platform-module
 import {isAndroid, isIOS, device, screen} from "platform"
-
-
+// << import-platform-module
+// >> get-screen-device-info
 class DeviceInfo{
     constructor(
                 public model:string, 
@@ -15,7 +15,6 @@ class DeviceInfo{
                 public uuid:string
                 ){}
 }
-
 
 class ScreenInfo{
     constructor(
@@ -59,17 +58,14 @@ export class PlatformModuleExampleComponent {
 
     public checkPlatformType(){
         var message = "";
-
         if(isAndroid){
             message = "You are using Android device";
         }
-
         if(isIOS){
             message = "You are using IOS device";
         }
         alert(message);
     }
-
 
     public deviceInfo(){
         if(this.isItemVisible){
@@ -88,7 +84,5 @@ export class PlatformModuleExampleComponent {
             this.isItemVisibleScreenInfo=true;
         }
     }
-
-
 }
-// << time-picker-configure-code
+// << get-screen-device-info

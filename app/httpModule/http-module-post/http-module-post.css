@@ -1,17 +1,17 @@
-stacklayout{
-    text-align: center;
-}
-.layoutStyle gridlayout{
-     horizontal-align:center;
-}
-.infoLabel{
+Label {
     font-size: 15;
     font-family: sans-serif;
     color: #0099CC;
     border-width: 1;
     border-color: #0099CC;
     border-radius: 2;
-    padding: 5;
-    margin: 1;
+    padding: 8;
+    margin: 3;
     text-align: center;
+}
+.layoutStyle{
+    text-align: center;
+}
+ gridlayout{
+    horizontal-align:center;
 }
