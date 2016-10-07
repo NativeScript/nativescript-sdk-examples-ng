@@ -16,6 +16,21 @@
                 stretch="none"></Image>
 
             <!-- << creating-image-html -->
+
+            <!-- >> load-image-css -->
+            <!-- Load backgroundImage from url using CSS-->
+            <Label text="Image loaded from URL using CSS" textWrap="true"></Label>
+            <StackLayout  id="layoutBackgroundImageURL"></StackLayout>
+            
+            <!-- Load backgroundImage from app/images folder using CSS-->
+            <Label text="Image loaded from custom folder using CSS" textWrap="true"></Label>
+            <StackLayout id="layoutBackgroundImageFromFolder"></StackLayout>
+            
+            <!-- Load backgroundImage from App_Resources using CSS -->
+            <Label text="Image loaded from resources using CSS" backgroundRepeat="no-repeat" textWrap="true"></Label>
+            <StackLayout id="layoutBackgroundImageFromRes"></StackLayout>
+                
+            <!-- << load-image-css -->
         </StackLayout>
     </ScrollView>
 </StackLayout>
