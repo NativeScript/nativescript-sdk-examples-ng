@@ -97,6 +97,11 @@ import { UsingNgSwitchExamplesComponent } from "./ng-directives/ngswitch-usage/n
 import { FormattedStringExamplesComponent } from "./formatted-string/formated-string-examples.component";
 import { CreateFormattedStringComponent } from "./formatted-string/create-formatted-string/create-formatted-string.component";
 
+import { ApplicationExamplesComponent } from "./application/application-examples.component";
+import { AppCheckingTargetExampleComponent } from "./application/app-checking-target/app-checking-target.component";
+import { AppUsingAndroidExampleComponent } from "./application/app-using-android-specifics/app-using-android-specifics.component";
+import { AppUsingIosExampleComponent } from "./application/app-using-ios-specifics/app-using-ios-specifics.component";
+
 export var routableComponents = [];
 
 export const routes = [
@@ -191,16 +196,21 @@ export const routes = [
     routeEntry({ path: "rotationGestureExampleComponent", component: RotationExampleComponent, data: { title: "Rotation" } }),
     routeEntry({ path: "touchGestureExampleComponent", component: TouchExampleComponent, data: { title: "Touch" } }),
 
-  routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
-  routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
-  routeEntry({ path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf basic usage" } }),
-  routeEntry({ path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf hiding elements" } }),
-  routeEntry({ path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create custom *ng directive" } }),
-  routeEntry({ path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } }),
-  routeEntry({ path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } }),
+    routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
+    routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
+    routeEntry({ path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf basic usage" } }),
+    routeEntry({ path: "usingNgIfForPlatformSpecificComponent", component: UsingNgIfForPlatformSpecificComponent, data: { title: "*ngIf hiding elements" } }),
+    routeEntry({ path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create custom *ng directive" } }),
+    routeEntry({ path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } }),
+    routeEntry({ path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } }),
 
-  routeEntry({ path: "formattedStringExamplesComponent", component: FormattedStringExamplesComponent, data: { title: "Formatted String" } }),
-  routeEntry({ path: "createFormattedStringExampleComponent", component: CreateFormattedStringComponent, data: { title: "Create Formatted String" } }),
+    routeEntry({ path: "formattedStringExamplesComponent", component: FormattedStringExamplesComponent, data: { title: "Formatted String" } }),
+    routeEntry({ path: "createFormattedStringExampleComponent", component: CreateFormattedStringComponent, data: { title: "Create Formatted String" } }),
+
+    routeEntry({ path: "applicationExamplesComponent", component: ApplicationExamplesComponent, data: { title: "Application" } }),
+    routeEntry({ path: "checkTargetExampleComponent", component: AppCheckingTargetExampleComponent, data: { title: "Check The Target Platform" } }),
+    routeEntry({ path: "usingAndroidSpecificsExampleComponent", component: AppUsingAndroidExampleComponent, data: { title: "Using Android Specifics" } }),
+    routeEntry({ path: "usingIosSpecificsExampleComponent", component: AppUsingIosExampleComponent, data: { title: "Using iOS Specifics" } }),
 
 ];
 

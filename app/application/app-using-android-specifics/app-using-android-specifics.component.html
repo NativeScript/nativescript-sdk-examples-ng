@@ -1,0 +1,30 @@
+<StackLayout exampleTitle toggleNavButton>
+
+    <StackLayout class="example-container" [visibility]="isItemVisible ? 'visible' : 'collapsed'" >
+        <Label text="Example: Get the Files (Documents) folder (directory) using Application module" textWrap="true" marginBottom="15"></Label>
+        <!-- >> app-android-specifics-html -->
+        <Label text="Files directory absolute path: " class="description" textWrap="true"></Label>
+        <Label [text]="filesDir" textWrap="true" class="result"></Label>
+
+        <Label text="Cache directory absolute path: " class="description" textWrap="true"></Label>
+        <Label [text]="cacheDir" textWrap="true" class="result"></Label> 
+
+        <Label text="files associated with this Context's application package: " class="description" textWrap="true"  marginLeft="30" marginRight="30"></Label>   
+        <ListView [items]="fileList" height="150">
+            <template let-item="item" let-odd="odd" let-even="even">
+                <Label [text]="item" textWrap="true" class="result" marginLeft="30" marginRight="30"></Label>  
+            </template>
+        </ListView> 
+        <!-- << app-android-specifics-html -->
+
+        <GridLayout rows="*" columns="5*, *">
+            <Label col="0" text="Battery Life via Broadcast Receiver: " class="description" textWrap="true"></Label>
+            <Label col="1" [text]="batteryLife + '%'" textWrap="true" class="result"></Label>  
+        </GridLayout>
+    </StackLayout>
+
+    <StackLayout class="example-container" [visibility]="!isItemVisible ? 'visible' : 'collapsed'" >
+        <Label text="This examle is Android specific and can be executed only on Android device!" textWrap="true" marginBottom="15"></Label>          
+    </StackLayout>
+
+</StackLayout>

@@ -1,0 +1,30 @@
+Label {
+    font-size: 15;
+    font-family: sans-serif;
+    color: #0099CC;
+    border-width: 1;
+    border-color: #0099CC;
+    border-radius: 2;
+    padding: 8;
+    margin: 3;
+}
+
+.description {
+    font-size: 15;
+    font-family: sans-serif;
+    color: #0099CC;
+    padding: 8;
+    margin: 3;
+    border-width: 0;
+}
+
+.result {
+    font-size: 15;
+    font-family: sans-serif;
+    color: indianred;
+    border-width: 1;
+    border-color: indianred;
+    border-radius: 2;
+    padding: 8;
+    margin: 3; 
+}

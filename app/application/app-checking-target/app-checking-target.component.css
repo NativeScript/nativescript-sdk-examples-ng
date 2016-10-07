@@ -1,0 +1,10 @@
+Label {
+    font-size: 15;
+    font-family: sans-serif;
+    color: #0099CC;
+    border-width: 1;
+    border-color: #0099CC;
+    border-radius: 2;
+    padding: 8;
+    margin: 3;
+}

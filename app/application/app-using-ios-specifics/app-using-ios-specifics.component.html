@@ -1,0 +1,12 @@
+<StackLayout exampleTitle toggleNavButton>
+
+    <StackLayout class="example-container" [visibility]="isItemVisible ? 'visible' : 'collapsed'" >
+        <Label text="Battery life with Notification Observer" textWrap="true"></Label>   
+        <Label [text]="batteryLife" class="result" textWrap="true"></Label>
+    </StackLayout>
+
+    <StackLayout class="example-container" [visibility]="!isItemVisible ? 'visible' : 'collapsed'" >
+        <Label text="This examle is iOS specific and can be executed only on iOS device!" textWrap="true" marginBottom="15"></Label>             
+    </StackLayout>
+
+</StackLayout>
