@@ -1,0 +1,44 @@
+GridLayout {
+    background-color: whitesmoke;
+    border-width: 1;
+    border-color: #0099CC;
+    border-radius: 10;
+    margin: 10;
+}
+
+Label, Button {
+    font-size: 12;
+    font-family: sans-serif;
+    padding: 8;
+    margin: 3;
+    text-align: center;
+}
+
+Label {
+    color: #0099CC;
+}
+
+Button {
+    background-color: #0099CC;
+    color: white;
+    border-width: 1;
+    border-color: #0099CC;
+    border-radius: 10;
+}
+
+.title {
+    font-size: 18;
+}
+
+.result {
+    background-color: whitesmoke;
+    font-size: 14;
+    font-family: sans-serif;
+    color: indianred;
+    border-width: 1;
+    border-color: indianred;
+    border-radius: 10;
+    padding: 8;
+    margin: 3; 
+    text-align: center;
+}

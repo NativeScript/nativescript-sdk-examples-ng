@@ -1,0 +1,13 @@
+<StackLayout exampleTitle toggleNavButton>
+    <GridLayout rows="auto, auto, auto, auto" columns="*, *, *, *">
+        <Label row="0" col="0" colSpan="4" [text]="'Created folder: ' + myFolder.path" textWrap="true"></Label>
+        <Label row="1" col="0" colSpan="4" [text]="'Created file: ' + file.path" textWrap="true"></Label>
+
+        <Button row="2" col="0" text="Delete File" (tap)="onDeleteFile()" textWrap="true"></Button>
+        <Button row="2" col="1" text="Delete Folder" (tap)="onDeleteFolder()" textWrap="true"></Button>
+        <Button row="2" col="2" text="Clear Folder" (tap)="onClearFOlder()" textWrap="true"></Button>
+        <Button row="2" col="3" text="Reset" (tap)="onReset()" textWrap="true"></Button>
+        
+        <Label row="3" col="0" colSpan="4" [text]="resultMessage" class="result" textWrap="true"></Label> 
+    </GridLayout>
+</StackLayout>

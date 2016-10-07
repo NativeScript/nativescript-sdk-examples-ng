@@ -36,6 +36,12 @@ var mainMenuLinks = [
     new Link("Location Module", "/locationExamplesComponent"),
     new Link("FPS Meter", "/fpsExamplesComponent"),
     new Link("HTTP Module", "./httpModuleComponent")
+    new Link("Application", "/applicationExamplesComponent"),
+    new Link("Application Settings", "/applicationSettingsExamplesComponent"),
+    new Link("Color", "/colorExamplesComponent"),
+    new Link("Connectivity", "/connectivityExamplesComponent"),
+    new Link("Fetch", "/fetchExamplesComponent"),
+    new Link("File System", "/fileSystemxamplesComponent"),
 ];
 
 @Component({

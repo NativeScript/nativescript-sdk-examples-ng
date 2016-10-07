@@ -1,0 +1,31 @@
+<StackLayout exampleTitle toggleNavButton>
+    <ScrollView>
+        <StackLayout>
+            <GridLayout rows="auto, auto, *" columns="*">
+                <Label row="0" text="Reading from a File" class="title" textWrap="true"></Label>
+                <Label row="1" [text]="'Reading content from : ' + file.path" textWrap="true"></Label>
+                <Label row="2" [text]="writtenContent" class="result" textWrap="true"></Label> 
+            </GridLayout>
+
+            <GridLayout rows="auto, auto, auto, *" columns="*">
+                <Label row="0" text="Reading/writing binary data from/to a File" class="title" textWrap="true"></Label>
+                <Label row="1" text="'Read and use binary data from icon.png" textWrap="true"></Label>
+                <Button row="2" text="read sync" (tap)="onReadSync()"></Button> 
+                <TextView row="3" [text]="binarySource" class="result" editable="false"></TextView>
+            </GridLayout>
+            
+            <GridLayout rows="auto, *" columns="*">
+                <Label row="0" text="Enumerate documents folder content" class="title" textWrap="true"></Label>
+                <ListView row="1" [items]="folderEntities">
+                    <template let-item="item" let-index="index">
+                        <GridLayout rows="auto, auto, auto" columns="*" class="result">
+                            <Label row="0" [text]="index + 1 + '.) name: ' + item.name" class="item-label" textWrap="true"></Label>
+                            <Label row="1" [text]="'path: ' + item.path" class="item-label" textWrap="true"></Label>
+                            <Label row="2" [text]="'date: ' + item.lastModified" class="item-label" textWrap="true"></Label>
+                        </GridLayout>
+                    </template>
+                </ListView>
+            </GridLayout>
+        </StackLayout>
+    </ScrollView>
+</StackLayout>

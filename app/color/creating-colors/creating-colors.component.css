@@ -1,0 +1,17 @@
+GridLayout {
+    margin: 10;
+    border-radius: 10;
+}
+
+Button, TextField {
+    margin: 10
+}
+
+Label {
+    font-size: 15;
+    font-family: sans-serif;
+    color: #0099CC;
+    padding: 8;
+    margin: 3;
+    text-align: center;
+}

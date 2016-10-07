@@ -21,10 +21,10 @@
   "license": "Apache-2.0",
   "nativescript": {
     "id": "org.nativescript.nativescriptsdkexamplesng",
-    "tns-ios": {
+    "tns-android": {
       "version": "2.3.0"
     },
-    "tns-android": {
+    "tns-ios": {
       "version": "2.3.0"
     }
   },
@@ -41,23 +41,24 @@
     "nativescript-angular": "1.0.0",
     "nativescript-geolocation": "0.0.13",
     "nativescript-intl": "^0.0.4",
-    "tns-core-modules": "2.3.0"
+    "tns-core-modules": "2.2.1"
   },
   "devDependencies": {
-    "zone.js": "^0.6.21",
     "babel-traverse": "6.11.4",
     "babel-types": "6.11.1",
     "babylon": "6.8.4",
-    "lazy": "1.0.11",
-    "nativescript-dev-typescript": "^0.3.2",
-    "tslint": "^3.13.0",
-    "typescript": "^1.8.10",
     "fs-extra": "^0.30.0",
     "glob": "^7.0.5",
+    "lazy": "1.0.11",
     "markdown-snippet-injector": "^0.2.0",
+    "nativescript-dev-typescript": "^0.3.2",
     "opener": "^1.4.1",
     "rimraf": "^2.5.3",
-    "tar.gz": "^1.0.5"
+    "tar.gz": "^1.0.5",
+    "tns-platform-declarations": "2.2.0",
+    "tslint": "^3.13.0",
+    "typescript": "^1.8.10",
+    "zone.js": "^0.6.21"
   },
   "scripts": {
     "pretsc": "npm install",
