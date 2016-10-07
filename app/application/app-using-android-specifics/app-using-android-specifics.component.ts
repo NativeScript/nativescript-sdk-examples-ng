@@ -22,10 +22,9 @@ export class AppUsingAndroidExampleComponent {
         if(application.android) {
             console.log("We are running on Android device!");
             this.isItemVisible = true;
-            this.fileList = [];
-            this.batteryLife = "0";
 
-            // >> app-android-specifics-code
+            // >> app-android-dirs-code
+            this.fileList = [];
             this.appContext = application.android.context;
             this.filesDir = this.appContext.getFilesDir();
             this.cacheDir = this.appContext.getCacheDir();
@@ -35,8 +34,12 @@ export class AppUsingAndroidExampleComponent {
                 var element = files[index];
                 this.fileList.push(element.toString());
             }
+            // << app-android-dirs-code
 
+            // >> app-android-broadcast-code
+            this.batteryLife = "0";
             var that = this;
+
             application.android.registerBroadcastReceiver(android.content.Intent.ACTION_BATTERY_CHANGED,
                 function onReceiveCallback(context: android.content.Context, intent: android.content.Intent) {
                     var level = intent.getIntExtra(android.os.BatteryManager.EXTRA_LEVEL, -1);
@@ -45,7 +48,7 @@ export class AppUsingAndroidExampleComponent {
                     
                     that.batteryLife = percent.toString();
                 });
-            // << app-android-specifics-code
+            // << app-android-broadcast-code
 
 
         } else if (application.ios) {

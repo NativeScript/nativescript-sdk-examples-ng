@@ -30,7 +30,12 @@ var mainMenuLinks = [
     new Link("ListView", "/listViewExamplesComponent"),
     new Link("Progress", "/progressExamplesComponent"),
     new Link("Formatted String", "/formattedStringExamplesComponent"),
-    new Link("Application", "/applicationExamplesComponent")
+    new Link("Application", "/applicationExamplesComponent"),
+    new Link("Application Settings", "/applicationSettingsExamplesComponent"),
+    new Link("Color", "/colorExamplesComponent"),
+    new Link("Connectivity", "/connectivityExamplesComponent"),
+    new Link("Fetch", "/fetchExamplesComponent"),
+    new Link("File System", "/fileSystemxamplesComponent"),
 ];
 
 @Component({

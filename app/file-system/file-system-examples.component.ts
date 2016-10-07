@@ -2,18 +2,20 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Checking Target Platform", "/checkTargetExampleComponent"),
-    new Link("Using Android Specifics", "/usingAndroidSpecificsExampleComponent"),
-    new Link("Using iOS Specifics", "/usingIosSpecificsExampleComponent"),
+    new Link("Paths", "/pathsExampleComponent"),
+    new Link("Create", "/createExampleComponent"),
+    new Link("Read", "/readExampleComponent"),
+    new Link("Update", "/updateExampleComponent"),
+    new Link("Delete", "/deleteExampleComponent")
 ];
 
 @Component({
-    selector: 'application-component',
+    selector: 'file-system-component',
     templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class ApplicationExamplesComponent {
+export class FileSystemxamplesComponent {
     public links: Array<Link>;
 
     constructor() {

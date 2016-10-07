@@ -2,7 +2,7 @@
 
     <StackLayout class="example-container" [visibility]="isItemVisible ? 'visible' : 'collapsed'" >
         <Label text="Battery life with Notification Observer" textWrap="true"></Label>   
-        <Label [text]="batteryLife" class="result" textWrap="true"></Label>
+        <Label [text]=" 'Battery : ' + batteryLife + '%'" class="result" textWrap="true"></Label>
     </StackLayout>
 
     <StackLayout class="example-container" [visibility]="!isItemVisible ? 'visible' : 'collapsed'" >

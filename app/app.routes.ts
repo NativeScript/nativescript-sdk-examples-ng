@@ -102,6 +102,26 @@ import { AppCheckingTargetExampleComponent } from "./application/app-checking-ta
 import { AppUsingAndroidExampleComponent } from "./application/app-using-android-specifics/app-using-android-specifics.component";
 import { AppUsingIosExampleComponent } from "./application/app-using-ios-specifics/app-using-ios-specifics.component";
 
+import { ApplicationSettingsExamplesComponent } from "./application-settings/application-settings-examples.component"
+import { ValuesExampleComponent } from "./application-settings/values/values.component"
+
+import { ColorExamplesComponent } from "./color/color-examples.component";
+import { CreatingColorsExampleComponent } from "./color/creating-colors/creating-colors.component";
+
+import { ConnectivityExamplesComponent } from "./connectivity/connectivity-examples.component";
+import { UsingConnectivityExampleComponent } from "./connectivity/using-connectivity/using-connectivity.component";
+
+import { FetchExamplesComponent } from "./fetch/fetch-examples.component";
+import { FetchGetExampleComponent } from "./fetch/fetch-get/fetch-get.component";
+import { FetchPostExampleComponent } from "./fetch/fetch-post/fetch-post.component";
+
+import { FileSystemxamplesComponent } from "./file-system/file-system-examples.component";
+import { PathsExampleComponent } from "./file-system/paths/paths.component";
+import { CreateExampleComponent } from "./file-system/create/create.component";
+import { ReadExampleComponent } from "./file-system/read/read.component";
+import { UpdateExampleComponent } from "./file-system/update/update.component";
+import { DeleteExampleComponent } from "./file-system/delete/delete.component";
+
 export var routableComponents = [];
 
 export const routes = [
@@ -211,6 +231,26 @@ export const routes = [
     routeEntry({ path: "checkTargetExampleComponent", component: AppCheckingTargetExampleComponent, data: { title: "Check The Target Platform" } }),
     routeEntry({ path: "usingAndroidSpecificsExampleComponent", component: AppUsingAndroidExampleComponent, data: { title: "Using Android Specifics" } }),
     routeEntry({ path: "usingIosSpecificsExampleComponent", component: AppUsingIosExampleComponent, data: { title: "Using iOS Specifics" } }),
+
+    routeEntry({ path: "applicationSettingsExamplesComponent", component: ApplicationSettingsExamplesComponent, data: { title: "Application Settings" } }),
+    routeEntry({ path: "valuesExampleComponent", component: ValuesExampleComponent, data: { title: "Working with values" } }),
+    
+    routeEntry({ path: "colorExamplesComponent", component: ColorExamplesComponent, data: { title: "Color" } }),
+    routeEntry({ path: "creatingColorsExampleComponent", component: CreatingColorsExampleComponent, data: { title: "Creating Colors" } }),
+    
+    routeEntry({ path: "connectivityExamplesComponent", component: ConnectivityExamplesComponent, data: { title: "Connectivity" } }),
+    routeEntry({ path: "usingConnectivityExampleComponent", component: UsingConnectivityExampleComponent, data: { title: "Using Connectivity" } }),
+  
+    routeEntry({ path: "fetchExamplesComponent", component: FetchExamplesComponent, data: { title: "Fetch" } }),
+    routeEntry({ path: "fetchGetExampleComponent", component: FetchGetExampleComponent, data: { title: "Fetch GET" } }),
+    routeEntry({ path: "fetchPostExampleComponent", component: FetchPostExampleComponent, data: { title: "Fetch POST" } }),
+
+    routeEntry({ path: "fileSystemxamplesComponent", component: FileSystemxamplesComponent, data: { title: "File System" } }),
+    routeEntry({ path: "pathsExampleComponent", component: PathsExampleComponent, data: { title: "Paths" } }),
+    routeEntry({ path: "createExampleComponent", component: CreateExampleComponent, data: { title: "Create" } }),
+    routeEntry({ path: "readExampleComponent", component: ReadExampleComponent, data: { title: "Read" } }),
+    routeEntry({ path: "updateExampleComponent", component: UpdateExampleComponent, data: { title: "Update" } }),
+    routeEntry({ path: "deleteExampleComponent", component: DeleteExampleComponent, data: { title: "Delete" } }),
 
 ];
 

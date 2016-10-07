@@ -1,0 +1,30 @@
+<StackLayout exampleTitle toggleNavButton>
+    <GridLayout rows="50" columns="*, *"  >
+        <Label col="0" text="isTurnedOn value" textWrap="true"></Label>
+        <Switch col="1" [checked]="isTurnedOn" horizontalAlignment="center" class="result"></Switch>
+    </GridLayout>
+
+    <GridLayout rows="50" columns="*, *" >
+        <Label col="0" text="Sample Username: " textWrap="true"></Label>
+        <Label col="1" [text]="username" textWrap="true" class="result"></Label> 
+    </GridLayout>
+
+    <GridLayout rows="50" columns="*, *" >
+        <Label col="0" text="Sample Location X: " textWrap="true"></Label>
+        <Label col="1" [text]="locationX" textWrap="true" class="result"></Label>
+    </GridLayout>
+
+    <GridLayout rows="50" columns="*, *" >
+        <Label col="0" text="[someKey] value: " textWrap="true"></Label>
+        <Label col="1" [text]="someKey" textWrap="true" class="result"></Label>
+    </GridLayout>
+
+    <GridLayout rows="50" columns="*, *" >
+        <Label col="0" text="[noBoolKey] exists!? " textWrap="true"></Label>
+        <Label col="1" [text]="noBoolKey" textWrap="true" class="result"></Label>
+    </GridLayout>
+
+    <Button text="Clear Applicatio Settings" (tap)="onClearSettings()"  ></Button>
+    <Button text="Set new values in Application Settings" (tap)="onSetSettings()"  ></Button>
+ 
+</StackLayout>

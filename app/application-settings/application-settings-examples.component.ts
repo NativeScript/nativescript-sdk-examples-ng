@@ -2,18 +2,16 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Checking Target Platform", "/checkTargetExampleComponent"),
-    new Link("Using Android Specifics", "/usingAndroidSpecificsExampleComponent"),
-    new Link("Using iOS Specifics", "/usingIosSpecificsExampleComponent"),
+    new Link("Working with values", "/valuesExampleComponent"),
 ];
 
 @Component({
-    selector: 'application-component',
+    selector: 'application-setting',
     templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class ApplicationExamplesComponent {
+export class ApplicationSettingsExamplesComponent {
     public links: Array<Link>;
 
     constructor() {
