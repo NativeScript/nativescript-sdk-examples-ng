@@ -1,0 +1,34 @@
+import { Component } from "@angular/core";
+
+@Component({
+    styleUrls:["fetch/fetch-post/fetch-post.component.css"],
+    selector: 'fetch-post-component',
+    templateUrl: 'fetch/fetch-post/fetch-post.component.html'
+})
+
+export class FetchPostExampleComponent {
+    public user: string;
+    public pass: string;
+    public message: string = "";
+
+    constructor() {
+    }
+
+    submit() {
+        // >> fetch-post-code
+        fetch("https://httpbin.org/post", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ username: this.user , password: this.pass })
+        }).then(response => { 
+            return response.json();
+        }).then(res => {
+            var jsonObjectBody = JSON.parse(res.data);
+            this.message = "Data successfully send by user " + jsonObjectBody.username;
+        }).catch(err => {
+            // Error 
+        });   
+        // << fetch-post-code 
+    }
+
+}

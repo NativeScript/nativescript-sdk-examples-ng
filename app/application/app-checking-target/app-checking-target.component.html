@@ -1,0 +1,9 @@
+<StackLayout exampleTitle toggleNavButton>
+    <StackLayout class="example-container">
+        <Label text="With using target check from applicaiton module, the grid below will be blue square in iOS and purple circle in Android" textWrap="true" marginBottom="15"></Label>  
+        <!-- >> app-check-target-html -->
+        <GridLayout width="300" height="300" borderRadius="150" backgroundColor="#8C489F" [visibility]="isItemVisible ? 'visible' : 'collapsed'" ></GridLayout>
+        <GridLayout width="300" height="300" backgroundColor="#0099CC" borderRadius="2" [visibility]="!isItemVisible ? 'visible' : 'collapsed'" ></GridLayout>
+        <!-- << app-check-target-html -->
+    </StackLayout>
+</StackLayout>
