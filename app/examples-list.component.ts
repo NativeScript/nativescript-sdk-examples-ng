@@ -30,6 +30,12 @@ var mainMenuLinks = [
     new Link("ListView", "/listViewExamplesComponent"),
     new Link("Progress", "/progressExamplesComponent"),
     new Link("Formatted String", "/formattedStringExamplesComponent"),
+    new Link("Trace Module", "/traceExampleComponent"),
+    new Link("Timer Module", "/sampleTimerModuleExampleComponent"),
+    new Link("Platform Module ", "/platformExamplesComponent"),
+    new Link("Location Module", "/locationExamplesComponent"),
+    new Link("FPS Meter", "/fpsExamplesComponent"),
+    new Link("HTTP Module", "./httpModuleComponent")
     new Link("Application", "/applicationExamplesComponent"),
     new Link("Application Settings", "/applicationSettingsExamplesComponent"),
     new Link("Color", "/colorExamplesComponent"),

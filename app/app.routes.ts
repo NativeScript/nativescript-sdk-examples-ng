@@ -96,6 +96,22 @@ import { UnlessDirectiveExampleComponent } from "./ng-directives/unless-directiv
 import { UsingNgSwitchExamplesComponent } from "./ng-directives/ngswitch-usage/ngswitch-usage.component";
 import { FormattedStringExamplesComponent } from "./formatted-string/formated-string-examples.component";
 import { CreateFormattedStringComponent } from "./formatted-string/create-formatted-string/create-formatted-string.component";
+import { TraceExamplesComponent } from "./trace/trace-examples.component";
+import { BasicTraceExampleComponent } from "./trace/basic-trace-example/basic-trace-example.component";
+import { TraceSpecificCategoriesExampleComponent } from "./trace/trace-specific-categories/trace-specific-categories-example.component";
+import { TraceMessagesExampleComponent } from "./trace/trace-messages-example/trace-messages-example.component";
+import { CustomTraceWriterExampleComponent } from "./trace/custom-tracewriter/custom-tracewriter-example.component";
+import { TimerExamplesComponent } from "./timer/timer-examples.component";
+import { SampleTimerModuleExampleComponent } from "./timer/sample-timer-module-example/sample-timer-module-example";
+import { PlatformExamplesComponent } from "./platform/platform-examples.component";
+import { PlatformModuleExampleComponent } from "./platform/platform-module-example/platform-module-example";
+import { LocationExamplesComponent } from "./location/location-examples.component";
+import { LocationModuleExampleComponent } from "./location/location-module-example/location-module-example";
+import { FPSExamplesComponent } from "./fpsMeter/fps-meter-examples.component";
+import { FPSMeterModuleExampleComponent } from "./fpsMeter/fps-meter-module-example/fps-meter-module-example";
+import { HTTPModuleComponent } from "./httpModule/http-module-examples.component";
+import { HTTPModulePostExampleComponent } from "./httpModule/http-module-post/http-module-post";
+import { HTTPModuleGetExampleComponent } from "./httpModule/http-module-get/http-module-get";
 
 import { ApplicationExamplesComponent } from "./application/application-examples.component";
 import { AppCheckingTargetExampleComponent } from "./application/app-checking-target/app-checking-target.component";
@@ -251,6 +267,23 @@ export const routes = [
     routeEntry({ path: "readExampleComponent", component: ReadExampleComponent, data: { title: "Read" } }),
     routeEntry({ path: "updateExampleComponent", component: UpdateExampleComponent, data: { title: "Update" } }),
     routeEntry({ path: "deleteExampleComponent", component: DeleteExampleComponent, data: { title: "Delete" } }),
+
+  routeEntry({ path: "traceExampleComponent", component: TraceExamplesComponent, data: { title: "Trace module" } }),
+  routeEntry({ path: "basicTraceExampleComponent", component: BasicTraceExampleComponent, data: { title: "Basic trace module example" } }),
+  routeEntry({ path: "traceSpecificCategoriesExampleComponent", component: TraceSpecificCategoriesExampleComponent, data: { title: "Trace specific categories" } }),
+  routeEntry({ path: "traceMessagesExampleComponent", component: TraceMessagesExampleComponent, data: { title: "Write your own trace message" } }),
+  routeEntry({ path: "customTraceWriterExampleComponent", component: CustomTraceWriterExampleComponent, data: { title: "Writing a Custom TraceWriter" } }),
+  routeEntry({ path: "timerExamplesComponent", component: TimerExamplesComponent, data: { title: "Timer module" } }),
+  routeEntry({ path: "sampleTimerModuleExampleComponent", component: SampleTimerModuleExampleComponent, data: { title: "Basic timer module example" } }),
+  routeEntry({ path: "platformExamplesComponent", component: PlatformExamplesComponent, data: { title: "Platform module" } }),
+  routeEntry({ path: "platformModuleExampleComponent", component: PlatformModuleExampleComponent, data: { title: "Platform module example" } }),
+  routeEntry({ path: "locationExamplesComponent", component: LocationExamplesComponent, data: { title: "Location module" } }),
+  routeEntry({ path: "locationModuleExampleComponent", component: LocationModuleExampleComponent, data: { title: "Location module example" } }),
+  routeEntry({ path: "fpsExamplesComponent", component: FPSExamplesComponent, data: { title: "FPS Meter" } }),
+  routeEntry({ path: "fpsMeterModuleExampleComponent", component: FPSMeterModuleExampleComponent, data: { title: "FPS Meter example" } }),
+  routeEntry({ path: "httpModuleComponent", component: HTTPModuleComponent, data: { title: "HTTP Module" } }),
+  routeEntry({ path: "httpModulePostExampleComponent", component: HTTPModulePostExampleComponent, data: { title: "HTTP Post JSON example" } }),
+  routeEntry({ path: "httpModuleGetExampleComponent", component: HTTPModuleGetExampleComponent, data: { title: "HTTP Get example" } }),
 
 ];
 

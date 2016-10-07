@@ -1,0 +1,47 @@
+<StackLayout  exampleTitle toggleNavButton>
+    <ScrollView orientation="vertical">
+        <StackLayout orientation="vertical" class="layoutStyle">
+           <Button text="Check if location services are availabe" (tap)="isLocationEnabled()"></Button>
+           
+           <SegmentedBar [items]="units" #sg [(ngModel)]="index" (selectedIndexChanged)="indexChange(sg.selectedIndex)"></SegmentedBar>
+           <Label [text]="'Distance: '+distanceResult" textWrap="true"></Label>
+           
+           <GridLayout rows=" 50 50 auto  50 50 auto" columns="auto 10 auto">
+               <Label row="0" col="0" colSpan="3" text="Start location" textWrap="true"></Label>
+               <Label row="1" col="0" text="Longitude" textWrap="true" class="infoLabel"></Label>
+               <Label row="1" col="2" text="Latitude" textWrap="true" class="infoLabel"></Label>
+               <TextField row="2" col="0" hint="longitude" [(ngModel)]="startpoint_longitude"></TextField>
+               <Label row="2" col="1" text="-" textWrap="true"></Label>
+               <TextField row="2" col="2" hint="latitude" [(ngModel)]="startpoint_latitude"></TextField>
+
+               <Label row="3" col="0" colSpan="3" text="End location" textWrap="true"></Label>
+               <Label row="4" col="0" text="Longitude" textWrap="true" class="infoLabel"></Label>
+               <Label row="4" col="2" text="Latitude" textWrap="true" class="infoLabel"></Label>
+               <TextField row="5" col="0" hint="longitude" [(ngModel)]="endpoint_longitude"></TextField>
+               <Label row="5" col="1" text="-" textWrap="true"></Label>
+               <TextField row="5" col="2" hint="latitude" [(ngModel)]="endpoint_latitude"></TextField>
+           </GridLayout>
+           <Button text="Get distance between two locations" (tap)="getDistance()"></Button>
+
+           <Button text="Get current location" (tap)="getLocationOnce()"></Button>
+           
+           <GridLayout rows=" 50 50 auto" columns="auto  auto auto auto auto">
+               <Label row="0" col="0" colSpan="5" text="Location monitoring" textWrap="true"></Label>
+
+               <Label row="1" col="0" text="Longitude" textWrap="true" class="infoLabel"></Label>
+               <Label row="1" col="1" text="Latitude" textWrap="true" class="infoLabel"></Label>
+               <Label row="1" col="2" text="Altitude" textWrap="true" class="infoLabel"></Label>
+               <Label row="1" col="3" text="Direction" textWrap="true" class="infoLabel"></Label>
+               <Label row="1" col="4" text="Speed" textWrap="true" class="infoLabel"></Label>
+               
+               <TextField row="2" col="0" editable="false" hint="longitude" [text]="monitor_longitude"></TextField>
+               <TextField row="2" col="1" editable="false" hint="latitude" [text]="monitor_latitude"></TextField>
+               <TextField row="2" col="2" editable="false" hint="latitude" [text]="monitor_altitude"></TextField>
+               <TextField row="2" col="3" editable="false" hint="latitude" [text]="monitor_direction + '%'"></TextField>
+               <TextField row="2" col="4" editable="false" hint="latitude" [text]="monitor_speed+'m/s'"></TextField>
+           </GridLayout>
+           <Button text="Start/Stop location monitoring" (tap)="monitor()"></Button>
+        </StackLayout>
+        
+    </ScrollView>
+</StackLayout>

@@ -10,7 +10,6 @@ import { IfAndroidDirective, IfIosDirective } from "./ng-directives/create-custo
 import { UnlessDirective } from "./ng-directives/unless-directive/directive-unless"
 import { ToggleNavButtonDirective } from "./directives/toggle-nav-button.directive"
 import { ExampleTitleDirective } from "./directives/example.directive"
-
 import { ItemComponent } from "./listview/using-item-template/using-item-template.component";
 
 @NgModule({

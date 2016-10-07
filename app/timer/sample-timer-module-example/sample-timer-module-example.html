@@ -1,0 +1,22 @@
+<StackLayout  exampleTitle toggleNavButton>
+<StackLayout>
+    <StackLayout class="stacklayoutStyle" [backgroundColor]="buttoncolor">
+        <Label [text]="'Color:' + buttoncolor" textWrap="true"></Label>
+    </StackLayout>
+    
+    
+    <Button text="Enable/Disable color change"  (tap)="onButtonTap()"></Button>
+
+    <StackLayout class="secondStacklayoutStyle stacklayoutStyle">
+        <Label [text]="counter" textWrap="true"></Label>
+    </StackLayout>
+    <StackLayout class="layoutStyle">
+        <Label row="0" col="0" colSpan="2" text="Increase/Decrease number after 2 seconds" textWrap="true"></Label>
+        <GridLayout rows="auto" columns="50 50">
+            <Button row="0" col="0" text="+" (tap)="increase()"></Button>
+            <Button row="0" col="1" text="-" (tap)="decrease()"></Button>
+        </GridLayout>
+    </StackLayout>
+    
+</StackLayout>
+</StackLayout>
