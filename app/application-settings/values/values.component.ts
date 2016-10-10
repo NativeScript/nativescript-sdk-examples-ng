@@ -41,7 +41,6 @@ export class ValuesExampleComponent {
         console.log(defaultValue);
         // << app-settings-no-value-code 
 
-
         // >> app-settings-no-key-code 
         // will return false if there is no value for "noBoolKey"
         this.noBoolKey = appSettings.hasKey("noBoolKey");

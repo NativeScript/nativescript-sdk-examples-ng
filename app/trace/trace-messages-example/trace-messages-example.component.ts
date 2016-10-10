@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { Page } from "ui/page";
 import {setCategories, enable, categories, write, addCategories} from "trace"
 
 @Component({
