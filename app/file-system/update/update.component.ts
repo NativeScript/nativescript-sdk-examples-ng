@@ -22,9 +22,6 @@ export class UpdateExampleComponent implements OnInit {
     public folderSuccessMessage: string;
     public isFolderItemVisible: boolean = false;
 
-    constructor() {
-    }
-
     ngOnInit() {
         this.documents = fs.knownFolders.documents();
         this.file = this.documents.getFile("TestFileName.txt");

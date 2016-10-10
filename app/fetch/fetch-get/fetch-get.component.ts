@@ -19,9 +19,6 @@ export class FetchGetExampleComponent implements OnInit {
     public typeHeader: string;
     public serverHeader: string;
 
-    constructor() {
-    }
-
     ngOnInit() {
         // >> fetch-res-url-code
         fetch("https://httpbin.org/get", {
@@ -32,7 +29,6 @@ export class FetchGetExampleComponent implements OnInit {
             // Error 
         });   
         // << fetch-res-url-code 
-
 
         // >> fetch-res-string-code
         fetch("https://httpbin.org/get", {

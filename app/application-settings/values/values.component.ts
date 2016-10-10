@@ -38,7 +38,9 @@ export class ValuesExampleComponent {
         // >> app-settings-no-value-code 
         // will return undefined if there is no value for "noSuchKey"
         var defaultValue = appSettings.getString("noSuchKey");
+        console.log(defaultValue);
         // << app-settings-no-value-code 
+
 
         // >> app-settings-no-key-code 
         // will return false if there is no value for "noBoolKey"

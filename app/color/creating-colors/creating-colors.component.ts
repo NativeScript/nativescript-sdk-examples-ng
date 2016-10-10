@@ -17,8 +17,6 @@ export class CreatingColorsExampleComponent {
     public greenValue: number = 140;
     public blueValue: number = 190;
 
-    constructor() { }
-
     public changeColor(value: string) {
         if(value[0] !== '#') {
             value = "#" + value;
@@ -32,21 +30,25 @@ export class CreatingColorsExampleComponent {
             // >> creating-hex-color-code
             var colorHex = new Color("#FF00CC");
             // << creating-hex-color-code
+            console.log(colorHex);
 
             // >> creating-short-hex-color-code
             var colorShortHex = new Color("#F0C");
             // << creating-short-hex-color-code
+            console.log(colorShortHex);
 
             // >> creating-argb-color
             // Creates the color with 100 alpha, 255 red, 100 green, 100 blue
             var colorARGB = new Color(100, 255, 100, 100);
             // << creating-argb-color
+            console.log(colorARGB);
 
             // >> creating-single-argb-color
             // Creates the color with 100 alpha, 100 red, 100 green, 100 blue
             var argb = (100 << 24) | (100 << 16) | (100 << 8) | 100;
             var colorSingleARGB = new Color(argb);
             // << creating-single-argb-color
+            console.log(colorSingleARGB);
         }   
     }
   

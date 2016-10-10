@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 // >> fs-create-import-code
 import * as fs from "file-system";
 // << fs-create-import-code
@@ -8,7 +8,7 @@ import * as fs from "file-system";
     templateUrl: 'file-system/create/create.component.html'
 })
 
-export class CreateExampleComponent implements OnInit {
+export class CreateExampleComponent{
 
     public folderName: string;
     public fileName: string;
@@ -20,12 +20,6 @@ export class CreateExampleComponent implements OnInit {
 
     public file: fs.File;
     public folder: fs.Folder;
-
-    constructor() {
-    }
-
-    ngOnInit() {
-    }
 
     public onCreateFile() {
         // >> fs-create-all-code

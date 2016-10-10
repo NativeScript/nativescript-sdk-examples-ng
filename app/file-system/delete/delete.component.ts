@@ -1,4 +1,4 @@
-import { Component, OnInit } from "@angular/core";
+import { Component } from "@angular/core";
 // >> fs-delete-import-code
 import * as fs from "file-system";
 // << fs-delete-import-code
@@ -8,7 +8,7 @@ import * as fs from "file-system";
     templateUrl: 'file-system/delete/delete.component.html'
 })
 
-export class DeleteExampleComponent implements OnInit {
+export class DeleteExampleComponent {
     
     public documents: fs.Folder;
     public file: fs.File;
@@ -22,10 +22,6 @@ export class DeleteExampleComponent implements OnInit {
         this.file = this.myFolder.getFile("TestFileName.txt");
     }
 
-    ngOnInit() {
-        
-    }
-
     public onDeleteFile() {
         if (this.file) {
             // >> fs-delete-file-code
@@ -34,7 +30,7 @@ export class DeleteExampleComponent implements OnInit {
                     // Success removing the file.
                     this.resultMessage = "File successfully deleted!";
                 }).catch(err => {
-
+                    console.log(err.stack);
                 });
             // << fs-delete-file-code    
         } else {
@@ -51,7 +47,7 @@ export class DeleteExampleComponent implements OnInit {
                     // Success removing the folder.
                     this.resultMessage = "Folder successfully deleted!";
                 }).catch(err => {
-
+                    console.log(err.stack);
                 });
             // << fs-delete-folder-code    
         } else {
@@ -67,7 +63,7 @@ export class DeleteExampleComponent implements OnInit {
                     // Successfully cleared the folder.
                     this.resultMessage = "Folder successfully cleared!";
                 }).catch(err => {
-
+                    console.log(err.stack);
                 });
             // << fs-clear-folder-code    
         } else {

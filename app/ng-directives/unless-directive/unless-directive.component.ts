@@ -1,6 +1,5 @@
 // >> unless-directive-code  
 import { Component } from '@angular/core';
-import { UnlessDirective } from "./directive-unless";
 
 @Component({
     selector: 'unless-directive-component',

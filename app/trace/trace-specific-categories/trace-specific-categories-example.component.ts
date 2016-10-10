@@ -1,8 +1,8 @@
-import {Component, OnInit} from "@angular/core";
+import { Component } from "@angular/core";
 // >> import-trace-methods
-import {setCategories, enable, disable, categories, addCategories, isCategorySet, enabled, write} from "trace";
+import { setCategories, enable, disable, categories, addCategories, isCategorySet, enabled, write } from "trace";
 // << import-trace-methods
-import {setTimeout} from "timer"
+import { setTimeout } from "timer"
 
 @Component({
     selector: 'basic-trace-example-component',
@@ -23,7 +23,6 @@ export class TraceSpecificCategoriesExampleComponent{
         enable();
         // << setting-specific-tracing-categories
 
-
         setTimeout(function(){
             console.log("-----------------------------------------------------");
             console.log("New trace category has been added");
@@ -43,7 +42,6 @@ export class TraceSpecificCategoriesExampleComponent{
             alert("NativeLifecycle trace category has been added.");
             addCategories(categories.NativeLifecycle)
         }, 7000);
-
 
         write("I (heart) NativeScript!", categories.Debug);
     }
@@ -68,7 +66,7 @@ export class TraceSpecificCategoriesExampleComponent{
     }
 
     public enableTracing(){
-        if(enabled == false){
+        if(enabled === false){
             // >> disable-tracing
             enable();
             // << disable-tracing

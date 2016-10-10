@@ -28,7 +28,6 @@ export class UsingConnectivityExampleComponent implements OnInit, OnDestroy {
         // << connectivity-gettype-code
     }
 
-
     ngOnInit() {
         // >> connectivity-start-code
         connectivity.startMonitoring((newConnectionType: number) => {

@@ -11,9 +11,6 @@ export class FetchPostExampleComponent {
     public pass: string;
     public message: string = "";
 
-    constructor() {
-    }
-
     submit() {
         // >> fetch-post-code
         fetch("https://httpbin.org/post", {

@@ -1,5 +1,5 @@
-import {Component, OnInit} from "@angular/core";
-import {Page} from "ui/page";
+import { Component } from "@angular/core";
+import { Page } from "ui/page";
 import {setCategories, enable, categories, write, addCategories} from "trace"
 
 @Component({
@@ -7,8 +7,8 @@ import {setCategories, enable, categories, write, addCategories} from "trace"
     templateUrl: 'trace/trace-messages-example/trace-messages-example.component.html'
 })
 
-export class TraceMessagesExampleComponent{
-    constructor(){
+export class TraceMessagesExampleComponent {
+    constructor() {
         // >> trace-write-method
         enable();
 
@@ -18,5 +18,5 @@ export class TraceMessagesExampleComponent{
         write("I (heart) NativeScript!", categories.Navigation);
         // << trace-write-method
     }
-    
+
 }

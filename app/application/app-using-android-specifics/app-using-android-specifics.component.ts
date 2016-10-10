@@ -3,12 +3,12 @@ import { Component } from "@angular/core";
 import * as application from "application";
 
 @Component({
-    styleUrls:["application/app-using-android-specifics/app-using-android-specifics.component.css"],
+    styleUrls: ["application/app-using-android-specifics/app-using-android-specifics.component.css"],
     selector: 'app-android-specifics-component',
     templateUrl: 'application/app-using-android-specifics/app-using-android-specifics.component.html'
 })
 
-export class AppUsingAndroidExampleComponent {      
+export class AppUsingAndroidExampleComponent {
 
     private appContext: any;
 
@@ -19,7 +19,7 @@ export class AppUsingAndroidExampleComponent {
     public batteryLife: string;
 
     constructor() {
-        if(application.android) {
+        if (application.android) {
             console.log("We are running on Android device!");
             this.isItemVisible = true;
 
@@ -45,17 +45,15 @@ export class AppUsingAndroidExampleComponent {
                     var level = intent.getIntExtra(android.os.BatteryManager.EXTRA_LEVEL, -1);
                     var scale = intent.getIntExtra(android.os.BatteryManager.EXTRA_SCALE, -1);
                     var percent = (level / scale) * 100.0;
-                    
+
                     that.batteryLife = percent.toString();
                 });
             // << app-android-broadcast-code
-
-
         } else if (application.ios) {
             console.log("We are running on iOS device");
             this.isItemVisible = false;
         }
-    }  
+    }
 }
 
 class File {

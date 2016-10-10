@@ -3,7 +3,7 @@ import { Component, OnInit } from "@angular/core";
 import * as fs from "file-system";
 // << fs-paths-import-code
 @Component({
-    styleUrls:["file-system/paths/paths.component.css"],
+    styleUrls: ["file-system/paths/paths.component.css"],
     selector: 'paths-file-component',
     templateUrl: 'file-system/paths/paths.component.html'
 })
@@ -17,11 +17,7 @@ export class PathsExampleComponent implements OnInit {
     public isContentSaved: boolean = false;
     public savedContent: string;
 
-    constructor() {
-    }
-
     ngOnInit() {
-
         // >> fs-paths-normalize-code
         var documentsFolder = fs.knownFolders.documents();
         var currentAppFolder = fs.knownFolders.currentApp();
@@ -37,18 +33,21 @@ export class PathsExampleComponent implements OnInit {
         // >> fs-paths-join-code
         // Generate a path like <documents.path>/myFiles/test.txt
         documentsFolder = fs.knownFolders.documents();
-        var path = fs.path.join(documentsFolder.path, "myFiles", "test.txt");
+        let filePath = fs.path.join(documentsFolder.path, "myFiles", "test.txt");
         // << fs-paths-join-code
+        console.log(filePath);
 
         // >> fs-paths-separator-code
         // An OS dependent path separator, "\" or "/".
-        var separator = fs.path.separator;
+        let separator = fs.path.separator;
         // << fs-paths-separator-code
+        console.log(separator);
 
         // >> fs-paths-create-folder-code
-        var path = fs.path.join(fs.knownFolders.documents().path, "music");
-        var folder = fs.Folder.fromPath(path);
+        let folderPath = fs.path.join(fs.knownFolders.documents().path, "music");
+        let folder = fs.Folder.fromPath(folderPath);
         // << fs-paths-create-folder-code
+        console.log(folder);
     }
 
     public onSaveContentToFile() {
@@ -59,7 +58,7 @@ export class PathsExampleComponent implements OnInit {
 
         // Writing text to the file.
         file.writeText(this.textContentToBeSaved)
-            .then(res =>  {
+            .then(res => {
                 // Succeeded writing to the file.
                 file.readText().then(res => {
                     // Succeeded read from file.
@@ -68,8 +67,8 @@ export class PathsExampleComponent implements OnInit {
                     console.log("File content: " + res);
                 })
             }).catch(err => {
-                // Error 
-            }); ;    
+                console.log(err.stack);
+            });;
         // << fs-paths-create-file-code
     }
 }
