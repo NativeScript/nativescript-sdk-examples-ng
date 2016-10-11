@@ -67,9 +67,7 @@ export class TraceSpecificCategoriesExampleComponent{
 
     public enableTracing(){
         if(enabled === false){
-            // >> disable-tracing
             enable();
-            // << disable-tracing
             alert("Trace has been enabled");
         }
         else{
@@ -78,7 +76,9 @@ export class TraceSpecificCategoriesExampleComponent{
     }
     public disableTracing(){
         if(enabled){
+            // >> disable-tracing
             disable();
+            // << disable-tracing
             alert("Trace has been disabled");
         }
         else{

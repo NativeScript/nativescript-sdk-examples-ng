@@ -1,6 +1,6 @@
 Import Trace Module
 
-<snippet id="import-trace-methods"/>
+<snippet id='import-trace-methods'/>
 
 Tracing specific categories of events
 
@@ -8,12 +8,12 @@ Tracing specific categories of events
 
 Trace add category
 
-<snippet id="trace-add-categories"/>
+<snippet id='trace-add-categories'/>
 
 Check is category setting
 
-<snippet id="check-iscategoryset"/>
+<snippet id='check-iscategoryset'/>
 
 Disable tracing
 
-<snippet id="disable-tracing"/>
+<snippet id='disable-tracing'/>
