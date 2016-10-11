@@ -84,7 +84,7 @@ function getComponents(cwd, components, currentDir, jenkinsPosition) {
             fs.appendFileSync(componentArticleFile, "---\n",  {encoding:'utf8'});
             fs.appendFileSync(componentArticleFile, "title: " + componentPrettyHeader + "\n",  {encoding:'utf8'});
             fs.appendFileSync(componentArticleFile, "description: " + componentPrettyHeader + " SDK Examples" + "\n",  {encoding:'utf8'});
-            fs.appendFileSync(componentArticleFile, "position: " + jenkinsPosition +  +  + "\n",  {encoding:'utf8'});
+            fs.appendFileSync(componentArticleFile, "position: " + jenkinsPosition++  + "\n",  {encoding:'utf8'});
             fs.appendFileSync(componentArticleFile, "slug: " + componentHeader + "\n",  {encoding:'utf8'});
             fs.appendFileSync(componentArticleFile, "---\n\n",  {encoding:'utf8'});
 
@@ -94,12 +94,11 @@ function getComponents(cwd, components, currentDir, jenkinsPosition) {
             // Component Overview
             var overviewContents = fs.readFileSync(overview,  {encoding:'utf8'});
             fs.appendFileSync(componentArticleFile, overviewContents + "\n\n",  {encoding:'utf8'});
-console.log("SHOSHO componentDirName " + componentDirName);
+
             // Component Images
             let componentImage = path.join(componentDirName, "image.png");
             if (fs.existsSync(componentImage)) {
                 let newImageFileName = componentHeader + "-" + "image.png";
-console.log("SHOSHO newImageFileName " + newImageFileName);
                 fs.copySync(componentImage, path.join(imgDir, newImageFileName));
 
                 fs.appendFileSync(componentArticleFile, "![Image](img/" + newImageFileName + " \"Image\")\n\n",  {encoding:'utf8'});
