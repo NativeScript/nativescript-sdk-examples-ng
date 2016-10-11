@@ -57,11 +57,12 @@ function build() {
         var components = glob.sync(subDirPath + "/**/overview.md").sort(compareFiles);
         getComponents(cwd, components, currentDir, jenkinsPosition);
     });
-
+console.log ("SHOSHO + jenkinsPosition" + jenkinsPosition);
     // Gather all component overviews in the main folder - app
     var components = glob.sync(appDir + "/**/overview.md").filter(function (file) {
         return path.parse(file).dir.indexOf("ui") === -1;
     }).sort(compareFiles);
+    console.log ("SHOSHO + jenkinsPosition" + jenkinsPosition);
     getComponents(cwd, components, articlesDir, jenkinsPosition);
 }
 
@@ -69,7 +70,6 @@ function build() {
 function getComponents(cwd, components, currentDir, jenkinsPosition) {
       var imgDir = path.join(currentDir, "img");
       fs.mkdirSync(imgDir);
-      console.log("SHOSHO imgDir " + imgDir);
 
       components.forEach(function (overview) {
             var componentDirName = path.dirname(overview);
