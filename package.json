@@ -41,7 +41,7 @@
     "nativescript-angular": "1.0.0",
     "nativescript-geolocation": "0.0.13",
     "nativescript-intl": "^0.0.4",
-    "tns-core-modules": "^2.3.0"
+    "tns-core-modules": "next"
   },
   "devDependencies": {
     "babel-traverse": "6.11.4",
