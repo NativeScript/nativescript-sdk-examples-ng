@@ -2,7 +2,7 @@
     <ScrollView>
         <StackLayout> 
             <GridLayout rows="auto, auto, auto, auto, auto, *" columns="*, *">
-                <Label row="0" col="0" colSpan="2" text="Create new folder, file and write content to the created file" class="title" textWrap="true"></Label>
+                <Label row="0" col="0" colSpan="2" text="Create new folder and file; write content to the created file" class="title" textWrap="true"></Label>
                 <Label row="1" col="0" text="Enter Folder Name" textWrap="true"></Label>
                 <TextField row="1" col="1" hint="Enter Folder Name" [(ngModel)]="folderName" editable="true"></TextField>
 
@@ -12,7 +12,7 @@
                 <Label row="3" col="0" text="Enter Text Content" textWrap="true"></Label>
                 <TextField row="3" col="1" hint="Enter Text Content" [(ngModel)]="fileTextContent" editable="true"></TextField>
 
-                <Button row="4" col="0" colSpan="2" text="Execute creation!" (tap)="onCreateFile()"></Button>
+                <Button row="4" col="0" colSpan="2" text="Create" (tap)="onCreateFile()"></Button>
 
                 <GridLayout row="5" col="0" colSpan="2" rows="*, *" columns="*" [visibility]="isItemVisible ? 'visible' : 'collapsed'">
                     <Label row="0" [text]="successMessage" class="result" textWrap="true"></Label>
