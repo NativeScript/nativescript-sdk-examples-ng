@@ -2,17 +2,16 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("setInterval example", "/setintervalTimerModuleExampleComponent"),
-    new Link("setTimeout example", "/settimeoutTimerModuleExample")
+    new Link("Modal page example", "/sampleModalPageModuleExampleComponent")
 ];
 
 @Component({
-    selector: 'timer-examples-component',
+    selector: 'modal-page-component',
     templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class TimerExamplesComponent {
+export class ModalPageExamplesComponent {
     public links: Array<Link>;
 
     constructor() {

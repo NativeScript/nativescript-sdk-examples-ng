@@ -1,15 +1,3 @@
-/* >> web-view-basic-css */
-.icon{
-    font-family: 'icomoon';
-    vertical-align: center;
-}
-
-WebView {
-    border-color: lightgray; 
-    border-width: 0.5;
-}
-/* << web-view-basic-css */
-
 .border-gridLayout {
     border-color: lightgray; 
     border-width: 0.5;

@@ -39,12 +39,12 @@ export class LocationModuleExampleComponent {
         var item2 = new SegmentedBarItem();
         item2.title = "kilometers";
         this.units.push(item2);
-        var item3 = new SegmentedBarItem();
-        item3.title = "miles";
-        this.units.push(item3);
-        var item4 = new SegmentedBarItem();
-        item4.title = "inches";
-        this.units.push(item4);
+        // var item3 = new SegmentedBarItem();
+        // item3.title = "miles";
+        // this.units.push(item3);
+        // var item4 = new SegmentedBarItem();
+        // item4.title = "inches";
+        // this.units.push(item4);
 
         this.options = {
             updateDistance: 3,

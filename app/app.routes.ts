@@ -97,12 +97,11 @@ import { UsingNgSwitchExamplesComponent } from "./ng-directives/ngswitch-usage/n
 import { FormattedStringExamplesComponent } from "./formatted-string/formated-string-examples.component";
 import { CreateFormattedStringComponent } from "./formatted-string/create-formatted-string/create-formatted-string.component";
 import { TraceExamplesComponent } from "./trace/trace-examples.component";
-import { BasicTraceExampleComponent } from "./trace/basic-trace-example/basic-trace-example.component";
 import { TraceSpecificCategoriesExampleComponent } from "./trace/trace-specific-categories/trace-specific-categories-example.component";
-import { TraceMessagesExampleComponent } from "./trace/trace-messages-example/trace-messages-example.component";
 import { CustomTraceWriterExampleComponent } from "./trace/custom-tracewriter/custom-tracewriter-example.component";
 import { TimerExamplesComponent } from "./timer/timer-examples.component";
-import { SampleTimerModuleExampleComponent } from "./timer/sample-timer-module-example/sample-timer-module-example";
+import { SetIntervalTimerModuleExampleComponent } from "./timer/setinterval-timer-module-example/setinterval-timer-module-example";
+import { SettimeoutTimerModuleExample } from "./timer/settimeout-timer-module-example/settimeout-timer-module-example";
 import { PlatformExamplesComponent } from "./platform/platform-examples.component";
 import { PlatformModuleExampleComponent } from "./platform/platform-module-example/platform-module-example";
 import { LocationExamplesComponent } from "./location/location-examples.component";
@@ -137,6 +136,9 @@ import { CreateExampleComponent } from "./file-system/create/create.component";
 import { ReadExampleComponent } from "./file-system/read/read.component";
 import { UpdateExampleComponent } from "./file-system/update/update.component";
 import { DeleteExampleComponent } from "./file-system/delete/delete.component";
+
+import { ModalPageExamplesComponent } from "./modal-page/modal-page-examples.component";
+import { SampleModalPageModuleExampleComponent } from "./modal-page/sample-modal-page-module-example/sample-modal-page-module-example";
 
 export var routableComponents = [];
 
@@ -269,12 +271,11 @@ export const routes = [
     routeEntry({ path: "deleteExampleComponent", component: DeleteExampleComponent, data: { title: "Delete" } }),
 
   routeEntry({ path: "traceExampleComponent", component: TraceExamplesComponent, data: { title: "Trace module" } }),
-  routeEntry({ path: "basicTraceExampleComponent", component: BasicTraceExampleComponent, data: { title: "Basic trace module example" } }),
   routeEntry({ path: "traceSpecificCategoriesExampleComponent", component: TraceSpecificCategoriesExampleComponent, data: { title: "Trace specific categories" } }),
-  routeEntry({ path: "traceMessagesExampleComponent", component: TraceMessagesExampleComponent, data: { title: "Write your own trace message" } }),
   routeEntry({ path: "customTraceWriterExampleComponent", component: CustomTraceWriterExampleComponent, data: { title: "Writing a Custom TraceWriter" } }),
   routeEntry({ path: "timerExamplesComponent", component: TimerExamplesComponent, data: { title: "Timer module" } }),
-  routeEntry({ path: "sampleTimerModuleExampleComponent", component: SampleTimerModuleExampleComponent, data: { title: "Basic timer module example" } }),
+  routeEntry({ path: "setintervalTimerModuleExampleComponent", component: SetIntervalTimerModuleExampleComponent, data: { title: "setInterval example" } }),
+  routeEntry({ path: "settimeoutTimerModuleExample", component: SettimeoutTimerModuleExample, data: { title: "setTimeout example" } }),
   routeEntry({ path: "platformExamplesComponent", component: PlatformExamplesComponent, data: { title: "Platform module" } }),
   routeEntry({ path: "platformModuleExampleComponent", component: PlatformModuleExampleComponent, data: { title: "Platform module example" } }),
   routeEntry({ path: "locationExamplesComponent", component: LocationExamplesComponent, data: { title: "Location module" } }),
@@ -284,6 +285,8 @@ export const routes = [
   routeEntry({ path: "httpModuleComponent", component: HTTPModuleComponent, data: { title: "HTTP Module" } }),
   routeEntry({ path: "httpModulePostExampleComponent", component: HTTPModulePostExampleComponent, data: { title: "HTTP Post JSON example" } }),
   routeEntry({ path: "httpModuleGetExampleComponent", component: HTTPModuleGetExampleComponent, data: { title: "HTTP Get example" } }),
+  routeEntry({ path: "modalPageExamplesComponent", component: ModalPageExamplesComponent, data: { title: "Modal page" } }),
+  routeEntry({ path: "sampleModalPageModuleExampleComponent", component: SampleModalPageModuleExampleComponent, data: { title: "Modal page example" } }),
 
 ];
 
