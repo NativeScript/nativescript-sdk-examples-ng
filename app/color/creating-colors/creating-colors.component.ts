@@ -3,29 +3,38 @@ import { Component } from "@angular/core";
 import { Color } from "color";
 // << creating-colors-code
 @Component({
-    styleUrls:["color/creating-colors/creating-colors.component.css"],
+    styleUrls: ["color/creating-colors/creating-colors.component.css"],
     selector: 'creating-colors-component',
     templateUrl: 'color/creating-colors/creating-colors.component.html'
 })
 
 export class CreatingColorsExampleComponent {
     public hexValue: string;
-    public hexColor: Color;
+    public hexColor: Color = new Color("#000");
 
-    public alphaValue: number = 40;
-    public redValue: number = 90;
-    public greenValue: number = 140;
-    public blueValue: number = 190;
+    public redValue: number = 0;
+    public greenValue: number = 0;
+    public blueValue: number = 0;
 
     public changeColor(value: string) {
-        if(value[0] !== '#') {
+
+        if (value[0] !== '#') {
             value = "#" + value;
         }
         var isValidHexColor = /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(value);
 
         if (isValidHexColor) {
-
             this.hexColor = new Color(value);
+
+            var rgbColors = this.convertHex(value);
+            this.redValue = rgbColors[0];
+            console.log(this.redValue);
+
+            this.greenValue = rgbColors[1];
+            console.log(this.greenValue);
+
+            this.blueValue = rgbColors[2];
+            console.log(this.blueValue);
 
             // >> creating-hex-color-code
             var colorHex = new Color("#FF00CC");
@@ -49,10 +58,30 @@ export class CreatingColorsExampleComponent {
             var colorSingleARGB = new Color(argb);
             // << creating-single-argb-color
             console.log(colorSingleARGB);
-        }   
+        } else {
+            console.log("Invalid hex value entered");
+        }
     }
-  
-    public changeColorWithSliders() {
-        this.hexColor = new Color(this.alphaValue, this.redValue, this.greenValue, this.blueValue);
+
+    public onChangeColorWithSliders() {
+        console.log("RED: " + this.redValue);
+        console.log("GREEN: " + this.greenValue);
+        console.log("BLUE: " + this.blueValue);
+        this.hexColor = new Color(100, this.redValue, this.greenValue, this.blueValue);
+    }
+
+    convertHex(hex) {
+        hex = hex.replace('#', '');
+
+        if (hex.length != 6) {
+            hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];
+        }
+
+        var red = parseInt(hex.substring(0, 2), 16);
+        var green = parseInt(hex.substring(2, 4), 16);
+        var blue = parseInt(hex.substring(4, 6), 16);
+
+        var colorRGB = [red, green, blue];
+        return colorRGB;
     }
 }

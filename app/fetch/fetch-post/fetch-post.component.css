@@ -4,7 +4,13 @@ Label, TextField {
     color: #0099CC;
     padding: 8;
     margin: 3;
+}
+
+.center {
     text-align: center;
+}
+.left {
+    text-align: left;
 }
 
 .result {
