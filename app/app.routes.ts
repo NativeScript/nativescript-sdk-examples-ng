@@ -144,8 +144,7 @@ export var examplePipes = [
 ];
 
 export const routes = [
-    {path: "", redirectTo:"/creatingColorsExampleComponent", pathMatch: "full"},
-    // routeEntry({ path: "", component: ExamplesListComponent, data: { title: "NativeScript Code Samples" } }),
+    routeEntry({ path: "", component: ExamplesListComponent, data: { title: "NativeScript Code Samples" } }),
     routeEntry({ path: "actionBarExamplesComponent", component: ActionBarExamplesComponent, data: { title: "ActionBar" } }),
     routeEntry({ path: "actionItemsComponent", component: ActionItemsComponent, data: { title: "Action items" } }),
     routeEntry({ path: "navigationButtonComponent", component: NavigationButtonComponent, data: { title: "Navigation button" } }),
