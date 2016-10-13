@@ -3,21 +3,24 @@
     <ScrollView>
         <GridLayout rows="auto, auto, auto, 250, auto" columns="*">
             <Label row="0" text="Create a Color from hex value" textWrap="true"></Label>
-            <TextField row="1" hint="Enter hex color e.g. F3A or DD00AA" [(ngModel)]='hexValue'></TextField> 
-            <Button row="2" text="Change Color" (tap)="changeColor(hexValue)"></Button>
+            <TextField row="1" hint="Enter hex color e.g. F3A or DD00AA" #hexField
+                [text]="'#' + (redValue | hex) + (greenValue | hex) + (blueValue | hex)"></TextField> 
+            <Button row="2" text="Change Color" (tap)="changeColor(hexField.text)"></Button>
 
-            <GridLayout row="3" [backgroundColor]="hexColor ? hexColor : '#000000' " > 
+            <GridLayout row="3" [backgroundColor]="'#' + (redValue | hex) + (greenValue | hex) + (blueValue | hex)" > 
             </GridLayout>
 
             <GridLayout row="4" rows="auto, auto, auto" columns="auto, *">
                 <Label row="0" col="0" text="Red  " textWrap="true"></Label>
-                <Slider row="0" col="1" minValue="0" maxValue="255" [(ngModel)]="redValue" (valueChange)="onChangeColorWithSliders()"></Slider>
+                <Slider row="0" col="1" minValue="0" maxValue="255" [(ngModel)]="redValue"></Slider>
                 <Label row="1" col="0" text="Green" textWrap="true"></Label>
-                <Slider row="1" col="1" minValue="0" maxValue="255" [(ngModel)]="greenValue" (valueChange)="onChangeColorWithSliders()"></Slider>
+                <Slider row="1" col="1" minValue="0" maxValue="255" [(ngModel)]="greenValue"></Slider>
                 <Label row="2" col="0" text="Blue " textWrap="true"></Label>
-                <Slider row="2" col="1" minValue="0" maxValue="255" [(ngModel)]="blueValue" (valueChange)="onChangeColorWithSliders()"></Slider> 
+                <Slider row="2" col="1" minValue="0" maxValue="255" [(ngModel)]="blueValue"></Slider> 
             </GridLayout>
+        
         </GridLayout>
+
     </ScrollView>
 
 </StackLayout>

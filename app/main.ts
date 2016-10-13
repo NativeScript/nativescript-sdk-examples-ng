@@ -1,6 +1,6 @@
 // this import should be first in order to load some required settings (like globals and reflect-metadata)
 import { platformNativeScriptDynamic, NativeScriptModule } from "nativescript-angular/platform";
-import { routes, routableComponents } from "./app.routes";
+import { routes, routableComponents, examplePipes } from "./app.routes";
 import { AppComponent } from "./app.component";
 import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
@@ -22,6 +22,7 @@ import { ItemComponent } from "./listview/using-item-template/using-item-templat
         ToggleNavButtonDirective,
         ExampleTitleDirective,
         ...routableComponents,
+        ...examplePipes
     ],
     bootstrap: [AppComponent],
     imports: [
