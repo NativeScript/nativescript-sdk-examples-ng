@@ -122,7 +122,7 @@ import { ApplicationSettingsExamplesComponent } from "./application-settings/app
 import { ValuesExampleComponent } from "./application-settings/values/values.component"
 
 import { ColorExamplesComponent } from "./color/color-examples.component";
-import { CreatingColorsExampleComponent } from "./color/creating-colors/creating-colors.component";
+import { CreatingColorsExampleComponent, HexPipe } from "./color/creating-colors/creating-colors.component";
 
 import { ConnectivityExamplesComponent } from "./connectivity/connectivity-examples.component";
 import { UsingConnectivityExampleComponent } from "./connectivity/using-connectivity/using-connectivity.component";
@@ -139,6 +139,9 @@ import { UpdateExampleComponent } from "./file-system/update/update.component";
 import { DeleteExampleComponent } from "./file-system/delete/delete.component";
 
 export var routableComponents = [];
+export var examplePipes = [
+    HexPipe
+];
 
 export const routes = [
     routeEntry({ path: "", component: ExamplesListComponent, data: { title: "NativeScript Code Samples" } }),
