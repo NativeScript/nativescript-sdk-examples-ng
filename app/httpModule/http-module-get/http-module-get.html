@@ -3,25 +3,19 @@
             <StackLayout orientation="vertical">
                 <GridLayout rows="auto, auto, auto, auto, auto, auto, auto, auto, auto" columns="auto, *">
 
-                    <Label row="0" col="0" text="Host" textWrap="true"></Label>
-                    <Label row="1" col="0" text="User-Agent" textWrap="true"></Label>
                     <Label row="2" col="0" text="origin" textWrap="true"></Label>
                     <Label row="3" col="0" text="url" textWrap="true"></Label>
                     <Label row="4" col="0" text="status code" textWrap="true"></Label>
 
                     <Label row="5" col="0" text="[header] Date" textWrap="true"></Label>
-                    <Label row="6" col="0" text="[header] Accept-Language" textWrap="true"></Label>
                     <Label row="7" col="0" text="[header] Content-Type" textWrap="true"></Label>
                     <Label row="8" col="0" text="[header] Server" textWrap="true"></Label>
 
-                    <Label row="0" col="1" [text]="host" class="result" textWrap="true"></Label>
-                    <Label row="1" col="1" [text]="userAgent" class="result" textWrap="true"></Label>
                     <Label row="2" col="1" [text]="origin" class="result" textWrap="true"></Label>
                     <Label row="3" col="1" [text]="url" class="result" textWrap="true"></Label>
                     <Label row="4" col="1" [text]="status" class="result" textWrap="true"></Label>
 
                     <Label row="5" col="1" [text]="dateHeader" class="result" textWrap="true"></Label>
-                    <Label row="6" col="1" [text]="connectionAcceptLanguage" class="result" textWrap="true"></Label>
                     <Label row="7" col="1" [text]="typeHeader" class="result" textWrap="true"></Label>
                     <Label row="8" col="1" [text]="serverHeader" class="result" textWrap="true"></Label>
                 </GridLayout>
@@ -33,7 +27,7 @@
                 <Image id="secondimageId"></Image>
 
                 <Label text="Sample getImage method" textWrap="true"></Label>
-                <Image [src]="imagesource"></Image>
+                <Image id="thirdImage"></Image>
                 
                 <Label  text="Getting string from URL: " textWrap="true"></Label>
                 <TextView height="300" [text]="stringResponce" editable="false"></TextView>

@@ -16,17 +16,13 @@ import { Image } from "ui/image"
 
 export class HTTPModuleGetExampleComponent implements OnInit {
     public stringResponce: string = "";
-    public host: string = "";
-    public userAgent: string = "";
     public origin: string = "";
     public url: string = "";
     public status: number = 0;
     public statusText: string = "";
     public dateHeader: string = "";
-    public connectionAcceptLanguage: string = "";
     public typeHeader: string = "";
     public serverHeader: string = "";
-    public imagesource;
 
     constructor(private page: Page) { };
 
@@ -56,15 +52,14 @@ export class HTTPModuleGetExampleComponent implements OnInit {
         // >> getImage-http-module
         getImage("https://httpbin.org/image/jpeg")
             .then((r) => {
-                this.imagesource = r;
+                var image: Image = <Image>this.page.getViewById("thirdImage");
+                image.imageSource = r;
             }, (e) => {
                 alert("GetImage: " + e);
             });
         // << getImage-http-module
         // >> getFile-http-module
-        var filePath = path.join(knownFolders.documents().path, "test.png");
-
-        getFile("https://httpbin.org/image/jpeg", filePath)
+        getFile("https://httpbin.org/image/jpeg")
             .then((r: File) => {
                 var image: Image = <Image>this.page.getViewById("imageId");
                 image.imageSource = fromFile(r.path);
@@ -73,7 +68,7 @@ export class HTTPModuleGetExampleComponent implements OnInit {
             });
         // << getFile-http-module
         // >> getFile-http-moduled-specify-file-path
-        filePath = path.join(knownFolders.documents().path, "test.png");
+        var filePath = path.join(knownFolders.documents().path, "test.png");
         getFile("https://httpbin.org/image/png", filePath)
             .then((r: File) => {
                 var image: Image = <Image>this.page.getViewById("secondimageId");
@@ -87,11 +82,8 @@ export class HTTPModuleGetExampleComponent implements OnInit {
             .then((response) => {
                 var header = (<any>response.headers);
                 this.dateHeader = header["Date"];
-                this.connectionAcceptLanguage = header["Accept-Language"];
                 this.typeHeader = header["Content-Type"];
                 this.serverHeader = header["Server"];
-                this.host = header["Host"];
-                this.userAgent = header["User-Agent"];
                 this.status = response.statusCode;
 
             }, (e) => {
