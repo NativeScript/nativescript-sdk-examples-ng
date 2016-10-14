@@ -39,12 +39,6 @@ export class LocationModuleExampleComponent {
         var item2 = new SegmentedBarItem();
         item2.title = "kilometers";
         this.units.push(item2);
-        // var item3 = new SegmentedBarItem();
-        // item3.title = "miles";
-        // this.units.push(item3);
-        // var item4 = new SegmentedBarItem();
-        // item4.title = "inches";
-        // this.units.push(item4);
 
         this.options = {
             updateDistance: 3,
@@ -88,13 +82,7 @@ export class LocationModuleExampleComponent {
             case 1:
                 this.distanceResult = (this.distance * 0.001).toFixed(3);
                 break;
-            case 2:
-                this.distanceResult = (this.distance * 0.000621371192).toFixed(3);
-                break;
-            case 3:
-                this.distanceResult = (this.distance * 39.3700787).toFixed(3);
-                break;
-
+            
             default:
                 break;
         }
@@ -109,13 +97,7 @@ export class LocationModuleExampleComponent {
             case 1:
                 this.distanceResult = (this.distance * 0.001).toFixed(3);
                 break;
-            case 2:
-                this.distanceResult = (this.distance * 0.000621371192).toFixed(3);
-                break;
-            case 3:
-                this.distanceResult = (this.distance * 39.3700787).toFixed(3);
-                break;
-
+           
             default:
                 break;
         }
