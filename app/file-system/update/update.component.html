@@ -3,12 +3,12 @@
         <StackLayout>
             <GridLayout rows="*, *" columns="*, *">
                 <TextField row="0" col="0" [(ngModel)]="fileName" hint="Enter new file name"></TextField>
-                <Button row="0" col="1" text="Change the file name!" (tap)="onFileRename()"></Button>
+                <Button row="0" col="1" text="Change file name" (tap)="onFileRename()"></Button>
                 <Label row="1" col="0" colSpan="2" [text]="fileSuccessMessage" textWrap="true" class="result" [visibility]="isItemVisible ? 'visible' : 'collapsed'"></Label>  
             </GridLayout>
             <GridLayout rows="*, *" columns="*, *">
                 <TextField row="0" col="0" [(ngModel)]="folderName" hint="Enter new file name"></TextField>
-                <Button row="0" col="1" text="Change the folder name!" (tap)="onFolderRename()"></Button>
+                <Button row="0" col="1" text="Change folder name" (tap)="onFolderRename()"></Button>
                 <Label row="1" col="0" colSpan="2" [text]="folderSuccessMessage" textWrap="true" class="result" [visibility]="isFolderItemVisible ? 'visible' : 'collapsed'"></Label>  
             </GridLayout>
         </StackLayout>

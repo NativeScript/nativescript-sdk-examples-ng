@@ -1,12 +1,12 @@
 <StackLayout exampleTitle toggleNavButton>
     <GridLayout rows="auto, auto, auto, auto, *" columns="*, *">
-        <Label row="0" col="0" colSpan="2" text="Post with fetch" textWrap="true"></Label>
+        <Label row="0" col="0" class="center" colSpan="2" text="Post with fetch" textWrap="true"></Label>
 
-        <Label row="1" col="0" text="Username: " textWrap="true"></Label>
-        <TextField row="1" col="1" hint="Enter Username" [(ngModel)]="user" editable="true"></TextField>
+        <Label row="1" col="0" class="center" text="Username: " textWrap="true"></Label>
+        <TextField row="1" col="1" class="left" hint="Enter Username" [(ngModel)]="user" editable="true"></TextField>
 
-        <Label row="2" col="0" text="Password: " textWrap="true"></Label>
-        <TextField row="2" col="1" hint="Enter Password" [(ngModel)]="pass" secure="true" editable="true"></TextField>
+        <Label row="2" col="0" class="center" text="Password: " textWrap="true"></Label>
+        <TextField row="2" col="1" class="left" hint="Enter Password" [(ngModel)]="pass" secure="true" editable="true"></TextField>
 
         <Button row="3" col="0" colSpan="2" text="Submit" (tap)="submit()" margin="15"></Button>   
         <GridLayout row="4" col="0" colSpan="2" rows="*" columns="*" backgroundColor="gray" margin="15" borderRadius="10">

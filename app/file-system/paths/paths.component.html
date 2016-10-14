@@ -3,14 +3,14 @@
         <StackLayout>
             <GridLayout rows="auto, auto, auto, auto" >
                 <Label row="0" text="Normalized Paths" class="title" textWrap="true"></Label>
-                <Label row="1" [text]="'Documents folder: ' + documents" class="result" textWrap="true"></Label>
-                <Label row="2" [text]="'Current App folder: ' + currentApp" class="result" textWrap="true"></Label>
-                <Label row="3" [text]="'Temp folder: ' + temp" class="result" textWrap="true"></Label>
+                <Label row="1" [text]="'File in documents folder: ' + documents" class="result" textWrap="true"></Label>
+                <Label row="2" [text]="'File in current app folder: ' + currentApp" class="result" textWrap="true"></Label>
+                <Label row="3" [text]="'File in temp folder: ' + temp" class="result" textWrap="true"></Label>
             </GridLayout>
             <GridLayout rows="auto, auto, auto, auto" columns="2*, *">
                 <Label row="0" col="0" colSpan="2" text="Writing content to file" class="title" textWrap="true"></Label>
                 <TextField row="1" col="0" hint="Enter Sample Text" [(ngModel)]="textContentToBeSaved" editable="true"></TextField>
-                <Button row="1" col="1" text="Save Content" (tap)="onSaveContentToFile()"></Button>
+                <Button row="1" col="1" text="Save" (tap)="onSaveContentToFile()"></Button>
                 <Label row="2" col="0" text="Is content saved!?" textWrap="true"></Label>
                 <Label row="2" col="1" [text]="isContentSaved" class="result" textWrap="true"></Label>
                 <Label row="3" col="0" colSpan="2" [text]="'Saved content: ' + savedContent" class="result" textWrap="true"></Label>

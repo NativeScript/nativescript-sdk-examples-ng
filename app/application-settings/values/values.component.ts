@@ -51,7 +51,7 @@ export class ValuesExampleComponent {
         appSettings.setBoolean("isTurnedOn", true);
         this.isTurnedOn = appSettings.getBoolean("isTurnedOn");
 
-        appSettings.setString("username", "Wolfgang Amadeus Mozart");
+        appSettings.setString("username", "Mozart");
         this.username = appSettings.getString("username");
 
         appSettings.setNumber("locationX", 54.321);

@@ -55,7 +55,7 @@ export class DeleteExampleComponent {
         }
     }
 
-    public onClearFOlder() {
+    public onClearFolder() {
         if(this.myFolder) {
             // >> fs-clear-folder-code
             this.myFolder.clear()
@@ -75,5 +75,6 @@ export class DeleteExampleComponent {
         this.documents = fs.knownFolders.documents();
         this.myFolder = this.documents.getFolder("TestFolderName");
         this.file = this.myFolder.getFile("TestFileName.txt");
+        this.resultMessage = "Successfully reset!";
     }
 }
