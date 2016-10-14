@@ -4,16 +4,15 @@ import {setInterval, setTimeout, clearInterval} from "timer"
 
 @Component({
     selector: 'timer-module-component',
-    styleUrls:['ui/timer/sample-timer-module-example/sample-timer-module-example.css'],
-    templateUrl: 'ui/timer/sample-timer-module-example/sample-timer-module-example.html'
+    styleUrls:['timer/setinterval-timer-module-example/setinterval-timer-module-example.css'],
+    templateUrl: 'timer/setinterval-timer-module-example/setinterval-timer-module-example.html'
 })
 
-export class SampleTimerModuleExampleComponent {
+export class SetIntervalTimerModuleExampleComponent {
     public buttoncolor;
     public color = ["green", "yellow", "red"];
     public id;
     public status = true;
-    public counter = 0;
 
     constructor(){
         this.buttoncolor = "blue";
@@ -39,17 +38,6 @@ export class SampleTimerModuleExampleComponent {
         }
     }
 
-    public increase(){
-        var that = this;
-        setTimeout(function(){
-            that.counter++;
-        }, 2000)
-    }
-    public decrease(){
-        var that = this;
-        setTimeout(function(){
-            that.counter--;
-        }, 2000)
-    }
+    
 }
 // << time-picker-configure-code

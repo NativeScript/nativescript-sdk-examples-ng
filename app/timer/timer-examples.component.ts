@@ -2,17 +2,17 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Trace Specific categories Example", "/traceSpecificCategoriesExampleComponent"),
-    new Link("Writing a Custom TraceWriter Example", "/customTraceWriterExampleComponent")
+    new Link("setInterval example", "/setintervalTimerModuleExampleComponent"),
+    new Link("setTimeout example", "/settimeoutTimerModuleExample")
 ];
 
 @Component({
-    selector: 'trace-example-component',
+    selector: 'timer-examples-component',
     templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class TraceExamplesComponent {
+export class TimerExamplesComponent {
     public links: Array<Link>;
 
     constructor() {
