@@ -1,10 +1,10 @@
 <StackLayout exampleTitle toggleNavButton>
     <GridLayout >
         <!-- >> listview-create-html -->
-        <ListView [items]="countries" (itemTap)="onItemTap($event)" rowHeight="44">
+        <ListView [items]="countries" class="list-group" (itemTap)="onItemTap($event)">
             <template let-country="item" let-i="index" let-odd="odd" let-even="even">
-                <GridLayout class="item" height="44">
-                    <Label [text]="country.name" android:class="label-item"></Label>
+                <GridLayout class="list-group-item">
+                    <Label [text]="country.name"></Label>
                 </GridLayout>
             </template>
         </ListView>

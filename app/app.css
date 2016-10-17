@@ -1,4 +1,6 @@
-﻿@import url("~/platform.css");
+﻿@import '~/css/core.light.css'; 
+
+@import url("~/platform.css");
 
 .title {
     font-size: 16;

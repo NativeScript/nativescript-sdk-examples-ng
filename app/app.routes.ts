@@ -6,7 +6,7 @@ import { TitleComponent } from "./ui/action-bar/title/title.component";
 import { ActivityIndicatorExamplesComponent } from "./ui/activity-indicator/activity-indicator-examples.component";
 import { SettingBusyComponent } from "./ui/activity-indicator/setting-busy/setting-busy.component";
 import { AnimationsExamplesComponent } from "./ui/animations/animations-examples.component";
-import { AnimatingPropertiesComponent} from "./ui/animations/animating-properties/animating-properties.component";
+import { AnimatingPropertiesComponent } from "./ui/animations/animating-properties/animating-properties.component";
 import { ChainingAnimationsComponent } from "./ui/animations/chaining-animations/chaining-animations.component";
 import { MultipleViewsComponent } from "./ui/animations/multiple-views/multiple-views.component";
 import { ButtonExamplesComponent } from "./ui/button/button-examples.component";
@@ -111,34 +111,30 @@ import { FPSMeterModuleExampleComponent } from "./fpsMeter/fps-meter-module-exam
 import { HTTPModuleComponent } from "./httpModule/http-module-examples.component";
 import { HTTPModulePostExampleComponent } from "./httpModule/http-module-post/http-module-post";
 import { HTTPModuleGetExampleComponent } from "./httpModule/http-module-get/http-module-get";
-
 import { ApplicationExamplesComponent } from "./application/application-examples.component";
 import { AppCheckingTargetExampleComponent } from "./application/app-checking-target/app-checking-target.component";
 import { AppUsingAndroidExampleComponent } from "./application/app-using-android-specifics/app-using-android-specifics.component";
 import { AppUsingIosExampleComponent } from "./application/app-using-ios-specifics/app-using-ios-specifics.component";
-
 import { ApplicationSettingsExamplesComponent } from "./application-settings/application-settings-examples.component"
 import { ValuesExampleComponent } from "./application-settings/values/values.component"
-
 import { ColorExamplesComponent } from "./color/color-examples.component";
 import { CreatingColorsExampleComponent, HexPipe } from "./color/creating-colors/creating-colors.component";
-
 import { ConnectivityExamplesComponent } from "./connectivity/connectivity-examples.component";
 import { UsingConnectivityExampleComponent } from "./connectivity/using-connectivity/using-connectivity.component";
-
 import { FetchExamplesComponent } from "./fetch/fetch-examples.component";
 import { FetchGetExampleComponent } from "./fetch/fetch-get/fetch-get.component";
 import { FetchPostExampleComponent } from "./fetch/fetch-post/fetch-post.component";
-
 import { FileSystemxamplesComponent } from "./file-system/file-system-examples.component";
 import { PathsExampleComponent } from "./file-system/paths/paths.component";
 import { CreateExampleComponent } from "./file-system/create/create.component";
 import { ReadExampleComponent } from "./file-system/read/read.component";
 import { UpdateExampleComponent } from "./file-system/update/update.component";
 import { DeleteExampleComponent } from "./file-system/delete/delete.component";
-
 import { ModalPageExamplesComponent } from "./modal-page/modal-page-examples.component";
 import { SampleModalPageModuleExampleComponent } from "./modal-page/sample-modal-page-module-example/sample-modal-page-module-example";
+
+import { ExtendedListViewExamplesComponent } from "./ui-extended/listview/extended-listview-examples.component";
+import { SingleLineListViewExampleComponent } from "./ui-extended/listview/single-line/single-line-listview.component";
 
 export var routableComponents = [];
 export var examplePipes = [
@@ -226,7 +222,6 @@ export const routes = [
     routeEntry({ path: "settingProgressExampleComponent", component: SettingProgressComponent, data: { title: "Set up Progress" } }),
     routeEntry({ path: "htmlViewExamplesComponent", component: HtmlViewxamplesComponent, data: { title: "HtmlView" } }),
     routeEntry({ path: "creatingHtmlViewExampleComponent", component: CreatingHtmlViewExampleComponent, data: { title: "Create HtmlView" } }),
-
     routeEntry({ path: "gesturesExamplesComponent", component: GesturesExamplesComponent, data: { title: "Gestures" } }),
     routeEntry({ path: "tapGestureExampleComponent", component: TapExampleComponent, data: { title: "Tap" } }),
     routeEntry({ path: "doubleTapGestureExampleComponent", component: DoubleTapExampleComponent, data: { title: "Double tap" } }),
@@ -236,7 +231,6 @@ export const routes = [
     routeEntry({ path: "pinchGestureExampleComponent", component: PinchExampleComponent, data: { title: "Pinch" } }),
     routeEntry({ path: "rotationGestureExampleComponent", component: RotationExampleComponent, data: { title: "Rotation" } }),
     routeEntry({ path: "touchGestureExampleComponent", component: TouchExampleComponent, data: { title: "Touch" } }),
-
     routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
     routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
     routeEntry({ path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf basic usage" } }),
@@ -244,53 +238,47 @@ export const routes = [
     routeEntry({ path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create custom *ng directive" } }),
     routeEntry({ path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } }),
     routeEntry({ path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } }),
-
     routeEntry({ path: "formattedStringExamplesComponent", component: FormattedStringExamplesComponent, data: { title: "Formatted String" } }),
     routeEntry({ path: "createFormattedStringExampleComponent", component: CreateFormattedStringComponent, data: { title: "Create Formatted String" } }),
-
     routeEntry({ path: "applicationExamplesComponent", component: ApplicationExamplesComponent, data: { title: "Application" } }),
     routeEntry({ path: "checkTargetExampleComponent", component: AppCheckingTargetExampleComponent, data: { title: "Check The Target Platform" } }),
     routeEntry({ path: "usingAndroidSpecificsExampleComponent", component: AppUsingAndroidExampleComponent, data: { title: "Using Android Specifics" } }),
     routeEntry({ path: "usingIosSpecificsExampleComponent", component: AppUsingIosExampleComponent, data: { title: "Using iOS Specifics" } }),
-
     routeEntry({ path: "applicationSettingsExamplesComponent", component: ApplicationSettingsExamplesComponent, data: { title: "Application Settings" } }),
     routeEntry({ path: "valuesExampleComponent", component: ValuesExampleComponent, data: { title: "Working with values" } }),
-    
     routeEntry({ path: "colorExamplesComponent", component: ColorExamplesComponent, data: { title: "Color" } }),
     routeEntry({ path: "creatingColorsExampleComponent", component: CreatingColorsExampleComponent, data: { title: "Creating Colors" } }),
-    
     routeEntry({ path: "connectivityExamplesComponent", component: ConnectivityExamplesComponent, data: { title: "Connectivity" } }),
     routeEntry({ path: "usingConnectivityExampleComponent", component: UsingConnectivityExampleComponent, data: { title: "Using Connectivity" } }),
-  
     routeEntry({ path: "fetchExamplesComponent", component: FetchExamplesComponent, data: { title: "Fetch" } }),
     routeEntry({ path: "fetchGetExampleComponent", component: FetchGetExampleComponent, data: { title: "Fetch GET" } }),
     routeEntry({ path: "fetchPostExampleComponent", component: FetchPostExampleComponent, data: { title: "Fetch POST" } }),
-
     routeEntry({ path: "fileSystemxamplesComponent", component: FileSystemxamplesComponent, data: { title: "File System" } }),
     routeEntry({ path: "pathsExampleComponent", component: PathsExampleComponent, data: { title: "Paths" } }),
     routeEntry({ path: "createExampleComponent", component: CreateExampleComponent, data: { title: "Create" } }),
     routeEntry({ path: "readExampleComponent", component: ReadExampleComponent, data: { title: "Read" } }),
     routeEntry({ path: "updateExampleComponent", component: UpdateExampleComponent, data: { title: "Update" } }),
     routeEntry({ path: "deleteExampleComponent", component: DeleteExampleComponent, data: { title: "Delete" } }),
+    routeEntry({ path: "traceExampleComponent", component: TraceExamplesComponent, data: { title: "Trace module" } }),
+    routeEntry({ path: "traceSpecificCategoriesExampleComponent", component: TraceSpecificCategoriesExampleComponent, data: { title: "Trace specific categories" } }),
+    routeEntry({ path: "customTraceWriterExampleComponent", component: CustomTraceWriterExampleComponent, data: { title: "Writing a Custom TraceWriter" } }),
+    routeEntry({ path: "timerExamplesComponent", component: TimerExamplesComponent, data: { title: "Timer module" } }),
+    routeEntry({ path: "setintervalTimerModuleExampleComponent", component: SetIntervalTimerModuleExampleComponent, data: { title: "setInterval example" } }),
+    routeEntry({ path: "settimeoutTimerModuleExample", component: SettimeoutTimerModuleExample, data: { title: "setTimeout example" } }),
+    routeEntry({ path: "platformExamplesComponent", component: PlatformExamplesComponent, data: { title: "Platform module" } }),
+    routeEntry({ path: "platformModuleExampleComponent", component: PlatformModuleExampleComponent, data: { title: "Platform module example" } }),
+    routeEntry({ path: "locationExamplesComponent", component: LocationExamplesComponent, data: { title: "Location module" } }),
+    routeEntry({ path: "locationModuleExampleComponent", component: LocationModuleExampleComponent, data: { title: "Location module example" } }),
+    routeEntry({ path: "fpsExamplesComponent", component: FPSExamplesComponent, data: { title: "FPS Meter" } }),
+    routeEntry({ path: "fpsMeterModuleExampleComponent", component: FPSMeterModuleExampleComponent, data: { title: "FPS Meter example" } }),
+    routeEntry({ path: "httpModuleComponent", component: HTTPModuleComponent, data: { title: "HTTP Module" } }),
+    routeEntry({ path: "httpModulePostExampleComponent", component: HTTPModulePostExampleComponent, data: { title: "HTTP Post JSON example" } }),
+    routeEntry({ path: "httpModuleGetExampleComponent", component: HTTPModuleGetExampleComponent, data: { title: "HTTP Get example" } }),
+    routeEntry({ path: "modalPageExamplesComponent", component: ModalPageExamplesComponent, data: { title: "Modal page" } }),
+    routeEntry({ path: "sampleModalPageModuleExampleComponent", component: SampleModalPageModuleExampleComponent, data: { title: "Modal page example" } }),
 
-  routeEntry({ path: "traceExampleComponent", component: TraceExamplesComponent, data: { title: "Trace module" } }),
-  routeEntry({ path: "traceSpecificCategoriesExampleComponent", component: TraceSpecificCategoriesExampleComponent, data: { title: "Trace specific categories" } }),
-  routeEntry({ path: "customTraceWriterExampleComponent", component: CustomTraceWriterExampleComponent, data: { title: "Writing a Custom TraceWriter" } }),
-  routeEntry({ path: "timerExamplesComponent", component: TimerExamplesComponent, data: { title: "Timer module" } }),
-  routeEntry({ path: "setintervalTimerModuleExampleComponent", component: SetIntervalTimerModuleExampleComponent, data: { title: "setInterval example" } }),
-  routeEntry({ path: "settimeoutTimerModuleExample", component: SettimeoutTimerModuleExample, data: { title: "setTimeout example" } }),
-  routeEntry({ path: "platformExamplesComponent", component: PlatformExamplesComponent, data: { title: "Platform module" } }),
-  routeEntry({ path: "platformModuleExampleComponent", component: PlatformModuleExampleComponent, data: { title: "Platform module example" } }),
-  routeEntry({ path: "locationExamplesComponent", component: LocationExamplesComponent, data: { title: "Location module" } }),
-  routeEntry({ path: "locationModuleExampleComponent", component: LocationModuleExampleComponent, data: { title: "Location module example" } }),
-  routeEntry({ path: "fpsExamplesComponent", component: FPSExamplesComponent, data: { title: "FPS Meter" } }),
-  routeEntry({ path: "fpsMeterModuleExampleComponent", component: FPSMeterModuleExampleComponent, data: { title: "FPS Meter example" } }),
-  routeEntry({ path: "httpModuleComponent", component: HTTPModuleComponent, data: { title: "HTTP Module" } }),
-  routeEntry({ path: "httpModulePostExampleComponent", component: HTTPModulePostExampleComponent, data: { title: "HTTP Post JSON example" } }),
-  routeEntry({ path: "httpModuleGetExampleComponent", component: HTTPModuleGetExampleComponent, data: { title: "HTTP Get example" } }),
-  routeEntry({ path: "modalPageExamplesComponent", component: ModalPageExamplesComponent, data: { title: "Modal page" } }),
-  routeEntry({ path: "sampleModalPageModuleExampleComponent", component: SampleModalPageModuleExampleComponent, data: { title: "Modal page example" } }),
-
+    routeEntry({ path: "extendedListViewExamplesComponent", component: ExtendedListViewExamplesComponent, data: { title: "ListView (extended examples)" } }),
+    routeEntry({ path: "singleLineListViewExampleComponent", component: SingleLineListViewExampleComponent, data: { title: "Grouped Single Line Items" } }),
 ];
 
 function routeEntry(data) {
