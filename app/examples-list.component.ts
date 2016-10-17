@@ -32,7 +32,7 @@ var mainMenuLinks = [
     new Link("Formatted String", "/formattedStringExamplesComponent"),
     new Link("Trace Module", "/traceExampleComponent"),
     new Link("Timer Module", "/timerExamplesComponent"),
-    new Link("Platform Module ", "/platformExamplesComponent"),
+    new Link("Platform Module", "/platformExamplesComponent"),
     new Link("Location Module", "/locationExamplesComponent"),
     new Link("FPS Meter", "/fpsExamplesComponent"),
     new Link("HTTP Module", "/httpModuleComponent"),
