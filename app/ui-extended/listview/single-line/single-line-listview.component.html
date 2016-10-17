@@ -1,0 +1,36 @@
+<TabView #tabView class="tab-view" exampleTitle toggleNavButton>
+    <GridLayout *tabItem="{title: 'Grouping'}">
+        <ListView [items]="continents" class="list-group">
+            <template let-item="item">
+                <StackLayout>
+                    <Label [text]="item.name" class="h2 text-center m-t-10"></Label>
+                    <GridLayout *ngFor="let element of item.list" class="list-group-item" rows="auto">
+                        <Label row="0" [text]="element.name"></Label>
+                    </GridLayout>
+                </StackLayout>
+            </template>
+        </ListView>
+    </GridLayout>
+    <GridLayout *tabItem="{title: 'Dividers'}">
+        <ListView [items]="continents" class="list-group">
+            <template let-item="item">
+                <StackLayout>
+                    <Label [text]="item.name" class="h2 text-center m-t-10"></Label>
+                    <GridLayout *ngFor="let element of item.list" class="list-group-item" rows="auto, auto">
+                        <Label row="0" [text]="element.name"></Label>
+                        <StackLayout row="1" class="hr-light"></StackLayout>
+                    </GridLayout>
+                </StackLayout>
+            </template>
+        </ListView>
+    </GridLayout>
+    <GridLayout *tabItem="{title: 'Thumbnails'}">
+        <ListView [items]="continents" class="list-group">
+            <template let-item="item">
+                <grouped-listview-single-thumbs-component [data]="item" ></grouped-listview-single-thumbs-component>
+            </template>
+        </ListView>
+    </GridLayout>
+</TabView>
+
+
