@@ -1,13 +1,15 @@
 <StackLayout exampleTitle toggleNavButton>
-    <GridLayout rows="auto, auto, auto, auto" columns="*, *, *, *">
-        <Label row="0" col="0" colSpan="4" [text]="'Created folder: ' + myFolder.path" textWrap="true"></Label>
-        <Label row="1" col="0" colSpan="4" [text]="'Created file: ' + file.path" textWrap="true"></Label>
+    <GridLayout rows="auto, auto, auto, auto" columns="*">
+        <Label class="h3 p-15" row="0" [text]="'Created folder: ' + myFolder.path" textWrap="true"></Label>
+        <Label class="h3 p-15" row="1" [text]="'Created file: ' + file.path" textWrap="true"></Label>
 
-        <Button row="2" col="0" text="Delete File" (tap)="onDeleteFile()" textWrap="true"></Button>
-        <Button row="2" col="1" text="Delete Folder" (tap)="onDeleteFolder()" textWrap="true"></Button>
-        <Button row="2" col="2" text="Clear Folder" (tap)="onClearFolder()" textWrap="true"></Button>
-        <Button row="2" col="3" text="Reset" (tap)="onReset()" textWrap="true"></Button>
+        <StackLayout row="2">
+            <Button class="btn btn-primary" text="Delete File" (tap)="onDeleteFile()" textWrap="true"></Button>
+            <Button class="btn btn-primary" text="Delete Folder" (tap)="onDeleteFolder()" textWrap="true"></Button>
+            <Button class="btn btn-primary" text="Clear Folder" (tap)="onClearFolder()" textWrap="true"></Button>
+            <Button class="btn btn-primary" text="Reset" (tap)="onReset()" textWrap="true"></Button>
+        </StackLayout>
         
-        <Label row="3" col="0" colSpan="4" [text]="resultMessage" class="result" textWrap="true"></Label> 
+        <Label class="h3 p-15 m-15 font-weight-bold" row="3" [text]="resultMessage" textWrap="true"></Label> 
     </GridLayout>
 </StackLayout>

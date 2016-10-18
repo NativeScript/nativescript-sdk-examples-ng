@@ -3,7 +3,6 @@ import { Component } from "@angular/core";
 import * as fs from "file-system";
 // << fs-delete-import-code
 @Component({
-    styleUrls:["file-system/delete/delete.component.css"],
     selector: 'delete-file-component',
     templateUrl: 'file-system/delete/delete.component.html'
 })

@@ -53,6 +53,10 @@ export class SingleLineListViewExampleComponent implements OnInit {
     public asia: Array<Country> = [];
     public australia: Array<Country> = [];
 
+    onCell() {
+        console.log("onCell()");
+    }
+    
     ngOnInit() {
 
         for (var i = 0; i < mockedDataArray.length; i++) {

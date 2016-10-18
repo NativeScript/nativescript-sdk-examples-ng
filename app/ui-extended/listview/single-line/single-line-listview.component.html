@@ -17,8 +17,8 @@
                 <StackLayout>
                     <Label [text]="item.name" class="h2 text-center m-t-10"></Label>
                     <GridLayout *ngFor="let element of item.list" class="list-group-item" rows="auto, auto">
-                        <Label row="0" [text]="element.name"></Label>
-                        <StackLayout row="1" class="hr-light"></StackLayout>
+                        <Label row="0" [text]="element.name" tap="onCell()"></Label>
+                        <StackLayout row="1" class="hr-light"> </StackLayout>
                     </GridLayout>
                 </StackLayout>
             </template>
