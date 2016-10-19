@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Basic Location example", "/basicLocationExampleComponent"),
-    new Link("Monitoring Location example", "/locationMonitoringExampleComponent")
+    new Link("Basic location", "/basicLocationExampleComponent"),
+    new Link("Monitoring location", "/locationMonitoringExampleComponent")
 ];
 
 @Component({

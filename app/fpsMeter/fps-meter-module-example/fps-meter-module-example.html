@@ -1,13 +1,11 @@
 <StackLayout  exampleTitle toggleNavButton>
 <StackLayout class="text-center">
-
-    <Label class="text-center h2 p-15" text="FPS Meter" (tap)="fpsmeter()"></Label>
-    <GridLayout class="m-x-auto" rows="auto auto" columns="* *">
-               <Label class="h3 p-15" row="0" col="0" text="FPS" textWrap="true"></Label>
-               <TextField class="h3 p-15" isEnabled="false" row="0" col="1" hint="longitude" [text]="fps"></TextField>
-               <Label class="h3 p-15" row="1" col="0"  text="minFPS" textWrap="true"></Label>
-               <TextField class="h3 p-15" isEnabled="false" row="1" col="1" hint="latitude" [text]="minfps"></TextField>
+    <GridLayout class="m-x-auto " rows="auto auto" columns="* *">
+               <Label class="h2 p-15" row="0" col="0" text="FPS" textWrap="true"></Label>
+               <Label class="h3 p-15" isEnabled="false" row="0" col="1" [text]="fps"></Label>
+               <Label class="h2 p-15" row="1" col="0"  text="minFPS" textWrap="true"></Label>
+               <Label class="h3 p-15" isEnabled="false" row="1" col="1" [text]="minfps"></Label>
     </GridLayout>
-   <Label class="text-center body h3 p-15" [text]="fpslabeltitle" (tap)="fpsmeter()"></Label>
+   <Button class="btn btn-primary" [text]="fpslabeltitle" (tap)="fpsmeter()"></Button>
 </StackLayout>
 </StackLayout>

@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("FPS Meter example", "/fpsMeterModuleExampleComponent")
+    new Link("FPS meter", "/fpsMeterModuleExampleComponent")
 ];
 
 @Component({
