@@ -13,6 +13,7 @@ export class SetIntervalTimerModuleExampleComponent {
     public color = ["green", "yellow", "red"];
     public id;
     public status = true;
+    public buttonText = "Disable color change";
 
     constructor(){
         this.buttoncolor = "blue";
@@ -27,6 +28,7 @@ export class SetIntervalTimerModuleExampleComponent {
         if(this.status){
             clearInterval(this.id);
             this.status=false;
+            this.buttonText = "Enable color change";
         }
         else{
             var that =this;
@@ -35,6 +37,7 @@ export class SetIntervalTimerModuleExampleComponent {
                 that.buttoncolor = that.color[randNumber];
             }, 1000)
             this.status=true;
+            this.buttonText = "Disable color change";
         }
     }
 

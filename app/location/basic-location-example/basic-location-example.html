@@ -1,0 +1,28 @@
+<StackLayout  exampleTitle toggleNavButton>
+    <ScrollView orientation="vertical">
+        <StackLayout orientation="vertical">
+           <Button class="btn btn-primary" text="Check if location services are availabe" (tap)="isLocationEnabled()"></Button>
+           <StackLayout>
+               <GridLayout  rows="auto auto auto auto auto auto auto auto auto" class="m-y-5" columns="* *">
+                    <Label class="h3 p-15" row="0" col="0" colSpan="2" text="Start location" textWrap="true"></Label>
+                    <Label class="h3 p-15" row="1" col="0" text="Longitude: " textWrap="true" ></Label>
+                    <TextField class="h3 p-15" row="1" col="1"  hint="longitude" [(ngModel)]="startpoint_longitude"></TextField>
+                    <Label class="h3 p-15" row="2" col="0"  text="Latitude: " textWrap="true"></Label>
+                    <TextField class="h3 p-15" row="2" col="1"  hint="latitude" [(ngModel)]="startpoint_latitude"></TextField>
+
+                    <Button class="btn btn-outline" row="3" col="0" colSpan="2" text="Get current location" (tap)="getLocationOnce()"></Button>
+
+                    <Label class="h3 p-15" row="4" col="0" colSpan="2" text="End location"  textWrap="true"></Label>
+                    <Label class="h3 p-15" row="5" col="0" text="Longitude" textWrap="true" ></Label>
+                    <TextField class="h3 p-15" row="5" col="1" hint="longitude" [(ngModel)]="endpoint_longitude"></TextField>
+                    <Label class="h3 p-15" row="6" col="0" text="Latitude" textWrap="true" ></Label>
+                    <TextField class="h3 p-15" row="6" col="1" hint="latitude" [(ngModel)]="endpoint_latitude"></TextField>
+    
+                    <Button class="btn btn-outline" row="7" col="0" colSpan="2"  text="Get distance between two locations" (tap)="getDistance()"></Button>
+
+                    <Label class="h3 input input-border p-15 text-center" row="8" col="0" colSpan="2" [text]="'Distance: '+distanceResult+' km'" textWrap="true"></Label>
+                </GridLayout>
+           </StackLayout> 
+        </StackLayout>
+    </ScrollView>
+</StackLayout>

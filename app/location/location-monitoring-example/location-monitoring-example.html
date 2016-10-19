@@ -1,0 +1,44 @@
+<StackLayout  exampleTitle toggleNavButton>
+    <ScrollView orientation="vertical">
+        <StackLayout orientation="vertical" >
+           <Label  class="text-center text-primary h3 p-5" text="Location monitoring" textWrap="true"></Label>
+           <Button class="btn btn-primary" [text]="buttonText" (tap)="monitor()"></Button>
+           <StackLayout class="form">
+               
+            <StackLayout class="input-field">
+               <Label class="label" text="Longitude" textWrap="true" class="infoLabel"></Label>
+               <TextField class="im-t-5 p-t-5 p-b-5" editable="false" hint="longitude" [text]="monitor_longitude"></TextField>
+               <StackLayout class="hr-dark"></StackLayout>
+            </StackLayout>
+            <StackLayout class="input-field">
+               <Label class="label" text="Latitude" textWrap="true" class="infoLabel"></Label>
+               <TextField class="m-t-5 p-t-5 p-b-5" editable="false" hint="latitude" [text]="monitor_latitude"></TextField>
+               <StackLayout class="hr-dark"></StackLayout>
+            </StackLayout>
+            <StackLayout class="input-field">
+               <Label class="label" text="Altitude" textWrap="true" class="infoLabel"></Label>
+               <TextField class="m-t-5 p-t-5 p-b-5" editable="false" hint="latitude" [text]="monitor_altitude"></TextField>
+               <StackLayout class="hr-dark"></StackLayout>
+            </StackLayout>
+            <StackLayout class="input-field">
+               <Label class="label" text="Direction" textWrap="true" class="infoLabel"></Label>
+               <TextField class="m-t-5 p-t-5 p-b-5" editable="false" hint="latitude" [text]="monitor_direction + '%'"></TextField>
+               <StackLayout class="hr-dark"></StackLayout>
+            </StackLayout>
+            <StackLayout class="input-field">
+               <Label class="label" text="Speed" textWrap="true" class="infoLabel"></Label>
+               <TextField  class="m-t-5 p-t-5 p-b-5" editable="false" hint="latitude" [text]="monitor_speed+'m/s'"></TextField>
+               <StackLayout class="hr-dark"></StackLayout>
+            </StackLayout>
+               
+               
+               
+               
+               
+               
+           </StackLayout>
+           
+        </StackLayout>
+        
+    </ScrollView>
+</StackLayout>

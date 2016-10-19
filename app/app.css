@@ -1,6 +1,6 @@
 ﻿@import '~/css/core.light.css'; 
 
-@import url("~/platform.css");
+/*@import url("~/platform.css");
 
 .title {
     font-size: 16;
@@ -61,4 +61,4 @@ SearchBar {
 .text-field-font-monospace{
    font-family: 'RobotoMono-Medium', monospace;
    font-size: 20;
-}
+}*/

@@ -37,6 +37,8 @@ export class PlatformModuleExampleComponent {
     public deviceInformation:DeviceInfo;
     public isItemVisibleScreenInfo:boolean = false;
     public screenInformation:ScreenInfo;
+    public deviceInfoButton:string ="Show device info";
+    public screenInfoButton:string ="Show/Hide screen info";
 
     constructor(){
         this.deviceInformation = new DeviceInfo(
@@ -70,18 +72,22 @@ export class PlatformModuleExampleComponent {
     public deviceInfo(){
         if(this.isItemVisible){
             this.isItemVisible=false;
+            this.deviceInfoButton ="Show device info";
         }
         else{
             this.isItemVisible=true;
+            this.deviceInfoButton ="Hide device info";
         }
     }
 
     public screenInfo(){
         if(this.isItemVisibleScreenInfo){
             this.isItemVisibleScreenInfo=false;
+            this.screenInfoButton ="Show screen info";
         }
         else{
             this.isItemVisibleScreenInfo=true;
+            this.screenInfoButton ="Hide screen info";
         }
     }
 }

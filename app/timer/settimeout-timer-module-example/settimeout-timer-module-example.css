@@ -1,4 +1,4 @@
-.stacklayoutStyle{
+/*.stacklayoutStyle{
     width: 100;
     height: 100;
     margin: 15;
@@ -12,10 +12,21 @@
     border-color: lightgray;
     border-width: 1;
     border-radius: 2;
-}
-.layoutStyle{
+}*/
+.layout{
     text-align: center;
 }
-.layoutStyle gridlayout{
+/*.layoutStyle gridlayout{
     horizontal-align:center;
+}
+GridLayout{
+    width:100%;
+}*/
+
+Button{
+
+    color:white;
+}
+TextField{
+    font-size: 24px;
 }

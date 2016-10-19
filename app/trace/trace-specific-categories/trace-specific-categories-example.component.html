@@ -1,9 +1,9 @@
 <StackLayout  exampleTitle toggleNavButton>
     <StackLayout class="example-container">
-        <Label text="Tracing specific categories of events example." textWrap="true"></Label>
-        <Button text="Enable tracing" (tap)="enableTracing()"></Button>
-        <Button text="Disenable tracing" (tap)="disableTracing()"></Button>
-        <Button text="Check is Debug category set" (tap)="checkIsDebugCategorySet()"></Button>
-        <Button text="Check is VisualTreeEvents category set" (tap)="checkIsDebugVisualTreeEventsSet()"></Button>
+        <Label class="h3 m-15 text-center" text="Tracing specific categories of events example." textWrap="true"></Label>
+        <Button class="btn btn-primary btn-rounded-sm" text="Enable tracing" (tap)="enableTracing()"></Button>
+        <Button class="btn btn-primary btn-rounded-sm" text="Disable tracing" (tap)="disableTracing()"></Button>
+        <Button class="btn btn-primary btn-rounded-sm" text="isCategorySet (Debug category)" (tap)="checkIsDebugCategorySet()"></Button>
+        <Button class="btn btn-primary btn-rounded-sm" text="isCategorySet (VisualTreeEvents category)" (tap)="checkIsDebugVisualTreeEventsSet()"></Button>
     </StackLayout>
 </StackLayout>
