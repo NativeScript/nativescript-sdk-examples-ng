@@ -1,21 +1,20 @@
 <StackLayout  exampleTitle toggleNavButton>
-    <StackLayout class="example-container">
-        <StackLayout class="label-container">
-            <Label text="Writing a Custom TraceWriter." textWrap="true"></Label>
-        </StackLayout>
+    <StackLayout>
+        <Label class="h3 m-15 text-center" text="Writing a Custom TraceWriter." textWrap="true"></Label>
+
         <GridLayout class="border-gridLayout">
             <ListView [items]="customwriter.array" class="list-group">
                 <template let-item="item" let-odd="odd" let-even="even">
-                  <GridLayout rows="auto auto auto auto" columns="auto *">
-                      <Label row="0" col="0" text="Message type: "></Label>
-                      <Label row="1" col="0" text="Date: "></Label>
-                      <Label row="2" col="0" text="Category: "></Label>
-                      <Label row="3" col="0" text="Message: "></Label>
+                  <GridLayout rows="auto auto auto auto" columns="auto *" class="list-group-item">
+                      <Label class="list-group-item-heading" row="0" col="0" text="Message type: "></Label>
+                      <Label class="list-group-item-text" row="1" col="0" text="Date: "></Label>
+                      <Label class="list-group-item-text" row="2" col="0" text="Category: "></Label>
+                      <Label class="list-group-item-text" row="3" col="0" text="Message: "></Label>
 
-                      <Label row="0" col="1" [text]="item.messageType"></Label>
-                      <Label row="1" col="1" [text]="item.date"></Label>
-                      <Label row="2" col="1" [text]="item.category"></Label>
-                      <Label row="3" col="1" [text]="item.message"></Label>
+                      <Label class="list-group-item-heading" row="0" col="1" [text]="item.messageType"></Label>
+                      <Label class="list-group-item-text" row="1" col="1" [text]="item.date"></Label>
+                      <Label class="list-group-item-text" row="2" col="1" [text]="item.category"></Label>
+                      <Label class="list-group-item-text" row="3" col="1" [text]="item.message"></Label>
                     
                   </GridLayout>
                 </template>

@@ -2,13 +2,3 @@
     border-color: lightgray; 
     border-width: 0.5;
 }
-.label-container{
-    text-align: center;
-}
-
-.label-container Label{
-    font-size: 24;
-    border-color: lightgray;
-    border-width: 1;
-    border-radius: 2;
-}

@@ -14,6 +14,7 @@ export class FPSMeterModuleExampleComponent {
     public callbackId;
     public fps:string="0";
     public minfps:string="0";
+    public fpslabeltitle="Start FPS Meter";
 
     constructor(private zone:NgZone){
 
@@ -26,6 +27,7 @@ export class FPSMeterModuleExampleComponent {
             stop();
             // << stop-fps-meter
             this.status=false;
+            this.fpslabeltitle="Start FPS Meter";
         }
         else{
             // >> start-fps-meter
@@ -39,6 +41,7 @@ export class FPSMeterModuleExampleComponent {
             start();
             // << start-fps-meter
             this.status=true;
+            this.fpslabeltitle="Stop FPS Meter";
         }
     }
 }

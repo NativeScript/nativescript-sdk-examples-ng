@@ -1,12 +1,11 @@
 <StackLayout  exampleTitle toggleNavButton>
-<StackLayout class="layoutStyle">
-    <GridLayout rows=" 50 auto" columns="auto 10 auto">
-               <Label row="0" col="0" text="FPS" textWrap="true"></Label>
-               <Label row="0" col="2"  text="minFPS" textWrap="true"></Label>
-               <TextField isEnabled="false" row="1" col="0" hint="longitude" [text]="fps"></TextField>
-               <Label row="1" col="1" text="-" textWrap="true"></Label>
-               <TextField isEnabled="false" row="1" col="2" hint="latitude" [text]="minfps"></TextField>
-           </GridLayout>
-   <Button text="Start/Stop FPS Meter" (tap)="fpsmeter()"></Button>
+<StackLayout class="text-center">
+    <GridLayout class="m-x-auto " rows="auto auto" columns="* *">
+               <Label class="h2 p-15" row="0" col="0" text="FPS" textWrap="true"></Label>
+               <Label class="h3 p-15" isEnabled="false" row="0" col="1" [text]="fps"></Label>
+               <Label class="h2 p-15" row="1" col="0"  text="minFPS" textWrap="true"></Label>
+               <Label class="h3 p-15" isEnabled="false" row="1" col="1" [text]="minfps"></Label>
+    </GridLayout>
+   <Button class="btn btn-primary" [text]="fpslabeltitle" (tap)="fpsmeter()"></Button>
 </StackLayout>
 </StackLayout>

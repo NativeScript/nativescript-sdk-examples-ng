@@ -12,6 +12,3 @@ Get distance between two locations
 
 Get current location
 <snippet id="get-current-location"/>
-
-Receive continuous location updates
-<snippet id="location-monitoring"/>

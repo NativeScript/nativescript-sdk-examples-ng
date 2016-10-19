@@ -1,0 +1,38 @@
+<StackLayout  exampleTitle toggleNavButton>
+    <ScrollView orientation="vertical">
+        <StackLayout orientation="vertical" >
+           <Button class="btn btn-primary" [text]="buttonText" (tap)="monitor()"></Button>
+           <StackLayout class="form">
+               
+            <StackLayout class="input-field">
+               <Label text="Longitude" textWrap="true" class="infoLabel h2"></Label>
+               <Label class="m-t-5 p-t-5 p-b-5" editable="false"  [text]="monitor_longitude"></Label>
+            </StackLayout>
+            <StackLayout class="input-field">
+               <Label text="Latitude" textWrap="true" class="infoLabel h2"></Label>
+               <Label class="m-t-5 p-t-5 p-b-5" editable="false"  [text]="monitor_latitude"></Label>
+            </StackLayout>
+            <StackLayout class="input-field">
+               <Label text="Altitude" textWrap="true" class="infoLabel h2"></Label>
+               <Label class="m-t-5 p-t-5 p-b-5" editable="false"  [text]="monitor_altitude"></Label>
+            </StackLayout>
+            <StackLayout class="input-field">
+               <Label text="Direction" textWrap="true" class="infoLabel h2"></Label>
+               <Label class="m-t-5 p-t-5 p-b-5" editable="false"  [text]="monitor_direction + '%'"></Label>
+            </StackLayout>
+            <StackLayout class="input-field">
+               <Label text="Speed" textWrap="true" class="infoLabel h2"></Label>
+               <Label  class="m-t-5 p-t-5 p-b-5" editable="false"  [text]="monitor_speed+'m/s'"></Label>
+            </StackLayout>
+               
+               
+               
+               
+               
+               
+           </StackLayout>
+           
+        </StackLayout>
+        
+    </ScrollView>
+</StackLayout>
