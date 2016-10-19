@@ -1,33 +1,32 @@
 <TabView #tabView class="tab-view" exampleTitle toggleNavButton>
+
     <GridLayout *tabItem="{title: 'Grouping'}">
-        <ListView [items]="continents" class="list-group">
-            <template let-item="item">
-                <StackLayout>
-                    <Label [text]="item.name" class="h2 text-center m-t-10"></Label>
-                    <GridLayout *ngFor="let element of item.list" class="list-group-item" rows="auto">
-                        <Label row="0" [text]="element.name"></Label>
-                    </GridLayout>
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTap($event)" separatorColor="white">
+            <template let-country="item">
+                <StackLayout class="list-group-item">
+                    <Label [text]="country.name"></Label>
                 </StackLayout>
             </template>
         </ListView>
     </GridLayout>
+
     <GridLayout *tabItem="{title: 'Dividers'}">
-        <ListView [items]="continents" class="list-group">
-            <template let-item="item">
-                <StackLayout>
-                    <Label [text]="item.name" class="h2 text-center m-t-10"></Label>
-                    <GridLayout *ngFor="let element of item.list" class="list-group-item" rows="auto, auto">
-                        <Label row="0" [text]="element.name" tap="onCell()"></Label>
-                        <StackLayout row="1" class="hr-light"> </StackLayout>
-                    </GridLayout>
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTap($event)" separatorColor="red">
+            <template let-country="item">
+                <StackLayout class="list-group-item">
+                    <Label [text]="country.name"></Label>
                 </StackLayout>
             </template>
         </ListView>
     </GridLayout>
+
     <GridLayout *tabItem="{title: 'Thumbnails'}">
-        <ListView [items]="continents" class="list-group">
-            <template let-item="item">
-                <grouped-listview-single-thumbs-component [data]="item" ></grouped-listview-single-thumbs-component>
+        <ListView class="list-group" [items]="countries">
+            <template let-country="item">
+                <GridLayout class="list-group-item" rows="*" columns="auto, *">
+                    <Image row="0" col="0" [src]="country.imageSrc" class="thumb img-circle"></Image>
+                    <Label row="0" col="1" [text]="country.name"></Label>
+                </GridLayout>
             </template>
         </ListView>
     </GridLayout>

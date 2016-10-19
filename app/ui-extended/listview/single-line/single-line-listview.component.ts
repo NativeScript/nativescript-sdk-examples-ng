@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input }  from "@angular/core";
+import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
 
 class Country {
     constructor(public name: string, public imageSrc: string, public continent: string) { }
@@ -26,61 +26,16 @@ var mockedDataArray = [
 ]
 
 @Component({
-    selector: 'grouped-listview-single-thumbs-component',
-    template: `
-        <Label [text]="data.name" class="h2 text-center m-t-10" verticalAlignment="center"></Label>
-        <GridLayout *ngFor="let element of data.list" class="list-group-item" rows="*" columns="auto, *">
-            <Image row="0" col="0" [src]="element.imageSrc" class="thumb img-circle"></Image>
-            <Label row="0" col="1" [text]="element.name" verticalAlignment="center"></Label>
-        </GridLayout>
-    `
-})
-export class GroupedListviewSingleThumbdComponent {
-    @Input() data: any;
-}
-
-@Component({
     selector: "single-line-listview",
     templateUrl: "ui-extended/listview/single-line/single-line-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SingleLineListViewExampleComponent implements OnInit {
     public countries: Array<Country> = [];
-    public continents: Array<any>;
 
-    public europe: Array<Country> = [];
-    public northAmerica: Array<Country> = [];
-    public asia: Array<Country> = [];
-    public australia: Array<Country> = [];
-
-    onCell() {
-        console.log("onCell()");
-    }
-    
     ngOnInit() {
-
         for (var i = 0; i < mockedDataArray.length; i++) {
-            switch (mockedDataArray[i]["continent"].toLowerCase()) {
-                case "asia":
-                    this.asia.push(mockedDataArray[i]);
-                    break;
-                case "europe":
-                    this.europe.push(mockedDataArray[i]);
-                    break;
-                case "north america":
-                    this.northAmerica.push(mockedDataArray[i]);
-                    break;
-                case "australia":
-                    this.australia.push(mockedDataArray[i]);
-                    break;
-                default:
-                    break;
-            }
+            this.countries.push(mockedDataArray[i]);
         }
-
-        this.continents = [ { "list": this.asia, "name": "Asia" }, 
-                            { "list": this.europe, "name": "Europe"  }, 
-                            { "list": this.northAmerica, "name": "North America"  }, 
-                            { "list": this.australia, "name": "Australia"  }];
     }
 }
