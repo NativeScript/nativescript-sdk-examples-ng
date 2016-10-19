@@ -14,7 +14,7 @@ export class ButtonTextComponent implements OnInit {
     ngOnInit() {
         let button = this.page.getViewById<Button>("button");
         // >> button-text-code
-        button.text = "I am a button";
+        button.text = "Primary button";
         // << button-text-code
     }
 }
