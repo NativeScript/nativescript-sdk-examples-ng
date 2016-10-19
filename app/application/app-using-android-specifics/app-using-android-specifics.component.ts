@@ -3,7 +3,6 @@ import { Component } from "@angular/core";
 import * as application from "application";
 
 @Component({
-    styleUrls: ["application/app-using-android-specifics/app-using-android-specifics.component.css"],
     selector: 'app-android-specifics-component',
     templateUrl: 'application/app-using-android-specifics/app-using-android-specifics.component.html'
 })

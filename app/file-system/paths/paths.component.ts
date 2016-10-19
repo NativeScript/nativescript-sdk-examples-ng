@@ -3,7 +3,6 @@ import { Component, OnInit } from "@angular/core";
 import * as fs from "file-system";
 // << fs-paths-import-code
 @Component({
-    styleUrls: ["file-system/paths/paths.component.css"],
     selector: 'paths-file-component',
     templateUrl: 'file-system/paths/paths.component.html'
 })

@@ -4,7 +4,6 @@ import { Component } from "@angular/core";
 import * as application from "application";
 
 @Component({
-    styleUrls:["application/app-checking-target/app-checking-target.component.css"],
     selector: 'app-check-target-component',
     templateUrl: 'application/app-checking-target/app-checking-target.component.html'
 })

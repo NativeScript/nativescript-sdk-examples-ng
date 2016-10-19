@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    styleUrls:["fetch/fetch-get/fetch-get.component.css"],
     selector: 'fetch-get-component',
     templateUrl: 'fetch/fetch-get/fetch-get.component.html'
 })

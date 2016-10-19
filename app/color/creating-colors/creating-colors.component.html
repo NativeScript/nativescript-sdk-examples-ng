@@ -2,25 +2,24 @@
 
     <ScrollView>
         <GridLayout rows="auto, auto, auto, 250, auto" columns="*">
-            <Label row="0" text="Create a Color from hex value" textWrap="true"></Label>
-            <TextField row="1" hint="Enter hex color e.g. F3A or DD00AA" #hexField
-                [text]="'#' + (redValue | hex) + (greenValue | hex) + (blueValue | hex)"></TextField> 
-            <Button row="2" text="Change Color" (tap)="changeColor(hexField.text)"></Button>
 
-            <GridLayout row="3" [backgroundColor]="'#' + (redValue | hex) + (greenValue | hex) + (blueValue | hex)" > 
+            <Label class="p-15 text-left" row="0" text="Create a Color from hex value" textWrap="true"></Label>
+            <TextField class="p-15 text-left" row="1" hint="Enter hex color e.g. F3A or DD00AA" #hexField [text]="'#' + (redValue | hex) + (greenValue | hex) + (blueValue | hex)"></TextField> 
+            <Button class="btn btn-primary" row="2" text="Change Color" (tap)="changeColor(hexField.text)"></Button>
+
+            <GridLayout class="p-15 m-15" row="3" [backgroundColor]="'#' + (redValue | hex) + (greenValue | hex) + (blueValue | hex)" > 
             </GridLayout>
 
             <GridLayout row="4" rows="auto, auto, auto" columns="auto, *">
-                <Label row="0" col="0" text="Red  " textWrap="true"></Label>
-                <Slider row="0" col="1" minValue="0" maxValue="255" [(ngModel)]="redValue"></Slider>
-                <Label row="1" col="0" text="Green" textWrap="true"></Label>
-                <Slider row="1" col="1" minValue="0" maxValue="255" [(ngModel)]="greenValue"></Slider>
-                <Label row="2" col="0" text="Blue " textWrap="true"></Label>
-                <Slider row="2" col="1" minValue="0" maxValue="255" [(ngModel)]="blueValue"></Slider> 
+                <Label class="p-15 text-left" row="0" col="0" text="Red  " textWrap="true"></Label>
+                <Slider class="p-15" row="0" col="1" minValue="0" maxValue="255" [(ngModel)]="redValue"></Slider>
+                <Label class="p-15 text-left" row="1" col="0" text="Green" textWrap="true"></Label>
+                <Slider class="p-15" row="1" col="1" minValue="0" maxValue="255" [(ngModel)]="greenValue"></Slider>
+                <Label class="p-15 text-left" row="2" col="0" text="Blue " textWrap="true"></Label>
+                <Slider class="p-15" row="2" col="1" minValue="0" maxValue="255" [(ngModel)]="blueValue"></Slider> 
             </GridLayout>
         
         </GridLayout>
-
     </ScrollView>
 
 </StackLayout>

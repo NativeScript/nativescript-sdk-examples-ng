@@ -3,7 +3,6 @@ import { Component } from "@angular/core";
 import * as fs from "file-system";
 // << fs-create-import-code
 @Component({
-    styleUrls:["file-system/create/create.component.css"],
     selector: 'create-file-component',
     templateUrl: 'file-system/create/create.component.html'
 })

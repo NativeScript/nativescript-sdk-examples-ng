@@ -3,7 +3,6 @@ import { Component, OnInit } from "@angular/core";
 import * as fs from "file-system";
 // << fs-update-import-code
 @Component({
-    styleUrls:["file-system/update/update.component.css"],
     selector: 'update-file-component',
     templateUrl: 'file-system/update/update.component.html'
 })

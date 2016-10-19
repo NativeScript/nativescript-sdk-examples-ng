@@ -4,7 +4,6 @@ import * as imageSource from "image-source";
 import * as fs from "file-system";
 // << fs-read-import-code
 @Component({
-    styleUrls: ["file-system/read/read.component.css"],
     selector: 'read-file-component',
     templateUrl: 'file-system/read/read.component.html'
 })
