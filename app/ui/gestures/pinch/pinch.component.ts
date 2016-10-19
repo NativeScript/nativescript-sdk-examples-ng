@@ -7,7 +7,6 @@ let startScale = 1;
 
 @Component({
     selector: "pinch-gesture",
-    styleUrls:["ui/gestures/pinch/pinch.component.css"],
     templateUrl: "ui/gestures/pinch/pinch.component.html"
 })
 

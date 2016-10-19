@@ -6,7 +6,6 @@ import { GestureEventData } from "ui/gestures";
 
 @Component({
     selector: "long-press-gesture",
-    styleUrls:["ui/gestures/long-press/long-press.component.css"],
     templateUrl: "ui/gestures/long-press/long-press.component.html"
 })
 

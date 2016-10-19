@@ -1,12 +1,10 @@
 <StackLayout exampleTitle toggleNavButton>
-    <StackLayout class="example-container">
-        <Label text="Apply tap gesture inside the box"></Label>
-        <!-- >> tap-html -->
-        <GridLayout (tap)="onTap($event)">
-            <!-- >> (hide) -->
-            <Image src="res://icon" stretch="none"></Image> 
-            <!-- << (hide) -->
-        </GridLayout>
-        <!-- << tap-html -->
-    </StackLayout>
+    <Label class="h3 p-15 text-left" text="Apply tap gesture inside the box"></Label>
+    <!-- >> tap-html -->
+    <GridLayout class="bg-primary p-15 m-15" width="200" height="200" (tap)="onTap($event)">
+        <!-- >> (hide) -->
+        <Image class="img-rounded" src="res://icon" stretch="none"></Image> 
+        <!-- << (hide) -->
+    </GridLayout>
+    <!-- << tap-html -->
 </StackLayout>

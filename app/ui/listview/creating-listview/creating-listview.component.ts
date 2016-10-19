@@ -12,7 +12,6 @@ var europianCountries = ["Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", 
             
 @Component({
     selector: "creating-listview",
-    styleUrls:["ui/listview/creating-listview/creating-listview.component.css"],
     templateUrl: "ui/listview/creating-listview/creating-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

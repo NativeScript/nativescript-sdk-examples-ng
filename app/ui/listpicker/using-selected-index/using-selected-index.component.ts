@@ -6,7 +6,6 @@ var pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 
 @Component({
     selector: "creating-listpicker",
-    styleUrls:["ui/listpicker/using-selected-index/using-selected-index.component.css"],
     templateUrl: "ui/listpicker/using-selected-index/using-selected-index.component.html"
 })
 

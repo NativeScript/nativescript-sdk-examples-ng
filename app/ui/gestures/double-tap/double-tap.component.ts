@@ -6,7 +6,6 @@ import { GridLayout } from "ui/layouts/grid-layout";
 
 @Component({
     selector: "double-tap-gesture",
-    styleUrls:["ui/gestures/double-tap/double-tap.component.css"],
     templateUrl: "ui/gestures/double-tap/double-tap.component.html"
 })
 

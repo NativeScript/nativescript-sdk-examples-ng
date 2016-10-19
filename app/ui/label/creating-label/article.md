@@ -3,6 +3,3 @@ HTML
 
 TypeScript
 <snippet id='creating-label-code'/>
-
-CSS
-<snippet id='creating-label-css'/>

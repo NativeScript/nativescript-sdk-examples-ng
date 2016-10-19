@@ -1,7 +1,6 @@
-<StackLayout exampleTitle toggleNavButton class="example-container">
-    <Button text="Animate" (tap)="animate(target)" margin="20" android:width="306" ios:width="300" ></Button>
-    
-    <AbsoluteLayout width="300" height="300" backgroundColor="LightGray" borderRadius="2" >
-      <Image #target src="res://icon" horizontalAlignment="center" verticalAlignment="center"></Image>
+<StackLayout exampleTitle toggleNavButton class="p-15">
+    <Button class="btn btn-primary" text="Animate" (tap)="animate(target)"></Button>
+    <AbsoluteLayout class="bg-primary m-15" width="300" height="300" borderRadius="20">
+        <Image class="img-rounded" #target src="res://icon"></Image>
     </AbsoluteLayout>
 </StackLayout>

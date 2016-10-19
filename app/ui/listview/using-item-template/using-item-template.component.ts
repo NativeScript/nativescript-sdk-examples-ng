@@ -3,11 +3,10 @@ import { Component, ChangeDetectionStrategy, Input }  from "@angular/core";
 
 @Component({
     selector: 'item-component',
-    styleUrls: ["ui/listview/using-item-template/using-item-template.component.css"],
     template: `
-        <StackLayout *ngFor="let element of data.list" class="model">
-            <Label [text]="element.model" class="name"></Label>
-            <Label [text]="element.speed +'mph'" class="speed"></Label>
+        <StackLayout class="list-group-item" *ngFor="let element of data.list">
+            <Label [text]="element.model"></Label>
+            <Label [text]="element.speed +'mph'"></Label>
         </StackLayout>
     `
 })
@@ -17,7 +16,6 @@ export class ItemComponent {
 
 @Component({
     selector: 'using-item-template',
-    styleUrls: ["ui/listview/using-item-template/using-item-template.component.css"],
     templateUrl: "ui/listview/using-item-template/using-item-template.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
