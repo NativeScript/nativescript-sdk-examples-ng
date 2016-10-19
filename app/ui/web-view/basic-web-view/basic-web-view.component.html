@@ -1,16 +1,15 @@
 <StackLayout  exampleTitle toggleNavButton>
-    <StackLayout class="example-container">
+    <StackLayout>
         <!-- >> web-view-html -->
-        <GridLayout rows="75 *" >
-            <GridLayout row="0" rows="*" columns="50 *" android:class="border-gridLayout" >
-                <Button row="0" col="0" class="icon" text="&#xea44;" (tap)="goBack()"></Button>   
+        <GridLayout rows="75 *">
+            <GridLayout row="0" rows="*" columns="50 *" class="form">
+                <Button class="icon" row="0" col="0" text="&#xea44;" (tap)="goBack()"></Button>   
                 <TextField id="urlField" #tf row="0" col="1" hint="Enter URL" [(ngModel)]="url"  returnKeyType="done"
-                    (returnPress)="submit(tf.text)" autocorrect="false" verticalAlignment="center" marginTop="0"
+                    (returnPress)="submit(tf.text)" autocorrect="false" verticalAlignment="center" class="input input-border m-t-0"
                     autocapitalizationType="none" ></TextField>  
             </GridLayout>
             <WebView row="1" id="wv"  [src]="webviewsrc"></WebView>
         </GridLayout>
-    
         <!-- << web-view-html -->
     </StackLayout>
 </StackLayout>

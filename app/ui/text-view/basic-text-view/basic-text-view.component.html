@@ -1,9 +1,9 @@
 <StackLayout  exampleTitle toggleNavButton>
-    <StackLayout class="example-container">
+    <StackLayout class="form">
         <!-- >> textview-html -->
-        <Button text="Enable/disable editting of TextView" (tap)="disableTextView()"></Button>
-        <Button text="Show text" (tap)="showText()" ></Button>
-        <TextView hint="Enter text" [(ngModel)]="tvtext" [editable]="editState"></TextView>
+        <Button [text]="buttonText" class="btn btn-primary" (tap)="disableTextView()"></Button>
+        <Button text="Show text" class="btn btn-outline" (tap)="showText()" ></Button>
+        <TextView hint="Enter text" class="input input-border" returnKeyType="done" (returnPress)="submit($event)" [(ngModel)]="tvtext" [editable]="editState"></TextView>
         <!-- << textview-html -->
     </StackLayout>
 </StackLayout>
