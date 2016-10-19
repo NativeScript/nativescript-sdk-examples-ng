@@ -1,6 +1,7 @@
 <TabView #tabView class="tab-view" exampleTitle toggleNavButton>
 
     <GridLayout *tabItem="{title: 'Grouping'}">
+        <!-- >> ext-listview-basic-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTap($event)" separatorColor="white">
             <template let-country="item">
                 <StackLayout class="list-group-item">
@@ -8,9 +9,11 @@
                 </StackLayout>
             </template>
         </ListView>
+        <!-- ><< ext-listview-basic-html -->
     </GridLayout>
 
     <GridLayout *tabItem="{title: 'Dividers'}">
+        <!-- >> ext-listview-borders-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTap($event)" separatorColor="red">
             <template let-country="item">
                 <StackLayout class="list-group-item">
@@ -18,17 +21,20 @@
                 </StackLayout>
             </template>
         </ListView>
+        <!-- ><< ext-listview-borders-html -->
     </GridLayout>
 
     <GridLayout *tabItem="{title: 'Thumbnails'}">
+        <!-- >> ext-listview-thumbs-html -->
         <ListView class="list-group" [items]="countries">
             <template let-country="item">
                 <GridLayout class="list-group-item" rows="*" columns="auto, *">
                     <Image row="0" col="0" [src]="country.imageSrc" class="thumb img-circle"></Image>
-                    <Label row="0" col="1" [text]="country.name"></Label>
+                    <Label row="0" col="1" [text]="country.name" class="p-15"></Label>
                 </GridLayout>
             </template>
         </ListView>
+        <!-- ><< ext-listview-thumbs-html -->
     </GridLayout>
 </TabView>
 

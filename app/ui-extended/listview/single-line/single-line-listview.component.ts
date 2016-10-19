@@ -25,6 +25,7 @@ var mockedDataArray = [
     new Country("United States", "~/ui-extended/listview/single-line/images/flags/us.png", "North America"),
 ]
 
+// >> ext-listview-basic-code
 @Component({
     selector: "single-line-listview",
     templateUrl: "ui-extended/listview/single-line/single-line-listview.component.html",
@@ -39,3 +40,4 @@ export class SingleLineListViewExampleComponent implements OnInit {
         }
     }
 }
+// << ext-listview-basic-code
