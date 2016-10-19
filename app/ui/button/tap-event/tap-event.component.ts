@@ -6,10 +6,14 @@ import { EventData } from "data/observable";
     templateUrl: 'ui/button/tap-event/tap-event.component.html'
 })
 
-export class ButtonTapEventComponent {      
+export class ButtonTapEventComponent { 
+
+    public counter: number = 0;
+
     // >> button-tap-event-code
     onTap(args: EventData){
-        alert("Button tapped!");
+        this.counter++;
+        alert("Tapped " + this.counter + " times!");
     }
     // << button-tap-event-code
 }

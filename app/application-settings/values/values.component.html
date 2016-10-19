@@ -1,30 +1,29 @@
 <StackLayout exampleTitle toggleNavButton>
-    <GridLayout rows="50" columns="*, *"  >
-        <Label col="0" text="isTurnedOn value" textWrap="true"></Label>
-        <Switch col="1" [checked]="isTurnedOn" horizontalAlignment="center" class="result"></Switch>
+    <GridLayout rows="auto" columns="*, *"  >
+        <Label class="p-15 text-left" col="0" text="isTurnedOn value" textWrap="true"></Label>
+        <Switch class="switch" col="1" [checked]="isTurnedOn" horizontalAlignment="center" ></Switch>
     </GridLayout>
 
-    <GridLayout rows="50" columns="*, *" >
-        <Label col="0" text="Sample Username: " textWrap="true"></Label>
-        <Label col="1" [text]="username" textWrap="true" class="result"></Label> 
+    <GridLayout rows="auto" columns="*, *" >
+        <Label class="p-15 text-left" col="0" text="Sample Username: " textWrap="true"></Label>
+        <Label class="p-15 text-left" col="1" [text]="username" textWrap="true"></Label> 
     </GridLayout>
 
-    <GridLayout rows="50" columns="*, *" >
-        <Label col="0" text="Sample Location X: " textWrap="true"></Label>
-        <Label col="1" [text]="locationX" textWrap="true" class="result"></Label>
+    <GridLayout rows="auto" columns="*, *" >
+        <Label class="p-15 text-left" col="0" text="Sample Location X: " textWrap="true"></Label>
+        <Label class="p-15 text-left" col="1" [text]="locationX" textWrap="true"></Label>
     </GridLayout>
 
-    <GridLayout rows="50" columns="*, *" >
-        <Label col="0" text="[someKey] value: " textWrap="true"></Label>
-        <Label col="1" [text]="someKey" textWrap="true" class="result"></Label>
+    <GridLayout rows="auto" columns="*, *" >
+        <Label class="p-15 text-left" col="0" text="[someKey] value: " textWrap="true"></Label>
+        <Label class="p-15 text-left" col="1" [text]="someKey" textWrap="true"></Label>
     </GridLayout>
 
-    <GridLayout rows="50" columns="*, *" >
-        <Label col="0" text="[noBoolKey] exists!? " textWrap="true"></Label>
-        <Label col="1" [text]="noBoolKey" textWrap="true" class="result"></Label>
+    <GridLayout rows="auto" columns="*, *" >
+        <Label class="p-15 text-left" col="0" text="[noBoolKey] exists!? " textWrap="true"></Label>
+        <Label class="p-15 text-left" col="1" [text]="noBoolKey" textWrap="true"></Label>
     </GridLayout>
 
-    <Button text="Clear Application Settings" (tap)="onClearSettings()"></Button>
-    <Button text="Set new values in Application Settings" (tap)="onSetSettings()"></Button>
- 
+    <Button class="btn btn-primary" text="Clear Application Settings" (tap)="onClearSettings()"></Button>
+    <Button class="btn btn-primary" text="Set new values in Application Settings" (tap)="onSetSettings()"></Button>
 </StackLayout>

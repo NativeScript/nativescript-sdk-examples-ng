@@ -3,7 +3,6 @@ import { Component } from "@angular/core";
 import * as appSettings from "application-settings";
 // << app-settings-code 
 @Component({
-    styleUrls:["application-settings/values/values.component.css"],
     selector: 'values-component',
     templateUrl: 'application-settings/values/values.component.html'
 })
@@ -21,7 +20,7 @@ export class ValuesExampleComponent {
         // << app-settings-bool-code 
 
         // >> app-settings-string-code 
-        appSettings.setString("username", "Wolfgang Amadeus Mozart");
+        appSettings.setString("username", "Wolfgang");
         this.username = appSettings.getString("username");
         // << app-settings-string-code 
 
@@ -51,7 +50,7 @@ export class ValuesExampleComponent {
         appSettings.setBoolean("isTurnedOn", true);
         this.isTurnedOn = appSettings.getBoolean("isTurnedOn");
 
-        appSettings.setString("username", "Mozart");
+        appSettings.setString("username", "Wolfgang");
         this.username = appSettings.getString("username");
 
         appSettings.setNumber("locationX", 54.321);

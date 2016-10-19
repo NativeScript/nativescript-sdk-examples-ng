@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
 
 @Component({
-    styleUrls:["fetch/fetch-post/fetch-post.component.css"],
     selector: 'fetch-post-component',
     templateUrl: 'fetch/fetch-post/fetch-post.component.html'
 })

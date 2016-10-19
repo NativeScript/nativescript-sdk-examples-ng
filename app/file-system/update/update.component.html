@@ -1,15 +1,17 @@
 <StackLayout exampleTitle toggleNavButton>
     <ScrollView>
         <StackLayout>
+            <Label class="h2 p-15" text="Update files and folders" textWrap="true"></Label>
+            
             <GridLayout rows="*, *" columns="*, *">
-                <TextField row="0" col="0" [(ngModel)]="fileName" hint="Enter new file name"></TextField>
-                <Button row="0" col="1" text="Change file name" (tap)="onFileRename()"></Button>
-                <Label row="1" col="0" colSpan="2" [text]="fileSuccessMessage" textWrap="true" class="result" [visibility]="isItemVisible ? 'visible' : 'collapsed'"></Label>  
+                <TextField class="p-15" row="0" col="0" [(ngModel)]="fileName" hint="Enter new file name"></TextField>
+                <Button class="btn btn-primary" row="0" col="1" text="Change file name" (tap)="onFileRename()"></Button>
+                <Label class="p-15" row="1" col="0" colSpan="2" [text]="fileSuccessMessage" textWrap="true" [visibility]="isItemVisible ? 'visible' : 'collapsed'"></Label>  
             </GridLayout>
             <GridLayout rows="*, *" columns="*, *">
-                <TextField row="0" col="0" [(ngModel)]="folderName" hint="Enter new file name"></TextField>
-                <Button row="0" col="1" text="Change folder name" (tap)="onFolderRename()"></Button>
-                <Label row="1" col="0" colSpan="2" [text]="folderSuccessMessage" textWrap="true" class="result" [visibility]="isFolderItemVisible ? 'visible' : 'collapsed'"></Label>  
+                <TextField class="p-15" row="0" col="0" [(ngModel)]="folderName" hint="Enter new file name"></TextField>
+                <Button class="btn btn-primary" row="0" col="1" text="Change folder name" (tap)="onFolderRename()"></Button>
+                <Label class="p-15" row="1" col="0" colSpan="2" [text]="folderSuccessMessage" textWrap="true" [visibility]="isFolderItemVisible ? 'visible' : 'collapsed'"></Label>  
             </GridLayout>
         </StackLayout>
     </ScrollView> 

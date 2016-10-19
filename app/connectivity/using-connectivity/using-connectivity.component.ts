@@ -3,7 +3,6 @@ import { Component, NgZone, OnInit, OnDestroy } from "@angular/core";
 import * as connectivity from "connectivity";
 // << connectivity-import-code
 @Component({
-    styleUrls:["connectivity/using-connectivity/using-connectivity.component.css"],
     selector: 'using-connectivity-component',
     templateUrl: 'connectivity/using-connectivity/using-connectivity.component.html'
 })
