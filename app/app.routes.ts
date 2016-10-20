@@ -137,13 +137,8 @@ import { SampleModalPageModuleExampleComponent } from "./modal-page/sample-modal
 import { ExtendedListViewExamplesComponent } from "./ui-extended/listview/extended-listview-examples.component";
 import { SingleLineListViewExampleComponent } from "./ui-extended/listview/single-line/single-line-listview.component";
 import { GroupedSingleLineListViewExampleComponent } from "./ui-extended/listview/single-line-grouped/grouped-single-line.component";
-<<<<<<< HEAD
 import { TwoLineListViewExampleComponent } from "./ui-extended/listview/two-line/two-line-listview.component";
 import { MultiLineListViewExampleComponent } from "./ui-extended/listview/multi-line/multi-line.component";
-
-=======
-import { MultiLineListViewExampleComponent } from "./ui-extended/listview/multi-line/multi-line.component";
->>>>>>> d3700b34735b814c99e517a30118f1a557e7bf67
 
 export var routableComponents = [];
 export var examplePipes = [
