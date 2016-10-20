@@ -1,11 +1,11 @@
-ListView: Single line items
-<snippet id='ext-listview-basic-html'/>
+ListView: Two line items
+<snippet id='ext-listview-two-lines-html'/>
 
-ListView: Single line items with separators
-<snippet id='ext-listview-borders-html'/>
+ListView: Two line items with separators
+<snippet id='ext-listview-borders-two-lines-html'/>
 
-ListView: Single line items with thumbnails
-<snippet id='ext-listview-thumbs-html'/>
+ListView: Two line items with thumbnails
+<snippet id='ext-listview-thumbs-two-lines-html'/>
 
 Initializing the data Items
-<snippet id='ext-listview-basic-code'/>
+<snippet id='ext-listview-two-lines-code'/>

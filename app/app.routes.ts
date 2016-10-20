@@ -141,6 +141,8 @@ import { TwoLineListViewExampleComponent } from "./ui-extended/listview/two-line
 import { MultiLineListViewExampleComponent } from "./ui-extended/listview/multi-line/multi-line.component";
 import { MultiLineGroupedListViewExampleComponent } from "./ui-extended/listview/multi-line-grouped/multi-line-grouped.component";
 import { MultiLineBigListViewExampleComponent } from "./ui-extended/listview/multi-line-big/multi-line-big.component";
+import { GroupedTwoLinesListViewExampleComponent } from "./ui-extended/listview/two-lines-grouped/grouped-two-lines.component";
+import { CardsListViewExampleComponent } from "./ui-extended/listview/cards/cards-listview.component";
 
 export var routableComponents = [];
 export var examplePipes = [
@@ -287,10 +289,12 @@ export const routes = [
     routeEntry({ path: "extendedListViewExamplesComponent", component: ExtendedListViewExamplesComponent, data: { title: "ListView (extended examples)" } }),
     routeEntry({ path: "singleLineListViewExampleComponent", component: SingleLineListViewExampleComponent, data: { title: "Single Line Items" } }),
     routeEntry({ path: "groupedSingleLineListViewExampleComponent", component: GroupedSingleLineListViewExampleComponent, data: { title: "Grouped Single Line Items" } }),
-    routeEntry({path:"twoLineListViewExampleComponent", component: TwoLineListViewExampleComponent, data:{ title: "Two Line Items" }}),
+    routeEntry({path: "twoLineListViewExampleComponent", component: TwoLineListViewExampleComponent, data:{ title: "Two Line Items" }}),
     routeEntry({ path: "multiLineListViewExampleComponent", component: MultiLineListViewExampleComponent, data: { title: "Multi Line Items" } }),
     routeEntry({ path: "multiLineGroupedListViewExampleComponent", component: MultiLineGroupedListViewExampleComponent, data: { title: "Grouped Multi Line Items" } }),
     routeEntry({ path: "multiLineBigListViewExampleComponent", component: MultiLineBigListViewExampleComponent, data: { title: "Multi Line Items - Bigger Thumbnails" } }),
+    routeEntry({path: "groupedTwoLinesListViewExampleComponent", component: GroupedTwoLinesListViewExampleComponent, data:{ title: "Two Line Items" }}),
+    routeEntry({path: "cardsListViewExampleComponent", component: CardsListViewExampleComponent, data:{ title: "Cards" }}),
 
 ];
 
