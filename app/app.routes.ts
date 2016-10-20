@@ -285,13 +285,9 @@ export const routes = [
     routeEntry({ path: "extendedListViewExamplesComponent", component: ExtendedListViewExamplesComponent, data: { title: "ListView (extended examples)" } }),
     routeEntry({ path: "singleLineListViewExampleComponent", component: SingleLineListViewExampleComponent, data: { title: "Single Line Items" } }),
     routeEntry({ path: "groupedSingleLineListViewExampleComponent", component: GroupedSingleLineListViewExampleComponent, data: { title: "Grouped Single Line Items" } }),
-<<<<<<< HEAD
     routeEntry({path:"twoLineListViewExampleComponent", component: TwoLineListViewExampleComponent, data:{ title: "Two Line Items" }}),
     routeEntry({ path: "multiLineListViewExampleComponent", component: MultiLineListViewExampleComponent, data: { title: "Grouped Single Line Items" } }),
-=======
-    routeEntry({ path: "multiLineListViewExampleComponent", component: MultiLineListViewExampleComponent, data: { title: "Grouped Single Line Items" } }),
 
->>>>>>> d3700b34735b814c99e517a30118f1a557e7bf67
 ];
 
 function routeEntry(data) {
