@@ -1,7 +1,6 @@
-<GridLayout exampleTitle toggleNavButton rows="auto, *" class="example-container">
+<GridLayout exampleTitle toggleNavButton rows="auto, *">
     <!-- >> activity-indicator-setting-busy-html -->
-    <Button text = "Modify ActivityIndicator's busy property" (tap)="(activityIndicator.busy = !activityIndicator.busy)" ></Button>    
-
-    <ActivityIndicator #activityIndicator width="100" height="100" row="1" ></ActivityIndicator>
+    <Button row="0" class="btn btn-primary" text="Modify Busy property" (tap)="(activityIndicator.busy = !activityIndicator.busy)"></Button>    
+    <ActivityIndicator row="1" class="activity-indicator" width="100" height="100" #activityIndicator></ActivityIndicator>
     <!-- << activity-indicator-setting-busy-html -->
 </GridLayout>

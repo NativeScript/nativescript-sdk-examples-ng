@@ -1,9 +1,9 @@
 <StackLayout exampleTitle toggleNavButton>
     <GridLayout rows="*">
         <!-- >> listview-customize-html -->
-        <ListView [items]="dataItems" (setupItemView)="onSetupItemView($event)" rowHeight="44">
+        <ListView [items]="dataItems" (setupItemView)="onSetupItemView($event)" class="list-group">
             <template let-dataitem="item" let-i="index" let-third="third" let-header="header" let-footer="footer">
-                <GridLayout [class.third]="third" [class.header]="header" [class.footer]="footer" class="item" height="44" ios:padding="15" >
+                <GridLayout [class.third]="third" [class.header]="header" [class.footer]="footer" class="list-group-item">
                     <Label [text]="dataitem.name" android:class="label-item"></Label>
                 </GridLayout>
             </template>

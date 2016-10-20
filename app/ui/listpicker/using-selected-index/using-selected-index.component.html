@@ -1,11 +1,11 @@
 <StackLayout exampleTitle toggleNavButton>
-        <GridLayout rows="auto, auto" class="example-container">
+        <GridLayout rows="auto, auto">
                 <!-- >> using-selected-index-html -->
                 <StackLayout row="0">
-                        <Label text="Use the slider to change ListPicker's selectedIndex" textWrap="true"></Label>
-                        <Slider #sl [minValue]="0" [maxValue]="pokemons.length - 1" [(ngModel)]="newIndexValue"></Slider>
+                        <Label class="h3 p-15 text-left" text="Use the slider to change ListPicker's selectedIndex" textWrap="true"></Label>
+                        <Slider class="slider" #sl [minValue]="0" [maxValue]="pokemons.length - 1" [(ngModel)]="newIndexValue"></Slider>
                 </StackLayout>
-                <ListPicker #picker row="1" class="picker" [items]="pokemons" [selectedIndex]="newIndexValue" (selectedIndexChange)="selectedIndexChanged(picker)">
+                <ListPicker class="p-15" #picker row="1" class="picker" [items]="pokemons" [selectedIndex]="newIndexValue" (selectedIndexChange)="selectedIndexChanged(picker)">
                 </ListPicker>
                 <!-- << using-selected-index-html -->
         </GridLayout>

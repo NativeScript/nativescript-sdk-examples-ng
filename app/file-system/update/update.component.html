@@ -1,8 +1,6 @@
 <StackLayout exampleTitle toggleNavButton>
     <ScrollView>
         <StackLayout>
-            <Label class="h2 p-15" text="Update files and folders" textWrap="true"></Label>
-            
             <GridLayout rows="*, *" columns="*, *">
                 <TextField class="p-15" row="0" col="0" [(ngModel)]="fileName" hint="Enter new file name"></TextField>
                 <Button class="btn btn-primary" row="0" col="1" text="Change file name" (tap)="onFileRename()"></Button>

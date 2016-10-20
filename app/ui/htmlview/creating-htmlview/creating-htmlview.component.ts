@@ -3,7 +3,6 @@ import { Component}  from "@angular/core";
 
 @Component({
     selector: "creating-htmlview",
-    styleUrls:["ui/htmlview/creating-htmlview/creating-htmlview.component.css"],
     templateUrl: "ui/htmlview/creating-htmlview/creating-htmlview.component.html"
 })
 

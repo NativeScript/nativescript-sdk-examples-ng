@@ -3,7 +3,6 @@ import { Component }  from "@angular/core";
 
 @Component({
     selector: "creating-label",
-    styleUrls:["ui/label/creating-label/creating-label.component.css"],
     templateUrl: "ui/label/creating-label/creating-label.component.html"
 })
 export class CreatingLabelComponent {

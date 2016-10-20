@@ -1,35 +1,40 @@
 <TabView #tabView class="tab-view" exampleTitle toggleNavButton>
-    <GridLayout *tabItem="{title: 'Grouping'}">
-        <ListView [items]="continents" class="list-group">
-            <template let-item="item">
-                <StackLayout>
-                    <Label [text]="item.name" class="h2 text-center m-t-10"></Label>
-                    <GridLayout *ngFor="let element of item.list" class="list-group-item" rows="auto">
-                        <Label row="0" [text]="element.name"></Label>
-                    </GridLayout>
+
+    <GridLayout *tabItem="{title: 'Basic list'}">
+        <!-- >> ext-listview-basic-html -->
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
+            <template let-country="item">
+                <StackLayout class="list-group-item">
+                    <Label [text]="country.name"></Label>
                 </StackLayout>
             </template>
         </ListView>
+        <!-- ><< ext-listview-basic-html -->
     </GridLayout>
+
     <GridLayout *tabItem="{title: 'Dividers'}">
-        <ListView [items]="continents" class="list-group">
-            <template let-item="item">
-                <StackLayout>
-                    <Label [text]="item.name" class="h2 text-center m-t-10"></Label>
-                    <GridLayout *ngFor="let element of item.list" class="list-group-item" rows="auto, auto">
-                        <Label row="0" [text]="element.name" tap="onCell()"></Label>
-                        <StackLayout row="1" class="hr-light"> </StackLayout>
-                    </GridLayout>
+        <!-- >> ext-listview-borders-html -->
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="red">
+            <template let-country="item">
+                <StackLayout class="list-group-item">
+                    <Label [text]="country.name"></Label>
                 </StackLayout>
             </template>
         </ListView>
+        <!-- ><< ext-listview-borders-html -->
     </GridLayout>
+
     <GridLayout *tabItem="{title: 'Thumbnails'}">
-        <ListView [items]="continents" class="list-group">
-            <template let-item="item">
-                <grouped-listview-single-thumbs-component [data]="item" ></grouped-listview-single-thumbs-component>
+        <!-- >> ext-listview-thumbs-html -->
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" >
+            <template let-country="item">
+                <GridLayout class="list-group-item" rows="*" columns="auto, *">
+                    <Image row="0" col="0" [src]="country.imageSrc" class="thumb img-circle"></Image>
+                    <Label row="0" col="1" [text]="country.name" class="p-15"></Label>
+                </GridLayout>
             </template>
         </ListView>
+        <!-- ><< ext-listview-thumbs-html -->
     </GridLayout>
 </TabView>
 

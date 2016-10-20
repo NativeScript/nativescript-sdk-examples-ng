@@ -1,16 +1,14 @@
 <StackLayout exampleTitle toggleNavButton>
-    <StackLayout class="example-container">
-        <!-- >> creating-label-html -->
-        <!-- basic Label usage-->
-        <Label text="Label (no binding)" textWrap="true"></Label>
+    <!-- >> creating-label-html -->
+    <!-- basic Label usage-->
+    <Label class="h3 p-15" text="Label (no binding)" textWrap="true"></Label>
 
-        <!-- Label with one-way binding -->
-        <Label [text]="oneway" textWrap="true"></Label> 
+    <!-- Label with one-way binding -->
+    <Label class="h3 p-15" [text]="oneway" textWrap="true"></Label> 
 
-        <!-- Label with two-way binding -->
-        <Button text="Change label text" (tap)="changeLabelText()" android:margin="0" ios:margin="3" android:height="52"></Button> 
-        <Label [text]="counter + ' times two-way label has been changed'" textWrap="true"></Label>
-        <Label #lb [text]="twoway" [textChange]="twoway" textWrap="true"></Label> 
-        <!-- << creating-label-html -->   
-    </StackLayout>
+    <!-- Label with two-way binding -->
+    <Button class="btn btn-primary p-5 m-5" text="Change label text" (tap)="changeLabelText()"></Button> 
+    <Label class="h3 p-15" [text]="counter + ' times two-way label has been changed'" textWrap="true"></Label>
+    <Label class="h3 p-15" #lb [text]="twoway" [textChange]="twoway" textWrap="true"></Label> 
+    <!-- << creating-label-html -->   
 </StackLayout>

@@ -17,7 +17,6 @@ import { UnlessDirective } from "./ui/ng-directives/unless-directive/directive-u
 import { ToggleNavButtonDirective } from "./directives/toggle-nav-button.directive"
 import { ExampleTitleDirective } from "./directives/example.directive"
 import { ItemComponent } from "./ui/listview/using-item-template/using-item-template.component";
-import { GroupedListviewSingleThumbdComponent } from "./ui-extended/listview/single-line/single-line-listview.component";
 // << (hide)
 import { ModalViewComponent } from "./modal-page/sample-modal-page-module-example/modal-view";
 
@@ -25,7 +24,6 @@ import { ModalViewComponent } from "./modal-page/sample-modal-page-module-exampl
     declarations: [
         // >> (hide)
         ItemComponent,
-        GroupedListviewSingleThumbdComponent,
         AppComponent,
         IfAndroidDirective,
         IfIosDirective,

@@ -20,7 +20,7 @@ export class ChainingAnimationsComponent {
             .then(() => target.animate({ rotate: 180, duration: duration }))
             .then(() => target.animate({ rotate: 0, duration: duration }))
             .then(() => {
-                //console.log("Animation finished");
+                console.log("Animation finished");
             })
             .catch((e) => {
                 console.log(e.message);
