@@ -39,5 +39,17 @@ export class SingleLineListViewExampleComponent implements OnInit {
             this.countries.push(mockedDataArray[i]);
         }
     }
+
+    onItemTapFirstList(args) {
+        console.log(args.index);
+    }
+
+    onItemTapSecondList(args) {
+        console.log(args.index);
+    }
+
+    onItemTapThirdList(args) {
+        console.log(args.index);
+    }   
 }
 // << ext-listview-basic-code

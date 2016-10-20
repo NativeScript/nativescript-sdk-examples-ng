@@ -1,10 +1,10 @@
 <StackLayout exampleTitle toggleNavButton>
-    <GridLayout rows="50, *" class="example-container">
-        <Label class="h3 p-15" text="Top Cars" row="0"textWrap="true" horizontalAlignment="center"></Label>
-        <ListView  class="list-group" [items]="manufacturers" row="1">
-            <template let-item="item">
-                <item-component [data]="item" ></item-component>
-            </template>
-        </ListView>
-    </GridLayout>
+	<GridLayout rows="50, *">
+		<Label class="h2 p-15 text-left" text="Top Cars" row="0" textWrap="true"></Label>
+		<ListView class="list-group" [items]="manufacturers" row="1">
+			<template let-item="item">
+				<item-component [data]="item"></item-component>
+			</template>
+		</ListView>
+	</GridLayout>
 </StackLayout>
