@@ -4,61 +4,62 @@
         <GridLayout rows="*" columns="*">
         <ScrollView row="0" col="0">
             <GridLayout rows="*" columns="*">
-                <GridLayout row="0" col="0" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto 50" columns="100 *">
-                    <Label text="Focused  TextField" row="1" col="0" textWrap="true"></Label>
-                    <TextField id="firstTextFieldId" hint="Focused TextField" text="" row="1" col="1"></TextField>
+                <GridLayout class="form" row="0" col="0" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto 50" columns="* *">
+                    <Label class="h3 p-15" text="Focused  TextField" row="1" col="0" textWrap="true"></Label>
+                    <TextField class="h3 p-15 input input-border" id="firstTextFieldId" hint="Focused TextField" text="" row="1" col="1"></TextField>
 
-                    <Label text="Autocapitalization" row="2" col="0" textWrap="true"></Label>
-                    <TextField #stf hint="Autocapitalization - allCharacters" autocorrect="false" text="" autocapitalizationType="allCharacters" row="2" col="1"></TextField>
-                    <TextField #stf hint="Autocapitalization - none" autocorrect="false" text="" autocapitalizationType="none" row="3" col="1"></TextField>
-                    <TextField #stf hint="Autocapitalization - sentences" autocorrect="false" text="" autocapitalizationType="sentences" row="4" col="1"></TextField>
-                    <TextField #stf hint="Autocapitalization - words" autocorrect="false" text="" autocapitalizationType="words" row="5" col="1"></TextField>
+                    <Label class="h3 p-15" text="Autocapitalization" row="2" col="0" textWrap="true"></Label>
+                    <TextField class="h3 p-15 input input-border" #stf hint="allCharacters" autocorrect="false" text="" autocapitalizationType="allCharacters" row="2" col="1"></TextField>
+                    <TextField class="h3 p-15 input input-border" #stf hint="none" autocorrect="false" text="" autocapitalizationType="none" row="3" col="1"></TextField>
+                    <TextField class="h3 p-15 input input-border" #stf hint="sentences" autocorrect="false" text="" autocapitalizationType="sentences" row="4" col="1"></TextField>
+                    <TextField class="h3 p-15 input input-border" #stf hint="words" autocorrect="false" text="" autocapitalizationType="words" row="5" col="1"></TextField>
 
-                    <Label text="Passwords" row="6" col="0" textWrap="true"></Label>
-                    <TextField hint="Default Password field" autocorrect="false"  secure="true" text="" row="6" col="1" returnKeyType="next"></TextField>
-                    <TextField hint="Password field - text color" hintColor="#cc0000" color="#cc0000" autocorrect="false"  secure="true" text="" row="7" col="1" returnKeyType="next"></TextField>
+                    <Label class="h3 p-15" text="Passwords field" row="6" col="0" textWrap="true"></Label>
+                    <TextField class="h3 p-15 input input-border" hint="Default" autocorrect="false"  secure="true" text="" row="6" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15 input input-border" hint="With text color" hintColor="#cc0000" color="#cc0000" autocorrect="false"  secure="true" text="" row="7" col="1" returnKeyType="next"></TextField>
 
-                    <Label text="Keyboard types" row="8" col="0" textWrap="true"></Label>
-                    <TextField autocorrect="false" hint="Keyboard types: done" text="" row="8" col="1" returnKeyType="done"></TextField>
-                    <TextField autocorrect="false" hint="Keyboard types: go" text="" row="9" col="1" returnKeyType="go"></TextField>
-                    <TextField autocorrect="false" hint="Keyboard types: next" text="" row="10" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint="Keyboard types: search" text="" row="11" col="1" returnKeyType="search"></TextField>
-                    <TextField autocorrect="false" hint="Keyboard types: send" text="" row="12" col="1" returnKeyType="send"></TextField>
+                    <Label class="h3 p-15" text="Keyboard types" row="8" col="0" textWrap="true"></Label>
+                    <TextField class="h3 p-15 input input-border" autocorrect="false" hint="done" text="" row="8" col="1" returnKeyType="done"></TextField>
+                    <TextField class="h3 p-15 input input-border" autocorrect="false" hint="go" text="" row="9" col="1" returnKeyType="go"></TextField>
+                    <TextField class="h3 p-15 input input-border" autocorrect="false" hint="next" text="" row="10" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15 input input-border" autocorrect="false" hint="search" text="" row="11" col="1" returnKeyType="search"></TextField>
+                    <TextField class="h3 p-15 input input-border" autocorrect="false" hint="send" text="" row="12" col="1" returnKeyType="send"></TextField>
 
-                    <Label text="Auto-correct" row="13" col="0" textWrap="true"></Label>
-                    <TextField autocorrect="true" hint="TextField with auto-correct" text="" row="13" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint="TextField without auto-correct" text="" row="14" col="1" returnKeyType="next"></TextField>
+                    <Label class="h3 p-15" text="Auto-correct" row="13" col="0" textWrap="true"></Label>
+                    <TextField class="h3 p-15 input input-border" autocorrect="true" hint="With auto-correct" text="" row="13" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15 input input-border" autocorrect="false" hint="Without auto-correct" text="" row="14" col="1" returnKeyType="next"></TextField>
 
-                    <Label text="Colors and Border style" row="15" col="0" textWrap="true"></Label>
-                    <TextField autocorrect="false" hint="Default hint text color" text="" row="15" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint="Default hint text color" text="Default text color" row="16" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint=" Blue Text Color" color="#0066cc" text="Text color" row="17" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint="Set Border Width" text="Change Border Width" borderWidth="5" borderColor="#6666ff" row="18" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint="Green Border Color" text="Green Border Color" borderWidth="2" borderColor="#339933" row="19" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint="Set Border Radius" text="Set Border Radius" borderWidth="2" borderRadius="40" borderColor="#6666ff" row="20" col="1" returnKeyType="next"></TextField>
+                    <Label class="h3 p-15" text="Colors and Border style" row="15" col="0" textWrap="true"></Label>
+                    <TextField class="h3 p-15 input input-border" autocorrect="false" hint="Default hint color" text="" row="15" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15 input input-border" autocorrect="false" placeholderColor="#0066cc" hint="Hint text color" text="" row="16" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15" autocorrect="false" hint="Default hint color" text="Default text color" row="17" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15" autocorrect="false" hint=" Blue Text Color" color="#0066cc" text="Text color" row="18" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15" autocorrect="false" hint="Set Border Width" text="Set Border Width" borderWidth="5" borderColor="#6666ff" row="19" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15" autocorrect="false" hint="Green Border Color" text="Green Border Color" borderWidth="2" borderColor="#339933" row="20" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15" autocorrect="false" hint="Set Border Radius" text="Set Border Radius" borderWidth="2" borderRadius="40" borderColor="#6666ff" row="21" col="1" returnKeyType="next"></TextField>
 
-                    <Label text="TextAlignment" row="21" col="0" textWrap="true"></Label>
-                    <TextField autocorrect="false" hint="TextAlignment: left" text="TextAlignment: left" textAlignment="left" row="21" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint="TextAlignment: center" text="TextAlignment: center" textAlignment="center" row="22" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint="TextAlignment: right" text="TextAlignment: right" textAlignment="right" row="23" col="1" returnKeyType="next"></TextField>
+                    <Label class="h3 p-15" text="TextAlignment" row="22" col="0" textWrap="true"></Label>
+                    <TextField class="h3 p-15" autocorrect="false" hint="left" text="left" textAlignment="left" row="22" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15" autocorrect="false" hint="center" text="center" textAlignment="center" row="23" col="1" returnKeyType="next"></TextField>
+                    <TextField class="h3 p-15" autocorrect="false" hint="right" text="right" textAlignment="right" row="24" col="1" returnKeyType="next"></TextField>
 
-                    <Label text="FontSize" row="24" col="0" textWrap="true"></Label>
-                    <TextField autocorrect="false" hint="Set custom FontSize" text="" fontSize="27" row="24" col="1" returnKeyType="next"></TextField>
+                    <Label class="h3 p-15" text="FontSize" row="25" col="0" textWrap="true"></Label>
+                    <TextField class="h3 p-15" autocorrect="false" hint="Set FontSize" text="" fontSize="27" row="25" col="1" returnKeyType="next"></TextField>
                     
-                    <Label text="FontFamily" row="25" col="0" textWrap="true"></Label>
-                    <TextField autocorrect="false" hint="FontFamily: serif" text="FontFamily: serif" class="text-field-font-serif" row="25" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint="FontFamily: sans-serif" text="FontFamily: sans-serif" class="text-field-font-sans-serif" row="26" col="1" returnKeyType="next"></TextField>
-                    <TextField autocorrect="false" hint="FontFamily: monospace" text="FontFamily: monospace" class="text-field-font-monospace"  row="27" col="1" returnKeyType="next"></TextField>
+                    <Label class="h3 p-15" text="FontFamily" row="26" col="0" textWrap="true"></Label>
+                    <TextField autocorrect="false" hint="serif" text="serif" class="h3 p-15 text-field-font-serif" row="26" col="1" returnKeyType="next"></TextField>
+                    <TextField autocorrect="false" hint="sans-serif" text="sans-serif" class=" h3 p-15 text-field-font-sans-serif" row="27" col="1" returnKeyType="next"></TextField>
+                    <TextField autocorrect="false" hint="monospace" text="monospace" class="h3 p-15 text-field-font-monospace"  row="28" col="1" returnKeyType="next"></TextField>
                     
-                    <Label text="Date" row="28" col="0" textWrap="true"></Label>
-                    <TextField id="textFieldBDate" hint="Enter date in TextField" [text]='birthDate | date:"MM/dd/yy"' (tap)="showDatePicker()" row="28" col="1" returnKeyType="done" (returnPress)="submit()"></TextField>
+                    <Label class="h3 p-15" text="Date" row="29" col="0" textWrap="true"></Label>
+                    <TextField class="h3 p-15 input input-border" id="textFieldBDate" hint="Enter date" [text]='birthDate | date:"MM/dd/yy"' (tap)="showDatePicker()" row="29" col="1" returnKeyType="done" (returnPress)="submit()"></TextField>
                     
                 </GridLayout>
             </GridLayout>
     </ScrollView>
     <StackLayout backgroundColor="white" [visibility]="isItemVisible ? 'visible' : 'collapsed'" row="0" col="0">
-                    <DatePicker id="datePicker" #dp [visibility]="isItemVisible ? 'visible' : 'collapsed'"></DatePicker>
-                    <Button text="Tap to enter the date" (tap)="enterDate()" [visibility]="isButtonVisible ? 'visible' : 'collapsed'"></Button>
+                    <DatePicker class="m-15" id="datePicker" #dp [visibility]="isItemVisible ? 'visible' : 'collapsed'"></DatePicker>
+                    <Button class="btn btn-primary" text="Tap to enter the date" (tap)="enterDate()" [visibility]="isButtonVisible ? 'visible' : 'collapsed'"></Button>
     </StackLayout>
     </GridLayout>
     <!-- << sample-ui-textfield-html -->

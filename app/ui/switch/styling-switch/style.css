@@ -1,17 +1,14 @@
 /* >> switch-style-css */
 .firstSwitchStyle{
     background-color: #FFFF66;
-    margin-bottom: 20;
 }
 
 .secondSwitchStyle{
     background-color: #CCFFFF;
-    margin-bottom: 20;
 }
 
 .thirdSwitchStyle{
     opacity: 0.5;
     background-color: #8C489F;
-    margin-bottom: 20;
 }
 /* << switch-style-css */
