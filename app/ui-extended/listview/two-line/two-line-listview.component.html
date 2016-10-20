@@ -1,0 +1,44 @@
+<TabView #tabView class="tab-view" exampleTitle toggleNavButton>
+
+    <GridLayout *tabItem="{title: 'Basic list'}">
+        <!-- >> ext-listview-basic-html -->
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
+            <template let-country="item">
+                <StackLayout class="list-group-item">
+                    <Label class="list-group-item-heading" [text]="country.name"></Label>
+                    <Label class="list-group-item-text" [text]="'Continent: '+country.continent"></Label>      
+                </StackLayout>
+            </template>
+        </ListView>
+        <!-- << ext-listview-basic-html -->
+    </GridLayout>
+
+    <GridLayout *tabItem="{title: 'Dividers'}">
+        <!-- >> ext-listview-borders-html -->
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="red">
+            <template let-country="item">
+                <StackLayout class="list-group-item">
+                    <Label class="list-group-item-heading" [text]="country.name"></Label>
+                    <Label class="list-group-item-text" [text]="'Continent: '+country.continent"></Label>   
+                </StackLayout>
+            </template>
+        </ListView>
+        <!-- << ext-listview-borders-html -->
+    </GridLayout>
+
+    <GridLayout *tabItem="{title: 'Thumbnails'}">
+        <!-- >> ext-listview-thumbs-html -->
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" >
+            <template let-country="item">
+                <GridLayout class="list-group-item" rows="* *" columns="auto, *">
+                    <Image row="0" col="0" rowSpan="2" [src]="country.imageSrc" class="thumb img-circle"></Image>
+                    <Label row="0" col="1" [text]="country.name" class="list-group-item-heading p-15"></Label>
+                    <Label row="1" col="1" class="list-group-item-text p-15" [text]="'Continent: '+country.continent"></Label>   
+                </GridLayout>
+            </template>
+        </ListView>
+        <!-- << ext-listview-thumbs-html -->
+    </GridLayout>
+</TabView>
+
+

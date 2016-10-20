@@ -4,6 +4,7 @@ import { Link } from "./../../link";
 var menuLinks = [
     new Link("ListView: Single Line Items", "/singleLineListViewExampleComponent"),
     new Link("ListView: Grouped Single Line Items", "/groupedSingleLineListViewExampleComponent"),
+    new Link("ListView: Two Line Items", "/twoLineListViewExampleComponent")
 ];
 
 @Component({
