@@ -1,14 +1,15 @@
 import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
 import { ItemEventData } from "ui/list-view";
+import { SetupItemViewArgs } from "nativescript-angular/directives";
 import { mockedDataArray, Country }  from "../mock-dataItems";
 
-// >> ext-listview-basic-code
+// >> multiline-listview-code
 @Component({
-    selector: "single-line-listview",
-    templateUrl: "ui-extended/listview/single-line/single-line-listview.component.html",
+    selector: "multi-line-listview",
+    templateUrl: "ui-extended/listview/multi-line/multi-line.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class SingleLineListViewExampleComponent implements OnInit {
+export class MultiLineListViewExampleComponent implements OnInit {
     public countries: Array<Country> = [];
 
     ngOnInit() {
@@ -27,6 +28,12 @@ export class SingleLineListViewExampleComponent implements OnInit {
 
     onItemTapThirdList(args: ItemEventData) {
         console.log(args.index);
-    }   
+    }  
+
+    onSetupItemView(args: SetupItemViewArgs) {
+        // further customisation can be achived with SetupItemViewArgs
+        // example for creating a variable for each third element
+        args.view.context.third = (args.index % 3 === 0);
+    }  
 }
-// << ext-listview-basic-code
+// << multiline-listview-code

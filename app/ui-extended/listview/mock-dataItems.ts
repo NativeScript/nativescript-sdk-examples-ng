@@ -2,7 +2,6 @@ export class GroupTitle {
     constructor(public title: string) { }
 }
 
-
 var mockedDescription = "Cras ut turpis mollis, vestibulum leo a, eleifend enim. Nam rutrum justo vestibulum dignissim tempor. Cras ac consequat ante. Nullam malesuada vulputate leo fringilla consectetur. In ligula felis, pharetra nec lacus ornare, laoreet pellentesque odio. Curabitur eget laoreet lectus. Ut et auctor mauris, quis facilisis tortor. Phasellus congue bibendum lacus, nec cursus est. Aliquam sed fermentum augue.";
 
 var mockedDescriptionType2 = "Nunc vel augue quam. Phasellus pharetra lobortis nulla, at tincidunt augue consectetur sit amet. Praesent eget tellus diam. Suspendisse potenti. Praesent commodo lacinia consectetur. Pellentesque lacinia accumsan semper. Aliquam erat volutpat. Vestibulum vulputate semper consectetur. Nunc eu nibh id orci luctus euismod. Praesent ultrices diam ipsum, sed sagittis purus vestibulum id.";

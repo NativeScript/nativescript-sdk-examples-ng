@@ -1,9 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
-import {ObservableArray} from "data/observable-array";
-import {mockedDataArray} from "../mock-dataItems" 
-
-
-
+import { ObservableArray } from "data/observable-array";
+import { mockedDataArray }  from "../mock-dataItems";
 
 // >> ext-listview-basic-code
 @Component({
