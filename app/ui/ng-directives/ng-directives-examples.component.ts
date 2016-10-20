@@ -6,7 +6,7 @@ var menuLinks = [
     new Link("*ngIf platform specific elements", "/usingNgIfForPlatformSpecificComponent"),
     new Link("*ngFor example", "/ngForRepeatItemsComponent"),
     new Link("ngSwitch basic example", "/usingNgSwitchExampleComponent"),
-    new Link("Create custom *ng directive", "/createCustomDirectiveExampleComponent"),
+    new Link("Create custom directive", "/createCustomDirectiveExampleComponent"),
     new Link("Unless directive example", "/unlessDirectiveExampleComponent")
 
 ];

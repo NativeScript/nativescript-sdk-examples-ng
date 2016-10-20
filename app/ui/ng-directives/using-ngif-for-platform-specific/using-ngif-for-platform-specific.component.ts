@@ -4,7 +4,6 @@ import application = require("application");
 
 @Component({
     selector: 'ngif-for-platform-specific-component',
-    styleUrls:["ui/ng-directives/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component.css"],
     templateUrl: "ui/ng-directives/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component.html",
 })
 

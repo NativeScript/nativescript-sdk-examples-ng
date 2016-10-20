@@ -1,16 +1,16 @@
 <StackLayout exampleTitle toggleNavButton>
-    <StackLayout class="example-container">
+    <StackLayout class="form">
         <!-- >> unless-directive-html -->
-        <TextView text="The custom *myUnless directive will execute the block if the condition is False (the opposite of *ngIf)" editable="false" textWrap="true" height="65" fontSize="15"></TextView>  
+        <TextView class="h3 p-15" text="The custom *myUnless directive will execute the block if the condition is False (the opposite of *ngIf)" editable="false" textWrap="true" height="65"></TextView>  
 
-        <TextField hint="Enter your age to check access " [(ngModel)]="age"></TextField>
-        <Button text="Check Access" (tap)="onTap()"></Button>
+        <TextField class="input-field p-15 m-15" hint="Enter your age to check access " [(ngModel)]="age"></TextField>
+        <Button class="btn btn-primary" text="Check Access" (tap)="onTap()"></Button>
 
         <GridLayout *myUnless="condition" width="250" height="250" borderRadius="125" backgroundColor="green">
-            <Label text="Access granted!" textWrap="true" horizontalAlignment="center" verticalAlignment="center"></Label>
+            <Label class="h3 p-15" text="Access granted!" textWrap="true" horizontalAlignment="center" verticalAlignment="center"></Label>
         </GridLayout>
         <GridLayout *myUnless="!condition" width="250" height="250" borderRadius="125" backgroundColor="red">
-            <Label text="Access not granted!" textWrap="true" horizontalAlignment="center" verticalAlignment="center"></Label>
+            <Label class="h3 p-15" text="Access not granted!" textWrap="true" horizontalAlignment="center" verticalAlignment="center"></Label>
         </GridLayout>
         <!-- << unless-directive-html -->
     </StackLayout>

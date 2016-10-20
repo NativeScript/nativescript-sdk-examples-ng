@@ -3,9 +3,6 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'ngswitch-component',
-    // >> (hide)
-    styleUrls:['ui/ng-directives/ngswitch-usage/style.css'],
-    // << (hide)
     templateUrl: "ui/ng-directives/ngswitch-usage/ngswitch-usage.component.html",
 })
 
