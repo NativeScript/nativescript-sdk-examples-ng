@@ -2,7 +2,8 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("ListView: Grouped Single Line Items", "/singleLineListViewExampleComponent"),
+    new Link("ListView: Single Line Items", "/singleLineListViewExampleComponent"),
+    new Link("ListView: Grouped Single Line Items", "/groupedSingleLineListViewExampleComponent"),
 ];
 
 @Component({
