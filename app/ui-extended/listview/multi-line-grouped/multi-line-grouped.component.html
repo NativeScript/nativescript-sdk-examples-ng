@@ -1,0 +1,54 @@
+<TabView #tabView class="tab-view" exampleTitle toggleNavButton>
+
+    <GridLayout *tabItem="{title: 'Basic list'}">
+        <!-- >> multi-line-grouped-basic-html -->
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
+            <template let-item="item">
+                <StackLayout [ngSwitch]="checkType(item)">
+                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item h3 bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24" [text]="item.title"></Label>
+                    <Label *ngSwitchCase="'GroupFooter'" class="list-group-item h4" backgroundColor="gray" fontSize="12"[text]="item.description"></Label>
+                    <StackLayout *ngSwitchDefault class="list-group-item">
+                        <Label [text]="item.name" class="h2 p-15"></Label>
+                        <Label [text]="item.desc" class="h3 p-15" textWrap="true"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </template>
+        </ListView>
+        <!-- << multi-line-grouped-basic-html -->
+    </GridLayout>
+
+    <GridLayout *tabItem="{title: 'Dividers'}">
+        <!-- >> multi-line-grouped-borders-html -->
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="red">
+            <template let-item="item">
+                <StackLayout [ngSwitch]="checkType(item)">
+                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24" [text]="item.title"></Label>
+                    <Label *ngSwitchCase="'GroupFooter'" class="list-group-item" backgroundColor="gray" fontSize="12" [text]="item.description"></Label>
+                    <StackLayout *ngSwitchDefault class="list-group-item">
+                        <Label [text]="item.name" class="h2 p-15"></Label>
+                        <Label [text]="item.desc" class="h3 p-15" textWrap="true"></Label>
+                    </StackLayout>
+                </StackLayout>
+            </template>
+        </ListView>
+        <!-- << multi-line-grouped-borders-html -->
+    </GridLayout>
+
+    <GridLayout *tabItem="{title: 'Thumbnails'}">
+        <!-- >> multi-line-grouped-thumbs-html -->
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)">
+            <template let-item="item">
+                <StackLayout [ngSwitch]="checkType(item)">
+                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24" [text]="item.title"></Label>
+                    <Label *ngSwitchCase="'GroupFooter'" class="list-group-item" backgroundColor="gray" fontSize="12" [text]="item.description"></Label>
+                    <GridLayout *ngSwitchDefault rows="*" class="list-group-item"  rows="*, *" columns="auto, *">
+                        <Image row="0" col="0" [src]="item.imageSrc" class="thumb img-circle"></Image>
+                        <Label row="0" col="1" [text]="item.name" class="h2 p-15"></Label>
+                        <Label row="1" col="1" [text]="item.desc" class="h3 p-15" textWrap="true"></Label>
+                    </GridLayout>
+                </StackLayout>
+            </template>
+        </ListView>
+        <!-- << multi-line-grouped-thumbs-html -->
+    </GridLayout>
+</TabView>

@@ -6,7 +6,8 @@ var menuLinks = [
     new Link("ListView: Grouped Single Line Items", "/groupedSingleLineListViewExampleComponent"),
     new Link("ListView: Two Line Items", "/twoLineListViewExampleComponent"),
     new Link("ListView: Multi Line Items", "/multiLineListViewExampleComponent"),
-
+    new Link("ListView: Grouped Multi Line Items", "/multiLineGroupedListViewExampleComponent"),
+    new Link("ListView: Multi Line Items - Bigger THumbs", "/multiLineBigListViewExampleComponent"),
 ];
 
 @Component({

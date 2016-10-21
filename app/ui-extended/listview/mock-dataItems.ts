@@ -40,26 +40,26 @@ export var mockedDataArray = [
 ]
 export var mockedGroupDataArray = [
     new GroupTitle("Asia"),
-    new Country("Japan", "~/ui-extended/listview/single-line/images/flags/jp.png", "Asia", mockedDescription),
-    new Country("China", "~/ui-extended/listview/single-line/images/flags/cn.png", "Asia", mockedDescriptionType4),
+    new Country("Japan", "~/ui-extended/listview/images/flags/jp.png", "Asia", mockedDescription),
+    new Country("China", "~/ui-extended/listview/images/flags/cn.png", "Asia", mockedDescriptionType4),
 
     new GroupTitle("Europe"),
-    new Country("Belgium", "~/ui-extended/listview/single-line/images/flags/be.png", "Europe", mockedDescriptionType2),
-    new Country("Bulgaria", "~/ui-extended/listview/single-line/images/flags/bg.png", "Europe", mockedDescription),
-    new Country("Switzerland", "~/ui-extended/listview/single-line/images/flags/ch.png", "Europe", mockedDescriptionType2),
-    new Country("Czech Republic", "~/ui-extended/listview/single-line/images/flags/cz.png", "Europe", mockedDescription),
-    new Country("Germany", "~/ui-extended/listview/single-line/images/flags/de.png", "Europe", mockedDescription),
-    new Country("Spain", "~/ui-extended/listview/single-line/images/flags/es.png", "Europe", mockedDescriptionType2),
-    new Country("Croatia", "~/ui-extended/listview/single-line/images/flags/hr.png", "Europe", mockedDescription),
-    new Country("Hungary", "~/ui-extended/listview/single-line/images/flags/hu.png", "Europe", mockedDescriptionType2),
-    new Country("Italy", "~/ui-extended/listview/single-line/images/flags/it.png", "Europe", mockedDescriptionType4),
-    new Country("Romania", "~/ui-extended/listview/single-line/images/flags/ro.png", "Europe", mockedDescriptionType2),
-    new Country("Russia", "~/ui-extended/listview/single-line/images/flags/ru.png", "Europe", mockedDescriptionType4),
+    new Country("Belgium", "~/ui-extended/listview/images/flags/be.png", "Europe", mockedDescriptionType2),
+    new Country("Bulgaria", "~/ui-extended/listview/images/flags/bg.png", "Europe", mockedDescription),
+    new Country("Switzerland", "~/ui-extended/listview/images/flags/ch.png", "Europe", mockedDescriptionType2),
+    new Country("Czech Republic", "~/ui-extended/listview/images/flags/cz.png", "Europe", mockedDescription),
+    new Country("Germany", "~/ui-extended/listview/images/flags/de.png", "Europe", mockedDescription),
+    new Country("Spain", "~/ui-extended/listview/images/flags/es.png", "Europe", mockedDescriptionType2),
+    new Country("Croatia", "~/ui-extended/listview/images/flags/hr.png", "Europe", mockedDescription),
+    new Country("Hungary", "~/ui-extended/listview/images/flags/hu.png", "Europe", mockedDescriptionType2),
+    new Country("Italy", "~/ui-extended/listview/images/flags/it.png", "Europe", mockedDescriptionType4),
+    new Country("Romania", "~/ui-extended/listview/images/flags/ro.png", "Europe", mockedDescriptionType2),
+    new Country("Russia", "~/ui-extended/listview/images/flags/ru.png", "Europe", mockedDescriptionType4),
 
     new GroupTitle("North America"),
-    new Country("Canada", "~/ui-extended/listview/single-line/images/flags/ca.png", "North America", mockedDescriptionType3),
-    new Country("United States", "~/ui-extended/listview/single-line/images/flags/us.png", "North America", mockedDescriptionType3),
-    new Country("Jamaica", "~/ui-extended/listview/single-line/images/flags/jm.png", "North America", mockedDescription),
+    new Country("Canada", "~/ui-extended/listview/images/flags/ca.png", "North America", mockedDescriptionType3),
+    new Country("United States", "~/ui-extended/listview/images/flags/us.png", "North America", mockedDescriptionType3),
+    new Country("Jamaica", "~/ui-extended/listview/images/flags/jm.png", "North America", mockedDescription),
 
     new GroupFooter("all countries loaded!")
 ]
