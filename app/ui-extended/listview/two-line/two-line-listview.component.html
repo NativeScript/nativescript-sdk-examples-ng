@@ -1,7 +1,7 @@
 <TabView #tabView class="tab-view" exampleTitle toggleNavButton>
 
     <GridLayout *tabItem="{title: 'Basic list'}">
-        <!-- >> ext-listview-basic-html -->
+        <!-- >> ext-listview-two-lines-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
             <template let-country="item">
                 <StackLayout class="list-group-item">
@@ -10,11 +10,11 @@
                 </StackLayout>
             </template>
         </ListView>
-        <!-- << ext-listview-basic-html -->
+        <!-- << ext-listview-two-lines-html -->
     </GridLayout>
 
     <GridLayout *tabItem="{title: 'Dividers'}">
-        <!-- >> ext-listview-borders-html -->
+        <!-- >> ext-listview-borders-two-lines-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="red">
             <template let-country="item">
                 <StackLayout class="list-group-item">
@@ -23,11 +23,11 @@
                 </StackLayout>
             </template>
         </ListView>
-        <!-- << ext-listview-borders-html -->
+        <!-- << ext-listview-borders-two-lines-html -->
     </GridLayout>
 
     <GridLayout *tabItem="{title: 'Thumbnails'}">
-        <!-- >> ext-listview-thumbs-html -->
+        <!-- >> ext-listview-thumbs-two-lines-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" >
             <template let-country="item">
                 <GridLayout class="list-group-item" rows="* *" columns="auto, *">
@@ -37,7 +37,7 @@
                 </GridLayout>
             </template>
         </ListView>
-        <!-- << ext-listview-thumbs-html -->
+        <!-- << ext-listview-thumbs-two-lines-html -->
     </GridLayout>
 </TabView>
 

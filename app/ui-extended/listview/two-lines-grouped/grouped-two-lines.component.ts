@@ -1,21 +1,27 @@
 import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
 import { ItemEventData } from "ui/list-view";
-import { mockedGroupDataArray }  from "../mock-dataItems";
+import {ObservableArray} from "data/observable-array";
+import {mockedGroupDataArray, GroupFooter, GroupTitle} from "../mock-dataItems"
 
-// >> multi-line-grouped-code
+
+
+// >> grouped-listview-two-lines-code
 @Component({
-    selector: "multi-line-grouped-listview",
-    templateUrl: "ui-extended/listview/multi-line-grouped/multi-line-grouped.component.html",
+    selector: "grouped-two-line-listview",
+    templateUrl: "ui-extended/listview/two-lines-grouped/grouped-two-lines.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class MultiLineGroupedListViewExampleComponent implements OnInit {
-    public countries: Array<any> = [];
+export class GroupedTwoLinesListViewExampleComponent implements OnInit {
+    public countries: Array<any>;
 
-    ngOnInit() {
-        for (var i = 0; i < mockedGroupDataArray.length; i++) {
+    constructor(){
+        this.countries=[];
+         for (var i = 0; i < mockedGroupDataArray.length; i++) {
             this.countries.push(mockedGroupDataArray[i]);
         }
     }
+
+    ngOnInit() {}
 
     checkType(value) {
         // get the class name e.g. GroupTitle or Country
@@ -35,4 +41,4 @@ export class MultiLineGroupedListViewExampleComponent implements OnInit {
         console.log(args.index);
     }   
 }
-// << multi-line-grouped-code
+// << grouped-listview-two-lines-code

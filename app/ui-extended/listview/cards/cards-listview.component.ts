@@ -1,14 +1,17 @@
 import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
-import { ObservableArray } from "data/observable-array";
-import { mockedDataArray }  from "../mock-dataItems";
+import {ObservableArray} from "data/observable-array";
+import {mockedDataArray} from "../mock-dataItems" 
 
-// >> ext-listview-two-lines-code
+
+
+
+// >> ext-listview-cards-code
 @Component({
-    selector: "two-line-listview",
-    templateUrl: "ui-extended/listview/two-line/two-line-listview.component.html",
+    selector: "cards-listview",
+    templateUrl: "ui-extended/listview/cards/cards-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class TwoLineListViewExampleComponent implements OnInit {
+export class CardsListViewExampleComponent implements OnInit {
     public countries:ObservableArray<any>;
 
     constructor(){
@@ -29,4 +32,4 @@ export class TwoLineListViewExampleComponent implements OnInit {
         console.log(args.index);
     }   
 }
-// << ext-listview-two-lines-code
+// << ext-listview-cards-code
