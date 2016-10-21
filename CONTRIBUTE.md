@@ -49,7 +49,7 @@ export class ButtonTextComponent {
 
 |Image|
 |---|
-|![Image](app/button/image.png "Image")|
+|![Image](app/ui/button/image.png "Image")|
 
  - Finally, add your example to the main navigation list:
 
