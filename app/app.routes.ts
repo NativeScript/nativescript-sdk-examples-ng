@@ -294,7 +294,7 @@ export const routes = [
     routeEntry({ path: "multiLineGroupedListViewExampleComponent", component: MultiLineGroupedListViewExampleComponent, data: { title: "Grouped Multi Line Items" } }),
     routeEntry({ path: "multiLineBigListViewExampleComponent", component: MultiLineBigListViewExampleComponent, data: { title: "Multi Line Items - Bigger Thumbnails" } }),
     routeEntry({path: "groupedTwoLinesListViewExampleComponent", component: GroupedTwoLinesListViewExampleComponent, data:{ title: "Two Line Items" }}),
-    routeEntry({path: "cardsListViewExampleComponent", component: CardsListViewExampleComponent, data:{ title: "Cards" }}),
+    routeEntry({path:"cardsListViewExampleComponent", component: CardsListViewExampleComponent, data:{ title: "Cards" }}),
 
 ];
 

@@ -14,8 +14,8 @@ import {mockedGroupDataArray, GroupFooter, GroupTitle} from "../mock-dataItems"
 export class GroupedTwoLinesListViewExampleComponent implements OnInit {
     public countries: Array<any>;
 
-    construcotr(){
-
+    constructor(){
+        this.countries=[];
          for (var i = 0; i < mockedGroupDataArray.length; i++) {
             this.countries.push(mockedGroupDataArray[i]);
         }
