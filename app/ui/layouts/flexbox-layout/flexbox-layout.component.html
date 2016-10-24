@@ -1,0 +1,51 @@
+<StackLayout exampleTitle toggleNavButton>
+    <!-- >> flexbox-layout-html -->
+    <FlexboxLayout flexDirection="column">
+
+        <!-- Reverse the natural flow of items -->
+        <FlexboxLayout flexDirection="row-reverse">
+            <!-- Use even flexGrow to achieve uniform grid -->
+            <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="1" backgroundColor="#EEEEEE"></Label>
+            <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="2" backgroundColor="#DDDDDD"></Label>
+            <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="3" backgroundColor="#CCCCCC"></Label>
+            <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="4" backgroundColor="#BBBBBB"></Label>
+            <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="5" backgroundColor="#AAAAAA"></Label>
+            <Label flexGrow="1" class="p-15 text-center font-weight-bold" text="6" backgroundColor="#999999"></Label>
+        </FlexboxLayout>
+
+        <!-- Set flexGrow to accomodate into any extra space -->
+        <ScrollView flexGrow="1" id="scrollview">
+            <!-- Wrap excessive items on new lines -->
+            <FlexboxLayout flexWrap="wrap" alignContent="flex-start">
+
+                <Label class="h2 p-15" textWrap="wrap" text="Sed aliquet diam sed augue vestibulum scelerisque."></Label>
+                <!-- Use flexWrapBefore to control explicit line wrapping -->
+                <Label flexWrapBefore="true" class="h3 p-15" text="Gihub issue labels:"></Label>
+
+                <Label flexWrapBefore="true" class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="S: High" borderRadius="5" backgroundColor="red" color="white"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="T: Feature" borderRadius="5" backgroundColor="green" color="white"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="3 - In Progress" borderRadius="5" backgroundColor="lightgray"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="S: Ullamcorper" borderRadius="5" backgroundColor="red" color="white"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="T: Vulputate" borderRadius="5" backgroundColor="green" color="white"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="2 - Egestas magna" borderRadius="5" backgroundColor="lightgray"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="S: High" borderRadius="5" backgroundColor="red" color="white"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="T: Phasellus" borderRadius="5" backgroundColor="green" color="white"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="Nullam" borderRadius="5" backgroundColor="lightgray"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="T:Question" borderRadius="5" backgroundColor="yellow"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="S:Medium" borderRadius="5" backgroundColor="yellow"></Label>
+                <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="duplicate" borderRadius="5" backgroundColor="lightgray"></Label>
+
+                <Label flexWrapBefore="true" class="h3 p-15" textWrap="wrap" text="Pellentesque molestie nibh et leo facilisis gravida ac porttitor eros. Etiam tempus diam nulla, ut fermentum mauris aliquet quis. Cras finibus vitae magna in bibendum."></Label>
+            </FlexboxLayout>
+        </ScrollView>
+
+        <FlexboxLayout>
+            <Button class="btn btn-rounded-lg" text="&lt;" width="50" borderWidth="0" fontSize="24"></Button>
+            <!-- Set flexGrow to 1 accomodate into any extra space -->
+            <Button flexGrow="1" class="btn btn-primary" text="reactions" borderWidth="0"></Button>
+            <Button class="btn btn-rounded-lg" text="&gt;" width="50" borderWidth="0" fontSize="24"></Button>
+        </FlexboxLayout>
+
+    </FlexboxLayout>
+    <!-- << flexbox-layout-html -->
+</StackLayout>
