@@ -1,2 +1,2 @@
-Set ScrollView with `verical` orientation.
+Set ScrollView with `vertical` orientation.
 <snippet id='scroll-view-verical-html'/>
