@@ -1,4 +1,4 @@
-import { Component, NgZone } from "@angular/core";
+import { Component } from "@angular/core";
 // >> import-geolocation-plugin
 import { Location, getCurrentLocation, isEnabled, distance, enableLocationRequest } from "nativescript-geolocation";
 // << import-geolocation-plugin
@@ -22,7 +22,7 @@ export class BasicLocationExampleComponent {
     public endpoint_longitude: number = 40.71448;
     public endpoint_latitude: number = -74.00598;
 
-    constructor(private zone: NgZone) {
+    constructor() {
         // >> enable-location-services
         enableLocationRequest(true);
         // << enable-location-services
