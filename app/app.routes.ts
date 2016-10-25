@@ -153,6 +153,8 @@ import { CoverpagePageExampleComponent } from "./ui-extended/content-screens/cov
 
 import { FlexboxLayoutComponent } from "./ui/layouts/flexbox-layout/flexbox-layout.component";
 
+import { CameraExamplesComponent } from "./camera/camera-examples.component";
+import { UsingCameraExampleComponent } from "./camera/using-camera/using-camera.component";
 
 export var routableComponents = [];
 export var examplePipes = [
@@ -312,7 +314,10 @@ export const routes = [
     routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable COntent Page" } }),  
     routeEntry({ path: "coverpagePageExampleComponent", component: CoverpagePageExampleComponent, data: { title: "Coverpage" } }), 
 
-    routeEntry({ path: "flexboxLayoutComponent", component: FlexboxLayoutComponent, data: { title: "FlexboxLayout" } }),    
+    routeEntry({ path: "flexboxLayoutComponent", component: FlexboxLayoutComponent, data: { title: "FlexboxLayout" } }), 
+
+    routeEntry({ path: "cameraExamplesComponent", component: CameraExamplesComponent, data: { title: "Camera" } }),
+    routeEntry({ path: "usingCameraExampleComponent", component: UsingCameraExampleComponent, data: { title: "Using Camera" } }),     
 ];
 
 function routeEntry(data) {

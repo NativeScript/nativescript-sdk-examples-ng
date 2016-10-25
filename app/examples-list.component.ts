@@ -46,6 +46,7 @@ var mainMenuLinks = [
 
     new Link("ListView (extended examples)", "/extendedListViewExamplesComponent"),
     // new Link("Content Screens", "/contentScreensExamplesComponent"),
+    new Link("Camera", "/cameraExamplesComponent"),  
 ];
 
 @Component({
