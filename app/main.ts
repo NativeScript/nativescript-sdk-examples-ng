@@ -10,11 +10,11 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 // << (hide)
 import {ModalDialogService} from "nativescript-angular/modal-dialog";
 // >> (hide)
-import { IfAndroidDirective, IfIosDirective } from "./ui/ng-directives/create-custom-directive/create-custom-directive.component"
-import { UnlessDirective } from "./ui/ng-directives/unless-directive/directive-unless"
+import { IfAndroidDirective, IfIosDirective } from "./ui-category/ng-directives/create-custom-directive/create-custom-directive.component"
+import { UnlessDirective } from "./ui-category/ng-directives/unless-directive/directive-unless"
 import { ToggleNavButtonDirective } from "./directives/toggle-nav-button.directive"
 import { ExampleTitleDirective } from "./directives/example.directive"
-import { ItemComponent } from "./ui/listview/using-item-template/using-item-template.component";
+import { ItemComponent } from "./ui-category/listview/using-item-template/using-item-template.component";
 // << (hide)
 import { ModalViewComponent } from "./modal-page/sample-modal-page-module-example/modal-view";
 

@@ -16,6 +16,11 @@ function prettify(str) {
     }).join(' ');
 }
 
+// Folder name 'ui-examples' becomes 'ui' (the way it should be displayed in the documentation tree)
+function updateSubfoldersName(str) {
+    return str.slice(0, str.lastIndexOf("-"));
+}
+
 function compareFiles (leftFile, rightFile) {
     var l = prettify(path.basename(path.dirname(leftFile)));
     var r = prettify(path.basename(path.dirname(rightFile)));
@@ -44,25 +49,26 @@ function build() {
         var filePath = path.join(appDir, file);
         var dir = fs.statSync(filePath);
 
-        return dir.isDirectory() && path.parse(filePath).name == "ui";
+        return dir.isDirectory() && path.parse(filePath).name.indexOf("-category") !== -1;
     });
 
     subDirs.forEach(function (subDir) {
         var currentDir = path.join(articlesDir, subDir);
+        currentDir = updateSubfoldersName(currentDir);
         fs.mkdirSync(currentDir);
 
         var subDirPath = path.join(appDir, subDir);
 
-        // Gather all component overviews in the subdirs - ui
+        // Gather all component overviews in the subdirs - ui-category, ui-extended-category
         var components = glob.sync(subDirPath + "/**/overview.md").sort(compareFiles);
         getComponents(cwd, components, currentDir, jenkinsPosition);
     });
-console.log ("SHOSHO + jenkinsPosition" + jenkinsPosition);
+
     // Gather all component overviews in the main folder - app
     var components = glob.sync(appDir + "/**/overview.md").filter(function (file) {
-        return path.parse(file).dir.indexOf("ui") === -1;
+        return path.parse(file).dir.indexOf("-category") === -1;
     }).sort(compareFiles);
-    console.log ("SHOSHO + jenkinsPosition" + jenkinsPosition);
+   
     getComponents(cwd, components, articlesDir, jenkinsPosition);
 }
 
