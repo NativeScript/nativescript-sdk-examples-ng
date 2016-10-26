@@ -1,6 +1,6 @@
 // >> time-picker-configure-code
 import {ModalDialogService, ModalDialogOptions} from "nativescript-angular/modal-dialog";
-import { Component, NgZone } from "@angular/core";
+import { Component } from "@angular/core";
 import {DatePicker} from "ui/date-picker";
 import {ModalViewComponent} from "./modal-view";
 
@@ -19,7 +19,7 @@ export class SampleModalPageModuleExampleComponent {
     public weekday:string;
     public weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    constructor(private _modalService: ModalDialogService, private zone:NgZone) {
+    constructor(private _modalService: ModalDialogService) {
          var oneDay = 24*60*60*1000;
         this.startDate= new Date("2015-12-12");
         this.endDate = new Date();
