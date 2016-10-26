@@ -7,8 +7,6 @@ import { AppComponent } from "./app.component";
 import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
-import { SIDEDRAWER_DIRECTIVES } from "nativescript-telerik-ui/sidedrawer/angular";
-import { LISTVIEW_DIRECTIVES } from 'nativescript-telerik-ui/listview/angular';
 // << (hide)
 import {ModalDialogService} from "nativescript-angular/modal-dialog";
 // >> (hide)
@@ -31,8 +29,6 @@ import { ModalViewComponent } from "./modal-page/sample-modal-page-module-exampl
         ToggleNavButtonDirective,
         ExampleTitleDirective,
         ...routableComponents,
-        SIDEDRAWER_DIRECTIVES,
-        LISTVIEW_DIRECTIVES,
         // << (hide)
         ModalViewComponent,
         ...examplePipes

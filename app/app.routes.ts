@@ -143,6 +143,18 @@ import { MultiLineGroupedListViewExampleComponent } from "./ui-extended/listview
 import { MultiLineBigListViewExampleComponent } from "./ui-extended/listview/multi-line-big/multi-line-big.component";
 import { GroupedTwoLinesListViewExampleComponent } from "./ui-extended/listview/two-lines-grouped/grouped-two-lines.component";
 import { CardsListViewExampleComponent } from "./ui-extended/listview/cards/cards-listview.component";
+import { HorizontalScrollingExampleComponent } from "./ui-extended/listview/horizontal-scrolling/horizontal-scrolling.component";
+
+import { ContentScreensExamplesComponent } from "./ui-extended/content-screens/content-screens-examples.component";
+
+import { ContentPageExampleComponent } from "./ui-extended/content-screens/content/content-example.component";
+import { ContentScrollablePageExampleComponent } from "./ui-extended/content-screens/content-scrollable/content-scrollable-example.component";
+import { CoverpagePageExampleComponent } from "./ui-extended/content-screens/coverpage/coverpage-example.component";
+
+import { FlexboxLayoutComponent } from "./ui/layouts/flexbox-layout/flexbox-layout.component";
+
+import { CameraExamplesComponent } from "./camera/camera-examples.component";
+import { UsingCameraExampleComponent } from "./camera/using-camera/using-camera.component";
 
 export var routableComponents = [];
 export var examplePipes = [
@@ -295,7 +307,17 @@ export const routes = [
     routeEntry({ path: "multiLineBigListViewExampleComponent", component: MultiLineBigListViewExampleComponent, data: { title: "Multi Line Items - Bigger Thumbnails" } }),
     routeEntry({path: "groupedTwoLinesListViewExampleComponent", component: GroupedTwoLinesListViewExampleComponent, data:{ title: "Two Line Items" }}),
     routeEntry({path:"cardsListViewExampleComponent", component: CardsListViewExampleComponent, data:{ title: "Cards" }}),
+    routeEntry({path:"horizontalScrollingExampleComponent", component: HorizontalScrollingExampleComponent, data:{ title: "Horizontal Scrolling" }}),
+    
+    routeEntry({ path: "contentScreensExamplesComponent", component: ContentScreensExamplesComponent, data: { title: "Content Screens" } }),    
+    routeEntry({ path: "contentPageExampleComponent", component: ContentPageExampleComponent, data: { title: "Content Page" } }),  
+    routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable COntent Page" } }),  
+    routeEntry({ path: "coverpagePageExampleComponent", component: CoverpagePageExampleComponent, data: { title: "Coverpage" } }), 
 
+    routeEntry({ path: "flexboxLayoutComponent", component: FlexboxLayoutComponent, data: { title: "FlexboxLayout" } }), 
+
+    routeEntry({ path: "cameraExamplesComponent", component: CameraExamplesComponent, data: { title: "Camera" } }),
+    routeEntry({ path: "usingCameraExampleComponent", component: UsingCameraExampleComponent, data: { title: "Using Camera" } }),     
 ];
 
 function routeEntry(data) {

@@ -2,21 +2,18 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("AbsoluteLayout", "/absoluteLayoutComponent"),
-    new Link("DockLayout", "/dockLayoutComponent"),
-    new Link("FlexboxLayout", "/flexboxLayoutComponent"),
-    new Link("GridLayout", "/gridLayoutComponent"),
-    new Link("StackLayout", "/stackLayoutComponent"),
-    new Link("WrapLayout", "/wrapLayoutComponent")
+    new Link("Content page", "/contentPageExampleComponent"),
+    new Link("Content page (auto hide image)", "/contentScrollablePageExampleComponent"),
+    new Link("Coverpage", "/coverpagePageExampleComponent"),
 ];
 
 @Component({
-    selector: 'layouts-component',
+    selector: 'content-screens-component',
     templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class LayoutsExamplesComponent {
+export class ContentScreensExamplesComponent {
     public links: Array<Link>;
 
     constructor() {

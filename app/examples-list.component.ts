@@ -43,7 +43,10 @@ var mainMenuLinks = [
     new Link("Fetch", "/fetchExamplesComponent"),
     new Link("File System", "/fileSystemxamplesComponent"),
     new Link("Modal page", "/modalPageExamplesComponent"),
+
     new Link("ListView (extended examples)", "/extendedListViewExamplesComponent"),
+    // new Link("Content Screens", "/contentScreensExamplesComponent"),
+    new Link("Camera", "/cameraExamplesComponent"),  
 ];
 
 @Component({

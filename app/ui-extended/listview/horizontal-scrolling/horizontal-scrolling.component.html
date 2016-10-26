@@ -1,0 +1,16 @@
+<StackLayout exampleTitle toggleNavButton>
+    <Label text="Countries" class="h2 p-15" textWrap="true"></Label> 
+    <!-- >> ext-horizontal-lists-html -->
+    <ScrollView orientation="horizontal">
+        <StackLayout orientation="horizontal" class="list-group" height="300">
+            <GridLayout *ngFor="let country of countries" rows="*, auto" class="list-group-item m-15 active"> 
+                <Image row="0" rowSpan="2" [src]="country.imageSrc"></Image>
+                <StackLayout row="1" class="list-group-item" opacity="0.9" backgroundColor="gray" color="black">
+                    <Label class="list-group-item-heading" [text]="country.name" opacity="1" stretch="aspectFill"></Label>
+                    <Label class="list-group-item-text" [text]="'Continent: '+country.continent" opacity="1" color="white"></Label>      
+                </StackLayout>
+            </GridLayout> 
+        </StackLayout>
+    </ScrollView>
+    <!-- << xt-horizontal-lists-html -->
+</StackLayout>

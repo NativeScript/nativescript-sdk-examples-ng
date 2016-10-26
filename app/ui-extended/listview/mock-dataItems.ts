@@ -33,14 +33,12 @@ export var mockedDataArray = [
     new Country("Hungary", "~/ui-extended/listview/images/flags/hu.png", "Europe", mockedDescriptionType2),
     new Country("Italy", "~/ui-extended/listview/images/flags/it.png", "Europe", mockedDescriptionType4),
     new Country("Jamaica", "~/ui-extended/listview/images/flags/jm.png", "North America", mockedDescription),
-    new Country("Japan", "~/ui-extended/listview/images/flags/jp.png", "Asia", mockedDescription),
     new Country("Romania", "~/ui-extended/listview/images/flags/ro.png", "Europe", mockedDescriptionType2),
     new Country("Russia", "~/ui-extended/listview/images/flags/ru.png", "Europe", mockedDescriptionType4),
     new Country("United States", "~/ui-extended/listview/images/flags/us.png", "North America", mockedDescriptionType3),
 ]
 export var mockedGroupDataArray = [
     new GroupTitle("Asia"),
-    new Country("Japan", "~/ui-extended/listview/images/flags/jp.png", "Asia", mockedDescription),
     new Country("China", "~/ui-extended/listview/images/flags/cn.png", "Asia", mockedDescriptionType4),
 
     new GroupTitle("Europe"),

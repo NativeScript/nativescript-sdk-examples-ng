@@ -37,10 +37,10 @@
     "@angular/platform-browser": "2.1.1",
     "@angular/platform-browser-dynamic": "2.1.1",
     "@angular/router": "3.1.1",
-    "nativescript-angular": "1.1.1",
+    "nativescript-angular": "next",
+    "nativescript-camera": "0.0.6",
     "nativescript-geolocation": "0.0.13",
     "nativescript-intl": "~0.0.4",
-    "nativescript-telerik-ui": "^1.4.1",
     "nativescript-theme-core": "^0.1.2",
     "tns-core-modules": "next"
   },
@@ -56,8 +56,8 @@
     "opener": "^1.4.1",
     "rimraf": "^2.5.3",
     "tar.gz": "^1.0.5",
-    "tns-platform-declarations": "2.2.0",
     "tslint": "^3.13.0",
+    "tns-platform-declarations": "2.2.0",
     "typescript": "^2.0.3",
     "zone.js": "~0.6.21"
   },

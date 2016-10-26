@@ -5,7 +5,7 @@
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
             <template let-country="item">
                 <StackLayout class="list-group-item">
-                    <Label [text]="country.name"></Label>
+                    <Label class="list-group-item-heading" [text]="country.name"></Label>
                 </StackLayout>
             </template>
         </ListView>
@@ -17,7 +17,7 @@
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="red">
             <template let-country="item">
                 <StackLayout class="list-group-item">
-                    <Label [text]="country.name"></Label>
+                    <Label class="list-group-item-heading" [text]="country.name"></Label>
                 </StackLayout>
             </template>
         </ListView>
@@ -28,10 +28,10 @@
         <!-- >> ext-listview-thumbs-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" >
             <template let-country="item">
-                <GridLayout class="list-group-item" rows="*" columns="auto, *">
-                    <Image row="0" col="0" [src]="country.imageSrc" class="thumb img-circle"></Image>
-                    <Label row="0" col="1" [text]="country.name" class="p-15"></Label>
-                </GridLayout>
+                <StackLayout orientation="horizontal" class="list-group-item">
+                    <Image [src]="country.imageSrc" class="thumb img-circle"></Image>
+                    <Label [text]="country.name" class="list-group-item-heading" verticalAlignment="center"></Label>
+                </StackLayout>
             </template>
         </ListView>
         <!-- << ext-listview-thumbs-html -->
