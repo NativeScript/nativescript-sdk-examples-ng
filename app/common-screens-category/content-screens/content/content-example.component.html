@@ -1,3 +1,10 @@
-<StackLayout  exampleTitle toggleNavButton>
-    <Label text="Content" textWrap="true"></Label>
-</StackLayout>
+<!-- >> content-hide-actionbar-html -->
+<ScrollView  exampleTitle toggleNavButton (scroll)="onScroll($event)">
+    <FlexboxLayout flexDirection="column">
+        <Image flexGrow="2" [src]="imageSrc" stretch="fill"></Image>
+        <Label flexGrow="1" [text]="title" class="h2 p-l-15 p-r-15 p-t-15" textWrap="true"></Label>
+        <Label flexGrow="1" [text]="desc" class="p-15" textWrap="true"></Label> 
+        <Label flexGrow="1" [text]="desc" class="p-15" textWrap="true"></Label> 
+    </FlexboxLayout>
+</ScrollView>
+<!-- << content-hide-actionbar-html -->

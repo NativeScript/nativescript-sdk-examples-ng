@@ -14,6 +14,7 @@ export class HorizontalScrollingExampleComponent implements OnInit {
 
     ngOnInit() {
         for (var index = 0; index < mockedDataArray.length; index++) {
+            // creating an object with additional id key to re-use as unique id
             this.countries.push({ "data" : mockedDataArray[index], id: index});      
         }
     }
@@ -29,7 +30,7 @@ export class HorizontalScrollingExampleComponent implements OnInit {
 
     onScrollLoaded(args) {
         // scroll to specific position of the horizontal scroll list
-        var scrollOffset = 340;
+        var scrollOffset = 330;
         (<ScrollView>args.object).scrollToHorizontalOffset(scrollOffset, true);
     }
 }
