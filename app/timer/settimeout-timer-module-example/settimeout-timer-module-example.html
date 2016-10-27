@@ -3,8 +3,8 @@
     <TextView class="input input-border m-15 text-center"  [text]="counter" text="" editable="false"></TextView>
      <Label  class="h2 m-15 text-center" text="Increase/Decrease number after 1 seconds" textWrap="true"></Label>
     <GridLayout class="m-x-auto" rows="auto" columns="150 150" >
-        <Button class="btn btn-primary btn-rounded-sm" row="0" col="0" text="+" (tap)="increase($event)"></Button>
-        <Button class="btn btn-primary btn-rounded-sm" row="0" col="1" text="-" (tap)="decrease($event)"></Button>
+        <Button class="btn btn-primary btn-rounded-sm btn-active" row="0" col="0" text="+" (tap)="increase($event)"></Button>
+        <Button class="btn btn-primary btn-rounded-sm btn-active" row="0" col="1" text="-" (tap)="decrease($event)"></Button>
     </GridLayout>
 </StackLayout>
 </StackLayout>

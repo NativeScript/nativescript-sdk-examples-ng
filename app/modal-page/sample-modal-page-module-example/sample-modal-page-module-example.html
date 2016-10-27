@@ -5,18 +5,18 @@
             <Label text='Count the days between the dates' textWrap="true"></Label>
             <Label [text]='startDate | date:"MM/dd/yy"' textWrap="true"></Label>
             
-            <Button text="Enter Start Date" (tap)="createModelView('start')"></Button>
+            <Button class="btn btn-primary btn-active" text="Enter Start Date" (tap)="createModelView('start')"></Button>
             <Label [text]='endDate | date:"MM/dd/yy"' textWrap="true"></Label>
             
-            <Button text="Enter End Date" (tap)="createModelView('end')"></Button>
+            <Button class="btn btn-primary btn-active" text="Enter End Date" (tap)="createModelView('end')"></Button>
 
             <Label class="result" [text]='"Days: "+days' textWrap="true"></Label>
             
-            <Button text="Count Days" (tap)="findDays()"></Button>
+            <Button class="btn btn-primary btn-active" text="Count Days" (tap)="findDays()"></Button>
 
             <Label class="result" [text]='"Date: "+date| date:"MM/dd/yy"' textWrap="true"></Label>
             <Label class="result" [text]='"Day: "+weekday' textWrap="true"></Label>
-            <Button text="Enter Date" (tap)="createModelView('findTheDay')"></Button>
+            <Button class="btn btn-primary btn-active" text="Enter Date" (tap)="createModelView('findTheDay')"></Button>
             
         </StackLayout>
     </ScrollView>

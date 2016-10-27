@@ -2,8 +2,8 @@
 <!-- >> creating-timepicker-html -->
     <ScrollView orientation="vertical">
         <StackLayout orientation="vertical">
-            <Button text="Check platform type" class="btn btn-primary" (tap)="checkPlatformType()"></Button>
-            <Button [text]="deviceInfoButton" class="btn btn-outline" (tap)="deviceInfo()"></Button>
+            <Button text="Check platform type" class="btn btn-primary btn-active" (tap)="checkPlatformType()"></Button>
+            <Button [text]="deviceInfoButton" class="btn btn-outline btn-active" (tap)="deviceInfo()"></Button>
             <ScrollView orientation="horizontal">
                 <StackLayout orientation="horizontal" class="form">
                     <GridLayout rows="auto, auto, auto, auto, auto, auto, auto, auto" columns="auto auto" [visibility]="isItemVisible ? 'visible' : 'collapsed'">
@@ -33,7 +33,7 @@
                     </GridLayout>
                 </StackLayout>
             </ScrollView>
-            <Button [text]="screenInfoButton" class="btn btn-outline" (tap)="screenInfo()"></Button>
+            <Button [text]="screenInfoButton" class="btn btn-outline btn-active" (tap)="screenInfo()"></Button>
             <ScrollView orientation="horizontal">
                 <StackLayout orientation="horizontal" class="form">
                     <GridLayout rows="auto, auto, auto, auto, auto" columns="auto auto" [visibility]="isItemVisibleScreenInfo ? 'visible' : 'collapsed'">

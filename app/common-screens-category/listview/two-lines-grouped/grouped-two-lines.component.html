@@ -7,8 +7,10 @@
                 <StackLayout [ngSwitch]="checkType(item)">
                     <Label *ngSwitchCase="'GroupTitle'" class="list-group-item h3 bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24" [text]="item.title"></Label>
                     <Label *ngSwitchCase="'GroupFooter'" class="list-group-item h4" backgroundColor="gray" fontSize="12"[text]="item.description"></Label>
-                    <Label *ngSwitchDefault class="list-group-item-heading" [text]="item.name" ></Label>
-                    <Label *ngSwitchDefault class="list-group-item-text" [text]="'Continent: '+item.continent" ></Label>
+                    <StackLayout *ngSwitchDefault class="list-group-item">
+                        <Label *ngSwitchDefault class="list-group-item-heading" [text]="item.name" ></Label>
+                        <Label *ngSwitchDefault class="list-group-item-text" [text]="'Continent: '+item.continent" ></Label>
+                    </StackLayout>
                 </StackLayout>
             </template>
         </ListView>
@@ -22,8 +24,10 @@
                 <StackLayout [ngSwitch]="checkType(item)">
                     <Label *ngSwitchCase="'GroupTitle'" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24" [text]="item.title"></Label>
                     <Label *ngSwitchCase="'GroupFooter'" class="list-group-item" backgroundColor="gray" fontSize="12" [text]="item.description"></Label>
-                    <Label *ngSwitchDefault class="list-group-item-heading" [text]="item.name" ></Label>
-                    <Label *ngSwitchDefault class="list-group-item-text" [text]="'Continent: '+item.continent" ></Label>
+                    <StackLayout *ngSwitchDefault class="list-group-item">
+                        <Label *ngSwitchDefault class="list-group-item-heading" [text]="item.name" ></Label>
+                        <Label *ngSwitchDefault class="list-group-item-text" [text]="'Continent: '+item.continent" ></Label>
+                    </StackLayout>
                 </StackLayout>
             </template>
         </ListView>

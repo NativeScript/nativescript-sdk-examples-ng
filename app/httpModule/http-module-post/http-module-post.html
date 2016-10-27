@@ -13,9 +13,10 @@
                 <Label row="2" col="0" text="Custom text: " textWrap="true"></Label>
                 <TextField row="2" col="1" hint="Enter custom text" [(ngModel)]="custom_text"></TextField>
                 
-                <Button row="3" col="0" colSpan="2" text="Submit" (tap)="makePOSTRequest()"></Button>
+                
                 
             </GridLayout>
+            <Button class="btn btn-primary btn-active" text="Submit" (tap)="makePOSTRequest()"></Button>
         </StackLayout>
     </ScrollView>
 </StackLayout>
