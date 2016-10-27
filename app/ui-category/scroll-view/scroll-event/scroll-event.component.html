@@ -4,7 +4,7 @@
         <StackLayout borderRadius="2" backgroundColor="#0099CC" class="m-b-5" height="50" >
             <Label class="h2 text-center" color="white" [text]="status"></Label>
         </StackLayout>
-        <ScrollView (scroll)="onscroll()">
+        <ScrollView (scroll)="onScroll($event)">
             <GridLayout class="m-15" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
                 <Label class="h3 m-5" height="50" row="0" text="Title 1"></Label>
                 <Label class="h3 m-5" height="50" row="1" text="Title 2"></Label>

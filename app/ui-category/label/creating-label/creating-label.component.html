@@ -7,7 +7,7 @@
     <Label class="h3 p-15" [text]="oneway" textWrap="true"></Label> 
 
     <!-- Label with two-way binding -->
-    <Button class="btn btn-primary p-5 m-5" text="Change label text" (tap)="changeLabelText()"></Button> 
+    <Button class="btn btn-primary btn-active p-5 m-5" text="Change label text" (tap)="changeLabelText()"></Button> 
     <Label class="h3 p-15" [text]="counter + ' times two-way label has been changed'" textWrap="true"></Label>
     <Label class="h3 p-15" #lb [text]="twoway" [textChange]="twoway" textWrap="true"></Label> 
     <!-- << creating-label-html -->   

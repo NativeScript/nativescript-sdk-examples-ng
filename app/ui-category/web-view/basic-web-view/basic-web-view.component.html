@@ -3,7 +3,7 @@
         <!-- >> web-view-html -->
         <GridLayout rows="75 *">
             <GridLayout row="0" rows="*" columns="50 *" class="form">
-                <Button class="icon" row="0" col="0" text="&#xea44;" (tap)="goBack()"></Button>   
+                <Button class="btn btn-primary btn-active" row="0" col="0" text="&#xea44;" (tap)="goBack()"></Button>   
                 <TextField id="urlField" #tf row="0" col="1" hint="Enter URL" [(ngModel)]="url"  returnKeyType="done"
                     (returnPress)="submit(tf.text)" autocorrect="false" verticalAlignment="center" class="input input-border m-t-0"
                     autocapitalizationType="none" ></TextField>  

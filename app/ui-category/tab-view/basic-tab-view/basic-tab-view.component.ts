@@ -6,5 +6,5 @@ import { Component } from "@angular/core";
 })
 
 export class BasicTabViewComponent {
-   public tabindex = 1;
+    public tabindex = 1;
 }

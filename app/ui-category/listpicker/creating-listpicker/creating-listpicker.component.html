@@ -1,13 +1,13 @@
 <StackLayout exampleTitle toggleNavButton>
         <GridLayout rows="50, auto">
                 <Label class="h3 p-15 text-left" text="Pick a pokemon" row="0" textWrap="true"></Label>
-                <!-- >> creating-listpicker-html --> 
+                        <!-- >> creating-listpicker-html --> 
                 <ListPicker #picker 
                         row="1" class="p-15" 
                         [items]="pokemons" 
                         [selectedIndex]="selectedIndex" 
                         (selectedIndexChange)="selectedIndexChanged(picker)">
                 </ListPicker>
-                <!-- << creating-listpicker-html --> 
+        <!-- << creating-listpicker-html --> 
         </GridLayout>
 </StackLayout>

@@ -73,7 +73,7 @@
 			</ScrollView>
 			<StackLayout backgroundColor="white" [visibility]="isItemVisible ? 'visible' : 'collapsed'" row="0" col="0">
 				<DatePicker class="m-15" id="datePicker" #dp [visibility]="isItemVisible ? 'visible' : 'collapsed'"></DatePicker>
-				<Button class="btn btn-primary" text="Tap to enter the date" (tap)="enterDate()" [visibility]="isButtonVisible ? 'visible' : 'collapsed'"></Button>
+				<Button class="btn btn-primary btn-active" text="Tap to enter the date" (tap)="enterDate()" [visibility]="isButtonVisible ? 'visible' : 'collapsed'"></Button>
 			</StackLayout>
 		</GridLayout>
 		<!-- << sample-ui-textfield-html -->

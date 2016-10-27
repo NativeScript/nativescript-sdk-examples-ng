@@ -1,9 +1,10 @@
-<StackLayout  exampleTitle toggleNavButton>
-    <StackLayout class="form">
-        <!-- >> textview-html -->
-        <Button [text]="buttonText" class="btn btn-primary" (tap)="disableTextView()"></Button>
-        <Button text="Show text" class="btn btn-outline" (tap)="showText()" ></Button>
-        <TextView hint="Enter text" class="input input-border" returnKeyType="done" (returnPress)="submit($event)" [(ngModel)]="tvtext" [editable]="editState"></TextView>
-        <!-- << textview-html -->
-    </StackLayout>
+<StackLayout exampleTitle toggleNavButton>
+	<StackLayout class="form">
+		<!-- >> textview-html -->
+		<Button [text]="buttonText" class="btn btn-primary btn-active" (tap)="disableTextView()"></Button>
+		<Button text="Show text" class="btn btn-outline btn-active" (tap)="showText()"></Button>
+		<TextView hint="Enter text" class="input input-border" returnKeyType="done" (returnPress)="submit($event)" [(ngModel)]="tvtext"
+			[editable]="editState"></TextView>
+		<!-- << textview-html -->
+	</StackLayout>
 </StackLayout>
