@@ -1,5 +1,7 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
-import { mockedDataArray, Country } from "../mock-dataItems"
+import { mockedDataArray } from "../mock-dataItems"
+import { EventData } from "data/observable";
+import { ScrollView, ScrollEventData } from "ui/scroll-view";
 
 // >> ext-horizontal-lists-code
 @Component({
@@ -8,12 +10,27 @@ import { mockedDataArray, Country } from "../mock-dataItems"
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HorizontalScrollingExampleComponent implements OnInit {
-    public countries: Array<Country> = [];
+    public countries: Array<any> = [];
 
     ngOnInit() {
         for (var index = 0; index < mockedDataArray.length; index++) {
-            this.countries.push(mockedDataArray[index]);      
+            this.countries.push({ "data" : mockedDataArray[index], id: index});      
         }
+    }
+
+    onTap(args: EventData) {
+        // using the unique id assigned via the view-model
+        console.log(args.object.get("id"));
+    }
+
+    onScroll(args: ScrollEventData) {
+        console.log("scrollX: " + args.scrollX + "; scrollY: " + args.scrollY);
+    }
+
+    onScrollLoaded(args) {
+        // scroll to specific position of the horizontal scroll list
+        var scrollOffset = 340;
+        (<ScrollView>args.object).scrollToHorizontalOffset(scrollOffset, true);
     }
 }
 // << ext-horizontal-lists-code

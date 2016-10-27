@@ -11,7 +11,7 @@ export class ConfigureTimePickerComponent {
 
     configure(timePicker: TimePicker) {
         timePicker.hour = 9;
-        timePicker.minute = 25;  
+        timePicker.minute = 25;
     }
 }
 // << time-picker-configure-code

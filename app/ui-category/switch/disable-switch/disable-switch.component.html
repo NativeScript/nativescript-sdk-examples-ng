@@ -8,7 +8,7 @@
             <Switch class="m-15" #sw2 checked="false" (checkedChange)="secondSwitchState=sw2.checked" row="1" col="1" ></Switch>
             <Label class="h3 m-15" [text]="sw3.isEnabled ? 'enabled' : 'disabled'" textWrap="true" row="2" col="0"></Label>
             <Switch class="m-15" #sw3 checked="true" (checkedChange)="thirdSwitchState=sw3.checked" row="2" col="1"></Switch>   
-            <Button class="btn btn-primary" text="Disable switches" (tap)="onTap()" row="3" col="0" colSpan="2" horizontalAlignment="stretch"></Button>
+            <Button class="btn btn-primary btn-active" text="Disable switches" (tap)="onTap()" row="3" col="0" colSpan="2" horizontalAlignment="stretch"></Button>
         </GridLayout>
         <!-- << switch-view-html -->
     </StackLayout>

@@ -9,41 +9,40 @@ import { Label } from "ui/label"
 })
 
 export class TabViewItemsComponent {
-    
-   public tabviewitems:Array<any>;
 
-   constructor()
-   {
+    public tabviewitems: Array<any>;
 
-       this.tabviewitems = [];
+    constructor() {
 
-       var innerFirstStackLayout = new StackLayout();
-       var firstLabel = new Label();
-       firstLabel.margin = "15";
-       firstLabel.text="Label first page";
-       innerFirstStackLayout.addChild(firstLabel);
+        this.tabviewitems = [];
 
-       var innerSecondStackLayout = new StackLayout();
-       var secondLabel = new Label();
-       secondLabel.margin = "15";
-       secondLabel.text="Label second page";
-       innerSecondStackLayout.addChild(secondLabel);
+        var innerFirstStackLayout = new StackLayout();
+        var firstLabel = new Label();
+        firstLabel.margin = "15";
+        firstLabel.text = "Label first page";
+        innerFirstStackLayout.addChild(firstLabel);
 
-       var innerThirdStackLayout = new StackLayout();
-       var thirdLabel = new Label();
-       thirdLabel.margin = "15";
-       thirdLabel.text="Label third page";
-       innerThirdStackLayout.addChild(thirdLabel);
+        var innerSecondStackLayout = new StackLayout();
+        var secondLabel = new Label();
+        secondLabel.margin = "15";
+        secondLabel.text = "Label second page";
+        innerSecondStackLayout.addChild(secondLabel);
 
-       this.tabviewitems.push({"title":"Tab1", "view":innerFirstStackLayout});
-       this.tabviewitems.push({"title":"Tab2", "view":innerSecondStackLayout});
-       this.tabviewitems.push({"title":"Tab3", "view":innerThirdStackLayout});
+        var innerThirdStackLayout = new StackLayout();
+        var thirdLabel = new Label();
+        thirdLabel.margin = "15";
+        thirdLabel.text = "Label third page";
+        innerThirdStackLayout.addChild(thirdLabel);
 
-   }
+        this.tabviewitems.push({ "title": "Tab1", "view": innerFirstStackLayout });
+        this.tabviewitems.push({ "title": "Tab2", "view": innerSecondStackLayout });
+        this.tabviewitems.push({ "title": "Tab3", "view": innerThirdStackLayout });
 
-   public tabViewIndexChange(result){
-       alert("Tab View selected index: "+result);
-   }
+    }
+
+    public tabViewIndexChange(result) {
+        alert("Tab View selected index: " + result);
+    }
 
 }
 // << add-items-code
