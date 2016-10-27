@@ -2,6 +2,7 @@
 ## Add New Component Category
 
  - Create a new directory inside the `app` directory with the name of the component, for example `action-bar`. The name of the directory will be prettified and will become the component section header. Create a file named `overview.md` and place the general overview text for the component. You **cannot** use code snippets here. 
+ - If the directory should be displayed as a folder inside the documentation tree, it should end with `-category`. For example - `ui-category`.
 
 ## Add New Example
 
@@ -49,7 +50,7 @@ export class ButtonTextComponent {
 
 |Image|
 |---|
-|![Image](app/ui/button/image.png "Image")|
+|![Image](app/ui-category/button/image.png "Image")|
 
  - Finally, add your example to the main navigation list:
 
