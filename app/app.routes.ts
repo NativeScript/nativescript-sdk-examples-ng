@@ -150,6 +150,14 @@ import { ContentScreensExamplesComponent } from "./common-screens-category/conte
 import { ContentPageExampleComponent } from "./common-screens-category/content-screens/content/content-example.component";
 import { ContentScrollablePageExampleComponent } from "./common-screens-category/content-screens/content-scrollable/content-scrollable-example.component";
 import { CoverpagePageExampleComponent } from "./common-screens-category/content-screens/coverpage/coverpage-example.component";
+import { ExtendedDataEntryExamplesComponent } from "./common-screens-category/dataentry/extended-dataentry-examples.component";
+import { WelcomeDataEntryExampleComponent } from "./common-screens-category/dataentry/dataentry-welcome/dataentry-welcome.component";
+import { SocialLoginDataEntryExampleComponent } from "./common-screens-category/dataentry/dataentry-sociallogin/dataentry-sociallogin.component";
+import { SignupDataEntryExampleComponent } from "./common-screens-category/dataentry/dataentry-signup/dataentry-signup.component";
+import { ExtendedUserProfileExamplesComponent } from "./common-screens-category/userprofile/extended-userprofile-examples.component";
+import { UserFeedImagesExampleComponent } from "./common-screens-category/userprofile/user-feed-images/user-feed-images.component";
+import { UserSettingsMenuExampleComponent } from "./common-screens-category/userprofile/user-settings-menu/user-settings-menu.component";
+import { UserFeedExampleComponent } from "./common-screens-category/userprofile/user-feed/user-feed.component";
 
 import { FlexboxLayoutComponent } from "./ui-category/layouts/flexbox-layout/flexbox-layout.component";
 
@@ -281,43 +289,51 @@ export const routes = [
     routeEntry({ path: "deleteExampleComponent", component: DeleteExampleComponent, data: { title: "Delete" } }),
     routeEntry({ path: "traceExampleComponent", component: TraceExamplesComponent, data: { title: "Trace module" } }),
     routeEntry({ path: "traceSpecificCategoriesExampleComponent", component: TraceSpecificCategoriesExampleComponent, data: { title: "Trace specific categories" } }),
-    routeEntry({ path: "customTraceWriterExampleComponent", component: CustomTraceWriterExampleComponent, data: { title: "Writing a Custom TraceWriter" } }),
+    routeEntry({ path: "customTraceWriterExampleComponent", component: CustomTraceWriterExampleComponent, data: { title: "Writing a custom traceWriter" } }),
     routeEntry({ path: "timerExamplesComponent", component: TimerExamplesComponent, data: { title: "Timer module" } }),
     routeEntry({ path: "setintervalTimerModuleExampleComponent", component: SetIntervalTimerModuleExampleComponent, data: { title: "setInterval example" } }),
     routeEntry({ path: "settimeoutTimerModuleExample", component: SettimeoutTimerModuleExample, data: { title: "setTimeout example" } }),
     routeEntry({ path: "platformExamplesComponent", component: PlatformExamplesComponent, data: { title: "Platform module" } }),
     routeEntry({ path: "platformModuleExampleComponent", component: PlatformModuleExampleComponent, data: { title: "Platform module example" } }),
     routeEntry({ path: "locationExamplesComponent", component: LocationExamplesComponent, data: { title: "Location" } }),
-    routeEntry({ path: "basicLocationExampleComponent", component: BasicLocationExampleComponent, data: { title: "Basic Location example" } }),
-    routeEntry({ path: "locationMonitoringExampleComponent", component: LocationMonitoringExampleComponent, data: { title: "Location Monitoring example" } }),
+    routeEntry({ path: "basicLocationExampleComponent", component: BasicLocationExampleComponent, data: { title: "Basic location example" } }),
+    routeEntry({ path: "locationMonitoringExampleComponent", component: LocationMonitoringExampleComponent, data: { title: "Location monitoring example" } }),
     routeEntry({ path: "fpsExamplesComponent", component: FPSExamplesComponent, data: { title: "FPS Meter" } }),
-    routeEntry({ path: "fpsMeterModuleExampleComponent", component: FPSMeterModuleExampleComponent, data: { title: "FPS Meter example" } }),
+    routeEntry({ path: "fpsMeterModuleExampleComponent", component: FPSMeterModuleExampleComponent, data: { title: "FPS meter example" } }),
     routeEntry({ path: "httpModuleComponent", component: HTTPModuleComponent, data: { title: "HTTP Module" } }),
-    routeEntry({ path: "httpModulePostExampleComponent", component: HTTPModulePostExampleComponent, data: { title: "HTTP Post JSON example" } }),
-    routeEntry({ path: "httpModuleGetExampleComponent", component: HTTPModuleGetExampleComponent, data: { title: "HTTP Get example" } }),
+    routeEntry({ path: "httpModulePostExampleComponent", component: HTTPModulePostExampleComponent, data: { title: "HTTP post JSON example" } }),
+    routeEntry({ path: "httpModuleGetExampleComponent", component: HTTPModuleGetExampleComponent, data: { title: "HTTP get example" } }),
     routeEntry({ path: "modalPageExamplesComponent", component: ModalPageExamplesComponent, data: { title: "Modal page" } }),
     routeEntry({ path: "sampleModalPageModuleExampleComponent", component: SampleModalPageModuleExampleComponent, data: { title: "Modal page example" } }),
 
     routeEntry({ path: "extendedListViewExamplesComponent", component: ExtendedListViewExamplesComponent, data: { title: "ListView (extended examples)" } }),
-    routeEntry({ path: "singleLineListViewExampleComponent", component: SingleLineListViewExampleComponent, data: { title: "Single Line Items" } }),
-    routeEntry({ path: "groupedSingleLineListViewExampleComponent", component: GroupedSingleLineListViewExampleComponent, data: { title: "Grouped Single Line Items" } }),
-    routeEntry({path: "twoLineListViewExampleComponent", component: TwoLineListViewExampleComponent, data:{ title: "Two Line Items" }}),
-    routeEntry({ path: "multiLineListViewExampleComponent", component: MultiLineListViewExampleComponent, data: { title: "Multi Line Items" } }),
-    routeEntry({ path: "multiLineGroupedListViewExampleComponent", component: MultiLineGroupedListViewExampleComponent, data: { title: "Grouped Multi Line Items" } }),
-    routeEntry({ path: "multiLineBigListViewExampleComponent", component: MultiLineBigListViewExampleComponent, data: { title: "Multi Line Items - Bigger Thumbnails" } }),
-    routeEntry({path: "groupedTwoLinesListViewExampleComponent", component: GroupedTwoLinesListViewExampleComponent, data:{ title: "Two Line Items" }}),
+    routeEntry({ path: "singleLineListViewExampleComponent", component: SingleLineListViewExampleComponent, data: { title: "Single line items" } }),
+    routeEntry({ path: "groupedSingleLineListViewExampleComponent", component: GroupedSingleLineListViewExampleComponent, data: { title: "Grouped single line items" } }),
+    routeEntry({path: "twoLineListViewExampleComponent", component: TwoLineListViewExampleComponent, data:{ title: "Two line items" }}),
+    routeEntry({ path: "multiLineListViewExampleComponent", component: MultiLineListViewExampleComponent, data: { title: "Multi line items" } }),
+    routeEntry({ path: "multiLineGroupedListViewExampleComponent", component: MultiLineGroupedListViewExampleComponent, data: { title: "Grouped multi line items" } }),
+    routeEntry({ path: "multiLineBigListViewExampleComponent", component: MultiLineBigListViewExampleComponent, data: { title: "Multi line items - bigger thumbnails" } }),
+    routeEntry({path: "groupedTwoLinesListViewExampleComponent", component: GroupedTwoLinesListViewExampleComponent, data:{ title: "Two line items" }}),
     routeEntry({path:"cardsListViewExampleComponent", component: CardsListViewExampleComponent, data:{ title: "Cards" }}),
-    routeEntry({path:"horizontalScrollingExampleComponent", component: HorizontalScrollingExampleComponent, data:{ title: "Horizontal Scrolling" }}),
+    routeEntry({path:"horizontalScrollingExampleComponent", component: HorizontalScrollingExampleComponent, data:{ title: "Horizontal scrolling" }}),
     
     routeEntry({ path: "contentScreensExamplesComponent", component: ContentScreensExamplesComponent, data: { title: "Content Screens" } }),    
     routeEntry({ path: "contentPageExampleComponent", component: ContentPageExampleComponent, data: { title: "Content Page" } }),  
-    routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable COntent Page" } }),  
-    routeEntry({ path: "coverpagePageExampleComponent", component: CoverpagePageExampleComponent, data: { title: "Coverpage" } }), 
+    routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable content page" } }),  
+    routeEntry({ path: "coverpagePageExampleComponent", component: CoverpagePageExampleComponent, data: { title: "Coverpage" } }),
+    routeEntry({path:"extendedDataEntryExamplesComponent", component: ExtendedDataEntryExamplesComponent, data:{ title: "Data entry" }}),
+    routeEntry({path:"welcomeDataEntryExampleComponent", component: WelcomeDataEntryExampleComponent, data:{ title: "Welcome data entry" }}),
+    routeEntry({path:"socialLoginDataEntryExampleComponent", component: SocialLoginDataEntryExampleComponent, data:{ title: "Social login data entry" }}),
+    routeEntry({path:"signupDataEntryExampleComponent", component: SignupDataEntryExampleComponent, data:{ title: "Sign up data entry" }}),
+    routeEntry({path:"extendedUserProfileExamplesComponent", component: ExtendedUserProfileExamplesComponent, data:{ title: "User profile" }}),
+    routeEntry({path:"userFeedImagesExampleComponent", component: UserFeedImagesExampleComponent, data:{ title: "User feed with images" }}),
+    routeEntry({path:"userSettingsMenuExampleComponent", component: UserSettingsMenuExampleComponent, data:{ title: "User settings menu" }}),
+    routeEntry({path:"userFeedExampleComponent", component: UserFeedExampleComponent, data:{ title: "User feed" }}),
 
     routeEntry({ path: "flexboxLayoutComponent", component: FlexboxLayoutComponent, data: { title: "FlexboxLayout" } }), 
 
     routeEntry({ path: "cameraExamplesComponent", component: CameraExamplesComponent, data: { title: "Camera" } }),
-    routeEntry({ path: "usingCameraExampleComponent", component: UsingCameraExampleComponent, data: { title: "Using Camera" } }),     
+    routeEntry({ path: "usingCameraExampleComponent", component: UsingCameraExampleComponent, data: { title: "Using camera" } }),     
 ];
 
 function routeEntry(data) {

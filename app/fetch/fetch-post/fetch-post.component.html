@@ -6,7 +6,7 @@
         <Label class="h3 p-15" row="2" col="0" text="Password: " textWrap="true"></Label>
         <TextField class="h3 p-15" row="2" col="1" hint="Enter Password" [(ngModel)]="pass" secure="true" editable="true"></TextField>
 
-        <Button class="btn btn-primary" row="3" col="0" colSpan="2" text="Submit" (tap)="submit()"></Button>   
+        <Button class="btn btn-primary btn-active" row="3" col="0" colSpan="2" text="Submit" (tap)="submit()"></Button>   
         <GridLayout class="bg-primary p-15 m-15" row="4" col="0" colSpan="2" rows="*" columns="*">
             <Label class="text-center p-15" verticalAligment="center" colSpan="2" [text]="message" textWrap="true"></Label>  
         </GridLayout>

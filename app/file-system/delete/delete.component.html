@@ -4,10 +4,10 @@
         <Label class="p-15" row="1" [text]="'Created file: ' + file.path" textWrap="true"></Label>
 
         <StackLayout row="2">
-            <Button class="btn btn-primary" text="Delete File" (tap)="onDeleteFile()" textWrap="true"></Button>
-            <Button class="btn btn-primary" text="Delete Folder" (tap)="onDeleteFolder()" textWrap="true"></Button>
-            <Button class="btn btn-primary" text="Clear Folder" (tap)="onClearFolder()" textWrap="true"></Button>
-            <Button class="btn btn-primary" text="Reset" (tap)="onReset()" textWrap="true"></Button>
+            <Button class="btn btn-primary btn-active" text="Delete File" (tap)="onDeleteFile()" textWrap="true"></Button>
+            <Button class="btn btn-primary btn-active" text="Delete Folder" (tap)="onDeleteFolder()" textWrap="true"></Button>
+            <Button class="btn btn-primary btn-active" text="Clear Folder" (tap)="onClearFolder()" textWrap="true"></Button>
+            <Button class="btn btn-primary btn-active" text="Reset" (tap)="onReset()" textWrap="true"></Button>
         </StackLayout>
         
         <Label class="h3 p-15 m-15 font-weight-bold" row="3" [text]="resultMessage" textWrap="true"></Label> 

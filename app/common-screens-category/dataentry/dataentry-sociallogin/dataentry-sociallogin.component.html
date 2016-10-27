@@ -1,0 +1,62 @@
+<TabView #tabView class="tab-view" exampleTitle toggleNavButton>
+    <GridLayout *tabItem="{title: 'Wellcome with Social Login'}">
+    <!-- >> dataentry-wellcome-sociallogin-html -->
+    <ScrollView>
+        <GridLayout>  
+            <GridLayout class="p-20" rows="auto auto auto auto auto " columns="*">
+                <Image width="210" row="0" col="0" height="150" class="m-30" src="res://icon"></Image>
+                <Button row="1" col="0" class="btn btn-outline icon btn-active" marginLeft="0" marginRight="0" borderColor="#3B5998" (tap)="onFacebookLoginTap()">
+                    <FormattedString>
+                            <Span text="&#xea90;" fontSize="18" horizontalAlign="left" foregroundColor="#3B5998"></Span>
+                            <Span text=" Login with " foregroundColor="#3B5998"></Span>
+                            <Span text="Facebook" fontAttributes="Bold" foregroundColor="#3B5998"></Span>
+                    </FormattedString>
+                </Button>
+                <Button row="2" col="0" color="#3B5998" class="btn btn-outline icon btn-active" marginLeft="0" marginRight="0" borderColor="#d34836" (tap)="onGoogleLoginTap()">
+                    <FormattedString>
+                            <Span text="&#xea8b;" fontSize="18" foregroundColor="#d34836" class="icon"></Span>
+                            <Span text=" Login with " foregroundColor="#d34836"  class="h3"></Span>
+                            <Span text="Google +"  foregroundColor="#d34836" fontAttributes="Bold" class="h2"></Span>
+                    </FormattedString>
+                </Button>
+                <Label row="3" col="0" class="text-center p-b-15 p-t-15" text="or" textWrap="true"></Label>
+                <Button row="4" col="0" class="btn btn-primary btn-active" marginLeft="0" marginRight="0" text="Sign up with email" (tap)="inSignUpTap()"></Button>
+            </GridLayout>
+        </GridLayout>
+    </ScrollView>
+    <!-- << dataentry-wellcome-sociallogin-html -->
+    </GridLayout>
+    <GridLayout *tabItem="{title: 'Social Login'}">
+    <!-- >> dataentry-sociallogin-html -->
+        <ScrollView>
+            <GridLayout class="p-5 form" rows="auto auto auto auto auto auto auto auto" columns="*">
+                <Button row="0" col="0" class="btn btn-outline icon btn-active" marginLeft="0" marginRight="0" borderColor="#3B5998" (tap)="onFacebookLoginTap()">
+                        <FormattedString>
+                                <Span text="&#xea90;" fontSize="18" horizontalAlign="left" foregroundColor="#3B5998" class="icon"></Span>
+                                <Span text=" Login with " foregroundColor="#3B5998"></Span>
+                                <Span text="Facebook" fontAttributes="Bold" foregroundColor="#3B5998"></Span>
+                        </FormattedString>
+                    </Button>
+                    <Button row="1" col="0" color="#3B5998" class="btn btn-outline icon btn-active" marginLeft="0" marginRight="0" borderColor="#d34836" (tap)="onGoogleLoginTap()">
+                        <FormattedString>
+                                <Span text="&#xea8b;" fontSize="18" foregroundColor="#d34836" class="icon"></Span>
+                                <Span text=" Login with " foregroundColor="#d34836"  class="h3"></Span>
+                                <Span text="Google +"  foregroundColor="#d34836" fontAttributes="Bold" class="h2"></Span>
+                        </FormattedString>
+                    </Button>
+
+                    <Label row="2" col="0" class="text-center p-b-15 p-t-15" text="or" textWrap="true"></Label>
+                    <TextField #email row="3" col="0" hint="Email" colSpan="2" text="" class="input input-border m-b-15 m-t-15" autocorrect="false"></TextField>
+                    <TextField #password row="4" col="0" hint="Password" colSpan="2" text="" [secure]="secureproperty" class="input input-border m-b-15 m-t-15" autocorrect="false"></TextField>
+                    <StackLayout row="5" col="0" orientation="horizontal">
+                        <Switch #sw checked="false" (checkedChange)="switchChanged(sw.checked)" class="switch"></Switch>
+                        <Label text="Show password" textWrap="true"></Label>
+                    </StackLayout>
+                    
+                    <Button row="6" col="0" colSpan="2" text="Sign in" (tap)="signin(email.text, password.text)" class="btn btn-primary btn-active" marginLeft="0" marginRight="0"></Button>
+                    <Label row="7" col="0" colSpan="2" text="Fogot password?" (tap)="forgottenpassword()" class="m-b-20 m-l-15"></Label>
+            </GridLayout>
+        </ScrollView>
+    <!-- << dataentry-sociallogin-html -->
+    </GridLayout>
+</TabView>
