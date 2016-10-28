@@ -148,8 +148,9 @@ import { HorizontalScrollingExampleComponent } from "./common-screens-category/l
 import { ContentScreensExamplesComponent } from "./common-screens-category/content-screens/content-screens-examples.component";
 
 import { ContentPageExampleComponent } from "./common-screens-category/content-screens/content/content-example.component";
-import { ContentScrollablePageExampleComponent } from "./common-screens-category/content-screens/content-scrollable/content-scrollable-example.component";
-import { CoverpagePageExampleComponent } from "./common-screens-category/content-screens/coverpage/coverpage-example.component";
+// import { ContentScrollablePageExampleComponent } from "./common-screens-category/content-screens/content-scrollable/content-scrollable-example.component";
+// import { CoverpagePageExampleComponent } from "./common-screens-category/content-screens/coverpage/coverpage-example.component";
+
 import { ExtendedDataEntryExamplesComponent } from "./common-screens-category/dataentry/extended-dataentry-examples.component";
 import { WelcomeDataEntryExampleComponent } from "./common-screens-category/dataentry/dataentry-welcome/dataentry-welcome.component";
 import { SocialLoginDataEntryExampleComponent } from "./common-screens-category/dataentry/dataentry-sociallogin/dataentry-sociallogin.component";
@@ -319,8 +320,9 @@ export const routes = [
     
     routeEntry({ path: "contentScreensExamplesComponent", component: ContentScreensExamplesComponent, data: { title: "Content Screens" } }),    
     routeEntry({ path: "contentPageExampleComponent", component: ContentPageExampleComponent, data: { title: "Content Page" } }),  
-    routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable content page" } }),  
-    routeEntry({ path: "coverpagePageExampleComponent", component: CoverpagePageExampleComponent, data: { title: "Coverpage" } }),
+    // routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable content page" } }),  
+    // routeEntry({ path: "coverpagePageExampleComponent", component: CoverpagePageExampleComponent, data: { title: "Coverpage" } }),
+
     routeEntry({path:"extendedDataEntryExamplesComponent", component: ExtendedDataEntryExamplesComponent, data:{ title: "Data entry" }}),
     routeEntry({path:"welcomeDataEntryExampleComponent", component: WelcomeDataEntryExampleComponent, data:{ title: "Welcome data entry" }}),
     routeEntry({path:"socialLoginDataEntryExampleComponent", component: SocialLoginDataEntryExampleComponent, data:{ title: "Social login data entry" }}),

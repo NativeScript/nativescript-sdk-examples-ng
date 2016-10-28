@@ -47,7 +47,7 @@ var mainMenuLinks = [
     new Link("ListView (extended examples)", "/extendedListViewExamplesComponent"),
     new Link("DataEntry (extended examples)", "/extendedDataEntryExamplesComponent"),
     new Link("User Profile (extended examples)", "/extendedUserProfileExamplesComponent"),
-    // new Link("Content Screens", "/contentScreensExamplesComponent"),
+    new Link("Content Screens", "/contentScreensExamplesComponent"),
     new Link("Camera", "/cameraExamplesComponent"),  
 ];
 
