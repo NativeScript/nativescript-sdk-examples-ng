@@ -7,7 +7,7 @@ import { Page } from "ui/page";
     selector: "content-page-listview",
     templateUrl: "common-screens-category/content-screens/content/content-example.component.html"
 })
-export class ContentPageExampleComponent {
+export class ContentPageExampleComponent implements OnInit {
     public title: string;
     public desc: string;
     public imageSrc: string;

@@ -146,10 +146,8 @@ import { CardsListViewExampleComponent } from "./common-screens-category/listvie
 import { HorizontalScrollingExampleComponent } from "./common-screens-category/listview/horizontal-scrolling/horizontal-scrolling.component";
 
 import { ContentScreensExamplesComponent } from "./common-screens-category/content-screens/content-screens-examples.component";
-
 import { ContentPageExampleComponent } from "./common-screens-category/content-screens/content/content-example.component";
-// import { ContentScrollablePageExampleComponent } from "./common-screens-category/content-screens/content-scrollable/content-scrollable-example.component";
-// import { CoverpagePageExampleComponent } from "./common-screens-category/content-screens/coverpage/coverpage-example.component";
+import { ContentScrollablePageExampleComponent } from "./common-screens-category/content-screens/content-scrollable/content-scrollable-example.component";
 
 import { ExtendedDataEntryExamplesComponent } from "./common-screens-category/dataentry/extended-dataentry-examples.component";
 import { WelcomeDataEntryExampleComponent } from "./common-screens-category/dataentry/dataentry-welcome/dataentry-welcome.component";
@@ -160,7 +158,9 @@ import { UserFeedImagesExampleComponent } from "./common-screens-category/userpr
 import { UserSettingsMenuExampleComponent } from "./common-screens-category/userprofile/user-settings-menu/user-settings-menu.component";
 import { UserFeedExampleComponent } from "./common-screens-category/userprofile/user-feed/user-feed.component";
 
-import { FlexboxLayoutComponent } from "./ui-category/layouts/flexbox-layout/flexbox-layout.component";
+import { FlexboxLayoutComponentOne } from "./ui-category/layouts/flexbox-layout-one/flexbox-layout.component";
+import { FlexboxLayoutComponentTwo } from "./ui-category/layouts/flexbox-layout-two/flexbox-layout.component";
+import { FlexboxLayoutComponentThree } from "./ui-category/layouts/flexbox-layout-three/flexbox-layout.component";
 
 import { CameraExamplesComponent } from "./camera/camera-examples.component";
 import { UsingCameraExampleComponent } from "./camera/using-camera/using-camera.component";
@@ -320,8 +320,7 @@ export const routes = [
     
     routeEntry({ path: "contentScreensExamplesComponent", component: ContentScreensExamplesComponent, data: { title: "Content Screens" } }),    
     routeEntry({ path: "contentPageExampleComponent", component: ContentPageExampleComponent, data: { title: "Content Page" } }),  
-    // routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable content page" } }),  
-    // routeEntry({ path: "coverpagePageExampleComponent", component: CoverpagePageExampleComponent, data: { title: "Coverpage" } }),
+    routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable content page" } }),  
 
     routeEntry({path:"extendedDataEntryExamplesComponent", component: ExtendedDataEntryExamplesComponent, data:{ title: "Data entry" }}),
     routeEntry({path:"welcomeDataEntryExampleComponent", component: WelcomeDataEntryExampleComponent, data:{ title: "Welcome data entry" }}),
@@ -332,7 +331,9 @@ export const routes = [
     routeEntry({path:"userSettingsMenuExampleComponent", component: UserSettingsMenuExampleComponent, data:{ title: "User settings menu" }}),
     routeEntry({path:"userFeedExampleComponent", component: UserFeedExampleComponent, data:{ title: "User feed" }}),
 
-    routeEntry({ path: "flexboxLayoutComponent", component: FlexboxLayoutComponent, data: { title: "FlexboxLayout" } }), 
+    routeEntry({ path: "flexboxLayoutComponentOne", component: FlexboxLayoutComponentOne, data: { title: "FlexboxLayout I" } }),
+    routeEntry({ path: "flexboxLayoutComponentTwo", component: FlexboxLayoutComponentTwo, data: { title: "FlexboxLayout II" } }), 
+    routeEntry({ path: "flexboxLayoutComponentThree", component: FlexboxLayoutComponentThree, data: { title: "FlexboxLayout III" } }),  
 
     routeEntry({ path: "cameraExamplesComponent", component: CameraExamplesComponent, data: { title: "Camera" } }),
     routeEntry({ path: "usingCameraExampleComponent", component: UsingCameraExampleComponent, data: { title: "Using camera" } }),     
