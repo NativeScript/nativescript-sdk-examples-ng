@@ -3,8 +3,7 @@ import { Link } from "./../../link";
 
 var menuLinks = [
     new Link("Content page", "/contentPageExampleComponent"),
-    // new Link("Content page (auto hide image)", "/contentScrollablePageExampleComponent"),
-    // new Link("Coverpage", "/coverpagePageExampleComponent"),
+    new Link("Content page (auto hide image)", "/contentScrollablePageExampleComponent"),
 ];
 
 @Component({

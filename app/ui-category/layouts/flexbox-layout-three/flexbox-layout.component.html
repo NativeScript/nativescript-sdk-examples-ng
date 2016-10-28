@@ -1,0 +1,23 @@
+<ScrollView exampleTitle toggleNavButton>
+    <!-- >> flexbox-wrap-html -->
+    <!-- Wrap excessive items on new lines -->
+    <FlexboxLayout flexWrap="wrap" alignContent="flex-start"> 
+        <Label class="h2 p-15" textWrap="wrap" text="Flexbox wrap"></Label>
+        <!-- Use flexWrapBefore to control explicit line wrapping -->
+        <Label flexWrapBefore="true" class="h3 p-15" text="Gihub issue labels:"></Label>
+        <Label flexWrapBefore="true" class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="S: High" borderRadius="5" backgroundColor="red" color="white"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="T: Feature" borderRadius="5" backgroundColor="green" color="white"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="3 - In Progress" borderRadius="5" backgroundColor="lightgray"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="S: Ullamcorper" borderRadius="5" backgroundColor="red" color="white"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="T: Vulputate" borderRadius="5" backgroundColor="green" color="white"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="2 - Egestas magna" borderRadius="5" backgroundColor="lightgray"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="S: High" borderRadius="5" backgroundColor="red" color="white"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="T: Phasellus" borderRadius="5" backgroundColor="green" color="white"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="Nullam" borderRadius="5" backgroundColor="lightgray"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="T:Question" borderRadius="5" backgroundColor="yellow"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="S:Medium" borderRadius="5" backgroundColor="yellow"></Label>
+        <Label class="p-5 m-l-15 m-r-15 m-b-15 text-center font-weight-bold" text="duplicate" borderRadius="5" backgroundColor="lightgray"></Label>
+        <Label flexWrapBefore="true" class="h3 p-15" textWrap="wrap" [text]="desc"></Label>
+    </FlexboxLayout>
+    <!-- >> flexbox-wrap-html -->
+</ScrollView>
