@@ -1,28 +1,34 @@
 <ScrollView exampleTitle toggleNavButton>
     <FlexboxLayout flexDirection="column">
         <Label text="Set flexGrow to 1 accomodate into any extra space" class="h3 p-l-20 p-t-15 text-left" textWrap="true"></Label>
+        <!-- >> flexbox-grow-html -->
         <FlexboxLayout flexDirection="row" class="p-15" color="white">
             <Label class="p-15 text-center font-weight-bold" backgroundColor="#965251" text="Item" ></Label>
             <!-- Set flexGrow to 1 accomodate into any extra space -->
             <Label flexGrow="1" class="p-15 text-center font-weight-bold" backgroundColor="#d2b29b" text="Flex-Grow 1"></Label>
             <Label class="p-15 text-center font-weight-bold" backgroundColor="#F69256" text="Item" ></Label>
         </FlexboxLayout>
-
+        <!-- << flexbox-grow-html -->
         <Label text="Using flexGrow with multiple elements" class="h3 p-l-20 p-t-15 text-left" textWrap="true"></Label>
-        <FlexboxLayout flexDirection="row" class="p-15" color="white">
+        <!-- >> flexbox-grow-two-html -->
+        <FlexboxLayout flexDirection="row" align-content="space-between" class="p-15" color="white">
             <Label class="p-15 text-center font-weight-bold" backgroundColor="#d2b29b" text="No Flex-Grow"></Label>
             <Label flexGrow="1" class="p-15 text-center font-weight-bold" backgroundColor="#F69256" text="Flex-Grow 1" ></Label>
         </FlexboxLayout>
+        <!-- << flexbox-grow-two-html -->
 
         <Label text="Control the order in which elements appear in the flex container" class="h3 p-l-20 p-t-15 text-left" textWrap="true"></Label>
+        <!-- >> flexbox-order-html -->
         <FlexboxLayout flexDirection="row" class="p-15" color="white">
             <!-- Control the order in which elements appear in the flex container -->
             <Label order="3" class="p-15 text-center font-weight-bold" backgroundColor="#965251" text="First" ></Label>
             <Label order="2" class="p-15 text-center font-weight-bold" backgroundColor="#d2b29b" text="Second"></Label>
             <Label order="1" class="p-15 text-center font-weight-bold" backgroundColor="#F69256" text="Third" ></Label>
         </FlexboxLayout>
+        <!-- << flexbox-order-html -->
 
         <Label text="flexShrink usage" class="h3 p-l-20 p-t-15 text-left" textWrap="true"></Label>
+        <!-- >> flexbox-shrink-html -->
         <FlexboxLayout flexDirection="row" class="p-15" color="white" width="300">
             <!-- flexShrink this defines the ability for a flex item to shrink if necessary. Default shrink = 1 -->
             <Label class="p-15 text-center font-weight-bold" backgroundColor="#d2b29b" text="Shrink 1"></Label>
@@ -31,5 +37,6 @@
             <Label class="p-15 text-center font-weight-bold" backgroundColor="#d2b29b" text="Shrink 1"></Label>
             <Label class="p-15 text-center font-weight-bold" backgroundColor="#d2b29b" text="Shrink 1" ></Label>
         </FlexboxLayout>
+        <!-- << flexbox-shrink-html -->
     </FlexboxLayout>
 </ScrollView>
