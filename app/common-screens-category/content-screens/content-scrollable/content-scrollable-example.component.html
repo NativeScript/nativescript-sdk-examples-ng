@@ -1,11 +1,11 @@
-<FlexboxLayout flexDirection="column">
-    <ScrollView style.zIndex="5" flexGrow="1" exampleTitle toggleNavButton (scroll)="onScroll($event)">
-        <FlexboxLayout flexDirection="column">
-            <Image style.zIndex="1" flexGrow="1" [src]="imageSrc" #img stretch="fill"></Image>
+<ScrollView exampleTitle toggleNavButton  (scroll)="onScroll($event)">
+    <FlexboxLayout flexDirection="column">
+        <Image #img style.zIndex="1" flexGrow="1" [src]="imageSrc"stretch="fill"></Image>
+        <FlexboxLayout #content style.zIndex="2" flexDirection="column">
             <Label flexGrow="1" [text]="title" class="h2 p-l-15 p-r-15 p-t-15" textWrap="true"></Label>
             <Label flexGrow="1" [text]="desc" class="p-15" textWrap="true"></Label>
             <Label flexGrow="1" [text]="desc" class="p-15" textWrap="true"></Label>
             <Label flexGrow="1" [text]="desc" class="p-15" textWrap="true"></Label>
         </FlexboxLayout>
-    </ScrollView> 
-</FlexboxLayout>
+    </FlexboxLayout>
+</ScrollView> 
