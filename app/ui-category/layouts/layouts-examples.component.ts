@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("FlexboxLayout (directions)", "/flexboxLayoutComponentOne"),
+    new Link("FlexboxLayout (flexDirection)", "/flexboxLayoutComponentOne"),
     new Link("FlexboxLayout (order, flexGrow and flexShrink)", "/flexboxLayoutComponentTwo"),
-    new Link("FlexboxLayout (wrap, flexWrapBefore)", "/flexboxLayoutComponentThree"),
+    new Link("FlexboxLayout (flexWrap, justifyContent)", "/flexboxLayoutComponentThree"),
     new Link("AbsoluteLayout", "/absoluteLayoutComponent"),
     new Link("DockLayout", "/dockLayoutComponent"),
     new Link("GridLayout", "/gridLayoutComponent"),
