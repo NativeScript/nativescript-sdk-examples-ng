@@ -17,7 +17,6 @@ multi-line / left to right in ltr; right to left in rtl
 multi-line / right to left in ltr; left to right in rtl
 <snippet id='flexbox-wrap-reverse-html'/>
 
-
 ## Justify Content
 
 This defines the alignment along the main axis. It helps distribute extra free space left over when either all the flex items on a line are inflexible, 
@@ -25,10 +24,10 @@ or are flexible but have reached their maximum size. It also exerts some control
 
 ## flex-end 
 
-Items are packed toward to end line
+Items are packed toward end line
 <snippet id='flexbox-justify-end-html'/>
 
-###  space-between
+### space-between
 
 Items are evenly distributed in the line; first item is on the start line, last item on the end line
 <snippet id='flexbox-justify-space-between-html'/>
