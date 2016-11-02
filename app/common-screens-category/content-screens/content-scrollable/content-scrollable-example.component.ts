@@ -4,7 +4,7 @@ import { Page } from "ui/page";
 import { Image } from "ui/image";
 import { FlexboxLayout } from "ui/layouts/flexbox-layout";
 
-// >> content-scrollable-page-code
+// >> content-paralax-page-code
 @Component({
     selector: "content-scrollable-page-listview",
     templateUrl: "common-screens-category/content-screens/content-scrollable/content-scrollable-example.component.html"
@@ -32,10 +32,6 @@ export class ContentScrollablePageExampleComponent implements OnInit {
     }
 
     onScroll(args: ScrollEventData) {
-        console.log("args.scrollY: " + args.scrollY);
-        // console.log("this.flex.getActualSize(): " + this.flex.getActualSize());
-        console.log("this.flex.getMeasuredHeight(): " + this.flex.getMeasuredHeight());
-
         if (args.scrollY <= this.flex.getMeasuredHeight()) {
             this.image.animate({
                 translate: { x: 0, y: args.scrollY * 0.3 }
@@ -43,4 +39,4 @@ export class ContentScrollablePageExampleComponent implements OnInit {
         }
     }
 }
-// << content-scrollable-page-code
+// << content-paralax-page-code
