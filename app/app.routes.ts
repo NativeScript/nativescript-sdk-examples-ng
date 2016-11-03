@@ -144,6 +144,7 @@ import { MultiLineBigListViewExampleComponent } from "./common-screens-category/
 import { GroupedTwoLinesListViewExampleComponent } from "./common-screens-category/listview/two-lines-grouped/grouped-two-lines.component";
 import { CardsListViewExampleComponent } from "./common-screens-category/listview/cards/cards-listview.component";
 import { HorizontalScrollingExampleComponent } from "./common-screens-category/listview/horizontal-scrolling/horizontal-scrolling.component";
+import { HeaderWithMapExampleComponent } from "./common-screens-category/listview/header-with-map/header-with-map.component";
 
 import { ContentScreensExamplesComponent } from "./common-screens-category/content-screens/content-screens-examples.component";
 import { ContentPageExampleComponent } from "./common-screens-category/content-screens/content/content-example.component";
@@ -316,6 +317,7 @@ export const routes = [
     routeEntry({ path: "multiLineBigListViewExampleComponent", component: MultiLineBigListViewExampleComponent, data: { title: "Multi line items - bigger thumbnails" } }),
     routeEntry({path: "groupedTwoLinesListViewExampleComponent", component: GroupedTwoLinesListViewExampleComponent, data:{ title: "Two line items" }}),
     routeEntry({path:"cardsListViewExampleComponent", component: CardsListViewExampleComponent, data:{ title: "Cards" }}),
+    routeEntry({path:"headerWithMapExampleComponent", component: HeaderWithMapExampleComponent, data:{ title: "Header with map" }}),
     routeEntry({path:"horizontalScrollingExampleComponent", component: HorizontalScrollingExampleComponent, data:{ title: "Horizontal scrolling" }}),
     
     routeEntry({ path: "contentScreensExamplesComponent", component: ContentScreensExamplesComponent, data: { title: "Content Screens" } }),    

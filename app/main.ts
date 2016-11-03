@@ -16,7 +16,13 @@ import { ToggleNavButtonDirective } from "./directives/toggle-nav-button.directi
 import { ExampleTitleDirective } from "./directives/example.directive"
 import { ItemComponent } from "./ui-category/listview/using-item-template/using-item-template.component";
 // << (hide)
+import {registerElement} from 'nativescript-angular/element-registry';
 import { ModalViewComponent } from "./modal-page/sample-modal-page-module-example/modal-view";
+import {TnsGoogleMaps} from "nativescript-googlemaps"
+import {isIOS} from "platform"
+
+
+
 
 @NgModule({
     declarations: [
@@ -47,5 +53,12 @@ import { ModalViewComponent } from "./modal-page/sample-modal-page-module-exampl
 })
 // << ngmodule-config
 class AppComponentModule { }
+
+registerElement("TnsGoogleMaps", () => TnsGoogleMaps);
+
+if (isIOS) {
+    GMSServices.provideAPIKey("AIzaSyDQZOuoz1x-bMki_pbb7AYyU9D8Js4ZpKQ");
+}
+
 
 platformNativeScriptDynamic().bootstrapModule(AppComponentModule);
