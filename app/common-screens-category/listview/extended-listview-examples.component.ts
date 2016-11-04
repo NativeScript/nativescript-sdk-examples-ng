@@ -11,6 +11,7 @@ var menuLinks = [
     new Link("Grouped two lines items", "/groupedTwoLinesListViewExampleComponent"),
     new Link("Cards", "/cardsListViewExampleComponent"),
     new Link("Horizontal scrolling", "/horizontalScrollingExampleComponent"),
+    new Link("Header with map", "/headerWithMapExampleComponent"),
 ];
 
 @Component({
