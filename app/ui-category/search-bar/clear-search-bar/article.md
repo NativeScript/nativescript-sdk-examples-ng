@@ -1,4 +1,6 @@
-Set SearchBar in the html code.
+## Clear serach bar
+
+HTML
 <snippet id='clear-text-search-bar-html'/>
 
 Handle SearchBar `submit` event.

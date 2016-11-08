@@ -1,6 +1,7 @@
-Set ScrollView scroll event in xml.
+## Scroll events
+
+CSS
 <snippet id='scroll-event-html'/>
 
-Declare scroll method in the code.
-
+TypeScript
 <snippet id='scroll-view-event-code'/>

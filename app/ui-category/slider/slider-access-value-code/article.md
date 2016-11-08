@@ -1,4 +1,6 @@
-Set Sliders in from `XML`
+## Working with slider values
+
+HTML
 <snippet id='slider-values-xml'/>
 
 Set the default values of the `Sliders` and review result via `Alert`

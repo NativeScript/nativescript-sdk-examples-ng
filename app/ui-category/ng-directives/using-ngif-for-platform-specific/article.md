@@ -1,3 +1,5 @@
+## *ngIf for platform specific distinction
+
 `*ngIf` structural directive example usage for platform specific elements
 
 HTML

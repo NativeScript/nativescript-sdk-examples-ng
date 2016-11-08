@@ -1,8 +1,9 @@
-DataEntry: Wellcome with Social Login
+## DataEntry: Welcome with Social Login
 <snippet id='dataentry-wellcome-sociallogin-html'/>
 
-DataEntry: Social Login
+## DataEntry: Social Login
+HTML
 <snippet id='dataentry-sociallogin-html'/>
 
-CodeBehind
+TypeScript
 <snippet id='dataentry-sociallogin-code'/>

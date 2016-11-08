@@ -1,3 +1,5 @@
+## Touch
+
 Action: A finger action was performed.
 
 Touch in HTML

@@ -1,4 +1,4 @@
-Create custom Unless directive example:
+## Create custom Unless directive
 
 Directive code
 <snippet id='directive-code '/>

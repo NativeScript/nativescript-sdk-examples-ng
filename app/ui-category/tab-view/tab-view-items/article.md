@@ -1,6 +1,7 @@
-Set TabView in HTML
+## TabView items
+
+HTML
 <snippet id='tabview-html'/>
 
-
-Set TabView in HTML
+TypeScript
 <snippet id='add-items-code'/>

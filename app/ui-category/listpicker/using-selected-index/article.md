@@ -1,3 +1,5 @@
+## Using selected Index
+
 HTML
 <snippet id='using-selected-index-html'/>
 

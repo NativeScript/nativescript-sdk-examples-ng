@@ -1,4 +1,6 @@
-Set WebView in HTML
+## Create WebVew 
+
+HTML
 <snippet id='web-view-html'/>
 
 Add WebView `src` and handle `loadFinishedEvent` event

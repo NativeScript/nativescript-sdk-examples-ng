@@ -1,3 +1,5 @@
+# Gestures
+
 Gestures, such as tap, slide and pinch, allow users to interact with your app by manipulating UI elements on the screen.
 
 In NativeScript, View—the base class for all NativeScript UI elements—has on and off methods 

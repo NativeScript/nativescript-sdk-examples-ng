@@ -1,3 +1,5 @@
+## Configure TimePicker
+
 TimePicker can be easily configured by setting the required properties.
 
 HTML

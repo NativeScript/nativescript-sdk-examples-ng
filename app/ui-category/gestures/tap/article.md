@@ -1,3 +1,5 @@
+## Tap
+
 Action: Briefly touch the screen.
 
 Tap in HTML
