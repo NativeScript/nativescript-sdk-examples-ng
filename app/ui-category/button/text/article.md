@@ -1,5 +1,7 @@
-Set text in HTML
+## Text attribute
+
+HTML
 <snippet id='button-text-html'/>
 
-Set text in code
+TypeScript
 <snippet id='button-text-code'/>

@@ -1,3 +1,5 @@
+# Label
+
 The Label widget provides a text label that shows read-only text.
 
 **API Reference for** [Label Class](http://docs.nativescript.org/api-reference/modules/_ui_label_.html)

@@ -1,4 +1,4 @@
-DataEntry: Sign Up
+## DataEntry: Sign Up
 HTML
 <snippet id='dataentry-signup-html'/>
 

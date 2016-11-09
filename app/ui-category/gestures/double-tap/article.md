@@ -1,3 +1,5 @@
+##  Double Tap
+
 Action: Two taps in a quick succession.
 
 Double Tap in HTML

@@ -1,3 +1,5 @@
+## Creating Progress
+
 Create a Progress widget in HTML
 <snippet id='progress-create-html'/>
 

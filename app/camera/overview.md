@@ -1,4 +1,5 @@
 # nativescript-camera
+
 NativeScript plugin to empower using device camera.
 
 ## Install the camera plugin as dependency

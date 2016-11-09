@@ -1,3 +1,5 @@
+## Styling via code
+
 Create sample UI
 <snippet id='style-view-html'/>
 

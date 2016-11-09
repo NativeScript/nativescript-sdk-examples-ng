@@ -1,3 +1,5 @@
+# TextField
+
 The TextField component allows you to type text in your app. The TextField has attributes such as `secure` for handling password fields, and `pipes` for specifying the text format the control should use.
 
 **API Reference for the** [TextField Class](http://docs.nativescript.org/api-reference/modules/_ui_text_field_.html)

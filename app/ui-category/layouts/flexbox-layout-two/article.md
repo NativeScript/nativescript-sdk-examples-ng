@@ -1,4 +1,4 @@
-## Flex grow
+## Flexbox (order and shrink)
 
 This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. 
 It dictates what amount of the available space inside the flex container the item should take up.

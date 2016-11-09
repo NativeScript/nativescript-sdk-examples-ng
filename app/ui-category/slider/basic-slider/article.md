@@ -1,4 +1,6 @@
-Setting Slider in HTML
+## Basic usage
+
+HTML
 <snippet id='basic-slider-html'/>
 
 CSS

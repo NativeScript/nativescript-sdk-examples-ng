@@ -1,4 +1,6 @@
-Set TextFields in HTML
+## Binding
+
+HTML
 <snippet id='textfield-binding-html'/>
 
 Handle TextField returnPress event

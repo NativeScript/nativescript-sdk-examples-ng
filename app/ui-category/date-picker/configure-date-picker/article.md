@@ -1,4 +1,6 @@
-Basic usage of DatePicker - setting its properties - year, month, day and if required - minDate and maxDate.
+##  Basic usage of DatePicker
+
+Setting its properties - year, month, day and if required - minDate and maxDate.
 
 HTML
 <snippet id='creating-datepicker-html'/>

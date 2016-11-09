@@ -1,4 +1,6 @@
-Set TextFields in HTML
+## Create TextField
+
+HTML
 <snippet id='sample-ui-textfield-html'/>
 
 Handle TextField returnPress event

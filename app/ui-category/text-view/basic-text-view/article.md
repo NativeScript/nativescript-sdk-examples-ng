@@ -1,4 +1,6 @@
-SetTextView in HTML
+## Create TextView
+
+HTML
 <snippet id='textview-html'/>
 
 Disable/Enable edit TextView

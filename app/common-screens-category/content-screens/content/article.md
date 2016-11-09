@@ -1,5 +1,6 @@
 ## Content page with auto-hiding action bar on content scroll
+HTML
+<snippet id='content-hide-actionbar-code' />
 
-<snippet id='content-hide-actionbar-code'/>
-
-<snippet id='content-hide-actionbar-html/>
+TypeScript
+<snippet id='content-hide-actionbar-html' />
