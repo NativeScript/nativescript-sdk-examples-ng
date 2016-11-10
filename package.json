@@ -43,6 +43,8 @@
     "nativescript-googlemaps": "0.0.6",
     "nativescript-intl": "~0.0.4",
     "nativescript-theme-core": "^0.1.2",
+    "rxjs": "5.0.0-beta.12",
+    "reflect-metadata": "~0.1.8",
     "tns-core-modules": "next"
   },
   "devDependencies": {
