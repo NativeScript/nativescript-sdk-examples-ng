@@ -1,23 +1,21 @@
-<StackLayout exampleTitle toggleNavButton>
-    <ScrollView>
-        <StackLayout> 
-            <GridLayout rows="auto, auto, auto, auto, auto, *" columns="*, *">
-                <Label class="h3 p-15" row="1" col="0" text="Enter Folder Name" textWrap="true"></Label>
-                <TextField class="h3 p-15" row="1" col="1" hint="Enter Folder Name" [(ngModel)]="folderName" editable="true"></TextField>
-
-                <Label class="h3 p-15" row="2" col="0" text="Enter File Name" textWrap="true"></Label>
-                <TextField class="h3 p-15" row="2" col="1" hint="Enter File Name" [(ngModel)]="fileName" editable="true"></TextField>
-
-                <Label class="h3 p-15" row="3" col="0" text="Enter Text Content" textWrap="true"></Label>
-                <TextField class="h3 p-15" row="3" col="1" hint="Enter Text Content" [(ngModel)]="fileTextContent" editable="true"></TextField>
-
-                <Button class="btn btn-primary btn-active" row="4" col="0" colSpan="2" text="Create" (tap)="onCreateFile()"></Button>
-
-                <GridLayout row="5" col="0" colSpan="2" rows="*, *" columns="*" [visibility]="isItemVisible ? 'visible' : 'collapsed'">
-                    <Label class="h3 p-15" row="0" [text]="successMessage" textWrap="true"></Label>
-                    <Label class="h3 p-15" row="1" [text]="'File content: ' + writtenContent" textWrap="true"></Label>
-                </GridLayout>
-            </GridLayout>
+<ScrollView>
+    <StackLayout exampleTitle toggleNavButton class="form"> 
+        <StackLayout class="input-field">
+            <Label class="label" text="Folder Name" textWrap="true"></Label>
+            <TextField class="input input-border" hint="Enter Folder Name" [(ngModel)]="folderName" editable="true"></TextField>
         </StackLayout>
-    </ScrollView>
-</StackLayout>
+        <StackLayout class="input-field">
+            <Label class="label"text="File Name" textWrap="true"></Label>
+            <TextField class="input input-border"hint="Enter File Name" [(ngModel)]="fileName" editable="true"></TextField>
+        </StackLayout>
+        <StackLayout class="input-field">
+            <Label class="label" text="Text Content" textWrap="true"></Label>
+            <TextField class="input input-border" hint="Enter Text Content" [(ngModel)]="fileTextContent" editable="true"></TextField>
+        </StackLayout>
+        <Button class="btn btn-primary btn-active" text="Create" (tap)="onCreateFile()"></Button>
+        <GridLayout rows="*, *" columns="*" [visibility]="isItemVisible ? 'visible' : 'collapsed'">
+            <Label class="body p-15" row="0" [text]="successMessage" textWrap="true"></Label>
+            <Label class="body p-15" row="1" [text]="'File content: ' + writtenContent" textWrap="true"></Label>
+        </GridLayout>
+    </StackLayout>
+</ScrollView>

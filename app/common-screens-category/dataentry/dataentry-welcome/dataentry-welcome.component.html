@@ -17,13 +17,13 @@
                 <Label text="Email" class="label" textWrap="true"></Label>
                 <TextField #email hint="Email" text="" class="input input-border" autocorrect="false"></TextField>
             </StackLayout>
-            <GridLayout rows="auto" columns="*, 40">
-                <StackLayout col="0" class="input-field">
-                    <Label text="Password" class="label" textWrap="true"></Label>
-                    <TextField #password hint="Password" text="" [secure]="secureproperty" class="input input-border"autocorrect="false"></TextField>   
-                </StackLayout>
-                <Label col="1" text="&#xe9ce;" (tap)="show()" class=" m-20 icon" backgroundColor="red" verticalAligment="center"></Label>
-            </GridLayout>   
+
+            <StackLayout class="input-field">
+                <Label text="Password" class="label" textWrap="true"></Label>
+                <TextField #password hint="Password" text="" [secure]="secureproperty" class="input input-border"autocorrect="false"></TextField>   
+            </StackLayout>
+            <Label text="&#xe9ce;" (tap)="show()" class="text-center icon"></Label>
+
             <Button text="Sign in" (tap)="signin(email.text, password.text)" class="btn btn-primary btn-active" ></Button>
             <Button text="Forgot password?" (tap)="forgottenpassword()" class="btn btn-outline btn-active" ></Button>
             <Button text="Sign up" (tap)="signup()" class="btn btn-primary btn-active" ></Button>

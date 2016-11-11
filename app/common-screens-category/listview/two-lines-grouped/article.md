@@ -1,11 +1,11 @@
-## Grouped two line items
+Grouped two line items
 <snippet id='grouped-single-listview-two-lines-html'/>
 
-## Grouped two line items with separators
+Grouped two line items with separators
 <snippet id='grouped-single-listview-borders-two-lines-html'/>
 
-## Grouped two line items with thumbnails
+Grouped two line items with thumbnails
 <snippet id='grouped-single-listview-two-lines-thumbs-html'/>
 
-## Initializing the data Items
+Initializing the data Items
 <snippet id='grouped-listview-two-lines-code'/>
