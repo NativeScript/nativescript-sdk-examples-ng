@@ -297,7 +297,7 @@ export const routes = [
     routeEntry({ path: "settimeoutTimerModuleExample", component: SettimeoutTimerModuleExample, data: { title: "setTimeout example" } }),
     routeEntry({ path: "platformExamplesComponent", component: PlatformExamplesComponent, data: { title: "Platform module" } }),
     routeEntry({ path: "platformModuleExampleComponent", component: PlatformModuleExampleComponent, data: { title: "Platform module example" } }),
-    routeEntry({ path: "locationExamplesComponent", component: LocationExamplesComponent, data: { title: "Location" } }),
+    routeEntry({ path: "locationExamplesComponent", component: LocationExamplesComponent, data: { title: "Location Module" } }),
     routeEntry({ path: "basicLocationExampleComponent", component: BasicLocationExampleComponent, data: { title: "Basic location example" } }),
     routeEntry({ path: "locationMonitoringExampleComponent", component: LocationMonitoringExampleComponent, data: { title: "Location monitoring example" } }),
     routeEntry({ path: "fpsExamplesComponent", component: FPSExamplesComponent, data: { title: "FPS Meter" } }),
