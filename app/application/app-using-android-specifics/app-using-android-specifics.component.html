@@ -10,7 +10,7 @@
             <Label class="text-left p-l-15 p-r-15" text="Cache directory absolute path: "></Label>
             <Label class="text-left font-weight-bold p-l-15 p-r-15 p-b-15" [text]="cacheDir" textWrap="true"></Label> 
 
-            <Label class="text-left p-l-15 p-r-15" text="files associated with this Context's application package: "></Label>
+            <Label class="h3 text-left p-l-15 p-r-15" text="files associated with this Context's application package: "></Label>
             <ListView class="list-group" [items]="fileList" height="176">
                 <template let-item="item">
                     <Label class="list-group-item active" [text]="'file name: ' + item" textWrap="true"></Label>  
@@ -26,7 +26,7 @@
     </ScrollView>
 
     <StackLayout  [visibility]="!isItemVisible ? 'visible' : 'collapsed'" >
-        <Label class="text-left p-15" text="This examle is Android specific and can be executed only on Android device!" textWrap="true"></Label>          
+        <Label class="h3 text-left p-15" text="This examle is Android specific and can be executed only on Android device!" textWrap="true"></Label>          
     </StackLayout>
 
 </StackLayout>

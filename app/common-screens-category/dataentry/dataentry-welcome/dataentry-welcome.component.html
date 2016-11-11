@@ -1,5 +1,5 @@
 <TabView #tabView class="tab-view" exampleTitle toggleNavButton>
-    <GridLayout *tabItem="{title: 'Wellcome'}">
+    <GridLayout *tabItem="{title: 'Welcome'}">
     <!-- >> dataentry-wellcome-html -->
         <GridLayout class="p-25" rows="* auto auto " columns="*">
             <StackLayout width="210" height="150" row="0" col="0" class="">
@@ -12,14 +12,22 @@
     </GridLayout>
     <GridLayout *tabItem="{title: 'Login'}">
     <!-- >> dataentry-login-html -->
-        <GridLayout rows="auto auto auto auto auto" columns="* 70" class="form">
-            <TextField #email row="0" col="0" hint="Email" colSpan="2" text="" class="input input-border m-b-15 m-t-15" autocorrect="false"></TextField>
-            <TextField #password row="1" col="0" hint="Password" colSpan="2" text="" [secure]="secureproperty" class="input input-border m-b-15 m-t-15" autocorrect="false"></TextField>
-            <Button row="1" col="1" text="&#xe9ce;" (tap)="show()" borderWidth="0" class="btn btn-active icon" marginLeft="0" marginRight="0"></Button>
-            <Button row="2" col="0" colSpan="2" text="Sign in" (tap)="signin(email.text, password.text)" class="btn btn-primary btn-active" marginLeft="0" marginRight="0"></Button>
-            <Label row="3" col="0" colSpan="2" text="Fogot password?" (tap)="forgottenpassword()" class="btn-active" marginLeft="0" marginRight="0"></Label>
-            <Button row="4" col="0" colSpan="2" text="Sign up" (tap)="signup()" class="btn btn-outline btn-active" marginLeft="0" marginRight="0"></Button>
-        </GridLayout>
+        <StackLayout class="form">
+            <StackLayout class="input-field">
+                <Label text="Email" class="label" textWrap="true"></Label>
+                <TextField #email hint="Email" text="" class="input input-border" autocorrect="false"></TextField>
+            </StackLayout>
+            <GridLayout rows="auto" columns="*, 40">
+                <StackLayout col="0" class="input-field">
+                    <Label text="Password" class="label" textWrap="true"></Label>
+                    <TextField #password hint="Password" text="" [secure]="secureproperty" class="input input-border"autocorrect="false"></TextField>   
+                </StackLayout>
+                <Label col="1" text="&#xe9ce;" (tap)="show()" class=" m-20 icon" backgroundColor="red" verticalAligment="center"></Label>
+            </GridLayout>   
+            <Button text="Sign in" (tap)="signin(email.text, password.text)" class="btn btn-primary btn-active" ></Button>
+            <Button text="Forgot password?" (tap)="forgottenpassword()" class="btn btn-outline btn-active" ></Button>
+            <Button text="Sign up" (tap)="signup()" class="btn btn-primary btn-active" ></Button>
+        </StackLayout>
     <!-- << dataentry-login-html -->
     </GridLayout>
 </TabView>

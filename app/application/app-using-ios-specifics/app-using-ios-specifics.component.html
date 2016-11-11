@@ -2,7 +2,7 @@
 
     <StackLayout [visibility]="isItemVisible ? 'visible' : 'collapsed'" >
         <Label class="h3 p-15" text="Battery life with Notification Observer"></Label>   
-        <Label class="h3 p-l-15 p-r-15"[text]=" 'Battery : ' + batteryLife + '%'" textWrap="true"></Label>
+        <Label class="p-l-15 p-r-15"[text]=" 'Battery : ' + batteryLife + '%'" textWrap="true"></Label>
     </StackLayout>
 
     <StackLayout [visibility]="!isItemVisible ? 'visible' : 'collapsed'" >

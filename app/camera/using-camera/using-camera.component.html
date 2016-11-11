@@ -1,8 +1,8 @@
-<StackLayout exampleTitle toggleNavButtonrm>
+<StackLayout exampleTitle toggleNavButton>
     <ScrollView>
         <!-- >> camera-module-html -->
         <FlexboxLayout flexDirection="column-reverse">
-            <Image [src]="imageTaken" flexGrow="3" class="img-rounded"></Image>  
+            <Image [src]="imageTaken" flexGrow="3" class="p-15 img-rounded"></Image>  
             <Button text="Take Photo" class="btn btn-primary btn-active" (tap)="onTakePhoto()" flexGrow="1"></Button>
             <Button text="Request permissions" class="btn btn-primary btn-active" (tap)="onRequestPermissions()" flexGrow="1"></Button>         
         </FlexboxLayout>

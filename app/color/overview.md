@@ -1,5 +1,3 @@
-# Color
-
 Represents a color object. Stores all color components (alpha (opacity), red, green, blue) in a [0..255] range.
 
 **API Reference for the** [Color Class](https://docs.nativescript.org/api-reference/classes/_color_.color.html)

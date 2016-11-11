@@ -21,9 +21,6 @@ import { ModalViewComponent } from "./modal-page/sample-modal-page-module-exampl
 import {TnsGoogleMaps} from "nativescript-googlemaps"
 import {isIOS} from "platform"
 
-
-
-
 @NgModule({
     declarations: [
         // >> (hide)
