@@ -198,6 +198,11 @@ export const routes = [
         loadChildren: () => require("./ui-category/gestures/gestures-examples.module")["GesturesExamplesModule"],
         data: { title: "Gestures" }
     },
+    {
+        path: "html-view",
+        loadChildren: () => require("./ui-category/htmlview/htmlview-examples.module")["HtmlViewExamplesModule"],
+        data: { title: "HtmlView" }
+    },
     /*
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
     routeEntry({ path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } }),
@@ -256,18 +261,8 @@ export const routes = [
     routeEntry({ path: "progressExamplesComponent", component: ProgressExamplesComponent, data: { title: "Progress" } }),
     routeEntry({ path: "creatingProgressExampleComponent", component: CreatingProgressComponent, data: { title: "Create Progress" } }),
     routeEntry({ path: "settingProgressExampleComponent", component: SettingProgressComponent, data: { title: "Set up Progress" } }),
-    routeEntry({ path: "htmlViewExamplesComponent", component: HtmlViewxamplesComponent, data: { title: "HtmlView" } }),
-    routeEntry({ path: "creatingHtmlViewExampleComponent", component: CreatingHtmlViewExampleComponent, data: { title: "Create HtmlView" } }),
 
-    routeEntry({ path: "gesturesExamplesComponent", component: GesturesExamplesComponent, data: { title: "Gestures" } }),
-    routeEntry({ path: "tapGestureExampleComponent", component: TapExampleComponent, data: { title: "Tap" } }),
-    routeEntry({ path: "doubleTapGestureExampleComponent", component: DoubleTapExampleComponent, data: { title: "Double tap" } }),
-    routeEntry({ path: "longPressGestureExampleComponent", component: LongPressExampleComponent, data: { title: "Long press" } }),
-    routeEntry({ path: "swipeGestureExampleComponent", component: SwipeExampleComponent, data: { title: "Swipe" } }),
-    routeEntry({ path: "panGestureExampleComponent", component: PanExampleComponent, data: { title: "Pan" } }),
-    routeEntry({ path: "pinchGestureExampleComponent", component: PinchExampleComponent, data: { title: "Pinch" } }),
-    routeEntry({ path: "rotationGestureExampleComponent", component: RotationExampleComponent, data: { title: "Rotation" } }),
-    routeEntry({ path: "touchGestureExampleComponent", component: TouchExampleComponent, data: { title: "Touch" } }),
+    routeEntry({ path: "htmlViewExamplesComponent", component: HtmlViewxamplesComponent, data: { title: "HtmlView" } }),
 
     routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
     routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
