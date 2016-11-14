@@ -2,7 +2,7 @@
 // >> ngmodule-config
 // >> (hide)
 import { platformNativeScriptDynamic, NativeScriptModule } from "nativescript-angular/platform";
-import { routes, routableComponents, examplePipes } from "./app.routes";
+import { routes, examplePipes } from "./app.routes";
 import { AppComponent } from "./app.component";
 import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
@@ -31,7 +31,6 @@ import {isIOS} from "platform"
         UnlessDirective,
         ToggleNavButtonDirective,
         ExampleTitleDirective,
-        ...routableComponents,
         // << (hide)
         ModalViewComponent,
         ...examplePipes

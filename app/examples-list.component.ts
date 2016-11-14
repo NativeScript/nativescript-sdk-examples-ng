@@ -1,9 +1,8 @@
 import { Component, ChangeDetectionStrategy }  from "@angular/core";
-
 import { Link } from "./link";
 
 var mainMenuLinks = [
-    new Link("ActionBar", "/actionBarExamplesComponent"),
+    new Link("ActionBar", "/action-bar"),
     new Link("ActivityIndicator", "/activityIndicatorExamplesComponent"),
     new Link("Angular directives", "/ngDirectivesExamplesComponent"),
     new Link("Animations", "/animationsExamplesComponent"),

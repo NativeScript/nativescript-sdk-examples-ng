@@ -1,3 +1,4 @@
+/*
 import { ExamplesListComponent } from "./examples-list.component";
 import { ActionBarExamplesComponent } from "./ui-category/action-bar/action-bar-examples.component";
 import { ActionItemsComponent } from "./ui-category/action-bar/action-items/action-items.component";
@@ -164,18 +165,27 @@ import { FlexboxLayoutComponentThree } from "./ui-category/layouts/flexbox-layou
 
 import { CameraExamplesComponent } from "./camera/camera-examples.component";
 import { UsingCameraExampleComponent } from "./camera/using-camera/using-camera.component";
+*/
 
-export var routableComponents = [];
+import { HexPipe } from "./color/creating-colors/creating-colors.component";
+
 export var examplePipes = [
     HexPipe
 ];
 
 export const routes = [
-    routeEntry({ path: "", component: ExamplesListComponent, data: { title: "NativeScript Code Samples" } }),
-    routeEntry({ path: "actionBarExamplesComponent", component: ActionBarExamplesComponent, data: { title: "ActionBar" } }),
-    routeEntry({ path: "actionItemsComponent", component: ActionItemsComponent, data: { title: "Action items" } }),
-    routeEntry({ path: "navigationButtonComponent", component: NavigationButtonComponent, data: { title: "Navigation button" } }),
-    routeEntry({ path: "titleComponent", component: TitleComponent, data: { title: "ActionBar title" } }),
+    {
+        path: "",
+        loadChildren: () => require("./examples-list.module")["ExamplesListModule"],
+        data: { title: "NativeScript Code Samples" }
+    },
+    {
+        path: "action-bar",
+        loadChildren: () => require("./ui-category/action-bar/action-bar-examples.module")["ActionBarExamplesModule"],
+        data: { title: "ActionBar" }
+    },
+
+    /*
     routeEntry({ path: "activityIndicatorExamplesComponent", component: ActivityIndicatorExamplesComponent, data: { title: "ActivityIndicator" } }),
     routeEntry({ path: "settingBusyComponent", component: SettingBusyComponent, data: { title: "Set busy property" } }),
     routeEntry({ path: "animationsExamplesComponent", component: AnimationsExamplesComponent, data: { title: "Animations" } }),
@@ -337,9 +347,5 @@ export const routes = [
 
     routeEntry({ path: "cameraExamplesComponent", component: CameraExamplesComponent, data: { title: "Camera" } }),
     routeEntry({ path: "usingCameraExampleComponent", component: UsingCameraExampleComponent, data: { title: "Using camera" } }),     
+    */
 ];
-
-function routeEntry(data) {
-    routableComponents.push(data.component)
-    return data;
-}
