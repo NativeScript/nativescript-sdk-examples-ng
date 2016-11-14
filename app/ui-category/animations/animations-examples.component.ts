@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Animate properties", "/animatingPropertiesComponent"),
-    new Link("Chaining animation", "/chainingAnimationsComponent"),
-    new Link("Animate multiple views", "/multipleViewsComponent"),
+    new Link("Animate properties", "/animations/animating-properties"),
+    new Link("Chaining animation", "/animations/chaining-animations"),
+    new Link("Animate multiple views", "/animations/multiple-views"),
 ];
 
 @Component({

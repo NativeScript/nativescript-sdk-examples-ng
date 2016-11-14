@@ -189,12 +189,12 @@ export const routes = [
         loadChildren: () => require("./ui-category/activity-indicator/activity-indicator-examples.module")["ActivityIndicatorExamplesModule"],
         data: { title: "ActivityIndicator" }
     },
-
+    {
+        path: "animations",
+        loadChildren: () => require("./ui-category/animations/animations-examples.module")["AnimationsExamplesModule"],
+        data: { title: "Animations" }
+    },
     /*
-    routeEntry({ path: "animationsExamplesComponent", component: AnimationsExamplesComponent, data: { title: "Animations" } }),
-    routeEntry({ path: "animatingPropertiesComponent", component: AnimatingPropertiesComponent, data: { title: "Animate properties" } }),
-    routeEntry({ path: "chainingAnimationsComponent", component: ChainingAnimationsComponent, data: { title: "Chaining animations" } }),
-    routeEntry({ path: "multipleViewsComponent", component: MultipleViewsComponent, data: { title: "Animate multiple views" } }),
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
     routeEntry({ path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } }),
     routeEntry({ path: "scrollViewVertivalExampleComponent", component: ScrollViewVerticalComponent, data: { title: "Vertical orientation" } }),
