@@ -184,10 +184,13 @@ export const routes = [
         loadChildren: () => require("./ui-category/action-bar/action-bar-examples.module")["ActionBarExamplesModule"],
         data: { title: "ActionBar" }
     },
+    {
+        path: "activity-indicator",
+        loadChildren: () => require("./ui-category/activity-indicator/activity-indicator-examples.module")["ActivityIndicatorExamplesModule"],
+        data: { title: "ActivityIndicator" }
+    },
 
     /*
-    routeEntry({ path: "activityIndicatorExamplesComponent", component: ActivityIndicatorExamplesComponent, data: { title: "ActivityIndicator" } }),
-    routeEntry({ path: "settingBusyComponent", component: SettingBusyComponent, data: { title: "Set busy property" } }),
     routeEntry({ path: "animationsExamplesComponent", component: AnimationsExamplesComponent, data: { title: "Animations" } }),
     routeEntry({ path: "animatingPropertiesComponent", component: AnimatingPropertiesComponent, data: { title: "Animate properties" } }),
     routeEntry({ path: "chainingAnimationsComponent", component: ChainingAnimationsComponent, data: { title: "Chaining animations" } }),

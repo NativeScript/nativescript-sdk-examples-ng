@@ -3,7 +3,7 @@ import { Link } from "./link";
 
 var mainMenuLinks = [
     new Link("ActionBar", "/action-bar"),
-    new Link("ActivityIndicator", "/activityIndicatorExamplesComponent"),
+    new Link("ActivityIndicator", "/activity-indicator"),
     new Link("Angular directives", "/ngDirectivesExamplesComponent"),
     new Link("Animations", "/animationsExamplesComponent"),
     new Link("Button", "/buttonExamplesComponent"),
