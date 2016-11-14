@@ -57,6 +57,7 @@ import { WebViewHtmlComponent } from "./ui-category/web-view/web-view-html/web-v
 import { StyleExamplesComponent } from "./ui-category/style/style-examples.component";
 import { StyleCSSFileComponent } from "./ui-category/style/style-css-file/style-css-file.component";
 import { ApplyStyleCodeComponent } from "./ui-category/style/apply-style-via-code/apply-style-code.component";
+
 import { GesturesExamplesComponent } from "./ui-category/gestures/gestures-examples.component";
 import { TapExampleComponent } from "./ui-category/gestures/tap/tap.component";
 import { DoubleTapExampleComponent } from "./ui-category/gestures/double-tap/double-tap.component";
@@ -66,6 +67,7 @@ import { PanExampleComponent } from "./ui-category/gestures/pan/pan.component";
 import { PinchExampleComponent } from "./ui-category/gestures/pinch/pinch.component";
 import { RotationExampleComponent } from "./ui-category/gestures/rotation/rotation.component";
 import { TouchExampleComponent } from "./ui-category/gestures/touch/touch.component";
+
 import { NgDirectivesExamplesComponent } from "./ui-category/ng-directives/ng-directives-examples.component";
 import { UsingNgIfComponent } from "./ui-category/ng-directives/using-ngif/using-ngif.component";
 import { UsingNgIfForPlatformSpecificComponent } from "./ui-category/ng-directives/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component";
@@ -191,6 +193,11 @@ export const routes = [
         loadChildren: () => require("./ui-category/formatted-string/formated-string-examples.module")["FormattedStringExamplesModule"],
         data: { title: "Formatted String" }
     },
+    {
+        path: "gestures",
+        loadChildren: () => require("./ui-category/gestures/gestures-examples.module")["GesturesExamplesModule"],
+        data: { title: "Gestures" }
+    },
     /*
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
     routeEntry({ path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } }),
@@ -251,6 +258,7 @@ export const routes = [
     routeEntry({ path: "settingProgressExampleComponent", component: SettingProgressComponent, data: { title: "Set up Progress" } }),
     routeEntry({ path: "htmlViewExamplesComponent", component: HtmlViewxamplesComponent, data: { title: "HtmlView" } }),
     routeEntry({ path: "creatingHtmlViewExampleComponent", component: CreatingHtmlViewExampleComponent, data: { title: "Create HtmlView" } }),
+
     routeEntry({ path: "gesturesExamplesComponent", component: GesturesExamplesComponent, data: { title: "Gestures" } }),
     routeEntry({ path: "tapGestureExampleComponent", component: TapExampleComponent, data: { title: "Tap" } }),
     routeEntry({ path: "doubleTapGestureExampleComponent", component: DoubleTapExampleComponent, data: { title: "Double tap" } }),
@@ -260,6 +268,7 @@ export const routes = [
     routeEntry({ path: "pinchGestureExampleComponent", component: PinchExampleComponent, data: { title: "Pinch" } }),
     routeEntry({ path: "rotationGestureExampleComponent", component: RotationExampleComponent, data: { title: "Rotation" } }),
     routeEntry({ path: "touchGestureExampleComponent", component: TouchExampleComponent, data: { title: "Touch" } }),
+
     routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
     routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
     routeEntry({ path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf basic usage" } }),

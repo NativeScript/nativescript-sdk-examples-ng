@@ -2,14 +2,14 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Tap", "/tapGestureExampleComponent"),
-    new Link("Double tap", "/doubleTapGestureExampleComponent"),
-    new Link("Long press", "/longPressGestureExampleComponent"),
-    new Link("Swipe", "/swipeGestureExampleComponent"),
-    new Link("Pan", "/panGestureExampleComponent"),
-    new Link("Pinch", "/pinchGestureExampleComponent"),
-    new Link("Rotation", "/rotationGestureExampleComponent"),
-    new Link("Touch", "/touchGestureExampleComponent"),
+    new Link("Tap", "/gestures/tap"),
+    new Link("Double tap", "/gestures/double-tap"),
+    new Link("Long press", "/gestures/long-press"),
+    new Link("Swipe", "/gestures/swipe"),
+    new Link("Pan", "/gestures/pan"),
+    new Link("Pinch", "/gestures/pinch"),
+    new Link("Rotation", "/gestures/rotation"),
+    new Link("Touch", "/gestures/touch"),
 ];
 
 @Component({

@@ -21,7 +21,7 @@ var mainMenuLinks = [
     new Link("TextView", "/textViewExamplesComponent"),
     new Link("WebView", "/webViewExamplesComponent"),
     new Link("Style", "/styleExamplesComponent"),
-    new Link("Gestures", "/gesturesExamplesComponent"),
+    new Link("Gestures", "/gestures"),
     new Link("HtmlView", "/htmlViewExamplesComponent"),
     new Link("Image", "/imageExamplesComponent"),
     new Link("Label", "/labelExamplesComponent"),
