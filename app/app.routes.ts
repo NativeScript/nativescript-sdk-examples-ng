@@ -1,27 +1,4 @@
 /*
-import { ExamplesListComponent } from "./examples-list.component";
-import { ActionBarExamplesComponent } from "./ui-category/action-bar/action-bar-examples.component";
-import { ActionItemsComponent } from "./ui-category/action-bar/action-items/action-items.component";
-import { NavigationButtonComponent } from "./ui-category/action-bar/navigation-button/navigation-button.component";
-import { TitleComponent } from "./ui-category/action-bar/title/title.component";
-import { ActivityIndicatorExamplesComponent } from "./ui-category/activity-indicator/activity-indicator-examples.component";
-import { SettingBusyComponent } from "./ui-category/activity-indicator/setting-busy/setting-busy.component";
-import { AnimationsExamplesComponent } from "./ui-category/animations/animations-examples.component";
-import { AnimatingPropertiesComponent } from "./ui-category/animations/animating-properties/animating-properties.component";
-import { ChainingAnimationsComponent } from "./ui-category/animations/chaining-animations/chaining-animations.component";
-import { MultipleViewsComponent } from "./ui-category/animations/multiple-views/multiple-views.component";
-import { ButtonExamplesComponent } from "./ui-category/button/button-examples.component";
-import { ButtonTextComponent } from "./ui-category/button/text/text.component";
-import { ButtonTapEventComponent } from "./ui-category/button/tap-event/tap-event.component";
-import { ButtonBindingTextComponent } from "./ui-category/button/binding-text/binding-text.component";
-import { DatePickerExamplesComponent } from "./ui-category/date-picker/date-picker-examples.component";
-import { ConfigureDatePickerComponent } from "./ui-category/date-picker/configure-date-picker/configure-date-picker.component";
-import { DialogsExamplesComponent } from "./ui-category/dialogs/dialogs-examples.component";
-import { ActionDialogComponent } from "./ui-category/dialogs/action-dialog/action-dialog.component";
-import { AlertDialogComponent } from "./ui-category/dialogs/alert-dialog/alert-dialog.component";
-import { ConfirmDialogComponent } from "./ui-category/dialogs/confirm-dialog/confirm-dialog.component";
-import { LoginDialogComponent } from "./ui-category/dialogs/login-dialog/login-dialog.component";
-import { PromptDialogComponent } from "./ui-category/dialogs/prompt-dialog/prompt-dialog.component";
 import { LayoutsExamplesComponent } from "./ui-category/layouts/layouts-examples.component";
 import { AbsoluteLayoutComponent } from "./ui-category/layouts/absolute-layout/absolute-layout.component";
 import { DockLayoutComponent } from "./ui-category/layouts/dock-layout/dock-layout.component";
@@ -203,7 +180,12 @@ export const routes = [
         path: "date-picker",
         loadChildren: () => require("./ui-category/date-picker/date-picker-examples.module")["DatePickerExamplesModule"],
         data: { title: "DatePicker" }
-    },    
+    },
+    {
+        path: "dialogs",
+        loadChildren: () => require("./ui-category/dialogs/dialogs-examples.module")["DialogsExamplesModule"],
+        data: { title: "Dialogs" }
+    },
     /*
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
     routeEntry({ path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } }),
@@ -237,12 +219,8 @@ export const routes = [
     routeEntry({ path: "styleExamplesComponent", component: StyleExamplesComponent, data: { title: "Style" } }),
     routeEntry({ path: "styleCSSFileComponent", component: StyleCSSFileComponent, data: { title: "Add style via CSS file" } }),
     routeEntry({ path: "applyStyleViaCodeComponent", component: ApplyStyleCodeComponent, data: { title: "Apply style using code" } }),
-    routeEntry({ path: "dialogsExamplesComponent", component: DialogsExamplesComponent, data: { title: "Dialogs" } }),
-    routeEntry({ path: "actionDialogComponent", component: ActionDialogComponent, data: { title: "Action dialog" } }),
-    routeEntry({ path: "alertDialogComponent", component: AlertDialogComponent, data: { title: "Alert dialog" } }),
-    routeEntry({ path: "confirmDialogComponent", component: ConfirmDialogComponent, data: { title: "Confirm dialogs" } }),
-    routeEntry({ path: "loginDialogComponent", component: LoginDialogComponent, data: { title: "Login dialogs" } }),
-    routeEntry({ path: "promptDialogComponent", component: PromptDialogComponent, data: { title: "Prompt dialogs" } }),
+
+
     routeEntry({ path: "layoutsExamplesComponent", component: LayoutsExamplesComponent, data: { title: "Layouts" } }),
     routeEntry({ path: "absoluteLayoutComponent", component: AbsoluteLayoutComponent, data: { title: "AbsoluteLayout" } }),
     routeEntry({ path: "dockLayoutComponent", component: DockLayoutComponent, data: { title: "DockLayout" } }),
