@@ -1,16 +1,17 @@
-<StackLayout exampleTitle toggleNavButton>
-    <ScrollView>
-        <StackLayout>
-            <GridLayout rows="*, *" columns="*, *">
-                <TextField class="p-15" row="0" col="0" [(ngModel)]="fileName" hint="Enter new file name"></TextField>
-                <Button class="btn btn-primary btn-active" row="0" col="1" text="Change file name" (tap)="onFileRename()"></Button>
-                <Label class="p-15" row="1" col="0" colSpan="2" [text]="fileSuccessMessage" textWrap="true" [visibility]="isItemVisible ? 'visible' : 'collapsed'"></Label>  
-            </GridLayout>
-            <GridLayout rows="*, *" columns="*, *">
-                <TextField class="p-15" row="0" col="0" [(ngModel)]="folderName" hint="Enter new file name"></TextField>
-                <Button class="btn btn-primary btn-active" row="0" col="1" text="Change folder name" (tap)="onFolderRename()"></Button>
-                <Label class="p-15" row="1" col="0" colSpan="2" [text]="folderSuccessMessage" textWrap="true" [visibility]="isFolderItemVisible ? 'visible' : 'collapsed'"></Label>  
-            </GridLayout>
+<ScrollView exampleTitle toggleNavButton>
+    <StackLayout class="form">
+        <StackLayout class="input-field">
+            <Label text="File name" class="label" textWrap="true"></Label>
+            <TextField class="input input-border" [(ngModel)]="fileName" hint="Enter new file name"></TextField>
         </StackLayout>
-    </ScrollView> 
-</StackLayout>
+        <Button class="btn btn-primary btn-active" text="Change file name" (tap)="onFileRename()"></Button>
+        <Label class="p-15" [text]="fileSuccessMessage" textWrap="true" [visibility]="isItemVisible ? 'visible' : 'collapsed'"></Label>  
+
+        <StackLayout class="input-field">
+            <Label text="Folder name" class="label" textWrap="true"></Label>
+            <TextField class="input input-border" [(ngModel)]="folderName" hint="Enter new folder name"></TextField>
+        </StackLayout>  
+        <Button class="btn btn-primary btn-active" text="Change folder name" (tap)="onFolderRename()"></Button>
+        <Label class="p-15" [text]="folderSuccessMessage" textWrap="true" [visibility]="isFolderItemVisible ? 'visible' : 'collapsed'"></Label>  
+    </StackLayout>
+</ScrollView> 

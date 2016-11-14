@@ -5,7 +5,6 @@ import {request} from "http"
 
 @Component({
     selector: 'http-module-post-component',
-    styleUrls: ['httpModule/http-module-post/http-module-post.css'],
     templateUrl: 'httpModule/http-module-post/http-module-post.html'
 })
 

@@ -1,32 +1,43 @@
-<ScrollView>
+<ScrollView exampleTitle toggleNavButton>
     <!-- >> dataentry-signup-html -->
-    <GridLayout class="p-5 form" rows="auto auto auto auto auto auto auto auto auto" columns="*">
-                <Button row="0" col="0" class="btn btn-outline icon btn-active" marginLeft="0" marginRight="0" borderColor="#3B5998" (tap)="onFacebookLoginTap()">
-                    <FormattedString>
-                        <Span text="&#xea90;" fontSize="18" horizontalAlign="left" foregroundColor="#3B5998" class="icon"></Span>
-                        <Span text=" Sign up with " foregroundColor="#3B5998"></Span>
-                        <Span text="Facebook" fontAttributes="Bold" foregroundColor="#3B5998"></Span>
-                    </FormattedString>
-                </Button>
-                <Button row="1" col="0" color="#3B5998" class="btn btn-outline icon btn-active" marginLeft="0" marginRight="0" borderColor="#d34836" (tap)="onGoogleLoginTap()">
-                    <FormattedString>
-                        <Span text="&#xea8b;" fontSize="18" foregroundColor="#d34836" class="icon"></Span>
-                        <Span text=" Sign up with " foregroundColor="#d34836"  class="h3"></Span>
-                        <Span text="Google +"  foregroundColor="#d34836" fontAttributes="Bold" class="h2"></Span>
-                    </FormattedString>
-                </Button>
+    <StackLayout>
+        <Button class="btn btn-outline icon btn-active" (tap)="onFacebookLoginTap()">
+            <FormattedString>
+                <Span text="&#xea90;" fontSize="18" horizontalAlign="left" foregroundColor="#3B5998"></Span>
+                <Span text=" Sign up with " foregroundColor="#3B5998"></Span>
+                <Span text="Facebook" fontAttributes="Bold" foregroundColor="#3B5998"></Span>
+            </FormattedString>
+        </Button>
+        <Button class="btn btn-outline icon btn-active" (tap)="onGoogleLoginTap()">
+            <FormattedString>
+                <Span text="&#xea8b;" fontSize="18" foregroundColor="#d34836" ></Span>
+                <Span text=" Sign up with " foregroundColor="#d34836" ></Span>
+                <Span text="Google +"  foregroundColor="#d34836" fontAttributes="Bold"></Span>
+            </FormattedString>
+        </Button>
 
-                <Label row="2" col="0" class="text-center p-b-15 p-t-15" text="or" textWrap="true"></Label>
-                <TextField #name row="3" col="0" hint="Name" colSpan="2" text="" class="input input-border m-b-15 m-t-15" autocorrect="false"></TextField>
-                <TextField #email row="4" col="0" hint="Email" colSpan="2" text="" class="input input-border m-b-15 m-t-15" autocorrect="false"></TextField>
-                <TextField #password row="5" col="0" hint="Password" colSpan="2" text="" [secure]="secureproperty" class="input input-border m-b-15 m-t-15" autocorrect="false"></TextField>
-                <StackLayout row="6" col="0" orientation="horizontal">
-                    <Switch #sw checked="true" (checkedChange)="switchChanged(sw.checked)" class="switch"></Switch>
-                    <Label text="Show password" textWrap="true"></Label>
-                </StackLayout>
-                    
-            <Button row="7" col="0" colSpan="2" text="Sign up" (tap)="signup(name.text, email.text, password.text)" class="btn btn-primary btn-active" marginLeft="0" marginRight="0"></Button>
-            <Label row="8" col="0" colSpan="2" text="Fogot password?" (tap)="forgottenpassword()" class="m-b-20 m-l-15"></Label>
-    </GridLayout>
+        <StackLayout class="form">
+            <StackLayout class="input-field">
+                <Label text="Name" class="label" textWrap="true"></Label>
+                <TextField #name hint="Name"text="" class="input input-border" autocorrect="false"></TextField>   
+            </StackLayout>
+            <StackLayout class="input-field">
+                <Label text="Email" class="label" textWrap="true"></Label>
+                <TextField #email hint="Email" text="" class="input input-border" autocorrect="false"></TextField>
+            </StackLayout>
+            <StackLayout class="input-field">
+                <Label text="Password" class="label" textWrap="true"></Label>
+                <TextField #password hint="Password" text="" [secure]="secureproperty" class="input input-border"autocorrect="false"></TextField>   
+            </StackLayout>
+  
+            <StackLayout orientation="horizontal">
+                <Label text="Show password" textWrap="true" class="m-15" verticalAligment="center"></Label>
+                <Switch #sw checked="true" (checkedChange)="switchChanged(sw.checked)" class="switch"></Switch>
+            </StackLayout>
+        </StackLayout>
+
+        <Button text="Sign up" (tap)="signup(name.text, email.text, password.text)" class="btn btn-primary btn-active"></Button>
+        <Button text="Forgot password?" (tap)="forgottenpassword()" class="btn btn-primary btn-active"></Button>
+    </StackLayout>
     <!-- << dataentry-signup-html -->
 </ScrollView>

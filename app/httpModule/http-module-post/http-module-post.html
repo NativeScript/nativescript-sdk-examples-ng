@@ -1,23 +1,20 @@
-<StackLayout  exampleTitle toggleNavButton>
-<StackLayout>
-    <Label text="Sample POST JSON" textWrap="true"></Label>
-    <ScrollView orientation="vertical">
-        <StackLayout orientation="vertical" class="layoutStyle">
-            <GridLayout rows="auto auto auto auto" columns="auto *">
-                <Label row="0" col="0" text="Name: " textWrap="true"></Label>
-                <TextField row="0" col="1" hint="Enter name" [(ngModel)]="name"></TextField>
-
-                <Label row="1" col="0" text="Username: " textWrap="true"></Label>
-                <TextField row="1" col="1" hint="Enter username" [(ngModel)]="username"></TextField>
-
-                <Label row="2" col="0" text="Custom text: " textWrap="true"></Label>
-                <TextField row="2" col="1" hint="Enter custom text" [(ngModel)]="custom_text"></TextField>
-                
-                
-                
-            </GridLayout>
-            <Button class="btn btn-primary btn-active" text="Submit" (tap)="makePOSTRequest()"></Button>
+<ScrollView orientation="vertical"  exampleTitle toggleNavButton>
+    <StackLayout class="form">
+        <StackLayout class="input-field">
+            <Label text="Name:" class="label" textWrap="true"></Label>
+            <TextField hint="Enter name" class="input input-border" [(ngModel)]="name"></TextField>          
         </StackLayout>
-    </ScrollView>
-</StackLayout>
-</StackLayout>
+        <StackLayout class="input-field">
+            <Label text="Username:" class="label" textWrap="true"></Label>
+            <TextField hint="Enter username" class="input input-border" [(ngModel)]="username"></TextField> 
+        </StackLayout>
+        <StackLayout class="input-field">
+            <Label text="Custom text:" class="label" textWrap="true"></Label>
+            <TextField hint="Enter custom text" class="input input-border" [(ngModel)]="custom_text"></TextField>      
+        </StackLayout>
+        <Button class="btn btn-primary btn-active" text="Submit" (tap)="makePOSTRequest()"></Button>
+    </StackLayout>
+</ScrollView>
+
+
+ 

@@ -10,7 +10,6 @@ import { Image } from "ui/image"
 
 @Component({
     selector: 'http-module-get-component',
-    styleUrls: ['httpModule/http-module-get/http-module-get.css'],
     templateUrl: 'httpModule/http-module-get/http-module-get.html'
 })
 

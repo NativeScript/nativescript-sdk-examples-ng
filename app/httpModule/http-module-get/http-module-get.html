@@ -1,36 +1,33 @@
-<StackLayout  exampleTitle toggleNavButton>
-    <ScrollView orientation="vertical">
-            <StackLayout orientation="vertical">
-                <GridLayout rows="auto, auto, auto, auto, auto, auto, auto, auto, auto" columns="auto, *">
+<ScrollView exampleTitle toggleNavButton orientation="vertical">
+    <StackLayout orientation="vertical">
+        <GridLayout rows="auto, auto, auto, auto, auto, auto, auto, auto, auto" columns="*, 2*">
+            <Label row="2" col="0" text="origin" class="p-t-15 p-l-15 p-r-15"  textWrap="true"></Label>
+            <Label row="3" col="0" text="url" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+            <Label row="4" col="0" text="status code" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
 
-                    <Label row="2" col="0" text="origin" textWrap="true"></Label>
-                    <Label row="3" col="0" text="url" textWrap="true"></Label>
-                    <Label row="4" col="0" text="status code" textWrap="true"></Label>
+            <Label row="5" col="0" text="[header] Date" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+            <Label row="7" col="0" text="[header] Content-Type" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+            <Label row="8" col="0" text="[header] Server"class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
 
-                    <Label row="5" col="0" text="[header] Date" textWrap="true"></Label>
-                    <Label row="7" col="0" text="[header] Content-Type" textWrap="true"></Label>
-                    <Label row="8" col="0" text="[header] Server" textWrap="true"></Label>
+            <Label row="2" col="1" [text]="origin" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+            <Label row="3" col="1" [text]="url" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+            <Label row="4" col="1" [text]="status" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
 
-                    <Label row="2" col="1" [text]="origin" class="result" textWrap="true"></Label>
-                    <Label row="3" col="1" [text]="url" class="result" textWrap="true"></Label>
-                    <Label row="4" col="1" [text]="status" class="result" textWrap="true"></Label>
+            <Label row="5" col="1" [text]="dateHeader" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+            <Label row="7" col="1" [text]="typeHeader" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+            <Label row="8" col="1" [text]="serverHeader" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+        </GridLayout>
 
-                    <Label row="5" col="1" [text]="dateHeader" class="result" textWrap="true"></Label>
-                    <Label row="7" col="1" [text]="typeHeader" class="result" textWrap="true"></Label>
-                    <Label row="8" col="1" [text]="serverHeader" class="result" textWrap="true"></Label>
-                </GridLayout>
+        <Label text="Sample getFile method" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+        <Image id="imageId"></Image>
 
-                <Label text="Sample getFile method" textWrap="true"></Label>
-                <Image id="imageId"></Image>
+        <Label text="Sample getFile method. Specify file path" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+        <Image id="secondimageId"></Image>
 
-                <Label text="Sample getFile method. Specify file path" textWrap="true"></Label>
-                <Image id="secondimageId"></Image>
-
-                <Label text="Sample getImage method" textWrap="true"></Label>
-                <Image id="thirdImage"></Image>
-                
-                <Label  text="Getting string from URL: " textWrap="true"></Label>
-                <TextView height="300" [text]="stringResponce" editable="false"></TextView>
-            </StackLayout>
-    </ScrollView>
-</StackLayout>
+        <Label text="Sample getImage method" class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+        <Image id="thirdImage"></Image>
+        
+        <Label  text="Getting string from URL: " class="p-t-15 p-l-15 p-r-15" textWrap="true"></Label>
+        <TextView height="300" [text]="stringResponce" editable="false"></TextView>
+    </StackLayout>
+</ScrollView>

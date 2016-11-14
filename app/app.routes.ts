@@ -147,7 +147,6 @@ import { HorizontalScrollingExampleComponent } from "./common-screens-category/l
 import { HeaderWithMapExampleComponent } from "./common-screens-category/listview/header-with-map/header-with-map.component";
 
 import { ContentScreensExamplesComponent } from "./common-screens-category/content-screens/content-screens-examples.component";
-import { ContentPageExampleComponent } from "./common-screens-category/content-screens/content/content-example.component";
 import { ContentScrollablePageExampleComponent } from "./common-screens-category/content-screens/content-scrollable/content-scrollable-example.component";
 
 import { ExtendedDataEntryExamplesComponent } from "./common-screens-category/dataentry/extended-dataentry-examples.component";
@@ -321,7 +320,6 @@ export const routes = [
     routeEntry({path:"horizontalScrollingExampleComponent", component: HorizontalScrollingExampleComponent, data:{ title: "Horizontal scrolling" }}),
     
     routeEntry({ path: "contentScreensExamplesComponent", component: ContentScreensExamplesComponent, data: { title: "Content Screens" } }),    
-    routeEntry({ path: "contentPageExampleComponent", component: ContentPageExampleComponent, data: { title: "Content Page" } }),  
     routeEntry({ path: "contentScrollablePageExampleComponent", component: ContentScrollablePageExampleComponent, data: { title: "Scrollable content page" } }),  
 
     routeEntry({path:"extendedDataEntryExamplesComponent", component: ExtendedDataEntryExamplesComponent, data:{ title: "Data entry" }}),

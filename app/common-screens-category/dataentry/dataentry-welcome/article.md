@@ -1,7 +1,8 @@
-## DataEntry: Cards
+DataEntry: Cards
 <snippet id='dataentry-wellcome-html'/>
 
-## DataEntry: Cards with thumbnails
+DataEntry: Cards with thumbnails
+
 HTML
 <snippet id='dataentry-login-html'/>
 
