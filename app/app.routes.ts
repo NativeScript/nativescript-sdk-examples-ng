@@ -186,6 +186,11 @@ export const routes = [
         loadChildren: () => require("./ui-category/dialogs/dialogs-examples.module")["DialogsExamplesModule"],
         data: { title: "Dialogs" }
     },
+    {
+        path: "formatted-string",
+        loadChildren: () => require("./ui-category/formatted-string/formated-string-examples.module")["FormattedStringExamplesModule"],
+        data: { title: "Formatted String" }
+    },
     /*
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
     routeEntry({ path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } }),
@@ -262,8 +267,8 @@ export const routes = [
     routeEntry({ path: "createCustomDirectiveExampleComponent", component: CreateCustomDirectiveExampleComponent, data: { title: "Create custom *ng directive" } }),
     routeEntry({ path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } }),
     routeEntry({ path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } }),
-    routeEntry({ path: "formattedStringExamplesComponent", component: FormattedStringExamplesComponent, data: { title: "Formatted String" } }),
-    routeEntry({ path: "createFormattedStringExampleComponent", component: CreateFormattedStringComponent, data: { title: "Create Formatted String" } }),
+    
+    
     routeEntry({ path: "applicationExamplesComponent", component: ApplicationExamplesComponent, data: { title: "Application" } }),
     routeEntry({ path: "checkTargetExampleComponent", component: AppCheckingTargetExampleComponent, data: { title: "Check The Target Platform" } }),
     routeEntry({ path: "usingAndroidSpecificsExampleComponent", component: AppUsingAndroidExampleComponent, data: { title: "Using Android Specifics" } }),

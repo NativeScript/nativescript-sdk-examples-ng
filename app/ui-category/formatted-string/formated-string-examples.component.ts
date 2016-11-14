@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Create Formatted String", "/createFormattedStringExampleComponent")
+    new Link("Create Formatted String", "/formatted-string/create-formatted-string")
 ];
 
 @Component({

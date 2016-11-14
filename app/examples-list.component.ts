@@ -28,7 +28,7 @@ var mainMenuLinks = [
     new Link("ListPicker", "/listPickerExamplesComponent"),
     new Link("ListView", "/listViewExamplesComponent"),
     new Link("Progress", "/progressExamplesComponent"),
-    new Link("Formatted String", "/formattedStringExamplesComponent"),
+    new Link("Formatted String", "/formatted-string"),
     new Link("Trace Module", "/traceExampleComponent"),
     new Link("Timer Module", "/timerExamplesComponent"),
     new Link("Platform Module", "/platformExamplesComponent"),
