@@ -198,6 +198,11 @@ export const routes = [
         path: "button",
         loadChildren: () => require("./ui-category/button/button-examples.module")["ButtonExamplesModule"],
         data: { title: "Button" }
+    },
+    {
+        path: "date-picker",
+        loadChildren: () => require("./ui-category/date-picker/date-picker-examples.module")["DatePickerExamplesModule"],
+        data: { title: "DatePicker" }
     },    
     /*
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
@@ -232,8 +237,6 @@ export const routes = [
     routeEntry({ path: "styleExamplesComponent", component: StyleExamplesComponent, data: { title: "Style" } }),
     routeEntry({ path: "styleCSSFileComponent", component: StyleCSSFileComponent, data: { title: "Add style via CSS file" } }),
     routeEntry({ path: "applyStyleViaCodeComponent", component: ApplyStyleCodeComponent, data: { title: "Apply style using code" } }),
-    routeEntry({ path: "datePickerExamplesComponent", component: DatePickerExamplesComponent, data: { title: "DatePicker" } }),
-    routeEntry({ path: "configureDatePickerComponent", component: ConfigureDatePickerComponent, data: { title: "Configure DatePicker" } }),
     routeEntry({ path: "dialogsExamplesComponent", component: DialogsExamplesComponent, data: { title: "Dialogs" } }),
     routeEntry({ path: "actionDialogComponent", component: ActionDialogComponent, data: { title: "Action dialog" } }),
     routeEntry({ path: "alertDialogComponent", component: AlertDialogComponent, data: { title: "Alert dialog" } }),

@@ -7,7 +7,7 @@ var mainMenuLinks = [
     new Link("Angular directives", "/ngDirectivesExamplesComponent"),
     new Link("Animations", "/animations"),
     new Link("Button", "/button"),
-    new Link("DatePicker", "/datePickerExamplesComponent"),
+    new Link("DatePicker", "/date-picker"),
     new Link("Dialogs", "/dialogsExamplesComponent"),
     new Link("Layouts", "/layoutsExamplesComponent"),
     new Link("TimePicker", "/timePickerExamplesComponent"),
