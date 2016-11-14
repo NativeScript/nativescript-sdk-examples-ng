@@ -194,6 +194,11 @@ export const routes = [
         loadChildren: () => require("./ui-category/animations/animations-examples.module")["AnimationsExamplesModule"],
         data: { title: "Animations" }
     },
+    {
+        path: "button",
+        loadChildren: () => require("./ui-category/button/button-examples.module")["ButtonExamplesModule"],
+        data: { title: "Button" }
+    },    
     /*
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
     routeEntry({ path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } }),
@@ -227,10 +232,6 @@ export const routes = [
     routeEntry({ path: "styleExamplesComponent", component: StyleExamplesComponent, data: { title: "Style" } }),
     routeEntry({ path: "styleCSSFileComponent", component: StyleCSSFileComponent, data: { title: "Add style via CSS file" } }),
     routeEntry({ path: "applyStyleViaCodeComponent", component: ApplyStyleCodeComponent, data: { title: "Apply style using code" } }),
-    routeEntry({ path: "buttonExamplesComponent", component: ButtonExamplesComponent, data: { title: "Button" } }),
-    routeEntry({ path: "buttonTextComponent", component: ButtonTextComponent, data: { title: "Text" } }),
-    routeEntry({ path: "buttonTapEventComponent", component: ButtonTapEventComponent, data: { title: "Tap event" } }),
-    routeEntry({ path: "buttonBindingTextComponent", component: ButtonBindingTextComponent, data: { title: "Binding text" } }),
     routeEntry({ path: "datePickerExamplesComponent", component: DatePickerExamplesComponent, data: { title: "DatePicker" } }),
     routeEntry({ path: "configureDatePickerComponent", component: ConfigureDatePickerComponent, data: { title: "Configure DatePicker" } }),
     routeEntry({ path: "dialogsExamplesComponent", component: DialogsExamplesComponent, data: { title: "Dialogs" } }),

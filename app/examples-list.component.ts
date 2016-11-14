@@ -6,7 +6,7 @@ var mainMenuLinks = [
     new Link("ActivityIndicator", "/activity-indicator"),
     new Link("Angular directives", "/ngDirectivesExamplesComponent"),
     new Link("Animations", "/animations"),
-    new Link("Button", "/buttonExamplesComponent"),
+    new Link("Button", "/button"),
     new Link("DatePicker", "/datePickerExamplesComponent"),
     new Link("Dialogs", "/dialogsExamplesComponent"),
     new Link("Layouts", "/layoutsExamplesComponent"),
