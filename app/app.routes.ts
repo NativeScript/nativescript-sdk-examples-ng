@@ -277,15 +277,15 @@ export const routes = [
         path: "text-view",
         loadChildren: () => require("./ui-category/text-view/text-view-examples.module")["TextViewExamplesModule"],
         data: { title: "TextView" }
+    },
+    {
+        path: "time-picker",
+        loadChildren: () => require("./ui-category/time-picker/time-picker-examples.module")["TimePickerExamplesModule"],
+        data: { title: "TimePicker" }
     }
 
 
     /*
-    routeEntry({ path: "textFieldExamplesComponent", component: TextFieldExamplesComponent, data: { title: "TextField" } }),
-    routeEntry({ path: "basicTextFieldComponent", component: BasicTextFieldComponent, data: { title: "Basic TextField" } }),
-    routeEntry({ path: "textFieldBindingComponent", component: TextFieldBindingComponent, data: { title: "TextField binding" } }),
-    routeEntry({ path: "textViewExamplesComponent", component: TextViewExamplesComponent, data: { title: "TextView" } }),
-    routeEntry({ path: "basicTextViewComponent", component: BasicTextViewComponent, data: { title: "Basic TextView" } }),
     routeEntry({ path: "webViewExamplesComponent", component: WebViewExamplesComponent, data: { title: "WebView" } }),
     routeEntry({ path: "basicWebViewComponent", component: BasicWebViewComponent, data: { title: "Basic WebView" } }),
     routeEntry({ path: "webViewHtmlComponent", component: WebViewHtmlComponent, data: { title: "HTML as source of WebView" } }),

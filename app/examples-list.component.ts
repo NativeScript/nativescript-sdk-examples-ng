@@ -10,7 +10,7 @@ var mainMenuLinks = [
     new Link("DatePicker", "/date-picker"),
     new Link("Dialogs", "/dialogs"),
     new Link("Layouts", "/layouts"),
-    new Link("TimePicker", "/timePickerExamplesComponent"),
+    new Link("TimePicker", "/time-picker"),
     new Link("ScrollView", "/scroll-view"),
     new Link("SearchBar", "/search-bar"),
     new Link("SegmentedBar", "/segmented-bar"),
