@@ -25,7 +25,7 @@ var mainMenuLinks = [
     new Link("HtmlView", "/html-view"),
     new Link("Image", "/image"),
     new Link("Label", "/label"),
-    new Link("ListPicker", "/listPickerExamplesComponent"),
+    new Link("ListPicker", "/list-picker"),
     new Link("ListView", "/listViewExamplesComponent"),
     new Link("Progress", "/progressExamplesComponent"),
     new Link("Formatted String", "/formatted-string"),
