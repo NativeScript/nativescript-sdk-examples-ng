@@ -14,7 +14,6 @@ import { IfAndroidDirective, IfIosDirective } from "./ui-category/ng-directives/
 import { UnlessDirective } from "./ui-category/ng-directives/unless-directive/directive-unless"
 import { ToggleNavButtonDirective } from "./directives/toggle-nav-button.directive"
 import { ExampleTitleDirective } from "./directives/example.directive"
-import { ItemComponent } from "./ui-category/listview/using-item-template/using-item-template.component";
 // << (hide)
 import {registerElement} from 'nativescript-angular/element-registry';
 import { ModalViewComponent } from "./modal-page/sample-modal-page-module-example/modal-view";
@@ -24,7 +23,6 @@ import {isIOS} from "platform"
 @NgModule({
     declarations: [
         // >> (hide)
-        ItemComponent,
         AppComponent,
         IfAndroidDirective,
         IfIosDirective,

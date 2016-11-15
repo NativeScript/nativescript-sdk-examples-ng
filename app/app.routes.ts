@@ -222,7 +222,12 @@ export const routes = [
         path: "list-picker",
         loadChildren: () => require("./ui-category/listpicker/listpicker-examples.module")["ListPickerExamplesModule"],
         data: { title: "ListPicker" }
-    },  
+    },
+    {
+        path: "list-view",
+        loadChildren: () => require("./ui-category/listview/listview-examples.module")["ListViewExamplesModule"],
+        data: { title: "ListView" }
+    }
     /*
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
     routeEntry({ path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } }),
@@ -260,15 +265,6 @@ export const routes = [
     routeEntry({ path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "TimePicker" } }),
     routeEntry({ path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure TimePicker" } }),
 
-    routeEntry({ path: "listPickerExamplesComponent", component: ListPickerExamplesComponent, data: { title: "ListPicker" } }),
-    routeEntry({ path: "creatingListPickerExampleComponent", component: CreatingListPickerComponent, data: { title: "Create ListPicker" } }),
-    routeEntry({ path: "usingSelectedIndexExampleComponent", component: UsingSelectedIndexExampleComponent, data: { title: "Use selected index" } }),
-
-    routeEntry({ path: "listViewExamplesComponent", component: ListViewExamplesComponent, data: { title: "ListView" } }),
-    routeEntry({ path: "creatingListViewExampleComponent", component: CreatingListViewComponent, data: { title: "Create ListView" } }),
-    routeEntry({ path: "customizingListViewExampleComponent", component: CustomizingListViewComponent, data: { title: "Customize ListView" } }),
-    routeEntry({ path: "usingItemTemplateExampleComponent", component: UsingItemTemplateComponent, data: { title: "Use ListView item template" } }),
-    routeEntry({ path: "usingAsyncPipeExampleComponent", component: UsingAsyncPipeComponent, data: { title: "Use async pipe" } }),
     routeEntry({ path: "progressExamplesComponent", component: ProgressExamplesComponent, data: { title: "Progress" } }),
     routeEntry({ path: "creatingProgressExampleComponent", component: CreatingProgressComponent, data: { title: "Create Progress" } }),
     routeEntry({ path: "settingProgressExampleComponent", component: SettingProgressComponent, data: { title: "Set up Progress" } }),
