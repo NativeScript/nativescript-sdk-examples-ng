@@ -207,7 +207,12 @@ export const routes = [
         path: "image",
         loadChildren: () => require("./ui-category/image/image-examples.module")["ImageExamplesModule"],
         data: { title: "Image" }
-    },    
+    },
+    {
+        path: "label",
+        loadChildren: () => require("./ui-category/label/label-examples.module")["LabelExamplesModule"],
+        data: { title: "Label" }
+    },      
     /*
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
     routeEntry({ path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } }),
@@ -252,11 +257,6 @@ export const routes = [
     routeEntry({ path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "TimePicker" } }),
     routeEntry({ path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure TimePicker" } }),
 
-    routeEntry({ path: "imageExamplesComponent", component: ImageExamplesComponent, data: { title: "Image" } }),
-    routeEntry({ path: "creatingImageExampleComponent", component: CreatingImageExampleComponent, data: { title: "Create Image" } }),
-
-    routeEntry({ path: "labelExamplesComponent", component: LabelExamplesComponent, data: { title: "Label" } }),
-    routeEntry({ path: "creatingLabelExampleComponent", component: CreatingLabelComponent, data: { title: "Create Label" } }),
     routeEntry({ path: "listPickerExamplesComponent", component: ListPickerExamplesComponent, data: { title: "ListPicker" } }),
     routeEntry({ path: "creatingListPickerExampleComponent", component: CreatingListPickerComponent, data: { title: "Create ListPicker" } }),
     routeEntry({ path: "usingSelectedIndexExampleComponent", component: UsingSelectedIndexExampleComponent, data: { title: "Use selected index" } }),
