@@ -242,12 +242,14 @@ export const routes = [
         path: "search-bar",
         loadChildren: () => require("./ui-category/search-bar/search-bar-examples.module")["SearchBarExamplesModule"],
         data: { title: "SearchBar" }
+    },
+    {
+        path: "segmented-bar",
+        loadChildren: () => require("./ui-category/segmented-bar/segmented-bar-examples.module")["SegmentedBarExamplesModule"],
+        data: { title: "SegmentedBar" }
     }
-    /*
 
-    routeEntry({ path: "segmentedBarExamplesComponent", component: SegmentedBarExamplesComponent, data: { title: "SegmentedBar" } }),
-    routeEntry({ path: "basicSegmentedBarComponent", component: BasicSegmentedBarComponent, data: { title: "Basic SegmentedBar" } }),
-    routeEntry({ path: "segmentedBarViewsComponent", component: SegmentedBarViewsComponent, data: { title: "SelectedIndexChange" } }),
+    /*
     routeEntry({ path: "sliderExamplesComponent", component: SliderExamplesComponent, data: { title: "Slider" } }),
     routeEntry({ path: "basicSliderComponent", component: BasicSliderComponent, data: { title: "Basic Slider" } }),
     routeEntry({ path: "accessSliderValueComponent", component: SliderAccessValueComponent, data: { title: "Slider's value" } }),

@@ -13,7 +13,7 @@ var mainMenuLinks = [
     new Link("TimePicker", "/timePickerExamplesComponent"),
     new Link("ScrollView", "/scroll-view"),
     new Link("SearchBar", "/search-bar"),
-    new Link("SegmentedBar", "/segmentedBarExamplesComponent"),
+    new Link("SegmentedBar", "/segmented-bar"),
     new Link("Slider", "/sliderExamplesComponent"),
     new Link("Switch", "/switchExamplesComponent"),
     new Link("TabView", "/tabViewExamplesComponent"),
