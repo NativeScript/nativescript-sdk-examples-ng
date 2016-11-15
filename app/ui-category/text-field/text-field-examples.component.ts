@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Basic TextField", "/basicTextFieldComponent"),
-    new Link("TextField binding", "/textFieldBindingComponent")
+    new Link("Basic TextField", "/text-field/basic"),
+    new Link("TextField binding", "/text-field/binding")
 ];
 
 @Component({

@@ -267,12 +267,15 @@ export const routes = [
         path: "tab-view",
         loadChildren: () => require("./ui-category/tab-view/tab-view-examples.module")["TabViewExamplesModule"],
         data: { title: "TabView" }
+    },
+    {
+        path: "text-field",
+        loadChildren: () => require("./ui-category/text-field/text-field-examples.module")["TextFieldExamplesModule"],
+        data: { title: "TextField" }
     }
 
+
     /*
-    routeEntry({ path: "tabViewExamplesComponent", component: TabViewExamplesComponent, data: { title: "TabView" } }),
-    routeEntry({ path: "basicTabViewExamplesComponent", component: BasicTabViewComponent, data: { title: "Basic TabView" } }),
-    routeEntry({ path: "tabViewItemsExamplesComponent", component: TabViewItemsComponent, data: { title: "TabView items" } }),
     routeEntry({ path: "textFieldExamplesComponent", component: TextFieldExamplesComponent, data: { title: "TextField" } }),
     routeEntry({ path: "basicTextFieldComponent", component: BasicTextFieldComponent, data: { title: "Basic TextField" } }),
     routeEntry({ path: "textFieldBindingComponent", component: TextFieldBindingComponent, data: { title: "TextField binding" } }),
