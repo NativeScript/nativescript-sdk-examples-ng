@@ -257,13 +257,14 @@ export const routes = [
         path: "style",
         loadChildren: () => require("./ui-category/style/style-examples.module")["StyleExamplesModule"],
         data: { title: "Style" }
+    },
+    {
+        path: "switch",
+        loadChildren: () => require("./ui-category/switch/switch-examples.module")["SwitchExamplesModule"],
+        data: { title: "Switch" }
     }
 
     /*
-    routeEntry({ path: "switchExamplesComponent", component: SwitchExamplesComponent, data: { title: "Switch" } }),
-    routeEntry({ path: "basicSwitchComponent", component: BasicSwitchComponent, data: { title: "Basic Switch" } }),
-    routeEntry({ path: "diableSwitchComponent", component: DisableSwitchComponent, data: { title: "Disable Switch component" } }),
-    routeEntry({ path: "stylingSwitchComponent", component: StylingSwitchComponent, data: { title: "Styling Switch component" } }),
     routeEntry({ path: "tabViewExamplesComponent", component: TabViewExamplesComponent, data: { title: "TabView" } }),
     routeEntry({ path: "basicTabViewExamplesComponent", component: BasicTabViewComponent, data: { title: "Basic TabView" } }),
     routeEntry({ path: "tabViewItemsExamplesComponent", component: TabViewItemsComponent, data: { title: "TabView items" } }),
