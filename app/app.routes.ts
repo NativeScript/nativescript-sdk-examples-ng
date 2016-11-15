@@ -262,6 +262,11 @@ export const routes = [
         path: "switch",
         loadChildren: () => require("./ui-category/switch/switch-examples.module")["SwitchExamplesModule"],
         data: { title: "Switch" }
+    },
+    {
+        path: "tab-view",
+        loadChildren: () => require("./ui-category/tab-view/tab-view-examples.module")["TabViewExamplesModule"],
+        data: { title: "TabView" }
     }
 
     /*

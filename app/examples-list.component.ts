@@ -16,7 +16,7 @@ var mainMenuLinks = [
     new Link("SegmentedBar", "/segmented-bar"),
     new Link("Slider", "/slider"),
     new Link("Switch", "/switch"),
-    new Link("TabView", "/tabViewExamplesComponent"),
+    new Link("TabView", "/tab-view"),
     new Link("TextField", "/textFieldExamplesComponent"),
     new Link("TextView", "/textViewExamplesComponent"),
     new Link("WebView", "/webViewExamplesComponent"),
