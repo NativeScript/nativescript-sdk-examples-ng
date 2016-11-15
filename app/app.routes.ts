@@ -247,12 +247,14 @@ export const routes = [
         path: "segmented-bar",
         loadChildren: () => require("./ui-category/segmented-bar/segmented-bar-examples.module")["SegmentedBarExamplesModule"],
         data: { title: "SegmentedBar" }
+    },
+    {
+        path: "slider",
+        loadChildren: () => require("./ui-category/slider/slider-examples.module")["SliderExamplesModule"],
+        data: { title: "Slider" }
     }
 
     /*
-    routeEntry({ path: "sliderExamplesComponent", component: SliderExamplesComponent, data: { title: "Slider" } }),
-    routeEntry({ path: "basicSliderComponent", component: BasicSliderComponent, data: { title: "Basic Slider" } }),
-    routeEntry({ path: "accessSliderValueComponent", component: SliderAccessValueComponent, data: { title: "Slider's value" } }),
     routeEntry({ path: "switchExamplesComponent", component: SwitchExamplesComponent, data: { title: "Switch" } }),
     routeEntry({ path: "basicSwitchComponent", component: BasicSwitchComponent, data: { title: "Basic Switch" } }),
     routeEntry({ path: "diableSwitchComponent", component: DisableSwitchComponent, data: { title: "Disable Switch component" } }),

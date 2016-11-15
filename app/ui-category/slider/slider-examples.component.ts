@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Basic Slider", "/basicSliderComponent"),
-    new Link("Access Slider's value", "/accessSliderValueComponent")
+    new Link("Basic Slider", "/slider/basic"),
+    new Link("Access Slider's value", "/slider/value")
 ];
 
 @Component({

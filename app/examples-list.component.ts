@@ -14,7 +14,7 @@ var mainMenuLinks = [
     new Link("ScrollView", "/scroll-view"),
     new Link("SearchBar", "/search-bar"),
     new Link("SegmentedBar", "/segmented-bar"),
-    new Link("Slider", "/sliderExamplesComponent"),
+    new Link("Slider", "/slider"),
     new Link("Switch", "/switchExamplesComponent"),
     new Link("TabView", "/tabViewExamplesComponent"),
     new Link("TextField", "/textFieldExamplesComponent"),
