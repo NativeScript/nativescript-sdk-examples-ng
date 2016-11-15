@@ -272,6 +272,11 @@ export const routes = [
         path: "text-field",
         loadChildren: () => require("./ui-category/text-field/text-field-examples.module")["TextFieldExamplesModule"],
         data: { title: "TextField" }
+    },
+    {
+        path: "text-view",
+        loadChildren: () => require("./ui-category/text-view/text-view-examples.module")["TextViewExamplesModule"],
+        data: { title: "TextView" }
     }
 
 
