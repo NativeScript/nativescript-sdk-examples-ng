@@ -23,7 +23,7 @@ var mainMenuLinks = [
     new Link("Style", "/styleExamplesComponent"),
     new Link("Gestures", "/gestures"),
     new Link("HtmlView", "/html-view"),
-    new Link("Image", "/imageExamplesComponent"),
+    new Link("Image", "/image"),
     new Link("Label", "/labelExamplesComponent"),
     new Link("ListPicker", "/listPickerExamplesComponent"),
     new Link("ListView", "/listViewExamplesComponent"),
