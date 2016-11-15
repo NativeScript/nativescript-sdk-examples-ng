@@ -282,14 +282,15 @@ export const routes = [
         path: "time-picker",
         loadChildren: () => require("./ui-category/time-picker/time-picker-examples.module")["TimePickerExamplesModule"],
         data: { title: "TimePicker" }
+    },
+    {
+        path: "web-view",
+        loadChildren: () => require("./ui-category/web-view/web-view-examples.module")["WebViewExamplesModule"],
+        data: { title: "WebView" }
     }
 
 
     /*
-    routeEntry({ path: "webViewExamplesComponent", component: WebViewExamplesComponent, data: { title: "WebView" } }),
-    routeEntry({ path: "basicWebViewComponent", component: BasicWebViewComponent, data: { title: "Basic WebView" } }),
-    routeEntry({ path: "webViewHtmlComponent", component: WebViewHtmlComponent, data: { title: "HTML as source of WebView" } }),
-
     routeEntry({ path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "TimePicker" } }),
     routeEntry({ path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure TimePicker" } }),
 

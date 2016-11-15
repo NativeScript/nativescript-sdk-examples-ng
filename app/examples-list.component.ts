@@ -19,7 +19,7 @@ var mainMenuLinks = [
     new Link("TabView", "/tab-view"),
     new Link("TextField", "/text-field"),
     new Link("TextView", "/text-view"),
-    new Link("WebView", "/webViewExamplesComponent"),
+    new Link("WebView", "/web-view"),
     new Link("Style", "/style"),
     new Link("Gestures", "/gestures"),
     new Link("HtmlView", "/html-view"),
