@@ -9,7 +9,7 @@ var mainMenuLinks = [
     new Link("Button", "/button"),
     new Link("DatePicker", "/date-picker"),
     new Link("Dialogs", "/dialogs"),
-    new Link("Layouts", "/layoutsExamplesComponent"),
+    new Link("Layouts", "/layouts"),
     new Link("TimePicker", "/timePickerExamplesComponent"),
     new Link("ScrollView", "/scrollViewExampleComponent"),
     new Link("SearchBar", "/searchBarExampleComponent"),

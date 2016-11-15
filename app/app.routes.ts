@@ -212,7 +212,12 @@ export const routes = [
         path: "label",
         loadChildren: () => require("./ui-category/label/label-examples.module")["LabelExamplesModule"],
         data: { title: "Label" }
-    },      
+    },
+    {
+        path: "layouts",
+        loadChildren: () => require("./ui-category/layouts/layouts-examples.module")["LayoutsExamplesModule"],
+        data: { title: "Layouts" }
+    },  
     /*
     routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
     routeEntry({ path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } }),
@@ -247,13 +252,6 @@ export const routes = [
     routeEntry({ path: "styleCSSFileComponent", component: StyleCSSFileComponent, data: { title: "Add style via CSS file" } }),
     routeEntry({ path: "applyStyleViaCodeComponent", component: ApplyStyleCodeComponent, data: { title: "Apply style using code" } }),
 
-
-    routeEntry({ path: "layoutsExamplesComponent", component: LayoutsExamplesComponent, data: { title: "Layouts" } }),
-    routeEntry({ path: "absoluteLayoutComponent", component: AbsoluteLayoutComponent, data: { title: "AbsoluteLayout" } }),
-    routeEntry({ path: "dockLayoutComponent", component: DockLayoutComponent, data: { title: "DockLayout" } }),
-    routeEntry({ path: "gridLayoutComponent", component: GridLayoutComponent, data: { title: "GridLayout" } }),
-    routeEntry({ path: "stackLayoutComponent", component: StackLayoutComponent, data: { title: "StackLayout" } }),
-    routeEntry({ path: "wrapLayoutComponent", component: WrapLayoutComponent, data: { title: "WrapLayout" } }),
     routeEntry({ path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "TimePicker" } }),
     routeEntry({ path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure TimePicker" } }),
 
@@ -268,8 +266,6 @@ export const routes = [
     routeEntry({ path: "progressExamplesComponent", component: ProgressExamplesComponent, data: { title: "Progress" } }),
     routeEntry({ path: "creatingProgressExampleComponent", component: CreatingProgressComponent, data: { title: "Create Progress" } }),
     routeEntry({ path: "settingProgressExampleComponent", component: SettingProgressComponent, data: { title: "Set up Progress" } }),
-
-    routeEntry({ path: "htmlViewExamplesComponent", component: HtmlViewxamplesComponent, data: { title: "HtmlView" } }),
 
     routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
     routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
@@ -341,10 +337,6 @@ export const routes = [
     routeEntry({path:"userFeedImagesExampleComponent", component: UserFeedImagesExampleComponent, data:{ title: "User feed with images" }}),
     routeEntry({path:"userSettingsMenuExampleComponent", component: UserSettingsMenuExampleComponent, data:{ title: "User settings menu" }}),
     routeEntry({path:"userFeedExampleComponent", component: UserFeedExampleComponent, data:{ title: "User feed" }}),
-
-    routeEntry({ path: "flexboxLayoutComponentOne", component: FlexboxLayoutComponentOne, data: { title: "FlexboxLayout I" } }),
-    routeEntry({ path: "flexboxLayoutComponentTwo", component: FlexboxLayoutComponentTwo, data: { title: "FlexboxLayout II" } }), 
-    routeEntry({ path: "flexboxLayoutComponentThree", component: FlexboxLayoutComponentThree, data: { title: "FlexboxLayout III" } }),  
 
     routeEntry({ path: "cameraExamplesComponent", component: CameraExamplesComponent, data: { title: "Camera" } }),
     routeEntry({ path: "usingCameraExampleComponent", component: UsingCameraExampleComponent, data: { title: "Using camera" } }),     
