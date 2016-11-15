@@ -252,6 +252,11 @@ export const routes = [
         path: "slider",
         loadChildren: () => require("./ui-category/slider/slider-examples.module")["SliderExamplesModule"],
         data: { title: "Slider" }
+    },
+    {
+        path: "style",
+        loadChildren: () => require("./ui-category/style/style-examples.module")["StyleExamplesModule"],
+        data: { title: "Style" }
     }
 
     /*
@@ -270,9 +275,6 @@ export const routes = [
     routeEntry({ path: "webViewExamplesComponent", component: WebViewExamplesComponent, data: { title: "WebView" } }),
     routeEntry({ path: "basicWebViewComponent", component: BasicWebViewComponent, data: { title: "Basic WebView" } }),
     routeEntry({ path: "webViewHtmlComponent", component: WebViewHtmlComponent, data: { title: "HTML as source of WebView" } }),
-    routeEntry({ path: "styleExamplesComponent", component: StyleExamplesComponent, data: { title: "Style" } }),
-    routeEntry({ path: "styleCSSFileComponent", component: StyleCSSFileComponent, data: { title: "Add style via CSS file" } }),
-    routeEntry({ path: "applyStyleViaCodeComponent", component: ApplyStyleCodeComponent, data: { title: "Apply style using code" } }),
 
     routeEntry({ path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "TimePicker" } }),
     routeEntry({ path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure TimePicker" } }),

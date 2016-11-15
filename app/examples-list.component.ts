@@ -20,7 +20,7 @@ var mainMenuLinks = [
     new Link("TextField", "/textFieldExamplesComponent"),
     new Link("TextView", "/textViewExamplesComponent"),
     new Link("WebView", "/webViewExamplesComponent"),
-    new Link("Style", "/styleExamplesComponent"),
+    new Link("Style", "/style"),
     new Link("Gestures", "/gestures"),
     new Link("HtmlView", "/html-view"),
     new Link("Image", "/image"),
