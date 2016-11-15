@@ -232,12 +232,14 @@ export const routes = [
         path: "progress",
         loadChildren: () => require("./ui-category/progress/progress-examples.module")["ProgressExamplesModule"],
         data: { title: "Progress" }
+    },
+    {
+        path: "scroll-view",
+        loadChildren: () => require("./ui-category/scroll-view/scroll-view-examples.module")["ScrollViewExamplesModule"],
+        data: { title: "ScrollView" }
     }
     /*
-    routeEntry({ path: "scrollViewExampleComponent", component: ScrollViewExamplesComponent, data: { title: "ScrollView" } }),
-    routeEntry({ path: "scrollViewHorizontalExampleComponent", component: ScrollViewHorizontalComponent, data: { title: "Horizontal orientation" } }),
-    routeEntry({ path: "scrollViewVertivalExampleComponent", component: ScrollViewVerticalComponent, data: { title: "Vertical orientation" } }),
-    routeEntry({ path: "scrollEventExampleComponent", component: ScrollEventComponent, data: { title: "Scroll event" } }),
+
     routeEntry({ path: "searchBarExampleComponent", component: SearchBarExamplesComponent, data: { title: "SearchBar" } }),
     routeEntry({ path: "basicSearchBarComponent", component: BasicSearchBarComponent, data: { title: "Basic SearchBar" } }),
     routeEntry({ path: "clearSearchBarComponent", component: ClearSearchBarComponent, data: { title: "Clear SearchBar" } }),

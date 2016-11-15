@@ -11,7 +11,7 @@ var mainMenuLinks = [
     new Link("Dialogs", "/dialogs"),
     new Link("Layouts", "/layouts"),
     new Link("TimePicker", "/timePickerExamplesComponent"),
-    new Link("ScrollView", "/scrollViewExampleComponent"),
+    new Link("ScrollView", "/scroll-view"),
     new Link("SearchBar", "/searchBarExampleComponent"),
     new Link("SegmentedBar", "/segmentedBarExamplesComponent"),
     new Link("Slider", "/sliderExamplesComponent"),

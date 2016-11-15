@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Horizontal orientation", "/scrollViewHorizontalExampleComponent"),
-    new Link("Vertical orientation", "/scrollViewVertivalExampleComponent"),
-    new Link("Scroll event", "/scrollEventExampleComponent")
+    new Link("Horizontal orientation", "/scroll-view/horizontal"),
+    new Link("Vertical orientation", "/scroll-view/vertical"),
+    new Link("Scroll event", "/scroll-view/scroll-event")
 ];
      
 @Component({
