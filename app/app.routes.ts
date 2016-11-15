@@ -237,13 +237,14 @@ export const routes = [
         path: "scroll-view",
         loadChildren: () => require("./ui-category/scroll-view/scroll-view-examples.module")["ScrollViewExamplesModule"],
         data: { title: "ScrollView" }
+    },
+    {
+        path: "search-bar",
+        loadChildren: () => require("./ui-category/search-bar/search-bar-examples.module")["SearchBarExamplesModule"],
+        data: { title: "SearchBar" }
     }
     /*
 
-    routeEntry({ path: "searchBarExampleComponent", component: SearchBarExamplesComponent, data: { title: "SearchBar" } }),
-    routeEntry({ path: "basicSearchBarComponent", component: BasicSearchBarComponent, data: { title: "Basic SearchBar" } }),
-    routeEntry({ path: "clearSearchBarComponent", component: ClearSearchBarComponent, data: { title: "Clear SearchBar" } }),
-    routeEntry({ path: "searchBarBindingComponent", component: SearchBarBindingComponent, data: { title: "SearchBar property binding" } }),
     routeEntry({ path: "segmentedBarExamplesComponent", component: SegmentedBarExamplesComponent, data: { title: "SegmentedBar" } }),
     routeEntry({ path: "basicSegmentedBarComponent", component: BasicSegmentedBarComponent, data: { title: "Basic SegmentedBar" } }),
     routeEntry({ path: "segmentedBarViewsComponent", component: SegmentedBarViewsComponent, data: { title: "SelectedIndexChange" } }),
