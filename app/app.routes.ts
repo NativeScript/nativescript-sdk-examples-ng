@@ -287,13 +287,15 @@ export const routes = [
         path: "web-view",
         loadChildren: () => require("./ui-category/web-view/web-view-examples.module")["WebViewExamplesModule"],
         data: { title: "WebView" }
+    },
+    {
+        path: "application",
+        loadChildren: () => require("./application/application-examples.module")["ApplicationExamplesModule"],
+        data: { title: "Application" }
     }
 
 
     /*
-    routeEntry({ path: "timePickerExamplesComponent", component: TimePickerExamplesComponent, data: { title: "TimePicker" } }),
-    routeEntry({ path: "configureTimePickerComponent", component: ConfigureTimePickerComponent, data: { title: "Configure TimePicker" } }),
-
     routeEntry({ path: "ngDirectivesExamplesComponent", component: NgDirectivesExamplesComponent, data: { title: "Angular directives" } }),
     routeEntry({ path: "ngForRepeatItemsComponent", component: NgForRepeatItemsComponent, data: { title: "*ngFor repeat items" } }),
     routeEntry({ path: "usingNgIfExampleComponent", component: UsingNgIfComponent, data: { title: "*ngIf basic usage" } }),
@@ -302,12 +304,8 @@ export const routes = [
     routeEntry({ path: "unlessDirectiveExampleComponent", component: UnlessDirectiveExampleComponent, data: { title: "Unless directive example" } }),
     routeEntry({ path: "usingNgSwitchExampleComponent", component: UsingNgSwitchExamplesComponent, data: { title: "*ngSwitch basic usage" } }),
     
-    
-    routeEntry({ path: "applicationExamplesComponent", component: ApplicationExamplesComponent, data: { title: "Application" } }),
-    routeEntry({ path: "checkTargetExampleComponent", component: AppCheckingTargetExampleComponent, data: { title: "Check The Target Platform" } }),
-    routeEntry({ path: "usingAndroidSpecificsExampleComponent", component: AppUsingAndroidExampleComponent, data: { title: "Using Android Specifics" } }),
-    routeEntry({ path: "usingIosSpecificsExampleComponent", component: AppUsingIosExampleComponent, data: { title: "Using iOS Specifics" } }),
     routeEntry({ path: "applicationSettingsExamplesComponent", component: ApplicationSettingsExamplesComponent, data: { title: "Application Settings" } }),
+    
     routeEntry({ path: "valuesExampleComponent", component: ValuesExampleComponent, data: { title: "Working with values" } }),
     routeEntry({ path: "colorExamplesComponent", component: ColorExamplesComponent, data: { title: "Color" } }),
     routeEntry({ path: "creatingColorsExampleComponent", component: CreatingColorsExampleComponent, data: { title: "Creating Colors" } }),
