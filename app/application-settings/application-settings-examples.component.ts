@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Working with values", "/valuesExampleComponent"),
+    new Link("Working with values", "/application-settings/values"),
 ];
 
 @Component({

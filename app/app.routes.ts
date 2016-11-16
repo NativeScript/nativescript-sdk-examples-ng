@@ -292,6 +292,11 @@ export const routes = [
         path: "application",
         loadChildren: () => require("./application/application-examples.module")["ApplicationExamplesModule"],
         data: { title: "Application" }
+    },
+    {
+        path: "application-settings",
+        loadChildren: () => require("./application-settings/application-settings-examples.module")["ApplicationSettingsExamplesModule"],
+        data: { title: "Application Settings" }
     }
 
 

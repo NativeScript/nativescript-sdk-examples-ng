@@ -36,7 +36,7 @@ var mainMenuLinks = [
     new Link("FPS Meter", "/fpsExamplesComponent"),
     new Link("HTTP Module", "/httpModuleComponent"),
     new Link("Application", "/application"),
-    new Link("Application Settings", "/applicationSettingsExamplesComponent"),
+    new Link("Application Settings", "/application-settings"),
     new Link("Color", "/colorExamplesComponent"),
     new Link("Connectivity", "/connectivityExamplesComponent"),
     new Link("Fetch", "/fetchExamplesComponent"),
