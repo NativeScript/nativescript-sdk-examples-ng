@@ -37,7 +37,7 @@ var mainMenuLinks = [
     new Link("HTTP Module", "/httpModuleComponent"),
     new Link("Application", "/application"),
     new Link("Application Settings", "/application-settings"),
-    new Link("Color", "/colorExamplesComponent"),
+    new Link("Color", "/color"),
     new Link("Connectivity", "/connectivityExamplesComponent"),
     new Link("Fetch", "/fetchExamplesComponent"),
     new Link("File System", "/fileSystemxamplesComponent"),
