@@ -168,5 +168,40 @@ export const routes = [
         path: "timer",
         loadChildren: () => require("./timer/timer-examples.module")["TimerExamplesModule"],
         data: { title: "Timer" }
+    },
+    {
+        path: "content-screens",
+        loadChildren: () => require("./common-screens-category/content-screens/content-screens-examples.module")["ContentScreensExamplesModule"],
+        data: { title: "Content screens" }
+    },
+    {
+        path: "dataentry",
+        loadChildren: () => require("./common-screens-category/dataentry/extended-dataentry-examples.module")["ExtendedDataentryExamplesModule"],
+        data: { title: "Dataentry" }
+    },
+    {
+        path: "extended-listview",
+        loadChildren: () => require("./common-screens-category/listview/extended-listview-examples.module")["ExtendedListViewExamplesModule"],
+        data: { title: "extended-listview" }
+    },
+    {
+        path: "userprofile",
+        loadChildren: () => require("./common-screens-category/userprofile/extended-userprofile-examples.module")["ExtendedUserProfileExamplesModule"],
+        data: { title: "Userprofile" }
+    },
+    {
+        path: "connectivity",
+        loadChildren: () => require("./connectivity/connectivity-examples.module")["ConnectivityExamplesModule"],
+        data: { title: "Connectivity" }
+    },
+    {
+        path: "fetch",
+        loadChildren: () => require("./fetch/fetch-examples.module")["FetchExamplesModule"],
+        data: { title: "Fetch" }
+    },
+    {
+        path: "file-system",
+        loadChildren: () => require("./file-system/file-system-examples.module")["FetchExamplesModule"],
+        data: { title: "file-system" }
     }
 ];

@@ -38,15 +38,15 @@ var mainMenuLinks = [
     new Link("Application", "/application"),
     new Link("Application Settings", "/application-settings"),
     new Link("Color", "/color"),
-    new Link("Connectivity", "/connectivityExamplesComponent"),
-    new Link("Fetch", "/fetchExamplesComponent"),
-    new Link("File System", "/fileSystemxamplesComponent"),
+    new Link("Connectivity", "/connectivity"),
+    new Link("Fetch", "/fetch"),
+    new Link("File System", "/file-system"),
     new Link("Modal page", "/modalPageExamplesComponent"),
 
-    new Link("ListView (extended examples)", "/extendedListViewExamplesComponent"),
-    new Link("DataEntry (extended examples)", "/extendedDataEntryExamplesComponent"),
-    new Link("User Profile (extended examples)", "/extendedUserProfileExamplesComponent"),
-    new Link("Content Screens", "/contentScreensExamplesComponent"),
+    new Link("ListView (extended examples)", "/extended-listview"),
+    new Link("DataEntry (extended examples)", "/dataentry"),
+    new Link("User Profile (extended examples)", "/userprofile"),
+    new Link("Content Screens", "/content-screens"),
     new Link("Camera", "/camera"),  
 ];
 

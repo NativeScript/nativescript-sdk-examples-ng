@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Welcome screen", "/welcomeDataEntryExampleComponent"),
-    new Link("Social login", "/socialLoginDataEntryExampleComponent"),
-    new Link("Sign up", "/signupDataEntryExampleComponent"),
+    new Link("Welcome screen", "/dataentry/dataentry-welcome"),
+    new Link("Social login", "/dataentry/dataentry-social-login"),
+    new Link("Sign up", "/dataentry/dataentry-signup"),
 ];
 
 @Component({
