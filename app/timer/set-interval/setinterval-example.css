@@ -1,0 +1,19 @@
+.stacklayoutStyle{
+    width: 100;
+    height: 100;
+    margin: 15;
+    vertical-align:center;
+    text-align: center;
+}
+.secondStacklayoutStyle label{
+    font-size: 24;
+    border-color: lightgray;
+    border-width: 1;
+    border-radius: 2;
+}
+.layoutStyle{
+    text-align: center;
+}
+.layoutStyle gridlayout{
+    horizontal-align:center;
+}

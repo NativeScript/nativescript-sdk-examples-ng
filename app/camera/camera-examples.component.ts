@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Using Camera module", "/usingCameraExampleComponent"),
+    new Link("Using Camera module", "/camera/using-camera"),
 ];
 
 @Component({

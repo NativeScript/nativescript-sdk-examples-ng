@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Modal page example", "/sampleModalPageModuleExampleComponent")
+    new Link("Modal page example", "/modal-page/sample-modal-page")
 ];
 
 @Component({

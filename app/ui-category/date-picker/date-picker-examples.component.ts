@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Configure DatePicker", "/configureDatePickerComponent"),
+    new Link("Configure DatePicker", "/date-picker/configure"),
 ];
 
 @Component({

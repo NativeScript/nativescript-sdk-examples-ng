@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Fetch Get", "/fetchGetExampleComponent"),
-    new Link("Fetch Post", "/fetchPostExampleComponent")
+    new Link("Fetch Get", "/fetch/fetch-get"),
+    new Link("Fetch Post", "/fetch/fetch-post")
 ];
 
 @Component({

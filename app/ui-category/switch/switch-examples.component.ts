@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Basic Switch", "/basicSwitchComponent"),
-    new Link("Disable Switch", "/diableSwitchComponent"),
-    new Link("Styling Switch", "/stylingSwitchComponent")
+    new Link("Basic Switch", "/switch/basic"),
+    new Link("Disable Switch", "/switch/disable"),
+    new Link("Styling Switch", "/switch/styling")
 ];
 
 @Component({

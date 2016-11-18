@@ -2,11 +2,11 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Content page (auto hide/show image)", "/contentScrollablePageExampleComponent"),
+    new Link("Content page (auto hide/show image)", "/content-screens/content-scrollable"),
 ];
 
 @Component({
-    selector: 'content-screens-component',
+    selector: 'content-screens',
     templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })

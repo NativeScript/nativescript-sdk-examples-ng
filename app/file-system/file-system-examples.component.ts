@@ -2,11 +2,11 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("Paths", "/pathsExampleComponent"),
-    new Link("Create", "/createExampleComponent"),
-    new Link("Read", "/readExampleComponent"),
-    new Link("Update", "/updateExampleComponent"),
-    new Link("Delete", "/deleteExampleComponent")
+    new Link("Paths", "/file-system/paths"),
+    new Link("Create", "/file-system/create"),
+    new Link("Read", "/file-system/read"),
+    new Link("Update", "/file-system/update"),
+    new Link("Delete", "/file-system/delete")
 ];
 
 @Component({
@@ -15,7 +15,7 @@ var menuLinks = [
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class FileSystemxamplesComponent {
+export class FileSystemExamplesComponent {
     public links: Array<Link>;
 
     constructor() {

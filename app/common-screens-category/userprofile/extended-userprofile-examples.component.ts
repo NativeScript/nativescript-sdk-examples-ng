@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("User feed with images", "/userFeedImagesExampleComponent"),
-    new Link("User settings menu", "/userSettingsMenuExampleComponent"),
-    new Link("User feed", "/userFeedExampleComponent")
+    new Link("User feed with images", "/userprofile/user-feed-images"),
+    new Link("User settings menu", "/userprofile/user-settings-menu"),
+    new Link("User feed", "/userprofile/user-feed")
 ];
 
 @Component({

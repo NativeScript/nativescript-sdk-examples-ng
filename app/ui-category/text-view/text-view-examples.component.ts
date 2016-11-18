@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Basic TextView", "/basicTextViewComponent")
+    new Link("Basic TextView", "/text-view/basic")
 ];
 
 @Component({

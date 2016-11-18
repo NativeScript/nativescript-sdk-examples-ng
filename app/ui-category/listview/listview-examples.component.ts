@@ -2,10 +2,10 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Create ListView", "/creatingListViewExampleComponent"),
-    new Link("Customize ListView", "/customizingListViewExampleComponent"),
-    new Link("Use item template", "/usingItemTemplateExampleComponent"),
-    new Link("Use async pipe", "/usingAsyncPipeExampleComponent")
+    new Link("Create ListView", "/list-view/creating-list-view"),
+    new Link("Customize ListView", "/list-view/customizing-list-view"),
+    new Link("Use item template", "/list-view/using-item-template"),
+    new Link("Use async pipe", "/list-view/using-async-pipe")
 ];
 
 @Component({

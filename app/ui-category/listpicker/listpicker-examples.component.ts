@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Create ListPicker", "/creatingListPickerExampleComponent"),
-    new Link("Use selected index", "/usingSelectedIndexExampleComponent")
+    new Link("Create ListPicker", "/list-picker/creating-list-picker"),
+    new Link("Use selected index", "/list-picker/using-selected-index")
 ];
 
 @Component({

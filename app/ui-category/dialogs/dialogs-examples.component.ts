@@ -2,11 +2,11 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Action dialog", "/actionDialogComponent"),
-    new Link("Alert dialog", "/alertDialogComponent"),
-    new Link("Confirm dialog", "/confirmDialogComponent"),
-    new Link("Login dialog", "/loginDialogComponent"),
-    new Link("Prompt dialog", "/promptDialogComponent")
+    new Link("Action dialog", "/dialogs/action"),
+    new Link("Alert dialog", "/dialogs/alert"),
+    new Link("Confirm dialog", "/dialogs/confirm"),
+    new Link("Login dialog", "/dialogs/login"),
+    new Link("Prompt dialog", "/dialogs/prompt")
 ];
 
 @Component({

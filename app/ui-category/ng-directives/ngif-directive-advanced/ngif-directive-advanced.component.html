@@ -1,0 +1,11 @@
+<FlexboxLayout flexDirection="column" exampleTitle toggleNavButton>
+    <Label class="h3 p-15"text="using *ngIf directive to show platform specific content" textWrap="true"></Label>
+    <!-- >> using-ngif-platform-html -->
+    <GridLayout *ngIf="isAndroid" width="150" height="300" margin="30" borderRadius="125" backgroundColor="green">
+        <Label class="p-15" text="This content is visible only for Android" textWrap="true" verticalAlignment="center"></Label>
+    </GridLayout>
+    <GridLayout *ngIf="isIos" width="150" height="300" margin="30" borderRadius="125" backgroundColor="green">
+        <Label class="p-15" text="This content is visible only for iOS" textWrap="true" verticalAlignment="center"></Label>
+    </GridLayout>
+    <!-- << using-ngif-platform-html -->
+</FlexboxLayout>

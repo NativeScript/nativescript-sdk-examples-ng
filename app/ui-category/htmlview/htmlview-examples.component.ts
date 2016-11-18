@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Create HtmlView", "/creatingHtmlViewExampleComponent")
+    new Link("Create HtmlView", "/html-view/creating-html-view")
 ];
 
 @Component({
@@ -11,7 +11,7 @@ var menuLinks = [
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class HtmlViewxamplesComponent {
+export class HtmlViewExamplesComponent {
     public links: Array<Link>;
 
     constructor() {

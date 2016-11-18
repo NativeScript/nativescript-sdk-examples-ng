@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Add Style via CSS file", "/styleCSSFileComponent"),
-    new Link("Apply Style using code", "/applyStyleViaCodeComponent")
+    new Link("Add Style via CSS file", "/style/css-file"),
+    new Link("Apply Style using code", "/style/apply-style")
 ];
 
 @Component({

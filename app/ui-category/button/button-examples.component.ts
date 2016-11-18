@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Tap event", "/buttonTapEventComponent"),
-    new Link("Text", "/buttonTextComponent"),
-    new Link("Binding text", "/buttonBindingTextComponent"),
+    new Link("Tap event", "/button/tap-event"),
+    new Link("Text", "/button/text"),
+    new Link("Binding text", "/button/binding-text"),
 ];
 
 @Component({

@@ -1,0 +1,9 @@
+<ScrollView exampleTitle toggleNavButton>
+    <StackLayout class="list-group">
+        <!-- >> ngfor-bind-items-html -->
+        <StackLayout *ngFor="let fruit of fruitList" class="list-group-item" >
+            <Label [text]="fruit"></Label>
+        </StackLayout>
+        <!-- << ngfor-bind-items-html -->
+    </StackLayout>
+</ScrollView>

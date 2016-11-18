@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Set busy property", "/settingBusyComponent")
+    new Link("Set busy property", "/activity-indicator/setting-busy")
 ];
 
 @Component({

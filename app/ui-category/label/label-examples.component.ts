@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Create Label", "/creatingLabelExampleComponent")
+    new Link("Create Label", "/label/creating-label")
 ];
 
 @Component({

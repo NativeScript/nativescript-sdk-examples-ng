@@ -1,10 +1,10 @@
-import { Component, ChangeDetectionStrategy }  from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Action items", "/actionItemsComponent"),
-    new Link("Navigation button", "/navigationButtonComponent"),
-    new Link("Title", "/titleComponent")
+    new Link("Action items", "/action-bar/action-items"),
+    new Link("Navigation button", "/action-bar/navigation-button"),
+    new Link("Title", "/action-bar/title")
 ];
 
 @Component({

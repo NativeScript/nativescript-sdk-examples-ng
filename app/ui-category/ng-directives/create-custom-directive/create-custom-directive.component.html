@@ -1,9 +1,7 @@
-<StackLayout exampleTitle toggleNavButton>
-    <StackLayout >
-        <Label class="h3 p-15 m-b-15" text="With our custom directive the grid below will be blue square in iOS and purple circle in Android" textWrap="true"></Label>  
-        <!-- >> custom-directive-html -->
-        <GridLayout *ifAndroid class="bg-primary" width="300" height="300" borderRadius="150"></GridLayout>
-        <GridLayout *ifIos width="300" height="300" backgroundColor="#0099CC" borderRadius="2"></GridLayout>
-        <!-- << custom-directive-html -->
-    </StackLayout>
-</StackLayout>
+<FlexboxLayout flexDirection="column" class="p-15" exampleTitle toggleNavButton>
+    <Label class="p-15 m-b-15" text="With our custom directive the grid below will be blue square in iOS and purple circle in Android" textWrap="true"></Label>
+    <!-- >> custom-directive-html -->
+    <GridLayout *ifAndroid class="bg-primary" width="300" height="300" borderRadius="150"></GridLayout>
+    <GridLayout *ifIos width="300" height="300" backgroundColor="#0099CC" borderRadius="2"></GridLayout>
+    <!-- << custom-directive-html -->
+</FlexboxLayout>

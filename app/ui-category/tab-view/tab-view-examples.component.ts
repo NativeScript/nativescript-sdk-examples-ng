@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("Basic TabView", "/basicTabViewExamplesComponent"),
-    new Link("TabView items", "/tabViewItemsExamplesComponent"),
+    new Link("Basic TabView", "/tab-view/basic"),
+    new Link("TabView items", "/tab-view/items"),
 
 ];
      
