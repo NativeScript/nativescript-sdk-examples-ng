@@ -228,5 +228,10 @@ export const routes = [
         path: "fps-meter",
         loadChildren: () => require("./fps-meter/fps-meter-examples.module")["FpsExamplesModule"],
         data: { title: "FPS Meter" }
+    },
+    {
+        path: "platform",
+        loadChildren: () => require("./platform/platform-examples.module")["PlatformPageExamplesModule"],
+        data: { title: "Platform" }
     }
 ];

@@ -31,7 +31,7 @@ var mainMenuLinks = [
     new Link("Formatted String", "/formatted-string"),
     new Link("Trace Module", "/trace"),
     new Link("Timer Module", "/timer"),
-    new Link("Platform Module", "/platformExamplesComponent"),
+    new Link("Platform Module", "/platform"),
     new Link("Location", "/location"),
     new Link("FPS Meter", "/fpsExamplesComponent"),
     new Link("HTTP Module", "/httpModuleComponent"),
