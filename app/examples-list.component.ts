@@ -32,7 +32,7 @@ var mainMenuLinks = [
     new Link("Trace Module", "/trace"),
     new Link("Timer Module", "/timer"),
     new Link("Platform Module", "/platformExamplesComponent"),
-    new Link("Location Module", "/locationExamplesComponent"),
+    new Link("Location", "/location"),
     new Link("FPS Meter", "/fpsExamplesComponent"),
     new Link("HTTP Module", "/httpModuleComponent"),
     new Link("Application", "/application"),
@@ -41,7 +41,7 @@ var mainMenuLinks = [
     new Link("Connectivity", "/connectivity"),
     new Link("Fetch", "/fetch"),
     new Link("File System", "/file-system"),
-    new Link("Modal page", "/modalPageExamplesComponent"),
+    new Link("Modal page", "/modal-page"),
 
     new Link("ListView (extended examples)", "/extended-listview"),
     new Link("DataEntry (extended examples)", "/dataentry"),

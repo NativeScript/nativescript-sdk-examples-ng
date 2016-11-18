@@ -203,5 +203,15 @@ export const routes = [
         path: "file-system",
         loadChildren: () => require("./file-system/file-system-examples.module")["FetchExamplesModule"],
         data: { title: "file-system" }
+    },
+    {
+        path: "location",
+        loadChildren: () => require("./location/location-examples.module")["LocationExamplesModule"],
+        data: { title: "location" }
+    },
+    {
+        path: "modal-page",
+        loadChildren: () => require("./modal-page/modal-page-examples.module")["ModalPageExamplesModule"],
+        data: { title: "Modal page" }
     }
 ];
