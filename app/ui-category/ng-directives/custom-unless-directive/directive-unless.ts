@@ -2,7 +2,7 @@
 import { Directive, Input } from '@angular/core';
 import { TemplateRef, ViewContainerRef } from '@angular/core';
 
-@Directive({ selector: '[myUnless]' })
+@Directive({ selector: '[unless]' })
 
 export class UnlessDirective {
 
@@ -10,7 +10,7 @@ export class UnlessDirective {
 
   }
   
-  @Input() set myUnless(condition: boolean) {
+  @Input() set unless(condition: boolean) {
     if (!condition) {
       this.container.createEmbeddedView(this.templateRef);
     } else {

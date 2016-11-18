@@ -2,11 +2,11 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'ngif-component',
-    templateUrl: "ui-category/ng-directives/using-ngif/using-ngif.component.html",
+    selector: 'ngif-directive',
+    templateUrl: "ui-category/ng-directives/ngif-directive/ngif-directive.component.html",
 })
 
-export class UsingNgIfComponent {
+export class NgIfComponent {
     public isVisible: boolean = true;
 
     onTap() {

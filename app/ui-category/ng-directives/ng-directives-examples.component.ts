@@ -2,13 +2,12 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
 var menuLinks = [
-    new Link("*ngIf basic example", "/usingNgIfExampleComponent"),
-    new Link("*ngIf platform specific elements", "/usingNgIfForPlatformSpecificComponent"),
-    new Link("*ngFor example", "/ngForRepeatItemsComponent"),
-    new Link("ngSwitch basic example", "/usingNgSwitchExampleComponent"),
-    new Link("Create custom directive", "/createCustomDirectiveExampleComponent"),
-    new Link("Unless directive example", "/unlessDirectiveExampleComponent")
-
+    new Link("Create custom directive", "/angular-directives/create-custom-directive"),
+    new Link("*ngFor repeater directive", "/angular-directives/ngfor-directive"),
+    new Link("*ngSwitch structural directive", "/angular-directives/ngswitch-directive"),
+    new Link("*unless custom directive", "/angular-directives/custom-unless-directive"),
+    new Link("*ngIf directive - basic example", "/angular-directives/ngif-directive"),
+    new Link("*ngIf directive - platform specific example", "/angular-directives/ngif-directive-advanced"),
 ];
 
 @Component({

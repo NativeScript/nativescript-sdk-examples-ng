@@ -15,16 +15,16 @@ class TimestampConsoleWriter {
 
         switch (msgType) {
             case messageType.log:
-                this.array.push({"messageType":"log","date":new Date().toISOString(),"message":message, "category":category});
+                this.array.push({ "messageType": "log", "date": new Date().toISOString(), "message": message, "category": category });
                 break;
             case messageType.info:
-                this.array.push({"messageType":"info","date":new Date().toISOString(),"message":message, "category":category});
+                this.array.push({ "messageType": "info", "date": new Date().toISOString(), "message": message, "category": category });
                 break;
             case messageType.warn:
-                this.array.push({"messageType":"warning","date":new Date().toISOString(),"message":message, "category":category});
+                this.array.push({ "messageType": "warning", "date": new Date().toISOString(), "message": message, "category": category });
                 break;
             case messageType.error:
-                this.array.push({"messageType":"error","date":new Date().toISOString(),"message":message, "category":category});
+                this.array.push({ "messageType": "error", "date": new Date().toISOString(), "message": message, "category": category });
                 break;
         }
     }
@@ -33,12 +33,12 @@ class TimestampConsoleWriter {
 
 @Component({
     selector: 'custom-tracewriter-example-component',
-    templateUrl: 'trace/custom-tracewriter/custom-tracewriter-example.component.html',
-    styleUrls:["trace/custom-tracewriter/style.css"]
+    templateUrl: 'trace/custom-trace-writer/custom-tracewriter-example.component.html',
+    styleUrls: ["trace/custom-trace-writer/style.css"]
 })
 
 export class CustomTraceWriterExampleComponent {
-    public customwriter:TimestampConsoleWriter;
+    public customwriter: TimestampConsoleWriter;
 
     constructor() {
         disable();

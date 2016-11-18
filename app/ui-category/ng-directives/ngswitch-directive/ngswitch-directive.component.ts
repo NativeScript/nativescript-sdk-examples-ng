@@ -2,11 +2,11 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'ngswitch-component',
-    templateUrl: "ui-category/ng-directives/ngswitch-usage/ngswitch-usage.component.html",
+    selector: 'ngswitch-directive',
+    templateUrl: "ui-category/ng-directives/ngswitch-directive/ngswitch-directive.component.html",
 })
 
-export class UsingNgSwitchExamplesComponent {
+export class NgSwitchComponent {
     public color: string;
 
     onBlue() {

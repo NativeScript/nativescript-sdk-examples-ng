@@ -2,10 +2,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-    selector: 'unless-directive-component',
-    templateUrl: "ui-category/ng-directives/unless-directive/unless-directive.component.html",
+    selector: 'custom-unless-directive',
+    templateUrl: "ui-category/ng-directives/custom-unless-directive/unless-directive.component.html",
 })
-export class UnlessDirectiveExampleComponent {
+export class CustomUnlessComponent {
 
     public age: number;
     public condition: boolean;
@@ -15,6 +15,8 @@ export class UnlessDirectiveExampleComponent {
     }
 
     onTap() {
+        console.log("onTap age is :" + this.age);
+        
         if (this.age >= 18 && this.age !== 0) {
             this.condition = false;
         } else {

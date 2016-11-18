@@ -1,5 +1,3 @@
-## Create custom Unless directive
-
 Directive code
 <snippet id='directive-code '/>
 

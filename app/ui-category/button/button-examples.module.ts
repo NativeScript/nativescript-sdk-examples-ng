@@ -5,6 +5,7 @@ import { ButtonExamplesComponent } from "./button-examples.component";
 import { ButtonBindingTextComponent } from "./binding-text/binding-text.component";
 import { ButtonTapEventComponent } from "./tap-event/tap-event.component";
 import { ButtonTextComponent } from "./text/text.component";
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 export const routerConfig = [
     {
@@ -29,7 +30,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [ButtonExamplesComponent, ButtonBindingTextComponent, ButtonTapEventComponent, ButtonTextComponent]
 })
 

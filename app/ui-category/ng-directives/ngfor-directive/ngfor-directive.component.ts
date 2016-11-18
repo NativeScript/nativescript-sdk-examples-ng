@@ -4,11 +4,11 @@ import { fruits } from "./fruits";
 
 // >> ngfor-bind-items-code 
 @Component({
-    selector: 'ngfor-component',
-    templateUrl: "ui-category/ng-directives/ngfor-items/repeat-items.component.html",
+    selector: 'ngfor-directive',
+    templateUrl: "ui-category/ng-directives/ngfor-directive/ngfor-directive.component.html",
 })
 
-export class NgForRepeatItemsComponent {
+export class NgForComponent {
     public fruitList:Array<string> = [];
 
     constructor(){

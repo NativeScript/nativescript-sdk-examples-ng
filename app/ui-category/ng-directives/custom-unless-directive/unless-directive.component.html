@@ -1,0 +1,22 @@
+<FlexboxLayout flexDirection="column" exampleTitle toggleNavButton>
+    <Label class="p-15" text="The custom *myUnless directive will execute the block if the condition is False (the opposite of *ngIf)" textWrap="true"></Label>  
+            
+    <StackLayout class="form">
+        <StackLayout class="input-field">
+            <Label class="label" text="Enter age:"></Label>
+            <TextField class="input input-border" [(ngModel)]="age"></TextField>
+        </StackLayout>
+    </StackLayout>
+
+    <Button class="btn btn-primary btn-active" text="Check Access" (tap)="onTap()"></Button>
+    
+    <!-- >> unless-directive-html -->
+    <GridLayout *unless="condition" width="150" height="150" margin="30" borderRadius="125" backgroundColor="green">
+        <Label text="Access granted!" class="p-15" color="white" textWrap="true" horizontalAlignment="center" verticalAlignment="center"></Label>
+    </GridLayout>
+    <GridLayout *unless="!condition" width="150" height="150" margin="30" borderRadius="125" backgroundColor="red">
+        <Label text="Access not granted!" class="p-15" color="white" textWrap="true" horizontalAlignment="center" verticalAlignment="center"></Label>
+    </GridLayout>
+    <!-- << unless-directive-html -->
+
+</FlexboxLayout>

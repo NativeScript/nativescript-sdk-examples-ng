@@ -3,11 +3,11 @@ import { Component, OnInit } from "@angular/core";
 import application = require("application");
 
 @Component({
-    selector: 'ngif-for-platform-specific-component',
-    templateUrl: "ui-category/ng-directives/using-ngif-for-platform-specific/using-ngif-for-platform-specific.component.html",
+    selector: 'ngif-directive-advanced',
+    templateUrl: "ui-category/ng-directives/ngif-directive-advanced/ngif-directive-advanced.component.html",
 })
 
-export class UsingNgIfForPlatformSpecificComponent implements OnInit {
+export class NgIfAdvancedComponent implements OnInit {
     public isAndroid: boolean;
     public isIos: boolean;
 
