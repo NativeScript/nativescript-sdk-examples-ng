@@ -4,6 +4,7 @@ import { NativeScriptModule } from "nativescript-angular/platform";
 import { TextFieldExamplesComponent } from "./text-field-examples.component";
 import { BasicTextFieldComponent } from "./basic-text-field/basic-text-field.component";
 import { TextFieldBindingComponent } from "./text-field-binding/text-field-binding.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -23,7 +24,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [TextFieldExamplesComponent, BasicTextFieldComponent, TextFieldBindingComponent]
 })
 

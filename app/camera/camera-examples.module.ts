@@ -3,6 +3,7 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptModule } from "nativescript-angular/platform";
 import { CameraExamplesComponent } from "./camera-examples.component";
 import { UsingCameraExampleComponent } from "./using-camera/using-camera.component";
+import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -17,7 +18,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [CameraExamplesComponent, UsingCameraExampleComponent]
 })
 

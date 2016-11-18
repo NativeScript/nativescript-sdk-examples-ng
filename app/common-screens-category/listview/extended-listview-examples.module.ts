@@ -12,6 +12,7 @@ import { SingleLineListViewExampleComponent } from "./single-line/single-line-li
 import { GroupedSingleLineListViewExampleComponent } from "./single-line-grouped/grouped-single-line.component";
 import { TwoLineListViewExampleComponent } from "./two-line/two-line-listview.component";
 import { GroupedTwoLinesListViewExampleComponent } from "./two-lines-grouped/grouped-two-lines.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -71,7 +72,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [ExtendedListViewExamplesComponent, CardsListViewExampleComponent, HeaderWithMapExampleComponent, HorizontalScrollingExampleComponent, MultiLineListViewExampleComponent, 
     MultiLineBigListViewExampleComponent, MultiLineGroupedListViewExampleComponent, SingleLineListViewExampleComponent, GroupedSingleLineListViewExampleComponent, 
     TwoLineListViewExampleComponent, GroupedTwoLinesListViewExampleComponent]

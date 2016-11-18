@@ -10,6 +10,7 @@ import { RotationExampleComponent } from "./rotation/rotation.component";
 import { SwipeExampleComponent } from "./swipe/swipe.component";
 import { TapExampleComponent } from "./tap/tap.component";
 import { TouchExampleComponent } from "./touch/touch.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -59,7 +60,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [GesturesExamplesComponent, DoubleTapExampleComponent, LongPressExampleComponent, PanExampleComponent, 
     PinchExampleComponent, RotationExampleComponent, SwipeExampleComponent, TapExampleComponent, TouchExampleComponent]
 })

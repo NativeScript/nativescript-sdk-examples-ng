@@ -4,6 +4,7 @@ import { NativeScriptModule } from "nativescript-angular/platform";
 import { FetchExamplesComponent } from "./fetch-examples.component";
 import { FetchGetExampleComponent } from "./fetch-get/fetch-get.component";
 import { FetchPostExampleComponent } from "./fetch-post/fetch-post.component";
+import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -23,7 +24,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [FetchExamplesComponent, FetchGetExampleComponent, FetchPostExampleComponent]
 })
 

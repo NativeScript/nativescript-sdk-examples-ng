@@ -5,6 +5,7 @@ import { ScrollViewExamplesComponent } from "./scroll-view-examples.component";
 import { ScrollViewHorizontalComponent } from "./horizontal/scroll-view-horizontal.component";
 import { ScrollViewVerticalComponent } from "./vertical/scroll-view-vertical.component";
 import { ScrollEventComponent } from "./scroll-event/scroll-event.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -29,7 +30,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [ScrollViewExamplesComponent, ScrollViewHorizontalComponent, ScrollViewVerticalComponent, ScrollEventComponent]
 })
 

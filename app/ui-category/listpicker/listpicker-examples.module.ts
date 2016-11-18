@@ -5,6 +5,7 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { ListPickerExamplesComponent } from "./listpicker-examples.component";
 import { CreatingListPickerComponent } from "./creating-listpicker/creating-listpicker.component";
 import { UsingSelectedIndexExampleComponent } from "./using-selected-index/using-selected-index.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -24,7 +25,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [ListPickerExamplesComponent, CreatingListPickerComponent, UsingSelectedIndexExampleComponent]
 })
 

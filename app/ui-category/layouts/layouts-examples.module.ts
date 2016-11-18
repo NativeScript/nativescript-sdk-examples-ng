@@ -10,6 +10,7 @@ import { FlexboxLayoutComponentThree } from "./flexbox-layout-three/flexbox-layo
 import { GridLayoutComponent } from "./grid-layout/grid-layout.component";
 import { StackLayoutComponent } from "./stack-layout/stack-layout.component";
 import { WrapLayoutComponent } from "./wrap-layout/wrap-layout.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -59,7 +60,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [LayoutsExamplesComponent, AbsoluteLayoutComponent, DockLayoutComponent, FlexboxLayoutComponentOne, FlexboxLayoutComponentTwo,
     FlexboxLayoutComponentThree, GridLayoutComponent, StackLayoutComponent, WrapLayoutComponent]
 })

@@ -4,6 +4,7 @@ import { NativeScriptModule } from "nativescript-angular/platform";
 import { WebViewExamplesComponent } from "./web-view-examples.component";
 import { BasicWebViewComponent } from "./basic-web-view/basic-web-view.component";
 import { WebViewHtmlComponent } from "./web-view-html/web-view-html.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -23,7 +24,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [WebViewExamplesComponent, BasicWebViewComponent, WebViewHtmlComponent]
 })
 

@@ -7,6 +7,7 @@ import { DeleteExampleComponent } from "./delete/delete.component";
 import { PathsExampleComponent } from "./paths/paths.component";
 import { ReadExampleComponent } from "./read/read.component";
 import { UpdateExampleComponent } from "./update/update.component";
+import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -41,7 +42,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [FileSystemExamplesComponent, CreateExampleComponent, DeleteExampleComponent,PathsExampleComponent,ReadExampleComponent,UpdateExampleComponent]
 })
 

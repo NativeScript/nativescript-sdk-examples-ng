@@ -5,6 +5,7 @@ import { ActionBarExamplesComponent } from "./action-bar-examples.component";
 import { ActionItemsComponent } from "./action-items/action-items.component";
 import { NavigationButtonComponent } from "./navigation-button/navigation-button.component";
 import { TitleComponent } from "./title/title.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -29,7 +30,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [ActionBarExamplesComponent, ActionItemsComponent, NavigationButtonComponent, TitleComponent]
 })
 

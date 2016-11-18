@@ -5,6 +5,7 @@ import { AnimationsExamplesComponent } from "./animations-examples.component";
 import { AnimatingPropertiesComponent } from "./animating-properties/animating-properties.component";
 import { ChainingAnimationsComponent } from "./chaining-animations/chaining-animations.component";
 import { MultipleViewsComponent } from "./multiple-views/multiple-views.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -29,7 +30,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [AnimationsExamplesComponent, AnimatingPropertiesComponent, ChainingAnimationsComponent, MultipleViewsComponent]
 })
 

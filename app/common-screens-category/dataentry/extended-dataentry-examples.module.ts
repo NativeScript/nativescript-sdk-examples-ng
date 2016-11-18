@@ -5,6 +5,7 @@ import { ExtendedDataEntryExamplesComponent } from "./extended-dataentry-example
 import { SignupDataEntryExampleComponent } from "./dataentry-signup/dataentry-signup.component";
 import { SocialLoginDataEntryExampleComponent } from "./dataentry-sociallogin/dataentry-sociallogin.component";
 import { WelcomeDataEntryExampleComponent } from "./dataentry-welcome/dataentry-welcome.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -29,7 +30,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [ExtendedDataEntryExamplesComponent, SignupDataEntryExampleComponent, SocialLoginDataEntryExampleComponent, WelcomeDataEntryExampleComponent]
 })
 

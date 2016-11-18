@@ -6,7 +6,7 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { FpsExamplesComponent } from "./fps-meter-examples.component";
 
 import { FpsMeterUsageComponent } from "./fps-meter-usage/fps-meter";
-
+import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -20,7 +20,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [FpsExamplesComponent, FpsMeterUsageComponent ]
 })
 

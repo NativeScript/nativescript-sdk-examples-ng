@@ -5,6 +5,7 @@ import { SwitchExamplesComponent } from "./switch-examples.component";
 import { BasicSwitchComponent } from "./basic-switch/basic-switch.component";
 import { DisableSwitchComponent } from "./disable-switch/disable-switch.component";
 import { StylingSwitchComponent } from "./styling-switch/styling-switch.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -29,7 +30,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [SwitchExamplesComponent, BasicSwitchComponent, DisableSwitchComponent, StylingSwitchComponent]
 })
 

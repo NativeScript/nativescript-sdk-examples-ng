@@ -6,6 +6,7 @@ import { CreatingListViewComponent } from "./creating-listview/creating-listview
 import { CustomizingListViewComponent } from "./customizing-listview/customizing-listview.component";
 import { UsingAsyncPipeComponent } from "./using-async-pipe/using-async-pipe.component";
 import { UsingItemTemplateComponent, ItemComponent } from "./using-item-template/using-item-template.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -35,7 +36,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [ItemComponent, ListViewExamplesComponent, CreatingListViewComponent, CustomizingListViewComponent, UsingAsyncPipeComponent, UsingItemTemplateComponent]
 })
 

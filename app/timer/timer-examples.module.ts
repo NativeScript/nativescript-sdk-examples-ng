@@ -6,6 +6,7 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { TimerExamplesComponent } from "./timer-examples.component";
 import { SetIntervalComponent } from "./set-interval/setinterval-example";
 import { SetTimeoutComponent } from "./set-timeout/settimeout-example";
+import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -23,7 +24,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [TimerExamplesComponent, SetIntervalComponent, SetTimeoutComponent]
 })
 

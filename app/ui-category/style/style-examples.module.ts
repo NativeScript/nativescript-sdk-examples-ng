@@ -4,6 +4,7 @@ import { NativeScriptModule } from "nativescript-angular/platform";
 import { StyleExamplesComponent } from "./style-examples.component";
 import { ApplyStyleCodeComponent } from "./apply-style-via-code/apply-style-code.component";
 import { StyleCSSFileComponent } from "./style-css-file/style-css-file.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -23,7 +24,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [StyleExamplesComponent, ApplyStyleCodeComponent, StyleCSSFileComponent]
 })
 

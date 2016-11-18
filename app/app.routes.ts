@@ -182,7 +182,7 @@ export const routes = [
     {
         path: "extended-listview",
         loadChildren: () => require("./common-screens-category/listview/extended-listview-examples.module")["ExtendedListViewExamplesModule"],
-        data: { title: "extended-listview" }
+        data: { title: "Extended ListView" }
     },
     {
         path: "userprofile",

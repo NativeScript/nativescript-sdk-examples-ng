@@ -5,6 +5,7 @@ import { ExtendedUserProfileExamplesComponent } from "./extended-userprofile-exa
 import { UserFeedExampleComponent } from "./user-feed/user-feed.component";
 import { UserFeedImagesExampleComponent } from "./user-feed-images/user-feed-images.component";
 import { UserSettingsMenuExampleComponent } from "./user-settings-menu/user-settings-menu.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -29,7 +30,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [ExtendedUserProfileExamplesComponent, UserFeedExampleComponent, UserFeedImagesExampleComponent, UserSettingsMenuExampleComponent]
 })
 

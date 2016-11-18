@@ -7,6 +7,7 @@ import { AlertDialogComponent } from "./alert-dialog/alert-dialog.component";
 import { ConfirmDialogComponent } from "./confirm-dialog/confirm-dialog.component";
 import { LoginDialogComponent } from "./login-dialog/login-dialog.component";
 import { PromptDialogComponent } from "./prompt-dialog/prompt-dialog.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -41,7 +42,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [DialogsExamplesComponent, ActionDialogComponent, AlertDialogComponent, ConfirmDialogComponent, LoginDialogComponent, PromptDialogComponent]
 })
 

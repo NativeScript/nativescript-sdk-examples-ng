@@ -5,6 +5,7 @@ import { SearchBarExamplesComponent } from "./search-bar-examples.component";
 import { BasicSearchBarComponent } from "./basic-search-bar/basic-search-bar.component";
 import { ClearSearchBarComponent } from "./clear-search-bar/clear-search-bar.component";
 import { SearchBarBindingComponent } from "./search-bar-binding/search-bar-binding.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -29,7 +30,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [SearchBarExamplesComponent, BasicSearchBarComponent, ClearSearchBarComponent, SearchBarBindingComponent]
 })
 

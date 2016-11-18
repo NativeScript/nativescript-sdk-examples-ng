@@ -4,6 +4,7 @@ import { NativeScriptModule } from "nativescript-angular/platform";
 import { ProgressExamplesComponent } from "./progress-examples.component";
 import { CreatingProgressComponent } from "./creating-progress/creating-progress.component";
 import { SettingProgressComponent } from "./setting-progress/setting-progress.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -23,7 +24,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [ProgressExamplesComponent, CreatingProgressComponent, SettingProgressComponent]
 })
 

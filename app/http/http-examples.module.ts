@@ -7,6 +7,7 @@ import { HttpExamplesComponent } from "./http-examples.component";
 
 import { HttpGetComponent } from "./http-get/http-get";
 import { HttpPostComponent } from "./http-post/http-post";
+import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -24,7 +25,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [HttpExamplesComponent, HttpGetComponent, HttpPostComponent]
 })
 

@@ -4,6 +4,7 @@ import { NativeScriptModule } from "nativescript-angular/platform";
 import { TabViewExamplesComponent } from "./tab-view-examples.component";
 import { BasicTabViewComponent } from "./basic-tab-view/basic-tab-view.component";
 import { TabViewItemsComponent } from "./tab-view-items/tab-view-items.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -23,7 +24,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [TabViewExamplesComponent, BasicTabViewComponent, TabViewItemsComponent]
 })
 

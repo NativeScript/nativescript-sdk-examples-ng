@@ -4,6 +4,7 @@ import { NativeScriptModule } from "nativescript-angular/platform";
 import { SliderExamplesComponent } from "./slider-examples.component";
 import { BasicSliderComponent } from "./basic-slider/basic-slider.component";
 import { SliderAccessValueComponent } from "./slider-access-value-code/slider-access-value.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -23,7 +24,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [SliderExamplesComponent, BasicSliderComponent, SliderAccessValueComponent]
 })
 

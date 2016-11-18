@@ -10,6 +10,7 @@ import { CustomUnlessComponent } from "./custom-unless-directive/unless-directiv
 import { UnlessDirective } from "./custom-unless-directive/directive-unless";
 import { NgIfComponent } from "./ngif-directive/ngif-directive.component";
 import { NgIfAdvancedComponent } from "./ngif-directive-advanced/ngif-directive-advanced.component";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {
@@ -49,7 +50,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [NgDirectivesExamplesComponent, CreateCustomDirectiveExampleComponent, NgIfComponent, NgIfAdvancedComponent, NgForComponent, NgSwitchComponent, CustomUnlessComponent, IfIosDirective, IfAndroidDirective, UnlessDirective]
 })
 
