@@ -8,7 +8,6 @@ import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 // << (hide)
-import { IfAndroidDirective, IfIosDirective } from "./ui-category/ng-directives/create-custom-directive/create-custom-directive.component";
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
 import { registerElement } from 'nativescript-angular/element-registry';
 import { ModalViewComponent } from "./modal-page/sample-modal-page-module-example/modal-view";
@@ -18,8 +17,6 @@ import { isIOS } from "platform"
 @NgModule({
     declarations: [
         AppComponent,
-        IfAndroidDirective,
-        IfIosDirective,
         // << (hide)
         ModalViewComponent
     ],
