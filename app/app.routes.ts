@@ -187,7 +187,7 @@ export const routes = [
     {
         path: "userprofile",
         loadChildren: () => require("./common-screens-category/userprofile/extended-userprofile-examples.module")["ExtendedUserProfileExamplesModule"],
-        data: { title: "Userprofile" }
+        data: { title: "User Profile" }
     },
     {
         path: "connectivity",
@@ -202,16 +202,31 @@ export const routes = [
     {
         path: "file-system",
         loadChildren: () => require("./file-system/file-system-examples.module")["FetchExamplesModule"],
-        data: { title: "file-system" }
+        data: { title: "File System" }
     },
     {
         path: "location",
         loadChildren: () => require("./location/location-examples.module")["LocationExamplesModule"],
-        data: { title: "location" }
+        data: { title: "Location" }
     },
     {
         path: "modal-page",
         loadChildren: () => require("./modal-page/modal-page-examples.module")["ModalPageExamplesModule"],
         data: { title: "Modal page" }
+    },
+    {
+        path: "color",
+        loadChildren: () => require("./color/color-examples.module")["ColorExamplesModule"],
+        data: { title: "Color" }
+    },
+    {
+        path: "http",
+        loadChildren: () => require("./http/http-examples.module")["HttpExamplesModule"],
+        data: { title: "HTTP" }
+    },
+    {
+        path: "fps-meter",
+        loadChildren: () => require("./fps-meter/fps-meter-examples.module")["FpsExamplesModule"],
+        data: { title: "FPS Meter" }
     }
 ];

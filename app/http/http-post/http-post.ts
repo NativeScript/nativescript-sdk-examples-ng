@@ -4,11 +4,11 @@ import {request} from "http"
 // << import-http-module
 
 @Component({
-    selector: 'http-module-post-component',
-    templateUrl: 'httpModule/http-module-post/http-module-post.html'
+    selector: 'http-post-component',
+    templateUrl: 'http/http-post/http-post.html'
 })
 
-export class HTTPModulePostExampleComponent {
+export class HttpPostComponent {
     public name: string = "";
     public username: string = "";
     public custom_text: string = "";

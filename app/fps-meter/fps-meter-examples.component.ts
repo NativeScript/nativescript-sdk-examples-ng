@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("FPS meter", "/fpsMeterModuleExampleComponent")
+    new Link("FPS Meter usage", "/fps-meter/fps-meter-usage")
 ];
 
 @Component({
@@ -11,7 +11,7 @@ var menuLinks = [
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class FPSExamplesComponent {
+export class FpsExamplesComponent {
     public links: Array<Link>;
 
     constructor() {

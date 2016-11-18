@@ -9,11 +9,11 @@ import { fromFile } from "image-source";
 import { Image } from "ui/image"
 
 @Component({
-    selector: 'http-module-get-component',
-    templateUrl: 'httpModule/http-module-get/http-module-get.html'
+    selector: 'http-get-component',
+    templateUrl: 'http/http-get/http-get.html'
 })
 
-export class HTTPModuleGetExampleComponent implements OnInit {
+export class HttpGetComponent implements OnInit {
     public stringResponce: string = "";
     public origin: string = "";
     public url: string = "";

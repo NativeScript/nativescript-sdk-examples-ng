@@ -2,17 +2,17 @@ import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
 var menuLinks = [
-    new Link("HTTP POST JSON example", "/httpModulePostExampleComponent"),
-    new Link("HTTP GET example", "/httpModuleGetExampleComponent")
+    new Link("HTTP POST", "/http/http-post"),
+    new Link("HTTP GET", "/http/http-get")
 ];
 
 @Component({
-    selector: 'http-module-examples-component',
+    selector: 'http-examples-component',
     templateUrl: 'examples-list.component.html',
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 
-export class HTTPModuleComponent {
+export class HttpExamplesComponent {
     public links: Array<Link>;
 
     constructor() {

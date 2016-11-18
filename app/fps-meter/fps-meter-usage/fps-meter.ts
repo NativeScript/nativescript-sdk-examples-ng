@@ -4,12 +4,12 @@ import {start, removeCallback, addCallback, stop} from "fps-meter"
 // << fps-meter-module-import
 
 @Component({
-    selector: 'fps-meter-module-component',
-    styleUrls:['fpsMeter/fps-meter-module-example/fps-meter-module-example.css'],
-    templateUrl: 'fpsMeter/fps-meter-module-example/fps-meter-module-example.html'
+    selector: 'fps-meter-usage',
+    styleUrls:['fps-meter/fps-meter-usage/fps-meter.css'],
+    templateUrl: 'fps-meter/fps-meter-usage/fps-meter.html'
 })
 
-export class FPSMeterModuleExampleComponent {
+export class FpsMeterUsageComponent {
     public status = false;
     public callbackId;
     public fps:string="0";

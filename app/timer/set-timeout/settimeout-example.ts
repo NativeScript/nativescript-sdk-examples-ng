@@ -5,8 +5,8 @@ import { Color } from "color";
 
 @Component({
     selector: 'settimeout-timer-module-example',
-    styleUrls: ['timer/settimeout/settimeout-example.css'],
-    templateUrl: 'timer/settimeout/settimeout-example.html'
+    styleUrls: ['timer/set-timeout/settimeout-example.css'],
+    templateUrl: 'timer/set-timeout/settimeout-example.html'
 })
 
 export class SetTimeoutComponent {
