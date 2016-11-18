@@ -231,7 +231,7 @@ export const routes = [
     },
     {
         path: "platform",
-        loadChildren: () => require("./platform/platform-examples.module")["PlatformPageExamplesModule"],
+        loadChildren: () => require("./platform/platform-examples.module")["PlatformExamplesModule"],
         data: { title: "Platform" }
     }
 ];
