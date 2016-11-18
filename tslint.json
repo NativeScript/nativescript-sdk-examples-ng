@@ -13,7 +13,7 @@
         "no-duplicate-key": true,
         "triple-equals": [true, "allow-null-check"],
         "variable-name": [false, "allow-leading-underscore"],
-        "no-empty": true,
+        "no-empty": false,
         "no-eval": true,
 		"no-unused-variable": [true],
 		"no-duplicate-variable": true,
