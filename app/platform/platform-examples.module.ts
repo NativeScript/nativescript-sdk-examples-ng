@@ -21,6 +21,6 @@ export const routerConfig = [
     declarations: [PlatformExamplesComponent, PlatformModuleExampleComponent]
 })
 
-export class PlatformPageExamplesModule {
+export class PlatformExamplesModule {
     constructor() { }
 }
