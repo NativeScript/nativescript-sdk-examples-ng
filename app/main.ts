@@ -16,7 +16,7 @@ import { isIOS } from "platform"
 
 @NgModule({
     declarations: [
-        // >> (hide)
+
         AppComponent,
         // << (hide)
         ModalViewComponent
