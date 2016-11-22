@@ -9,6 +9,8 @@ var pjson = require('../package.json');
 var child_process = require('child_process');
 var targz = require('tar.gz');
 
+const CATEGORY = "-category";
+
 // `i-am-article` becomes `I Am Article`
 function prettify(str) {
     return str.split('-').map(function capitalize(part) {
@@ -21,7 +23,7 @@ function updateSubfoldersName(str) {
     return str.slice(0, str.lastIndexOf("-"));
 }
 
-function compareFiles (leftFile, rightFile) {
+function compareFiles(leftFile, rightFile) {
     var l = prettify(path.basename(path.dirname(leftFile)));
     var r = prettify(path.basename(path.dirname(rightFile)));
     return l.localeCompare(r, "en-US");
@@ -44,12 +46,16 @@ function build() {
 
     var jenkinsPosition = 1;
 
+    gatherArticles(cwd, appDir, articlesDir, jenkinsPosition);
+};
+
+function gatherArticles(cwd, appDir, articlesDir, jenkinsPosition) {
     // Gather all main subfolders - ui
     var subDirs = fs.readdirSync(appDir).filter(function (file) {
         var filePath = path.join(appDir, file);
         var dir = fs.statSync(filePath);
 
-        return dir.isDirectory() && path.parse(filePath).name.indexOf("-category") !== -1;
+        return dir.isDirectory() && path.parse(filePath).name.indexOf(CATEGORY) !== -1;
     });
 
     subDirs.forEach(function (subDir) {
@@ -60,24 +66,30 @@ function build() {
         var subDirPath = path.join(appDir, subDir);
 
         // Gather all component overviews in the subdirs - ui-category, ui-extended-category
-        var components = glob.sync(subDirPath + "/**/overview.md").sort(compareFiles);
+        var components = glob.sync(subDirPath + "/*/overview.md").filter(function (file) { 
+            return !path.parse(file).dir.endsWith(CATEGORY);
+        }).sort(compareFiles);  
+
         getComponents(cwd, components, currentDir, jenkinsPosition);
+        gatherArticles(cwd, subDirPath, currentDir, jenkinsPosition);
     });
 
-    // Gather all component overviews in the main folder - app
+    // Gather all component overviews in the main folders - app
     var components = glob.sync(appDir + "/**/overview.md").filter(function (file) {
-        return path.parse(file).dir.indexOf("-category") === -1;
+        return path.parse(file).dir.indexOf(CATEGORY) === -1;
     }).sort(compareFiles);
-   
+
     getComponents(cwd, components, articlesDir, jenkinsPosition);
 }
 
 // Gather all component overviews
 function getComponents(cwd, components, currentDir, jenkinsPosition) {
-      var imgDir = path.join(currentDir, "img");
-      fs.mkdirSync(imgDir);
+    var imgDir = path.join(currentDir, "img");
+    if (!fs.existsSync(imgDir)) {
+        fs.mkdirSync(imgDir);
+    }
 
-      components.forEach(function (overview) {
+   components.forEach(function (overview) {
             var componentDirName = path.dirname(overview);
             var componentHeader = path.basename(componentDirName);
 

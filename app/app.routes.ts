@@ -181,7 +181,7 @@ export const routes = [
     },
     {
         path: "extended-listview",
-        loadChildren: () => require("./common-screens-category/listview/extended-listview-examples.module")["ExtendedListViewExamplesModule"],
+        loadChildren: () => require("./common-screens-category/lists-category/extended-listview-examples.module")["ExtendedListViewExamplesModule"],
         data: { title: "Extended ListView" }
     },
     {
