@@ -14,7 +14,7 @@
 
     <GridLayout *tabItem="{title: 'Dividers'}">
         <!-- >> ext-listview-borders-html -->
-        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="red">
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="gray">
             <template let-country="item">
                 <StackLayout class="list-group-item">
                     <Label class="list-group-item-heading" [text]="country.name"></Label>

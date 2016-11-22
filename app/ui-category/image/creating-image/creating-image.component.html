@@ -1,36 +1,27 @@
-<StackLayout exampleTitle toggleNavButton>
-    <ScrollView>
-        <StackLayout #st clas="m-15">
-            <!-- >> creating-image-html -->
-            <!-- Load image from App_Resources -->
-            <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from resources" textWrap="true"></Label>
-            <Image class="img-rounded p-l-15 p-r-15 p-t-15 " src="res://icon" stretch="none"></Image>
-
-            <!-- Load image from app/images folder -->
-            <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from custom folder" textWrap="true"></Label>
-            <Image class="img-rounded p-l-15 p-r-15 p-t-15" src="~/images/logo.png" stretch="none"></Image>
-
-            <!-- Load image from url -->
-            <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from URL" textWrap="true"></Label>
-            <Image class="img-rounded p-l-15 p-r-15 p-t-15 " src="https://docs.nativescript.org/angular/img/cli-getting-started/angular/chapter0/NativeScript_Angular_logo.png"
-                stretch="none"></Image>
-
-            <!-- << creating-image-html -->
-
-            <!-- >> load-image-css -->
-            <!-- Load backgroundImage from url using CSS-->
-            <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from URL using CSS" textWrap="true"></Label>
-            <StackLayout  id="layoutBackgroundImageURL"></StackLayout>
-            
-            <!-- Load backgroundImage from app/images folder using CSS-->
-            <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from custom folder using CSS" textWrap="true"></Label>
-            <StackLayout id="layoutBackgroundImageFromFolder"></StackLayout>
-            
-            <!-- Load backgroundImage from App_Resources using CSS -->
-            <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from resources using CSS" backgroundRepeat="no-repeat" textWrap="true"></Label>
-            <StackLayout id="layoutBackgroundImageFromRes"></StackLayout>
-                
-            <!-- << load-image-css -->
-        </StackLayout>
-    </ScrollView>
-</StackLayout>
+<ScrollView exampleTitle toggleNavButton>
+    <StackLayout #st clas="m-15">
+        <!-- >> creating-image-html -->
+        <!-- Load image from App_Resources -->
+        <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from resources" textWrap="true"></Label>
+        <Image class="img-rounded p-l-15 p-r-15 p-t-15 " src="res://icon" stretch="none"></Image>
+        <!-- Load image from app/images folder -->
+        <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from custom folder" textWrap="true"></Label>
+        <Image class="img-rounded p-l-15 p-r-15 p-t-15" src="~/images/logo.png" stretch="none"></Image>
+        <!-- Load image from url -->
+        <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from URL" textWrap="true"></Label>
+        <Image class="img-rounded p-l-15 p-r-15 p-t-15 " src="https://docs.nativescript.org/angular/img/cli-getting-started/angular/chapter0/NativeScript_Angular_logo.png"
+            stretch="none"></Image>
+        <!-- << creating-image-html -->
+        <!-- >> load-image-css -->
+        <!-- Load backgroundImage from url using CSS-->
+        <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from URL using CSS" textWrap="true"></Label>
+        <StackLayout id="layoutBackgroundImageURL"></StackLayout>
+        <!-- Load backgroundImage from app/images folder using CSS-->
+        <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from custom folder using CSS" textWrap="true"></Label>
+        <StackLayout id="layoutBackgroundImageFromFolder"></StackLayout>
+        <!-- Load backgroundImage from App_Resources using CSS -->
+        <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" text="Image loaded from resources using CSS" backgroundRepeat="no-repeat"
+            textWrap="true"></Label>
+        <!-- << load-image-css -->
+    </StackLayout>
+</ScrollView>

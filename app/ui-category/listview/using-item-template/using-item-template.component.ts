@@ -26,7 +26,8 @@ export class UsingItemTemplateComponent {
         var bugatti = [{ "model": "Bugatti Chiron", "speed": "261" }, { "model": "Bugatti Veyron Super Sport", "speed": "268" }];
         var mclaren = [{ "model": "McLaren P1", "speed": "211" }, { "model": "McLaren F1", "speed": "242" }];
         var jaguar = [{ "model": "Jaguar XJ220", "speed": 217 }];
-        this.manufacturers = [{ "list": bugatti }, { "list": mclaren }, { "list": jaguar }];
+        var bmw = [{ "model": "BMW M6 Huricane RR", "speed": 230 }, { "model": "BMW X5 M G-Power Typhon", "speed": 260 }];
+        this.manufacturers = [{ "list": bugatti }, { "list": mclaren }, { "list": jaguar }, { "list": bmw }];
     }
 }
 // << using-item-template-code 

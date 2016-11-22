@@ -1,20 +1,18 @@
-<StackLayout exampleTitle toggleNavButton>
-    <ScrollView>
-        <StackLayout>
-            <GridLayout rows="auto, auto, auto, auto" >
-                <Label class="h3 p-15" row="0" text="Normalized Paths" textWrap="true"></Label>
-                <Label class="p-l-15 p-r-15 p-b-15" row="1" [text]="'File in documents folder: ' + documents" textWrap="true"></Label>
-                <Label class="p-l-15 p-r-15 p-b-15" row="2" [text]="'File in current app folder: ' + currentApp" textWrap="true"></Label>
-                <Label class="p-l-15 p-r-15 p-b-15" row="3" [text]="'File in temp folder: ' + temp" textWrap="true"></Label>
-            </GridLayout>
-            <GridLayout rows="auto, auto, auto, auto" columns="*, *">
-                <Label class="h3 p-15" row="0" col="0" colSpan="2" text="Writing content to file" textWrap="true"></Label>
-                <TextField class="p-15" row="1" col="0" hint="Enter Sample Text" [(ngModel)]="textContentToBeSaved" editable="true"></TextField>
-                <Button class="btn btn-primary btn-active" row="1" col="1" text="Save" (tap)="onSaveContentToFile()"></Button>
-                <Label class="p-15" row="2" col="0" text="Is content saved!?" textWrap="true"></Label>
-                <Label class="p-15" row="2" col="1" [text]="isContentSaved" textWrap="true"></Label>
-                <Label class="p-15" row="3" col="0" colSpan="2" [text]="'Saved content:  ' + savedContent" textWrap="true"></Label>
-            </GridLayout>
-        </StackLayout>
-    </ScrollView>
-</StackLayout>
+<ScrollView exampleTitle toggleNavButton>
+    <StackLayout>
+        <GridLayout rows="auto, auto, auto, auto">
+            <Label class="h3 p-15" row="0" text="Normalized Paths" textWrap="true"></Label>
+            <Label class="p-l-15 p-r-15 p-b-15" row="1" [text]="'File in documents folder: ' + documents" textWrap="true"></Label>
+            <Label class="p-l-15 p-r-15 p-b-15" row="2" [text]="'File in current app folder: ' + currentApp" textWrap="true"></Label>
+            <Label class="p-l-15 p-r-15 p-b-15" row="3" [text]="'File in temp folder: ' + temp" textWrap="true"></Label>
+        </GridLayout>
+        <GridLayout rows="auto, auto, auto, auto" columns="*, *">
+            <Label class="h3 p-15" row="0" col="0" colSpan="2" text="Writing content to file" textWrap="true"></Label>
+            <TextField class="p-15" row="1" col="0" hint="Enter Sample Text" [(ngModel)]="textContentToBeSaved" editable="true"></TextField>
+            <Button class="btn btn-primary btn-active" row="1" col="1" text="Save" (tap)="onSaveContentToFile()"></Button>
+            <Label class="p-15" row="2" col="0" text="Is content saved!?" textWrap="true"></Label>
+            <Label class="p-15" row="2" col="1" [text]="isContentSaved" textWrap="true"></Label>
+            <Label class="p-15" row="3" col="0" colSpan="2" [text]="'Saved content:  ' + savedContent" textWrap="true"></Label>
+        </GridLayout>
+    </StackLayout>
+</ScrollView>

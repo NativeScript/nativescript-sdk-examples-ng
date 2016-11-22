@@ -5,8 +5,9 @@
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
             <template let-item="item">
                 <StackLayout [ngSwitch]="checkType(item)">
-                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item h3 bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24" [text]="item.title"></Label>
-                    <Label *ngSwitchCase="'GroupFooter'" class="list-group-item h4" backgroundColor="gray" fontSize="12"[text]="item.description"></Label>
+                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item h3 bg-primary" isUserInteractionEnabled="false" color="white"
+                        fontSize="24" [text]="item.title"></Label>
+                    <Label *ngSwitchCase="'GroupFooter'" class="list-group-item h4" backgroundColor="gray" fontSize="12" [text]="item.description"></Label>
                     <StackLayout *ngSwitchDefault class="list-group-item">
                         <Label [text]="item.name" class="list-group-item-heading"></Label>
                         <Label [text]="item.desc" class="list-group-item-text" textWrap="true"></Label>
@@ -19,10 +20,11 @@
 
     <GridLayout *tabItem="{title: 'Dividers'}">
         <!-- >> multi-line-grouped-borders-html -->
-        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="red">
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="gray">
             <template let-item="item">
                 <StackLayout [ngSwitch]="checkType(item)">
-                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24" [text]="item.title"></Label>
+                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24"
+                        [text]="item.title"></Label>
                     <Label *ngSwitchCase="'GroupFooter'" class="list-group-item" backgroundColor="gray" fontSize="12" [text]="item.description"></Label>
                     <StackLayout *ngSwitchDefault class="list-group-item">
                         <Label [text]="item.name" class="list-group-item-heading"></Label>
@@ -39,14 +41,15 @@
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)">
             <template let-item="item">
                 <StackLayout [ngSwitch]="checkType(item)">
-                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24" [text]="item.title"></Label>
+                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24"
+                        [text]="item.title"></Label>
                     <Label *ngSwitchCase="'GroupFooter'" class="list-group-item" backgroundColor="gray" fontSize="12" [text]="item.description"></Label>
                     <GridLayout *ngSwitchDefault class="list-group-item" rows="*" columns="auto, *">
                         <Image col="0" [src]="item.imageSrc" class="thumb img-circle" verticalAlignment="top"></Image>
                         <StackLayout col="1">
                             <Label class="list-group-item-heading" [text]="item.name"></Label>
-                            <Label class="list-group-item-text" [text]="item.desc" textWrap="true"></Label>   
-                        </StackLayout>              
+                            <Label class="list-group-item-text" [text]="item.desc" textWrap="true"></Label>
+                        </StackLayout>
                     </GridLayout>
                 </StackLayout>
             </template>

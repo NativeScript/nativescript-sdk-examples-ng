@@ -1,13 +1,11 @@
-<StackLayout exampleTitle toggleNavButton>
-        <GridLayout rows="50, auto">
-                <Label class="h3 p-15 text-left" text="Pick a pokemon" row="0" textWrap="true"></Label>
-                        <!-- >> creating-listpicker-html --> 
-                <ListPicker #picker 
-                        row="1" class="p-15" 
-                        [items]="pokemons" 
-                        [selectedIndex]="selectedIndex" 
+<FlexboxLayout flexDirection="column" exampleTitle toggleNavButton>
+        <Label class="h3 p-15 text-left" text="Pick a pokemon" textWrap="true"></Label>
+        <!-- >> creating-listpicker-html -->
+        <ListPicker #picker class="p-15" 
+                        [items]="pokemons" [
+                        selectedIndex]="selectedIndex" 
                         (selectedIndexChange)="selectedIndexChanged(picker)">
-                </ListPicker>
-        <!-- << creating-listpicker-html --> 
-        </GridLayout>
-</StackLayout>
+        </ListPicker>
+        <!-- << creating-listpicker-html -->
+        <Label [text]="'Selected pokemon: ' + picked" class="p-15" textWrap="true"></Label>
+</FlexboxLayout>
