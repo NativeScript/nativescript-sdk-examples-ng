@@ -1,4 +1,4 @@
-// >> setting-style-via-code
+
 import { Component, OnInit } from "@angular/core";
 import { Page } from "ui/page"
 import { StackLayout } from "ui/layouts/stack-layout";
@@ -16,19 +16,10 @@ export class ApplyStyleCodeComponent implements OnInit {
     ngOnInit() {
         let layout: StackLayout = this.page.getViewById<StackLayout>("mainlayout");
 
-        this.page.css = "button, label, stack-layout {horizontal-align: center;}";
-        this.page.css = "button {font-size: 36;}"
-        this.page.css = ".title {font-size: 30;margin: 20;}";
-        this.page.css = ".message {font-size: 20; color: #284848; text-align: center; margin: 0 20;}";
-        this.page.css = "#labelStyle{ background-color: #564448; }";
-
-        this.page.css = "#newLabelStyle{ color: #8C489F; }";
-        var newlabel = new Label();
-        newlabel.text = "New label";
-        newlabel.id = "newLabelStyle";
-
-        layout.addChild(newlabel);
-
+        // >> setting-style-via-code
+        this.page.css = "#labelStyle{ background-color: #564448; color: white} button {font-size: 36; color: blue;}" +
+                        " .message {font-size: 36; color: #284848; text-align: center; margin: 0 20;}";
+        // << setting-style-via-code
     }
 
     public counter: number = 16;
@@ -46,4 +37,4 @@ export class ApplyStyleCodeComponent implements OnInit {
     }
 
 }
-// << setting-style-via-code
+

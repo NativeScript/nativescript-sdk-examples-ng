@@ -2,6 +2,7 @@
 import { Component } from "@angular/core";
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label"
+import { TabView, SelectedIndexChangedEventData } from "ui/tab-view";
 
 @Component({
     selector: 'tab-view-items-component',
@@ -40,8 +41,9 @@ export class TabViewItemsComponent {
 
     }
 
-    public tabViewIndexChange(result) {
-        alert("Tab View selected index: " + result);
+    public tabViewIndexChange(res) {
+        alert("Tab View selected index: " + res);
+
     }
 
 }

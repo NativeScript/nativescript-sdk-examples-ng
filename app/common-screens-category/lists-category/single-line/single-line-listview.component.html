@@ -28,10 +28,10 @@
         <!-- >> ext-listview-thumbs-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" >
             <template let-country="item">
-                <StackLayout orientation="horizontal" class="list-group-item">
+                <FlexboxLayout flexDirection="row" class="list-group-item">
                     <Image [src]="country.imageSrc" class="thumb img-circle"></Image>
                     <Label [text]="country.name" class="list-group-item-heading" verticalAlignment="center"></Label>
-                </StackLayout>
+                </FlexboxLayout>
             </template>
         </ListView>
         <!-- << ext-listview-thumbs-html -->

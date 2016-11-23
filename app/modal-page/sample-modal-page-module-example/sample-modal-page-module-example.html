@@ -1,24 +1,16 @@
-<StackLayout  exampleTitle toggleNavButton  >
 <!-- >> add-modal-dialog-host -->
-    <ScrollView>
-        <StackLayout modal-dialog-host>
-            <Label text='Count the days between the dates' textWrap="true"></Label>
-            <Label [text]='startDate | date:"MM/dd/yy"' textWrap="true"></Label>
-            
-            <Button class="btn btn-primary btn-active" text="Enter Start Date" (tap)="createModelView('start')"></Button>
-            <Label [text]='endDate | date:"MM/dd/yy"' textWrap="true"></Label>
-            
-            <Button class="btn btn-primary btn-active" text="Enter End Date" (tap)="createModelView('end')"></Button>
-
-            <Label class="result" [text]='"Days: "+days' textWrap="true"></Label>
-            
-            <Button class="btn btn-primary btn-active" text="Count Days" (tap)="findDays()"></Button>
-
-            <Label class="result" [text]='"Date: "+date| date:"MM/dd/yy"' textWrap="true"></Label>
-            <Label class="result" [text]='"Day: "+weekday' textWrap="true"></Label>
-            <Button class="btn btn-primary btn-active" text="Enter Date" (tap)="createModelView('findTheDay')"></Button>
-            
-        </StackLayout>
-    </ScrollView>
+<ScrollView exampleTitle toggleNavButton >
+    <StackLayout modal-dialog-host>
+        <Label text='Count the days between the dates' class="m-15" textWrap="true"></Label>
+        <Label [text]='startDate | date:"MM/dd/yy"' class="m-15" textWrap="true"></Label>  
+        <Button class="btn btn-primary btn-active" text="Enter Start Date" (tap)="createModelView('start')"></Button>
+        <Label [text]='endDate | date:"MM/dd/yy"' class="m-15" textWrap="true"></Label>   
+        <Button class="btn btn-primary btn-active" text="Enter End Date" (tap)="createModelView('end')"></Button>
+        <Label [text]='"Days: "+days' class="m-15" textWrap="true"></Label> 
+        <Button class="btn btn-primary btn-active" text="Count Days" (tap)="findDays()"></Button>
+        <Label [text]='"Date: "+date| date:"MM/dd/yy"' class="m-15" textWrap="true"></Label>
+        <Label [text]='"Day: "+weekday' class="m-15" textWrap="true"></Label>
+        <Button class="btn btn-primary btn-active" text="Enter Date" (tap)="createModelView('findTheDay')"></Button>   
+    </StackLayout>
+</ScrollView>
 <!-- << add-modal-dialog-host -->
-</StackLayout>
