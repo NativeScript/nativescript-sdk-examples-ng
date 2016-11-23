@@ -7,7 +7,7 @@
                 <GridLayout class="list-group-item" rows="*" columns="auto, *">
                     <StackLayout col="1">
                         <Label class="list-group-item-heading" [text]="country.name"></Label>
-                        <Label class="list-group-item-text" [text]="country.desc" textWrap="true"></Label>   
+                        <Label class="list-group-item-text" [text]="country.desc" textWrap="true"></Label>
                     </StackLayout>
                     <Image col="0" [src]="country.imageSrc" class="thumb img-rounded" width="92" height="92" verticalAlignment="top"></Image>
                 </GridLayout>
@@ -23,7 +23,7 @@
                 <GridLayout class="list-group-item" rows="*" columns="*, auto">
                     <StackLayout col="0">
                         <Label class="list-group-item-heading" [text]="country.name"></Label>
-                        <Label class="list-group-item-text" [text]="country.desc" textWrap="true"></Label>   
+                        <Label class="list-group-item-text" [text]="country.desc" textWrap="true"></Label>
                     </StackLayout>
                     <Image col="1" [src]="country.imageSrc" class="thumb img-rounded" width="92" height="92" verticalAlignment="top"></Image>
                 </GridLayout>
@@ -37,12 +37,13 @@
         <ListView class="list-group" [items]="groupedCountries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
             <template let-item="item">
                 <StackLayout [ngSwitch]="checkType(item)">
-                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item h3 bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24" [text]="item.title"></Label>
-                    <Label *ngSwitchCase="'GroupFooter'" class="list-group-item h4" backgroundColor="gray" fontSize="12"[text]="item.description"></Label>
+                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item h3 bg-primary" isUserInteractionEnabled="false" color="white"
+                        fontSize="24" [text]="item.title"></Label>
+                    <Label *ngSwitchCase="'GroupFooter'" class="list-group-item h4" backgroundColor="gray" fontSize="12" [text]="item.description"></Label>
                     <GridLayout *ngSwitchDefault class="list-group-item" rows="*" columns="*, auto">
                         <StackLayout col="0">
                             <Label class="list-group-item-heading" [text]="item.name"></Label>
-                            <Label class="list-group-item-text" [text]="item.desc" textWrap="true"></Label>   
+                            <Label class="list-group-item-text" [text]="item.desc" textWrap="true"></Label>
                         </StackLayout>
                         <Image col="1" [src]="item.imageSrc" class="thumb img-rounded" width="92" height="92" verticalAlignment="top"></Image>
                     </GridLayout>

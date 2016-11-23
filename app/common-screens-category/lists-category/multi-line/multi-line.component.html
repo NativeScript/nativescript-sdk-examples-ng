@@ -1,21 +1,19 @@
 <TabView #tabView class="tab-view" exampleTitle toggleNavButton>
-
     <GridLayout *tabItem="{title: 'Basic list'}">
         <!-- >> multiline-listview-basic-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
             <template let-country="item">
                 <StackLayout class="list-group-item">
-                    <Label [text]="country.name" class="list-group-item-heading" ></Label>
-                    <Label [text]="country.desc" class="list-group-item-text"  textWrap="true"></Label>
+                    <Label [text]="country.name" class="list-group-item-heading"></Label>
+                    <Label [text]="country.desc" class="list-group-item-text" textWrap="true"></Label>
                 </StackLayout>
             </template>
         </ListView>
         <!-- << multiline-listview-basic-html -->
     </GridLayout>
-
     <GridLayout *tabItem="{title: 'Dividers'}">
         <!-- >> multiline-listview-borders-html -->
-        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="red">
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="gray">
             <template let-country="item">
                 <StackLayout class="list-group-item">
                     <Label [text]="country.name" class="list-group-item-heading"></Label>
@@ -25,7 +23,6 @@
         </ListView>
         <!-- << multiline-listview-borders-html -->
     </GridLayout>
-
     <GridLayout *tabItem="{title: 'Thumbnails'}">
         <!-- >> multiline-listview-thumbs-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" (setupItemView)="onSetupItemView($event)">
@@ -33,8 +30,8 @@
                 <GridLayout class="list-group-item" rows="*" columns="auto, *">
                     <Image col="0" [src]="country.imageSrc" class="thumb img-circle"></Image>
                     <StackLayout col="1">
-                        <Label [text]="country.name" class="list-group-item-heading" ></Label>
-                        <Label [text]="country.desc" class="list-group-item-text"  textWrap="true"></Label>    
+                        <Label [text]="country.name" class="list-group-item-heading"></Label>
+                        <Label [text]="country.desc" class="list-group-item-text" textWrap="true"></Label>
                     </StackLayout>
                 </GridLayout>
             </template>
@@ -42,5 +39,3 @@
         <!-- << multiline-listview-thumbs-html -->
     </GridLayout>
 </TabView>
-
-

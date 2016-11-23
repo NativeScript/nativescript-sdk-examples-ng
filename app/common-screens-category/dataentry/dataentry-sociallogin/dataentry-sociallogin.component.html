@@ -45,12 +45,12 @@
 
                 <StackLayout class="form">
                     <StackLayout class="input-field">
-                        <Label text="Email" class="label" textWrap="true"></Label>     
+                        <Label text="Email" class="label" textWrap="true"></Label>
                         <TextField #email hint="Email" text="" class="input input-border" autocorrect="false"></TextField>
                     </StackLayout>
                     <StackLayout class="input-field">
                         <Label text="Email" class="label" textWrap="true"></Label>
-                        <TextField #password hint="Password" text="" [secure]="secureproperty" class="input input-border"autocorrect="false"></TextField>
+                        <TextField #password hint="Password" text="" [secure]="secureproperty" class="input input-border" autocorrect="false"></TextField>
                     </StackLayout>
                     <StackLayout orientation="horizontal">
                         <Switch #sw checked="false" (checkedChange)="switchChanged(sw.checked)" class="switch"></Switch>

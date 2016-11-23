@@ -9,7 +9,7 @@ import {isAndroid} from "platform"
 declare var com:any;
 @Component({
     selector: "header-with-map-listview",
-    templateUrl: "common-screens-category/listview/header-with-map/header-with-map.component.html",
+    templateUrl: "common-screens-category/lists-category/header-with-map/header-with-map.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderWithMapExampleComponent {

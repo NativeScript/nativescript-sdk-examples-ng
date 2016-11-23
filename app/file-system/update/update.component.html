@@ -5,13 +5,13 @@
             <TextField class="input input-border" [(ngModel)]="fileName" hint="Enter new file name"></TextField>
         </StackLayout>
         <Button class="btn btn-primary btn-active" text="Change file name" (tap)="onFileRename()"></Button>
-        <Label class="p-15" [text]="fileSuccessMessage" textWrap="true" [visibility]="isItemVisible ? 'visible' : 'collapsed'"></Label>  
+        <Label class="p-15" [text]="fileSuccessMessage" textWrap="true" [visibility]="isItemVisible ? 'visible' : 'collapsed'"></Label>
 
         <StackLayout class="input-field">
             <Label text="Folder name" class="label" textWrap="true"></Label>
             <TextField class="input input-border" [(ngModel)]="folderName" hint="Enter new folder name"></TextField>
-        </StackLayout>  
+        </StackLayout>
         <Button class="btn btn-primary btn-active" text="Change folder name" (tap)="onFolderRename()"></Button>
-        <Label class="p-15" [text]="folderSuccessMessage" textWrap="true" [visibility]="isFolderItemVisible ? 'visible' : 'collapsed'"></Label>  
+        <Label class="p-15" [text]="folderSuccessMessage" textWrap="true" [visibility]="isFolderItemVisible ? 'visible' : 'collapsed'"></Label>
     </StackLayout>
-</ScrollView> 
+</ScrollView>

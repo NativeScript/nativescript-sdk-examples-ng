@@ -1,18 +1,16 @@
-<StackLayout exampleTitle toggleNavButton>
-    <StackLayout class="form">
-        <StackLayout class="input-field">
-            <Label class="label" text="Username" textWrap="true"></Label>
-            <TextField class="input input-border" hint="Enter Username" [(ngModel)]="user" editable="true"></TextField>
-        </StackLayout>
-
-        <StackLayout class="input-field">
-            <Label class="label" text="Password" textWrap="true"></Label>
-            <TextField class="input input-border" hint="Enter Password" [(ngModel)]="pass" secure="true" editable="true"></TextField>
-        </StackLayout>
-
-        <Button class="btn btn-primary btn-active" text="Submit" (tap)="submit()"></Button>   
-        <GridLayout class="bg-primary p-15 m-15" rows="*" columns="*" borderRadius="2">
-            <Label class="text-center p-15" verticalAligment="center" colSpan="2" [text]="message" textWrap="true"></Label>  
-        </GridLayout>
+<StackLayout class="form" exampleTitle toggleNavButton>
+    <StackLayout class="input-field">
+        <Label class="label" text="Username" textWrap="true"></Label>
+        <TextField class="input input-border" hint="Enter Username" [(ngModel)]="user" editable="true"></TextField>
     </StackLayout>
+
+    <StackLayout class="input-field">
+        <Label class="label" text="Password" textWrap="true"></Label>
+        <TextField class="input input-border" hint="Enter Password" [(ngModel)]="pass" secure="true" editable="true"></TextField>
+    </StackLayout>
+
+    <Button class="btn btn-primary btn-active" text="Submit" (tap)="submit()"></Button>
+    <GridLayout class="bg-primary p-15 m-15" rows="*" columns="*" borderRadius="2">
+        <Label class="text-center p-15" verticalAligment="center" colSpan="2" [text]="message" textWrap="true"></Label>
+    </GridLayout>
 </StackLayout>

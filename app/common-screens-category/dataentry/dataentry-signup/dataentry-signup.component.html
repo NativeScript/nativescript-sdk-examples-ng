@@ -19,7 +19,7 @@
         <StackLayout class="form">
             <StackLayout class="input-field">
                 <Label text="Name" class="label" textWrap="true"></Label>
-                <TextField #name hint="Name"text="" class="input input-border" autocorrect="false"></TextField>   
+                <TextField #name hint="Name" text="" class="input input-border" autocorrect="false"></TextField>
             </StackLayout>
             <StackLayout class="input-field">
                 <Label text="Email" class="label" textWrap="true"></Label>
@@ -27,9 +27,9 @@
             </StackLayout>
             <StackLayout class="input-field">
                 <Label text="Password" class="label" textWrap="true"></Label>
-                <TextField #password hint="Password" text="" [secure]="secureproperty" class="input input-border"autocorrect="false"></TextField>   
+                <TextField #password hint="Password" text="" [secure]="secureproperty" class="input input-border" autocorrect="false"></TextField>
             </StackLayout>
-  
+
             <StackLayout orientation="horizontal">
                 <Label text="Show password" textWrap="true" class="m-15" verticalAligment="center"></Label>
                 <Switch #sw checked="true" (checkedChange)="switchChanged(sw.checked)" class="switch"></Switch>

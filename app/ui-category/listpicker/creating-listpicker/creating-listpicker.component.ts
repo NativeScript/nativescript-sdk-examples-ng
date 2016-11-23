@@ -11,6 +11,7 @@ var pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 export class CreatingListPickerComponent {
 
     public pokemons: Array<string>;
+    public picked: string;
 
     constructor() {
         this.pokemons = [];
@@ -22,6 +23,7 @@ export class CreatingListPickerComponent {
 
     public selectedIndexChanged(picker) {
         console.log('picker selection: ' + picker.selectedIndex);
+        this.picked = this.pokemons[picker.selectedIndex];
     }
 }
 // << creating-listpicker-code  
