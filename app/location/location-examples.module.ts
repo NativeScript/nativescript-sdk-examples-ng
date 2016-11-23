@@ -5,6 +5,7 @@ import { LocationExamplesComponent } from "./location-examples.component";
 import { BasicLocationExampleComponent } from "./basic-location-example/basic-location-example";
 import { LocationMonitoringExampleComponent } from "./location-monitoring-example/location-monitoring-example";
 import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 export const routerConfig = [
     {
@@ -24,7 +25,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptFormsModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [LocationExamplesComponent, BasicLocationExampleComponent, LocationMonitoringExampleComponent]
 })
 

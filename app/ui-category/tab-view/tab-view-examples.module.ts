@@ -5,7 +5,7 @@ import { TabViewExamplesComponent } from "./tab-view-examples.component";
 import { BasicTabViewComponent } from "./basic-tab-view/basic-tab-view.component";
 import { TabViewItemsComponent } from "./tab-view-items/tab-view-items.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
-
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
 export const routerConfig = [
     {
         path: '',
@@ -24,7 +24,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [TitleAndNavButtonModule, NativeScriptFormsModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
     declarations: [TabViewExamplesComponent, BasicTabViewComponent, TabViewItemsComponent]
 })
 

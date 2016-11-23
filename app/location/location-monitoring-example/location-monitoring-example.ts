@@ -6,7 +6,6 @@ import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
     selector: 'location-monitoring-example',
-    styleUrls: ['location/location-monitoring-example/style.css'],
     templateUrl: 'location/location-monitoring-example/location-monitoring-example.html'
 })
 
@@ -20,8 +19,6 @@ export class LocationMonitoringExampleComponent {
     public monitor_altitude: string = "0";
     public monitor_direction: string = "0";
     public monitor_speed: string = "0";
-
-
 
     constructor(private zone: NgZone) {
         enableLocationRequest(true);
@@ -46,10 +43,10 @@ export class LocationMonitoringExampleComponent {
                         this.monitor_speed = (loc.speed).toFixed(2);
                     })
                 }
-            },
-                (e) => {
-                    console.log("Error: " + e.message);
-                }, this.options);
+            },(e) => {
+                console.log("Error: " + e.message);
+            }, this.options);
+
             this.isMonitoring = true;
             this.buttonText = "Stop location monitoring";
         }

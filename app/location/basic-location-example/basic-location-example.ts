@@ -16,7 +16,6 @@ export class BasicLocationExampleComponent {
     public distance: number = 0;
     public index: number = 0;
 
-
     public startpoint_longitude: number = 42.696552;
     public startpoint_latitude: number = 23.32601;
     public endpoint_longitude: number = 40.71448;
@@ -53,16 +52,15 @@ export class BasicLocationExampleComponent {
 
         console.log("distance - " + this.distance);
         this.distanceResult = (this.distance * 0.001).toFixed(3);
-
     }
 
     public getLocationOnce() {
         // >> get-current-location
-        getCurrentLocation({ timeout: 5000 })
+        getCurrentLocation({ timeout: 500 })
             .then(location => {
                 console.log('Location received: ' + location);
-                this.startpoint_latitude=location.latitude;
-                this.startpoint_longitude=location.longitude;
+                this.startpoint_latitude = location.latitude;
+                this.startpoint_longitude = location.longitude;
             }).catch(error => {
                 console.log('Location error received: ' + error);
                 alert('Location error received: ' + error);
