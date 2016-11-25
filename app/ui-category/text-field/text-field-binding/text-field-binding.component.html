@@ -1,9 +1,13 @@
 <StackLayout  exampleTitle toggleNavButton>  
     <StackLayout class="form">
         <!-- >> textfield-binding-html -->
-        <TextField class="input input-border" hint="Enter text" autocorrect="false" #tx (textChange)="firstLabel=tx.text"></TextField>
-        <Label class="h3 p-15" [text]="'The first input is: ' + firstLabel =='' ? '': firstLabel" textWrap="true" marginBottom="25"></Label>
-        <TextField class="input input-border" hint="Enter some text and click the button" autocorrect="false" #secondtx returnKeyType="done" (returnPress)="submit(secondtx.text)"></TextField>
+        <StackLayout class="input-field">
+            <Label class="label" [text]="'The first input is: ' + firstLabel =='' ? '': firstLabel" textWrap="true" marginBottom="25"></Label>
+            <TextField class="input input-border" hint="Enter text" autocorrect="false" #tx (textChange)="firstLabel=tx.text"></TextField>
+        </StackLayout>
+        <StackLayout class="input-field">
+            <TextField class="input input-border" hint="Enter some text and click the button" autocorrect="false" #secondtx returnKeyType="done" (returnPress)="submit(secondtx.text)"></TextField>
+        </StackLayout>
         <Button class="btn btn-primary btn-active" text="Get the second input" (tap)="showAlert(secondtx.text)"></Button>
         <!-- << textfield-binding-html -->
     </StackLayout>
