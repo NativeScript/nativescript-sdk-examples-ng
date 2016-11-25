@@ -9,7 +9,7 @@ import dialogs = require("ui/dialogs");
 export class LoginDialogComponent {
     displayLoginDialog() {
         // >> login-dialog-code
-        var options = {
+        let options = {
             title: "Login",
             message: "Login",
             username: "john_doe",

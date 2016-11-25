@@ -1,6 +1,6 @@
 // >> disable-switch-code
 import {Component, ViewChild, ElementRef} from "@angular/core";
-import { Switch } from "ui/switch"
+import { Switch } from "ui/switch";
 
 @Component({
     selector: 'disable-switch-component',

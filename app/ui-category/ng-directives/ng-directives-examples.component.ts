@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
-var menuLinks = [
+let menuLinks = [
     new Link("Create custom directive", "/angular-directives/create-custom-directive"),
     new Link("*ngFor repeater directive", "/angular-directives/ngfor-directive"),
     new Link("*ngSwitch structural directive", "/angular-directives/ngswitch-directive"),
@@ -21,7 +21,7 @@ export class NgDirectivesExamplesComponent {
     constructor() {
         this.links = [];
 
-        for (var i = 0; i < menuLinks.length; i++) {
+        for (let i = 0; i < menuLinks.length; i++) {
             this.links.push(menuLinks[i]);
         }
     }

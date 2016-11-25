@@ -18,9 +18,9 @@ export class PathsExampleComponent implements OnInit {
 
     ngOnInit() {
         // >> fs-paths-normalize-code
-        var documentsFolder = fs.knownFolders.documents();
-        var currentAppFolder = fs.knownFolders.currentApp();
-        var tempFolder = fs.knownFolders.temp();
+        let documentsFolder = fs.knownFolders.documents();
+        let currentAppFolder = fs.knownFolders.currentApp();
+        let tempFolder = fs.knownFolders.temp();
 
         let testPath = "///test.txt";
         // Get a normalized path such as <folder.path>/test.txt from <folder.path>///test.txt
@@ -51,9 +51,9 @@ export class PathsExampleComponent implements OnInit {
 
     public onSaveContentToFile() {
         // >> fs-paths-create-file-code
-        var documentsFolder = fs.knownFolders.documents();
-        var path = fs.path.join(documentsFolder.path, "FileFromPath.txt");
-        var file = fs.File.fromPath(path);
+        let documentsFolder = fs.knownFolders.documents();
+        let path = fs.path.join(documentsFolder.path, "FileFromPath.txt");
+        let file = fs.File.fromPath(path);
 
         // Writing text to the file.
         file.writeText(this.textContentToBeSaved)
@@ -64,7 +64,7 @@ export class PathsExampleComponent implements OnInit {
                     this.isContentSaved = true;
                     this.savedContent = res;
                     console.log("File content: " + res);
-                })
+                });
             }).catch(err => {
                 console.log(err.stack);
             });;

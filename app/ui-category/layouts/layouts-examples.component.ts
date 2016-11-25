@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../../link";
 
-var menuLinks = [
+let menuLinks = [
     new Link("FlexboxLayout (flexDirection)", "/layouts/flexbox-layout-one"),
     new Link("FlexboxLayout (order, flexGrow and flexShrink)", "/layouts/flexbox-layout-two"),
     new Link("FlexboxLayout (flexWrap, justifyContent)", "/layouts/flexbox-layout-three"),
@@ -24,7 +24,7 @@ export class LayoutsExamplesComponent {
     constructor() {
         this.links = [];
 
-        for (var i = 0; i < menuLinks.length; i++) {
+        for (let i = 0; i < menuLinks.length; i++) {
             this.links.push(menuLinks[i]);
         }
     }

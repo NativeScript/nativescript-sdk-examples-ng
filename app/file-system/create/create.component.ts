@@ -34,7 +34,7 @@ export class CreateExampleComponent{
                         this.successMessage = "Successfully saved in " + this.file.path;
                         this.writtenContent = res;
                         this.isItemVisible = true;
-                    })
+                    });
             }).catch(err => {
                 // Error
             });

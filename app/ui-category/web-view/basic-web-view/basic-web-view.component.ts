@@ -2,7 +2,7 @@
 import {Component, OnInit} from "@angular/core";
 import {WebView, LoadEventData} from "ui/web-view";
 import {Page} from "ui/page";
-import {TextField} from "ui/text-field"
+import {TextField} from "ui/text-field";
 
 @Component({
     selector: 'basic-web-view-component',

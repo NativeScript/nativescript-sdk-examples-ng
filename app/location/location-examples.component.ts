@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
-var menuLinks = [
+let menuLinks = [
     new Link("Basic location", "/location/location"),
     new Link("Monitoring location", "/location/location-monitoring")
 ];
@@ -18,7 +18,7 @@ export class LocationExamplesComponent {
     constructor() {
         this.links = [];
 
-        for (var i = 0; i < menuLinks.length; i++) {
+        for (let i = 0; i < menuLinks.length; i++) {
             this.links.push(menuLinks[i]);
         }
     }

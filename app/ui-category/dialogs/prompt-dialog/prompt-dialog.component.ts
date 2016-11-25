@@ -9,7 +9,7 @@ import dialogs = require("ui/dialogs");
 export class PromptDialogComponent {
     displayPromptDialog() {
         // >> prompt-dialog-code
-        var options = {
+        let options = {
             title: "Name",
             defaultText: "Enter your name",
             inputType: dialogs.inputType.text, 

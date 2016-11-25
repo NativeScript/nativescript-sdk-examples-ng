@@ -25,7 +25,7 @@ export class ToggleNavButtonDirective implements OnInit {
         navigationButton.visibility = "visible";
 
         if (app.android) {
-            navigationButton.icon = "res://ic_arrow_back_black_24dp"
+            navigationButton.icon = "res://ic_arrow_back_black_24dp";
             navigationButton.on("tap", (args: EventData) => {
                 this.routerExtensions.backToPreviousPage();
             });

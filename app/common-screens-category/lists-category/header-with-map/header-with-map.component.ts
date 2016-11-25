@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core
 import { ObservableArray } from "data/observable-array";
 import { mockedDataArray }  from "../mock-dataItems";
 import { Location } from "nativescript-geolocation";
-import { TnsGoogleMaps } from "nativescript-googlemaps"
+import { TnsGoogleMaps } from "nativescript-googlemaps";
 import app = require("application");
-import {isAndroid} from "platform"
+import {isAndroid} from "platform";
 // >> ext-listview-map-header-code
 declare var com:any;
 @Component({
@@ -39,18 +39,18 @@ export class HeaderWithMapExampleComponent {
         {latitude:55.7498598,longitude:37.3523236},
         {latitude:38.8994614,longitude:-77.0846061}];
         if(isAndroid){
-            var context = app.android.context;
-            var api = com.google.android.gms.common.GoogleApiAvailability.getInstance()
+            let context = app.android.context;
+            let api = com.google.android.gms.common.GoogleApiAvailability.getInstance();
             console.log(api.isGooglePlayServicesAvailable(context));
             if(api.isGooglePlayServicesAvailable(context) === 1){
                 this.isServiceAvailable=false;
-                alert("Google maps will not run without Google Play services, which are missing from your Emulator/Device.")
+                alert("Google maps will not run without Google Play services, which are missing from your Emulator/Device.");
             }
         }
     }
 
     onItemTapList(args) {
-         var index = args.index;
+         let index = args.index;
          if(this.isServiceAvailable){
                 let newMarkerLocation = new Location();
                 newMarkerLocation.latitude = this.markersPosition[index].latitude;

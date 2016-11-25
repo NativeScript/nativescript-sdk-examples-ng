@@ -11,7 +11,7 @@ export class SwipeExampleComponent {
     public direction: number;
 
     onSwipe(args: SwipeGestureEventData) {
-        console.log("Swipe!")
+        console.log("Swipe!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);   

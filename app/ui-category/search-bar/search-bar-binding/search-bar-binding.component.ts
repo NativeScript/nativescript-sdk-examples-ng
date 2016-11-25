@@ -1,7 +1,7 @@
 import { Component} from "@angular/core";
 import {Page} from "ui/page";
 import { SearchBar } from "ui/search-bar";
-import { isAndroid } from "platform"
+import { isAndroid } from "platform";
 
 @Component({
     selector: 'search-bar-binding-component',

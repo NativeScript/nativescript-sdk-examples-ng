@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 // >> import-trace-methods
 import { setCategories, enable, disable, categories, addCategories, isCategorySet, enabled, write, clearWriters } from "trace";
 // << import-trace-methods
-import { setTimeout } from "timer"
+import { setTimeout } from "timer";
 
 @Component({
     selector: 'trace-writer-categories',
@@ -26,16 +26,16 @@ export class TraceSpecificCategoriesExampleComponent {
         // << setting-specific-tracing-categories
 
         // >> trace-add-categories
-        addCategories(categories.Navigation)
+        addCategories(categories.Navigation);
         // << trace-add-categories
 
         setTimeout(function () {
             console.log("-----------------------------------------------------");
             console.log("New trace category has been added");
-            console.log("Category: NativeLifecycle")
+            console.log("Category: NativeLifecycle");
             console.log("-----------------------------------------------------");
             alert("NativeLifecycle trace category has been added.");
-            addCategories(categories.NativeLifecycle)
+            addCategories(categories.NativeLifecycle);
         }, 2000);
 
         write("I (heart) NativeScript!", categories.Debug);
@@ -52,10 +52,10 @@ export class TraceSpecificCategoriesExampleComponent {
     public checkIsDebugVisualTreeEventsSet() {
         // >> check-iscategoryset
         if (isCategorySet(categories.VisualTreeEvents)) {
-            alert("VisualTreeEvents category has been set")
+            alert("VisualTreeEvents category has been set");
         }
         else {
-            alert("VisualTreeEvents category has not been set")
+            alert("VisualTreeEvents category has not been set");
         }
         // << check-iscategoryset
     }

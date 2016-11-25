@@ -13,7 +13,7 @@ export class RotationExampleComponent {
     public state: number;
 
     onRotation(args: RotationGestureEventData) {
-        console.log("Rotation!")
+        console.log("Rotation!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);   
@@ -23,7 +23,7 @@ export class RotationExampleComponent {
         this.state = args.state;
 
         if (this.state === 3) {
-            var grid = <GridLayout>args.object;
+            let grid = <GridLayout>args.object;
             grid.rotate = 0;
             grid.animate({
                 rotate: this.angle,

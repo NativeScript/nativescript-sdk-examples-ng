@@ -12,7 +12,7 @@ export class SingleLineListViewExampleComponent implements OnInit {
     public countries: Array<Country> = [];
 
     ngOnInit() {
-        for (var i = 0; i < mockedDataArray.length; i++) {
+        for (let i = 0; i < mockedDataArray.length; i++) {
             this.countries.push(mockedDataArray[i]);
         }
     }

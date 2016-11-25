@@ -1,7 +1,7 @@
 // >> creating-listpicker-code 
 import { Component }  from "@angular/core";
 
-var pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
+let pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 "Dugtrio", "Meowth", "Persian", "Psyduck", "Arcanine", "Poliwrath", "Machoke"];
 
 @Component({
@@ -16,7 +16,7 @@ export class CreatingListPickerComponent {
     constructor() {
         this.pokemons = [];
 
-        for (var i = 0; i < pokemonList.length; i++) {
+        for (let i = 0; i < pokemonList.length; i++) {
             this.pokemons.push(pokemonList[i]);
         }
     }

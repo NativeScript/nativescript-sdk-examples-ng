@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
-var menuLinks = [
+let menuLinks = [
     new Link("Paths", "/file-system/paths"),
     new Link("Create", "/file-system/create"),
     new Link("Read", "/file-system/read"),
@@ -21,7 +21,7 @@ export class FileSystemExamplesComponent {
     constructor() {
         this.links = [];
 
-        for (var i = 0; i < menuLinks.length; i++) {
+        for (let i = 0; i < menuLinks.length; i++) {
             this.links.push(menuLinks[i]);
         }
     }

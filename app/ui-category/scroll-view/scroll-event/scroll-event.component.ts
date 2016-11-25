@@ -1,6 +1,6 @@
 // >> scroll-view-event-code
 import { Component } from "@angular/core";
-import { setTimeout } from "timer"
+import { setTimeout } from "timer";
 import { ScrollEventData } from "ui/scroll-view";
 
 @Component({
@@ -17,7 +17,7 @@ export class ScrollEventComponent {
 
     public onScroll(args: ScrollEventData) {
         this.status = "scrolling";
-        var that = this;
+        let that = this;
         setTimeout(function () {
             that.status = "not scrolling";
         }, 300);

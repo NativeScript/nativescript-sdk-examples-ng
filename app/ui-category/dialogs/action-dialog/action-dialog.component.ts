@@ -9,7 +9,7 @@ import dialogs = require("ui/dialogs");
 export class ActionDialogComponent {
     displayActionDialog() {
         // >> action-dialog-code
-        var options = {
+        let options = {
             title: "Race selection",
             message: "Choose your race",
             cancelButtonText: "Cancel",

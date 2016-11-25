@@ -19,7 +19,7 @@ export class FetchPostExampleComponent {
         }).then(response => { 
             return response.json();
         }).then(res => {
-            var jsonObjectBody = JSON.parse(res.data);
+            let jsonObjectBody = JSON.parse(res.data);
             this.message = "Data successfully send by user " + jsonObjectBody.username;
         }).catch(err => {
             // Error 

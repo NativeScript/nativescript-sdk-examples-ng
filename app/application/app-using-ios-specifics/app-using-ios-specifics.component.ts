@@ -20,13 +20,13 @@ export class AppUsingIosExampleComponent {
 
             // >> app-ios-observer-code
             utils.ios.getter(UIDevice, UIDevice.currentDevice).batteryMonitoringEnabled = true;
-            var percent = +(utils.ios.getter(UIDevice, UIDevice.currentDevice).batteryLevel * 100);
+            let percent = +(utils.ios.getter(UIDevice, UIDevice.currentDevice).batteryLevel * 100);
             this.batteryLife = percent;
 
-            var that = this;
-            var observer = application.ios.addNotificationObserver(UIDeviceBatteryLevelDidChangeNotification,
+            let that = this;
+            let observer = application.ios.addNotificationObserver(UIDeviceBatteryLevelDidChangeNotification,
                 function onReceiveCallback(notification: NSNotification) {
-                    var percent = +(utils.ios.getter(UIDevice, UIDevice.currentDevice).batteryLevel * 100);
+                    let percent = +(utils.ios.getter(UIDevice, UIDevice.currentDevice).batteryLevel * 100);
                     that.batteryLife = percent;
                 });
             // << app-ios-observer-code

@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./../link";
 
-var menuLinks = [
+let menuLinks = [
     new Link("Checking Target Platform", "/application/check-target"),
     new Link("Using Android Specifics", "/application/using-android"),
     new Link("Using iOS Specifics", "/application/using-ios"),
@@ -19,7 +19,7 @@ export class ApplicationExamplesComponent {
     constructor() {
         this.links = [];
 
-        for (var i = 0; i < menuLinks.length; i++) {
+        for (let i = 0; i < menuLinks.length; i++) {
             this.links.push(menuLinks[i]);
         }
     }

@@ -19,7 +19,7 @@ export class SampleModalPageModuleExampleComponent {
     public weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
     constructor(private _modalService: ModalDialogService) {
-        var oneDay = 24 * 60 * 60 * 1000;
+        let oneDay = 24 * 60 * 60 * 1000;
         this.startDate = new Date("2015-12-12");
         this.endDate = new Date();
         this.date = new Date();
@@ -28,9 +28,9 @@ export class SampleModalPageModuleExampleComponent {
     }
 
     createModelView(args) {
-        var that = this;
-        var currentDate = new Date()
-        var options: ModalDialogOptions = { context: currentDate.toDateString(), fullscreen: false };
+        let that = this;
+        let currentDate = new Date();
+        let options: ModalDialogOptions = { context: currentDate.toDateString(), fullscreen: false };
         // >> returning-result
         this._modalService.showModal(ModalViewComponent, options)
             .then((dateresult: Date) => {
@@ -45,17 +45,17 @@ export class SampleModalPageModuleExampleComponent {
                     this.weekday = this.weekdays[this.date.getDay()];
                 }
                 // << (hide)
-            })
+            });
         // << returning-result
     }
 
     findDays() {
-        var oneDay = 24 * 60 * 60 * 1000;
+        let oneDay = 24 * 60 * 60 * 1000;
         if (this.startDate.getTime() > this.endDate.getTime()) {
             alert("Enter correct end date");
         }
         else {
-            var tmpDays = Math.round(Math.abs((this.startDate.getTime() - this.endDate.getTime()) / (oneDay)));
+            let tmpDays = Math.round(Math.abs((this.startDate.getTime() - this.endDate.getTime()) / (oneDay)));
             console.log(tmpDays);
             this.days = tmpDays;
         }

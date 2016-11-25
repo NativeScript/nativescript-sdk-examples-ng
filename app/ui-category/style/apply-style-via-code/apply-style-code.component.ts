@@ -1,6 +1,6 @@
 
 import { Component, OnInit } from "@angular/core";
-import { Page } from "ui/page"
+import { Page } from "ui/page";
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
 

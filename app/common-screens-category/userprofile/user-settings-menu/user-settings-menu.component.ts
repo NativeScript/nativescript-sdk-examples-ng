@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
 import { ObservableArray } from "data/observable-array";
 import { mockedDataArray } from "../mock-dataItems";
-import { ItemEventData } from "ui/list-view"
+import { ItemEventData } from "ui/list-view";
 // >> userprofile-settings-menu-code
 @Component({
     selector: "user-settings-menu",

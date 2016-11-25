@@ -12,14 +12,14 @@ export class MultiLineGroupedListViewExampleComponent implements OnInit {
     public countries: Array<any> = [];
 
     ngOnInit() {
-        for (var i = 0; i < mockedGroupDataArray.length; i++) {
+        for (let i = 0; i < mockedGroupDataArray.length; i++) {
             this.countries.push(mockedGroupDataArray[i]);
         }
     }
 
     checkType(value) {
         // get the class name e.g. GroupTitle or Country
-        var className = value.constructor.name;
+        let className = value.constructor.name;
         return className;
     }
 

@@ -17,18 +17,18 @@ export class UsingAsyncPipeComponent {
     public myItems: RxObservable<Array<DataItem>>;
 
     constructor() {
-        var items = [];
-        for (var i = 0; i < 3; i++) {
+        let items = [];
+        for (let i = 0; i < 3; i++) {
             items.push(new DataItem(i, "data item " + i));
         }
 
-        var subscr;
+        let subscr;
         this.myItems = RxObservable.create(subscriber => {
             subscr = subscriber;
             subscriber.next(items);
             return function () {
                 console.log("Unsubscribe called!");
-            }
+            };
         });
 
         let counter = 2;

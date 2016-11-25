@@ -17,20 +17,20 @@ export class SetTimeoutComponent {
 
     public increase(args) {
         args.object.backgroundColor = new Color("#3078FE");
-        var that = this;
+        let that = this;
         setTimeout(function () {
             that.counter++;
             args.object.backgroundColor = new Color("#30BCFF");
         }, 1000);
-        this.buttonstyle = "btn btn-rounded-sm btn-active"
+        this.buttonstyle = "btn btn-rounded-sm btn-active";
     }
     public decrease(args) {
         args.object.backgroundColor = new Color("#3078FE");
-        var that = this;
+        let that = this;
         setTimeout(function () {
             that.counter--;
             args.object.backgroundColor = new Color("#30BCFF");
-        }, 1000)
+        }, 1000);
     }
 }
 // << settimeout-time-picker-configure-code

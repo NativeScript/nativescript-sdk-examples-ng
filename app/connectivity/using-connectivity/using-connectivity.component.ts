@@ -12,7 +12,7 @@ export class UsingConnectivityExampleComponent implements OnInit, OnDestroy {
 
     constructor(private zone: NgZone) { 
         // >> connectivity-gettype-code
-        var connectionType = connectivity.getConnectionType();
+        let connectionType = connectivity.getConnectionType();
         switch (connectionType) {
             case connectivity.connectionType.none:
                 this.connectionType = "None";

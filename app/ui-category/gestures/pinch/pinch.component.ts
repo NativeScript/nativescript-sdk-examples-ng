@@ -15,7 +15,7 @@ export class PinchExampleComponent {
     public state: number;
 
     onPinch(args: PinchGestureEventData) {
-        console.log("Pinch!")
+        console.log("Pinch!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);   
@@ -25,7 +25,7 @@ export class PinchExampleComponent {
         this.state = args.state;
 
         // >> (hide)
-        var grid = <GridLayout>args.object;
+        let grid = <GridLayout>args.object;
 
         if (args.scale && args.scale !== 1) {
             let newScale = startScale * args.scale;

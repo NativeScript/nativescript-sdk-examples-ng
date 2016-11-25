@@ -3,7 +3,7 @@ import { Color } from "color";
 import { Label } from "ui/label";
 import { AbsoluteLayout } from "ui/layouts/absolute-layout";
 
-var enums = require("ui/enums");
+let enums = require("ui/enums");
 
 @Component({
     selector: 'animations-component',

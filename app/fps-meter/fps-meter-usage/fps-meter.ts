@@ -1,6 +1,6 @@
 import { Component, NgZone } from "@angular/core";
 // >> fps-meter-module-import
-import {start, removeCallback, addCallback, stop} from "fps-meter"
+import {start, removeCallback, addCallback, stop} from "fps-meter";
 // << fps-meter-module-import
 
 @Component({
@@ -35,7 +35,7 @@ export class FpsMeterUsageComponent {
                     this.zone.run(()=>{
                         this.fps=fps.toFixed(2);
                         this.minfps=minFps.toFixed(2);
-                    })
+                    });
                 });
             
             start();

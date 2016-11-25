@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
 import { ObservableArray } from "data/observable-array";
-import { mockedDataArray } from "../mock-dataItems"
+import { mockedDataArray } from "../mock-dataItems";
 
 // >> ext-listview-cards-code
 @Component({
@@ -12,11 +12,11 @@ export class UserFeedImagesExampleComponent {
     public countries: ObservableArray<any>;
 
     constructor() {
-        this.countries = new ObservableArray(mockedDataArray)
+        this.countries = new ObservableArray(mockedDataArray);
     }
 
     public followTap() {
-        console.log("follow button")
+        console.log("follow button");
     }
 
     public onItemTapFirstList(args) {

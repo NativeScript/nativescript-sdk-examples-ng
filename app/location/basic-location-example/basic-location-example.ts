@@ -29,9 +29,9 @@ export class BasicLocationExampleComponent {
 
     public isLocationEnabled() {
         // >> check-is-service-enabled
-        var isEnabledProperty = isEnabled();
+        let isEnabledProperty = isEnabled();
         // << check-is-service-enabled
-        var message = "Location services are not available";
+        let message = "Location services are not available";
         if (isEnabledProperty) {
             message = "Location services are available";
         }
@@ -40,11 +40,11 @@ export class BasicLocationExampleComponent {
 
     public getDistance() {
         // >> get-distance
-        var startLocation: Location = new Location();
+        let startLocation: Location = new Location();
         startLocation.longitude = this.startpoint_longitude;
         startLocation.latitude = this.startpoint_latitude;
 
-        var endLocation: Location = new Location();
+        let endLocation: Location = new Location();
         endLocation.longitude = this.endpoint_longitude;
         endLocation.latitude = this.endpoint_latitude;
         this.distance = distance(startLocation, endLocation);

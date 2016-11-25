@@ -14,7 +14,7 @@ export class PanExampleComponent {
     public state: number;
 
     onPan(args: PanGestureEventData) {
-        console.log("Pan!")
+        console.log("Pan!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);

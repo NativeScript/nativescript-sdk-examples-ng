@@ -40,7 +40,7 @@ export class ReadExampleComponent {
                         this.writtenContent = res;
                     }).catch(err => {
                         console.log(err.stack);
-                    })
+                    });
                 // << fs-read-text-code    
             }).catch(err => {
                 console.log(err);
@@ -92,7 +92,7 @@ export class ReadExampleComponent {
 
             // >> fs-write-sync-code
             this.imageFile.writeSync(this.binarySource, err => {
-                console.log(err)
+                console.log(err);
             });
             // << fs-write-sync-code
 

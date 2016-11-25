@@ -41,7 +41,7 @@ export class LocationMonitoringExampleComponent {
                         this.monitor_altitude = (loc.altitude).toFixed(2);
                         this.monitor_direction = (loc.direction).toFixed(2);
                         this.monitor_speed = (loc.speed).toFixed(2);
-                    })
+                    });
                 }
             },(e) => {
                 console.log("Error: " + e.message);

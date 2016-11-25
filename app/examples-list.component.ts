@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy }  from "@angular/core";
 import { Link } from "./link";
 
-var mainMenuLinks = [
+let mainMenuLinks = [
     new Link("ActionBar", "/action-bar"),
     new Link("ActivityIndicator", "/activity-indicator"),
     new Link("Angular directives", "/angular-directives"),
@@ -63,12 +63,12 @@ export class ExamplesListComponent {
         this.links = [];
 
         mainMenuLinks.sort(function (a, b) {
-            var titleA = a.title.toUpperCase();
-            var titleB = b.title.toUpperCase();
+            let titleA = a.title.toUpperCase();
+            let titleB = b.title.toUpperCase();
             return (titleA < titleB) ? -1 : (titleA > titleB) ? 1 : 0;
         });
 
-        for (var i = 0; i < mainMenuLinks.length; i++) {
+        for (let i = 0; i < mainMenuLinks.length; i++) {
             this.links.push(mainMenuLinks[i]);
         }
     }

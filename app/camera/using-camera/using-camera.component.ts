@@ -16,14 +16,14 @@ export class UsingCameraExampleComponent {
     public height: number = 300;
 
     onTakePhoto() {
-        var options = { width: this.width, height: this.height, keepAspectRatio: this.keepAspectRatio,  saveToGallery: this.saveToGallery };
+        let options = { width: this.width, height: this.height, keepAspectRatio: this.keepAspectRatio,  saveToGallery: this.saveToGallery };
         camera.takePicture(options)
             .then(imageAsset => {
                 this.imageTaken = imageAsset;
                 console.log("Size: " + imageAsset.options.width + "x" + imageAsset.options.height);
             }).catch(err => {
                 console.log(err.message);
-            })
+            });
     }
     // << camera-module-photo-code
 
@@ -35,7 +35,7 @@ export class UsingCameraExampleComponent {
 
     // >> camera-module-avai-code
     onCheckForCamera() {
-        var isCameraAvailable = camera.isAvailable();
+        let isCameraAvailable = camera.isAvailable();
         console.log("Is camera hardware available: " + isCameraAvailable);
     }
     // << camera-module-avai-code

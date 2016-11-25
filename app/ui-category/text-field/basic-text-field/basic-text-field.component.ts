@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 import {DatePicker} from "ui/date-picker";
 import {TextField} from "ui/text-field";
 import {Page} from "ui/page";
-import {setTimeout} from "timer"
+import {setTimeout} from "timer";
 
 @Component({
     selector: 'basic-text-field-component',
@@ -37,7 +37,7 @@ export class BasicTextFieldComponent {
 
     enterDate(){
         let datePicker = this.page.getViewById<DatePicker>("datePicker");
-        var selectedDate = new Date(datePicker.year, datePicker.month - 1, datePicker.day);
+        let selectedDate = new Date(datePicker.year, datePicker.month - 1, datePicker.day);
         this.birthDate=selectedDate;
         this.isButtonVisible=false;
         this.isItemVisible=false;

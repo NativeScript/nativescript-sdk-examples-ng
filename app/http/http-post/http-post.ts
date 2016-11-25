@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> import-http-module
-import {request} from "http"
+import {request} from "http";
 // << import-http-module
 
 @Component({
@@ -21,11 +21,11 @@ export class HttpPostComponent {
             headers: { "Content-Type": "application/json" },
             content: JSON.stringify({ Name: this.name, Username: this.username, Text: this.custom_text })
         }).then(response => {
-            var result = response.content.toJSON();
+            let result = response.content.toJSON();
             alert("Result :" + JSON.stringify(result.json));
         }).catch(err => {
             console.log("Error occurred " + err.stack);
-        })
+        });
         // << post-request-http-module
     }
 }

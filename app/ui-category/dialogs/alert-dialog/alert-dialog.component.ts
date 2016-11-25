@@ -9,7 +9,7 @@ import dialogs = require("ui/dialogs");
 export class AlertDialogComponent {
      displayAlertDialog() {
         // >> alert-dialog-code
-        var options = {
+        let options = {
             title: "Race selection",
             message: "Race chosen: Unicorn",
             okButtonText: "OK"

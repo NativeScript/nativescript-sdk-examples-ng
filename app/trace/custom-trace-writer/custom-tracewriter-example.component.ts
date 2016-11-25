@@ -11,7 +11,7 @@ class TimestampConsoleWriter {
         if (!console) {
             return;
         }
-        var msgType = isUndefined(type) ? messageType.log : type;
+        let msgType = isUndefined(type) ? messageType.log : type;
 
         switch (msgType) {
             case messageType.log:

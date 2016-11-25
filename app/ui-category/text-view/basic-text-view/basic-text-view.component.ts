@@ -1,7 +1,7 @@
 // >> textview-edit-disable-code
 import { Component } from "@angular/core";
-import { TextView } from "ui/text-view"
-import { isAndroid } from "platform"
+import { TextView } from "ui/text-view";
+import { isAndroid } from "platform";
 
 @Component({
     selector: 'basic-text-view-component',
@@ -33,7 +33,7 @@ export class BasicTextViewComponent {
     }
 
     submit(args) {
-        var textview: TextView = <TextView>args.object;
+        let textview: TextView = <TextView>args.object;
         if (isAndroid) {
             textview.android.clearFocus();
         }

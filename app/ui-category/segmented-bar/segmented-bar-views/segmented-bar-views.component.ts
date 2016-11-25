@@ -20,8 +20,8 @@ export class SegmentedBarViewsComponent {
     // << (hide)
     constructor() {
         this.Items = [];
-        for (var i = 1; i < 4; i++) {
-            var tmpSegmentedBar: SegmentedBarItem = <SegmentedBarItem>new SegmentedBarItem();
+        for (let i = 1; i < 4; i++) {
+            let tmpSegmentedBar: SegmentedBarItem = <SegmentedBarItem>new SegmentedBarItem();
             tmpSegmentedBar.title = "View " + i;
             this.Items.push(tmpSegmentedBar);
         }

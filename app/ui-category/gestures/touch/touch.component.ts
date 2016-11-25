@@ -12,7 +12,7 @@ export class TouchExampleComponent {
     public coordY: number = 0;
 
     onTouch(args: TouchGestureEventData) {
-        console.log("Touch!")
+        console.log("Touch!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);   
