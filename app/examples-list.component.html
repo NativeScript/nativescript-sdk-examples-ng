@@ -1,7 +1,7 @@
 <ListView [items]="links" class="list-group" exampleTitle toggleNavButton>
     <template let-item="item">
         <GridLayout [nsRouterLink]="item.link" class="list-group-item">
-            <Label [text]="item.title"></Label>
+            <Label [text]="item.title" class="list-group-item-heading"></Label>
         </GridLayout>
     </template>
 </ListView>
