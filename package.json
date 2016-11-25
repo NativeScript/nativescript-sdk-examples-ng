@@ -59,7 +59,7 @@
     "opener": "^1.4.1",
     "rimraf": "^2.5.3",
     "tar.gz": "^1.0.5",
-    "tslint": "^3.13.0",
+    "tslint": "^4.0.0",
     "tns-platform-declarations": "2.2.0",
     "typescript": "^2.0.3",
     "zone.js": "~0.6.21"
@@ -68,7 +68,7 @@
     "pretsc": "npm install",
     "tsc": "tsc",
     "pretslint": "npm run tsc",
-    "tslint": "tslint app/**/*.ts",
+    "tslint": "tslint -C tsconfig.json --project tslint.json",
     "prebuild": "npm run tslint",
     "build": "node scripts/build.js",
     "postbuild": "npm run inject && npm run archive",
