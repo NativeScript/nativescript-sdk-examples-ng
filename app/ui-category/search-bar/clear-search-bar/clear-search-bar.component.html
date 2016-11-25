@@ -2,10 +2,10 @@
     <GridLayout rows="auto *">
         <!-- >> clear-text-search-bar-html -->
         <SearchBar row="0" #sb hint="Search for a country and press enter" (clear)="onClear()" [text]="searchPhrase" (submit)="onSubmit(sb.text)"></SearchBar>
-        <ListView row="1" [items]="myItems" rowHeight="44"  class="m-15 list-group">
+        <ListView row="1" [items]="myItems"  class="list-group">
             <template let-item="item">
                 <GridLayout class="item" class="list-group-item">
-                    <Label [text]="item.name" class="p-5 h3"></Label>
+                    <Label [text]="item.name" class="list-group-item-heading"></Label>
                 </GridLayout>
             </template>
         </ListView>
