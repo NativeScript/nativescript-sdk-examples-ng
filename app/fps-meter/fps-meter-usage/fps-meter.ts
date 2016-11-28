@@ -27,8 +27,7 @@ export class FpsMeterUsageComponent {
             // << stop-fps-meter
             this.status = false;
             this.fpslabeltitle = "Start FPS Meter";
-        }
-        else {
+        } else {
             // >> start-fps-meter
             this.callbackId = addCallback((fps: number, minFps: number) => {
                 this.zone.run(() => {

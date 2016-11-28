@@ -34,7 +34,7 @@ export class ReadExampleComponent {
         this.file = this.folder.getFile(this.fileName);
 
         this.file.writeText(this.fileTextContent)
-            .then(res => {
+            .then(result => {
                 // >> fs-read-text-code
                 this.file.readText()
                     .then(res => {

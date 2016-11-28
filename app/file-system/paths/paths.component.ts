@@ -57,7 +57,7 @@ export class PathsExampleComponent implements OnInit {
 
         // Writing text to the file.
         file.writeText(this.textContentToBeSaved)
-            .then(res => {
+            .then(result => {
                 // Succeeded writing to the file.
                 file.readText().then(res => {
                     // Succeeded read from file.
