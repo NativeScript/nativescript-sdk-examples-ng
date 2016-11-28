@@ -3,8 +3,8 @@ import { Component, OnInit } from "@angular/core";
 import * as fs from "file-system";
 // << fs-paths-import-code
 @Component({
-    selector: 'paths-file-component',
-    templateUrl: 'file-system/paths/paths.component.html'
+    selector: "paths-file-component",
+    templateUrl: "file-system/paths/paths.component.html"
 })
 
 export class PathsExampleComponent implements OnInit {
@@ -67,7 +67,7 @@ export class PathsExampleComponent implements OnInit {
                 });
             }).catch(err => {
                 console.log(err.stack);
-            });;
+            }); ;
         // << fs-paths-create-file-code
     }
 }

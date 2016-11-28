@@ -8,23 +8,28 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: TextFieldExamplesComponent
     },
     {
-        path: 'basic',
+        path: "basic",
         component: BasicTextFieldComponent,
         data: { title: "Basic TextField" }
     },
     {
-        path: 'binding',
+        path: "binding",
         component: TextFieldBindingComponent,
         data: { title: "TextField binding" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [TextFieldExamplesComponent, BasicTextFieldComponent, TextFieldBindingComponent]
 })
 

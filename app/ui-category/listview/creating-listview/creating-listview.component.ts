@@ -1,15 +1,15 @@
 // >> listview-create-code 
-import { Component, ChangeDetectionStrategy }  from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 
 class Country {
     constructor(public name: string) { }
 }
 
 let europianCountries = ["Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", "Czech Republic",
-"Denmark", "Estonia", "Finland", "France","Germany", "Greece", "Hungary", "Ireland", "Italy", 
-"Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands","Poland", "Portugal", "Romania", "Slovakia", 
-"Slovenia","Spain", "Sweden", "United Kingdom"];
-            
+    "Denmark", "Estonia", "Finland", "France", "Germany", "Greece", "Hungary", "Ireland", "Italy",
+    "Latvia", "Lithuania", "Luxembourg", "Malta", "Netherlands", "Poland", "Portugal", "Romania", "Slovakia",
+    "Slovenia", "Spain", "Sweden", "United Kingdom"];
+
 @Component({
     selector: "creating-listview",
     templateUrl: "ui-category/listview/creating-listview/creating-listview.component.html",

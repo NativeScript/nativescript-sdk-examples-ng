@@ -7,8 +7,8 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: 'http-examples-component',
-    templateUrl: 'examples-list.component.html',
+    selector: "http-examples-component",
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

@@ -8,8 +8,8 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: 'extended-userprofile-component',
-    templateUrl: 'examples-list.component.html',
+    selector: "extended-userprofile-component",
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

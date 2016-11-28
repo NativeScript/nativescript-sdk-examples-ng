@@ -27,8 +27,8 @@ class ScreenInfo {
 }
 
 @Component({
-    selector: 'platform-module-component',
-    templateUrl: 'platform/platform-module-example/platform-module-example.html'
+    selector: "platform-module-component",
+    templateUrl: "platform/platform-module-example/platform-module-example.html"
 })
 
 export class PlatformModuleExampleComponent {

@@ -1,4 +1,4 @@
-import { Component}  from "@angular/core";
+import { Component } from "@angular/core";
 import { GridLayout } from "ui/layouts/grid-layout";
 
 // >> long-press-code 
@@ -10,7 +10,7 @@ import { GestureEventData } from "ui/gestures";
 })
 
 export class LongPressExampleComponent {
-   onLongPress(args: GestureEventData) {
+    onLongPress(args: GestureEventData) {
         console.log("LongPress!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);

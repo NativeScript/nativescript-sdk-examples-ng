@@ -7,7 +7,7 @@ import { Page } from "ui/page";
 })
 
 export class ExampleTitleDirective {
-     constructor(route: ActivatedRoute, page:Page) {
+     constructor(route: ActivatedRoute, page: Page) {
         page.actionBar.title = route.snapshot.data["title"];
     }
 }

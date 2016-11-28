@@ -3,11 +3,11 @@ import { Component } from "@angular/core";
 import * as fs from "file-system";
 // << fs-create-import-code
 @Component({
-    selector: 'create-file-component',
-    templateUrl: 'file-system/create/create.component.html'
+    selector: "create-file-component",
+    templateUrl: "file-system/create/create.component.html"
 })
 
-export class CreateExampleComponent{
+export class CreateExampleComponent {
 
     public folderName: string;
     public fileName: string;
@@ -27,7 +27,7 @@ export class CreateExampleComponent{
         this.file = this.folder.getFile((this.fileName || "testFile") + ".txt");
 
         this.file.writeText(this.fileTextContent || "some random content")
-            .then(res => {
+            .then(result => {
                 // Succeeded writing to the file.
                 this.file.readText()
                     .then(res => {

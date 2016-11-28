@@ -3,14 +3,14 @@ import { Component, NgZone, OnInit, OnDestroy } from "@angular/core";
 import * as connectivity from "connectivity";
 // << connectivity-import-code
 @Component({
-    selector: 'using-connectivity-component',
-    templateUrl: 'connectivity/using-connectivity/using-connectivity.component.html'
+    selector: "using-connectivity-component",
+    templateUrl: "connectivity/using-connectivity/using-connectivity.component.html"
 })
 
 export class UsingConnectivityExampleComponent implements OnInit, OnDestroy {
     public connectionType: string;
 
-    constructor(private zone: NgZone) { 
+    constructor(private zone: NgZone) {
         // >> connectivity-gettype-code
         let connectionType = connectivity.getConnectionType();
         switch (connectionType) {
@@ -22,6 +22,8 @@ export class UsingConnectivityExampleComponent implements OnInit, OnDestroy {
                 break;
             case connectivity.connectionType.mobile:
                 this.connectionType = "Mobile";
+                break;
+            default:
                 break;
         }
         // << connectivity-gettype-code
@@ -43,6 +45,8 @@ export class UsingConnectivityExampleComponent implements OnInit, OnDestroy {
                     case connectivity.connectionType.mobile:
                         this.connectionType = "Mobile";
                         console.log("Connection type changed to mobile.");
+                        break;
+                    default:
                         break;
                 }
             });

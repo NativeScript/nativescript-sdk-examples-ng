@@ -3,12 +3,12 @@ import { Component } from "@angular/core";
 import * as fs from "file-system";
 // << fs-delete-import-code
 @Component({
-    selector: 'delete-file-component',
-    templateUrl: 'file-system/delete/delete.component.html'
+    selector: "delete-file-component",
+    templateUrl: "file-system/delete/delete.component.html"
 })
 
 export class DeleteExampleComponent {
-    
+
     public documents: fs.Folder;
     public file: fs.File;
     public myFolder: fs.Folder;
@@ -38,7 +38,7 @@ export class DeleteExampleComponent {
     }
 
     public onDeleteFolder() {
-        if(this.myFolder) {
+        if (this.myFolder) {
             // >> fs-delete-folder-code
             // Remove a folder and recursively its content.
             this.myFolder.remove()
@@ -55,7 +55,7 @@ export class DeleteExampleComponent {
     }
 
     public onClearFolder() {
-        if(this.myFolder) {
+        if (this.myFolder) {
             // >> fs-clear-folder-code
             this.myFolder.clear()
                 .then(res =>  {

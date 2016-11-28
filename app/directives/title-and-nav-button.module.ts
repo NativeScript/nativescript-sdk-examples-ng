@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
 import { ExampleTitleDirective } from "./example.directive";
 import { ToggleNavButtonDirective } from "./toggle-nav-button.directive";
 
@@ -7,4 +7,4 @@ import { ToggleNavButtonDirective } from "./toggle-nav-button.directive";
     exports: [ExampleTitleDirective, ToggleNavButtonDirective]
 })
 
-export class TitleAndNavButtonModule { }
+export class TitleAndNavButtonModule { } 

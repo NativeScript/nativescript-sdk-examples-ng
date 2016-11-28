@@ -3,7 +3,7 @@ import { Directive, OnInit } from "@angular/core";
 import { EventData } from "data/observable";
 import { NavigationButton } from "ui/action-bar";
 import { Page } from "ui/page";
-import { RouterExtensions } from 'nativescript-angular/router';
+import { RouterExtensions } from "nativescript-angular/router";
 import app = require("application");
 
 @Directive({
@@ -29,8 +29,7 @@ export class ToggleNavButtonDirective implements OnInit {
             navigationButton.on("tap", (args: EventData) => {
                 this.routerExtensions.backToPreviousPage();
             });
-        }
-        else if (app.ios) {
+        } else if (app.ios) {
             navigationButton.text = "";
         }
 

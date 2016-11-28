@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
 import {ObservableArray} from "data/observable-array";
 import {mockedGroupDataArray, GroupFooter, GroupTitle} from "../mock-dataItems";
@@ -12,8 +12,8 @@ import {mockedGroupDataArray, GroupFooter, GroupTitle} from "../mock-dataItems";
 export class GroupedTwoLinesListViewExampleComponent implements OnInit {
     public countries: Array<any>;
 
-    constructor(){
-        this.countries=[];
+    constructor() {
+        this.countries = [];
          for (let i = 0; i < mockedGroupDataArray.length; i++) {
             this.countries.push(mockedGroupDataArray[i]);
         }
@@ -37,6 +37,6 @@ export class GroupedTwoLinesListViewExampleComponent implements OnInit {
 
     onItemTapThirdList(args: ItemEventData) {
         console.log(args.index);
-    }   
+    }
 }
 // << grouped-listview-two-lines-code

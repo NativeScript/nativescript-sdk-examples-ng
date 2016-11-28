@@ -2,7 +2,7 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: 'ngswitch-directive',
+    selector: "ngswitch-directive",
     templateUrl: "ui-category/ng-directives/ngswitch-directive/ngswitch-directive.component.html",
 })
 

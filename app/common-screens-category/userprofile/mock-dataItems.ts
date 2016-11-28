@@ -1,21 +1,19 @@
+/* tslint:disable:max-line-length */
 export class GroupTitle {
     constructor(public title: string) { }
 }
 
 let mockedDescription = "Cras ut turpis mollis, vestibulum leo a, eleifend enim. Nam rutrum justo vestibulum dignissim tempor. Cras ac consequat ante. Nullam malesuada vulputate leo fringilla consectetur. In ligula felis, pharetra nec lacus ornare, laoreet pellentesque odio.";
-
 let mockedDescriptionType2 = "Nunc vel augue quam. Phasellus pharetra lobortis nulla, at tincidunt augue consectetur sit amet. Praesent eget tellus diam. Suspendisse potenti. Praesent commodo lacinia consectetur. Pellentesque lacinia accumsan semper.";
-
 let mockedDescriptionType3 = "Nulla convallis urna eu est tristique, in ullamcorper sapien rutrum. Donec dictum tortor leo, ac pharetra leo fringilla vitae. Cras pellentesque ac arcu sed auctor. Aenean vitae nisl ut diam imperdiet sagittis. Maecenas eget scelerisque orci, vitae maximus ante.";
-
 let mockedDescriptionType4 = "Donec dictum tortor leo, ac pharetra leo fringilla vitae. Cras pellentesque ac arcu sed auctor.";
 
 export class Country {
     constructor(public name: string, public imageSrc: string, public continent: string, public desc: string) { }
 }
 
-export class GroupFooter{
-    constructor(public description: string) { }   
+export class GroupFooter {
+    constructor(public description: string) { }
 }
 
 export let mockedDataArray = [

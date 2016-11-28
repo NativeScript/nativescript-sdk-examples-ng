@@ -3,7 +3,7 @@ import { Component, OnInit } from "@angular/core";
 import application = require("application");
 
 @Component({
-    selector: 'ngif-directive-advanced',
+    selector: "ngif-directive-advanced",
     templateUrl: "ui-category/ng-directives/ngif-directive-advanced/ngif-directive-advanced.component.html",
 })
 

@@ -1,5 +1,5 @@
-<StackLayout  exampleTitle toggleNavButton>
-    <GridLayout >
+<StackLayout exampleTitle toggleNavButton>
+    <GridLayout>
         <ListView [items]="myItems | async" class="list-group">
             <template let-item="item" let-i="index" let-odd="odd" let-even="even">
                 <GridLayout class="list-group-item" [class.odd]="odd" [class.even]="even">

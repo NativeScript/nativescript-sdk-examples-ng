@@ -5,12 +5,17 @@ import { ExamplesListComponent } from "./examples-list.component";
 import { TitleAndNavButtonModule } from "./directives/title-and-nav-button.module";
 
 export const routerConfig = [{
-    path: '',
+    path: "",
     component: ExamplesListComponent
 }];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [ExamplesListComponent]
 })
 

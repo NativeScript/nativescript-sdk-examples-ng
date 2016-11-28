@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit } from '@angular/core';
+import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
 import { mockedGroupDataArray }  from "../mock-dataItems";
 
@@ -33,6 +33,6 @@ export class MultiLineGroupedListViewExampleComponent implements OnInit {
 
     onItemTapThirdList(args: ItemEventData) {
         console.log(args.index);
-    }   
+    }
 }
 // << multi-line-grouped-code

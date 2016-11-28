@@ -2,8 +2,8 @@ import { Component } from "@angular/core";
 import dialogs = require("ui/dialogs");
 
 @Component({
-    selector: 'login-dialog-component',
-    templateUrl: 'ui-category/dialogs/login-dialog/login-dialog.component.html'
+    selector: "login-dialog-component",
+    templateUrl: "ui-category/dialogs/login-dialog/login-dialog.component.html"
 })
 
 export class LoginDialogComponent {
@@ -13,7 +13,7 @@ export class LoginDialogComponent {
             title: "Login",
             message: "Login",
             username: "john_doe",
-            password: "", 
+            password: "",
             okButtonText: "Ok",
             cancelButtonText: "Cancel"
         };

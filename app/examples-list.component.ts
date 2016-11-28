@@ -42,17 +42,16 @@ let mainMenuLinks = [
     new Link("Fetch", "/fetch"),
     new Link("File System", "/file-system"),
     new Link("Modal page", "/modal-page"),
-
     new Link("ListView (extended examples)", "/extended-listview"),
     new Link("DataEntry (extended examples)", "/dataentry"),
     new Link("User Profile (extended examples)", "/userprofile"),
     new Link("Content Screens", "/content-screens"),
-    new Link("Camera", "/camera"),  
+    new Link("Camera", "/camera")
 ];
 
 @Component({
     selector: "menulistview",
-    templateUrl: 'examples-list.component.html',
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

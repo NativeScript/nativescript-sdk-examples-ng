@@ -3,9 +3,9 @@ import { Component } from "@angular/core";
 import { setInterval, setTimeout, clearInterval } from "timer";
 
 @Component({
-    selector: 'set-interval',
-    styleUrls: ['timer/set-interval/setinterval-example.css'],
-    templateUrl: 'timer/set-interval/setinterval-example.html'
+    selector: "set-interval",
+    styleUrls: ["timer/set-interval/setinterval-example.css"],
+    templateUrl: "timer/set-interval/setinterval-example.html"
 })
 
 export class SetIntervalComponent {
@@ -29,8 +29,7 @@ export class SetIntervalComponent {
             clearInterval(this.id);
             this.status = false;
             this.buttonText = "Enable color change";
-        }
-        else {
+        } else {
             let that = this;
             this.id = setInterval(() => {
                 let randNumber = Math.floor(Math.random() * (that.color.length));

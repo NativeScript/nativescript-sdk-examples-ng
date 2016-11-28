@@ -22,7 +22,7 @@ export class UsingSelectedIndexExampleComponent {
     }
 
     public selectedIndexChanged(picker) {
-        console.log('picker selection: ' + picker.selectedIndex);
+        console.log("picker selection: " + picker.selectedIndex);
     }
 }
 // << using-selected-index-code  

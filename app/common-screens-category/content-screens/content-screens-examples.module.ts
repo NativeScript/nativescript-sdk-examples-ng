@@ -7,18 +7,23 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ContentScreensExamplesComponent
     },
     {
-        path: 'content-scrollable',
+        path: "content-scrollable",
         component: ContentScrollablePageExampleComponent,
         data: { title: "Content scrollable" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [ContentScreensExamplesComponent, ContentScrollablePageExampleComponent]
 })
 

@@ -2,8 +2,8 @@ import { Component } from "@angular/core";
 import dialogs = require("ui/dialogs");
 
 @Component({
-    selector: 'prompt-dialog-component',
-    templateUrl: 'ui-category/dialogs/prompt-dialog/prompt-dialog.component.html'
+    selector: "prompt-dialog-component",
+    templateUrl: "ui-category/dialogs/prompt-dialog/prompt-dialog.component.html"
 })
 
 export class PromptDialogComponent {
@@ -12,7 +12,7 @@ export class PromptDialogComponent {
         let options = {
             title: "Name",
             defaultText: "Enter your name",
-            inputType: dialogs.inputType.text, 
+            inputType: dialogs.inputType.text,
             okButtonText: "Ok",
             cancelButtonText: "Cancel"
         };

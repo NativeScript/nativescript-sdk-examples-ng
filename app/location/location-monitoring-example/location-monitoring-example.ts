@@ -5,8 +5,8 @@ import { Location, enableLocationRequest, watchLocation, clearWatch } from "nati
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
-    selector: 'location-monitoring-example',
-    templateUrl: 'location/location-monitoring-example/location-monitoring-example.html'
+    selector: "location-monitoring-example",
+    templateUrl: "location/location-monitoring-example/location-monitoring-example.html"
 })
 
 export class LocationMonitoringExampleComponent {
@@ -43,7 +43,7 @@ export class LocationMonitoringExampleComponent {
                         this.monitor_speed = (loc.speed).toFixed(2);
                     });
                 }
-            },(e) => {
+            }, (e) => {
                 console.log("Error: " + e.message);
             }, this.options);
 

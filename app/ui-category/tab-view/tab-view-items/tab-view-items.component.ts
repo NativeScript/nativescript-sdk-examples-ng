@@ -5,8 +5,8 @@ import { Label } from "ui/label";
 import { TabView, SelectedIndexChangedEventData } from "ui/tab-view";
 
 @Component({
-    selector: 'tab-view-items-component',
-    templateUrl: 'ui-category/tab-view/tab-view-items/tab-view-items.component.html',
+    selector: "tab-view-items-component",
+    templateUrl: "ui-category/tab-view/tab-view-items/tab-view-items.component.html",
 })
 
 export class TabViewItemsComponent {
@@ -45,6 +45,5 @@ export class TabViewItemsComponent {
         alert("Tab View selected index: " + res);
 
     }
-
 }
 // << add-items-code

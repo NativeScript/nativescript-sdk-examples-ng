@@ -7,11 +7,10 @@
     </FlexboxLayout>
 
     <GridLayout row="1" [ngSwitch]="color" class="p-15 m-t-15" height="280" borderRadius="2">
-        <GridLayout *ngSwitchCase="'purple'" backgroundColor="#8C489F" ></GridLayout>
-        <GridLayout *ngSwitchCase="'blue'" backgroundColor="#0077AF" ></GridLayout>
-        <GridLayout *ngSwitchCase="'yellow'" backgroundColor="#FFFF66" ></GridLayout>
-        <GridLayout *ngSwitchDefault backgroundColor="gray" ></GridLayout>
+        <GridLayout *ngSwitchCase="'purple'" backgroundColor="#8C489F"></GridLayout>
+        <GridLayout *ngSwitchCase="'blue'" backgroundColor="#0077AF"></GridLayout>
+        <GridLayout *ngSwitchCase="'yellow'" backgroundColor="#FFFF66"></GridLayout>
+        <GridLayout *ngSwitchDefault backgroundColor="gray"></GridLayout>
     </GridLayout>
     <!-- << using-ngswitch-html -->
 </GridLayout>
-

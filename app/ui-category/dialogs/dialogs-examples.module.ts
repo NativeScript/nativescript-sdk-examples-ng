@@ -11,39 +11,51 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: DialogsExamplesComponent
     },
     {
-        path: 'action',
+        path: "action",
         component: ActionDialogComponent,
         data: { title: "Action dialogs" }
     },
     {
-        path: 'alert',
+        path: "alert",
         component: AlertDialogComponent,
         data: { title: "Alert dialogs" }
     },
     {
-        path: 'confirm',
+        path: "confirm",
         component: ConfirmDialogComponent,
         data: { title: "Confirm dialogs" }
     },
     {
-        path: 'login',
+        path: "login",
         component: LoginDialogComponent,
         data: { title: "Login dialogs" }
     },
     {
-        path: 'prompt',
+        path: "prompt",
         component: PromptDialogComponent,
         data: { title: "Prompt dialogs" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [DialogsExamplesComponent, ActionDialogComponent, AlertDialogComponent, ConfirmDialogComponent, LoginDialogComponent, PromptDialogComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        DialogsExamplesComponent,
+        ActionDialogComponent,
+        AlertDialogComponent,
+        ConfirmDialogComponent,
+        LoginDialogComponent,
+        PromptDialogComponent
+    ]
 })
 
 export class DialogsExamplesModule {

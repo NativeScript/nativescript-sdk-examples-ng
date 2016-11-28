@@ -22,7 +22,7 @@ export class CreatingListPickerComponent {
     }
 
     public selectedIndexChanged(picker) {
-        console.log('picker selection: ' + picker.selectedIndex);
+        console.log("picker selection: " + picker.selectedIndex);
         this.picked = this.pokemons[picker.selectedIndex];
     }
 }

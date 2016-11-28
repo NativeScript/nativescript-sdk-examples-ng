@@ -18,7 +18,7 @@ export class PinchExampleComponent {
         console.log("Pinch!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
-        console.log("Event name: " + args.eventName);   
+        console.log("Event name: " + args.eventName);
         console.log("Pinch scale: " + args.scale + " state: " + args.state);
 
         this.scale = args.scale;
@@ -34,6 +34,6 @@ export class PinchExampleComponent {
             grid.scaleY = newScale;
         }
          // << (hide)
-    }    
+    }
 }
 // << pinch-code

@@ -1,7 +1,7 @@
 // >> custom-directive-code  
-import {Component, Directive, ViewContainerRef, TemplateRef, Inject} from '@angular/core';
-import {Device, platformNames} from "platform";
-import {DEVICE} from "nativescript-angular/platform-providers";
+import { Component, Directive, ViewContainerRef, TemplateRef, Inject } from "@angular/core";
+import { Device, platformNames } from "platform";
+import { DEVICE } from "nativescript-angular/platform-providers";
 
 @Directive({ selector: "[ifAndroid]" })
 export class IfAndroidDirective {
@@ -22,7 +22,7 @@ export class IfIosDirective {
 }
 
 @Component({
-    selector: 'create-custom-directive',
+    selector: "create-custom-directive",
     templateUrl: "ui-category/ng-directives/create-custom-directive/create-custom-directive.component.html",
 })
 

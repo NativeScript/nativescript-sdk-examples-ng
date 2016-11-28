@@ -9,29 +9,39 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ExtendedUserProfileExamplesComponent
     },
     {
-        path: 'user-feed',
+        path: "user-feed",
         component: UserFeedExampleComponent,
         data: { title: "User feed" }
     },
     {
-        path: 'user-feed-images',
+        path: "user-feed-images",
         component: UserFeedImagesExampleComponent,
         data: { title: "User feed images" }
     },
     {
-        path: 'user-settings-menu',
+        path: "user-settings-menu",
         component: UserSettingsMenuExampleComponent,
         data: { title: "User settings menu" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ExtendedUserProfileExamplesComponent, UserFeedExampleComponent, UserFeedImagesExampleComponent, UserSettingsMenuExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ExtendedUserProfileExamplesComponent,
+        UserFeedExampleComponent,
+        UserFeedImagesExampleComponent,
+        UserSettingsMenuExampleComponent
+    ]
 })
 
 export class ExtendedUserProfileExamplesModule {

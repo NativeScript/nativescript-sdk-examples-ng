@@ -10,22 +10,32 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: TimerExamplesComponent
     },
     {
-        path: 'setinterval',
+        path: "setinterval",
         component: SetIntervalComponent
     },
     {
-        path: 'settimeout',
+        path: "settimeout",
         component: SetTimeoutComponent
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [TimerExamplesComponent, SetIntervalComponent, SetTimeoutComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptFormsModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        TimerExamplesComponent,
+        SetIntervalComponent,
+        SetTimeoutComponent
+    ]
 })
 
 export class TimerExamplesModule {

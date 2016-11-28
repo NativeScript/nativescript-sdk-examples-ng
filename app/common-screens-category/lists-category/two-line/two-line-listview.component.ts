@@ -9,13 +9,13 @@ import { mockedDataArray }  from "../mock-dataItems";
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TwoLineListViewExampleComponent implements OnInit {
-    public countries:ObservableArray<any>;
+    public countries: ObservableArray<any>;
 
-    constructor(){
+    constructor() {
         this.countries = new ObservableArray(mockedDataArray);
     }
 
-    ngOnInit(){}
+    ngOnInit() {}
 
     onItemTapFirstList(args) {
         console.log(args.index);
@@ -27,6 +27,6 @@ export class TwoLineListViewExampleComponent implements OnInit {
 
     onItemTapThirdList(args) {
         console.log(args.index);
-    }   
+    }
 }
 // << ext-listview-two-lines-code

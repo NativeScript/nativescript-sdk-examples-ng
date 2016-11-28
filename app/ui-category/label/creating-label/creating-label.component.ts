@@ -9,9 +9,9 @@ export class CreatingLabelComponent {
 
     public oneway = "One way bound label";
     public twoway = "Two way bound label";
-    public counter : number;
+    public counter: number;
 
-    constructor() { 
+    constructor() {
         this.counter = 0;
     }
 

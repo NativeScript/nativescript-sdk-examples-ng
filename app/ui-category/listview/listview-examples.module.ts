@@ -10,34 +10,46 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ListViewExamplesComponent
     },
     {
-        path: 'creating-list-view',
+        path: "creating-list-view",
         component: CreatingListViewComponent,
         data: { title: "Create ListView" }
     },
     {
-        path: 'customizing-list-view',
+        path: "customizing-list-view",
         component: CustomizingListViewComponent,
         data: { title: "Customizing ListView" }
     },
     {
-        path: 'using-async-pipe',
+        path: "using-async-pipe",
         component: UsingAsyncPipeComponent,
         data: { title: "Using async pipe" }
     },
     {
-        path: 'using-item-template',
+        path: "using-item-template",
         component: UsingItemTemplateComponent,
         data: { title: "Using item template" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ItemComponent, ListViewExamplesComponent, CreatingListViewComponent, CustomizingListViewComponent, UsingAsyncPipeComponent, UsingItemTemplateComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ItemComponent,
+        ListViewExamplesComponent,
+        CreatingListViewComponent,
+        CustomizingListViewComponent,
+        UsingAsyncPipeComponent,
+        UsingItemTemplateComponent
+    ]
 })
 
 export class ListViewExamplesModule {

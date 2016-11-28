@@ -1,8 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: 'fetch-get-component',
-    templateUrl: 'fetch/fetch-get/fetch-get.component.html'
+    selector: "fetch-get-component",
+    templateUrl: "fetch/fetch-get/fetch-get.component.html"
 })
 
 export class FetchGetExampleComponent implements OnInit {
@@ -21,31 +21,31 @@ export class FetchGetExampleComponent implements OnInit {
     ngOnInit() {
         // >> fetch-res-url-code
         fetch("https://httpbin.org/get", {
-            method: 'get'
+            method: "get"
         }).then(res => {
             // Argument (res) is Response object!
         }).catch(err => {
             // Error 
-        });   
+        });
         // << fetch-res-url-code 
 
         // >> fetch-res-string-code
         fetch("https://httpbin.org/get", {
-            method: 'get'
-        }).then(response => { 
-            return response.text(); 
+            method: "get"
+        }).then(response => {
+            return response.text();
         }).then(res => {
             // Argument (res) is string!
         }).catch(err => {
             // Error 
-        });   
+        });
         // << fetch-res-string-code 
- 
+
         // >> fetch-res-json-code
         fetch("https://httpbin.org/get", {
-            method: 'get'
-        }).then(response => { 
-            return response.json(); 
+            method: "get"
+        }).then(response => {
+            return response.json();
         }).then(res => {
             // Argument (res) is JSON Object!
             console.log("Response json:");
@@ -61,43 +61,43 @@ export class FetchGetExampleComponent implements OnInit {
 
         }).catch(err => {
             // Error 
-        });   
+        });
         // << fetch-res-json-code 
 
         // >> fetch-res-form-code
         fetch("https://httpbin.org/get", {
-            method: 'get'
-        }).then(response => { 
-            return response.formData(); 
+            method: "get"
+        }).then(response => {
+            return response.formData();
         }).then(res => {
             // Argument (res) is FormData object!
         }).catch(err => {
             // Error 
-        });   
+        });
         // << fetch-res-form-code 
 
         // >> fetch-res-status-code
         fetch("https://httpbin.org/get", {
-            method: 'get'
-        }).then(response => { 
+            method: "get"
+        }).then(response => {
             this.status = response.status;
             this.statusText = response.statusText;
         }).catch(err => {
             // Error 
-        });   
+        });
         // << fetch-res-status-code 
 
         // >> fetch-res-headers-code
         fetch("https://httpbin.org/get", {
-            method: 'get'
-        }).then(response => { 
+            method: "get"
+        }).then(response => {
             this.typeHeader = response.headers.get("Content-Type");
             this.dateHeader = response.headers.get("Date");
             this.connectionHeader = response.headers.get("Connection");
             this.serverHeader = response.headers.get("Server");
         }).catch(err => {
             // Error 
-        });   
+        });
         // << fetch-res-headers-code 
     }
 }

@@ -6,8 +6,8 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: 'time-picker-component',
-    templateUrl: 'examples-list.component.html',
+    selector: "time-picker-component",
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

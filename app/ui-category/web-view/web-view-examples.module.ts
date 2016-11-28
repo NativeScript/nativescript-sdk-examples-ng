@@ -8,23 +8,28 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: WebViewExamplesComponent
     },
     {
-        path: 'basic',
+        path: "basic",
         component: BasicWebViewComponent,
         data: { title: "Basic WebView" }
     },
     {
-        path: 'html',
+        path: "html",
         component: WebViewHtmlComponent,
         data: { title: "HTML as source of WebView" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [WebViewExamplesComponent, BasicWebViewComponent, WebViewHtmlComponent]
 })
 

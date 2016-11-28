@@ -9,29 +9,39 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: SwitchExamplesComponent
     },
     {
-        path: 'basic',
+        path: "basic",
         component: BasicSwitchComponent,
         data: { title: "Basic Switch" }
     },
     {
-        path: 'disable',
+        path: "disable",
         component: DisableSwitchComponent,
         data: { title: "Disable Switch component" }
     },
     {
-        path: 'styling',
+        path: "styling",
         component: StylingSwitchComponent,
         data: { title: "Styling Switch component" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [SwitchExamplesComponent, BasicSwitchComponent, DisableSwitchComponent, StylingSwitchComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        SwitchExamplesComponent,
+        BasicSwitchComponent,
+        DisableSwitchComponent,
+        StylingSwitchComponent
+    ]
 })
 
 export class SwitchExamplesModule {

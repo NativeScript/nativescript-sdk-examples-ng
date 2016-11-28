@@ -1,11 +1,11 @@
 // >> slider-setting-default-values
 import { Component } from "@angular/core";
 @Component({
-    selector: 'slider-access-value-component',
+    selector: "slider-access-value-component",
     // >> (hide)
-    styleUrls: ['ui-category/slider/style.css'],
+    styleUrls: ["ui-category/slider/style.css"],
     // << (hide)
-    templateUrl: 'ui-category/slider/slider-access-value-code/slider-access-value.component.html',
+    templateUrl: "ui-category/slider/slider-access-value-code/slider-access-value.component.html",
 })
 
 export class SliderAccessValueComponent {
@@ -24,6 +24,5 @@ export class SliderAccessValueComponent {
             "Fifth Slider: " + this.sliderValue5;
         alert(alertView);
     }
-
 }
 // << slider-setting-default-values

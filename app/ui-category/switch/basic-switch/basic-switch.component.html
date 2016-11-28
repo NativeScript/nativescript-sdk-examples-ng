@@ -1,11 +1,11 @@
-<StackLayout  exampleTitle toggleNavButton>
+<StackLayout exampleTitle toggleNavButton>
     <StackLayout class="example-container">
         <!-- >> switch-binding-html -->
         <GridLayout rows="auto auto" columns="* *" class="m-5">
             <Label class="h3 m-15" [text]="firstSwitchState" textWrap="true" row="0" col="0"></Label>
-            <Switch class="m-15" #sw1 [checked]="FirstSwitchValue" (checkedChange)="FirstCheckChange(sw1.checked)" row="0" col="1"></Switch>
+            <Switch class="m-15" #sw1 [checked]="fSwitchValue" (checkedChange)="FirstCheckChange(sw1.checked)" row="0" col="1"></Switch>
             <Label class="h3 m-15" [text]="secondSwitchState" textWrap="true" row="1" col="0"></Label>
-            <Switch class="m-15" #sw2 [checked]="SecondSwitchValue" (checkedChange)="SecondCheckChange(sw2.checked)" row="1" col="1"></Switch>
+            <Switch class="m-15" #sw2 [checked]="sSwitchValue" (checkedChange)="SecondCheckChange(sw2.checked)" row="1" col="1"></Switch>
         </GridLayout>
         <!-- << switch-binding-html -->
     </StackLayout>

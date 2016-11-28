@@ -6,8 +6,8 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: 'formatted-string-component',
-    templateUrl: 'examples-list.component.html',
+    selector: "formatted-string-component",
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

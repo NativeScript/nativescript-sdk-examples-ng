@@ -4,11 +4,11 @@ import { TextView } from "ui/text-view";
 import { isAndroid } from "platform";
 
 @Component({
-    selector: 'basic-text-view-component',
+    selector: "basic-text-view-component",
     // >> (hide)
     styleUrls: ["ui-category/text-view/basic-text-view/style.css"],
     // << (hide)
-    templateUrl: 'ui-category/text-view/basic-text-view/basic-text-view.component.html'
+    templateUrl: "ui-category/text-view/basic-text-view/basic-text-view.component.html"
 })
 
 export class BasicTextViewComponent {
@@ -21,8 +21,7 @@ export class BasicTextViewComponent {
         if (this.editState) {
             this.editState = false;
             this.buttonText = "Enable editting of TextView";
-        }
-        else {
+        } else {
             this.editState = true;
             this.buttonText = "Disable editting of TextView";
         }
@@ -38,6 +37,5 @@ export class BasicTextViewComponent {
             textview.android.clearFocus();
         }
     }
-
 }
 // << textview-edit-disable-code

@@ -14,55 +14,69 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: LayoutsExamplesComponent
     },
     {
-        path: 'absolute-layout',
+        path: "absolute-layout",
         component: AbsoluteLayoutComponent,
         data: { title: "Absolute layout" }
     },
     {
-        path: 'dock-layout',
+        path: "dock-layout",
         component: DockLayoutComponent,
         data: { title: "Dock layout" }
     },
     {
-        path: 'flexbox-layout-one',
+        path: "flexbox-layout-one",
         component: FlexboxLayoutComponentOne,
         data: { title: "Flexbox layout (flexDirection)" }
     },
     {
-        path: 'flexbox-layout-two',
+        path: "flexbox-layout-two",
         component: FlexboxLayoutComponentTwo,
         data: { title: "Flexbox layout (order, flexGrow and flexShrink)" }
     },
     {
-        path: 'flexbox-layout-three',
+        path: "flexbox-layout-three",
         component: FlexboxLayoutComponentThree,
         data: { title: "Flexbox layout (flexWrap, justifyContent)" }
     },
     {
-        path: 'grid-layout',
+        path: "grid-layout",
         component: GridLayoutComponent,
         data: { title: "Grid layout" }
     },
     {
-        path: 'stack-layout',
+        path: "stack-layout",
         component: StackLayoutComponent,
         data: { title: "Stack layout" }
     },
     {
-        path: 'wrap-layout',
+        path: "wrap-layout",
         component: WrapLayoutComponent,
         data: { title: "Wrap layout" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [LayoutsExamplesComponent, AbsoluteLayoutComponent, DockLayoutComponent, FlexboxLayoutComponentOne, FlexboxLayoutComponentTwo,
-    FlexboxLayoutComponentThree, GridLayoutComponent, StackLayoutComponent, WrapLayoutComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        LayoutsExamplesComponent,
+        AbsoluteLayoutComponent,
+        DockLayoutComponent,
+        FlexboxLayoutComponentOne,
+        FlexboxLayoutComponentTwo,
+        FlexboxLayoutComponentThree,
+        GridLayoutComponent,
+        StackLayoutComponent,
+        WrapLayoutComponent
+    ]
 })
 
 export class LayoutsExamplesModule {

@@ -3,8 +3,8 @@ import { Component } from "@angular/core";
 import { TimePicker } from "ui/time-picker";
 
 @Component({
-    selector: 'time-picker-component',
-    templateUrl: 'ui-category/time-picker/configure-time-picker/configure-time-picker.component.html'
+    selector: "time-picker-component",
+    templateUrl: "ui-category/time-picker/configure-time-picker/configure-time-picker.component.html"
 })
 
 export class ConfigureTimePickerComponent {

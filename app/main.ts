@@ -9,7 +9,7 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 // << (hide)
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
-import { registerElement } from 'nativescript-angular/element-registry';
+import { registerElement } from "nativescript-angular/element-registry";
 import { ModalViewComponent } from "./modal-page/sample-modal-page-module-example/modal-view";
 import { TnsGoogleMaps } from "nativescript-googlemaps";
 import { isIOS } from "platform";

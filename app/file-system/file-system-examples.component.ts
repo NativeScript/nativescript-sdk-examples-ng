@@ -10,8 +10,8 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: 'file-system-component',
-    templateUrl: 'examples-list.component.html',
+    selector: "file-system-component",
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

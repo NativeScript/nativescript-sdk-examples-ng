@@ -8,24 +8,33 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ProgressExamplesComponent
     },
     {
-        path: 'creating-progress',
+        path: "creating-progress",
         component: CreatingProgressComponent,
         data: { title: "Create Progress" }
     },
     {
-        path: 'setting-progress',
+        path: "setting-progress",
         component: SettingProgressComponent,
         data: { title: "Set up Progress" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ProgressExamplesComponent, CreatingProgressComponent, SettingProgressComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ProgressExamplesComponent,
+        CreatingProgressComponent,
+        SettingProgressComponent
+    ]
 })
 
 export class ProgressExamplesModule {

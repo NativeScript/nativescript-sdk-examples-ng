@@ -10,8 +10,8 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: 'dialog-component',
-    templateUrl: 'examples-list.component.html',
+    selector: "dialog-component",
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

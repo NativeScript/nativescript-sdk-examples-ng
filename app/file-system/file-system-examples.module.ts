@@ -11,39 +11,51 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: FileSystemExamplesComponent
     },
     {
-        path: 'create',
+        path: "create",
         component: CreateExampleComponent,
         data: { title: "Create" }
     },
     {
-        path: 'delete',
+        path: "delete",
         component: DeleteExampleComponent,
         data: { title: "Delete" }
     },
     {
-        path: 'paths',
+        path: "paths",
         component: PathsExampleComponent,
         data: { title: "Paths" }
     },
     {
-        path: 'read',
+        path: "read",
         component: ReadExampleComponent,
         data: { title: "Read" }
     },
     {
-        path: 'update',
+        path: "update",
         component: UpdateExampleComponent,
         data: { title: "Update" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [FileSystemExamplesComponent, CreateExampleComponent, DeleteExampleComponent,PathsExampleComponent,ReadExampleComponent,UpdateExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        FileSystemExamplesComponent,
+        CreateExampleComponent,
+        DeleteExampleComponent,
+        PathsExampleComponent,
+        ReadExampleComponent,
+        UpdateExampleComponent
+    ]
 })
 
 export class FetchExamplesModule {

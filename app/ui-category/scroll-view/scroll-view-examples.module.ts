@@ -9,29 +9,39 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ScrollViewExamplesComponent
     },
     {
-        path: 'horizontal',
+        path: "horizontal",
         component: ScrollViewHorizontalComponent,
         data: { title: "Horizontal orientation" }
     },
     {
-        path: 'vertical',
+        path: "vertical",
         component: ScrollViewVerticalComponent,
         data: { title: "Vertical orientation" }
     },
     {
-        path: 'scroll-event',
+        path: "scroll-event",
         component: ScrollEventComponent,
         data: { title: "Scroll event" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ScrollViewExamplesComponent, ScrollViewHorizontalComponent, ScrollViewVerticalComponent, ScrollEventComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ScrollViewExamplesComponent,
+        ScrollViewHorizontalComponent,
+        ScrollViewVerticalComponent,
+        ScrollEventComponent
+    ]
 })
 
 export class ScrollViewExamplesModule {

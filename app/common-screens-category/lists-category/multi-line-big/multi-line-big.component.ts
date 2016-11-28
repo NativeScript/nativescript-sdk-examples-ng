@@ -34,13 +34,13 @@ export class MultiLineBigListViewExampleComponent implements OnInit {
 
     onItemTapThirdList(args: ItemEventData) {
         console.log(args.index);
-    }  
+    }
 
     onSetupItemView(args: SetupItemViewArgs) {
         // further customisation can be achived with SetupItemViewArgs
         // example for creating a variable for each third element
         args.view.context.third = (args.index % 3 === 0);
-    }  
+    }
 
     checkType(value) {
         // get the class name e.g. GroupTitle or Country

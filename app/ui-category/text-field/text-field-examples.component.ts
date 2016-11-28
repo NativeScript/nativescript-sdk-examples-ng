@@ -7,8 +7,8 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: 'text-field-component',
-    templateUrl: 'examples-list.component.html',
+    selector: "text-field-component",
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

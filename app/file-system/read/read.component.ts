@@ -1,11 +1,12 @@
+
 import { Component } from "@angular/core";
 import * as imageSource from "image-source";
 // >> fs-read-import-code
 import * as fs from "file-system";
 // << fs-read-import-code
 @Component({
-    selector: 'read-file-component',
-    templateUrl: 'file-system/read/read.component.html'
+    selector: "read-file-component",
+    templateUrl: "file-system/read/read.component.html"
 })
 
 export class ReadExampleComponent {
@@ -55,7 +56,9 @@ export class ReadExampleComponent {
                     // console.log(entity.name);
                     // console.log(entity.path);
                     // console.log(entity.lastModified);
-                    this.folderEntities.push(new FolderEntity(entity.name, entity.path, entity.lastModified.toString()));
+                    this.folderEntities.push(
+                        new FolderEntity(entity.name, entity.path, entity.lastModified.toString())
+                    );
                 });
             }).catch(err => {
                 // Failed to obtain folder's contents.

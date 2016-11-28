@@ -6,11 +6,11 @@ import {Page} from "ui/page";
 import {setTimeout} from "timer";
 
 @Component({
-    selector: 'basic-text-field-component',
+    selector: "basic-text-field-component",
     // >> (hide)
     styleUrls: ["ui-category/text-field/text-field.style.css"],
     // << (hide)
-    templateUrl: 'ui-category/text-field/basic-text-field/basic-text-field.component.html'
+    templateUrl: "ui-category/text-field/basic-text-field/basic-text-field.component.html"
 })
 
 export class BasicTextFieldComponent {
@@ -30,38 +30,38 @@ export class BasicTextFieldComponent {
         datePicker.minDate = new Date(1975, 0, 29);
         datePicker.maxDate = new Date(2045, 4, 12);
 
-        let firstTextfield:TextField =<TextField> this.page.getViewById("firstTextFieldId");
+        let firstTextfield: TextField = <TextField> this.page.getViewById("firstTextFieldId");
         firstTextfield.focus();
-        
+
     }
 
-    enterDate(){
+    enterDate() {
         let datePicker = this.page.getViewById<DatePicker>("datePicker");
         let selectedDate = new Date(datePicker.year, datePicker.month - 1, datePicker.day);
-        this.birthDate=selectedDate;
-        this.isButtonVisible=false;
-        this.isItemVisible=false;
+        this.birthDate = selectedDate;
+        this.isButtonVisible = false;
+        this.isItemVisible = false;
     }
 
-    showDatePicker(){
+    showDatePicker() {
         let textFielsBDate = this.page.getViewById<TextField>("textFieldBDate");
-        this.isButtonVisible=true;
-        this.isItemVisible=true;
+        this.isButtonVisible = true;
+        this.isItemVisible = true;
 
         setTimeout(function(){
             textFielsBDate.dismissSoftInput();
-        },100);
-        
+        }, 100);
+
     }
 
-    submit(){
+    submit() {
         let textFielsBDate = this.page.getViewById<TextField>("textFieldBDate");
-        this.isButtonVisible=true;
-        this.isItemVisible=true;
+        this.isButtonVisible = true;
+        this.isItemVisible = true;
 
         setTimeout(function(){
             textFielsBDate.dismissSoftInput();
-        },100);
+        }, 100);
     }
 
 }

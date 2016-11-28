@@ -8,8 +8,8 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: 'action-bar-component',
-    templateUrl: 'examples-list.component.html',
+    selector: "action-bar-component",
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

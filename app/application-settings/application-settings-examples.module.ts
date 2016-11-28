@@ -7,18 +7,23 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ApplicationSettingsExamplesComponent
     },
     {
-        path: 'values',
+        path: "values",
         component: ValuesExampleComponent,
         data: { title: "Check The Target Platform" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+],
     declarations: [ApplicationSettingsExamplesComponent, ValuesExampleComponent]
 })
 

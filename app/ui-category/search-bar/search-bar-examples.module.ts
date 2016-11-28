@@ -9,29 +9,39 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: SearchBarExamplesComponent
     },
     {
-        path: 'basic',
+        path: "basic",
         component: BasicSearchBarComponent,
         data: { title: "Basic SearchBar" }
     },
     {
-        path: 'clear',
+        path: "clear",
         component: ClearSearchBarComponent,
         data: { title: "Clear SearchBar" }
     },
     {
-        path: 'binding',
+        path: "binding",
         component: SearchBarBindingComponent,
         data: { title: "SearchBar property binding" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [SearchBarExamplesComponent, BasicSearchBarComponent, ClearSearchBarComponent, SearchBarBindingComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        SearchBarExamplesComponent,
+        BasicSearchBarComponent,
+        ClearSearchBarComponent,
+        SearchBarBindingComponent
+    ]
 })
 
 export class SearchBarExamplesModule {

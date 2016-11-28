@@ -8,24 +8,33 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: StyleExamplesComponent
     },
     {
-        path: 'apply-style',
+        path: "apply-style",
         component: ApplyStyleCodeComponent,
         data: { title: "Apply style using code" }
     },
     {
-        path: 'css-file',
+        path: "css-file",
         component: StyleCSSFileComponent,
         data: { title: "Add style via CSS file" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [StyleExamplesComponent, ApplyStyleCodeComponent, StyleCSSFileComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        StyleExamplesComponent,
+        ApplyStyleCodeComponent,
+        StyleCSSFileComponent
+    ]
 })
 
 export class StyleExamplesModule {

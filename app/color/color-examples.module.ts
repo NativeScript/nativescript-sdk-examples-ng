@@ -9,18 +9,24 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ColorExamplesComponent
     },
     {
-        path: 'creating-colors',
+        path: "creating-colors",
         component: CreatingColorsExampleComponent,
         data: { title: "Creating colors" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptFormsModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [HexPipe, ColorExamplesComponent, CreatingColorsExampleComponent]
 })
 

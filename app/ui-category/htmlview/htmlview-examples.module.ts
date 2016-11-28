@@ -7,18 +7,23 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: HtmlViewExamplesComponent
     },
     {
-        path: 'creating-html-view',
+        path: "creating-html-view",
         component: CreatingHtmlViewExampleComponent,
         data: { title: "Create HtmlView" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [HtmlViewExamplesComponent, CreatingHtmlViewExampleComponent]
 })
 

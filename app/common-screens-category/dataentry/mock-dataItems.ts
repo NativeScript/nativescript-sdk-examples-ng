@@ -1,3 +1,4 @@
+/* tslint:disable:max-line-length */
 export class GroupTitle {
     constructor(public title: string) { }
 }
@@ -14,8 +15,8 @@ export class Country {
     constructor(public name: string, public imageSrc: string, public continent: string, public desc: string) { }
 }
 
-export class GroupFooter{
-    constructor(public description: string) { }   
+export class GroupFooter {
+    constructor(public description: string) { }
 }
 
 export let mockedDataArray = [

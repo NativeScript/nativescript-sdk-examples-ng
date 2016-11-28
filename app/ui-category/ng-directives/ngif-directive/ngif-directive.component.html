@@ -1,7 +1,7 @@
 <StackLayout exampleTitle toggleNavButton>
     <StackLayout>
         <!-- >> using-ngif-html -->
-        <Button class="btn btn-primary btn-active" text="Show/hide block" (tap)="onTap()" ></Button>
+        <Button class="btn btn-primary btn-active" text="Show/hide block" (tap)="onTap()"></Button>
         <GridLayout *ngIf="isVisible" class="bg-primary" borderRadius="2" height="300"></GridLayout>
         <!-- << using-ngif-html -->
     </StackLayout>

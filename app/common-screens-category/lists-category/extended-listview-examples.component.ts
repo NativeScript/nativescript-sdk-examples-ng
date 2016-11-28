@@ -15,8 +15,8 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: 'extended-listview-component',
-    templateUrl: 'examples-list.component.html',
+    selector: "extended-listview-component",
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 

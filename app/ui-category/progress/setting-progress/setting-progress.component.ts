@@ -15,7 +15,7 @@ export class SettingProgressComponent implements OnInit {
         let myProgress: Progress = this.progress.nativeElement;
         myProgress.maxValue = 120;
         myProgress.value = 10;
-        
+
         setInterval(function() {
             myProgress.value += 2;
         }, 100);

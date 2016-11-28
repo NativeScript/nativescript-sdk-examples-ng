@@ -1,3 +1,4 @@
+// tslint:disable:no-bitwise
 import { Component, PipeTransform, Pipe } from "@angular/core";
 // >> creating-colors-code
 import { Color } from "color";
@@ -6,10 +7,10 @@ import { Color } from "color";
 @Pipe({
     name: "hex"
 })
-export class HexPipe implements PipeTransform{
+export class HexPipe implements PipeTransform {
     transform(value: number): any {
         let res = value.toString(16);
-        if(res.length === 1){
+        if (res.length === 1) {
             res = "0" + res;
         }
         return res;
@@ -17,8 +18,8 @@ export class HexPipe implements PipeTransform{
 }
 
 @Component({
-    selector: 'creating-colors-component',
-    templateUrl: 'color/creating-colors/creating-colors.component.html'
+    selector: "creating-colors-component",
+    templateUrl: "color/creating-colors/creating-colors.component.html"
 })
 export class CreatingColorsExampleComponent {
     private redValue: number = 0;
@@ -26,7 +27,7 @@ export class CreatingColorsExampleComponent {
     private blueValue: number = 0;
 
     public changeColor(value: string) {
-        if (value[0] !== '#') {
+        if (value[0] !== "#") {
             value = "#" + value;
         }
         let isValidHexColor = /(^#[0-9A-F]{6}$)|(^#[0-9A-F]{3}$)/i.test(value);
@@ -42,7 +43,7 @@ export class CreatingColorsExampleComponent {
     }
 
     convertHex(hex) {
-        hex = hex.replace('#', '');
+        hex = hex.replace("#", "");
 
         if (hex.length !== 6) {
             hex = hex[0] + hex[0] + hex[1] + hex[1] + hex[2] + hex[2];

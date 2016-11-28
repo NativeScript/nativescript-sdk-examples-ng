@@ -3,10 +3,10 @@ import { Component } from "@angular/core";
 import * as appSettings from "application-settings";
 // << app-settings-code 
 @Component({
-    selector: 'values-component',
-    templateUrl: 'application-settings/values/values.component.html'
+    selector: "values-component",
+    templateUrl: "application-settings/values/values.component.html"
 })
-export class ValuesExampleComponent {      
+export class ValuesExampleComponent {
     public isTurnedOn: boolean;
     public username: string;
     public locationX: number;

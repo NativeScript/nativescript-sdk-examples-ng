@@ -27,6 +27,6 @@ export class SingleLineListViewExampleComponent implements OnInit {
 
     onItemTapThirdList(args: ItemEventData) {
         console.log(args.index);
-    }   
+    }
 }
 // << ext-listview-basic-code

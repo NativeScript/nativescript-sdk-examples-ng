@@ -1,12 +1,22 @@
 import { Component } from "@angular/core";
 // >> import-trace-methods
-import { setCategories, enable, disable, categories, addCategories, isCategorySet, enabled, write, clearWriters } from "trace";
+import {
+    setCategories,
+    enable,
+    disable,
+    categories,
+    addCategories,
+    isCategorySet,
+    enabled,
+    write,
+    clearWriters
+} from "trace";
 // << import-trace-methods
 import { setTimeout } from "timer";
 
 @Component({
-    selector: 'trace-writer-categories',
-    templateUrl: 'trace/trace-specific-categories/trace-specific-categories-example.component.html',
+    selector: "trace-writer-categories",
+    templateUrl: "trace/trace-specific-categories/trace-specific-categories-example.component.html",
     styleUrls: ["trace/trace-specific-categories/style.css"]
 })
 
@@ -43,8 +53,7 @@ export class TraceSpecificCategoriesExampleComponent {
     public checkIsDebugCategorySet() {
         if (isCategorySet(categories.Debug)) {
             alert("Debug category has been set");
-        }
-        else {
+        } else {
             alert("Debug category has not been set");
         }
     }
@@ -53,8 +62,7 @@ export class TraceSpecificCategoriesExampleComponent {
         // >> check-iscategoryset
         if (isCategorySet(categories.VisualTreeEvents)) {
             alert("VisualTreeEvents category has been set");
-        }
-        else {
+        } else {
             alert("VisualTreeEvents category has not been set");
         }
         // << check-iscategoryset
@@ -64,8 +72,7 @@ export class TraceSpecificCategoriesExampleComponent {
         if (enabled === false) {
             enable();
             alert("Trace has been enabled");
-        }
-        else {
+        } else {
             alert("Trace has been already enabled");
         }
     }
@@ -75,8 +82,7 @@ export class TraceSpecificCategoriesExampleComponent {
             disable();
             // << disable-tracing
             alert("Trace has been disabled");
-        }
-        else {
+        } else {
             alert("Trace has been already disabled");
         }
     }

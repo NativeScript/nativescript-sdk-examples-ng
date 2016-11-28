@@ -1,3 +1,4 @@
+// tslint:disable:max-line-length
 import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptModule } from "nativescript-angular/platform";
@@ -10,22 +11,32 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: TraceExamplesComponent
     },
     {
-        path: 'custom-trace-writer',
+        path: "custom-trace-writer",
         component: CustomTraceWriterExampleComponent
     },
     {
-        path: 'trace-writer-categories',
+        path: "trace-writer-categories",
         component: TraceSpecificCategoriesExampleComponent
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [TraceExamplesComponent, CustomTraceWriterExampleComponent, TraceSpecificCategoriesExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptFormsModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        TraceExamplesComponent,
+        CustomTraceWriterExampleComponent,
+        TraceSpecificCategoriesExampleComponent
+    ]
 })
 
 export class TraceExamplesModule {

@@ -28,12 +28,12 @@ export class MultiLineListViewExampleComponent implements OnInit {
 
     onItemTapThirdList(args: ItemEventData) {
         console.log(args.index);
-    }  
+    }
 
     onSetupItemView(args: SetupItemViewArgs) {
         // further customisation can be achived with SetupItemViewArgs
         // example for creating a variable for each third element
         args.view.context.third = (args.index % 3 === 0);
-    }  
+    }
 }
 // << multiline-listview-code

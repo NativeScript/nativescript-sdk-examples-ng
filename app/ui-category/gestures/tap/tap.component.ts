@@ -13,7 +13,7 @@ export class TapExampleComponent {
         console.log("Tap!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
-        console.log("Event name: " + args.eventName);   
+        console.log("Event name: " + args.eventName);
 
         let grid = <GridLayout>args.object;
         grid.rotate = 0;
@@ -21,6 +21,6 @@ export class TapExampleComponent {
             rotate: 360,
             duration: 2000
         });
-    } 
+    }
 }
 // << tap-code

@@ -6,8 +6,8 @@ import { ModalViewComponent } from "./modal-view";
 
 @Component({
     providers: [ModalDialogService],
-    selector: 'sample-modal-page-module-component',
-    templateUrl: 'modal-page/sample-modal-page-module-example/sample-modal-page-module-example.html'
+    selector: "sample-modal-page-module-component",
+    templateUrl: "modal-page/sample-modal-page-module-example/sample-modal-page-module-example.html"
 })
 
 export class SampleModalPageModuleExampleComponent {
@@ -36,11 +36,11 @@ export class SampleModalPageModuleExampleComponent {
             .then((dateresult: Date) => {
                 console.log("date result " + dateresult);
                 // >> (hide)
-                if (args == 'start') {
+                if (args === "start") {
                     this.startDate = dateresult;
-                } else if (args == 'end') {
+                } else if (args === "end") {
                     this.endDate = dateresult;
-                } else if (args == 'findTheDay') {
+                } else if (args === "findTheDay") {
                     this.date = dateresult;
                     this.weekday = this.weekdays[this.date.getDay()];
                 }
@@ -53,8 +53,7 @@ export class SampleModalPageModuleExampleComponent {
         let oneDay = 24 * 60 * 60 * 1000;
         if (this.startDate.getTime() > this.endDate.getTime()) {
             alert("Enter correct end date");
-        }
-        else {
+        } else {
             let tmpDays = Math.round(Math.abs((this.startDate.getTime() - this.endDate.getTime()) / (oneDay)));
             console.log(tmpDays);
             this.days = tmpDays;

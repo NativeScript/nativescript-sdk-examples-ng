@@ -7,19 +7,27 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ImageExamplesComponent
     },
     {
-        path: 'creating-image',
+        path: "creating-image",
         component: CreatingImageExampleComponent,
         data: { title: "Create Image" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ImageExamplesComponent, CreatingImageExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ImageExamplesComponent,
+        CreatingImageExampleComponent
+    ]
 })
 
 export class ImageExamplesModule {

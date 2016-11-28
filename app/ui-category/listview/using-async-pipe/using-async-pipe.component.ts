@@ -1,13 +1,13 @@
 // >> using-async-pipe-code
-import { Component, ChangeDetectionStrategy } from '@angular/core';
-import { Observable as RxObservable } from 'rxjs/Observable';
+import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { Observable as RxObservable } from "rxjs/Observable";
 
 export class DataItem {
     constructor(public id: number, public name: string) { }
 }
 
 @Component({
-    selector: 'list-test-async',
+    selector: "list-test-async",
     styleUrls: ["ui-category/listview/using-async-pipe/using-async-pipe.component.css"],
     templateUrl: "ui-category/listview/using-async-pipe/using-async-pipe.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush,

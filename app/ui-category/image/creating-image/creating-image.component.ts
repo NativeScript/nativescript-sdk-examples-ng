@@ -29,7 +29,7 @@ export class CreatingImageExampleComponent implements OnInit {
         this.newLabel = new Label();
         this.newLabel.text = "Image loaded from code behind";
         this.newLabel.style.margin = "15";
-        
+
         stackView.addChild(this.newLabel);
         stackView.addChild(this.newImage);
     }

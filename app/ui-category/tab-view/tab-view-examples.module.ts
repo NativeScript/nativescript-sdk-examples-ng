@@ -8,24 +8,34 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: TabViewExamplesComponent
     },
     {
-        path: 'basic',
+        path: "basic",
         component: BasicTabViewComponent,
         data: { title: "Basic TabView" }
     },
     {
-        path: 'items',
+        path: "items",
         component: TabViewItemsComponent,
         data: { title: "TabView items" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptFormsModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [TabViewExamplesComponent, BasicTabViewComponent, TabViewItemsComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptFormsModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        TabViewExamplesComponent,
+        BasicTabViewComponent,
+        TabViewItemsComponent
+    ]
 })
 
 export class TabViewExamplesModule {

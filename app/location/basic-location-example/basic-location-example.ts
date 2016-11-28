@@ -5,9 +5,9 @@ import { Location, getCurrentLocation, isEnabled, distance, enableLocationReques
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
-    selector: 'basic-location-example',
-    styleUrls: ['location/basic-location-example/style.css'],
-    templateUrl: 'location/basic-location-example/basic-location-example.html'
+    selector: "basic-location-example",
+    styleUrls: ["location/basic-location-example/style.css"],
+    templateUrl: "location/basic-location-example/basic-location-example.html"
 })
 
 export class BasicLocationExampleComponent {
@@ -16,10 +16,10 @@ export class BasicLocationExampleComponent {
     public distance: number = 0;
     public index: number = 0;
 
-    public startpoint_longitude: number = 42.696552;
-    public startpoint_latitude: number = 23.32601;
-    public endpoint_longitude: number = 40.71448;
-    public endpoint_latitude: number = -74.00598;
+    public startpointLongitude: number = 42.696552;
+    public startpointLatitude: number = 23.32601;
+    public endpointLongitude: number = 40.71448;
+    public endpointLatitude: number = -74.00598;
 
     constructor() {
         // >> enable-location-services
@@ -41,12 +41,12 @@ export class BasicLocationExampleComponent {
     public getDistance() {
         // >> get-distance
         let startLocation: Location = new Location();
-        startLocation.longitude = this.startpoint_longitude;
-        startLocation.latitude = this.startpoint_latitude;
+        startLocation.longitude = this.startpointLongitude;
+        startLocation.latitude = this.startpointLatitude;
 
         let endLocation: Location = new Location();
-        endLocation.longitude = this.endpoint_longitude;
-        endLocation.latitude = this.endpoint_latitude;
+        endLocation.longitude = this.endpointLongitude;
+        endLocation.latitude = this.endpointLatitude;
         this.distance = distance(startLocation, endLocation);
         // << get-distance
 
@@ -58,12 +58,12 @@ export class BasicLocationExampleComponent {
         // >> get-current-location
         getCurrentLocation({ timeout: 500 })
             .then(location => {
-                console.log('Location received: ' + location);
-                this.startpoint_latitude = location.latitude;
-                this.startpoint_longitude = location.longitude;
+                console.log("Location received: " + location);
+                this.startpointLatitude = location.latitude;
+                this.startpointLongitude = location.longitude;
             }).catch(error => {
-                console.log('Location error received: ' + error);
-                alert('Location error received: ' + error);
+                console.log("Location error received: " + error);
+                alert("Location error received: " + error);
             });
         // << get-current-location
     }

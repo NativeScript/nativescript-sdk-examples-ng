@@ -8,24 +8,33 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: FetchExamplesComponent
     },
     {
-        path: 'fetch-get',
+        path: "fetch-get",
         component: FetchGetExampleComponent,
         data: { title: "Fetch get" }
     },
     {
-        path: 'fetch-post',
+        path: "fetch-post",
         component: FetchPostExampleComponent,
         data: { title: "Fetch post" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [FetchExamplesComponent, FetchGetExampleComponent, FetchPostExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        FetchExamplesComponent,
+        FetchGetExampleComponent,
+        FetchPostExampleComponent
+    ]
 })
 
 export class FetchExamplesModule {
