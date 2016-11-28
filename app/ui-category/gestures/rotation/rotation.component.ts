@@ -1,13 +1,11 @@
-import { Component}  from "@angular/core";
+import { Component } from "@angular/core";
 import { GridLayout } from "ui/layouts/grid-layout";
-// >> rotation-code 
+// >> rotation-code
 import { RotationGestureEventData } from "ui/gestures";
 
 @Component({
-    selector: "rotation-gesture",
     templateUrl: "ui-category/gestures/rotation/rotation.component.html"
 })
-
 export class RotationExampleComponent {
     public angle: number;
     public state: number;

@@ -2,11 +2,10 @@ import { Component, OnInit } from "@angular/core";
 // >> fs-paths-import-code
 import * as fs from "file-system";
 // << fs-paths-import-code
+
 @Component({
-    selector: "paths-file-component",
     templateUrl: "file-system/paths/paths.component.html"
 })
-
 export class PathsExampleComponent implements OnInit {
     public documents: string;
     public currentApp: string;

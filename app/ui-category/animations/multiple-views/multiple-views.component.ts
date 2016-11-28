@@ -9,11 +9,9 @@ let view3: View;
 let view4: View;
 
 @Component({
-    selector: "animations-component",
     templateUrl: "ui-category/animations/multiple-views/multiple-views.component.html",
     styleUrls: ["ui-category/animations/style.css"],
 })
-
 export class MultipleViewsComponent implements OnInit {
     constructor(private page: Page) {
     }

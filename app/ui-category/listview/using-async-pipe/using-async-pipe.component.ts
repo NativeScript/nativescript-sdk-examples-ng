@@ -7,12 +7,10 @@ export class DataItem {
 }
 
 @Component({
-    selector: "list-test-async",
     styleUrls: ["ui-category/listview/using-async-pipe/using-async-pipe.component.css"],
     templateUrl: "ui-category/listview/using-async-pipe/using-async-pipe.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush,
 })
-
 export class UsingAsyncPipeComponent {
     public myItems: RxObservable<Array<DataItem>>;
 

@@ -1,11 +1,10 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
+import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
 import { SetupItemViewArgs } from "nativescript-angular/directives";
-import { mockedDataArray, Country }  from "../mock-dataItems";
+import { mockedDataArray, Country } from "../mock-dataItems";
 
 // >> multiline-listview-code
 @Component({
-    selector: "multi-line-listview",
     templateUrl: "common-screens-category/lists-category/multi-line/multi-line.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

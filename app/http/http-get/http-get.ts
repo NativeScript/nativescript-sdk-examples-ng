@@ -9,10 +9,8 @@ import { fromFile } from "image-source";
 import { Image } from "ui/image";
 
 @Component({
-    selector: "http-get-component",
     templateUrl: "http/http-get/http-get.html"
 })
-
 export class HttpGetComponent implements OnInit {
     public stringResponce: string = "";
     public origin: string = "";

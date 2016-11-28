@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy }  from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
@@ -15,11 +15,9 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: "extended-listview-component",
     templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class ExtendedListViewExamplesComponent {
     public links: Array<Link>;
 

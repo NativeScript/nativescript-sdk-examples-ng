@@ -1,12 +1,10 @@
-import { Component}  from "@angular/core";
-// >> swipe-code 
+import { Component } from "@angular/core";
+// >> swipe-code
 import { SwipeGestureEventData } from "ui/gestures";
 
 @Component({
-    selector: "swipe-gesture",
     templateUrl: "ui-category/gestures/swipe/swipe.component.html"
 })
-
 export class SwipeExampleComponent {
     public direction: number;
 

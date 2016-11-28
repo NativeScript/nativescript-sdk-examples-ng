@@ -8,11 +8,9 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: "action-bar-component",
     templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class ActionBarExamplesComponent {
     public links: Array<Link>;
 

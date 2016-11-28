@@ -1,11 +1,10 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
-import {ObservableArray} from "data/observable-array";
-import {mockedGroupDataArray, GroupFooter, GroupTitle} from "../mock-dataItems";
+import { ObservableArray } from "data/observable-array";
+import { mockedGroupDataArray, GroupFooter, GroupTitle } from "../mock-dataItems";
 
 // >> grouped-listview-two-lines-code
 @Component({
-    selector: "grouped-two-line-listview",
     templateUrl: "common-screens-category/lists-category/two-lines-grouped/grouped-two-lines.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

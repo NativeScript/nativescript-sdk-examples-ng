@@ -1,15 +1,13 @@
-import { Component}  from "@angular/core";
+import { Component } from "@angular/core";
 import { GridLayout } from "ui/layouts/grid-layout";
-// >> pinch-code 
+// >> pinch-code
 import { PinchGestureEventData } from "ui/gestures";
 
 let startScale = 1;
 
 @Component({
-    selector: "pinch-gesture",
     templateUrl: "ui-category/gestures/pinch/pinch.component.html"
 })
-
 export class PinchExampleComponent {
     public scale: number;
     public state: number;

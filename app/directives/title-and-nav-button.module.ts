@@ -6,5 +6,4 @@ import { ToggleNavButtonDirective } from "./toggle-nav-button.directive";
     declarations: [ExampleTitleDirective, ToggleNavButtonDirective],
     exports: [ExampleTitleDirective, ToggleNavButtonDirective]
 })
-
 export class TitleAndNavButtonModule { }

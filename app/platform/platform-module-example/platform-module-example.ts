@@ -27,10 +27,8 @@ class ScreenInfo {
 }
 
 @Component({
-    selector: "platform-module-component",
     templateUrl: "platform/platform-module-example/platform-module-example.html"
 })
-
 export class PlatformModuleExampleComponent {
     public isItemVisible: boolean = false;
     public deviceInformation: DeviceInfo;

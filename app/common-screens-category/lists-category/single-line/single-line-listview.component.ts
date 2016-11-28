@@ -1,10 +1,9 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
+import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
-import { mockedDataArray, Country }  from "../mock-dataItems";
+import { mockedDataArray, Country } from "../mock-dataItems";
 
 // >> ext-listview-basic-code
 @Component({
-    selector: "single-line-listview",
     templateUrl: "common-screens-category/lists-category/single-line/single-line-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

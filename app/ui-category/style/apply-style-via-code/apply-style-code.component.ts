@@ -5,10 +5,8 @@ import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
 
 @Component({
-    selector: "apply-style-code-component",
     templateUrl: "ui-category/style/apply-style-via-code/apply-style-code.component.html"
 })
-
 export class ApplyStyleCodeComponent implements OnInit {
 
     constructor(private page: Page) { }

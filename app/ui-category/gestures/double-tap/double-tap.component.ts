@@ -1,14 +1,12 @@
-// >> double-tap-code 
-import { Component}  from "@angular/core";
+// >> double-tap-code
+import { Component } from "@angular/core";
 import { GestureEventData } from "ui/gestures";
 
 import { GridLayout } from "ui/layouts/grid-layout";
 
 @Component({
-    selector: "double-tap-gesture",
     templateUrl: "ui-category/gestures/double-tap/double-tap.component.html"
 })
-
 export class DoubleTapExampleComponent {
 
     onDoubleTap(args: GestureEventData) {

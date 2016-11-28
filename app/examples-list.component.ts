@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy }  from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./link";
 
 let mainMenuLinks = [
@@ -50,7 +50,6 @@ let mainMenuLinks = [
 ];
 
 @Component({
-    selector: "menulistview",
     templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

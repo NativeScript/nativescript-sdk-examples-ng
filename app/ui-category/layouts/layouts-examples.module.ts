@@ -4,9 +4,9 @@ import { NativeScriptModule } from "nativescript-angular/platform";
 import { LayoutsExamplesComponent } from "./layouts-examples.component";
 import { AbsoluteLayoutComponent } from "./absolute-layout/absolute-layout.component";
 import { DockLayoutComponent } from "./dock-layout/dock-layout.component";
-import { FlexboxLayoutComponentOne } from "./flexbox-layout-one/flexbox-layout.component";
-import { FlexboxLayoutComponentTwo } from "./flexbox-layout-two/flexbox-layout.component";
-import { FlexboxLayoutComponentThree } from "./flexbox-layout-three/flexbox-layout.component";
+import { FlexboxLayoutFirstComponent } from "./flexbox-layout-one/flexbox-layout.component";
+import { FlexboxLayoutSecondComponent } from "./flexbox-layout-two/flexbox-layout.component";
+import { FlexboxLayoutThirdComponent } from "./flexbox-layout-three/flexbox-layout.component";
 import { GridLayoutComponent } from "./grid-layout/grid-layout.component";
 import { StackLayoutComponent } from "./stack-layout/stack-layout.component";
 import { WrapLayoutComponent } from "./wrap-layout/wrap-layout.component";
@@ -29,17 +29,17 @@ export const routerConfig = [
     },
     {
         path: "flexbox-layout-one",
-        component: FlexboxLayoutComponentOne,
+        component: FlexboxLayoutFirstComponent,
         data: { title: "Flexbox layout (flexDirection)" }
     },
     {
         path: "flexbox-layout-two",
-        component: FlexboxLayoutComponentTwo,
+        component: FlexboxLayoutSecondComponent,
         data: { title: "Flexbox layout (order, flexGrow and flexShrink)" }
     },
     {
         path: "flexbox-layout-three",
-        component: FlexboxLayoutComponentThree,
+        component: FlexboxLayoutThirdComponent,
         data: { title: "Flexbox layout (flexWrap, justifyContent)" }
     },
     {
@@ -70,9 +70,9 @@ export const routerConfig = [
         LayoutsExamplesComponent,
         AbsoluteLayoutComponent,
         DockLayoutComponent,
-        FlexboxLayoutComponentOne,
-        FlexboxLayoutComponentTwo,
-        FlexboxLayoutComponentThree,
+        FlexboxLayoutFirstComponent,
+        FlexboxLayoutSecondComponent,
+        FlexboxLayoutThirdComponent,
         GridLayoutComponent,
         StackLayoutComponent,
         WrapLayoutComponent

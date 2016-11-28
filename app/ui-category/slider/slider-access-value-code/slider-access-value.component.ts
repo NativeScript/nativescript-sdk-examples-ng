@@ -1,13 +1,11 @@
 // >> slider-setting-default-values
 import { Component } from "@angular/core";
 @Component({
-    selector: "slider-access-value-component",
     // >> (hide)
     styleUrls: ["ui-category/slider/style.css"],
     // << (hide)
     templateUrl: "ui-category/slider/slider-access-value-code/slider-access-value.component.html",
 })
-
 export class SliderAccessValueComponent {
 
     public sliderValue1 = 15;

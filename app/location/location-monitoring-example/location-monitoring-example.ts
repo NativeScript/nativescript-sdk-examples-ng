@@ -5,10 +5,8 @@ import { Location, enableLocationRequest, watchLocation, clearWatch } from "nati
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
-    selector: "location-monitoring-example",
     templateUrl: "location/location-monitoring-example/location-monitoring-example.html"
 })
-
 export class LocationMonitoringExampleComponent {
     public buttonText = "Start location monitoring";
     public isMonitoring = false;

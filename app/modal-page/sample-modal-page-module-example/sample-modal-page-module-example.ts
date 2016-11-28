@@ -6,10 +6,8 @@ import { ModalViewComponent } from "./modal-view";
 
 @Component({
     providers: [ModalDialogService],
-    selector: "sample-modal-page-module-component",
     templateUrl: "modal-page/sample-modal-page-module-example/sample-modal-page-module-example.html"
 })
-
 export class SampleModalPageModuleExampleComponent {
     public startDate: Date;
     public endDate: Date;

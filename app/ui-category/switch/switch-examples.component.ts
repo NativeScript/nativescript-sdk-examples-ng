@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy }  from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
@@ -8,12 +8,10 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: "switch-component",
     templateUrl: "examples-list.component.html",
     styleUrls: ["ui-category/switch/switch.style.css"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class SwitchExamplesComponent {
     public links: Array<Link>;
 

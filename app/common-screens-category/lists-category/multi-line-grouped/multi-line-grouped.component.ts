@@ -1,10 +1,9 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
-import { mockedGroupDataArray }  from "../mock-dataItems";
+import { mockedGroupDataArray } from "../mock-dataItems";
 
 // >> multi-line-grouped-code
 @Component({
-    selector: "multi-line-grouped-listview",
     templateUrl: "common-screens-category/lists-category/multi-line-grouped/multi-line-grouped.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

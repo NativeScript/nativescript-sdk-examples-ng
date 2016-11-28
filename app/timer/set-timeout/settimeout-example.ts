@@ -4,11 +4,9 @@ import { setInterval, setTimeout, clearInterval } from "timer";
 import { Color } from "color";
 
 @Component({
-    selector: "settimeout-timer-module-example",
     styleUrls: ["timer/set-timeout/settimeout-example.css"],
     templateUrl: "timer/set-timeout/settimeout-example.html"
 })
-
 export class SetTimeoutComponent {
     public counter = 0;
     public buttonstyle = "btn btn-primary btn-rounded-sm";

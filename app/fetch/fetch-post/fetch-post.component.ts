@@ -1,10 +1,8 @@
 import { Component } from "@angular/core";
 
 @Component({
-    selector: "fetch-post-component",
     templateUrl: "fetch/fetch-post/fetch-post.component.html"
 })
-
 export class FetchPostExampleComponent {
     public user: string;
     public pass: string;
@@ -22,9 +20,9 @@ export class FetchPostExampleComponent {
             let jsonObjectBody = JSON.parse(res.data);
             this.message = "Data successfully send by user " + jsonObjectBody.username;
         }).catch(err => {
-            // Error 
+            // Error
         });
-        // << fetch-post-code 
+        // << fetch-post-code
     }
 
 }

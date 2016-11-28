@@ -1,8 +1,8 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
-import {ObservableArray} from "data/observable-array";
+import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
+import { ObservableArray } from "data/observable-array";
+
 // >> dataentry-wellcome-login-code
 @Component({
-    selector: "dataentry-welcome-listview",
     templateUrl: "common-screens-category/dataentry/dataentry-welcome/dataentry-welcome.component.html",
     styleUrls: ["common-screens-category/dataentry/dataentry-welcome/style.css"],
     changeDetection: ChangeDetectionStrategy.OnPush

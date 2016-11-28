@@ -2,13 +2,11 @@ import { Component } from "@angular/core";
 // >> fs-create-import-code
 import * as fs from "file-system";
 // << fs-create-import-code
+
 @Component({
-    selector: "create-file-component",
     templateUrl: "file-system/create/create.component.html"
 })
-
 export class CreateExampleComponent {
-
     public folderName: string;
     public fileName: string;
     public fileTextContent: string;
@@ -38,6 +36,6 @@ export class CreateExampleComponent {
             }).catch(err => {
                 // Error
             });
-        // << fs-create-all-code    
+        // << fs-create-all-code
     }
 }

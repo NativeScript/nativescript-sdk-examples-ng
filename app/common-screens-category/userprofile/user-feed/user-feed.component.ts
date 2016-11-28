@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy, Input } from "@angular/core";
 import { ObservableArray } from "data/observable-array";
 import { mockedDataArray } from "../mock-dataItems";
 import { ItemEventData } from "ui/list-view";
+
 // >> userprofile-user-feed-code
 @Component({
-    selector: "user-feed",
     templateUrl: "common-screens-category/userprofile/user-feed/user-feed.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

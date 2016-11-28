@@ -1,19 +1,17 @@
 // >> textfield-handle-submit-event
-import { Component } from "@angular/core";
-import {DatePicker} from "ui/date-picker";
-import {TextField} from "ui/text-field";
-import {Page} from "ui/page";
-import {setTimeout} from "timer";
+import { Component, OnInit } from "@angular/core";
+import { DatePicker } from "ui/date-picker";
+import { TextField } from "ui/text-field";
+import { Page } from "ui/page";
+import { setTimeout } from "timer";
 
 @Component({
-    selector: "basic-text-field-component",
     // >> (hide)
     styleUrls: ["ui-category/text-field/text-field.style.css"],
     // << (hide)
     templateUrl: "ui-category/text-field/basic-text-field/basic-text-field.component.html"
 })
-
-export class BasicTextFieldComponent {
+export class BasicTextFieldComponent implements OnInit {
 
     public birthDate;
     public isButtonVisible = false;

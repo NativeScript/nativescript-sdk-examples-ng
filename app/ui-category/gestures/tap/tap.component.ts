@@ -1,13 +1,11 @@
-import { Component}  from "@angular/core";
+import { Component } from "@angular/core";
 import { GridLayout } from "ui/layouts/grid-layout";
-// >> tap-code 
+// >> tap-code
 import { GestureEventData } from "ui/gestures";
 
 @Component({
-    selector: "tap-gestures",
     templateUrl: "ui-category/gestures/tap/tap.component.html"
 })
-
 export class TapExampleComponent {
     onTap(args: GestureEventData) {
         console.log("Tap!");

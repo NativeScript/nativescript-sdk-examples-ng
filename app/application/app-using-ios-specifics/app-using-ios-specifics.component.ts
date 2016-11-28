@@ -3,7 +3,6 @@ import * as application from "application";
 import * as utils from "utils/utils";
 
 @Component({
-    selector: "app-ios-specifics-component",
     templateUrl: "application/app-using-ios-specifics/app-using-ios-specifics.component.html"
 })
 export class AppUsingIosExampleComponent {

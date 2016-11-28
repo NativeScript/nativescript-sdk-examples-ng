@@ -1,4 +1,4 @@
-// >> listview-create-code 
+// >> listview-create-code
 import { Component, ChangeDetectionStrategy } from "@angular/core";
 
 class Country {
@@ -11,7 +11,6 @@ let europianCountries = ["Austria", "Belgium", "Bulgaria", "Croatia", "Cyprus", 
     "Slovenia", "Spain", "Sweden", "United Kingdom"];
 
 @Component({
-    selector: "creating-listview",
     templateUrl: "ui-category/listview/creating-listview/creating-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -30,4 +29,4 @@ export class CreatingListViewComponent {
         console.log("Item Tapped at cell index: " + args.index);
     }
 }
-// << listview-create-code 
+// << listview-create-code

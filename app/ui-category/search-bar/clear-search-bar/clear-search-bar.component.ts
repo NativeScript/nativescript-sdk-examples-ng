@@ -9,11 +9,9 @@ class DataItem {
 }
 
 @Component({
-    selector: "clear-search-bar-component",
     templateUrl: "ui-category/search-bar/clear-search-bar/clear-search-bar.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class ClearSearchBarComponent {
     private arrayItems: Array<DataItem>;
     public myItems: ObservableArray<DataItem>;

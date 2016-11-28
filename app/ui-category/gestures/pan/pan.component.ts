@@ -1,13 +1,11 @@
-import { Component}  from "@angular/core";
+import { Component } from "@angular/core";
 
-// >> pan-code 
+// >> pan-code
 import { PanGestureEventData } from "ui/gestures";
 
 @Component({
-    selector: "pan-gesture",
     templateUrl: "ui-category/gestures/pan/pan.component.html"
 })
-
 export class PanExampleComponent {
     public deltaX: number;
     public deltaY: number;

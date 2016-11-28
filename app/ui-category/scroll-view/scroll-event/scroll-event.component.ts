@@ -4,13 +4,11 @@ import { setTimeout } from "timer";
 import { ScrollEventData } from "ui/scroll-view";
 
 @Component({
-    selector: "scroll-event-component",
     // >> (hide)
     styleUrls: ["ui-category/scroll-view/scroll-event/style.css"],
     // << (hide)
     templateUrl: "ui-category/scroll-view/scroll-event/scroll-event.component.html"
 })
-
 export class ScrollEventComponent {
 
     public status = "not scrolling";

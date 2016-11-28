@@ -1,10 +1,9 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
+import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
 import { ObservableArray } from "data/observable-array";
-import { mockedDataArray }  from "../mock-dataItems";
+import { mockedDataArray } from "../mock-dataItems";
 
 // >> ext-listview-two-lines-code
 @Component({
-    selector: "two-line-listview",
     templateUrl: "common-screens-category/lists-category/two-line/two-line-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

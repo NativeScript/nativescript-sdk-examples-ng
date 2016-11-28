@@ -14,6 +14,8 @@ import { ModalViewComponent } from "./modal-page/sample-modal-page-module-exampl
 import { TnsGoogleMaps } from "nativescript-googlemaps";
 import { isIOS } from "platform";
 
+declare var GMSServices: any;
+
 @NgModule({
     declarations: [
         // >> (hide)
@@ -40,6 +42,5 @@ registerElement("TnsGoogleMaps", () => TnsGoogleMaps);
 if (isIOS) {
     GMSServices.provideAPIKey("AIzaSyDQZOuoz1x-bMki_pbb7AYyU9D8Js4ZpKQ");
 }
-
 
 platformNativeScriptDynamic().bootstrapModule(AppComponentModule);

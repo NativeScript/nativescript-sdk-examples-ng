@@ -5,11 +5,9 @@ import { Location, getCurrentLocation, isEnabled, distance, enableLocationReques
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
-    selector: "basic-location-example",
     styleUrls: ["location/basic-location-example/style.css"],
     templateUrl: "location/basic-location-example/basic-location-example.html"
 })
-
 export class BasicLocationExampleComponent {
 
     public distanceResult: string = "0";

@@ -1,16 +1,13 @@
-// >> using-selected-index-code 
-import { Component }  from "@angular/core";
+// >> using-selected-index-code
+import { Component } from "@angular/core";
 
 let pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 "Dugtrio", "Meowth", "Persian", "Psyduck", "Arcanine", "Poliwrath", "Machoke"];
 
 @Component({
-    selector: "creating-listpicker",
     templateUrl: "ui-category/listpicker/using-selected-index/using-selected-index.component.html"
 })
-
 export class UsingSelectedIndexExampleComponent {
-
     public pokemons: Array<string>;
 
     constructor() {
@@ -25,4 +22,4 @@ export class UsingSelectedIndexExampleComponent {
         console.log("picker selection: " + picker.selectedIndex);
     }
 }
-// << using-selected-index-code  
+// << using-selected-index-code

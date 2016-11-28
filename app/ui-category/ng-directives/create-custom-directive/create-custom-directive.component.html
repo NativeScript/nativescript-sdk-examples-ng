@@ -1,8 +1,8 @@
-<FlexboxLayout flexDirection="column" class="p-15" exampleTitle toggleNavButton>
+<FlexboxLayout flexDirection="column" class="p-15" sdkExampleTitle sdkToggleNavButton>
     <Label class="p-15 m-b-15" text="With our custom directive the grid below will be blue square in iOS and purple circle in Android"
         textWrap="true"></Label>
     <!-- >> custom-directive-html -->
-    <GridLayout *ifAndroid class="bg-primary" width="300" height="300" borderRadius="150"></GridLayout>
-    <GridLayout *ifIos width="300" height="300" backgroundColor="#0099CC" borderRadius="2"></GridLayout>
+    <GridLayout *sdkIfAndroid class="bg-primary" width="300" height="300" borderRadius="150"></GridLayout>
+    <GridLayout *sdkIfIos width="300" height="300" backgroundColor="#0099CC" borderRadius="2"></GridLayout>
     <!-- << custom-directive-html -->
 </FlexboxLayout>

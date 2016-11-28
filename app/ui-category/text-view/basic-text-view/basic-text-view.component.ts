@@ -4,13 +4,11 @@ import { TextView } from "ui/text-view";
 import { isAndroid } from "platform";
 
 @Component({
-    selector: "basic-text-view-component",
     // >> (hide)
     styleUrls: ["ui-category/text-view/basic-text-view/style.css"],
     // << (hide)
     templateUrl: "ui-category/text-view/basic-text-view/basic-text-view.component.html"
 })
-
 export class BasicTextViewComponent {
 
     public editState = true;

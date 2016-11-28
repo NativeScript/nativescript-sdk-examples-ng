@@ -1,12 +1,11 @@
 import { Component } from "@angular/core";
-/* tslint:disable:max-line-length */
 
 // >> camera-module-init-code
 import { ImageAsset } from "image-asset";
 import * as camera from "nativescript-camera";
 // << camera-module-init-code
+
 @Component({
-    selector: "using-camera-component",
     templateUrl: "camera/using-camera/using-camera.component.html"
 })
 export class UsingCameraExampleComponent {
@@ -18,7 +17,13 @@ export class UsingCameraExampleComponent {
     public height: number = 300;
 
     onTakePhoto() {
-        let options = { width: this.width, height: this.height, keepAspectRatio: this.keepAspectRatio,  saveToGallery: this.saveToGallery };
+        let options = {
+            width: this.width,
+            height: this.height,
+            keepAspectRatio: this.keepAspectRatio,
+            saveToGallery: this.saveToGallery
+        };
+
         camera.takePicture(options)
             .then(imageAsset => {
                 this.imageTaken = imageAsset;

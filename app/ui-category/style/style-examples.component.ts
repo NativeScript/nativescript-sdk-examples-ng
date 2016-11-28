@@ -7,11 +7,9 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: "style-component",
     templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class StyleExamplesComponent {
     public links: Array<Link>;
 

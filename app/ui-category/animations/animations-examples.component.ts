@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy }  from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
@@ -8,11 +8,9 @@ let menuLinks = [
 ];
 
 @Component({
-    selector: "animations-component",
     templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class AnimationsExamplesComponent {
     public links: Array<Link>;
 

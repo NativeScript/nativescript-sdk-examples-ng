@@ -1,8 +1,7 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
-import {ObservableArray} from "data/observable-array";
+import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
+import { ObservableArray } from "data/observable-array";
 
 @Component({
-    selector: "dataentry-signup",
     templateUrl: "common-screens-category/dataentry/dataentry-signup/dataentry-signup.component.html",
     styleUrls: ["common-screens-category/dataentry/dataentry-signup/style.css"],
     changeDetection: ChangeDetectionStrategy.OnPush

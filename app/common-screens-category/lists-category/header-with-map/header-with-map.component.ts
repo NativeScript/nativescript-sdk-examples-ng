@@ -1,14 +1,13 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
+import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
 import { ObservableArray } from "data/observable-array";
-import { mockedDataArray }  from "../mock-dataItems";
+import { mockedDataArray } from "../mock-dataItems";
 import { Location } from "nativescript-geolocation";
 import { TnsGoogleMaps } from "nativescript-googlemaps";
 import app = require("application");
-import {isAndroid} from "platform";
+import { isAndroid } from "platform";
 // >> ext-listview-map-header-code
 declare var com: any;
 @Component({
-    selector: "header-with-map-listview",
     templateUrl: "common-screens-category/lists-category/header-with-map/header-with-map.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

@@ -74,7 +74,6 @@ export const routerConfig = [
         UnlessDirective
     ]
 })
-
 export class NgDirectivesExamplesModule {
     constructor() { }
 }

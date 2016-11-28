@@ -1,8 +1,7 @@
-// >> unless-directive-code  
+// >> unless-directive-code
 import { Component } from "@angular/core";
 
 @Component({
-    selector: "custom-unless-directive",
     templateUrl: "ui-category/ng-directives/custom-unless-directive/unless-directive.component.html",
 })
 export class CustomUnlessComponent {

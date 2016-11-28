@@ -1,4 +1,4 @@
-// >> listview-customize-code 
+// >> listview-customize-code
 import { Component, ChangeDetectionStrategy, ElementRef } from "@angular/core";
 import { SetupItemViewArgs } from "nativescript-angular/directives";
 
@@ -13,7 +13,6 @@ let items = ["ALL Heroes (header)", "Razor", "Rubick", "Phantom Lancer", "Legion
     "Bristleback", "Pudge", "(footer)"];
 
 @Component({
-    selector: "customizing-listview",
     styleUrls: ["ui-category/listview/customizing-listview/customizing-listview.component.css"],
     templateUrl: "ui-category/listview/customizing-listview/customizing-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
@@ -35,4 +34,4 @@ export class CustomizingListViewComponent {
         args.view.context.footer = (args.index + 1 === items.length);
     }
 }
-// << listview-customize-code 
+// << listview-customize-code

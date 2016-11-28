@@ -1,8 +1,7 @@
 // >> creating-htmlview-code 
-import { Component}  from "@angular/core";
+import { Component } from "@angular/core";
 
 @Component({
-    selector: "creating-htmlview",
     templateUrl: "ui-category/htmlview/creating-htmlview/creating-htmlview.component.html"
 })
 

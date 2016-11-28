@@ -3,11 +3,9 @@ import { Component } from "@angular/core";
 import { setInterval, setTimeout, clearInterval } from "timer";
 
 @Component({
-    selector: "set-interval",
     styleUrls: ["timer/set-interval/setinterval-example.css"],
     templateUrl: "timer/set-interval/setinterval-example.html"
 })
-
 export class SetIntervalComponent {
     public buttoncolor;
     public color = ["green", "yellow", "red"];

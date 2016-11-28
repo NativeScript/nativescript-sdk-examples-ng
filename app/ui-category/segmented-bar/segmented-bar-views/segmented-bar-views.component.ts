@@ -3,13 +3,10 @@ import { Component } from "@angular/core";
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
-    selector: "segmented-bar-views-component",
     styleUrls: ["ui-category/segmented-bar/segmented-bar-views/style.css"],
     templateUrl: "ui-category/segmented-bar/segmented-bar-views/segmented-bar-views.component.html"
 })
-
 export class SegmentedBarViewsComponent {
-
     public items: Array<SegmentedBarItem>;
     public selectedIndex = 0;
     public visibility1 = true;

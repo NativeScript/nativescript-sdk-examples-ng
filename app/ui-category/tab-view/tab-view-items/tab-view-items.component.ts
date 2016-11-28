@@ -5,16 +5,12 @@ import { Label } from "ui/label";
 import { TabView, SelectedIndexChangedEventData } from "ui/tab-view";
 
 @Component({
-    selector: "tab-view-items-component",
     templateUrl: "ui-category/tab-view/tab-view-items/tab-view-items.component.html",
 })
-
 export class TabViewItemsComponent {
-
     public tabviewitems: Array<any>;
 
     constructor() {
-
         this.tabviewitems = [];
 
         let innerFirstStackLayout = new StackLayout();

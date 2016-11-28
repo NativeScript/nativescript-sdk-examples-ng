@@ -1,11 +1,10 @@
 // >> multi-line-big-code
-import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
+import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
 import { SetupItemViewArgs } from "nativescript-angular/directives";
-import { mockedDataArray, mockedGroupDataArray, Country }  from "../mock-dataItems";
+import { mockedDataArray, mockedGroupDataArray, Country } from "../mock-dataItems";
 
 @Component({
-    selector: "multi-line-big-listview",
     templateUrl: "common-screens-category/lists-category/multi-line-big/multi-line-big.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

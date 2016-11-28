@@ -1,11 +1,10 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
-import { mockedGroupDataArray, Country, GroupTitle, GroupFooter }  from "../mock-dataItems";
+import { mockedGroupDataArray, Country, GroupTitle, GroupFooter } from "../mock-dataItems";
 
 
 // >> grouped-single-listview-basic-code
 @Component({
-    selector: "grouped-single-line-listview",
     templateUrl: "common-screens-category/lists-category/single-line-grouped/grouped-single-line.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

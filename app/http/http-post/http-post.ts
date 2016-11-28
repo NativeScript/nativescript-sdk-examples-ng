@@ -1,13 +1,11 @@
 import { Component } from "@angular/core";
 // >> import-http-module
-import {request} from "http";
+import { request } from "http";
 // << import-http-module
 
 @Component({
-    selector: "http-post-component",
     templateUrl: "http/http-post/http-post.html"
 })
-
 export class HttpPostComponent {
     public name: string = "";
     public username: string = "";

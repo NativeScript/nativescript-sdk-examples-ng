@@ -1,15 +1,13 @@
-
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import * as imageSource from "image-source";
 // >> fs-read-import-code
 import * as fs from "file-system";
 // << fs-read-import-code
+
 @Component({
-    selector: "read-file-component",
     templateUrl: "file-system/read/read.component.html"
 })
-
-export class ReadExampleComponent {
+export class ReadExampleComponent implements OnInit {
 
     public folderName: string;
     public fileName: string;

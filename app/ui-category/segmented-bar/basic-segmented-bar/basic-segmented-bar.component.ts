@@ -3,14 +3,13 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
-    selector: "basic-segmented-bar-component",
     templateUrl: "ui-category/segmented-bar/basic-segmented-bar/basic-segmented-bar.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class BasicSegmentedBarComponent {
     public myItems: Array<SegmentedBarItem>;
     public prop = "Item " + 0;
+
     constructor() {
         this.myItems = [];
         for (let i = 1; i < 5; i++) {
@@ -20,6 +19,5 @@ export class BasicSegmentedBarComponent {
             this.myItems.push(tmpSegmentedBar);
         }
     }
-
 }
 // << add-segmentedbar-items

@@ -1,10 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: "fetch-get-component",
     templateUrl: "fetch/fetch-get/fetch-get.component.html"
 })
-
 export class FetchGetExampleComponent implements OnInit {
     public host: string;
     public userAgent: string;
@@ -25,9 +23,9 @@ export class FetchGetExampleComponent implements OnInit {
         }).then(res => {
             // Argument (res) is Response object!
         }).catch(err => {
-            // Error 
+            // Error
         });
-        // << fetch-res-url-code 
+        // << fetch-res-url-code
 
         // >> fetch-res-string-code
         fetch("https://httpbin.org/get", {
@@ -37,9 +35,9 @@ export class FetchGetExampleComponent implements OnInit {
         }).then(res => {
             // Argument (res) is string!
         }).catch(err => {
-            // Error 
+            // Error
         });
-        // << fetch-res-string-code 
+        // << fetch-res-string-code
 
         // >> fetch-res-json-code
         fetch("https://httpbin.org/get", {
@@ -60,9 +58,9 @@ export class FetchGetExampleComponent implements OnInit {
             this.url = res.url;
 
         }).catch(err => {
-            // Error 
+            // Error
         });
-        // << fetch-res-json-code 
+        // << fetch-res-json-code
 
         // >> fetch-res-form-code
         fetch("https://httpbin.org/get", {
@@ -72,9 +70,9 @@ export class FetchGetExampleComponent implements OnInit {
         }).then(res => {
             // Argument (res) is FormData object!
         }).catch(err => {
-            // Error 
+            // Error
         });
-        // << fetch-res-form-code 
+        // << fetch-res-form-code
 
         // >> fetch-res-status-code
         fetch("https://httpbin.org/get", {
@@ -83,9 +81,9 @@ export class FetchGetExampleComponent implements OnInit {
             this.status = response.status;
             this.statusText = response.statusText;
         }).catch(err => {
-            // Error 
+            // Error
         });
-        // << fetch-res-status-code 
+        // << fetch-res-status-code
 
         // >> fetch-res-headers-code
         fetch("https://httpbin.org/get", {
@@ -96,8 +94,8 @@ export class FetchGetExampleComponent implements OnInit {
             this.connectionHeader = response.headers.get("Connection");
             this.serverHeader = response.headers.get("Server");
         }).catch(err => {
-            // Error 
+            // Error
         });
-        // << fetch-res-headers-code 
+        // << fetch-res-headers-code
     }
 }
