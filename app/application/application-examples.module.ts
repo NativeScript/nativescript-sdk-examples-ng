@@ -9,29 +9,39 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ApplicationExamplesComponent
     },
     {
-        path: 'check-target',
+        path: "check-target",
         component: AppCheckingTargetExampleComponent,
         data: { title: "Check The Target Platform" }
     },
     {
-        path: 'using-android',
+        path: "using-android",
         component: AppUsingAndroidExampleComponent,
         data: { title: "Using Android Specifics" }
     },
     {
-        path: 'using-ios',
+        path: "using-ios",
         component: AppUsingIosExampleComponent,
         data: { title: "Using iOS Specifics" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ApplicationExamplesComponent, AppCheckingTargetExampleComponent, AppUsingAndroidExampleComponent, AppUsingIosExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ApplicationExamplesComponent,
+        AppCheckingTargetExampleComponent,
+        AppUsingAndroidExampleComponent,
+        AppUsingIosExampleComponent
+    ]
 })
 
 export class ApplicationExamplesModule {

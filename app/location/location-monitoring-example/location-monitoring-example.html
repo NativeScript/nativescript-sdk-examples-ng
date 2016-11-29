@@ -1,26 +1,26 @@
-<ScrollView exampleTitle toggleNavButton>
+<ScrollView sdkExampleTitle sdkToggleNavButton>
     <StackLayout>
         <Button class="btn btn-primary btn-active" [text]="buttonText" (tap)="monitor()"></Button>
         <StackLayout class="form">
             <StackLayout class="input-field">
                 <Label text="Longitude" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>
-                <Label class="input input-border" editable="false" [text]="monitor_longitude"></Label>
+                <Label class="input input-border" editable="false" [text]="monitorLongitude"></Label>
             </StackLayout>
             <StackLayout class="input-field">
                 <Label text="Latitude" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>
-                <Label class="input input-border" editable="false" [text]="monitor_latitude"></Label>
+                <Label class="input input-border" editable="false" [text]="monitorLatitude"></Label>
             </StackLayout>
             <StackLayout class="input-field">
                 <Label text="Altitude" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>
-                <Label class="input input-border" editable="false" [text]="monitor_altitude"></Label>
+                <Label class="input input-border" editable="false" [text]="monitorAltitude"></Label>
             </StackLayout>
             <StackLayout class="input-field">
                 <Label text="Direction" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>
-                <Label class="input input-border" editable="false" [text]="monitor_direction + '%'"></Label>
+                <Label class="input input-border" editable="false" [text]="monitorDirection + '%'"></Label>
             </StackLayout>
             <StackLayout class="input-field">
                 <Label text="Speed" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>
-                <Label class="input input-border" editable="false" [text]="monitor_speed+'m/s'"></Label>
+                <Label class="input input-border" editable="false" [text]="monitorSpeed+'m/s'"></Label>
             </StackLayout>
         </StackLayout>
     </StackLayout>

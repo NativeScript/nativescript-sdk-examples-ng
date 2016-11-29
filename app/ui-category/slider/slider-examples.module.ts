@@ -8,24 +8,33 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: SliderExamplesComponent
     },
     {
-        path: 'basic',
+        path: "basic",
         component: BasicSliderComponent,
         data: { title: "Basic Slider" }
     },
     {
-        path: 'value',
+        path: "value",
         component: SliderAccessValueComponent,
         data: { title: "Slider's value" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [SliderExamplesComponent, BasicSliderComponent, SliderAccessValueComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        SliderExamplesComponent,
+        BasicSliderComponent,
+        SliderAccessValueComponent
+    ]
 })
 
 export class SliderExamplesModule {

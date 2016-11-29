@@ -10,18 +10,27 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: FpsExamplesComponent
     },
     {
-        path: 'fps-meter-usage',
+        path: "fps-meter-usage",
         component: FpsMeterUsageComponent
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [FpsExamplesComponent, FpsMeterUsageComponent ]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptFormsModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        FpsExamplesComponent,
+        FpsMeterUsageComponent
+    ]
 })
 
 export class FpsExamplesModule {

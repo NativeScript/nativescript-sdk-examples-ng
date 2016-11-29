@@ -1,5 +1,5 @@
-// >> creating-image-code 
-import { Component, OnInit, ViewChild, ElementRef }  from "@angular/core";
+// >> creating-image-code
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import { Image } from "ui/image";
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
@@ -7,11 +7,9 @@ import { Label } from "ui/label";
 import ImageSourceModule = require("image-source");
 
 @Component({
-    selector: "creating-image",
     styleUrls: ["ui-category/image/creating-image/creating-image.component.css"],
     templateUrl: "ui-category/image/creating-image/creating-image.component.html"
 })
-
 export class CreatingImageExampleComponent implements OnInit {
     @ViewChild("st") stack: ElementRef;
 
@@ -29,7 +27,7 @@ export class CreatingImageExampleComponent implements OnInit {
         this.newLabel = new Label();
         this.newLabel.text = "Image loaded from code behind";
         this.newLabel.style.margin = "15";
-        
+
         stackView.addChild(this.newLabel);
         stackView.addChild(this.newImage);
     }

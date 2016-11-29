@@ -14,55 +14,69 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: GesturesExamplesComponent
     },
     {
-        path: 'double-tap',
+        path: "double-tap",
         component: DoubleTapExampleComponent,
         data: { title: "Double tap" }
     },
     {
-        path: 'long-press',
+        path: "long-press",
         component: LongPressExampleComponent,
         data: { title: "Long press" }
     },
     {
-        path: 'pan',
+        path: "pan",
         component: PanExampleComponent,
         data: { title: "Pan" }
     },
     {
-        path: 'pinch',
+        path: "pinch",
         component: PinchExampleComponent,
         data: { title: "Pinch" }
     },
     {
-        path: 'rotation',
+        path: "rotation",
         component: RotationExampleComponent,
         data: { title: "Rotation" }
     },
     {
-        path: 'swipe',
+        path: "swipe",
         component: SwipeExampleComponent,
         data: { title: "Swipe" }
     },
     {
-        path: 'tap',
+        path: "tap",
         component: TapExampleComponent,
         data: { title: "Tap" }
     },
     {
-        path: 'touch',
+        path: "touch",
         component: TouchExampleComponent,
         data: { title: "Touch" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [GesturesExamplesComponent, DoubleTapExampleComponent, LongPressExampleComponent, PanExampleComponent, 
-    PinchExampleComponent, RotationExampleComponent, SwipeExampleComponent, TapExampleComponent, TouchExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        GesturesExamplesComponent,
+        DoubleTapExampleComponent,
+        LongPressExampleComponent,
+        PanExampleComponent,
+        PinchExampleComponent,
+        RotationExampleComponent,
+        SwipeExampleComponent,
+        TapExampleComponent,
+        TouchExampleComponent
+    ]
 })
 
 export class GesturesExamplesModule {

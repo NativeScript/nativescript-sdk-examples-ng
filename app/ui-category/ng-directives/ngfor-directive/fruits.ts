@@ -1,4 +1,4 @@
-export var fruits = [
+export let fruits = [
     "Apple",
     "Apricot",
     "Avocado",
@@ -24,4 +24,4 @@ export var fruits = [
     "Goji berry",
     "Gooseberry",
     "Grape"
-]
+];

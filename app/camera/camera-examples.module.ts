@@ -7,18 +7,23 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: CameraExamplesComponent
     },
     {
-        path: 'using-camera',
+        path: "using-camera",
         component: UsingCameraExampleComponent,
         data: { title: "Using Camera" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [CameraExamplesComponent, UsingCameraExampleComponent]
 })
 

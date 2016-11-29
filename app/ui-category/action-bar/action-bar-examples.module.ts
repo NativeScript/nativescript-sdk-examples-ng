@@ -9,29 +9,39 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ActionBarExamplesComponent
     },
     {
-        path: 'action-items',
+        path: "action-items",
         component: ActionItemsComponent,
         data: { title: "Action items" }
     },
     {
-        path: 'navigation-button',
+        path: "navigation-button",
         component: NavigationButtonComponent,
         data: { title: "Navigation button" }
     },
     {
-        path: 'title',
+        path: "title",
         component: TitleComponent,
         data: { title: "ActionBar title" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ActionBarExamplesComponent, ActionItemsComponent, NavigationButtonComponent, TitleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ActionBarExamplesComponent,
+        ActionItemsComponent,
+        NavigationButtonComponent,
+        TitleComponent
+    ]
 })
 
 export class ActionBarExamplesModule {

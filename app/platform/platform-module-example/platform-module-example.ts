@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> import-platform-module
-import { isAndroid, isIOS, device, screen } from "platform"
+import { isAndroid, isIOS, device, screen } from "platform";
 // << import-platform-module
 // >> get-screen-device-info
 class DeviceInfo {
@@ -27,10 +27,8 @@ class ScreenInfo {
 }
 
 @Component({
-    selector: 'platform-module-component',
-    templateUrl: 'platform/platform-module-example/platform-module-example.html'
+    templateUrl: "platform/platform-module-example/platform-module-example.html"
 })
-
 export class PlatformModuleExampleComponent {
     public isItemVisible: boolean = false;
     public deviceInformation: DeviceInfo;
@@ -58,7 +56,7 @@ export class PlatformModuleExampleComponent {
     }
 
     public checkPlatformType() {
-        var message = "";
+        let message = "";
         if (isAndroid) {
             message = "You are using Android device";
         } else if (isIOS) {

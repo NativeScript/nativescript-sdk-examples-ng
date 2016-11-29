@@ -1,11 +1,10 @@
 // >> multi-line-big-code
-import { Component, ChangeDetectionStrategy, OnInit, Input}  from "@angular/core";
+import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
 import { SetupItemViewArgs } from "nativescript-angular/directives";
-import { mockedDataArray, mockedGroupDataArray, Country }  from "../mock-dataItems";
+import { mockedDataArray, mockedGroupDataArray, Country } from "../mock-dataItems";
 
 @Component({
-    selector: "multi-line-big-listview",
     templateUrl: "common-screens-category/lists-category/multi-line-big/multi-line-big.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
@@ -15,11 +14,11 @@ export class MultiLineBigListViewExampleComponent implements OnInit {
     public groupedCountries: Array<any> = [];
 
     ngOnInit() {
-        for (var i = 0; i < mockedDataArray.length; i++) {
+        for (let i = 0; i < mockedDataArray.length; i++) {
             this.countries.push(mockedDataArray[i]);
         }
 
-        for (var i = 0; i < mockedGroupDataArray.length; i++) {
+        for (let i = 0; i < mockedGroupDataArray.length; i++) {
             this.groupedCountries.push(mockedGroupDataArray[i]);
         }
     }
@@ -34,17 +33,17 @@ export class MultiLineBigListViewExampleComponent implements OnInit {
 
     onItemTapThirdList(args: ItemEventData) {
         console.log(args.index);
-    }  
+    }
 
     onSetupItemView(args: SetupItemViewArgs) {
         // further customisation can be achived with SetupItemViewArgs
         // example for creating a variable for each third element
         args.view.context.third = (args.index % 3 === 0);
-    }  
+    }
 
     checkType(value) {
         // get the class name e.g. GroupTitle or Country
-        var className = value.constructor.name;
+        let className = value.constructor.name;
         return className;
     }
 }

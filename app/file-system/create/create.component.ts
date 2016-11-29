@@ -2,13 +2,11 @@ import { Component } from "@angular/core";
 // >> fs-create-import-code
 import * as fs from "file-system";
 // << fs-create-import-code
+
 @Component({
-    selector: 'create-file-component',
-    templateUrl: 'file-system/create/create.component.html'
+    templateUrl: "file-system/create/create.component.html"
 })
-
-export class CreateExampleComponent{
-
+export class CreateExampleComponent {
     public folderName: string;
     public fileName: string;
     public fileTextContent: string;
@@ -27,17 +25,17 @@ export class CreateExampleComponent{
         this.file = this.folder.getFile((this.fileName || "testFile") + ".txt");
 
         this.file.writeText(this.fileTextContent || "some random content")
-            .then(res => {
+            .then(result => {
                 // Succeeded writing to the file.
                 this.file.readText()
                     .then(res => {
                         this.successMessage = "Successfully saved in " + this.file.path;
                         this.writtenContent = res;
                         this.isItemVisible = true;
-                    })
+                    });
             }).catch(err => {
                 // Error
             });
-        // << fs-create-all-code    
+        // << fs-create-all-code
     }
 }

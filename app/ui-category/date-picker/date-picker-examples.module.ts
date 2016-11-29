@@ -7,18 +7,23 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: DatePickerExamplesComponent
     },
     {
-        path: 'configure',
+        path: "configure",
         component: ConfigureDatePickerComponent,
         data: { title: "Configure DatePicker" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [DatePickerExamplesComponent, ConfigureDatePickerComponent]
 })
 

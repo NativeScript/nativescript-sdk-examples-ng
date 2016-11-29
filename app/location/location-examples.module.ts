@@ -9,24 +9,34 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: LocationExamplesComponent
     },
     {
-        path: 'location',
+        path: "location",
         component: BasicLocationExampleComponent,
         data: { title: "Location" }
     },
     {
-        path: 'location-monitoring',
+        path: "location-monitoring",
         component: LocationMonitoringExampleComponent,
         data: { title: "Location monitoring" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptFormsModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [LocationExamplesComponent, BasicLocationExampleComponent, LocationMonitoringExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptFormsModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        LocationExamplesComponent,
+        BasicLocationExampleComponent,
+        LocationMonitoringExampleComponent
+    ]
 })
 
 export class LocationExamplesModule {

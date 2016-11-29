@@ -1,3 +1,4 @@
+// tslint:disable:max-line-length
 import { NgModule } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptModule } from "nativescript-angular/platform";
@@ -7,19 +8,27 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ModalPageExamplesComponent
     },
     {
-        path: 'sample-modal-page',
+        path: "sample-modal-page",
         component: SampleModalPageModuleExampleComponent,
         data: { title: "Sample modal page" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ModalPageExamplesComponent, SampleModalPageModuleExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ModalPageExamplesComponent,
+        SampleModalPageModuleExampleComponent
+    ]
 })
 
 export class ModalPageExamplesModule {

@@ -1,12 +1,12 @@
 import { Component } from "@angular/core";
-// >> app-settings-code 
+// >> app-settings-code
 import * as appSettings from "application-settings";
-// << app-settings-code 
+// << app-settings-code
+
 @Component({
-    selector: 'values-component',
-    templateUrl: 'application-settings/values/values.component.html'
+    templateUrl: "application-settings/values/values.component.html"
 })
-export class ValuesExampleComponent {      
+export class ValuesExampleComponent {
     public isTurnedOn: boolean;
     public username: string;
     public locationX: number;
@@ -14,36 +14,36 @@ export class ValuesExampleComponent {
     public noBoolKey: boolean;
 
     constructor() {
-        // >> app-settings-bool-code 
+        // >> app-settings-bool-code
         appSettings.setBoolean("isTurnedOn", true);
         this.isTurnedOn = appSettings.getBoolean("isTurnedOn", true);
-        // << app-settings-bool-code 
+        // << app-settings-bool-code
 
-        // >> app-settings-string-code 
+        // >> app-settings-string-code
         appSettings.setString("username", "Wolfgang");
         this.username = appSettings.getString("username");
-        // << app-settings-string-code 
+        // << app-settings-string-code
 
-        // >> app-settings-number-code 
+        // >> app-settings-number-code
         appSettings.setNumber("locationX", 54.321);
         this.locationX = parseFloat(appSettings.getNumber("locationX").toFixed(3));
-        // << app-settings-number-code 
+        // << app-settings-number-code
 
-        // >> app-settings-default-value-code 
+        // >> app-settings-default-value-code
         // will return "No string value" if there is no value for "noSuchKey"
         this.someKey = appSettings.getString("noSuchKey", "No string value");
-        // << app-settings-default-value-code 
+        // << app-settings-default-value-code
 
-        // >> app-settings-no-value-code 
+        // >> app-settings-no-value-code
         // will return undefined if there is no value for "noSuchKey"
-        var defaultValue = appSettings.getString("noSuchKey");
+        let defaultValue = appSettings.getString("noSuchKey");
         console.log(defaultValue);
-        // << app-settings-no-value-code 
+        // << app-settings-no-value-code
 
-        // >> app-settings-no-key-code 
+        // >> app-settings-no-key-code
         // will return false if there is no value for "noBoolKey"
         this.noBoolKey = appSettings.hasKey("noBoolKey");
-        // << app-settings-no-key-code 
+        // << app-settings-no-key-code
     }
 
     public onSetSettings() {
@@ -64,13 +64,13 @@ export class ValuesExampleComponent {
     }
 
     public onClearSettings() {
-        // >> app-settings-remove-key-code 
+        // >> app-settings-remove-key-code
         appSettings.remove("isTurnedOn");
-        // << app-settings-remove-key-code 
+        // << app-settings-remove-key-code
 
-        // >> app-settings-remove-all-code 
+        // >> app-settings-remove-all-code
         appSettings.clear();
-        // << app-settings-remove-all-code 
+        // << app-settings-remove-all-code
 
         appSettings.setBoolean("isTurnedOn", false);
         this.isTurnedOn = appSettings.getBoolean("isTurnedOn", false);

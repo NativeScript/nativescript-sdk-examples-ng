@@ -7,18 +7,23 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: TextViewExamplesComponent
     },
     {
-        path: 'basic',
+        path: "basic",
         component: BasicTextViewComponent,
         data: { title: "Basic TextView" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [TextViewExamplesComponent, BasicTextViewComponent]
 })
 

@@ -1,11 +1,9 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: 'flexbox-layout-three-component',
-    templateUrl: 'ui-category/layouts/flexbox-layout-three/flexbox-layout.component.html'
+    templateUrl: "ui-category/layouts/flexbox-layout-three/flexbox-layout.component.html"
 })
-
-export class FlexboxLayoutComponentThree implements OnInit {
+export class FlexboxLayoutThirdComponent implements OnInit {
     public desc: string;
 
     ngOnInit() {

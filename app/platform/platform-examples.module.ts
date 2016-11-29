@@ -7,19 +7,27 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: PlatformExamplesComponent
     },
     {
-        path: 'platform-module',
+        path: "platform-module",
         component: PlatformModuleExampleComponent,
         data: { title: "Using platform module" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [PlatformExamplesComponent, PlatformModuleExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        PlatformExamplesComponent,
+        PlatformModuleExampleComponent
+    ]
 })
 
 export class PlatformExamplesModule {

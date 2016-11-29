@@ -21,7 +21,7 @@ Set text in code
 
 ######text.component.html
 ```
-<StackLayout exampleTitle toggleNavButton>
+<StackLayout sdkExampleTitle sdkToggleNavButton>
     <StackLayout  class="example-container">
         <!-- >> button-text-html -->
         <Button id="button" text="I am a button"></Button>

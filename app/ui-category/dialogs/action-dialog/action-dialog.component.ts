@@ -2,14 +2,12 @@ import { Component } from "@angular/core";
 import dialogs = require("ui/dialogs");
 
 @Component({
-    selector: 'action-dialog-component',
-    templateUrl: 'ui-category/dialogs/action-dialog/action-dialog.component.html'
+    templateUrl: "ui-category/dialogs/action-dialog/action-dialog.component.html"
 })
-
 export class ActionDialogComponent {
     displayActionDialog() {
         // >> action-dialog-code
-        var options = {
+        let options = {
             title: "Race selection",
             message: "Choose your race",
             cancelButtonText: "Cancel",

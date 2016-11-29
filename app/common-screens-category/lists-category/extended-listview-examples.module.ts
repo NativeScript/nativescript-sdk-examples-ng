@@ -16,66 +16,81 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ExtendedListViewExamplesComponent
     },
     {
-        path: 'cards-listview',
+        path: "cards-listview",
         component: CardsListViewExampleComponent,
         data: { title: "Cards listview" }
     },
     {
-        path: 'header-with-map',
+        path: "header-with-map",
         component: HeaderWithMapExampleComponent,
         data: { title: "Header with map" }
     },
     {
-        path: 'horizontal-scrolling',
+        path: "horizontal-scrolling",
         component: HorizontalScrollingExampleComponent,
         data: { title: "Horizontal scrolling" }
     },
     {
-        path: 'multi-line',
+        path: "multi-line",
         component: MultiLineListViewExampleComponent,
         data: { title: "Multi line" }
     },
     {
-        path: 'multi-line-big',
+        path: "multi-line-big",
         component: MultiLineBigListViewExampleComponent,
         data: { title: "Multi line big" }
     },
     {
-        path: 'multi-line-grouped',
+        path: "multi-line-grouped",
         component: MultiLineGroupedListViewExampleComponent,
         data: { title: "Multi line grouped" }
     },
     {
-        path: 'single-line-listview',
+        path: "single-line-listview",
         component: SingleLineListViewExampleComponent,
         data: { title: "Single line listview" }
     },
     {
-        path: 'grouped-single-line',
+        path: "grouped-single-line",
         component: GroupedSingleLineListViewExampleComponent,
         data: { title: "Grouped single line" }
     },
     {
-        path: 'two-line-listview',
+        path: "two-line-listview",
         component: TwoLineListViewExampleComponent,
         data: { title: "Two line listview" }
     },
     {
-        path: 'grouped-two-lines',
+        path: "grouped-two-lines",
         component: GroupedTwoLinesListViewExampleComponent,
         data: { title: "Grouped two lines" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ExtendedListViewExamplesComponent, CardsListViewExampleComponent, HeaderWithMapExampleComponent, HorizontalScrollingExampleComponent, MultiLineListViewExampleComponent, 
-    MultiLineBigListViewExampleComponent, MultiLineGroupedListViewExampleComponent, SingleLineListViewExampleComponent, GroupedSingleLineListViewExampleComponent, 
-    TwoLineListViewExampleComponent, GroupedTwoLinesListViewExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ExtendedListViewExamplesComponent,
+        CardsListViewExampleComponent,
+        HeaderWithMapExampleComponent,
+        HorizontalScrollingExampleComponent,
+        MultiLineListViewExampleComponent,
+        MultiLineBigListViewExampleComponent,
+        MultiLineGroupedListViewExampleComponent,
+        SingleLineListViewExampleComponent,
+        GroupedSingleLineListViewExampleComponent,
+        TwoLineListViewExampleComponent,
+        GroupedTwoLinesListViewExampleComponent
+    ]
 })
 
 export class ExtendedListViewExamplesModule {

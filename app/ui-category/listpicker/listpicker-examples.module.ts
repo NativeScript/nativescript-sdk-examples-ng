@@ -9,24 +9,34 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ListPickerExamplesComponent
     },
     {
-        path: 'creating-list-picker',
+        path: "creating-list-picker",
         component: CreatingListPickerComponent,
         data: { title: "Create ListPicker" }
     },
     {
-        path: 'using-selected-index',
+        path: "using-selected-index",
         component: UsingSelectedIndexExampleComponent,
         data: { title: "Using selected index" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ListPickerExamplesComponent, CreatingListPickerComponent, UsingSelectedIndexExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptFormsModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ListPickerExamplesComponent,
+        CreatingListPickerComponent,
+        UsingSelectedIndexExampleComponent
+    ]
 })
 
 export class ListPickerExamplesModule {

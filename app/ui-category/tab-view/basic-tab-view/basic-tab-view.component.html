@@ -1,5 +1,5 @@
 <!-- >> basic-tab-view-html -->
-<TabView #tabview [selectedIndex]="tabindex" exampleTitle toggleNavButton>
+<TabView #tabview [selectedIndex]="tabindex" sdkExampleTitle sdkToggleNavButton>
 	<StackLayout *tabItem="{title: 'NativeScript'}">
 		<Label text="NativeScript" class="m-15 h2 text-left" color="blue"></Label>
 		<ScrollView>
@@ -8,7 +8,7 @@
 	</StackLayout>
 	<StackLayout *tabItem="{title: 'Icon'}">
 		<Image class="m-t-30 m-b-15" src="res://icon" width="80" height="80"></Image>
-		<Label text="NativeScript" textWrap="true" class="h2 m-x-auto" color="blue" ></Label>
+		<Label text="NativeScript" textWrap="true" class="h2 m-x-auto" color="blue"></Label>
 	</StackLayout>
 </TabView>
 <!-- << basic-tab-view-html -->

@@ -2,17 +2,15 @@ import { Component, OnInit } from "@angular/core";
 // >> import-http-module-get
 import { getFile, getImage, getJSON, getString, request } from "http";
 // << import-http-module-get
-import { isAndroid } from "platform"
+import { isAndroid } from "platform";
 import { path, knownFolders, File } from "file-system";
 import { Page } from "ui/page";
 import { fromFile } from "image-source";
-import { Image } from "ui/image"
+import { Image } from "ui/image";
 
 @Component({
-    selector: 'http-get-component',
-    templateUrl: 'http/http-get/http-get.html'
+    templateUrl: "http/http-get/http-get.html"
 })
-
 export class HttpGetComponent implements OnInit {
     public stringResponce: string = "";
     public origin: string = "";
@@ -26,10 +24,10 @@ export class HttpGetComponent implements OnInit {
     constructor(private page: Page) { };
 
     ngOnInit() {
-        var platformName = "iOS";
+        let platformName = "iOS";
 
         if (isAndroid) {
-            platformName = "Android"
+            platformName = "Android";
         }
         // >> getstring-http-module
         getString("https://httpbin.org/get").then((r) => {
@@ -45,13 +43,13 @@ export class HttpGetComponent implements OnInit {
                 this.origin = (<any>r).origin;
                 this.url = (<any>r).url;
             }, (e) => {
-                alert("GetJSON: " + e)
+                alert("GetJSON: " + e);
             });
         // << getJSON-http-module
         // >> getImage-http-module
         getImage("https://httpbin.org/image/jpeg")
             .then((r) => {
-                var image: Image = <Image>this.page.getViewById("thirdImage");
+                let image: Image = <Image>this.page.getViewById("thirdImage");
                 image.imageSource = r;
             }, (e) => {
                 alert("GetImage: " + e);
@@ -60,17 +58,17 @@ export class HttpGetComponent implements OnInit {
         // >> getFile-http-module
         getFile("https://httpbin.org/image/jpeg")
             .then((r: File) => {
-                var image: Image = <Image>this.page.getViewById("imageId");
+                let image: Image = <Image>this.page.getViewById("imageId");
                 image.imageSource = fromFile(r.path);
             }, (e) => {
                 alert("GetFile: " + e);
             });
         // << getFile-http-module
         // >> getFile-http-moduled-specify-file-path
-        var filePath = path.join(knownFolders.documents().path, "test.png");
+        let filePath = path.join(knownFolders.documents().path, "test.png");
         getFile("https://httpbin.org/image/png", filePath)
             .then((r: File) => {
-                var image: Image = <Image>this.page.getViewById("secondimageId");
+                let image: Image = <Image>this.page.getViewById("secondimageId");
                 image.imageSource = fromFile(r.path);
             }, (e) => {
                 alert("GetFile: " + e);
@@ -79,7 +77,7 @@ export class HttpGetComponent implements OnInit {
         // >> get-request-http-module
         request({ url: "https://httpbin.org/get", method: "GET" })
             .then((response) => {
-                var header = (<any>response.headers);
+                let header = (<any>response.headers);
                 this.dateHeader = header["Date"];
                 this.typeHeader = header["Content-Type"];
                 this.serverHeader = header["Server"];

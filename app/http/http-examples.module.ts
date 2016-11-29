@@ -11,22 +11,31 @@ import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.modu
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: HttpExamplesComponent
     },
     {
-        path: 'http-get',
+        path: "http-get",
         component: HttpGetComponent
     },
     {
-        path: 'http-post',
+        path: "http-post",
         component: HttpPostComponent
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [HttpExamplesComponent, HttpGetComponent, HttpPostComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        HttpExamplesComponent,
+        HttpGetComponent,
+        HttpPostComponent
+    ]
 })
 
 export class HttpExamplesModule {

@@ -8,23 +8,28 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: SegmentedBarExamplesComponent
     },
     {
-        path: 'basic',
+        path: "basic",
         component: BasicSegmentedBarComponent,
         data: { title: "Basic SegmentedBar" }
     },
     {
-        path: 'views',
+        path: "views",
         component: SegmentedBarViewsComponent,
         data: { title: "SegmentedBar views" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [SegmentedBarExamplesComponent, BasicSegmentedBarComponent, SegmentedBarViewsComponent]
 })
 

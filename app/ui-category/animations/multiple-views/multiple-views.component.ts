@@ -3,17 +3,15 @@ import { Page } from "ui/page";
 import { View } from "ui/core/view";
 import animationModule = require("ui/animation");
 
-var view1: View;
-var view2: View;
-var view3: View;
-var view4: View;
+let view1: View;
+let view2: View;
+let view3: View;
+let view4: View;
 
 @Component({
-    selector: 'animations-component',
-    templateUrl: 'ui-category/animations/multiple-views/multiple-views.component.html',
-    styleUrls:["ui-category/animations/style.css"],
+    templateUrl: "ui-category/animations/multiple-views/multiple-views.component.html",
+    styleUrls: ["ui-category/animations/style.css"],
 })
-
 export class MultipleViewsComponent implements OnInit {
     constructor(private page: Page) {
     }
@@ -27,36 +25,36 @@ export class MultipleViewsComponent implements OnInit {
 
     // >> animate-multiple-views-simultaneously-code
     animate() {
-        var definitions = new Array<animationModule.AnimationDefinition>();
-        var a1: animationModule.AnimationDefinition = {
+        let definitions = new Array<animationModule.AnimationDefinition>();
+        let a1: animationModule.AnimationDefinition = {
             target: view1,
             translate: { x: 200, y: 0 },
             duration: 3000
         };
         definitions.push(a1);
 
-        var a2: animationModule.AnimationDefinition = {
+        let a2: animationModule.AnimationDefinition = {
             target: view2,
             translate: { x: 0, y: 200 },
             duration: 3000
         };
         definitions.push(a2);
 
-        var a3: animationModule.AnimationDefinition = {
+        let a3: animationModule.AnimationDefinition = {
             target: view3,
             translate: { x: -200, y: 0 },
             duration: 3000
         };
         definitions.push(a3);
 
-        var a4: animationModule.AnimationDefinition = {
+        let a4: animationModule.AnimationDefinition = {
             target: view4,
             translate: { x: 0, y: -200 },
             duration: 3000
         };
         definitions.push(a4);
 
-        var animationSet = new animationModule.Animation(definitions);
+        let animationSet = new animationModule.Animation(definitions);
 
         animationSet.play().then(() => {
             console.log("Animation finished");

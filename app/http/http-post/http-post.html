@@ -1,4 +1,4 @@
-<ScrollView orientation="vertical" exampleTitle toggleNavButton>
+<ScrollView orientation="vertical" sdkExampleTitle sdkToggleNavButton>
     <StackLayout class="form">
         <StackLayout class="input-field">
             <Label text="Name:" class="label" textWrap="true"></Label>
@@ -10,7 +10,7 @@
         </StackLayout>
         <StackLayout class="input-field">
             <Label text="Custom text:" class="label" textWrap="true"></Label>
-            <TextField hint="Enter custom text" class="input input-border" [(ngModel)]="custom_text"></TextField>
+            <TextField hint="Enter custom text" class="input input-border" [(ngModel)]="customText"></TextField>
         </StackLayout>
         <Button class="btn btn-primary btn-active" text="Submit" (tap)="makePOSTRequest()"></Button>
     </StackLayout>

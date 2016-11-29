@@ -9,10 +9,12 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 // << (hide)
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
-import { registerElement } from 'nativescript-angular/element-registry';
+import { registerElement } from "nativescript-angular/element-registry";
 import { ModalViewComponent } from "./modal-page/sample-modal-page-module-example/modal-view";
-import { TnsGoogleMaps } from "nativescript-googlemaps"
-import { isIOS } from "platform"
+import { TnsGoogleMaps } from "nativescript-googlemaps";
+import { isIOS } from "platform";
+
+declare var GMSServices: any;
 
 @NgModule({
     declarations: [
@@ -40,6 +42,5 @@ registerElement("TnsGoogleMaps", () => TnsGoogleMaps);
 if (isIOS) {
     GMSServices.provideAPIKey("AIzaSyDQZOuoz1x-bMki_pbb7AYyU9D8Js4ZpKQ");
 }
-
 
 platformNativeScriptDynamic().bootstrapModule(AppComponentModule);

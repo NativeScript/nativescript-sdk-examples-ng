@@ -1,20 +1,18 @@
-import { Component}  from "@angular/core";
+import { Component } from "@angular/core";
 
-// >> pan-code 
+// >> pan-code
 import { PanGestureEventData } from "ui/gestures";
 
 @Component({
-    selector: "pan-gesture",
     templateUrl: "ui-category/gestures/pan/pan.component.html"
 })
-
 export class PanExampleComponent {
     public deltaX: number;
     public deltaY: number;
     public state: number;
 
     onPan(args: PanGestureEventData) {
-        console.log("Pan!")
+        console.log("Pan!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);

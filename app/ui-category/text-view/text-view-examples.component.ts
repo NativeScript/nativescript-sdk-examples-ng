@@ -1,23 +1,21 @@
-import { Component, ChangeDetectionStrategy }  from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
-var menuLinks = [
+let menuLinks = [
     new Link("Basic TextView", "/text-view/basic")
 ];
 
 @Component({
-    selector: 'text-view-component',
-    templateUrl: 'examples-list.component.html',
+    templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-
 export class TextViewExamplesComponent {
     public links: Array<Link>;
 
     constructor() {
         this.links = [];
 
-        for (var i = 0; i < menuLinks.length; i++) {
+        for (let i = 0; i < menuLinks.length; i++) {
             this.links.push(menuLinks[i]);
         }
     }

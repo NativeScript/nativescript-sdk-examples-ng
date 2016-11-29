@@ -11,20 +11,42 @@ class TimestampConsoleWriter {
         if (!console) {
             return;
         }
-        var msgType = isUndefined(type) ? messageType.log : type;
+        let msgType = isUndefined(type) ? messageType.log : type;
 
         switch (msgType) {
             case messageType.log:
-                this.array.push({ "messageType": "log", "date": new Date().toISOString(), "message": message, "category": category });
+                this.array.push({
+                    "messageType": "log",
+                    "date": new Date().toISOString(),
+                    "message": message,
+                    "category": category
+                });
                 break;
             case messageType.info:
-                this.array.push({ "messageType": "info", "date": new Date().toISOString(), "message": message, "category": category });
+                this.array.push({
+                    "messageType": "info",
+                    "date": new Date().toISOString(),
+                    "message": message,
+                    "category": category
+                });
                 break;
             case messageType.warn:
-                this.array.push({ "messageType": "warning", "date": new Date().toISOString(), "message": message, "category": category });
+                this.array.push({
+                    "messageType": "warning",
+                    "date": new Date().toISOString(),
+                    "message": message,
+                    "category": category
+                });
                 break;
             case messageType.error:
-                this.array.push({ "messageType": "error", "date": new Date().toISOString(), "message": message, "category": category });
+                this.array.push({
+                    "messageType": "error",
+                    "date": new Date().toISOString(),
+                    "message": message,
+                    "category": category
+                });
+                break;
+            default:
                 break;
         }
     }
@@ -32,11 +54,9 @@ class TimestampConsoleWriter {
 // << trace-create-custom-writer
 
 @Component({
-    selector: 'custom-tracewriter-example-component',
-    templateUrl: 'trace/custom-trace-writer/custom-tracewriter-example.component.html',
+    templateUrl: "trace/custom-trace-writer/custom-tracewriter-example.component.html",
     styleUrls: ["trace/custom-trace-writer/style.css"]
 })
-
 export class CustomTraceWriterExampleComponent {
     public customwriter: TimestampConsoleWriter;
 

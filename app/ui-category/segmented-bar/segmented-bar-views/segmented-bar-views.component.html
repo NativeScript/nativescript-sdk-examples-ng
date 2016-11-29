@@ -1,7 +1,7 @@
-<StackLayout exampleTitle toggleNavButton>
+<StackLayout sdkExampleTitle sdkToggleNavButton>
 	<StackLayout>
 		<!-- >> segmentedbar-show-views -->
-		<SegmentedBar class="m-5" #sb [items]="Items" (selectedIndexChange)="onChange(sb.selectedIndex)"></SegmentedBar>
+		<SegmentedBar class="m-5" #sb [items]="items" (selectedIndexChange)="onChange(sb.selectedIndex)"></SegmentedBar>
 		<StackLayout visibility="{{ visibility1 ? 'visible' : 'collapsed' }}">
 			<Label [text]="'The new selectedIndex is: ' + selectedIndex" class="m-15 h3 p-5 text-center"></Label>
 		</StackLayout>

@@ -4,15 +4,13 @@ import { Component } from "@angular/core";
 import * as application from "application";
 
 @Component({
-    selector: 'app-check-target-component',
-    templateUrl: 'application/app-checking-target/app-checking-target.component.html'
+    templateUrl: "application/app-checking-target/app-checking-target.component.html"
 })
-
-export class AppCheckingTargetExampleComponent {      
+export class AppCheckingTargetExampleComponent {
     public isItemVisible: boolean;
 
     constructor() {
-        if(application.android) {
+        if (application.android) {
             console.log("We are running on Android device!");
             this.isItemVisible = true;
         } else if (application.ios) {
@@ -22,4 +20,4 @@ export class AppCheckingTargetExampleComponent {
     }
 
 }
-// << app-check-target-code 
+// << app-check-target-code

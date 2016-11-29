@@ -10,29 +10,39 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ButtonExamplesComponent
     },
     {
-        path: 'binding-text',
+        path: "binding-text",
         component: ButtonBindingTextComponent,
         data: { title: "Binding text" }
     },
     {
-        path: 'tap-event',
+        path: "tap-event",
         component: ButtonTapEventComponent,
         data: { title: "Tap event" }
     },
     {
-        path: 'text',
+        path: "text",
         component: ButtonTextComponent,
         data: { title: "Text" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ButtonExamplesComponent, ButtonBindingTextComponent, ButtonTapEventComponent, ButtonTextComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ButtonExamplesComponent,
+        ButtonBindingTextComponent,
+        ButtonTapEventComponent,
+        ButtonTextComponent
+    ]
 })
 
 export class ButtonExamplesModule {

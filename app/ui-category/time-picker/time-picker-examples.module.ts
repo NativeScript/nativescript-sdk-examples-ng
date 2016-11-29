@@ -7,18 +7,23 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: TimePickerExamplesComponent
     },
     {
-        path: 'configure',
+        path: "configure",
         component: ConfigureTimePickerComponent,
         data: { title: "Configure TimePicker" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
     declarations: [TimePickerExamplesComponent, ConfigureTimePickerComponent]
 })
 

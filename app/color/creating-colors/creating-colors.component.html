@@ -1,11 +1,11 @@
-<ScrollView exampleTitle toggleNavButton>
+<ScrollView sdkExampleTitle sdkToggleNavButton>
     <GridLayout rows="auto, auto, auto, 250, auto" columns="*" class="form">
 
         <Label class="h3 m-15 text-left" row="0" text="Create a Color from hex value" textWrap="true"></Label>
         <TextField class="m-15 input input-border" row="1" hint="Enter hex color e.g. F3A or DD00AA" #hexField [text]="'#' + (redValue | hex) + (greenValue | hex) + (blueValue | hex)"></TextField>
         <Button class="btn btn-primary btn-active" row="2" text="Change Color" (tap)="changeColor(hexField.text)"></Button>
 
-        <GridLayout class="p-15 m-15" row="3" [backgroundColor]="'#' + (redValue | hex) + (greenValue | hex) + (blueValue | hex)">
+        <GridLayout class="p-15 m-15" row="3" [backgroundColor]="'#' + (redValue | sdkHex) + (greenValue | sdkHex) + (blueValue | sdkHex)">
         </GridLayout>
 
         <GridLayout row="4" rows="auto, auto, auto" columns="auto, *">

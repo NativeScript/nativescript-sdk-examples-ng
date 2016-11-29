@@ -9,29 +9,38 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: AnimationsExamplesComponent
     },
     {
-        path: 'animating-properties',
+        path: "animating-properties",
         component: AnimatingPropertiesComponent,
         data: { title: "Animate properties" }
     },
     {
-        path: 'chaining-animations',
+        path: "chaining-animations",
         component: ChainingAnimationsComponent,
         data: { title: "Chaining animations" }
     },
     {
-        path: 'multiple-views',
+        path: "multiple-views",
         component: MultipleViewsComponent,
         data: { title: "Animate multiple views" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [AnimationsExamplesComponent, AnimatingPropertiesComponent, ChainingAnimationsComponent, MultipleViewsComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        AnimationsExamplesComponent,
+        AnimatingPropertiesComponent,
+        ChainingAnimationsComponent, MultipleViewsComponent
+    ]
 })
 
 export class AnimationsExamplesModule {

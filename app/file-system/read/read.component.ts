@@ -1,14 +1,13 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import * as imageSource from "image-source";
 // >> fs-read-import-code
 import * as fs from "file-system";
 // << fs-read-import-code
-@Component({
-    selector: 'read-file-component',
-    templateUrl: 'file-system/read/read.component.html'
-})
 
-export class ReadExampleComponent {
+@Component({
+    templateUrl: "file-system/read/read.component.html"
+})
+export class ReadExampleComponent implements OnInit {
 
     public folderName: string;
     public fileName: string;
@@ -33,14 +32,14 @@ export class ReadExampleComponent {
         this.file = this.folder.getFile(this.fileName);
 
         this.file.writeText(this.fileTextContent)
-            .then(res => {
+            .then(result => {
                 // >> fs-read-text-code
                 this.file.readText()
                     .then(res => {
                         this.writtenContent = res;
                     }).catch(err => {
                         console.log(err.stack);
-                    })
+                    });
                 // << fs-read-text-code    
             }).catch(err => {
                 console.log(err);
@@ -55,7 +54,9 @@ export class ReadExampleComponent {
                     // console.log(entity.name);
                     // console.log(entity.path);
                     // console.log(entity.lastModified);
-                    this.folderEntities.push(new FolderEntity(entity.name, entity.path, entity.lastModified.toString()));
+                    this.folderEntities.push(
+                        new FolderEntity(entity.name, entity.path, entity.lastModified.toString())
+                    );
                 });
             }).catch(err => {
                 // Failed to obtain folder's contents.
@@ -92,7 +93,7 @@ export class ReadExampleComponent {
 
             // >> fs-write-sync-code
             this.imageFile.writeSync(this.binarySource, err => {
-                console.log(err)
+                console.log(err);
             });
             // << fs-write-sync-code
 

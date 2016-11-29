@@ -1,12 +1,21 @@
 import { Component } from "@angular/core";
 // >> import-trace-methods
-import { setCategories, enable, disable, categories, addCategories, isCategorySet, enabled, write, clearWriters } from "trace";
+import {
+    setCategories,
+    enable,
+    disable,
+    categories,
+    addCategories,
+    isCategorySet,
+    enabled,
+    write,
+    clearWriters
+} from "trace";
 // << import-trace-methods
-import { setTimeout } from "timer"
+import { setTimeout } from "timer";
 
 @Component({
-    selector: 'trace-writer-categories',
-    templateUrl: 'trace/trace-specific-categories/trace-specific-categories-example.component.html',
+    templateUrl: "trace/trace-specific-categories/trace-specific-categories-example.component.html",
     styleUrls: ["trace/trace-specific-categories/style.css"]
 })
 
@@ -26,16 +35,16 @@ export class TraceSpecificCategoriesExampleComponent {
         // << setting-specific-tracing-categories
 
         // >> trace-add-categories
-        addCategories(categories.Navigation)
+        addCategories(categories.Navigation);
         // << trace-add-categories
 
         setTimeout(function () {
             console.log("-----------------------------------------------------");
             console.log("New trace category has been added");
-            console.log("Category: NativeLifecycle")
+            console.log("Category: NativeLifecycle");
             console.log("-----------------------------------------------------");
             alert("NativeLifecycle trace category has been added.");
-            addCategories(categories.NativeLifecycle)
+            addCategories(categories.NativeLifecycle);
         }, 2000);
 
         write("I (heart) NativeScript!", categories.Debug);
@@ -43,8 +52,7 @@ export class TraceSpecificCategoriesExampleComponent {
     public checkIsDebugCategorySet() {
         if (isCategorySet(categories.Debug)) {
             alert("Debug category has been set");
-        }
-        else {
+        } else {
             alert("Debug category has not been set");
         }
     }
@@ -52,10 +60,9 @@ export class TraceSpecificCategoriesExampleComponent {
     public checkIsDebugVisualTreeEventsSet() {
         // >> check-iscategoryset
         if (isCategorySet(categories.VisualTreeEvents)) {
-            alert("VisualTreeEvents category has been set")
-        }
-        else {
-            alert("VisualTreeEvents category has not been set")
+            alert("VisualTreeEvents category has been set");
+        } else {
+            alert("VisualTreeEvents category has not been set");
         }
         // << check-iscategoryset
     }
@@ -64,8 +71,7 @@ export class TraceSpecificCategoriesExampleComponent {
         if (enabled === false) {
             enable();
             alert("Trace has been enabled");
-        }
-        else {
+        } else {
             alert("Trace has been already enabled");
         }
     }
@@ -75,8 +81,7 @@ export class TraceSpecificCategoriesExampleComponent {
             disable();
             // << disable-tracing
             alert("Trace has been disabled");
-        }
-        else {
+        } else {
             alert("Trace has been already disabled");
         }
     }

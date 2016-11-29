@@ -1,4 +1,4 @@
-<StackLayout  exampleTitle toggleNavButton>  
+<StackLayout sdkExampleTitle sdkToggleNavButton>
     <StackLayout class="form">
         <!-- >> textfield-binding-html -->
         <StackLayout class="input-field">
@@ -6,7 +6,8 @@
             <TextField class="input input-border" hint="Enter text" autocorrect="false" #tx (textChange)="firstLabel=tx.text"></TextField>
         </StackLayout>
         <StackLayout class="input-field">
-            <TextField class="input input-border" hint="Enter some text and click the button" autocorrect="false" #secondtx returnKeyType="done" (returnPress)="submit(secondtx.text)"></TextField>
+            <TextField class="input input-border" hint="Enter some text and click the button" autocorrect="false" #secondtx returnKeyType="done"
+                (returnPress)="submit(secondtx.text)"></TextField>
         </StackLayout>
         <Button class="btn btn-primary btn-active" text="Get the second input" (tap)="showAlert(secondtx.text)"></Button>
         <!-- << textfield-binding-html -->

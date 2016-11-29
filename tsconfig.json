@@ -10,7 +10,10 @@
         "noImplicitUseStrict": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "pretty": true
+        "pretty": true,
+        "lib": [
+            "es2016"
+        ]
     },
     "exclude": [
         "node_modules",

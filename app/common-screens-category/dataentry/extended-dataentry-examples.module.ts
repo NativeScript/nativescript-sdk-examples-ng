@@ -9,29 +9,39 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 export const routerConfig = [
     {
-        path: '',
+        path: "",
         component: ExtendedDataEntryExamplesComponent
     },
     {
-        path: 'dataentry-signup',
+        path: "dataentry-signup",
         component: SignupDataEntryExampleComponent,
         data: { title: "Dataentry signup" }
     },
     {
-        path: 'dataentry-social-login',
+        path: "dataentry-social-login",
         component: SocialLoginDataEntryExampleComponent,
         data: { title: "Dataentry social login" }
     },
     {
-        path: 'dataentry-welcome',
+        path: "dataentry-welcome",
         component: WelcomeDataEntryExampleComponent,
         data: { title: "Dataentry welcome" }
     }
 ];
 
 @NgModule({
-    imports: [TitleAndNavButtonModule, NativeScriptModule, NativeScriptRouterModule, NativeScriptRouterModule.forChild(routerConfig)],
-    declarations: [ExtendedDataEntryExamplesComponent, SignupDataEntryExampleComponent, SocialLoginDataEntryExampleComponent, WelcomeDataEntryExampleComponent]
+    imports: [
+        TitleAndNavButtonModule,
+        NativeScriptModule,
+        NativeScriptRouterModule,
+        NativeScriptRouterModule.forChild(routerConfig)
+    ],
+    declarations: [
+        ExtendedDataEntryExamplesComponent,
+        SignupDataEntryExampleComponent,
+        SocialLoginDataEntryExampleComponent,
+        WelcomeDataEntryExampleComponent
+    ]
 })
 
 export class ExtendedDataentryExamplesModule {

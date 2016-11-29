@@ -1,8 +1,7 @@
-// >> progress-create-code 
-import { Component, OnInit }  from "@angular/core";
+// >> progress-create-code
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-    selector: "creating-progress",
     templateUrl: "ui-category/progress/creating-progress/creating-progress.component.html",
 })
 export class CreatingProgressComponent implements OnInit {
@@ -12,4 +11,4 @@ export class CreatingProgressComponent implements OnInit {
         this.progressValue = 25;
     }
 }
-// << progress-create-code 
+// << progress-create-code
