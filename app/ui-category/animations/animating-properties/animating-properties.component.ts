@@ -3,7 +3,7 @@ import { Color } from "color";
 import { Label } from "ui/label";
 import { AbsoluteLayout } from "ui/layouts/absolute-layout";
 
-let enums = require("ui/enums");
+import * as enums from "ui/enums";
 
 @Component({
     moduleId: module.id,

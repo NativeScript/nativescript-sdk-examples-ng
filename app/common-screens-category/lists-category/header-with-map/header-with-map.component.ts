@@ -3,7 +3,7 @@ import { ObservableArray } from "data/observable-array";
 import { mockedDataArray } from "../mock-dataItems";
 import { Location } from "nativescript-geolocation";
 import { TnsGoogleMaps } from "nativescript-googlemaps";
-import app = require("application");
+import * as app from "application";
 import { isAndroid } from "platform";
 // >> ext-listview-map-header-code
 declare var com: any;

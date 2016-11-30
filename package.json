@@ -1,83 +1,106 @@
 {
-  "name": "nativescript-sdk-examples-ng",
-  "description": "NativeScript & Angular 2 SDK Examples",
-  "author": "Telerik <support@telerik.com>",
-  "version": "0.1.0",
-  "homepage": "https://github.com/NativeScript/nativescript-sdk-examples-ng",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/NativeScript/nativescript-sdk-examples-ng"
-  },
-  "bugs": {
-    "url": "https://github.com/NativeScript/nativescript-sdk-examples-ng/issues"
-  },
-  "keywords": [
-    "NativeScript",
-    "Angular",
-    "SDK",
-    "example",
-    "documentation"
-  ],
-  "license": "Apache-2.0",
-  "nativescript": {
-    "id": "org.nativescript.nativescriptsdkexamplesng",
-    "tns-ios": {
-      "version": "2.4.0"
+    "name": "nativescript-sdk-examples-ng",
+    "description": "NativeScript & Angular 2 SDK Examples",
+    "author": "Telerik <support@telerik.com>",
+    "version": "0.1.0",
+    "homepage": "https://github.com/NativeScript/nativescript-sdk-examples-ng",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/NativeScript/nativescript-sdk-examples-ng"
     },
-    "tns-android": {
-      "version": "2.4.1"
+    "bugs": {
+        "url": "https://github.com/NativeScript/nativescript-sdk-examples-ng/issues"
+    },
+    "keywords": [
+        "NativeScript",
+        "Angular",
+        "SDK",
+        "example",
+        "documentation"
+    ],
+    "license": "Apache-2.0",
+    "nativescript": {
+        "id": "org.nativescript.nativescriptsdkexamplesng",
+        "tns-ios": {
+            "version": "2.4.0"
+        },
+        "tns-android": {
+            "version": "2.4.1"
+        }
+    },
+    "dependencies": {
+        "@angular/common": "2.2.1",
+        "@angular/compiler": "2.2.1",
+        "@angular/core": "2.2.1",
+        "@angular/forms": "2.2.1",
+        "@angular/http": "2.2.1",
+        "@angular/platform-browser": "2.2.1",
+        "@angular/platform-browser-dynamic": "2.2.1",
+        "@angular/router": "3.2.1",
+        "nativescript-intl": "~0.0.6",
+        "nativescript-angular": "1.2.0",
+        "nativescript-camera": "0.0.7",
+        "nativescript-geolocation": "0.0.14",
+        "nativescript-googlemaps": "0.0.6",
+        "nativescript-theme-core": "^1.0.0",
+        "rxjs": "5.0.0-beta.12",
+        "reflect-metadata": "~0.1.8",
+        "tns-core-modules": "next"
+    },
+    "devDependencies": {
+        "@angular/compiler-cli": "2.2.1",
+        "@ngtools/webpack": "1.1.6",
+        "babel-traverse": "6.11.4",
+        "babel-types": "6.11.1",
+        "babylon": "6.8.4",
+        "codelyzer": "^2.0.0-beta.1",
+        "copy-webpack-plugin": "~3.0.1",
+        "css-loader": "~0.26.0",
+        "extract-text-webpack-plugin": "~2.0.0-beta.4",
+        "fs-extra": "^0.30.0",
+        "glob": "^7.0.5",
+        "lazy": "1.0.11",
+        "markdown-snippet-injector": "^0.2.0",
+        "nativescript-dev-typescript": "^0.3.2",
+        "nativescript-dev-webpack": "^0.2.11",
+        "opener": "^1.4.1",
+        "raw-loader": "~0.5.1",
+        "resolve-url-loader": "~1.6.0",
+        "rimraf": "^2.5.3",
+        "tar.gz": "^1.0.5",
+        "tns-platform-declarations": "^2.4.0",
+        "tslint": "^4.0.2",
+        "typescript": "^2.0.3",
+        "webpack": "~2.1.0-beta.27",
+        "zone.js": "~0.6.21"
+    },
+    "scripts": {
+        "pretsc": "npm install",
+        "tsc": "tsc",
+        "pretslint": "npm run tsc",
+        "tslint": "tslint -C tsconfig.json --project tslint.json",
+        "prebuild": "npm run tslint",
+        "build": "node scripts/build.js",
+        "postbuild": "npm run inject && npm run archive",
+        "inject": "mdinject --root=app --docsroot=dist/sdk-examples --sourceext=\".ts|.css|.html\" --snippettitles=\"TypeScript|CSS|HTML\"",
+        "archive": "node scripts/archive.js",
+        "prepush-to-github": "npm run build",
+        "push-to-github": "(cd dist/sdk-examples && rimraf .git && git init && git add -A && git commit -m \"nativescript-sdk-examples build preview\" && git remote add origin git@github.com:NativeScript/nativescript-sdk-examples-preview.git && git push -u --force origin master)",
+        "preshow-preview": "npm run push-to-github",
+        "show-preview": "opener https://github.com/NativeScript/nativescript-sdk-examples-preview",
+        "clean-android": "tns clean-app android",
+        "clean-ios": "tns clean-app ios",
+        "prewebpack-android": "npm run clean-android",
+        "prewebpack-ios": "npm run clean-ios",
+        "webpack-android": "webpack --config=webpack.android.js --progress",
+        "webpack-ios": "webpack --config=webpack.ios.js --progress",
+        "prestart-android-bundle": "npm run webpack-android",
+        "prestart-ios-bundle": "npm run webpack-ios",
+        "start-android-bundle": "tns run android --bundle --disable-npm-install",
+        "start-ios-bundle": "tns run ios --bundle --disable-npm-install",
+        "prebuild-android-bundle": "npm run webpack-android",
+        "prebuild-ios-bundle": "npm run webpack-ios",
+        "build-android-bundle": "tns build android --bundle --disable-npm-install",
+        "build-ios-bundle": "tns build ios --bundle --disable-npm-install"
     }
-  },
-  "dependencies": {
-    "@angular/common": "2.2.1",
-    "@angular/compiler": "2.2.1",
-    "@angular/core": "2.2.1",
-    "@angular/forms": "2.2.1",
-    "@angular/http": "2.2.1",
-    "@angular/platform-browser": "2.2.1",
-    "@angular/platform-browser-dynamic": "2.2.1",
-    "@angular/router": "3.2.1",
-    "nativescript-angular": "next",
-    "nativescript-camera": "0.0.7",
-    "nativescript-geolocation": "0.0.14",
-    "nativescript-googlemaps": "0.0.6",
-    "nativescript-intl": "~0.0.4",
-    "nativescript-theme-core": "^1.0.0",
-    "rxjs": "5.0.0-beta.12",
-    "reflect-metadata": "~0.1.8",
-    "tns-core-modules": "next"
-  },
-  "devDependencies": {
-    "babel-traverse": "6.11.4",
-    "babel-types": "6.11.1",
-    "babylon": "6.8.4",
-    "codelyzer": "^2.0.0-beta.1",
-    "fs-extra": "^0.30.0",
-    "glob": "^7.0.5",
-    "lazy": "1.0.11",
-    "markdown-snippet-injector": "^0.2.0",
-    "nativescript-dev-typescript": "^0.3.2",
-    "opener": "^1.4.1",
-    "rimraf": "^2.5.3",
-    "tar.gz": "^1.0.5",
-    "tns-platform-declarations": "^2.4.0",
-    "tslint": "^4.0.2",
-    "typescript": "^2.0.3",
-    "zone.js": "~0.6.21"
-  },
-  "scripts": {
-    "pretsc": "npm install",
-    "tsc": "tsc",
-    "pretslint": "npm run tsc",
-    "tslint": "tslint -C tsconfig.json --project tslint.json",
-    "prebuild": "npm run tslint",
-    "build": "node scripts/build.js",
-    "postbuild": "npm run inject && npm run archive",
-    "inject": "mdinject --root=app --docsroot=dist/sdk-examples --sourceext=\".ts|.css|.html\" --snippettitles=\"TypeScript|CSS|HTML\"",
-    "archive": "node scripts/archive.js",
-    "prepush-to-github": "npm run build",
-    "push-to-github": "(cd dist/sdk-examples && rimraf .git && git init && git add -A && git commit -m \"nativescript-sdk-examples build preview\" && git remote add origin git@github.com:NativeScript/nativescript-sdk-examples-preview.git && git push -u --force origin master)",
-    "preshow-preview": "npm run push-to-github",
-    "show-preview": "opener https://github.com/NativeScript/nativescript-sdk-examples-preview"
-  }
 }

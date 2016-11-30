@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Page } from "ui/page";
 import { View } from "ui/core/view";
-import animationModule = require("ui/animation");
+import * as animationModule from "ui/animation";
 
 let view1: View;
 let view2: View;

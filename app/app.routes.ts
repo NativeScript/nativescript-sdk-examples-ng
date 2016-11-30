@@ -2,237 +2,237 @@
 export const routes = [
     {
         path: "",
-        loadChildren: () => require("./examples-list.module")["ExamplesListModule"],
+        loadChildren: "./examples-list.module#ExamplesListModule",
         data: { title: "NativeScript Code Samples" }
     },
     {
         path: "action-bar",
-        loadChildren: () => require("./ui-category/action-bar/action-bar-examples.module")["ActionBarExamplesModule"],
+        loadChildren: "./ui-category/action-bar/action-bar-examples.module#ActionBarExamplesModule",
         data: { title: "ActionBar" }
     },
     {
         path: "activity-indicator",
-        loadChildren: () => require("./ui-category/activity-indicator/activity-indicator-examples.module")["ActivityIndicatorExamplesModule"],
+        loadChildren: "./ui-category/activity-indicator/activity-indicator-examples.module#ActivityIndicatorExamplesModule",
         data: { title: "ActivityIndicator" }
     },
     {
         path: "animations",
-        loadChildren: () => require("./ui-category/animations/animations-examples.module")["AnimationsExamplesModule"],
+        loadChildren: "./ui-category/animations/animations-examples.module#AnimationsExamplesModule",
         data: { title: "Animations" }
     },
     {
         path: "button",
-        loadChildren: () => require("./ui-category/button/button-examples.module")["ButtonExamplesModule"],
+        loadChildren: "./ui-category/button/button-examples.module#ButtonExamplesModule",
         data: { title: "Button" }
     },
     {
         path: "date-picker",
-        loadChildren: () => require("./ui-category/date-picker/date-picker-examples.module")["DatePickerExamplesModule"],
+        loadChildren: "./ui-category/date-picker/date-picker-examples.module#DatePickerExamplesModule",
         data: { title: "DatePicker" }
     },
     {
         path: "dialogs",
-        loadChildren: () => require("./ui-category/dialogs/dialogs-examples.module")["DialogsExamplesModule"],
+        loadChildren: "./ui-category/dialogs/dialogs-examples.module#DialogsExamplesModule",
         data: { title: "Dialogs" }
     },
     {
         path: "formatted-string",
-        loadChildren: () => require("./ui-category/formatted-string/formated-string-examples.module")["FormattedStringExamplesModule"],
+        loadChildren: "./ui-category/formatted-string/formated-string-examples.module#FormattedStringExamplesModule",
         data: { title: "Formatted String" }
     },
     {
         path: "gestures",
-        loadChildren: () => require("./ui-category/gestures/gestures-examples.module")["GesturesExamplesModule"],
+        loadChildren: "./ui-category/gestures/gestures-examples.module#GesturesExamplesModule",
         data: { title: "Gestures" }
     },
     {
         path: "html-view",
-        loadChildren: () => require("./ui-category/htmlview/htmlview-examples.module")["HtmlViewExamplesModule"],
+        loadChildren: "./ui-category/htmlview/htmlview-examples.module#HtmlViewExamplesModule",
         data: { title: "HtmlView" }
     },
     {
         path: "image",
-        loadChildren: () => require("./ui-category/image/image-examples.module")["ImageExamplesModule"],
+        loadChildren: "./ui-category/image/image-examples.module#ImageExamplesModule",
         data: { title: "Image" }
     },
     {
         path: "label",
-        loadChildren: () => require("./ui-category/label/label-examples.module")["LabelExamplesModule"],
+        loadChildren: "./ui-category/label/label-examples.module#LabelExamplesModule",
         data: { title: "Label" }
     },
     {
         path: "layouts",
-        loadChildren: () => require("./ui-category/layouts/layouts-examples.module")["LayoutsExamplesModule"],
+        loadChildren: "./ui-category/layouts/layouts-examples.module#LayoutsExamplesModule",
         data: { title: "Layouts" }
     },
     {
         path: "list-picker",
-        loadChildren: () => require("./ui-category/listpicker/listpicker-examples.module")["ListPickerExamplesModule"],
+        loadChildren: "./ui-category/listpicker/listpicker-examples.module#ListPickerExamplesModule",
         data: { title: "ListPicker" }
     },
     {
         path: "list-view",
-        loadChildren: () => require("./ui-category/listview/listview-examples.module")["ListViewExamplesModule"],
+        loadChildren: "./ui-category/listview/listview-examples.module#ListViewExamplesModule",
         data: { title: "ListView" }
     },
     {
         path: "progress",
-        loadChildren: () => require("./ui-category/progress/progress-examples.module")["ProgressExamplesModule"],
+        loadChildren: "./ui-category/progress/progress-examples.module#ProgressExamplesModule",
         data: { title: "Progress" }
     },
     {
         path: "scroll-view",
-        loadChildren: () => require("./ui-category/scroll-view/scroll-view-examples.module")["ScrollViewExamplesModule"],
+        loadChildren: "./ui-category/scroll-view/scroll-view-examples.module#ScrollViewExamplesModule",
         data: { title: "ScrollView" }
     },
     {
         path: "search-bar",
-        loadChildren: () => require("./ui-category/search-bar/search-bar-examples.module")["SearchBarExamplesModule"],
+        loadChildren: "./ui-category/search-bar/search-bar-examples.module#SearchBarExamplesModule",
         data: { title: "SearchBar" }
     },
     {
         path: "segmented-bar",
-        loadChildren: () => require("./ui-category/segmented-bar/segmented-bar-examples.module")["SegmentedBarExamplesModule"],
+        loadChildren: "./ui-category/segmented-bar/segmented-bar-examples.module#SegmentedBarExamplesModule",
         data: { title: "SegmentedBar" }
     },
     {
         path: "slider",
-        loadChildren: () => require("./ui-category/slider/slider-examples.module")["SliderExamplesModule"],
+        loadChildren: "./ui-category/slider/slider-examples.module#SliderExamplesModule",
         data: { title: "Slider" }
     },
     {
         path: "style",
-        loadChildren: () => require("./ui-category/style/style-examples.module")["StyleExamplesModule"],
+        loadChildren: "./ui-category/style/style-examples.module#StyleExamplesModule",
         data: { title: "Style" }
     },
     {
         path: "switch",
-        loadChildren: () => require("./ui-category/switch/switch-examples.module")["SwitchExamplesModule"],
+        loadChildren: "./ui-category/switch/switch-examples.module#SwitchExamplesModule",
         data: { title: "Switch" }
     },
     {
         path: "tab-view",
-        loadChildren: () => require("./ui-category/tab-view/tab-view-examples.module")["TabViewExamplesModule"],
+        loadChildren: "./ui-category/tab-view/tab-view-examples.module#TabViewExamplesModule",
         data: { title: "TabView" }
     },
     {
         path: "text-field",
-        loadChildren: () => require("./ui-category/text-field/text-field-examples.module")["TextFieldExamplesModule"],
+        loadChildren: "./ui-category/text-field/text-field-examples.module#TextFieldExamplesModule",
         data: { title: "TextField" }
     },
     {
         path: "text-view",
-        loadChildren: () => require("./ui-category/text-view/text-view-examples.module")["TextViewExamplesModule"],
+        loadChildren: "./ui-category/text-view/text-view-examples.module#TextViewExamplesModule",
         data: { title: "TextView" }
     },
     {
         path: "time-picker",
-        loadChildren: () => require("./ui-category/time-picker/time-picker-examples.module")["TimePickerExamplesModule"],
+        loadChildren: "./ui-category/time-picker/time-picker-examples.module#TimePickerExamplesModule",
         data: { title: "TimePicker" }
     },
     {
         path: "web-view",
-        loadChildren: () => require("./ui-category/web-view/web-view-examples.module")["WebViewExamplesModule"],
+        loadChildren: "./ui-category/web-view/web-view-examples.module#WebViewExamplesModule",
         data: { title: "WebView" }
     },
     {
         path: "application",
-        loadChildren: () => require("./application/application-examples.module")["ApplicationExamplesModule"],
+        loadChildren: "./application/application-examples.module#ApplicationExamplesModule",
         data: { title: "Application" }
     },
     {
         path: "application-settings",
-        loadChildren: () => require("./application-settings/application-settings-examples.module")["ApplicationSettingsExamplesModule"],
+        loadChildren: "./application-settings/application-settings-examples.module#ApplicationSettingsExamplesModule",
         data: { title: "Application Settings" }
     },
     {
         path: "camera",
-        loadChildren: () => require("./camera/camera-examples.module")["CameraExamplesModule"],
+        loadChildren: "./camera/camera-examples.module#CameraExamplesModule",
         data: { title: "Camera" }
     },
     {
         path: "color",
-        loadChildren: () => require("./color/color-examples.module")["ColorExamplesModule"],
+        loadChildren: "./color/color-examples.module#ColorExamplesModule",
         data: { title: "Color" }
     },
     {
         path: "angular-directives",
-        loadChildren: () => require("./ui-category/ng-directives/ng-directives-examples.module")["NgDirectivesExamplesModule"],
+        loadChildren: "./ui-category/ng-directives/ng-directives-examples.module#NgDirectivesExamplesModule",
         data: { title: "Angular Directives" }
     },
     {
         path: "trace",
-        loadChildren: () => require("./trace/trace-examples.module")["TraceExamplesModule"],
+        loadChildren: "./trace/trace-examples.module#TraceExamplesModule",
         data: { title: "Trace Module" }
     },
     {
         path: "timer",
-        loadChildren: () => require("./timer/timer-examples.module")["TimerExamplesModule"],
+        loadChildren: "./timer/timer-examples.module#TimerExamplesModule",
         data: { title: "Timer Module" }
     },
     {
         path: "content-screens",
-        loadChildren: () => require("./common-screens-category/content-screens/content-screens-examples.module")["ContentScreensExamplesModule"],
+        loadChildren: "./common-screens-category/content-screens/content-screens-examples.module#ContentScreensExamplesModule",
         data: { title: "Content Screens" }
     },
     {
         path: "dataentry",
-        loadChildren: () => require("./common-screens-category/dataentry/extended-dataentry-examples.module")["ExtendedDataentryExamplesModule"],
+        loadChildren: "./common-screens-category/dataentry/extended-dataentry-examples.module#ExtendedDataentryExamplesModule",
         data: { title: "Data Entry (extended examples)" }
     },
     {
         path: "extended-listview",
-        loadChildren: () => require("./common-screens-category/lists-category/extended-listview-examples.module")["ExtendedListViewExamplesModule"],
+        loadChildren: "./common-screens-category/lists-category/extended-listview-examples.module#ExtendedListViewExamplesModule",
         data: { title: "ListView (extended examples)" }
     },
     {
         path: "userprofile",
-        loadChildren: () => require("./common-screens-category/userprofile/extended-userprofile-examples.module")["ExtendedUserProfileExamplesModule"],
+        loadChildren: "./common-screens-category/userprofile/extended-userprofile-examples.module#ExtendedUserProfileExamplesModule",
         data: { title: "User Profile (extended examples)" }
     },
     {
         path: "connectivity",
-        loadChildren: () => require("./connectivity/connectivity-examples.module")["ConnectivityExamplesModule"],
+        loadChildren: "./connectivity/connectivity-examples.module#ConnectivityExamplesModule",
         data: { title: "Connectivity" }
     },
     {
         path: "fetch",
-        loadChildren: () => require("./fetch/fetch-examples.module")["FetchExamplesModule"],
+        loadChildren: "./fetch/fetch-examples.module#FetchExamplesModule",
         data: { title: "Fetch" }
     },
     {
         path: "file-system",
-        loadChildren: () => require("./file-system/file-system-examples.module")["FetchExamplesModule"],
+        loadChildren: "./file-system/file-system-examples.module#FetchExamplesModule",
         data: { title: "File System" }
     },
     {
         path: "location",
-        loadChildren: () => require("./location/location-examples.module")["LocationExamplesModule"],
+        loadChildren: "./location/location-examples.module#LocationExamplesModule",
         data: { title: "Location" }
     },
     {
         path: "modal-page",
-        loadChildren: () => require("./modal-page/modal-page-examples.module")["ModalPageExamplesModule"],
+        loadChildren: "./modal-page/modal-page-examples.module#ModalPageExamplesModule",
         data: { title: "Modal Page" }
     },
     {
         path: "color",
-        loadChildren: () => require("./color/color-examples.module")["ColorExamplesModule"],
+        loadChildren: "./color/color-examples.module#ColorExamplesModule",
         data: { title: "Color" }
     },
     {
         path: "http",
-        loadChildren: () => require("./http/http-examples.module")["HttpExamplesModule"],
+        loadChildren: "./http/http-examples.module#HttpExamplesModule",
         data: { title: "HTTP Module" }
     },
     {
         path: "fps-meter",
-        loadChildren: () => require("./fps-meter/fps-meter-examples.module")["FpsExamplesModule"],
+        loadChildren: "./fps-meter/fps-meter-examples.module#FpsExamplesModule",
         data: { title: "FPS Meter" }
     },
     {
         path: "platform",
-        loadChildren: () => require("./platform/platform-examples.module")["PlatformExamplesModule"],
+        loadChildren: "./platform/platform-examples.module#PlatformExamplesModule",
         data: { title: "Platform Module" }
     }
 ];

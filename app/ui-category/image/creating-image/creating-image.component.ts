@@ -4,7 +4,7 @@ import { Image } from "ui/image";
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
 
-import ImageSourceModule = require("image-source");
+import * as ImageSourceModule from "image-source";
 
 @Component({
     moduleId: module.id,

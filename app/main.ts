@@ -1,43 +1,4 @@
-// this import should be first in order to load some required settings (like globals and reflect-metadata)
-// >> ngmodule-config
-// >> (hide)
-import { platformNativeScriptDynamic, NativeScriptModule } from "nativescript-angular/platform";
-import { routes } from "./app.routes";
-import { AppComponent } from "./app.component";
-import { NgModule } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptFormsModule } from "nativescript-angular/forms";
-// << (hide)
-import { ModalDialogService } from "nativescript-angular/modal-dialog";
-import { registerElement } from "nativescript-angular/element-registry";
-import { ModalViewComponent } from "./modal-page/sample-modal-page-module-example/modal-view";
-import { TnsGoogleMaps } from "nativescript-googlemaps";
-import { isIOS } from "platform";
+import { platformNativeScriptDynamic } from "nativescript-angular/platform";
+import { AppModule } from "./app.module";
 
-declare var GMSServices: any;
-
-@NgModule({
-    declarations: [
-        // >> (hide)
-        AppComponent,
-        // << (hide)
-    ],
-
-    bootstrap: [AppComponent],
-    imports: [
-        NativeScriptModule,
-        NativeScriptFormsModule,
-        NativeScriptRouterModule,
-        NativeScriptRouterModule.forRoot(routes),
-    ]
-})
-// << ngmodule-config
-class AppComponentModule { }
-
-registerElement("TnsGoogleMaps", () => TnsGoogleMaps);
-
-if (isIOS) {
-    GMSServices.provideAPIKey("AIzaSyDQZOuoz1x-bMki_pbb7AYyU9D8Js4ZpKQ");
-}
-
-platformNativeScriptDynamic().bootstrapModule(AppComponentModule);
+platformNativeScriptDynamic().bootstrapModule(AppModule);

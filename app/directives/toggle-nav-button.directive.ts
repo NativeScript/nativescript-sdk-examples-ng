@@ -4,7 +4,7 @@ import { EventData } from "data/observable";
 import { NavigationButton } from "ui/action-bar";
 import { Page } from "ui/page";
 import { RouterExtensions } from "nativescript-angular/router";
-import app = require("application");
+import * as app from "application";
 
 @Directive({
     selector: "[sdkToggleNavButton]"
