@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import dialogs = require("ui/dialogs");
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/dialogs/login-dialog/login-dialog.component.html"
 })
 export class LoginDialogComponent {

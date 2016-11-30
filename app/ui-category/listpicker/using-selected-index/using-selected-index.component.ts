@@ -5,6 +5,7 @@ let pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 "Dugtrio", "Meowth", "Persian", "Psyduck", "Arcanine", "Poliwrath", "Machoke"];
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/listpicker/using-selected-index/using-selected-index.component.html"
 })
 export class UsingSelectedIndexExampleComponent {

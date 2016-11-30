@@ -3,6 +3,7 @@ import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import { Progress } from "ui/progress";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/progress/setting-progress/setting-progress.component.html",
 })
 export class SettingProgressComponent implements OnInit {

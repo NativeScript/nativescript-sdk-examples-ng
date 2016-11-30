@@ -3,6 +3,7 @@ import { Component } from "@angular/core";
 import { setInterval, setTimeout, clearInterval } from "timer";
 
 @Component({
+    moduleId: module.id,
     styleUrls: ["timer/set-interval/setinterval-example.css"],
     templateUrl: "timer/set-interval/setinterval-example.html"
 })

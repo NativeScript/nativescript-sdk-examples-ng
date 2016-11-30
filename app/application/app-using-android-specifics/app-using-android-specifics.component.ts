@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import * as application from "application";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "application/app-using-android-specifics/app-using-android-specifics.component.html"
 })
 export class AppUsingAndroidExampleComponent {

@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import dialogs = require("ui/dialogs");
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/dialogs/confirm-dialog/confirm-dialog.component.html"
 })
 export class ConfirmDialogComponent {

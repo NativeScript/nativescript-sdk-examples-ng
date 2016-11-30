@@ -5,6 +5,7 @@ import { SetupItemViewArgs } from "nativescript-angular/directives";
 import { mockedDataArray, mockedGroupDataArray, Country } from "../mock-dataItems";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "common-screens-category/lists-category/multi-line-big/multi-line-big.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

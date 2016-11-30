@@ -3,6 +3,7 @@ import { Component, NgZone, OnInit, OnDestroy } from "@angular/core";
 import * as connectivity from "connectivity";
 // << connectivity-import-code
 @Component({
+    moduleId: module.id,
     templateUrl: "connectivity/using-connectivity/using-connectivity.component.html"
 })
 

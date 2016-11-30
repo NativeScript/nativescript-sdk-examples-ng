@@ -13,6 +13,7 @@ let items = ["ALL Heroes (header)", "Razor", "Rubick", "Phantom Lancer", "Legion
     "Bristleback", "Pudge", "(footer)"];
 
 @Component({
+    moduleId: module.id,
     styleUrls: ["ui-category/listview/customizing-listview/customizing-listview.component.css"],
     templateUrl: "ui-category/listview/customizing-listview/customizing-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush

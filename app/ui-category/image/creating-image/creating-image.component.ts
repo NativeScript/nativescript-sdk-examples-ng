@@ -7,6 +7,7 @@ import { Label } from "ui/label";
 import ImageSourceModule = require("image-source");
 
 @Component({
+    moduleId: module.id,
     styleUrls: ["ui-category/image/creating-image/creating-image.component.css"],
     templateUrl: "ui-category/image/creating-image/creating-image.component.html"
 })

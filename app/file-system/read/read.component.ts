@@ -5,6 +5,7 @@ import * as fs from "file-system";
 // << fs-read-import-code
 
 @Component({
+    moduleId: module.id,
     templateUrl: "file-system/read/read.component.html"
 })
 export class ReadExampleComponent implements OnInit {
@@ -40,7 +41,7 @@ export class ReadExampleComponent implements OnInit {
                     }).catch(err => {
                         console.log(err.stack);
                     });
-                // << fs-read-text-code    
+                // << fs-read-text-code
             }).catch(err => {
                 console.log(err);
             });

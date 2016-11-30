@@ -4,6 +4,7 @@ import * as appSettings from "application-settings";
 // << app-settings-code
 
 @Component({
+    moduleId: module.id,
     templateUrl: "application-settings/values/values.component.html"
 })
 export class ValuesExampleComponent {

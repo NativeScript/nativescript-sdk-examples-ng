@@ -3,6 +3,7 @@ import { Component, ViewChild, ElementRef } from "@angular/core";
 import { Switch } from "ui/switch";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/switch/disable-switch/disable-switch.component.html",
     styleUrls: ["ui-category/switch/switch.style.css"],
 })

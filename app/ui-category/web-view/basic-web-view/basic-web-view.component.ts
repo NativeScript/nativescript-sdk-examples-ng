@@ -5,6 +5,7 @@ import { Page } from "ui/page";
 import { TextField } from "ui/text-field";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/web-view/basic-web-view/basic-web-view.component.html",
     styleUrls: ["ui-category/web-view/basic-web-view/style.css"]
 })

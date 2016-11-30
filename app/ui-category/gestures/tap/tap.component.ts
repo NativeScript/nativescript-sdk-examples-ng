@@ -4,6 +4,7 @@ import { GridLayout } from "ui/layouts/grid-layout";
 import { GestureEventData } from "ui/gestures";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/gestures/tap/tap.component.html"
 })
 export class TapExampleComponent {

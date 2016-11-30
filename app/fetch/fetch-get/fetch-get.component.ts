@@ -1,6 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "fetch/fetch-get/fetch-get.component.html"
 })
 export class FetchGetExampleComponent implements OnInit {

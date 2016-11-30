@@ -4,6 +4,7 @@ import { request } from "http";
 // << import-http-module
 
 @Component({
+    moduleId: module.id,
     templateUrl: "http/http-post/http-post.html"
 })
 export class HttpPostComponent {

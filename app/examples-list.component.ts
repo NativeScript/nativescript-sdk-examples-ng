@@ -50,6 +50,7 @@ let mainMenuLinks = [
 ];
 
 @Component({
+    moduleId: module.id,
     templateUrl: "examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })

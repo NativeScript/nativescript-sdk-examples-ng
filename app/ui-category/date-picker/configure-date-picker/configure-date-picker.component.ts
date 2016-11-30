@@ -3,6 +3,7 @@ import { Component } from "@angular/core";
 import { DatePicker } from "ui/date-picker";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/date-picker/configure-date-picker/configure-date-picker.component.html"
 })
 export class ConfigureDatePickerComponent {

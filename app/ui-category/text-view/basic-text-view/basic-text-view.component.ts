@@ -4,6 +4,7 @@ import { TextView } from "ui/text-view";
 import { isAndroid } from "platform";
 
 @Component({
+    moduleId: module.id,
     // >> (hide)
     styleUrls: ["ui-category/text-view/basic-text-view/style.css"],
     // << (hide)

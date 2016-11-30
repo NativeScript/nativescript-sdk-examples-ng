@@ -4,6 +4,7 @@ import { start, removeCallback, addCallback, stop } from "fps-meter";
 // << fps-meter-module-import
 
 @Component({
+    moduleId: module.id,
     styleUrls: ["fps-meter/fps-meter-usage/fps-meter.css"],
     templateUrl: "fps-meter/fps-meter-usage/fps-meter.html"
 })

@@ -3,6 +3,7 @@ import { Button } from "ui/button";
 import { Page } from "ui/page";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/button/text/text.component.html"
 })
 export class ButtonTextComponent implements OnInit {

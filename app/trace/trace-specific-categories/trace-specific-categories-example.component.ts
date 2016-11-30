@@ -15,6 +15,7 @@ import {
 import { setTimeout } from "timer";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "trace/trace-specific-categories/trace-specific-categories-example.component.html",
     styleUrls: ["trace/trace-specific-categories/style.css"]
 })

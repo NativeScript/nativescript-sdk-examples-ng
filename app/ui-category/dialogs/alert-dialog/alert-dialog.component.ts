@@ -2,6 +2,7 @@ import { Component } from "@angular/core";
 import dialogs = require("ui/dialogs");
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/dialogs/alert-dialog/alert-dialog.component.html"
 })
 export class AlertDialogComponent {

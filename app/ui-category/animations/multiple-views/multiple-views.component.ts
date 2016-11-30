@@ -9,6 +9,7 @@ let view3: View;
 let view4: View;
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/animations/multiple-views/multiple-views.component.html",
     styleUrls: ["ui-category/animations/style.css"],
 })

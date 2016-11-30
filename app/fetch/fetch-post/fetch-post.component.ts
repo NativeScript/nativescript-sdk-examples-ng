@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "fetch/fetch-post/fetch-post.component.html"
 })
 export class FetchPostExampleComponent {

@@ -1,6 +1,7 @@
 // >> slider-setting-default-values
 import { Component } from "@angular/core";
 @Component({
+    moduleId: module.id,
     // >> (hide)
     styleUrls: ["ui-category/slider/style.css"],
     // << (hide)

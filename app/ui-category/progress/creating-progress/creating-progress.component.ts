@@ -2,6 +2,7 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
+    moduleId: module.id,
     templateUrl: "ui-category/progress/creating-progress/creating-progress.component.html",
 })
 export class CreatingProgressComponent implements OnInit {

@@ -7,6 +7,7 @@ export class DataItem {
 }
 
 @Component({
+    moduleId: module.id,
     styleUrls: ["ui-category/listview/using-async-pipe/using-async-pipe.component.css"],
     templateUrl: "ui-category/listview/using-async-pipe/using-async-pipe.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush,

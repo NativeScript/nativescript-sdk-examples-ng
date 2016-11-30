@@ -3,6 +3,7 @@ import { Component } from "@angular/core";
 import * as fs from "file-system";
 // << fs-delete-import-code
 @Component({
+    moduleId: module.id,
     templateUrl: "file-system/delete/delete.component.html"
 })
 export class DeleteExampleComponent {

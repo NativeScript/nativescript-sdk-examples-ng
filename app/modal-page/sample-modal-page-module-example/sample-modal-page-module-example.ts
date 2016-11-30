@@ -5,6 +5,7 @@ import { DatePicker } from "ui/date-picker";
 import { ModalViewComponent } from "./modal-view";
 
 @Component({
+    moduleId: module.id,
     providers: [ModalDialogService],
     templateUrl: "modal-page/sample-modal-page-module-example/sample-modal-page-module-example.html"
 })
