@@ -6,7 +6,7 @@ import { TabView, SelectedIndexChangedEventData } from "ui/tab-view";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/tab-view/tab-view-items/tab-view-items.component.html",
+    templateUrl: "./tab-view-items.component.html",
 })
 export class TabViewItemsComponent {
     public tabviewitems: Array<any>;

@@ -3,7 +3,7 @@ import dialogs = require("ui/dialogs");
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/dialogs/login-dialog/login-dialog.component.html"
+    templateUrl: "./login-dialog.component.html"
 })
 export class LoginDialogComponent {
     displayLoginDialog() {

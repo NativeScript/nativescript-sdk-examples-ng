@@ -10,7 +10,7 @@ import { Image } from "ui/image";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "http/http-get/http-get.html"
+    templateUrl: "./http-get.html"
 })
 export class HttpGetComponent implements OnInit {
     public stringResponce: string = "";

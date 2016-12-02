@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/htmlview/creating-htmlview/creating-htmlview.component.html"
+    templateUrl: "./creating-htmlview.component.html"
 })
 
 export class CreatingHtmlViewExampleComponent {

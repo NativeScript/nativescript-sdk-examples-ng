@@ -5,6 +5,7 @@ import { NativeScriptModule } from "nativescript-angular/platform";
 import { ModalPageExamplesComponent } from "./modal-page-examples.component";
 import { SampleModalPageModuleExampleComponent } from "./sample-modal-page-module-example/sample-modal-page-module-example";
 import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
+import { ModalViewComponent } from "./sample-modal-page-module-example/modal-view";
 
 export const routerConfig = [
     {
@@ -27,8 +28,11 @@ export const routerConfig = [
     ],
     declarations: [
         ModalPageExamplesComponent,
-        SampleModalPageModuleExampleComponent
-    ]
+        SampleModalPageModuleExampleComponent,
+        ModalViewComponent
+    ],
+    entryComponents: [ModalViewComponent]
+    
 })
 
 export class ModalPageExamplesModule {

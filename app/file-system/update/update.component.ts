@@ -4,7 +4,7 @@ import * as fs from "file-system";
 // << fs-update-import-code
 @Component({
     moduleId: module.id,
-    templateUrl: "file-system/update/update.component.html"
+    templateUrl: "./update.component.html"
 })
 export class UpdateExampleComponent implements OnInit {
 

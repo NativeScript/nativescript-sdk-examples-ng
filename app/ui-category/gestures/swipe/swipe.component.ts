@@ -4,7 +4,7 @@ import { SwipeGestureEventData } from "ui/gestures";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/gestures/swipe/swipe.component.html"
+    templateUrl: "./swipe.component.html"
 })
 export class SwipeExampleComponent {
     public direction: number;

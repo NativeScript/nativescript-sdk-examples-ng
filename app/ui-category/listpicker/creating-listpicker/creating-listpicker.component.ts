@@ -6,7 +6,7 @@ let pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/listpicker/creating-listpicker/creating-listpicker.component.html"
+    templateUrl: "./creating-listpicker.component.html"
 })
 export class CreatingListPickerComponent {
 

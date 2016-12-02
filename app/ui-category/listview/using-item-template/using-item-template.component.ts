@@ -16,7 +16,7 @@ export class ItemComponent {
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/listview/using-item-template/using-item-template.component.html",
+    templateUrl: "./using-item-template.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UsingItemTemplateComponent {

@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/search-bar/basic-search-bar/basic-search-bar.component.html"
+    templateUrl: "./basic-search-bar.component.html"
 })
 export class BasicSearchBarComponent {
 

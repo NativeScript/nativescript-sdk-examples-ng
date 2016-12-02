@@ -5,7 +5,7 @@ import * as fs from "file-system";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "file-system/paths/paths.component.html"
+    templateUrl: "./paths.component.html"
 })
 export class PathsExampleComponent implements OnInit {
     public documents: string;

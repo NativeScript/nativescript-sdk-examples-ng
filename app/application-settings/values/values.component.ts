@@ -5,7 +5,7 @@ import * as appSettings from "application-settings";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "application-settings/values/values.component.html"
+    templateUrl: "./values.component.html"
 })
 export class ValuesExampleComponent {
     public isTurnedOn: boolean;

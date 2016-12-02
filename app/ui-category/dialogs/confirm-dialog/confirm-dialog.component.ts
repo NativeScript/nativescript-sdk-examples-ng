@@ -3,7 +3,7 @@ import dialogs = require("ui/dialogs");
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/dialogs/confirm-dialog/confirm-dialog.component.html"
+    templateUrl: "./confirm-dialog.component.html"
 })
 export class ConfirmDialogComponent {
     displayConfirmDialog() {

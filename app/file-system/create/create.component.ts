@@ -5,7 +5,7 @@ import * as fs from "file-system";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "file-system/create/create.component.html"
+    templateUrl: "./create.component.html"
 })
 export class CreateExampleComponent {
     public folderName: string;

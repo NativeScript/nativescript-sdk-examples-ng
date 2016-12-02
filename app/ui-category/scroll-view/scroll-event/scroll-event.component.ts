@@ -6,9 +6,9 @@ import { ScrollEventData } from "ui/scroll-view";
 @Component({
     moduleId: module.id,
     // >> (hide)
-    styleUrls: ["ui-category/scroll-view/scroll-event/style.css"],
+    styleUrls: ["./style.css"],
     // << (hide)
-    templateUrl: "ui-category/scroll-view/scroll-event/scroll-event.component.html"
+    templateUrl: "./scroll-event.component.html"
 })
 export class ScrollEventComponent {
 

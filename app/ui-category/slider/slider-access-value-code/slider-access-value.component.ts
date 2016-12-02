@@ -3,9 +3,9 @@ import { Component } from "@angular/core";
 @Component({
     moduleId: module.id,
     // >> (hide)
-    styleUrls: ["ui-category/slider/style.css"],
+    styleUrls: ["./../style.css"],
     // << (hide)
-    templateUrl: "ui-category/slider/slider-access-value-code/slider-access-value.component.html",
+    templateUrl: "./slider-access-value.component.html",
 })
 export class SliderAccessValueComponent {
 

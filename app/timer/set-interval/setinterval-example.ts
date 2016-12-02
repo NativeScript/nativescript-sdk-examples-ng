@@ -4,8 +4,8 @@ import { setInterval, setTimeout, clearInterval } from "timer";
 
 @Component({
     moduleId: module.id,
-    styleUrls: ["timer/set-interval/setinterval-example.css"],
-    templateUrl: "timer/set-interval/setinterval-example.html"
+    styleUrls: ["./setinterval-example.css"],
+    templateUrl: "./setinterval-example.html"
 })
 export class SetIntervalComponent {
     public buttoncolor;

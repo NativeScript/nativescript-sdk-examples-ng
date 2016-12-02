@@ -4,7 +4,7 @@ import { TimePicker } from "ui/time-picker";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/time-picker/configure-time-picker/configure-time-picker.component.html"
+    templateUrl: "./configure-time-picker.component.html"
 })
 export class ConfigureTimePickerComponent {
 

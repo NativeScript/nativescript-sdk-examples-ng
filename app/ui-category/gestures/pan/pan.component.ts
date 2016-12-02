@@ -5,7 +5,7 @@ import { PanGestureEventData } from "ui/gestures";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/gestures/pan/pan.component.html"
+    templateUrl: "./pan.component.html"
 })
 export class PanExampleComponent {
     public deltaX: number;

@@ -5,7 +5,7 @@ import * as application from "application";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "application/app-checking-target/app-checking-target.component.html"
+    templateUrl: "./app-checking-target.component.html"
 })
 export class AppCheckingTargetExampleComponent {
     public isItemVisible: boolean;

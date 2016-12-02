@@ -9,7 +9,7 @@ import { isAndroid } from "platform";
 declare var com: any;
 @Component({
     moduleId: module.id,
-    templateUrl: "common-screens-category/lists-category/header-with-map/header-with-map.component.html",
+    templateUrl: "./header-with-map.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderWithMapExampleComponent {

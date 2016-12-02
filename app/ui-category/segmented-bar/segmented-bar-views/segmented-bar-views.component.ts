@@ -4,8 +4,8 @@ import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
     moduleId: module.id,
-    styleUrls: ["ui-category/segmented-bar/segmented-bar-views/style.css"],
-    templateUrl: "ui-category/segmented-bar/segmented-bar-views/segmented-bar-views.component.html"
+    styleUrls: ["./style.css"],
+    templateUrl: "./segmented-bar-views.component.html"
 })
 export class SegmentedBarViewsComponent {
     public items: Array<SegmentedBarItem>;

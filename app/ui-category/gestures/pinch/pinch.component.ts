@@ -7,7 +7,7 @@ let startScale = 1;
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/gestures/pinch/pinch.component.html"
+    templateUrl: "./pinch.component.html"
 })
 export class PinchExampleComponent {
     public scale: number;

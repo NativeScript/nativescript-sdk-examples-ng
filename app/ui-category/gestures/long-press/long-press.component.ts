@@ -6,7 +6,7 @@ import { GestureEventData } from "ui/gestures";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/gestures/long-press/long-press.component.html"
+    templateUrl: "./long-press.component.html"
 })
 export class LongPressExampleComponent {
     onLongPress(args: GestureEventData) {

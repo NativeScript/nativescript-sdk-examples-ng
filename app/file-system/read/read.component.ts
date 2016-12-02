@@ -6,7 +6,7 @@ import * as fs from "file-system";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "file-system/read/read.component.html"
+    templateUrl: "./read.component.html"
 })
 export class ReadExampleComponent implements OnInit {
 

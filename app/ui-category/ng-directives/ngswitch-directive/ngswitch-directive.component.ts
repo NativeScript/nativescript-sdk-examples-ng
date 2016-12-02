@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/ng-directives/ngswitch-directive/ngswitch-directive.component.html",
+    templateUrl: "./ngswitch-directive.component.html",
 })
 export class NgSwitchComponent {
     public color: string;

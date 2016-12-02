@@ -6,7 +6,7 @@ import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "location/location-monitoring-example/location-monitoring-example.html"
+    templateUrl: "./location-monitoring-example.html"
 })
 export class LocationMonitoringExampleComponent {
     public buttonText = "Start location monitoring";

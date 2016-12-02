@@ -3,7 +3,7 @@ import dialogs = require("ui/dialogs");
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/dialogs/prompt-dialog/prompt-dialog.component.html"
+    templateUrl: "./prompt-dialog.component.html"
 })
 export class PromptDialogComponent {
     displayPromptDialog() {

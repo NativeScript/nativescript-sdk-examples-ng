@@ -28,7 +28,7 @@ class ScreenInfo {
 
 @Component({
     moduleId: module.id,
-    templateUrl: "platform/platform-module-example/platform-module-example.html"
+    templateUrl: "./platform-module-example.html"
 })
 export class PlatformModuleExampleComponent {
     public isItemVisible: boolean = false;

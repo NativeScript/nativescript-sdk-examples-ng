@@ -8,8 +8,8 @@ import ImageSourceModule = require("image-source");
 
 @Component({
     moduleId: module.id,
-    styleUrls: ["ui-category/image/creating-image/creating-image.component.css"],
-    templateUrl: "ui-category/image/creating-image/creating-image.component.html"
+    styleUrls: ["./creating-image.component.css"],
+    templateUrl: "./creating-image.component.html"
 })
 export class CreatingImageExampleComponent implements OnInit {
     @ViewChild("st") stack: ElementRef;

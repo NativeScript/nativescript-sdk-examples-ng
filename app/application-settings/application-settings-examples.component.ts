@@ -7,7 +7,7 @@ let menuLinks = [
 
 @Component({
     moduleId: module.id,
-    templateUrl: "examples-list.component.html",
+    templateUrl: "./../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ApplicationSettingsExamplesComponent {

@@ -7,7 +7,7 @@ let enums = require("ui/enums");
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/animations/animating-properties/animating-properties.component.html"
+    templateUrl: "./animating-properties.component.html"
 })
 export class AnimatingPropertiesComponent {
     animate(label: Label) {

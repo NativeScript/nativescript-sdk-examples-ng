@@ -7,7 +7,7 @@ import * as camera from "nativescript-camera";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "camera/using-camera/using-camera.component.html"
+    templateUrl: "./using-camera.component.html"
 })
 export class UsingCameraExampleComponent {
     // >> camera-module-photo-code

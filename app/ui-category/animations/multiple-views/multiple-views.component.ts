@@ -10,8 +10,8 @@ let view4: View;
 
 @Component({
     moduleId: module.id,
-    templateUrl: "ui-category/animations/multiple-views/multiple-views.component.html",
-    styleUrls: ["ui-category/animations/style.css"],
+    templateUrl: "./multiple-views.component.html",
+    styleUrls: ["./../style.css"],
 })
 export class MultipleViewsComponent implements OnInit {
     constructor(private page: Page) {
