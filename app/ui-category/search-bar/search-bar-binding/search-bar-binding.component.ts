@@ -8,8 +8,10 @@ import { isAndroid } from "platform";
     templateUrl: "./search-bar-binding.component.html"
 })
 export class SearchBarBindingComponent {
-    constructor(private page: Page) { }
     public searchPhrase = "";
+
+    constructor(private page: Page) { }
+
     public searchBarLoaded() {
         let searchbarComponent: SearchBar = <SearchBar>this.page.getViewById("searchbar");
         console.log(searchbarComponent);

@@ -32,7 +32,6 @@ export const routerConfig = [
         ModalViewComponent
     ],
     entryComponents: [ModalViewComponent]
-    
 })
 
 export class ModalPageExamplesModule {

@@ -29,7 +29,11 @@ export class SampleModalPageModuleExampleComponent {
     createModelView(args) {
         let that = this;
         let currentDate = new Date();
-        let options: ModalDialogOptions = { viewContainerRef: this.vcRef, context: currentDate.toDateString(), fullscreen: false };
+        let options: ModalDialogOptions = {
+            viewContainerRef: this.vcRef,
+            context: currentDate.toDateString(),
+            fullscreen: false
+        };
         // >> returning-result
         this._modalService.showModal(ModalViewComponent, options)
             .then((dateresult: Date) => {

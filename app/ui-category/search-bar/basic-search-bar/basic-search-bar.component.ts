@@ -6,6 +6,7 @@ import { Component } from "@angular/core";
     templateUrl: "./basic-search-bar.component.html"
 })
 export class BasicSearchBarComponent {
+    public searchPhrase: string;
 
     public onSubmit(value) {
         alert("You are searching for " + value);

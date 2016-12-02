@@ -10,6 +10,7 @@ let pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 })
 export class UsingSelectedIndexExampleComponent {
     public pokemons: Array<string>;
+    public index: number;
 
     constructor() {
         this.pokemons = [];

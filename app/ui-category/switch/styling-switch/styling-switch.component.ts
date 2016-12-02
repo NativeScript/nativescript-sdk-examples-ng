@@ -1,3 +1,4 @@
+// tslint:disable:no-access-missing-member
 import { Component } from "@angular/core";
 
 @Component({

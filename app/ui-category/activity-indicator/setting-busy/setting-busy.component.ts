@@ -5,4 +5,5 @@ import { Component } from "@angular/core";
     templateUrl: "./setting-busy.component.html"
 })
 export class SettingBusyComponent {
+    public activityIndicator;
 }

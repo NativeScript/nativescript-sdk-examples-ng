@@ -1,3 +1,4 @@
+// tslint:disable:no-access-missing-member
 // >> textfield-binding-show-result
 import { Component } from "@angular/core";
 
@@ -7,14 +8,12 @@ import { Component } from "@angular/core";
     styleUrls: ["./../text-field.style.css"]
 })
 export class TextFieldBindingComponent {
+    public showAlert(result) {
+        alert("Text: " + result);
+    }
 
-  public showAlert(result) {
-      alert("Text: " + result);
-  }
-
-  submit(result) {
-      alert("Text: " + result);
-  }
-
+    submit(result) {
+        alert("Text: " + result);
+    }
 }
 // << textfield-binding-show-result

@@ -2,8 +2,8 @@
     <StackLayout>
         <!-- >> search-bar-html-binding -->
         <GridLayout rows="auto auto" columns="*">
-            <SearchBar #sb id="searchbar" hint="Search" [text]="searchPhrase" (textChange)="prop=sb.text" (loaded)="searchBarLoaded()"></SearchBar>
-            <Label [text]="'Your are searching for: '+ prop" textWrap="true" row="1" class="h3 p-15 text-center"></Label>
+            <SearchBar #sb id="searchbar" hint="Search" (textChange)="searchPhrase=sb.text" (loaded)="searchBarLoaded()"></SearchBar>
+            <Label [text]="'Your are searching for: '+ searchPhrase" textWrap="true" row="1" class="h3 p-15 text-center"></Label>
         </GridLayout>
         <!-- << search-bar-html-binding -->
     </StackLayout>

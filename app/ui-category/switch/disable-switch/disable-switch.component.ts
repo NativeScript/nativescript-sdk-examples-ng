@@ -1,3 +1,4 @@
+// tslint:disable:no-access-missing-member
 // >> disable-switch-code
 import { Component, ViewChild, ElementRef } from "@angular/core";
 import { Switch } from "ui/switch";
