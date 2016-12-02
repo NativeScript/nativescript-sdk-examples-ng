@@ -9,6 +9,7 @@ import { Color } from "color";
 })
 export class HexPipe implements PipeTransform {
     transform(value: number): any {
+        value = Math.floor(value);
         let res = value.toString(16);
         if (res.length === 1) {
             res = "0" + res;
