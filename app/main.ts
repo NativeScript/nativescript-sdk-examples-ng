@@ -18,7 +18,7 @@ declare var GMSServices: any;
 
 @NgModule({
     declarations: [
-        // >> (hide)
+
         AppComponent,
         // << (hide)
         ModalViewComponent
