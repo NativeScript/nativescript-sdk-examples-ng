@@ -1,8 +1,9 @@
 import { Component } from "@angular/core";
 
 @Component({
-    templateUrl: "ui-category/layouts/grid-layout/grid-layout.component.html",
-    styleUrls: ["ui-category/layouts/layouts.style.css"]
+    moduleId: module.id,
+    templateUrl: "./grid-layout.component.html",
+    styleUrls: ["./../layouts.style.css"]
 })
 export class GridLayoutComponent {
 }

@@ -2,7 +2,8 @@
 import { Component } from "@angular/core";
 
 @Component({
-    templateUrl: "ui-category/ng-directives/ngif-directive/ngif-directive.component.html",
+    moduleId: module.id,
+    templateUrl: "./ngif-directive.component.html",
 })
 export class NgIfComponent {
     public isVisible: boolean = true;

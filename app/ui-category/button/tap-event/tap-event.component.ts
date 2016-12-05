@@ -2,7 +2,8 @@ import { Component } from "@angular/core";
 import { EventData } from "data/observable";
 
 @Component({
-    templateUrl: "ui-category/button/tap-event/tap-event.component.html"
+    moduleId: module.id,
+    templateUrl: "./tap-event.component.html"
 })
 export class ButtonTapEventComponent {
 

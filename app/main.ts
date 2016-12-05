@@ -21,7 +21,6 @@ declare var GMSServices: any;
         // >> (hide)
         AppComponent,
         // << (hide)
-        ModalViewComponent
     ],
 
     bootstrap: [AppComponent],
@@ -30,9 +29,7 @@ declare var GMSServices: any;
         NativeScriptFormsModule,
         NativeScriptRouterModule,
         NativeScriptRouterModule.forRoot(routes),
-    ],
-    providers: [ModalDialogService],
-    entryComponents: [ModalViewComponent]
+    ]
 })
 // << ngmodule-config
 class AppComponentModule { }

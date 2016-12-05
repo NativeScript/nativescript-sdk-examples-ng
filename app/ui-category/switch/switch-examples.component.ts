@@ -8,8 +8,9 @@ let menuLinks = [
 ];
 
 @Component({
-    templateUrl: "examples-list.component.html",
-    styleUrls: ["ui-category/switch/switch.style.css"],
+    moduleId: module.id,
+    templateUrl: "./../../examples-list.component.html",
+    styleUrls: ["./switch.style.css"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SwitchExamplesComponent {

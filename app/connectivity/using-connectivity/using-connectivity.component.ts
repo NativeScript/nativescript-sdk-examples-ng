@@ -3,7 +3,8 @@ import { Component, NgZone, OnInit, OnDestroy } from "@angular/core";
 import * as connectivity from "connectivity";
 // << connectivity-import-code
 @Component({
-    templateUrl: "connectivity/using-connectivity/using-connectivity.component.html"
+    moduleId: module.id,
+    templateUrl: "./using-connectivity.component.html"
 })
 
 export class UsingConnectivityExampleComponent implements OnInit, OnDestroy {

@@ -3,7 +3,8 @@ import { Component } from "@angular/core";
 import { SwipeGestureEventData } from "ui/gestures";
 
 @Component({
-    templateUrl: "ui-category/gestures/swipe/swipe.component.html"
+    moduleId: module.id,
+    templateUrl: "./swipe.component.html"
 })
 export class SwipeExampleComponent {
     public direction: number;

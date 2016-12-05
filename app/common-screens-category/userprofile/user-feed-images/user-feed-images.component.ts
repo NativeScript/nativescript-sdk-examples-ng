@@ -4,7 +4,8 @@ import { mockedDataArray } from "../mock-dataItems";
 
 // >> ext-listview-cards-code
 @Component({
-    templateUrl: "common-screens-category/userprofile/user-feed-images/user-feed-images.component.html",
+    moduleId: module.id,
+    templateUrl: "./user-feed-images.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UserFeedImagesExampleComponent {

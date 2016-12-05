@@ -5,7 +5,8 @@ import { mockedGroupDataArray, Country, GroupTitle, GroupFooter } from "../mock-
 
 // >> grouped-single-listview-basic-code
 @Component({
-    templateUrl: "common-screens-category/lists-category/single-line-grouped/grouped-single-line.component.html",
+    moduleId: module.id,
+    templateUrl: "./grouped-single-line.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GroupedSingleLineListViewExampleComponent implements OnInit {

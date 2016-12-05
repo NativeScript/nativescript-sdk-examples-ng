@@ -3,7 +3,8 @@ import { Component, OnInit } from "@angular/core";
 import * as fs from "file-system";
 // << fs-update-import-code
 @Component({
-    templateUrl: "file-system/update/update.component.html"
+    moduleId: module.id,
+    templateUrl: "./update.component.html"
 })
 export class UpdateExampleComponent implements OnInit {
 

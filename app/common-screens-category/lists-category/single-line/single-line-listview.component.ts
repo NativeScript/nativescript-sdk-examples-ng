@@ -4,7 +4,8 @@ import { mockedDataArray, Country } from "../mock-dataItems";
 
 // >> ext-listview-basic-code
 @Component({
-    templateUrl: "common-screens-category/lists-category/single-line/single-line-listview.component.html",
+    moduleId: module.id,
+    templateUrl: "./single-line-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SingleLineListViewExampleComponent implements OnInit {

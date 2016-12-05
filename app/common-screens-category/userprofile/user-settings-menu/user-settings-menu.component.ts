@@ -5,7 +5,8 @@ import { ItemEventData } from "ui/list-view";
 
 // >> userprofile-settings-menu-code
 @Component({
-    templateUrl: "common-screens-category/userprofile/user-settings-menu/user-settings-menu.component.html",
+    moduleId: module.id,
+    templateUrl: "./user-settings-menu.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UserSettingsMenuExampleComponent implements OnInit {

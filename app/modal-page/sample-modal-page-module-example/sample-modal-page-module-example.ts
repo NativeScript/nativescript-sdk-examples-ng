@@ -1,12 +1,13 @@
 // >> time-picker-configure-code
 import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/modal-dialog";
-import { Component } from "@angular/core";
+import { Component, ViewContainerRef  } from "@angular/core";
 import { DatePicker } from "ui/date-picker";
 import { ModalViewComponent } from "./modal-view";
 
 @Component({
+    moduleId: module.id,
     providers: [ModalDialogService],
-    templateUrl: "modal-page/sample-modal-page-module-example/sample-modal-page-module-example.html"
+    templateUrl: "./sample-modal-page-module-example.html"
 })
 export class SampleModalPageModuleExampleComponent {
     public startDate: Date;
@@ -16,7 +17,7 @@ export class SampleModalPageModuleExampleComponent {
     public weekday: string;
     public weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    constructor(private _modalService: ModalDialogService) {
+    constructor(private _modalService: ModalDialogService, private vcRef: ViewContainerRef) {
         let oneDay = 24 * 60 * 60 * 1000;
         this.startDate = new Date("2015-12-12");
         this.endDate = new Date();
@@ -28,7 +29,11 @@ export class SampleModalPageModuleExampleComponent {
     createModelView(args) {
         let that = this;
         let currentDate = new Date();
-        let options: ModalDialogOptions = { context: currentDate.toDateString(), fullscreen: false };
+        let options: ModalDialogOptions = {
+            viewContainerRef: this.vcRef,
+            context: currentDate.toDateString(),
+            fullscreen: false
+        };
         // >> returning-result
         this._modalService.showModal(ModalViewComponent, options)
             .then((dateresult: Date) => {

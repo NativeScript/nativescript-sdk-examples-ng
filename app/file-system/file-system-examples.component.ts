@@ -10,7 +10,8 @@ let menuLinks = [
 ];
 
 @Component({
-    templateUrl: "examples-list.component.html",
+    moduleId: module.id,
+    templateUrl: "./../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FileSystemExamplesComponent {

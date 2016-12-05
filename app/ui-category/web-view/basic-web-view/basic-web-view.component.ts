@@ -5,8 +5,9 @@ import { Page } from "ui/page";
 import { TextField } from "ui/text-field";
 
 @Component({
-    templateUrl: "ui-category/web-view/basic-web-view/basic-web-view.component.html",
-    styleUrls: ["ui-category/web-view/basic-web-view/style.css"]
+    moduleId: module.id,
+    templateUrl: "./basic-web-view.component.html",
+    styleUrls: ["./style.css"]
 })
 export class BasicWebViewComponent implements OnInit {
 

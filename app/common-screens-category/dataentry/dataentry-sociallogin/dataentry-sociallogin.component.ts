@@ -2,8 +2,9 @@ import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core
 import { ObservableArray } from "data/observable-array";
 
 @Component({
-    templateUrl: "common-screens-category/dataentry/dataentry-sociallogin/dataentry-sociallogin.component.html",
-    styleUrls: ["common-screens-category/dataentry/dataentry-sociallogin/style.css"],
+    moduleId: module.id,
+    templateUrl: "./dataentry-sociallogin.component.html",
+    styleUrls: ["./style.css"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SocialLoginDataEntryExampleComponent  {

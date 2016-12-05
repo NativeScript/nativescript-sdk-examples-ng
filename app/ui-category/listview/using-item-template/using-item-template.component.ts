@@ -2,6 +2,7 @@
 import { Component, ChangeDetectionStrategy, Input } from "@angular/core";
 
 @Component({
+    moduleId: module.id,
     template: `
         <StackLayout class="list-group-item" *ngFor="let element of data.list">
             <Label [text]="element.model"></Label>
@@ -14,7 +15,8 @@ export class ItemComponent {
 }
 
 @Component({
-    templateUrl: "ui-category/listview/using-item-template/using-item-template.component.html",
+    moduleId: module.id,
+    templateUrl: "./using-item-template.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UsingItemTemplateComponent {

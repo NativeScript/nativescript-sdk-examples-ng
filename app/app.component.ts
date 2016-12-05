@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 
 @Component({
+    moduleId: module.id,
     selector: "sdk-app",
     template: `
         <GridLayout>

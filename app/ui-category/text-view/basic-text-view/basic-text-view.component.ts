@@ -4,10 +4,11 @@ import { TextView } from "ui/text-view";
 import { isAndroid } from "platform";
 
 @Component({
+    moduleId: module.id,
     // >> (hide)
-    styleUrls: ["ui-category/text-view/basic-text-view/style.css"],
+    styleUrls: ["./style.css"],
     // << (hide)
-    templateUrl: "ui-category/text-view/basic-text-view/basic-text-view.component.html"
+    templateUrl: "./basic-text-view.component.html"
 })
 export class BasicTextViewComponent {
 

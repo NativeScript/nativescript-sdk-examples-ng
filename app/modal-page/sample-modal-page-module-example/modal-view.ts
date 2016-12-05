@@ -5,7 +5,8 @@ import { Page } from "ui/page";
 
 // >> passing-parameters
 @Component({
-    templateUrl: "./modal-page/sample-modal-page-module-example/modal-view.html",
+    moduleId: module.id,
+    templateUrl: "./modal-view.html",
 })
 export class ModalViewComponent implements OnInit {
     public currentdate: Date;

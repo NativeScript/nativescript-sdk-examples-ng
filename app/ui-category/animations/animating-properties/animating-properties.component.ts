@@ -6,7 +6,8 @@ import { AbsoluteLayout } from "ui/layouts/absolute-layout";
 let enums = require("ui/enums");
 
 @Component({
-    templateUrl: "ui-category/animations/animating-properties/animating-properties.component.html"
+    moduleId: module.id,
+    templateUrl: "./animating-properties.component.html"
 })
 export class AnimatingPropertiesComponent {
     animate(label: Label) {

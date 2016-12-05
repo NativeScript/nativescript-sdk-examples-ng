@@ -5,7 +5,8 @@ import { GestureEventData } from "ui/gestures";
 import { GridLayout } from "ui/layouts/grid-layout";
 
 @Component({
-    templateUrl: "ui-category/gestures/double-tap/double-tap.component.html"
+    moduleId: module.id,
+    templateUrl: "./double-tap.component.html"
 })
 export class DoubleTapExampleComponent {
 

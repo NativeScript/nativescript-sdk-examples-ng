@@ -3,7 +3,8 @@ import { fruits } from "./fruits";
 
 // >> ngfor-bind-items-code
 @Component({
-    templateUrl: "ui-category/ng-directives/ngfor-directive/ngfor-directive.component.html",
+    moduleId: module.id,
+    templateUrl: "./ngfor-directive.component.html",
 })
 export class NgForComponent {
     public fruitList: Array<string> = [];

@@ -3,10 +3,11 @@
 import { Component } from "@angular/core";
 
 @Component({
+    moduleId: module.id,
     // >> (hide)
-    styleUrls: ["ui-category/web-view/style.css"],
+    styleUrls: ["./style.css"],
     // << (hide)
-    templateUrl: "ui-category/web-view/web-view-html/web-view-html.component.html",
+    templateUrl: "./web-view-html.component.html",
 })
 export class WebViewHtmlComponent {
     public firstWebViewSRC = '<!DOCTYPE html><html><head><title>MyTitle</title><meta charset="utf-8" /></head><body><span style="color:#0099CC; text-align: center;">First WebView</span></body></html>';

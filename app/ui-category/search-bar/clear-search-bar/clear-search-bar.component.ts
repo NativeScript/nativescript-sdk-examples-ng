@@ -9,7 +9,8 @@ class DataItem {
 }
 
 @Component({
-    templateUrl: "ui-category/search-bar/clear-search-bar/clear-search-bar.component.html",
+    moduleId: module.id,
+    templateUrl: "./clear-search-bar.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ClearSearchBarComponent {

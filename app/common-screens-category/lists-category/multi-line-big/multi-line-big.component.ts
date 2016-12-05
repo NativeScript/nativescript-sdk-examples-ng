@@ -5,7 +5,8 @@ import { SetupItemViewArgs } from "nativescript-angular/directives";
 import { mockedDataArray, mockedGroupDataArray, Country } from "../mock-dataItems";
 
 @Component({
-    templateUrl: "common-screens-category/lists-category/multi-line-big/multi-line-big.component.html",
+    moduleId: module.id,
+    templateUrl: "./multi-line-big.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MultiLineBigListViewExampleComponent implements OnInit {

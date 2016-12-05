@@ -5,7 +5,8 @@ import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
 
 @Component({
-    templateUrl: "ui-category/style/apply-style-via-code/apply-style-code.component.html"
+    moduleId: module.id,
+    templateUrl: "./apply-style-code.component.html"
 })
 export class ApplyStyleCodeComponent implements OnInit {
 

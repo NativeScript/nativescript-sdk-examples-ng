@@ -3,7 +3,8 @@ import * as application from "application";
 import * as utils from "utils/utils";
 
 @Component({
-    templateUrl: "application/app-using-ios-specifics/app-using-ios-specifics.component.html"
+    moduleId: module.id,
+    templateUrl: "./app-using-ios-specifics.component.html"
 })
 export class AppUsingIosExampleComponent {
     public isItemVisible: boolean;

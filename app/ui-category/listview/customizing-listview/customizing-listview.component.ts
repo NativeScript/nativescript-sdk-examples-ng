@@ -13,8 +13,9 @@ let items = ["ALL Heroes (header)", "Razor", "Rubick", "Phantom Lancer", "Legion
     "Bristleback", "Pudge", "(footer)"];
 
 @Component({
-    styleUrls: ["ui-category/listview/customizing-listview/customizing-listview.component.css"],
-    templateUrl: "ui-category/listview/customizing-listview/customizing-listview.component.html",
+    moduleId: module.id,
+    styleUrls: ["./customizing-listview.component.css"],
+    templateUrl: "./customizing-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class CustomizingListViewComponent {

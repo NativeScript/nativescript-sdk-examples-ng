@@ -3,7 +3,8 @@ import { Component, OnInit } from "@angular/core";
 import application = require("application");
 
 @Component({
-    templateUrl: "ui-category/ng-directives/ngif-directive-advanced/ngif-directive-advanced.component.html",
+    moduleId: module.id,
+    templateUrl: "./ngif-directive-advanced.component.html",
 })
 export class NgIfAdvancedComponent implements OnInit {
     public isAndroid: boolean;

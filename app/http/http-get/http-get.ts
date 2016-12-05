@@ -9,7 +9,8 @@ import { fromFile } from "image-source";
 import { Image } from "ui/image";
 
 @Component({
-    templateUrl: "http/http-get/http-get.html"
+    moduleId: module.id,
+    templateUrl: "./http-get.html"
 })
 export class HttpGetComponent implements OnInit {
     public stringResponce: string = "";

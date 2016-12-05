@@ -1,10 +1,12 @@
+// tslint:disable:no-access-missing-member
 // >> disable-switch-code
 import { Component, ViewChild, ElementRef } from "@angular/core";
 import { Switch } from "ui/switch";
 
 @Component({
-    templateUrl: "ui-category/switch/disable-switch/disable-switch.component.html",
-    styleUrls: ["ui-category/switch/switch.style.css"],
+    moduleId: module.id,
+    templateUrl: "./disable-switch.component.html",
+    styleUrls: ["./../switch.style.css"],
 })
 export class DisableSwitchComponent {
 

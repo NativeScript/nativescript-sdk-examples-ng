@@ -5,7 +5,8 @@ import { mockedGroupDataArray, GroupFooter, GroupTitle } from "../mock-dataItems
 
 // >> grouped-listview-two-lines-code
 @Component({
-    templateUrl: "common-screens-category/lists-category/two-lines-grouped/grouped-two-lines.component.html",
+    moduleId: module.id,
+    templateUrl: "./grouped-two-lines.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GroupedTwoLinesListViewExampleComponent implements OnInit {

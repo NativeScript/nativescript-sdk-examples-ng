@@ -2,7 +2,8 @@
 import { Component } from "@angular/core";
 
 @Component({
-    templateUrl: "ui-category/label/creating-label/creating-label.component.html"
+    moduleId: module.id,
+    templateUrl: "./creating-label.component.html"
 })
 export class CreatingLabelComponent {
 

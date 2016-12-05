@@ -8,7 +8,8 @@ import { isAndroid } from "platform";
 // >> ext-listview-map-header-code
 declare var com: any;
 @Component({
-    templateUrl: "common-screens-category/lists-category/header-with-map/header-with-map.component.html",
+    moduleId: module.id,
+    templateUrl: "./header-with-map.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class HeaderWithMapExampleComponent {

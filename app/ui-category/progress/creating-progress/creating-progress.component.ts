@@ -2,7 +2,8 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    templateUrl: "ui-category/progress/creating-progress/creating-progress.component.html",
+    moduleId: module.id,
+    templateUrl: "./creating-progress.component.html",
 })
 export class CreatingProgressComponent implements OnInit {
     public progressValue: number;

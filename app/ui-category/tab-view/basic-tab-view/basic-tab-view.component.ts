@@ -5,7 +5,8 @@ import { Component, ViewChild, ElementRef, OnInit } from "@angular/core";
 import { TabView, SelectedIndexChangedEventData } from "ui/tab-view";
 
 @Component({
-    templateUrl: "ui-category/tab-view/basic-tab-view/basic-tab-view.component.html"
+    moduleId: module.id,
+    templateUrl: "./basic-tab-view.component.html"
 })
 export class BasicTabViewComponent implements OnInit {
 

@@ -7,8 +7,9 @@ import { Label } from "ui/label";
 import ImageSourceModule = require("image-source");
 
 @Component({
-    styleUrls: ["ui-category/image/creating-image/creating-image.component.css"],
-    templateUrl: "ui-category/image/creating-image/creating-image.component.html"
+    moduleId: module.id,
+    styleUrls: ["./creating-image.component.css"],
+    templateUrl: "./creating-image.component.html"
 })
 export class CreatingImageExampleComponent implements OnInit {
     @ViewChild("st") stack: ElementRef;

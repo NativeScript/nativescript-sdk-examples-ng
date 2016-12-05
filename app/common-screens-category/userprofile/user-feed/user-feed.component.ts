@@ -5,7 +5,8 @@ import { ItemEventData } from "ui/list-view";
 
 // >> userprofile-user-feed-code
 @Component({
-    templateUrl: "common-screens-category/userprofile/user-feed/user-feed.component.html",
+    moduleId: module.id,
+    templateUrl: "./user-feed.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UserFeedExampleComponent {

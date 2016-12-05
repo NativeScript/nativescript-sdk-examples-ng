@@ -1,8 +1,9 @@
 import { Component } from "@angular/core";
 
 @Component({
-    templateUrl: "ui-category/style/style-css-file/style-css-file.component.html",
-    styleUrls: ["ui-category/style/style-css-file/style.css"]
+    moduleId: module.id,
+    templateUrl: "./style-css-file.component.html",
+    styleUrls: ["./style.css"]
 })
 export class StyleCSSFileComponent {
     public counter: number = 16;

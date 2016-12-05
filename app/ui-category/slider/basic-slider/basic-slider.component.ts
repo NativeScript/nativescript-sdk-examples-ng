@@ -1,9 +1,10 @@
+// tslint:disable:no-access-missing-member
 import { Component } from "@angular/core";
 
 @Component({
-    templateUrl: "ui-category/slider/basic-slider/basic-slider.component.html",
-    styleUrls: ["ui-category/slider/style.css"]
+    moduleId: module.id,
+    templateUrl: "./basic-slider.component.html",
+    styleUrls: ["./../style.css"]
 })
 export class BasicSliderComponent {
-    public labeltext = 0;
 }

@@ -19,12 +19,13 @@ export class HexPipe implements PipeTransform {
 }
 
 @Component({
-    templateUrl: "color/creating-colors/creating-colors.component.html"
+    moduleId: module.id,
+    templateUrl: "./creating-colors.component.html"
 })
 export class CreatingColorsExampleComponent {
-    private redValue: number = 0;
-    private greenValue: number = 0;
-    private blueValue: number = 0;
+    public redValue: number = 0;
+    public greenValue: number = 0;
+    public blueValue: number = 0;
 
     public changeColor(value: string) {
         if (value[0] !== "#") {

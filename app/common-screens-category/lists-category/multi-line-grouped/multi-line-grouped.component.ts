@@ -4,7 +4,8 @@ import { mockedGroupDataArray } from "../mock-dataItems";
 
 // >> multi-line-grouped-code
 @Component({
-    templateUrl: "common-screens-category/lists-category/multi-line-grouped/multi-line-grouped.component.html",
+    moduleId: module.id,
+    templateUrl: "./multi-line-grouped.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class MultiLineGroupedListViewExampleComponent implements OnInit {

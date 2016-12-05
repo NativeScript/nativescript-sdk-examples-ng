@@ -1,7 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 
 @Component({
-    templateUrl: "ui-category/layouts/flexbox-layout-three/flexbox-layout.component.html"
+    moduleId: module.id,
+    templateUrl: "./flexbox-layout.component.html"
 })
 export class FlexboxLayoutThirdComponent implements OnInit {
     public desc: string;

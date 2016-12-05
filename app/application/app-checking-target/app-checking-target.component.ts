@@ -4,7 +4,8 @@ import { Component } from "@angular/core";
 import * as application from "application";
 
 @Component({
-    templateUrl: "application/app-checking-target/app-checking-target.component.html"
+    moduleId: module.id,
+    templateUrl: "./app-checking-target.component.html"
 })
 export class AppCheckingTargetExampleComponent {
     public isItemVisible: boolean;

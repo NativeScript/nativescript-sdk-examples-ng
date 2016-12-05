@@ -1,8 +1,9 @@
 import { Component } from "@angular/core";
 
 @Component({
-    templateUrl: "ui-category/layouts/flexbox-layout-one/flexbox-layout.component.html",
-    styleUrls: ["ui-category/layouts/layouts.style.css"]
+    moduleId: module.id,
+    templateUrl: "./flexbox-layout.component.html",
+    styleUrls: ["./../layouts.style.css"]
 })
 export class FlexboxLayoutFirstComponent {
 }

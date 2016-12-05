@@ -3,7 +3,8 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
-    templateUrl: "ui-category/segmented-bar/basic-segmented-bar/basic-segmented-bar.component.html",
+    moduleId: module.id,
+    templateUrl: "./basic-segmented-bar.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class BasicSegmentedBarComponent {

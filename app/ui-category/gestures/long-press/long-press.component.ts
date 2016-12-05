@@ -5,7 +5,8 @@ import { GridLayout } from "ui/layouts/grid-layout";
 import { GestureEventData } from "ui/gestures";
 
 @Component({
-    templateUrl: "ui-category/gestures/long-press/long-press.component.html"
+    moduleId: module.id,
+    templateUrl: "./long-press.component.html"
 })
 export class LongPressExampleComponent {
     onLongPress(args: GestureEventData) {

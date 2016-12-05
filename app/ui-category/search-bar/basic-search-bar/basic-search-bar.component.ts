@@ -2,9 +2,11 @@
 import { Component } from "@angular/core";
 
 @Component({
-    templateUrl: "ui-category/search-bar/basic-search-bar/basic-search-bar.component.html"
+    moduleId: module.id,
+    templateUrl: "./basic-search-bar.component.html"
 })
 export class BasicSearchBarComponent {
+    public searchPhrase: string;
 
     public onSubmit(value) {
         alert("You are searching for " + value);
