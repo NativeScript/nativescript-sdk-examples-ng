@@ -13,7 +13,7 @@ export const routes = [
     {
         path: "activity-indicator",
         loadChildren: () => require("./ui-category/activity-indicator/activity-indicator-examples.module")["ActivityIndicatorExamplesModule"],
-        data: { title: "ActivityIndicator" }
+        data: { title: "Activity Indicator" }
     },
     {
         path: "animations",
@@ -158,37 +158,37 @@ export const routes = [
     {
         path: "angular-directives",
         loadChildren: () => require("./ui-category/ng-directives/ng-directives-examples.module")["NgDirectivesExamplesModule"],
-        data: { title: "Angular directives" }
+        data: { title: "Angular Directives" }
     },
     {
         path: "trace",
         loadChildren: () => require("./trace/trace-examples.module")["TraceExamplesModule"],
-        data: { title: "Trace" }
+        data: { title: "Trace Module" }
     },
     {
         path: "timer",
         loadChildren: () => require("./timer/timer-examples.module")["TimerExamplesModule"],
-        data: { title: "Timer" }
+        data: { title: "Timer Module" }
     },
     {
         path: "content-screens",
         loadChildren: () => require("./common-screens-category/content-screens/content-screens-examples.module")["ContentScreensExamplesModule"],
-        data: { title: "Content screens" }
+        data: { title: "Content Screens" }
     },
     {
         path: "dataentry",
         loadChildren: () => require("./common-screens-category/dataentry/extended-dataentry-examples.module")["ExtendedDataentryExamplesModule"],
-        data: { title: "Dataentry" }
+        data: { title: "Data Entry (extended examples)" }
     },
     {
         path: "extended-listview",
         loadChildren: () => require("./common-screens-category/lists-category/extended-listview-examples.module")["ExtendedListViewExamplesModule"],
-        data: { title: "Extended ListView" }
+        data: { title: "ListView (extended examples)" }
     },
     {
         path: "userprofile",
         loadChildren: () => require("./common-screens-category/userprofile/extended-userprofile-examples.module")["ExtendedUserProfileExamplesModule"],
-        data: { title: "User Profile" }
+        data: { title: "User Profile (extended examples)" }
     },
     {
         path: "connectivity",
@@ -213,7 +213,7 @@ export const routes = [
     {
         path: "modal-page",
         loadChildren: () => require("./modal-page/modal-page-examples.module")["ModalPageExamplesModule"],
-        data: { title: "Modal page" }
+        data: { title: "Modal Page" }
     },
     {
         path: "color",
@@ -223,7 +223,7 @@ export const routes = [
     {
         path: "http",
         loadChildren: () => require("./http/http-examples.module")["HttpExamplesModule"],
-        data: { title: "HTTP" }
+        data: { title: "HTTP Module" }
     },
     {
         path: "fps-meter",
@@ -233,6 +233,6 @@ export const routes = [
     {
         path: "platform",
         loadChildren: () => require("./platform/platform-examples.module")["PlatformExamplesModule"],
-        data: { title: "Platform" }
+        data: { title: "Platform Module" }
     }
 ];

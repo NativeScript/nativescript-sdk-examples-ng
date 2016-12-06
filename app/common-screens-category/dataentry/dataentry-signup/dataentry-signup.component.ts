@@ -4,7 +4,7 @@ import { ObservableArray } from "data/observable-array";
 @Component({
     moduleId: module.id,
     templateUrl: "./dataentry-signup.component.html",
-    styleUrls: ["./dataentry-signup/style.css"],
+    styleUrls: ["./style.css"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SignupDataEntryExampleComponent  {
