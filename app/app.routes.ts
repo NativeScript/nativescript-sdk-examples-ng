@@ -13,7 +13,7 @@ export const routes = [
     {
         path: "activity-indicator",
         loadChildren: () => require("./ui-category/activity-indicator/activity-indicator-examples.module")["ActivityIndicatorExamplesModule"],
-        data: { title: "Activity Indicator" }
+        data: { title: "ActivityIndicator" }
     },
     {
         path: "animations",
