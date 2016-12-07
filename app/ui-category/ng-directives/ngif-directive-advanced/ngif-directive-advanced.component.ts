@@ -1,6 +1,6 @@
 // >> using-ngif-platform-code
 import { Component, OnInit } from "@angular/core";
-import application = require("application");
+import * as application from "application";
 
 @Component({
     moduleId: module.id,

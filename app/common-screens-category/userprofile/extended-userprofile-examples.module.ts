@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptModule } from "nativescript-angular/platform";
 import { ExtendedUserProfileExamplesComponent } from "./extended-userprofile-examples.component";
@@ -30,6 +30,7 @@ export const routerConfig = [
 ];
 
 @NgModule({
+    schemas: [NO_ERRORS_SCHEMA],
     imports: [
         TitleAndNavButtonModule,
         NativeScriptModule,
