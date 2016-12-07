@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
-import { SetupItemViewArgs } from "nativescript-angular/directives";
+import { SetupItemViewArgs } from "nativescript-angular";
 import { mockedDataArray, Country } from "../mock-dataItems";
 
 // >> multiline-listview-code

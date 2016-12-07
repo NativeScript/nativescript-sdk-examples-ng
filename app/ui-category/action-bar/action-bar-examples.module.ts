@@ -1,6 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule, NativeScriptRouterModule } from "nativescript-angular";
 import { ActionBarExamplesComponent } from "./action-bar-examples.component";
 import { ActionItemsComponent } from "./action-items/action-items.component";
 import { NavigationButtonComponent } from "./navigation-button/navigation-button.component";

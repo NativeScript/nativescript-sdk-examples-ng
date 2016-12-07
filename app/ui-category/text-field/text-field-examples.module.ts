@@ -1,6 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule, NativeScriptRouterModule } from "nativescript-angular";
 import { TextFieldExamplesComponent } from "./text-field-examples.component";
 import { BasicTextFieldComponent } from "./basic-text-field/basic-text-field.component";
 import { TextFieldBindingComponent } from "./text-field-binding/text-field-binding.component";

@@ -14,7 +14,6 @@ import { NgModule, NO_ERRORS_SCHEMA, NgModuleFactoryLoader } from "@angular/core
 import { routes } from "./app.routes";
 import { AppComponent } from "./app.component";
 // << (hide)
-import { NsModuleFactoryLoader } from "./ns-module-factory-loader";
 import { TnsGoogleMaps } from "nativescript-googlemaps";
 import { isIOS } from "platform";
 

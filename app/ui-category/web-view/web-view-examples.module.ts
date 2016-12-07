@@ -1,6 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule, NativeScriptRouterModule } from "nativescript-angular";
 import { WebViewExamplesComponent } from "./web-view-examples.component";
 import { BasicWebViewComponent } from "./basic-web-view/basic-web-view.component";
 import { WebViewHtmlComponent } from "./web-view-html/web-view-html.component";

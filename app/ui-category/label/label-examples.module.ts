@@ -1,6 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule, NativeScriptRouterModule } from "nativescript-angular";
 import { LabelExamplesComponent } from "./label-examples.component";
 import { CreatingLabelComponent } from "./creating-label/creating-label.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";

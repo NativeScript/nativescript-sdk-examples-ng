@@ -1,9 +1,9 @@
 import { Component, OnInit, NgModule } from "@angular/core";
-import { ModalDialogParams } from "nativescript-angular/modal-dialog";
+import { ModalDialogParams } from "nativescript-angular";
 import { DatePicker } from "ui/date-picker";
 import { Page } from "ui/page";
 
-// >> passing-parameters
+// >> passin-parameters
 @Component({
     moduleId: module.id,
     templateUrl: "./modal-view.html",
