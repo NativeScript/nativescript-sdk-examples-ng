@@ -1,17 +1,19 @@
 // this import should be first in order to load some required settings (like globals and reflect-metadata)
 // >> ngmodule-config
 // >> (hide)
-import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import {
+    NativeScriptModule,
+    NativeScriptRouterModule,
+    NativeScriptFormsModule,
+    NSModuleFactoryLoader,
+    ModalDialogService,
+    registerElement
+} from "nativescript-angular";
 import { NgModule, NO_ERRORS_SCHEMA, NgModuleFactoryLoader } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 import { routes } from "./app.routes";
 import { AppComponent } from "./app.component";
 // << (hide)
-import { NsModuleFactoryLoader } from "./ns-module-factory-loader";
-import { ModalDialogService } from "nativescript-angular/modal-dialog";
-import { registerElement } from "nativescript-angular/element-registry";
 import { TnsGoogleMaps } from "nativescript-googlemaps";
 import { isIOS } from "platform";
 
@@ -31,7 +33,7 @@ declare var GMSServices: any;
     ],
     providers: [
         ModalDialogService,
-        { provide: NgModuleFactoryLoader, useClass: NsModuleFactoryLoader }
+        { provide: NgModuleFactoryLoader, useClass: NSModuleFactoryLoader }
     ]
 })
 // << ngmodule-config

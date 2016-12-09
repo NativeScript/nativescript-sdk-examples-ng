@@ -1,6 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule, NativeScriptRouterModule } from "nativescript-angular";
 import { DatePickerExamplesComponent } from "./date-picker-examples.component";
 import { ConfigureDatePickerComponent } from "./configure-date-picker/configure-date-picker.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";

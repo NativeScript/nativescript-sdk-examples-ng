@@ -1,6 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule, NativeScriptRouterModule } from "nativescript-angular";
 import { FileSystemExamplesComponent } from "./file-system-examples.component";
 import { CreateExampleComponent } from "./create/create.component";
 import { DeleteExampleComponent } from "./delete/delete.component";

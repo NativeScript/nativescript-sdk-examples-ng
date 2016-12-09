@@ -1,11 +1,10 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule, NativeScriptRouterModule, NativeScriptFormsModule } from "nativescript-angular";
 import { TabViewExamplesComponent } from "./tab-view-examples.component";
 import { BasicTabViewComponent } from "./basic-tab-view/basic-tab-view.component";
 import { TabViewItemsComponent } from "./tab-view-items/tab-view-items.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
-import { NativeScriptFormsModule } from "nativescript-angular/forms";
+
 export const routerConfig = [
     {
         path: "",

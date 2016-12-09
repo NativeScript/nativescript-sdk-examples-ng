@@ -1,7 +1,7 @@
 // >> custom-directive-code
 import { Component, Directive, ViewContainerRef, TemplateRef, Inject } from "@angular/core";
 import { Device, platformNames } from "platform";
-import { DEVICE } from "nativescript-angular/platform-providers";
+import { DEVICE } from "nativescript-angular";
 
 @Directive({ selector: "[sdkIfAndroid]" })
 export class IfAndroidDirective {

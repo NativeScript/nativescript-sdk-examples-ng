@@ -1,6 +1,6 @@
 // >> listview-customize-code
 import { Component, ChangeDetectionStrategy, ElementRef } from "@angular/core";
-import { SetupItemViewArgs } from "nativescript-angular/directives";
+import { SetupItemViewArgs } from "nativescript-angular";
 
 class Item {
     constructor(public name: string) { }

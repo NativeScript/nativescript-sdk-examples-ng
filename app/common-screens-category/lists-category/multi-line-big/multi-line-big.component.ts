@@ -1,7 +1,7 @@
 // >> multi-line-big-code
 import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
-import { SetupItemViewArgs } from "nativescript-angular/directives";
+import { SetupItemViewArgs } from "nativescript-angular";
 import { mockedDataArray, mockedGroupDataArray, Country } from "../mock-dataItems";
 
 @Component({

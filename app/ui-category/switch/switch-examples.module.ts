@@ -1,6 +1,5 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule, NativeScriptRouterModule } from "nativescript-angular";
 import { SwitchExamplesComponent } from "./switch-examples.component";
 import { BasicSwitchComponent } from "./basic-switch/basic-switch.component";
 import { DisableSwitchComponent } from "./disable-switch/disable-switch.component";
