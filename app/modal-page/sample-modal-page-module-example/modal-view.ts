@@ -3,7 +3,7 @@ import { ModalDialogParams } from "nativescript-angular";
 import { DatePicker } from "ui/date-picker";
 import { Page } from "ui/page";
 
-// >> passin-parameters
+// >> passing-parameters
 @Component({
     moduleId: module.id,
     templateUrl: "./modal-view.html",
