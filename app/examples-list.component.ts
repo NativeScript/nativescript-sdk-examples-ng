@@ -39,7 +39,6 @@ let mainMenuLinks = [
     new Link("Application Settings", "/application-settings"),
     new Link("Color", "/color"),
     new Link("Connectivity", "/connectivity"),
-    new Link("Fetch", "/fetch"),
     new Link("File System", "/file-system"),
     new Link("Modal page", "/modal-page"),
     new Link("ListView (extended examples)", "/extended-listview"),
