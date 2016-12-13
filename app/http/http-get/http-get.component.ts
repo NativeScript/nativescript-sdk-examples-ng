@@ -1,6 +1,6 @@
+// >> http-get-component
 import { Component, OnInit } from "@angular/core";
 import { MyHttpService } from "./http-get.services";
-import { Page } from "ui/page";
 
 @Component({
     moduleId: module.id,
@@ -14,7 +14,6 @@ export class HttpGetComponent implements OnInit {
     public url: string;
     public status: number;
     public statusText: string;
-
     public dateHeader: string;
     public typeHeader: string;
     public serverHeader: string;
@@ -58,3 +57,5 @@ export class HttpGetComponent implements OnInit {
         console.log("onGetDataError: " + err);
     }
 }
+// << http-get-component
+
