@@ -196,11 +196,6 @@ export const routes = [
         data: { title: "Connectivity" }
     },
     {
-        path: "fetch",
-        loadChildren: "./fetch/fetch-examples.module#FetchExamplesModule",
-        data: { title: "Fetch" }
-    },
-    {
         path: "file-system",
         loadChildren: "./file-system/file-system-examples.module#FetchExamplesModule",
         data: { title: "File System" }
