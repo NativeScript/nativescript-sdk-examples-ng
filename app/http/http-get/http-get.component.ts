@@ -1,11 +1,11 @@
 // >> http-get-component
 import { Component, OnInit } from "@angular/core";
-import { MyHttpService } from "./http-get.services";
+import { MyHttpGetService } from "./http-get.services";
 
 @Component({
     moduleId: module.id,
     templateUrl: "./http-get.component.html",
-    providers: [MyHttpService]
+    providers: [MyHttpGetService]
 })
 export class HttpGetComponent implements OnInit {
     public host: string;
@@ -18,7 +18,7 @@ export class HttpGetComponent implements OnInit {
     public typeHeader: string;
     public serverHeader: string;
 
-    constructor(private myService: MyHttpService) { };
+    constructor(private myService: MyHttpGetService) { };
 
     ngOnInit() {
         this.extractData();

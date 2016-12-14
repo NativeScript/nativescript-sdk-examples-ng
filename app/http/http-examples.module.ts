@@ -7,7 +7,7 @@ import { NativeScriptHttpModule } from "nativescript-angular/http";
 import { HttpExamplesComponent } from "./http-examples.component";
 
 import { HttpGetComponent } from "./http-get/http-get.component";
-import { HttpPostComponent } from "./http-post/http-post";
+import { HttpPostComponent } from "./http-post/http-post.component";
 import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
 
 export const routerConfig = [

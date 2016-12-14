@@ -7,7 +7,7 @@ import "rxjs/add/operator/map";
 import "rxjs/add/operator/do";
 
 @Injectable()
-export class MyHttpService {
+export class MyHttpGetService {
     private serverUrl = "https://httpbin.org/get";
 
     constructor(private http: Http) { }
@@ -29,6 +29,7 @@ export class MyHttpService {
         // set headers here e.g.
         headers.append("AuthKey", "my-key");
         headers.append("AuthToken", "my-token");
+        headers.append("Content-Type", "application/json");
         return headers;
     }
 }
