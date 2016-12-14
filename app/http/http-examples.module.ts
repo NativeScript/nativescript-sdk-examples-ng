@@ -30,7 +30,7 @@ export const routerConfig = [
     imports: [
         TitleAndNavButtonModule,
         NativeScriptHttpModule,
-        NativeScriptFormsModule, 
+        NativeScriptFormsModule,
         NativeScriptModule,
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
