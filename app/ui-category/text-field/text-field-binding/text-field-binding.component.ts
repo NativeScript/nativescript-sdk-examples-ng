@@ -1,4 +1,3 @@
-// tslint:disable:no-access-missing-member
 // >> textfield-binding-show-result
 import { Component } from "@angular/core";
 
