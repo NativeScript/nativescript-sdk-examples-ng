@@ -1,20 +1,17 @@
-Import HTTP Module
-<snippet id='import-http-module-get'/>
+In order to use the HTTP the first thing to do is to declare our NativeScript wrapper in the respective module file
 
-Get string from URL
-<snippet id='getstring-http-module'/>
+```
+import { NativeScriptHttpModule } from "nativescript-angular/http";
+...
+@NgModule({
+    imports: [
+        NativeScriptHttpModule
+    ]
+```
 
-Get JSON from URL
-<snippet id='getJSON-http-module'/>
+Creating a service file to keep our HTTP logic separated from our component file (which does not need to know details on how we fetch our data)
+<snippet id="http-get-service"/>
 
-Get Image from URL
-<snippet id='getImage-http-module'/>
-
-Get File from URL. By default the file will be saved in Documents folder.
-<snippet id='getFile-http-module'/>
-
-Get content as File from URL. You can specify where the file should be saved.
-<snippet id='getFile-http-moduled-specify-file-path'/>
-
-Get response
-<snippet id='get-request-http-module'/>
+Finally, we can provide our service in our component. Note that the services should be explicitly declared in `providers`
+and then should be provided as an argument in our component's constructor
+<snippet id="http-get-component"/>
