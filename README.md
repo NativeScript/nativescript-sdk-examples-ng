@@ -1,3 +1,5 @@
+This is a test.
+
 # NativeScript Code Samples
 
 This repo contains the code of the [NativeScript Code Samples](http://docs.nativescript.org/angular/code-samples/overview.html) companion application.
