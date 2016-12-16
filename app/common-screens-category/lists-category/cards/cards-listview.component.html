@@ -1,5 +1,4 @@
 <TabView #tabView class="tab-view" sdkExampleTitle sdkToggleNavButton>
-
     <GridLayout *tabItem="{title: 'Basic cards list'}">
         <!-- >> ext-listview-cards-lines-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
@@ -15,8 +14,6 @@
         </ListView>
         <!-- << ext-listview-cards-lines-html -->
     </GridLayout>
-
-
     <GridLayout *tabItem="{title: 'Thumbnails'}">
         <!-- >> ext-listview-thumbs-cards-lines-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" >
@@ -28,7 +25,6 @@
                         <Label row="1" col="0" class="list-group-item-text" [text]="'Continent: '+country.continent "></Label>   
                     </GridLayout>
                 </StackLayout>
-                
             </template>
         </ListView>
         <!-- << ext-listview-thumbs-cards-lines-html -->
