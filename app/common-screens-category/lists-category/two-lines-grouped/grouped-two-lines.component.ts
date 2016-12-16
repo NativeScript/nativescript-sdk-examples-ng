@@ -1,7 +1,8 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
 import { ObservableArray } from "data/observable-array";
-import { mockedGroupDataArray, GroupFooter, GroupTitle } from "../mock-dataItems";
+
+import { mockedCounties } from "../mock-dataItems";
 
 // >> grouped-listview-two-lines-code
 @Component({
@@ -12,19 +13,15 @@ import { mockedGroupDataArray, GroupFooter, GroupTitle } from "../mock-dataItems
 export class GroupedTwoLinesListViewExampleComponent implements OnInit {
     public countries: Array<any>;
 
-    constructor() {
+    ngOnInit() {
         this.countries = [];
-         for (let i = 0; i < mockedGroupDataArray.length; i++) {
-            this.countries.push(mockedGroupDataArray[i]);
+         for (let i = 0; i < mockedCounties.length; i++) {
+            this.countries.push(mockedCounties[i]);
         }
     }
 
-    ngOnInit() {}
-
-    checkType(value) {
-        // get the class name e.g. GroupTitle or Country
-        let className = value.constructor.name;
-        return className;
+    public templateSelector = (item: any, index: number, items: any) => {
+        return item.type || "cell";
     }
 
     onItemTapFirstList(args: ItemEventData) {
