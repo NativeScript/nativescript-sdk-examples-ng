@@ -57,5 +57,3 @@ export let mockedCounties = [
     new Country("Jamaica", "~/common-screens-category/lists-category/images/flags/jm.png", "North America", mockedDescription),
     new Footer("all countries loaded!", "footer")
 ];
-
-
