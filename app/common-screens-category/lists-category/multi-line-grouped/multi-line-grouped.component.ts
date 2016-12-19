@@ -1,6 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
-import { mockedGroupDataArray } from "../mock-dataItems";
+import { mockedCounties } from "../mock-dataItems";
 
 // >> multi-line-grouped-code
 @Component({
@@ -11,16 +11,14 @@ import { mockedGroupDataArray } from "../mock-dataItems";
 export class MultiLineGroupedListViewExampleComponent implements OnInit {
     public countries: Array<any> = [];
 
-    ngOnInit() {
-        for (let i = 0; i < mockedGroupDataArray.length; i++) {
-            this.countries.push(mockedGroupDataArray[i]);
-        }
+    public templateSelector = (item: any, index: number, items: any) => {
+        return item.type || "cell";
     }
 
-    checkType(value) {
-        // get the class name e.g. GroupTitle or Country
-        let className = value.constructor.name;
-        return className;
+    ngOnInit() {
+        for (let i = 0; i < mockedCounties.length; i++) {
+            this.countries.push(mockedCounties[i]);
+        }
     }
 
     onItemTapFirstList(args: ItemEventData) {

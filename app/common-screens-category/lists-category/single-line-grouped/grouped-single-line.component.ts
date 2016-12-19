@@ -1,7 +1,6 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
-import { mockedGroupDataArray, Country, GroupTitle, GroupFooter } from "../mock-dataItems";
-
+import { mockedCounties } from "../mock-dataItems";
 
 // >> grouped-single-listview-basic-code
 @Component({
@@ -12,16 +11,14 @@ import { mockedGroupDataArray, Country, GroupTitle, GroupFooter } from "../mock-
 export class GroupedSingleLineListViewExampleComponent implements OnInit {
     public countries: Array<any> = [];
 
-    ngOnInit() {
-        for (let i = 0; i < mockedGroupDataArray.length; i++) {
-            this.countries.push(mockedGroupDataArray[i]);
-        }
+    public templateSelector = (item: any, index: number, items: any) => {
+        return item.type || "cell";
     }
 
-    checkType(value) {
-        // get the class name e.g. GroupTitle or Country
-        let className = value.constructor.name;
-        return className;
+    ngOnInit() {
+        for (let i = 0; i < mockedCounties.length; i++) {
+            this.countries.push(mockedCounties[i]);
+        }
     }
 
     onItemTapFirstList(args: ItemEventData) {

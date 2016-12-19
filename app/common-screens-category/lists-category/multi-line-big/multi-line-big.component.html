@@ -1,5 +1,4 @@
 <TabView #tabView class="tab-view" sdkExampleTitle sdkToggleNavButton>
-
     <GridLayout *tabItem="{title: 'Bigger thumbs on the left'}">
         <!-- >> multi-line-big-left-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" (setupItemView)="onSetupItemView($event)">
@@ -15,7 +14,6 @@
         </ListView>
         <!-- << multi-line-big-left-html -->
     </GridLayout>
-
     <GridLayout *tabItem="{title: 'Bigger thumbs on the right'}">
         <!-- >> multi-line-big-right-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" (setupItemView)="onSetupItemView($event)">
@@ -31,23 +29,25 @@
         </ListView>
         <!-- << multi-line-big-right-html -->
     </GridLayout>
-
     <GridLayout *tabItem="{title: 'Bigger thumbs (grouped lists)'}">
         <!-- >> multi-line-big-grouped-html -->
-        <ListView class="list-group" [items]="groupedCountries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
-            <template let-item="item">
-                <StackLayout [ngSwitch]="checkType(item)">
-                    <Label *ngSwitchCase="'GroupTitle'" class="list-group-item h3 bg-primary" isUserInteractionEnabled="false" color="white"
-                        fontSize="24" [text]="item.title"></Label>
-                    <Label *ngSwitchCase="'GroupFooter'" class="list-group-item h4" backgroundColor="gray" fontSize="12" [text]="item.description"></Label>
-                    <GridLayout *ngSwitchDefault class="list-group-item" rows="*" columns="*, auto">
-                        <StackLayout col="0">
-                            <Label class="list-group-item-heading" [text]="item.name"></Label>
-                            <Label class="list-group-item-text" [text]="item.desc" textWrap="true"></Label>
-                        </StackLayout>
-                        <Image col="1" [src]="item.imageSrc" class="thumb img-rounded" width="92" height="92" verticalAlignment="top"></Image>
-                    </GridLayout>
-                </StackLayout>
+        <ListView [items]="groupedCountries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="white">
+            <template nsTemplateKey="header" let-header="item">
+                <Label [text]="header.name" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24"></Label>
+            </template>
+
+            <template nsTemplateKey="footer" let-footer="item">
+                <Label [text]="footer.name" class="list-group-item" backgroundColor="gray" fontSize="12"></Label>
+            </template>
+
+            <template nsTemplateKey="cell" let-country="item">
+                <GridLayout class="list-group-item" rows="*" columns="*, auto">
+                    <StackLayout col="0">
+                        <Label [text]="country.name" class="list-group-item-heading"></Label>
+                        <Label [text]="country.desc" class="list-group-item-text" textWrap="true"></Label>
+                    </StackLayout>
+                    <Image col="1" [src]="country.imageSrc" class="thumb img-rounded" width="92" height="92" verticalAlignment="top"></Image>
+                </GridLayout>
             </template>
         </ListView>
         <!-- << multi-line-big-grouped-html -->
