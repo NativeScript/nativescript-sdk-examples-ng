@@ -36,7 +36,8 @@ export const routerConfig = [
         TitleAndNavButtonModule,
         NativeScriptModule,
         NativeScriptRouterModule,
-        NativeScriptFormsModule, NativeScriptRouterModule.forChild(routerConfig)
+        NativeScriptFormsModule,
+        NativeScriptRouterModule.forChild(routerConfig)
     ],
     declarations: [
         ButtonExamplesComponent,
