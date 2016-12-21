@@ -1,9 +1,9 @@
-Directive code
+Directive code (Typescript)
 <snippet id='directive-code '/>
 
-Set it in HTML
+HTML
 <snippet id='unless-directive-html'/>
 
-Set in code
+Typescript
 <snippet id='unless-directive-code'/>
 

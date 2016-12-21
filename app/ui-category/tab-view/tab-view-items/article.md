@@ -1,5 +1,3 @@
-## TabView items
-
 HTML
 <snippet id='tabview-html'/>
 

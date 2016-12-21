@@ -1,5 +1,3 @@
-## Create WebVew 
-
 HTML
 <snippet id='web-view-html'/>
 

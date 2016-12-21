@@ -1,5 +1,3 @@
-## Basic usage of HtmlView
-
 Create HtmlView via HTML
 <snippet id='creating-htmlview-html'/>
 

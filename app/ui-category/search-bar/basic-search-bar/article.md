@@ -1,4 +1,4 @@
-Set basic SearchBar in the html code.
+HTML
 <snippet id='basic-search-bar-html'/>
 
 Handle SearchBar `submit` event.

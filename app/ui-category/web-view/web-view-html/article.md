@@ -1,5 +1,3 @@
-## WebView (local file)
-
 HTML
 <snippet id='web-view-xml-local-file'/>
 

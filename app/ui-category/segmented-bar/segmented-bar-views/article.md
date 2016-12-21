@@ -1,6 +1,5 @@
-SegmentedBar in HTML
+HTML
 <snippet id='segmentedbar-show-views'/>
 
-
-Set items in SegmentedBar and visibility of the views
+Setting SegmentedBar's items and visibility of the views
 <snippet id='segmentedbar-items-setting-visibility'/>

@@ -1,11 +1,11 @@
-## Label
+Label with formatted string
 <snippet id='formatted-string-label-html'/>
 
-## TextField
+TextField with formatted string
 <snippet id='formatted-string-textfield-html'/>
 
-## TextView
+TextView with formatted string
 <snippet id="formatted-string-textview-html"/>
 
-## Button
+Button with formatted string
 <snippet id="formatted-string-button-html"/>

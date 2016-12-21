@@ -1,5 +1,3 @@
-## Navigation Button
-
 The ActionBar has a navigation button (a.k.a back button) that is used for moving around the application. 
 
 It can be set through the NavigationButton element.

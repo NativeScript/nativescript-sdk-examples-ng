@@ -1,0 +1,1 @@
+The following examples shows how o use Angular structural directives in NativeScript application.

@@ -1,5 +1,3 @@
-## Create TextField
-
 HTML
 <snippet id='sample-ui-textfield-html'/>
 

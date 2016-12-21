@@ -1,4 +1,4 @@
-## Flexbox (directions)
+Directions
 
 This establishes the main-axis, thus defining the direction flex items are placed in the flex container. 
 Flexbox is (aside from optional wrapping) a single-direction layout concept. 

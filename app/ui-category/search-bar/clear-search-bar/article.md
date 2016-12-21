@@ -1,5 +1,3 @@
-## Clear serach bar
-
 HTML
 <snippet id='clear-text-search-bar-html'/>
 

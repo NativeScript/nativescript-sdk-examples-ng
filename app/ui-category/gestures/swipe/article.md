@@ -1,5 +1,3 @@
-## Swipe
-
 Action: Swiftly slide your finger across the screen. Swipes are quick and affect the screen even after the finger is lifted off the screen.
 
 Swipe in HTML

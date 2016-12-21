@@ -1,2 +1,2 @@
-##  SearchBar binding example in HTML.
+HTML
 <snippet id='search-bar-html-binding'/>

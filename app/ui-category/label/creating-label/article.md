@@ -1,5 +1,3 @@
-## Creating Label
-
 HTML
 <snippet id='creating-label-html'/>
 

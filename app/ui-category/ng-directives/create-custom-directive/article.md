@@ -1,7 +1,5 @@
-Create custom directive example
-
-Set it in HTML
+HTML
 <snippet id='custom-directive-html'/>
 
-Set in code
+TypeScript
 <snippet id='custom-directive-code'/>
