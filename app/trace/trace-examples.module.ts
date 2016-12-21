@@ -16,11 +16,13 @@ export const routerConfig = [
     },
     {
         path: "custom-trace-writer",
-        component: CustomTraceWriterExampleComponent
+        component: CustomTraceWriterExampleComponent,
+        data: { title: "Custom trace writer" }
     },
     {
         path: "trace-writer-categories",
-        component: TraceSpecificCategoriesExampleComponent
+        component: TraceSpecificCategoriesExampleComponent,
+        data: { title: "Trace specific categories" }
     }
 ];
 
