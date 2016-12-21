@@ -1,9 +1,7 @@
-## Touch
-
 Action: A finger action was performed.
 
 Touch in HTML
-<snippet id='tap-html'/>
+<snippet id='touch-html'/>
 
 Touch in TypeScript
-<snippet id='tap-code'/>
+<snippet id='touch-code'/>

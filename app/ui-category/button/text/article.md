@@ -1,5 +1,3 @@
-## Text attribute
-
 HTML
 <snippet id='button-text-html'/>
 

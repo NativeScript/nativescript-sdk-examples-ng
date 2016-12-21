@@ -1,5 +1,5 @@
-Set progress via HTML
+HTML
 <snippet id='progress-setting-html'/>
 
-Set progres via code behind
+Typescript
 <snippet id='progress-setting-code'/>

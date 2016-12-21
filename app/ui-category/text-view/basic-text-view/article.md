@@ -1,4 +1,3 @@
-## Create TextView
 
 HTML
 <snippet id='textview-html'/>

@@ -1,5 +1,3 @@
-## Working with slider values
-
 HTML
 <snippet id='slider-values-xml'/>
 

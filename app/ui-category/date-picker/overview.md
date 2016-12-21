@@ -1,5 +1,3 @@
-# DatePicker
-
 NativeScript provides a DatePicker control that enables the user to choose a date as a ready-to-use dialog. Every date part can be picked separately by its corresponding section of the control - for day, month and year.
 
 **API Reference for** [DatePicker Class](http://docs.nativescript.org/api-reference/modules/_ui_date_picker_.html)

@@ -1,5 +1,3 @@
-## Customizing ListView
-
 Demonstration of ListView customization.
 In the code snippets below we will show how to:
 - create a custom ListView header

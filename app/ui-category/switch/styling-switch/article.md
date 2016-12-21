@@ -1,7 +1,5 @@
-##  Styling
-
-Set `Switch` component in  `HTML` code
+HTML
 <snippet id='switch-styling-html'/>
 
-Style `Switch` component using `CSS`
+CSS
 <snippet id='switch-style-css'/>

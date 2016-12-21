@@ -1,5 +1,3 @@
-## Basic usage
-
 HTML
 <snippet id='basic-slider-html'/>
 

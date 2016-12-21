@@ -1,7 +1,2 @@
-## Styling via code
-
-Create sample UI
-<snippet id='style-view-html'/>
-
-Add style on `ngOnInit`
+Dynamically added styles
 <snippet id='setting-style-via-code'/>

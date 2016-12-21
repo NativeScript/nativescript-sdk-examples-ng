@@ -1,7 +1,5 @@
-## Creating Progress
-
-Create a Progress widget in HTML
+HTML
 <snippet id='progress-create-html'/>
 
-Progress value binding
+Typescript
 <snippet id='progress-create-code'/>

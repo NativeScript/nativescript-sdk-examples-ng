@@ -1,5 +1,3 @@
-## Basic Segmentedbar usage
-
 HTML
 <snippet id='segmentedbar-basic-html'/>
 

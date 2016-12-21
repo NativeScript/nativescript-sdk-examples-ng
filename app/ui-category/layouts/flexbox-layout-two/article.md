@@ -1,5 +1,4 @@
-## Flexbox (order and shrink)
-
+### Flexbox (order and shrink)
 This defines the ability for a flex item to grow if necessary. It accepts a unitless value that serves as a proportion. 
 It dictates what amount of the available space inside the flex container the item should take up.
 
@@ -8,14 +7,12 @@ If one of the children has a value of 2, the remaining space would take up twice
 
 <snippet id='flexbox-grow-html'/>
 
-## Flex order
-
+### Flex order
 By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
 
 <snippet id='flexbox-order-html'/>
 
-## Flex shrink
-
+### Flex shrink
 This defines the ability for a flex item to shrink if necessary
 
 <snippet id='flexbox-shrink-html'/>

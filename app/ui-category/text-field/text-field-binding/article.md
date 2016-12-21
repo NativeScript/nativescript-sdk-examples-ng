@@ -1,5 +1,3 @@
-## Binding
-
 HTML
 <snippet id='textfield-binding-html'/>
 
