@@ -15,7 +15,8 @@ export const routerConfig = [
     },
     {
         path: "fps-meter-usage",
-        component: FpsMeterUsageComponent
+        component: FpsMeterUsageComponent,
+        data: { title: "FPS meter" }
     }
 ];
 

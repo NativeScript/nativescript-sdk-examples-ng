@@ -158,7 +158,7 @@ export const routes = [
     {
         path: "angular-directives",
         loadChildren: "./ui-category/ng-directives/ng-directives-examples.module#NgDirectivesExamplesModule",
-        data: { title: "Angular Directives" }
+        data: { title: "Angular directives" }
     },
     {
         path: "trace",
@@ -208,7 +208,7 @@ export const routes = [
     {
         path: "modal-page",
         loadChildren: "./modal-page/modal-page-examples.module#ModalPageExamplesModule",
-        data: { title: "Modal Page" }
+        data: { title: "Modal page" }
     },
     {
         path: "color",
