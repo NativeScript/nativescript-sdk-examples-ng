@@ -1,6 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { TextViewExamplesComponent } from "./text-view-examples.component";
 import { BasicTextViewComponent } from "./basic-text-view/basic-text-view.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
@@ -22,6 +23,7 @@ export const routerConfig = [
     imports: [
         TitleAndNavButtonModule,
         NativeScriptModule,
+        NativeScriptFormsModule,
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
     ],

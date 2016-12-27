@@ -4,8 +4,9 @@
 		<Button [text]="buttonText" class="btn btn-primary btn-active" (tap)="disableTextView()"></Button>
 		<Button text="Show text" class="btn btn-outline btn-active" (tap)="showText()"></Button>
 		<StackLayout class="input-field">
-			<TextView hint="Enter text" class="input input-border" returnKeyType="done" (returnPress)="submit($event)" [(ngModel)]="tvtext"
-				[editable]="editState"></TextView>
+			<Label text="Enter text:" class="label"></Label>
+			<TextView [(ngModel)]="tvtext" hint="Enter some text" returnKeyType="send" (returnPress)="submit($event)" [editable]="editState"
+				class="input input-border"></TextView>
 		</StackLayout>
 		<!-- << textview-html -->
 	</StackLayout>
