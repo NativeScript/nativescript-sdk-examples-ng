@@ -5,7 +5,7 @@ import { ListViewExamplesComponent } from "./listview-examples.component";
 import { CreatingListViewComponent } from "./creating-listview/creating-listview.component";
 import { CustomizingListViewComponent } from "./customizing-listview/customizing-listview.component";
 import { UsingAsyncPipeComponent } from "./using-async-pipe/using-async-pipe.component";
-import { UsingItemTemplateComponent, ItemComponent } from "./using-item-template/using-item-template.component";
+import { UpdateChildComponent, ItemComponent } from "./update-child-component/update-child-component.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -29,9 +29,9 @@ export const routerConfig = [
         data: { title: "Using async pipe" }
     },
     {
-        path: "using-item-template",
-        component: UsingItemTemplateComponent,
-        data: { title: "Using item template" }
+        path: "update-child-component",
+        component: UpdateChildComponent,
+        data: { title: "Update child component" }
     }
 ];
 
@@ -49,7 +49,7 @@ export const routerConfig = [
         CreatingListViewComponent,
         CustomizingListViewComponent,
         UsingAsyncPipeComponent,
-        UsingItemTemplateComponent
+        UpdateChildComponent
     ]
 })
 

@@ -1,0 +1,10 @@
+.odd { 
+    vertical-align: center;
+    padding-left: 15;
+}
+
+.even {
+    color: #0099CC;
+    vertical-align: center;
+    padding-left: 15;
+}
