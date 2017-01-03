@@ -4,7 +4,7 @@ import { Link } from "./../../link";
 let menuLinks = [
     new Link("Create ListView", "/list-view/creating-list-view"),
     new Link("Customize ListView", "/list-view/customizing-list-view"),
-    new Link("Use item template", "/list-view/using-item-template"),
+    new Link("Update Child Component", "/list-view/update-child-component"),
     new Link("Use async pipe", "/list-view/using-async-pipe")
 ];
 
