@@ -229,5 +229,10 @@ export const routes = [
         path: "platform",
         loadChildren: "./platform/platform-examples.module#PlatformExamplesModule",
         data: { title: "Platform Module" }
+    },
+    {
+        path: "routing",
+        loadChildren: "./routing/routing-examples.module#RoutingExamplesModule",
+        data: { title: "Angular routing" }
     }
 ];
