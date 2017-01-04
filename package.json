@@ -62,7 +62,7 @@
         "lazy": "1.0.11",
         "markdown-snippet-injector": "^0.2.0",
         "nativescript-dev-typescript": "^0.3.2",
-        "nativescript-dev-webpack": "^0.2.11",
+        "nativescript-dev-webpack": "^0.2.16",
         "opener": "^1.4.1",
         "raw-loader": "~0.5.1",
         "resolve-url-loader": "~1.6.0",
