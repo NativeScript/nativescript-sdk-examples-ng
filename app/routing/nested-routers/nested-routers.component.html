@@ -1,0 +1,9 @@
+<!-- >> nested-router-html -->
+<StackLayout sdkExampleTitle sdkToggleNavButton>
+    <GridLayout rows="80" columns="*, *">
+        <Button text="First" [nsRouterLink]="['first']" class="btn btn-primary btn-active" col="0"></Button>
+        <Button text="Second" [nsRouterLink]="['second']" class="btn btn-primary btn-active" col="1"></Button>
+    </GridLayout>
+    <router-outlet></router-outlet>
+</StackLayout>
+<!-- << nested-router-html -->

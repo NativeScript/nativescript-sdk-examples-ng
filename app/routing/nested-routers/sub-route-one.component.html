@@ -1,0 +1,4 @@
+<GridLayout rows="auto, *">
+    <Label row="0" text="Loaded inside the nested router" textWrap="true" class="m-16 text-center"></Label>
+    <Button row="1" text="This is FIRST. Load SECOND" [nsRouterLink]="['/routing/nested-routers/second']" class="btn btn-primary btn-active"></Button>
+</GridLayout>
