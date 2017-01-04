@@ -4,6 +4,4 @@ import { Component } from "@angular/core";
     moduleId: module.id,
     templateUrl: "./nested-routers.component.html"
 })
-export class NestedRoutersComponent {
-    constructor() { }
-}
+export class NestedRoutersComponent { }

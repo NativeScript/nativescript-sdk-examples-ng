@@ -5,7 +5,4 @@ import { Component } from "@angular/core";
     moduleId: module.id,
     templateUrl: "./sub-route-one.component.html"
 })
-export class SubRouteOneComponent {
-    constructor() { }
-}
-// << 
+export class SubRouteOneComponent { }
