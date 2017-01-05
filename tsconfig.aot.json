@@ -16,6 +16,7 @@
       "platforms"
   ],
   "angularCompilerOptions": {
-    "skipMetadataEmit": true
+    "skipMetadataEmit": true,
+    "genDir": "./"
   }
 }
