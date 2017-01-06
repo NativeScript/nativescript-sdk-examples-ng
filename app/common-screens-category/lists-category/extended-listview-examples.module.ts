@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { ExtendedListViewExamplesComponent } from "./extended-listview-examples.component";
 import { CardsListViewExampleComponent } from "./cards/cards-listview.component";
 import { HeaderWithMapExampleComponent } from "./header-with-map/header-with-map.component";

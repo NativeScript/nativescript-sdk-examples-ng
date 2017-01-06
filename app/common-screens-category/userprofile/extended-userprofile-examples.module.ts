@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { ExtendedUserProfileExamplesComponent } from "./extended-userprofile-examples.component";
 import { UserFeedExampleComponent } from "./user-feed/user-feed.component";
 import { UserFeedImagesExampleComponent } from "./user-feed-images/user-feed-images.component";

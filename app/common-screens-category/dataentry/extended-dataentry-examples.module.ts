@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { ExtendedDataEntryExamplesComponent } from "./extended-dataentry-examples.component";
 import { SignupDataEntryExampleComponent } from "./dataentry-signup/dataentry-signup.component";
 import { SocialLoginDataEntryExampleComponent } from "./dataentry-sociallogin/dataentry-sociallogin.component";

@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { LocationExamplesComponent } from "./location-examples.component";
 import { BasicLocationExampleComponent } from "./basic-location-example/basic-location-example";
 import { LocationMonitoringExampleComponent } from "./location-monitoring-example/location-monitoring-example";
