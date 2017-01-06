@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { ButtonExamplesComponent } from "./button-examples.component";
 import { ButtonBindingTextComponent } from "./binding-text/binding-text.component";
 import { ButtonTapEventComponent } from "./tap-event/tap-event.component";

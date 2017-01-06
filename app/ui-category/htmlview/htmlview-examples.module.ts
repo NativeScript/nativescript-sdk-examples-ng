@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/platform";
+import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { HtmlViewExamplesComponent } from "./htmlview-examples.component";
 import { CreatingHtmlViewExampleComponent } from "./creating-htmlview/creating-htmlview.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
