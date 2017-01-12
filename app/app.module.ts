@@ -3,12 +3,13 @@
 // >> (hide)
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { NgModule, NO_ERRORS_SCHEMA, NgModuleFactoryLoader } from "@angular/core";
-import { NativeScriptRouterModule, NSModuleFactoryLoader } from "nativescript-angular/router";
+import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 import { routes } from "./app.routes";
 import { AppComponent } from "./app.component";
 // << (hide)
+import { NsModuleFactoryLoader } from "./ns-module-factory-loader";
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
 import { registerElement } from "nativescript-angular/element-registry";
 import { TnsGoogleMaps } from "nativescript-googlemaps";
@@ -30,7 +31,7 @@ declare var GMSServices: any;
     ],
     providers: [
         ModalDialogService,
-        { provide: NgModuleFactoryLoader, useClass: NSModuleFactoryLoader }
+        { provide: NgModuleFactoryLoader, useClass: NsModuleFactoryLoader }
     ]
 })
 // << ngmodule-config
