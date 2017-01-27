@@ -2,7 +2,6 @@
     "compilerOptions": {
         "noEmitOnError": true,
         "noEmitHelpers": true,
-        "sourceMap": true,
         "target": "es5",
         "module": "commonjs",
         "declaration": false,

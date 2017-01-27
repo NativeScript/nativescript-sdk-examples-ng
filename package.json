@@ -61,7 +61,7 @@
         "glob": "^7.0.5",
         "lazy": "1.0.11",
         "markdown-snippet-injector": "^0.2.0",
-        "nativescript-dev-typescript": "^0.3.2",
+        "nativescript-dev-typescript": "https://github.com/NativeScript/nativescript-dev-typescript.git#master",
         "nativescript-dev-webpack": "^0.3.0",
         "opener": "^1.4.1",
         "raw-loader": "~0.5.1",
