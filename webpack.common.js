@@ -27,8 +27,6 @@ module.exports = function (platform, destinationApp) {
         }),
         //Define useful constants like TNS_WEBPACK
         new webpack.DefinePlugin({
-            global: "global",
-            __dirname: "__dirname",
             "global.TNS_WEBPACK": "true",
         }),
         //Copy assets to out dir. Add your own globs as needed.
@@ -45,18 +43,25 @@ module.exports = function (platform, destinationApp) {
             "./vendor",
             "./bundle",
         ]),
+
         // Exclude explicitly required but never declared in XML elements. 
-        // Loader nativescript-dev-webpack/tns-xml-loader should be added for *.xml/html files.
+        // Loader nativescript-dev-webpack/tns-xml-loader should be added for *.xml/html and *.ts files.
         new nsWebpack.ExcludeUnusedElementsPlugin(),
+
         //Angular AOT compiler
         new AotPlugin({
             tsConfigPath: "tsconfig.aot.json",
             entryModule: path.resolve(__dirname, "app/app.module#AppModule"),
             typeChecking: false
         }),
+        new nsWebpack.StyleUrlResolvePlugin({platform}),
     ];
 
     if (process.env.npm_config_uglify) {
+        plugins.push(new webpack.LoaderOptionsPlugin({
+            minimize: true
+        }));
+
         //Work around an Android issue by setting compress = false
         var compress = platform !== "android";
         plugins.push(new webpack.optimize.UglifyJsPlugin({
@@ -64,7 +69,6 @@ module.exports = function (platform, destinationApp) {
                 except: nsWebpack.uglifyMangleExcludes,
             },
             compress: compress,
-            comments: false
         }));
     }
 
@@ -107,7 +111,7 @@ module.exports = function (platform, destinationApp) {
                     test: /\.html$|\.xml$/,
                     loaders: [
                         "raw-loader",
-                        'nativescript-dev-webpack/tns-xml-loader'
+                        "nativescript-dev-webpack/tns-xml-loader",
                     ]
                 },
                 // Root app.css file gets extracted with bundled dependencies
@@ -115,7 +119,7 @@ module.exports = function (platform, destinationApp) {
                     test: /app\.css$/,
                     loader: ExtractTextPlugin.extract([
                         "resolve-url-loader",
-                        "css-loader",
+                        "nativescript-css-loader",
                         "nativescript-dev-webpack/platform-css-loader",
                     ]),
                 },
@@ -131,6 +135,7 @@ module.exports = function (platform, destinationApp) {
                 {
                     test: /\.ts$/,
                     loaders: [
+                        "nativescript-dev-webpack/tns-xml-loader",
                         "nativescript-dev-webpack/tns-aot-loader",
                         "@ngtools/webpack",
                     ]
