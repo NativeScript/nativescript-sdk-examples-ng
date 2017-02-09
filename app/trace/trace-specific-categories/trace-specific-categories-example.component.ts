@@ -7,7 +7,7 @@ import {
     categories,
     addCategories,
     isCategorySet,
-    enabled,
+    isEnabled,
     write,
     clearWriters
 } from "trace";
@@ -69,7 +69,7 @@ export class TraceSpecificCategoriesExampleComponent {
     }
 
     public enableTracing() {
-        if (enabled === false) {
+        if (isEnabled() === false) {
             enable();
             alert("Trace has been enabled");
         } else {
@@ -77,7 +77,7 @@ export class TraceSpecificCategoriesExampleComponent {
         }
     }
     public disableTracing() {
-        if (enabled) {
+        if (isEnabled()) {
             // >> disable-tracing
             disable();
             // << disable-tracing
