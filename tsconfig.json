@@ -11,7 +11,8 @@
         "emitDecoratorMetadata": true,
         "pretty": true,
         "lib": [
-            "es2016"
+            "es6",
+            "dom"
         ]
     },
     "exclude": [
