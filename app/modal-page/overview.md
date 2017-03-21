@@ -1,1 +1,1 @@
-Modal Dialof
+Modal Dialog
