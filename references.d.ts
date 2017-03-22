@@ -12,6 +12,7 @@ declare type History = any;
 declare type HTMLAnchorElement = any;
 declare type HTMLCollection = any;
 declare type HTMLDocument = any;
+declare type HTMLMetaElement = any;
 declare type HTMLElement = any;
 declare type HTMLInputElement = any;
 declare type HTMLScriptElement = any;
