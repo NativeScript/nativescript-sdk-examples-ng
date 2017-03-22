@@ -3,11 +3,11 @@
     <GridLayout *tabItem="{title: 'Basic list'}">
         <!-- >> ext-listview-basic-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
-            <template let-country="item">
+            <ng-template let-country="item">
                 <StackLayout class="list-group-item">
                     <Label class="list-group-item-heading" [text]="country.name"></Label>
                 </StackLayout>
-            </template>
+            </ng-template>
         </ListView>
         <!-- << ext-listview-basic-html -->
     </GridLayout>
@@ -15,11 +15,11 @@
     <GridLayout *tabItem="{title: 'Dividers'}">
         <!-- >> ext-listview-borders-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="gray">
-            <template let-country="item">
+            <ng-template let-country="item">
                 <StackLayout class="list-group-item">
                     <Label class="list-group-item-heading" [text]="country.name"></Label>
                 </StackLayout>
-            </template>
+            </ng-template>
         </ListView>
         <!-- << ext-listview-borders-html -->
     </GridLayout>
@@ -27,12 +27,12 @@
     <GridLayout *tabItem="{title: 'Thumbnails'}">
         <!-- >> ext-listview-thumbs-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" >
-            <template let-country="item">
+            <ng-template let-country="item">
                 <FlexboxLayout flexDirection="row" class="list-group-item">
                     <Image [src]="country.imageSrc" class="thumb img-circle"></Image>
                     <Label [text]="country.name" class="list-group-item-heading" verticalAlignment="center"></Label>
                 </FlexboxLayout>
-            </template>
+            </ng-template>
         </ListView>
         <!-- << ext-listview-thumbs-html -->
     </GridLayout>

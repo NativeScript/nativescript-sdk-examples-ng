@@ -1,7 +1,7 @@
 // >> http-get-service
 import { Injectable } from "@angular/core";
 import { Http, Headers, Response } from "@angular/http";
-import { Observable as RxObservable } from "rxjs/Rx";
+import { Observable as RxObservable } from "rxjs/Observable";
 
 import "rxjs/add/operator/map";
 import "rxjs/add/operator/do";

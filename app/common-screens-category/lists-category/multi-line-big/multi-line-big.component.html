@@ -2,7 +2,7 @@
     <GridLayout *tabItem="{title: 'Bigger thumbs on the left'}">
         <!-- >> multi-line-big-left-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" (setupItemView)="onSetupItemView($event)">
-            <template let-country="item" let-third="third">
+            <ng-template let-country="item" let-third="third">
                 <GridLayout class="list-group-item" rows="*" columns="auto, *">
                     <StackLayout col="1">
                         <Label class="list-group-item-heading" [text]="country.name"></Label>
@@ -10,14 +10,14 @@
                     </StackLayout>
                     <Image col="0" [src]="country.imageSrc" class="thumb img-rounded" width="92" height="92" verticalAlignment="top"></Image>
                 </GridLayout>
-            </template>
+            </ng-template>
         </ListView>
         <!-- << multi-line-big-left-html -->
     </GridLayout>
     <GridLayout *tabItem="{title: 'Bigger thumbs on the right'}">
         <!-- >> multi-line-big-right-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" (setupItemView)="onSetupItemView($event)">
-            <template let-country="item" let-third="third">
+            <ng-template let-country="item" let-third="third">
                 <GridLayout class="list-group-item" rows="*" columns="*, auto">
                     <StackLayout col="0">
                         <Label class="list-group-item-heading" [text]="country.name"></Label>
@@ -25,22 +25,22 @@
                     </StackLayout>
                     <Image col="1" [src]="country.imageSrc" class="thumb img-rounded" width="92" height="92" verticalAlignment="top"></Image>
                 </GridLayout>
-            </template>
+            </ng-template>
         </ListView>
         <!-- << multi-line-big-right-html -->
     </GridLayout>
     <GridLayout *tabItem="{title: 'Bigger thumbs (grouped lists)'}">
         <!-- >> multi-line-big-grouped-html -->
         <ListView [items]="groupedCountries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="white">
-            <template nsTemplateKey="header" let-header="item">
+            <ng-template nsTemplateKey="header" let-header="item">
                 <Label [text]="header.name" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24"></Label>
-            </template>
+            </ng-template>
 
-            <template nsTemplateKey="footer" let-footer="item">
+            <ng-template nsTemplateKey="footer" let-footer="item">
                 <Label [text]="footer.name" class="list-group-item" backgroundColor="gray" fontSize="12"></Label>
-            </template>
+            </ng-template>
 
-            <template nsTemplateKey="cell" let-country="item">
+            <ng-template nsTemplateKey="cell" let-country="item">
                 <GridLayout class="list-group-item" rows="*" columns="*, auto">
                     <StackLayout col="0">
                         <Label [text]="country.name" class="list-group-item-heading"></Label>
@@ -48,7 +48,7 @@
                     </StackLayout>
                     <Image col="1" [src]="country.imageSrc" class="thumb img-rounded" width="92" height="92" verticalAlignment="top"></Image>
                 </GridLayout>
-            </template>
+            </ng-template>
         </ListView>
         <!-- << multi-line-big-grouped-html -->
     </GridLayout>
