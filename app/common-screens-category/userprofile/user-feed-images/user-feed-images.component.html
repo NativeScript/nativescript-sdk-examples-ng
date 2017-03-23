@@ -11,19 +11,19 @@
             <TabView class="tab-view">
                 <GridLayout *tabItem="{title: 'Countries'}">
                     <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
-                        <ng-template let-country="item">
+                        <template let-country="item">
                             <GridLayout rows="* auto" columns="*" class="list-group-item" style="border:1;">
                                 <Image row="0" col="0" [src]="country.imageSrc"></Image>
                                 <StackLayout row="1" col="0" backgroundColor="white" class="list-group-item">
                                     <Label class="list-group-item-heading" [text]="country.name"></Label>
                                 </StackLayout>
                             </GridLayout>
-                        </ng-template>
+                        </template>
                     </ListView>
                 </GridLayout>
                 <GridLayout *tabItem="{title: 'With continents'}">
                     <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="white">
-                        <ng-template let-country="item">
+                        <template let-country="item">
                             <GridLayout rows="* auto" columns="*" class="list-group-item" style="border:1;">
                                 <Image row="0" col="0" [src]="country.imageSrc"></Image>
                                 <StackLayout row="1" col="0" backgroundColor="white" class="list-group-item">
@@ -31,7 +31,7 @@
                                     <Label class="list-group-item-text" [text]="'Continent: '+country.continent"></Label>
                                 </StackLayout>
                             </GridLayout>
-                        </ng-template>
+                        </template>
                     </ListView>
                 </GridLayout>
             </TabView>

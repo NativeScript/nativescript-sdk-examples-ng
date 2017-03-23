@@ -13,11 +13,11 @@
     </GridLayout>
     <GridLayout row="1" col="0">
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTap($event)" separatorColor="#adadad">
-            <ng-template let-country="item">
+            <template let-country="item">
                 <StackLayout class="list-group-item">
                     <Label [text]="country.name"></Label>
                 </StackLayout>
-            </ng-template>
+            </template>
         </ListView>
     </GridLayout>
 </GridLayout>

@@ -16,13 +16,13 @@
         <GridLayout rows="auto, *" columns="*">
             <Label class="p-15 font-weight-bold" row="0" text="Enumerate documents folder content" textWrap="true"></Label>
             <ListView class="list-group" row="1" [items]="folderEntities">
-                <ng-template let-item="item" let-index="index">
+                <template let-item="item" let-index="index">
                     <GridLayout class="list-group-item" rows="auto, auto, auto" columns="*">
                         <Label row="0" [text]="'File name: ' + item.name" textWrap="true"></Label>
                         <Label row="1" [text]="'File path: ' + item.path" textWrap="true"></Label>
                         <Label row="2" [text]="'Date modified: ' + item.lastModified" textWrap="true"></Label>
                     </GridLayout>
-                </ng-template>
+                </template>
             </ListView>
         </GridLayout>
     </StackLayout>

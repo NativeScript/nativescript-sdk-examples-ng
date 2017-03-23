@@ -1,7 +1,7 @@
 <ListView [items]="links" class="list-group" sdkExampleTitle sdkToggleNavButton>
-    <ng-template let-item="item">
+    <template let-item="item">
         <GridLayout [nsRouterLink]="item.link" class="list-group-item">
             <Label [text]="item.title" class="list-group-item-heading"></Label>
         </GridLayout>
-    </ng-template>
+    </template>
 </ListView>

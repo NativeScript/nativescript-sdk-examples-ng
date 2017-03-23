@@ -11,9 +11,9 @@
 
             <Label class="h3 text-left p-l-15 p-r-15" text="files associated with this Context's application package: "></Label>
             <ListView class="list-group" [items]="fileList" height="176">
-                <ng-template let-item="item">
+                <template let-item="item">
                     <Label class="list-group-item active" [text]="'file name: ' + item" textWrap="true"></Label>
-                </ng-template>
+                </template>
             </ListView>
             <!-- << app-android-specifics-html -->
 

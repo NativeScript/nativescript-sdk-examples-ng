@@ -2,37 +2,37 @@
     <GridLayout *tabItem="{title: 'Basic list'}">
         <!-- >> ext-listview-two-lines-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapFirstList($event)" separatorColor="white">
-            <ng-template let-country="item">
+            <template let-country="item">
                 <StackLayout class="list-group-item">
                     <Label class="list-group-item-heading" [text]="country.name"></Label>
                     <Label class="list-group-item-text" [text]="'Continent: '+country.continent"></Label>
                 </StackLayout>
-            </ng-template>
+            </template>
         </ListView>
         <!-- << ext-listview-two-lines-html -->
     </GridLayout>
     <GridLayout *tabItem="{title: 'Dividers'}">
         <!-- >> ext-listview-borders-two-lines-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapSecondList($event)" separatorColor="gray">
-            <ng-template let-country="item">
+            <template let-country="item">
                 <StackLayout class="list-group-item">
                     <Label class="list-group-item-heading" [text]="country.name"></Label>
                     <Label class="list-group-item-text" [text]="'Continent: '+country.continent"></Label>
                 </StackLayout>
-            </ng-template>
+            </template>
         </ListView>
         <!-- << ext-listview-borders-two-lines-html -->
     </GridLayout>
     <GridLayout *tabItem="{title: 'Thumbnails'}">
         <!-- >> ext-listview-thumbs-two-lines-html -->
         <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)">
-            <ng-template let-country="item">
+            <template let-country="item">
                 <GridLayout class="list-group-item" rows="* *" columns="auto, *">
                     <Image row="0" col="0" rowSpan="2" [src]="country.imageSrc" class="thumb img-circle"></Image>
                     <Label row="0" col="1" [text]="country.name" class="list-group-item-heading"></Label>
                     <Label row="1" col="1" class="list-group-item-text" [text]="'Continent: '+country.continent"></Label>
                 </GridLayout>
-            </ng-template>
+            </template>
         </ListView>
         <!-- << ext-listview-thumbs-two-lines-html -->
     </GridLayout>

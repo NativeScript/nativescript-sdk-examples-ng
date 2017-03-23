@@ -1,6 +1,6 @@
 <GridLayout sdkExampleTitle sdkToggleNavButton class="border-gridLayout">
     <ListView [items]="customwriter.array" class="list-group">
-        <ng-template let-item="item" let-odd="odd" let-even="even">
+        <template let-item="item" let-odd="odd" let-even="even">
             <GridLayout rows="auto auto auto auto" columns="auto *" class="list-group-item">
                 <Label class="list-group-item-heading" row="0" col="0" text="Message type: "></Label>
                 <Label class="list-group-item-text" row="1" col="0" text="Date: "></Label>
@@ -12,6 +12,6 @@
                 <Label class="list-group-item-text" row="2" col="1" [text]="item.category"></Label>
                 <Label class="list-group-item-text" row="3" col="1" [text]="item.message"></Label>
             </GridLayout>
-        </ng-template>
+        </template>
     </ListView>
 </GridLayout>
