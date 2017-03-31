@@ -10,7 +10,8 @@ function archive(){
 
     var distDir = path.join(cwd, "dist");
     var sourceDir = path.join(distDir, "code-samples");
-    var archiveFile = path.join(distDir, "sdk-code-samples.tar.gz");
+    var version = process.env.PACKAGE_VERSION || "0.0.0"
+    var archiveFile = path.join(distDir, "sdk-code-samples-" + version + ".tar.gz");
     rimraf.sync(archiveFile);
     
     var read = targz().createReadStream(sourceDir);
