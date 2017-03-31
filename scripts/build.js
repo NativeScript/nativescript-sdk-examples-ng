@@ -36,7 +36,7 @@ function build() {
     rimraf.sync(distDir);
     fs.mkdirSync(distDir);
 
-    var articlesDir = path.join(distDir, "sdk-examples");
+    var articlesDir = path.join(distDir, "code-samples");
     fs.mkdirSync(articlesDir);
 
     var appDir = path.join(cwd, "app");
