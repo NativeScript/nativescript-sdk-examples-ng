@@ -1,52 +1,52 @@
 <TabView #tabView class="tab-view" sdkExampleTitle sdkToggleNavButton>
     <GridLayout *tabItem="{title: 'Basic list'}">
         <!-- >> multi-line-grouped-basic-html -->
-        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="white">
-            <template nsTemplateKey="header" let-header="item">
+        <ListView [items]="countries" [itemng-templateSelector]="ng-templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="white">
+            <ng-template nsng-templateKey="header" let-header="item">
                 <Label [text]="header.name" class="list-group-item h3 bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24"></Label>
-            </template>
-            <template nsTemplateKey="footer" let-footer="item">
+            </ng-template>
+            <ng-template nsng-templateKey="footer" let-footer="item">
                 <Label [text]="footer.name" class="list-group-item" backgroundColor="gray"></Label>
-            </template>
-            <template nsTemplateKey="cell" let-country="item">
+            </ng-template>
+            <ng-template nsng-templateKey="cell" let-country="item">
                 <StackLayout class="list-group-item">
                     <Label [text]="country.name" class="list-group-item-heading"></Label>
                     <Label [text]="country.desc" class="list-group-item-text" textWrap="true"></Label>
                 </StackLayout>
-            </template>
+            </ng-template>
         </ListView>
         <!-- << multi-line-grouped-basic-html -->
     </GridLayout>
     <GridLayout *tabItem="{title: 'Dividers'}">
         <!-- >> multi-line-grouped-borders-html -->
-        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="gray">
-            <template nsTemplateKey="header" let-header="item">
+        <ListView [items]="countries" [itemng-templateSelector]="ng-templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="gray">
+            <ng-template nsng-templateKey="header" let-header="item">
                 <Label [text]="header.name" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24"></Label>
-            </template>
+            </ng-template>
 
-            <template nsTemplateKey="footer" let-footer="item">
+            <ng-template nsng-templateKey="footer" let-footer="item">
                 <Label [text]="footer.name" class="list-group-item" backgroundColor="gray"></Label>
-            </template>
+            </ng-template>
 
-            <template nsTemplateKey="cell" let-country="item">
+            <ng-template nsng-templateKey="cell" let-country="item">
                 <StackLayout class="list-group-item">
                     <Label [text]="country.name" class="list-group-item-heading"></Label>
                     <Label [text]="country.desc" class="list-group-item-text" textWrap="true"></Label>
                 </StackLayout>
-            </template>
+            </ng-template>
         </ListView>
         <!-- << multi-line-grouped-borders-html -->
     </GridLayout>
     <GridLayout *tabItem="{title: 'Thumbnails'}">
         <!-- >> multi-line-grouped-thumbs-html -->
-        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="gray">
-            <template nsTemplateKey="header" let-header="item">
+        <ListView [items]="countries" [itemng-templateSelector]="ng-templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="gray">
+            <ng-template nsng-templateKey="header" let-header="item">
                 <Label [text]="header.name" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24"></Label>
-            </template>
-            <template nsTemplateKey="footer" let-footer="item">
+            </ng-template>
+            <ng-template nsng-templateKey="footer" let-footer="item">
                 <Label [text]="footer.name" class="list-group-item" backgroundColor="gray"></Label>
-            </template>
-            <template nsTemplateKey="cell" let-country="item">
+            </ng-template>
+            <ng-template nsng-templateKey="cell" let-country="item">
                 <GridLayout class="list-group-item" rows="*" columns="auto, *">
                     <Image col="0" [src]="country.imageSrc" class="thumb img-circle" verticalAlignment="top"></Image>
                     <StackLayout col="1">
@@ -54,7 +54,7 @@
                         <Label [text]="country.desc" class="list-group-item-text" textWrap="true"></Label>
                     </StackLayout>
                 </GridLayout>
-            </template>
+            </ng-template>
         </ListView>
         <!-- << multi-line-grouped-thumbs-html -->
     </GridLayout>
