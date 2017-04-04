@@ -2,14 +2,15 @@
 import { Component } from "@angular/core";
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
-import { TabView, SelectedIndexChangedEventData } from "ui/tab-view";
+import { TabView, SelectedIndexChangedEventData, TabViewItem } from "ui/tab-view";
+import { View } from "ui/core/view";
 
 @Component({
     moduleId: module.id,
     templateUrl: "./tab-view-items.component.html",
 })
 export class TabViewItemsComponent {
-    public tabviewitems: Array<any>;
+    public tabviewitems: Array<TabViewItem>;
 
     constructor() {
         this.tabviewitems = [];
@@ -32,15 +33,22 @@ export class TabViewItemsComponent {
         thirdLabel.text = "Label third page";
         innerThirdStackLayout.addChild(thirdLabel);
 
-        this.tabviewitems.push({ "title": "Tab1", "view": innerFirstStackLayout });
-        this.tabviewitems.push({ "title": "Tab2", "view": innerSecondStackLayout });
-        this.tabviewitems.push({ "title": "Tab3", "view": innerThirdStackLayout });
+        this.tabviewitems.push(this.createTabItem("Tab1", innerFirstStackLayout));
+        this.tabviewitems.push(this.createTabItem("Tab2", innerSecondStackLayout));
+        this.tabviewitems.push(this.createTabItem("Tab3", innerThirdStackLayout));
 
     }
 
     public tabViewIndexChange(res) {
         alert("Tab View selected index: " + res);
 
+    }
+
+    createTabItem(title: string, view: View): TabViewItem {
+        const item = new TabViewItem();
+        item.title = title;
+        item.view = view;
+        return item;
     }
 }
 // << add-items-code
