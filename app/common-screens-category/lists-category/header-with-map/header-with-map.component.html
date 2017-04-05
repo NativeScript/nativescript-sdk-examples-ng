@@ -3,13 +3,13 @@
 	<GridLayout rows="150 *" columns="*">
 		<TnsGoogleMaps *ngIf="isServiceAvailable" [marker]="markerlocation"></TnsGoogleMaps>
 		<ListView [row]="isServiceAvailable ? 1 : 0" col="0" [rowSpan]="isServiceAvailable ? 1 : 2" class="list-group" [items]="countries" (itemTap)="onItemTapList($event)">
-			<template let-country="item">
+			<ng-template let-country="item">
 				<GridLayout class="list-group-item" rows="* *" columns="auto, *">
 					<Image row="0" col="0" rowSpan="2" [src]="country.imageSrc" class="thumb img-circle"></Image>
 					<Label row="0" col="1" [text]="country.name" class="list-group-item-heading p-15"></Label>
 					<Label row="1" col="1" class="list-group-item-text p-15" [text]="'Continent: '+country.continent"></Label>
 				</GridLayout>
-			</template>
+			</ng-template>
 		</ListView>
 	</GridLayout>
 	<!-- << ext-listview-map-header-html -->

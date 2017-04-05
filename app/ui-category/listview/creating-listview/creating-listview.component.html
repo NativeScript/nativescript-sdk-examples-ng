@@ -2,11 +2,11 @@
     <GridLayout >
         <!-- >> listview-create-html -->
         <ListView [items]="countries" class="list-group" (itemTap)="onItemTap($event)">
-            <template let-country="item" let-i="index" let-odd="odd" let-even="even">
+            <ng-template let-country="item" let-i="index" let-odd="odd" let-even="even">
                 <GridLayout class="list-group-item">
                     <Label [text]="country.name"></Label>
                 </GridLayout>
-            </template>
+            </ng-template>
         </ListView>
         <!-- << listview-create-html -->
     </GridLayout>
