@@ -25,7 +25,7 @@ export class BasicWebViewComponent implements AfterViewInit {
             } else {
                 message = "Error loading " + args.url + ": " + args.error;
             }
-            alert("WebView message - " + message);
+            console.log("WebView message - " + message);
         });
     }
 
