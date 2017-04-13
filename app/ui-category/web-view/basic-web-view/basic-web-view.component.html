@@ -1,7 +1,7 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
     <StackLayout>
         <!-- >> web-view-html -->
-        <GridLayout rows="75 *">
+        <GridLayout rows="75 * 50">
             <GridLayout row="0" rows="*" columns="50 *" class="form">
                 <Button class="btn btn-primary btn-active icon" row="0" col="0" text="&#xea44;" (tap)="goBack()"></Button>   
                 <TextField #urlField row="0" col="1" hint="Enter URL" [text]="webViewSrc" returnKeyType="done"
@@ -9,6 +9,7 @@
                     autocapitalizationType="none" ></TextField>  
             </GridLayout>
             <WebView row="1" #myWebView [src]="webViewSrc"></WebView>
+            <Label row="2" #labelResult></Label>
         </GridLayout>
         <!-- << web-view-html -->
     </StackLayout>
