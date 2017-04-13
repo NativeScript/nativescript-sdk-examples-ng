@@ -2,6 +2,7 @@
 // >> ngmodule-config
 // >> (hide)
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { NativeScriptAnimationsModule } from "nativescript-angular/animations";
 import { NgModule, NO_ERRORS_SCHEMA, NgModuleFactoryLoader } from "@angular/core";
 import { NativeScriptRouterModule, NSModuleFactoryLoader } from "nativescript-angular/router";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
@@ -24,6 +25,7 @@ declare var GMSServices: any;
     bootstrap: [AppComponent],
     imports: [
         NativeScriptModule,
+        NativeScriptAnimationsModule,
         NativeScriptFormsModule,
         NativeScriptRouterModule,
         NativeScriptRouterModule.forRoot(routes),
