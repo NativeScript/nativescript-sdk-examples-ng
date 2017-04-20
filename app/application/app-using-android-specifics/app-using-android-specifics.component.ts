@@ -13,7 +13,7 @@ export class AppUsingAndroidExampleComponent {
     public filesDir: string;
     public cacheDir: string;
     public fileList: Array<string>;
-    public batteryLife: string;
+    public batteryLife: number;
 
     constructor() {
         if (application.android) {
@@ -34,16 +34,12 @@ export class AppUsingAndroidExampleComponent {
             // << app-android-dirs-code
 
             // >> app-android-broadcast-code
-            this.batteryLife = "0";
-            let that = this;
 
             application.android.registerBroadcastReceiver(android.content.Intent.ACTION_BATTERY_CHANGED,
-                function onReceiveCallback(context: android.content.Context, intent: android.content.Intent) {
-                    let level = intent.getIntExtra(android.os.BatteryManager.EXTRA_LEVEL, -1);
-                    let scale = intent.getIntExtra(android.os.BatteryManager.EXTRA_SCALE, -1);
-                    let percent = (level / scale) * 100.0;
-
-                    that.batteryLife = percent.toString();
+                (context: android.content.Context, intent: android.content.Intent) => {
+                    const level = intent.getIntExtra(android.os.BatteryManager.EXTRA_LEVEL, -1);
+                    const scale = intent.getIntExtra(android.os.BatteryManager.EXTRA_SCALE, -1);
+                    this.batteryLife = (level / scale) * 100.0;
                 });
             // << app-android-broadcast-code
         } else if (application.ios) {
