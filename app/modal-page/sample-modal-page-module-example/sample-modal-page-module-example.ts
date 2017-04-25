@@ -39,14 +39,24 @@ export class SampleModalPageModuleExampleComponent {
             .then((dateresult: Date) => {
                 console.log("date result " + dateresult);
                 // >> (hide)
-                if (args === "start") {
+                if (args === "start" && dateresult!=undefined) {
                     this.startDate = dateresult;
-                } else if (args === "end") {
+                }
+                 else if (args === "end" && dateresult!=undefined) {
                     this.endDate = dateresult;
-                } else if (args === "findTheDay") {
+                } else if (args === "findTheDay" && dateresult!=undefined) {
                     this.date = dateresult;
                     this.weekday = this.weekdays[this.date.getDay()];
                 }
+                else{
+                    let oneDay = 24 * 60 * 60 * 1000;
+                    this.startDate = new Date("2015-12-12");
+                    this.endDate = new Date();
+                    this.date = new Date();
+                    this.days = Math.round(Math.abs((this.startDate.getTime() - this.endDate.getTime()) / (oneDay)));
+                    this.weekday = this.weekdays[this.date.getDay()];
+                }
+
                 // << (hide)
             });
         // << returning-result
