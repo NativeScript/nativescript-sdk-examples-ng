@@ -10,6 +10,7 @@
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "pretty": true,
+        "skipLibCheck": true,
         "lib": [
             "es6",
             "dom",
