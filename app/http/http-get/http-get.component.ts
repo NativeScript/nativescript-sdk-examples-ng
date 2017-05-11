@@ -18,7 +18,7 @@ export class HttpGetComponent implements OnInit {
     public typeHeader: string;
     public serverHeader: string;
 
-    constructor(private myService: MyHttpGetService) { };
+    constructor(private myService: MyHttpGetService) { }
 
     ngOnInit() {
         this.extractData();

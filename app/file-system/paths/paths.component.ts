@@ -67,7 +67,7 @@ export class PathsExampleComponent implements OnInit {
                 });
             }).catch(err => {
                 console.log(err.stack);
-            }); ;
+            });
         // << fs-paths-create-file-code
     }
 }
