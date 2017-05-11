@@ -10,11 +10,15 @@ import { Page } from "ui/page";
 })
 export class ModalViewComponent implements OnInit {
     public currentdate: Date;
+    public type: boolean;
 
     constructor(private params: ModalDialogParams, private page: Page) {
         this.currentdate = new Date(params.context);
     }
 
+    public changeType() {
+        this.type = !this.type;
+    }
     ngOnInit() {
         let datePicker: DatePicker = <DatePicker>this.page.getViewById<DatePicker>("datePicker");
         datePicker.year = this.currentdate.getFullYear();
@@ -22,6 +26,8 @@ export class ModalViewComponent implements OnInit {
         datePicker.day = this.currentdate.getDate();
         datePicker.minDate = new Date(1975, 0, 29);
         datePicker.maxDate = new Date(2045, 4, 12);
+
+        this.type = true;
     }
 
     public submit() {
