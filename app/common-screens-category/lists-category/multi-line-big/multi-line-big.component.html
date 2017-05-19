@@ -31,7 +31,8 @@
     </GridLayout>
     <GridLayout *tabItem="{title: 'Bigger thumbs (grouped lists)'}">
         <!-- >> multi-line-big-grouped-html -->
-        <ListView [items]="groupedCountries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="white">
+        <ListView [items]="groupedCountries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group"
+            separatorColor="white">
             <ng-template nsTemplateKey="header" let-header="item">
                 <Label [text]="header.name" class="list-group-item bg-primary" isUserInteractionEnabled="false" color="white" fontSize="24"></Label>
             </ng-template>

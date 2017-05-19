@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
+import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { ItemEventData } from "ui/list-view";
 import { SetupItemViewArgs } from "nativescript-angular/directives";
 import { mockedDataArray, Country } from "../mock-dataItems";

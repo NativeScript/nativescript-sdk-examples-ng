@@ -2,7 +2,7 @@ import { Component } from "@angular/core";
 
 // >> camera-module-init-code
 import { ImageAsset } from "image-asset";
-import * as camera from "nativescript-camera";
+import { takePicture, requestPermissions, isAvailable } from "nativescript-camera";
 // << camera-module-init-code
 
 @Component({
@@ -25,7 +25,7 @@ export class UsingCameraExampleComponent {
             saveToGallery: this.saveToGallery
         };
 
-        camera.takePicture(options)
+        takePicture(options)
             .then(imageAsset => {
                 this.imageTaken = imageAsset;
                 console.log("Size: " + imageAsset.options.width + "x" + imageAsset.options.height);
@@ -37,13 +37,13 @@ export class UsingCameraExampleComponent {
 
     // >> camera-module-perm-code
     onRequestPermissions() {
-        camera.requestPermissions();
+        requestPermissions();
     }
     // << camera-module-perm-code
 
     // >> camera-module-avai-code
     onCheckForCamera() {
-        let isCameraAvailable = camera.isAvailable();
+        let isCameraAvailable = isAvailable();
         console.log("Is camera hardware available: " + isCameraAvailable);
     }
     // << camera-module-avai-code

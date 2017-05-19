@@ -1,4 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { ObservableArray } from "data/observable-array";
 import { mockedDataArray } from "../mock-dataItems";
 
@@ -8,14 +8,12 @@ import { mockedDataArray } from "../mock-dataItems";
     templateUrl: "./cards-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardsListViewExampleComponent implements OnInit {
+export class CardsListViewExampleComponent{
     public countries: ObservableArray<any>;
 
     constructor() {
         this.countries = new ObservableArray(mockedDataArray);
     }
-
-    ngOnInit() { }
 
     onItemTapFirstList(args) {
         console.log(args.index);

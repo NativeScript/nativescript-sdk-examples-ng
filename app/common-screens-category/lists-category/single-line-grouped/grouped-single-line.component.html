@@ -2,7 +2,8 @@
     <GridLayout *tabItem="{title: 'Basic list'}">
         <!-- >> grouped-single-listview-basic-html -->
 
-        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="white">
+        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group"
+            separatorColor="white">
             <ng-template nsTemplateKey="header" let-header="item">
                 <GridLayout class="list-group-item bg-primary">
                     <Label class="list-group-item-heading" isUserInteractionEnabled="false" color="white" [text]="header.name"></Label>
@@ -25,7 +26,8 @@
     </GridLayout>
     <GridLayout *tabItem="{title: 'Dividers'}">
         <!-- >> grouped-single-listview-borders-html -->
-        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="blue">
+        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group"
+            separatorColor="blue">
             <ng-template nsTemplateKey="header" let-header="item">
                 <GridLayout class="list-group-item bg-primary">
                     <Label class="list-group-item-heading" isUserInteractionEnabled="false" color="white" [text]="header.name"></Label>
@@ -46,7 +48,8 @@
     </GridLayout>
     <GridLayout *tabItem="{title: 'Thumbnails'}">
         <!-- >> grouped-single-listview-thumbs-html -->
-        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="blue">
+        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group"
+            separatorColor="blue">
             <ng-template nsTemplateKey="header" let-header="item">
                 <GridLayout class="list-group-item bg-primary">
                     <Label class="list-group-item-heading" isUserInteractionEnabled="false" color="white" [text]="header.name"></Label>

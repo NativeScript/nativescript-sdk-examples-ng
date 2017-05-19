@@ -1,7 +1,8 @@
 <TabView #tabView class="tab-view" sdkExampleTitle sdkToggleNavButton>
     <GridLayout *tabItem="{title: 'Basic list'}">
         <!-- >> grouped-single-listview-two-lines-html -->
-        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="white">
+        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group"
+            separatorColor="white">
             <ng-template nsTemplateKey="header" let-header="item">
                 <Label class="list-group-item h2 bg-primary" isUserInteractionEnabled="false" color="white" [text]="header.name"></Label>
             </ng-template>
@@ -21,7 +22,8 @@
     </GridLayout>
     <GridLayout *tabItem="{title: 'Dividers'}">
         <!-- >> grouped-single-listview-borders-two-lines-html -->
-        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="gray">
+        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group"
+            separatorColor="gray">
             <ng-template nsTemplateKey="header" let-header="item">
                 <Label class="list-group-item bg-primary h2" isUserInteractionEnabled="false" color="white" [text]="header.name"></Label>
             </ng-template>
@@ -41,7 +43,8 @@
     </GridLayout>
     <GridLayout *tabItem="{title: 'Thumbnails'}">
         <!-- >> grouped-single-listview-two-lines-thumbs-html -->
-        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group" separatorColor="gray">
+        <ListView [items]="countries" [itemTemplateSelector]="templateSelector" (itemTap)="onItemTapFirstList($event)" class="list-group"
+            separatorColor="gray">
             <ng-template nsTemplateKey="header" let-header="item">
                 <Label class="list-group-item bg-primary h2" isUserInteractionEnabled="false" color="white" [text]="header.name"></Label>
             </ng-template>
