@@ -1,8 +1,8 @@
 <!-- >> creating-timepicker-html -->
 <ScrollView orientation="vertical" sdkExampleTitle sdkToggleNavButton>
     <StackLayout orientation="vertical">
-        <Button text="Check platform type" class="btn btn-primary btn-active" (tap)="checkPlatformType()"></Button>
-        <Button [text]="deviceInfoButton" class="btn btn-outline btn-active" (tap)="deviceInfo()"></Button>
+        <Button text="Check platform type" class="btn btn-primary btn-active" (tap)="checkPlatformType($event)"></Button>
+        <Button [text]="deviceInfoButton" class="btn btn-outline btn-active" (tap)="deviceInfo($event)"></Button>
         <GridLayout rows="auto, auto, auto, auto, auto, auto, auto, auto" columns="auto auto" [visibility]="isItemVisible ? 'visible' : 'collapsed'">
             <Label class="m-15" col="0" row="0" text="Device model: " textWrap="true"></Label>
             <Label class="m-15" col="1" row="0" [text]="deviceInformation.model" textWrap="true"></Label>
@@ -28,7 +28,7 @@
             <Label class="m-15" col="0" row="7" text="Device uuid: " textWrap="true"></Label>
             <Label class="m-15" col="1" row="7" [text]="deviceInformation.uuid" textWrap="true"></Label>
         </GridLayout>
-        <Button [text]="screenInfoButton" class="btn btn-outline btn-active" (tap)="screenInfo()"></Button>
+        <Button [text]="screenInfoButton" class="btn btn-outline btn-active" (tap)="screenInfo($event)"></Button>
         <GridLayout rows="auto, auto, auto, auto, auto" columns="auto auto" [visibility]="isItemVisibleScreenInfo ? 'visible' : 'collapsed'">
             <Label class="m-15" col="0" row="0" text="Screen height DIPs: " textWrap="true"></Label>
             <Label class="m-15" col="1" row="0" [text]="screenInformation.heightDIPs" textWrap="true"></Label>

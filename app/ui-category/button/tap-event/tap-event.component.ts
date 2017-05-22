@@ -1,5 +1,6 @@
 import { Component } from "@angular/core";
 import { EventData } from "data/observable";
+import { Button } from "ui/button";
 
 @Component({
     moduleId: module.id,
@@ -11,6 +12,8 @@ export class ButtonTapEventComponent {
 
     // >> button-tap-event-code
     onTap(args: EventData) {
+        let button = <Button>args.object;
+
         this.counter++;
         alert("Tapped " + this.counter + " times!");
     }

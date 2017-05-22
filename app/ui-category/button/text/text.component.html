@@ -1,8 +1,8 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
     <!-- >> button-text-html -->
-    <Button class="btn btn-primary btn-active" id="button" text="Primary button"></Button>
-    <Button class="btn btn-outline btn-active" text="Outline button"></Button>
-    <Button class="btn btn-primary btn-rounded-sm btn-active" text="Small rounded corners"></Button>
-    <Button class="btn btn-primary btn-rounded-lg btn-active" text="Large rounded corners"></Button>
+    <Button text="Primary button" (tap)="onButtonTap($event)" (loaded)="onFirstButtonLoaded($event)" class="btn btn-primary btn-active" ></Button>
+    <Button text="Outline button" (tap)="onButtonTap($event)"class="btn btn-outline btn-active"></Button>
+    <Button text="Small rounded corners" (tap)="onButtonTap($event)" class="btn btn-primary btn-rounded-sm btn-active"></Button>
+    <Button text="Large rounded corners" (tap)="onButtonTap($event)" class="btn btn-primary btn-rounded-lg btn-active"></Button>
     <!-- << button-text-html -->
 </StackLayout>

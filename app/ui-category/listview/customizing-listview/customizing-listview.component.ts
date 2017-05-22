@@ -1,5 +1,5 @@
 // >> listview-customize-code
-import { Component, ChangeDetectionStrategy, ElementRef } from "@angular/core";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { SetupItemViewArgs } from "nativescript-angular/directives";
 
 class Item {
@@ -21,7 +21,7 @@ let items = ["ALL Heroes (header)", "Razor", "Rubick", "Phantom Lancer", "Legion
 export class CustomizingListViewComponent {
     public dataItems: Array<Item>;
 
-    constructor(public elementRef: ElementRef) {
+    constructor() {
         this.dataItems = [];
 
         for (let i = 0; i < items.length; i++) {

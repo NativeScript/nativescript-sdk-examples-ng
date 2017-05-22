@@ -1,6 +1,6 @@
 // >> time-picker-configure-code
 import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/modal-dialog";
-import { Component, ViewContainerRef  } from "@angular/core";
+import { Component, ViewContainerRef } from "@angular/core";
 import { DatePicker } from "ui/date-picker";
 import { ModalViewComponent } from "./modal-view";
 

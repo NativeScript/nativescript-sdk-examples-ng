@@ -30,6 +30,7 @@ export class MyHttpGetService {
         headers.append("AuthKey", "my-key");
         headers.append("AuthToken", "my-token");
         headers.append("Content-Type", "application/json");
+
         return headers;
     }
 }

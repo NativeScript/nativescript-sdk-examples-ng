@@ -50,6 +50,7 @@ export class TraceSpecificCategoriesExampleComponent {
 
         write("I (heart) NativeScript!", categories.Debug);
     }
+    
     public checkIsDebugCategorySet() {
         if (isCategorySet(categories.Debug)) {
             alert("Debug category has been set");

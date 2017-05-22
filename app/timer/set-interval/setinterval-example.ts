@@ -23,7 +23,7 @@ export class SetIntervalComponent {
         }, 1000);
     }
 
-    public onButtonTap() {
+    public onButtonTap(args) {
         if (this.status) {
             clearInterval(this.id);
             this.status = false;

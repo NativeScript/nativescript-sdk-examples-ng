@@ -1,6 +1,7 @@
 
 // >> clear-search-bar-submit
 import { Component, ChangeDetectionStrategy } from "@angular/core";
+import { SearchBar } from "ui/search-bar";
 // >> (hide)
 import { ObservableArray } from "data/observable-array";
 // << (hide)
@@ -14,15 +15,10 @@ class DataItem {
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ClearSearchBarComponent {
-    private arrayItems: Array<DataItem>;
-    public myItems: ObservableArray<DataItem>;
-    public searchPhrase: string;
+    private arrayItems: Array<DataItem> = [];
+    public myItems: ObservableArray<DataItem> = new ObservableArray<DataItem>();
 
     constructor() {
-        this.searchPhrase = "";
-        this.arrayItems = [];
-        this.myItems = new ObservableArray<DataItem>();
-
         this.arrayItems.push(new DataItem("United States"));
         this.arrayItems.push(new DataItem("Bulgaria"));
         this.arrayItems.push(new DataItem("Germany"));
@@ -34,10 +30,12 @@ export class ClearSearchBarComponent {
         this.myItems = new ObservableArray<DataItem>(this.arrayItems);
     }
 
-    public onSubmit(value) {
+    public onSubmit(args) {
+        let searchBar = <SearchBar>args.object;
+        let searchValue = searchBar.text.toLowerCase();
+
         this.myItems = new ObservableArray<DataItem>();
-        let searchValue = value.toLowerCase();
-        if (value !== "") {
+        if (searchValue !== "") {
             for (let i = 0; i < this.arrayItems.length; i++) {
                 if (this.arrayItems[i].name.toLowerCase().indexOf(searchValue) !== -1) {
                     this.myItems.push(this.arrayItems[i]);
@@ -46,10 +44,12 @@ export class ClearSearchBarComponent {
         }
     }
 
-    public onClear() {
-        this.searchPhrase = "";
-        this.myItems = new ObservableArray<DataItem>();
+    public onClear(args) {
+        let searchBar = <SearchBar>args.object;
+        searchBar.text = "";
+        searchBar.hint = "Search for a country and press enter";
 
+        this.myItems = new ObservableArray<DataItem>();
         this.arrayItems.forEach(item => {
             this.myItems.push(item);
         });

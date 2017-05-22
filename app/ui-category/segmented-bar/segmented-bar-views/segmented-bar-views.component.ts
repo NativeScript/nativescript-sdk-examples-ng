@@ -1,6 +1,6 @@
 // >> segmentedbar-items-setting-visibility
 import { Component } from "@angular/core";
-import { SegmentedBarItem } from "ui/segmented-bar";
+import { SegmentedBar, SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
     moduleId: module.id,
@@ -13,22 +13,21 @@ export class SegmentedBarViewsComponent {
     public visibility1 = true;
     public visibility2 = false;
     public visibility3 = false;
-    // >> (hide)
-    public state = 0;
-    // << (hide)
+
     constructor() {
         this.items = [];
         for (let i = 1; i < 4; i++) {
-            let tmpSegmentedBar: SegmentedBarItem = <SegmentedBarItem>new SegmentedBarItem();
-            tmpSegmentedBar.title = "View " + i;
-            this.items.push(tmpSegmentedBar);
+            let segmentedBarItem = <SegmentedBarItem>new SegmentedBarItem();
+            segmentedBarItem.title = "View " + i;
+            this.items.push(segmentedBarItem);
         }
         this.selectedIndex = 0;
     }
 
-    public onChange(value) {
-        this.selectedIndex = value;
-        switch (value) {
+    public onSelectedIndexChange(args) {
+        let segmetedBar = <SegmentedBar>args.object;
+        this.selectedIndex = segmetedBar.selectedIndex;
+        switch (this.selectedIndex) {
             case 0:
                 this.visibility1 = true;
                 this.visibility2 = false;

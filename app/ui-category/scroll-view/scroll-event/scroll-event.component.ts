@@ -16,9 +16,9 @@ export class ScrollEventComponent {
 
     public onScroll(args: ScrollEventData) {
         this.status = "scrolling";
-        let that = this;
-        setTimeout(function () {
-            that.status = "not scrolling";
+
+        setTimeout(() => {
+            this.status = "not scrolling";
         }, 300);
 
         console.log("scrollX: " + args.scrollX);

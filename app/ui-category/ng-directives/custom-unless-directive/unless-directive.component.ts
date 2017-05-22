@@ -14,7 +14,7 @@ export class CustomUnlessComponent {
         this.condition = true;
     }
 
-    onTap() {
+    onTap(args) {
         console.log("onTap age is :" + this.age);
 
         if (this.age >= 18 && this.age !== 0) {

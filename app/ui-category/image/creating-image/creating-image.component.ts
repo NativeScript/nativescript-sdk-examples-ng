@@ -1,27 +1,24 @@
 // >> creating-image-code
-import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { Component } from "@angular/core";
 import { Image } from "ui/image";
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
-
-import * as ImageSourceModule from "image-source";
 
 @Component({
     moduleId: module.id,
     styleUrls: ["./creating-image.component.css"],
     templateUrl: "./creating-image.component.html"
 })
-export class CreatingImageExampleComponent implements OnInit {
-    @ViewChild("st") stack: ElementRef;
+export class CreatingImageExampleComponent {
 
     public newImage: Image;
     public newLabel: Label;
 
-    ngOnInit() {
-        let stackView: StackLayout = this.stack.nativeElement;
+    onStackLoaded(args) {
+        let stackView = <StackLayout>args.object;
 
         this.newImage = new Image();
-        this.newImage.imageSource = ImageSourceModule.fromResource("icon");
+        this.newImage.src = "https://docs.nativescript.org/img/cli-getting-started/angular/chapter0/NativeScript_logo.png";
         this.newImage.stretch = "none";
         this.newImage.style.margin = "15";
 

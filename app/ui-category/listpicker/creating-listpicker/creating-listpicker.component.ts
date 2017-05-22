@@ -1,5 +1,6 @@
 // >> creating-listpicker-code
 import { Component } from "@angular/core";
+import { ListPicker } from "ui/list-picker";
 
 let pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 "Dugtrio", "Meowth", "Persian", "Psyduck", "Arcanine", "Poliwrath", "Machoke"];
@@ -21,8 +22,10 @@ export class CreatingListPickerComponent {
         }
     }
 
-    public selectedIndexChanged(picker) {
+    public selectedIndexChanged(args) {
+        let picker = <ListPicker>args.object;
         console.log("picker selection: " + picker.selectedIndex);
+        
         this.picked = this.pokemons[picker.selectedIndex];
     }
 }

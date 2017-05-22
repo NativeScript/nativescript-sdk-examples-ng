@@ -1,6 +1,6 @@
 <GridLayout sdkExampleTitle sdkToggleNavButton rows="auto, *">
     <!-- >> activity-indicator-setting-busy-html -->
-    <Button row="0" class="btn btn-primary btn-active" text="Modify Busy property" (tap)="(activityIndicator.busy = !activityIndicator.busy)"></Button>
-    <ActivityIndicator row="1" class="activity-indicator" width="100" height="100" #activityIndicator></ActivityIndicator>
+    <Button row="0" text="Modify Busy property" (tap)="(activityIndicator.busy = !activityIndicator.busy)" class="btn btn-primary btn-active" ></Button>
+    <ActivityIndicator row="1" #activityIndicator busy="true" (busyChange)="onBusyChanged($event)" width="100" height="100" class="activity-indicator"></ActivityIndicator>
     <!-- << activity-indicator-setting-busy-html -->
 </GridLayout>

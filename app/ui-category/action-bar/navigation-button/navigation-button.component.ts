@@ -7,8 +7,7 @@ import { RouterExtensions } from "nativescript-angular/router";
 })
 export class NavigationButtonComponent {
     // >> navigation-button-back-code
-    constructor(private routerExtensions: RouterExtensions) {
-    }
+    constructor(private routerExtensions: RouterExtensions) { }
 
     public goBack() {
         this.routerExtensions.backToPreviousPage();

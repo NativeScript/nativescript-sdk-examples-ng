@@ -1,5 +1,7 @@
 // >> creating-label-code
 import { Component } from "@angular/core";
+import { EventData } from "data/observable";
+import { Label } from "ui/label";
 
 @Component({
     moduleId: module.id,
@@ -18,6 +20,11 @@ export class CreatingLabelComponent {
     changeLabelText() {
         this.twoway += " Two way bound label ";
         this.counter += 1;
+    }
+
+    onTextChanged(args: EventData) {
+        let label = <Label>args.object;
+        console.log("onTextChanged for " + this.counter + " times for element " + label);
     }
 }
 // << creating-label-code

@@ -27,10 +27,11 @@ export class HttpGetComponent implements OnInit {
 
     extractData() {
         this.myService.getData()
-            .subscribe(
-            (result) => this.onGetDataSuccess(result),
-            (error) => this.onGetDataError(error)
-            );
+            .subscribe((result) => {
+                this.onGetDataSuccess(result)
+            }, (error) => {
+                this.onGetDataError(error)
+            });
     }
 
     extractResponseInfo() {
@@ -41,7 +42,9 @@ export class HttpGetComponent implements OnInit {
                 this.typeHeader = res.headers.get("Content-Type");
                 this.dateHeader = res.headers.get("Date");
                 this.serverHeader = res.headers.get("Server");
-            }, (error) => console.log("onGetResponseInfo" + error));
+            }, (error) => {
+                console.log("onGetResponseInfo" + error)
+            });
     }
 
     private onGetDataSuccess(res) {
