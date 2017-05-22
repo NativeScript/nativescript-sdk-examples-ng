@@ -1,6 +1,6 @@
 // >> textfield-binding-show-result
 import { Component } from "@angular/core";
-import { TextField  } from "ui/text-field";
+import { TextField } from "ui/text-field";
 
 @Component({
     moduleId: module.id,
@@ -22,6 +22,14 @@ export class TextFieldBindingComponent {
 
         console.log("onReturn");
         this.firstTx = textField.text;
+    }
+
+    public showAlert(result) {
+        alert("Text: " + result);
+    }
+
+    public submit(result) {
+        alert("Text: " + result);
     }
 }
 // << textfield-binding-show-result

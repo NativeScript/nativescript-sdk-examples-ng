@@ -1,6 +1,16 @@
 import { Component } from "@angular/core";
 // >> app-settings-code
-import { getBoolean, setBoolean, getNumber, setNumber, getString, setString, hasKey, remove, clear } from "application-settings";
+import { 
+    getBoolean, 
+    setBoolean, 
+    getNumber, 
+    setNumber, 
+    getString, 
+    setString, 
+    hasKey, 
+    remove, 
+    clear 
+} from "application-settings";
 // << app-settings-code
 
 @Component({

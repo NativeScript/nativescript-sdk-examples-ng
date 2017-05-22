@@ -14,7 +14,7 @@ export class ActionDialogComponent {
             cancelButtonText: "Cancel",
             actions: ["Human", "Elf", "Dwarf", "Orc", "Unicorn"]
         };
-        
+
         action(options).then((result) => {
             console.log(result);
         });

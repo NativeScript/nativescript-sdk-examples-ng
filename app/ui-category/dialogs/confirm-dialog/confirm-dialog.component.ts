@@ -15,7 +15,7 @@ export class ConfirmDialogComponent {
             cancelButtonText: "No",
             neutralButtonText: "Cancel"
         };
-        
+
         confirm(options).then((result: boolean) => {
             console.log(result);
         });

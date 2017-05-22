@@ -14,7 +14,7 @@ let view4: View;
     styleUrls: ["./../style.css"],
 })
 export class MultipleViewsComponent implements OnInit {
-    
+
     constructor(private page: Page) { }
 
     ngOnInit() {

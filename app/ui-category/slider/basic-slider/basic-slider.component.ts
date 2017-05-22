@@ -7,7 +7,7 @@ import { Slider } from "ui/slider";
     styleUrls: ["./../style.css"]
 })
 export class BasicSliderComponent {
-    public currentValue: number = 10;;
+    public currentValue: number = 10;
     public fontSize: number = 20;
 
     public onSliderValueChange(args) {
@@ -17,7 +17,7 @@ export class BasicSliderComponent {
     }
 
     public onSecondSliderChange(args) {
-        let slider = <Slider>args.object;    
+        let slider = <Slider>args.object;
 
         this.fontSize = slider.value;
     }

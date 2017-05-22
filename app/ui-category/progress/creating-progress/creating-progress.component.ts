@@ -1,6 +1,6 @@
 // >> progress-create-code
 import { Component, OnInit } from "@angular/core";
-import { Progress } from "ui/progress"
+import { Progress } from "ui/progress";
 
 @Component({
     moduleId: module.id,

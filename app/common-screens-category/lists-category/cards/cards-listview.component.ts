@@ -8,7 +8,7 @@ import { mockedDataArray } from "../mock-dataItems";
     templateUrl: "./cards-listview.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class CardsListViewExampleComponent{
+export class CardsListViewExampleComponent {
     public countries: ObservableArray<any>;
 
     constructor() {

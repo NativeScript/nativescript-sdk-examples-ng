@@ -18,7 +18,7 @@ export class BasicTabViewComponent implements OnInit {
 
     public onIndexChanged(args) {
         let tabView = <TabView>args.object;
-        console.log("Selected index changed! New inxed: " + tabView.selectedIndex);   
+        console.log("Selected index changed! New inxed: " + tabView.selectedIndex);
     }
 }
 

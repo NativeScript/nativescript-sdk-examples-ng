@@ -7,7 +7,7 @@ import { ios as iosUtils } from "utils/utils";
     templateUrl: "./app-using-ios-specifics.component.html"
 })
 export class AppUsingIosExampleComponent {
-    
+
     public isItemVisible: boolean;
     public batteryLife: number;
     public goodToRemove: boolean = false;

@@ -3,7 +3,7 @@ import { Component } from "@angular/core";
 import { EventData } from "data/observable";
 import { setInterval, setTimeout, clearInterval } from "timer";
 import { Color } from "color";
-import { Button } from "ui/button"
+import { Button } from "ui/button";
 @Component({
     moduleId: module.id,
     styleUrls: ["./settimeout-example.css"],
@@ -25,7 +25,7 @@ export class SetTimeoutComponent {
     public decrease(args: EventData) {
         let button = <Button>args.object;
         button.backgroundColor = new Color("#3078FE");
- 
+
         setTimeout(() => {
             this.counter--;
             button.backgroundColor = new Color("#30BCFF");

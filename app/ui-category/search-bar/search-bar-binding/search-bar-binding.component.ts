@@ -8,7 +8,7 @@ import { isAndroid } from "platform";
 })
 export class SearchBarBindingComponent {
     searchPhrase: string = "";
-    
+
     public searchBarLoaded(args) {
         let searchBar = <SearchBar>args.object;
         searchBar.dismissSoftInput();
@@ -22,11 +22,11 @@ export class SearchBarBindingComponent {
 
     public onTextChange(args) {
         let searchBar = <SearchBar>args.object;
-        this.searchPhrase = 'Current search query: ' + searchBar.text;
+        this.searchPhrase = "Current search query: " + searchBar.text;
     }
 
     public onSubmit(args) {
         let searchBar = <SearchBar>args.object;
-        this.searchPhrase = 'Submited search query: ' + searchBar.text;
+        this.searchPhrase = "Submited search query: " + searchBar.text;
     }
 }

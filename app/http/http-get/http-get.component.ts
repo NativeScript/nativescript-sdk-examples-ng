@@ -28,9 +28,9 @@ export class HttpGetComponent implements OnInit {
     extractData() {
         this.myService.getData()
             .subscribe((result) => {
-                this.onGetDataSuccess(result)
+                this.onGetDataSuccess(result);
             }, (error) => {
-                this.onGetDataError(error)
+                this.onGetDataError(error);
             });
     }
 
@@ -43,7 +43,7 @@ export class HttpGetComponent implements OnInit {
                 this.dateHeader = res.headers.get("Date");
                 this.serverHeader = res.headers.get("Server");
             }, (error) => {
-                console.log("onGetResponseInfo" + error)
+                console.log("onGetResponseInfo" + error);
             });
     }
 

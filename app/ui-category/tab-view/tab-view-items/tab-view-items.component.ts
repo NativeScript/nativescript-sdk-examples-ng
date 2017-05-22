@@ -9,7 +9,7 @@ import { TabView, SelectedIndexChangedEventData, TabViewItem } from "ui/tab-view
     templateUrl: "./tab-view-items.component.html",
 })
 export class TabViewItemsComponent {
-    public titleAndIcon: any = { title: 'Icon', iconSource: 'res://icon' };
+    public titleAndIcon: any = { title: "'Icon", iconSource: "res://icon" };
 
     public onIndexChanged(args) {
         let tabView = <TabView>args.object;

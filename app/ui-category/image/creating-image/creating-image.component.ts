@@ -4,6 +4,8 @@ import { Image } from "ui/image";
 import { StackLayout } from "ui/layouts/stack-layout";
 import { Label } from "ui/label";
 
+const URL = "https://docs.nativescript.org/img/cli-getting-started/angular/chapter0/NativeScript_logo.png";
+
 @Component({
     moduleId: module.id,
     styleUrls: ["./creating-image.component.css"],
@@ -18,7 +20,7 @@ export class CreatingImageExampleComponent {
         let stackView = <StackLayout>args.object;
 
         this.newImage = new Image();
-        this.newImage.src = "https://docs.nativescript.org/img/cli-getting-started/angular/chapter0/NativeScript_logo.png";
+        this.newImage.src = URL;
         this.newImage.stretch = "none";
         this.newImage.style.margin = "15";
 

@@ -34,7 +34,7 @@ export class CreateExampleComponent {
                         this.isItemVisible = true;
                     });
             }).catch(err => {
-                console.log(err)
+                console.log(err);
             });
         // << fs-create-all-code
     }

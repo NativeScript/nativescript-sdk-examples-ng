@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { login, LoginResult} from "ui/dialogs";
+import { login, LoginResult } from "ui/dialogs";
 
 @Component({
     moduleId: module.id,
@@ -16,7 +16,7 @@ export class LoginDialogComponent {
             okButtonText: "Ok",
             cancelButtonText: "Cancel"
         };
-        
+
         login(options).then((loginResult: LoginResult) => {
             console.log(loginResult.result);
         });

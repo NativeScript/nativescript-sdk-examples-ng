@@ -6,14 +6,14 @@ import { alert } from "ui/dialogs";
     templateUrl: "./alert-dialog.component.html"
 })
 export class AlertDialogComponent {
-     displayAlertDialog() {
+    displayAlertDialog() {
         // >> alert-dialog-code
         let options = {
             title: "Race selection",
             message: "Race chosen: Unicorn",
             okButtonText: "OK"
         };
-        
+
         alert(options).then(() => {
             console.log("Race chosen!");
         });
