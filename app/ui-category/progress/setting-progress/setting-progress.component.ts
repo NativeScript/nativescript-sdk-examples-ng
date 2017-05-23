@@ -1,23 +1,29 @@
 // >> progress-setting-code
-import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { Component } from "@angular/core";
 import { Progress } from "ui/progress";
 
 @Component({
     moduleId: module.id,
     templateUrl: "./setting-progress.component.html",
 })
-export class SettingProgressComponent implements OnInit {
+export class SettingProgressComponent  {
 
-    @ViewChild("myProgress") progress: ElementRef;
+    onProgressBarLoaded(args) {
+        let myProgressBar = <Progress>args.object;
 
-    ngOnInit() {
-        let myProgress: Progress = this.progress.nativeElement;
-        myProgress.maxValue = 120;
-        myProgress.value = 10;
+        myProgressBar.value = 10;
+        myProgressBar.maxValue = 200;
 
         setInterval(function() {
-            myProgress.value += 2;
-        }, 100);
+            myProgressBar.value += 2;
+        }, 300);
+    }
+
+    onValueChanged(args) {
+        let myProgressBar = <Progress>args.object;
+
+        console.log("Old Value: " + args.oldValue);
+        console.log("New Value: " + args.value);
     }
 }
 // << progress-setting-code

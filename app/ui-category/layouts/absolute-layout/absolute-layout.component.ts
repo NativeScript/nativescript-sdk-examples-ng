@@ -4,5 +4,4 @@ import { Component } from "@angular/core";
     moduleId: module.id,
     templateUrl: "./absolute-layout.component.html"
 })
-export class AbsoluteLayoutComponent {
-}
+export class AbsoluteLayoutComponent { }

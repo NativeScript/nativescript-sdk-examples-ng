@@ -1,6 +1,6 @@
 // >> add-segmentedbar-items
 import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { SegmentedBarItem } from "ui/segmented-bar";
+import { SegmentedBar, SegmentedBarItem } from "ui/segmented-bar";
 
 @Component({
     moduleId: module.id,
@@ -9,7 +9,7 @@ import { SegmentedBarItem } from "ui/segmented-bar";
 })
 export class BasicSegmentedBarComponent {
     public myItems: Array<SegmentedBarItem>;
-    public prop = "Item " + 0;
+    public prop: string = "Item 1";
 
     constructor() {
         this.myItems = [];
@@ -19,6 +19,11 @@ export class BasicSegmentedBarComponent {
 
             this.myItems.push(tmpSegmentedBar);
         }
+    }
+
+    public onSelectedIndexChange(args) {
+        let segmetedBar = <SegmentedBar>args.object;
+        this.prop = "Item" + (segmetedBar.selectedIndex + 1);
     }
 }
 // << add-segmentedbar-items

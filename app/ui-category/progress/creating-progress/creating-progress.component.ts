@@ -1,5 +1,6 @@
 // >> progress-create-code
 import { Component, OnInit } from "@angular/core";
+import { Progress } from "ui/progress";
 
 @Component({
     moduleId: module.id,
@@ -10,6 +11,17 @@ export class CreatingProgressComponent implements OnInit {
 
     ngOnInit() {
         this.progressValue = 25;
+
+        setInterval(() => {
+            this.progressValue += 1;
+        }, 300);
+    }
+
+    onValueChanged(args) {
+        let progressBar = <Progress>args.object;
+
+        console.log("Value changed for " + progressBar);
+        console.log("New value: " + progressBar.value);
     }
 }
 // << progress-create-code

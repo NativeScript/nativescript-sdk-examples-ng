@@ -27,46 +27,8 @@
             </StackLayout>  
             
             <Button class="btn btn-outline btn-active" row="7" col="0" colSpan="2" text="Get distance between two locations" (tap)="getDistance()"></Button>
-            <Label class="input input-border p-15 text-center" row="8" col="0" colSpan="2" [text]="'Distance: '+distanceResult+' km'"
-                textWrap="true"></Label>
+            <Label class="input input-border p-15 text-center" row="8" col="0" colSpan="2" [text]="'Distance: '+distanceResult+' km'" textWrap="true"></Label>
         </GridLayout>
 
     </StackLayout>
 </ScrollView>
-
-
-<!--<StackLayout sdkExampleTitle sdkToggleNavButton>
-    <Button class="btn btn-primary" text="Check if location services are availabe" (tap)="isLocationEnabled()"></Button>
-
-    <FlexboxLayout flexDirection="column">
-        <Label class="p-15" text="Start location" textWrap="true"></Label>
-
-        <StackLayout class="input-field">
-            <Label class="label" text="Longitude"></Label>
-            <TextField class="input input-border" hint="longitude" [(ngModel)]="startpointLongitude"></TextField>
-        </StackLayout>
-
-        <StackLayout class="input-field">
-            <Label class="label" text="Latitude"></Label>
-            <TextField class="input input-border" hint="latitude" [(ngModel)]="startpointLatitude"></TextField>
-        </StackLayout>
-
-        <Button class="btn btn-outline btn-active" text="Get current location" (tap)="getLocationOnce()"></Button>
-
-        <Label class="p-15" text="End location" textWrap="true"></Label>
-
-        <StackLayout class="input-field">
-            <Label class="label" text="Longitude"></Label>
-            <TextField class="input input-border" hint="longitude" [(ngModel)]="endpointLongitude"></TextField>
-        </StackLayout>
-
-        <StackLayout class="input-field">
-            <Label class="label" text="Latitude"></Label>
-            <TextField class="input input-border" hint="latitude" [(ngModel)]="endpointLatitude"></TextField>
-        </StackLayout>
-
-        <Button class="btn btn-outline btn-active" text="Get distance between two locations" (tap)="getDistance()"></Button>
-
-        <Label class="input input-border p-15 text-center" [text]="'Distance: '+distanceResult+' km'"textWrap="true"></Label>
-    </FlexboxLayout>
-</StackLayout>-->

@@ -1,8 +1,9 @@
 // >> settimeout-time-picker-configure-code
 import { Component } from "@angular/core";
+import { EventData } from "data/observable";
 import { setInterval, setTimeout, clearInterval } from "timer";
 import { Color } from "color";
-
+import { Button } from "ui/button";
 @Component({
     moduleId: module.id,
     styleUrls: ["./settimeout-example.css"],
@@ -10,25 +11,24 @@ import { Color } from "color";
 })
 export class SetTimeoutComponent {
     public counter = 0;
-    public buttonstyle = "btn btn-primary btn-rounded-sm";
 
-    constructor() { }
+    public increase(args: EventData) {
+        let button = <Button>args.object;
+        button.backgroundColor = new Color("#3078FE");
 
-    public increase(args) {
-        args.object.backgroundColor = new Color("#3078FE");
-        let that = this;
-        setTimeout(function () {
-            that.counter++;
-            args.object.backgroundColor = new Color("#30BCFF");
+        setTimeout(() => {
+            this.counter++;
+            button.backgroundColor = new Color("#30BCFF");
         }, 1000);
-        this.buttonstyle = "btn btn-rounded-sm btn-active";
     }
-    public decrease(args) {
-        args.object.backgroundColor = new Color("#3078FE");
-        let that = this;
-        setTimeout(function () {
-            that.counter--;
-            args.object.backgroundColor = new Color("#30BCFF");
+
+    public decrease(args: EventData) {
+        let button = <Button>args.object;
+        button.backgroundColor = new Color("#3078FE");
+
+        setTimeout(() => {
+            this.counter--;
+            button.backgroundColor = new Color("#30BCFF");
         }, 1000);
     }
 }

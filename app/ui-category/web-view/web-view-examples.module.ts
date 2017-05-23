@@ -34,6 +34,5 @@ export const routerConfig = [
     declarations: [WebViewExamplesComponent, BasicWebViewComponent, WebViewHtmlComponent]
 })
 
-export class WebViewExamplesModule {
-    constructor() { }
-}
+export class WebViewExamplesModule { }
+

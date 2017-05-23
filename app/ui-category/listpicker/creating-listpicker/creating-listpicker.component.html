@@ -1,11 +1,7 @@
 <FlexboxLayout flexDirection="column" sdkExampleTitle sdkToggleNavButton>
-        <Label class="h3 p-15 text-left" text="Pick a pokemon" textWrap="true"></Label>
+        <Label text="Pick a pokemon" textWrap="true" class="h3 p-15 text-left"></Label>
         <!-- >> creating-listpicker-html -->
-        <ListPicker #picker class="p-15" 
-                        [items]="pokemons" [
-                        selectedIndex]="selectedIndex" 
-                        (selectedIndexChange)="selectedIndexChanged(picker)">
-        </ListPicker>
+        <ListPicker [items]="pokemons" selectedIndex="0" (selectedIndexChange)="selectedIndexChanged($event)" class="p-15"></ListPicker>
         <!-- << creating-listpicker-html -->
-        <Label [text]="'Selected pokemon: ' + picked" class="p-15" textWrap="true"></Label>
+        <Label [text]="'Selected pokemon: ' + picked" textWrap="true" class="p-15"></Label>
 </FlexboxLayout>

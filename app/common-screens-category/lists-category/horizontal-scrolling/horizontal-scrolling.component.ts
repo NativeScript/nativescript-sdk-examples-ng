@@ -15,7 +15,7 @@ export class HorizontalScrollingExampleComponent implements OnInit {
     ngOnInit() {
         for (let index = 0; index < mockedDataArray.length; index++) {
             // creating an object with additional id key to re-use as unique id
-            this.countries.push({ "data" : mockedDataArray[index], id: index});
+            this.countries.push({ "data": mockedDataArray[index], id: index });
         }
     }
 

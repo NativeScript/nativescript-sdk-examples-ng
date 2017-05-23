@@ -56,7 +56,7 @@ export class PlatformModuleExampleComponent {
             screen.mainScreen.widthPixels);
     }
 
-    public checkPlatformType() {
+    public checkPlatformType(args) {
         let message = "";
         if (isAndroid) {
             message = "You are using Android device";
@@ -66,7 +66,7 @@ export class PlatformModuleExampleComponent {
         alert(message);
     }
 
-    public deviceInfo() {
+    public deviceInfo(args) {
         if (this.isItemVisible) {
             this.isItemVisible = false;
             this.deviceInfoButton = "Show device info";
@@ -76,7 +76,7 @@ export class PlatformModuleExampleComponent {
         }
     }
 
-    public screenInfo() {
+    public screenInfo(args) {
         if (this.isItemVisibleScreenInfo) {
             this.isItemVisibleScreenInfo = false;
             this.screenInfoButton = "Show screen info";

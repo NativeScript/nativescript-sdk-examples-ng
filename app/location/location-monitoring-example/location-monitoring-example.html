@@ -1,6 +1,6 @@
 <ScrollView sdkExampleTitle sdkToggleNavButton>
     <StackLayout>
-        <Button class="btn btn-primary btn-active" [text]="buttonText" (tap)="monitor()"></Button>
+        <Button class="btn btn-primary btn-active" [text]="buttonText" (tap)="monitor($event)"></Button>
         <StackLayout class="form">
             <StackLayout class="input-field">
                 <Label text="Longitude" textWrap="true" class="m-l-5 m-r-15 m-t-15"></Label>

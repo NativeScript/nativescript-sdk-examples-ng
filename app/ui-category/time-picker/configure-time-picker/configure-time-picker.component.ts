@@ -8,7 +8,9 @@ import { TimePicker } from "ui/time-picker";
 })
 export class ConfigureTimePickerComponent {
 
-    configure(timePicker: TimePicker) {
+    onPickerLoaded(args) {
+        let timePicker = <TimePicker>args.object;
+
         timePicker.hour = 9;
         timePicker.minute = 25;
     }

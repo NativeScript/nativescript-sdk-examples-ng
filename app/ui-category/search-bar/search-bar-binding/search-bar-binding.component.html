@@ -1,10 +1,7 @@
-<StackLayout  sdkExampleTitle sdkToggleNavButton>
-    <StackLayout>
-        <!-- >> search-bar-html-binding -->
-        <GridLayout rows="auto auto" columns="*">
-            <SearchBar #sb id="searchbar" hint="Search" (textChange)="searchPhrase=sb.text" (loaded)="searchBarLoaded()"></SearchBar>
-            <Label [text]="'Your are searching for: '+ searchPhrase" textWrap="true" row="1" class="h3 p-15 text-center"></Label>
-        </GridLayout>
-        <!-- << search-bar-html-binding -->
-    </StackLayout>
-</StackLayout>
+<!-- >> search-bar-html-binding -->
+<GridLayout rows="auto auto" columns="*" sdkExampleTitle sdkToggleNavButton>
+    <SearchBar row="0" hint="Search" (textChange)="onTextChange($event)" (loaded)="searchBarLoaded($event)" (submit)="onSubmit($event)"></SearchBar>
+    <Label row="1" [text]="searchPhrase" textWrap="true" class="h3 p-15 text-center"></Label>
+</GridLayout>
+<!-- << search-bar-html-binding -->
+

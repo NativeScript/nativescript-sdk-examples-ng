@@ -1,7 +1,7 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
     <GridLayout rows="auto *">
         <!-- >> clear-text-search-bar-html -->
-        <SearchBar row="0" #sb hint="Search for a country and press enter" (clear)="onClear()" [text]="searchPhrase" (submit)="onSubmit(sb.text)"></SearchBar>
+        <SearchBar row="0" hint="Search for a country and press enter" (clear)="onClear($event)" (submit)="onSubmit($event)"></SearchBar>
         <ListView row="1" [items]="myItems" class="list-group">
             <ng-template let-item="item">
                 <GridLayout class="item" class="list-group-item">

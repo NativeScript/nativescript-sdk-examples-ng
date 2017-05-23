@@ -18,7 +18,7 @@ export class FpsMeterUsageComponent {
     constructor(private zone: NgZone) {
     }
 
-    public fpsmeter() {
+    public toogleMeter() {
         if (this.status) {
             // >> stop-fps-meter
             removeCallback(this.callbackId);

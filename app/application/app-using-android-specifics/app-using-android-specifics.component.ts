@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import * as application from "application";
+import { android as androidApp, ios as iosApp } from "application";
 
 @Component({
     moduleId: module.id,
@@ -16,13 +16,13 @@ export class AppUsingAndroidExampleComponent {
     public batteryLife: string;
 
     constructor() {
-        if (application.android) {
+        if (androidApp) {
             console.log("We are running on Android device!");
             this.isItemVisible = true;
 
             // >> app-android-dirs-code
             this.fileList = [];
-            this.appContext = application.android.context;
+            this.appContext = androidApp.context;
             this.filesDir = this.appContext.getFilesDir();
             this.cacheDir = this.appContext.getCacheDir();
 
@@ -37,7 +37,7 @@ export class AppUsingAndroidExampleComponent {
             this.batteryLife = "0";
             let that = this;
 
-            application.android.registerBroadcastReceiver(android.content.Intent.ACTION_BATTERY_CHANGED,
+            androidApp.registerBroadcastReceiver(android.content.Intent.ACTION_BATTERY_CHANGED,
                 function onReceiveCallback(context: android.content.Context, intent: android.content.Intent) {
                     let level = intent.getIntExtra(android.os.BatteryManager.EXTRA_LEVEL, -1);
                     let scale = intent.getIntExtra(android.os.BatteryManager.EXTRA_SCALE, -1);
@@ -46,7 +46,7 @@ export class AppUsingAndroidExampleComponent {
                     that.batteryLife = percent.toString();
                 });
             // << app-android-broadcast-code
-        } else if (application.ios) {
+        } else if (iosApp) {
             console.log("We are running on iOS device");
             this.isItemVisible = false;
         }

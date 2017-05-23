@@ -26,7 +26,7 @@
 
     <GridLayout *tabItem="{title: 'Thumbnails'}">
         <!-- >> ext-listview-thumbs-html -->
-        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)" >
+        <ListView class="list-group" [items]="countries" (itemTap)="onItemTapThirdList($event)">
             <ng-template let-country="item">
                 <FlexboxLayout flexDirection="row" class="list-group-item">
                     <Image [src]="country.imageSrc" class="thumb img-circle"></Image>
@@ -37,5 +37,3 @@
         <!-- << ext-listview-thumbs-html -->
     </GridLayout>
 </TabView>
-
-

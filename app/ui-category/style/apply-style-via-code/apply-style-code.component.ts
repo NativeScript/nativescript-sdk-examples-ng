@@ -1,4 +1,3 @@
-
 import { Component, OnInit } from "@angular/core";
 import { Page } from "ui/page";
 import { StackLayout } from "ui/layouts/stack-layout";

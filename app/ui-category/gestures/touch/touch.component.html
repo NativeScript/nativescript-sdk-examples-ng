@@ -1,8 +1,8 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
     <Label class="h3 p-15 text-left" text="Apply touch gesture inside the box"></Label>
     <!-- >> touch-html -->
-    <GridLayout class="bg-primary p-15 m-15" width="200" height="200" (touch)="onTouch($event)"></GridLayout>
-    <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" [text]="'Box touched at X: ' + coordX" textWrap="true"></Label>
-    <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" [text]="'Box touched at Y: ' + coordY" textWrap="true"></Label>
+    <GridLayout (touch)="onTouch($event)" class="bg-primary p-15 m-15" width="200" height="200" ></GridLayout>
+    <Label [text]="'Box touched at X: ' + coordX" textWrap="true" class="h3 p-l-15 p-r-15 p-t-15 text-left"></Label>
+    <Label [text]="'Box touched at Y: ' + coordY" textWrap="true" class="h3 p-l-15 p-r-15 p-t-15 text-left"></Label>
     <!-- << touch-html -->
 </StackLayout>

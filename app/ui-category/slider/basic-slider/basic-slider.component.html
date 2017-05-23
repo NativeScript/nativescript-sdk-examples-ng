@@ -1,19 +1,17 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
-	<StackLayout>
-		<!-- >> basic-slider-html -->
-		<GridLayout class="m-15" rows="auto auto" columns="50 * 50">
-			<Label class="h2 p-15" [text]="slfirst.value | number:'2.2'" textWrap="true" row="0" colSpan="3"></Label>
-			<Label text="&#xe90b;" textWrap="true" row="1" col="0" fontSize="15" class="icon"></Label>
-			<Slider #slfirst minValue="10" value="10" maxValue="70" (valueChange)="slfirst.value" row="1" col="1"></Slider>
-			<Label text="&#xe90b;" textWrap="true" row="1" col="2" fontSize="20" class="icon"></Label>
-		</GridLayout>
+	<!-- >> basic-slider-html -->
+	<GridLayout class="m-15" rows="auto auto" columns="50 * 50">
+		<Label row="0" colSpan="3" class="h2 p-15" [text]="currentValue | number:'2.2'" textWrap="true"></Label>
+		<Label row="1" col="0" text="&#xe90b;" textWrap="true" fontSize="15" class="icon"></Label>
+		<Slider row="1" col="1" value="10" (valueChange)="onSliderValueChange($event)" minValue="0" maxValue="100"></Slider>
+		<Label row="1" col="2" text="&#xe90b;" textWrap="true" fontSize="20" class="icon"></Label>
+	</GridLayout>
 
-		<GridLayout rows="auto auto" columns="50 * 50">
-			<Label text="&#xe901;" [fontSize]="sl.value || 5" textWrap="true" row="0" colSpan="3" class="icon"></Label>
-			<Label text="min" textWrap="true" row="1" col="0" fontSize="15"></Label>
-			<Slider #sl minValue="5" maxValue="100" value="sliderValue" (valueChange)="sl.value" row="1" col="1"></Slider>
-			<Label text="max" textWrap="true" row="1" col="2" fontSize="20"></Label>
-		</GridLayout>
-		<!-- << basic-slider-html -->
-	</StackLayout>
+	<GridLayout rows="auto auto" columns="50 * 50">
+		<Label row="0" colSpan="3" text="&#xe901;" [fontSize]="fontSize || 5" textWrap="true" class="icon"></Label>
+		<Label row="1" col="0" text="min" textWrap="true" fontSize="15"></Label>
+		<Slider row="1" col="1" value="20" (valueChange)="onSecondSliderChange($event)" minValue="15" maxValue="100"></Slider>
+		<Label row="1" col="2" text="max" textWrap="true" fontSize="20"></Label>
+	</GridLayout>
+	<!-- << basic-slider-html -->
 </StackLayout>

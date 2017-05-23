@@ -1,28 +1,25 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
-    <ScrollView>
-        <StackLayout [visibility]="isItemVisible ? 'visible' : 'collapsed'">
-            <Label class="h3 text-left p-15" text="Get the files & folderd using Application module" textWrap="true"></Label>
-            <!-- >> app-android-specifics-html -->
-            <Label class="text-left p-l-15 p-r-15" text="Documents directory absolute path: "></Label>
-            <Label class="text-left font-weight-bold p-l-15 p-r-15 p-b-15" [text]="filesDir" textWrap="true"></Label>
 
-            <Label class="text-left p-l-15 p-r-15" text="Cache directory absolute path: "></Label>
-            <Label class="text-left font-weight-bold p-l-15 p-r-15 p-b-15" [text]="cacheDir" textWrap="true"></Label>
+    <StackLayout [visibility]="isItemVisible ? 'visible' : 'collapsed'">
+        <Label class="h3 text-left p-15" text="Get the files & folders using Application module" textWrap="true"></Label>
+        <!-- >> app-android-specifics-html -->
+        <Label class="text-left p-l-15 p-r-15" text="Documents directory absolute path: "></Label>
+        <Label class="text-left font-weight-bold p-l-15 p-r-15 p-b-15" [text]="filesDir" textWrap="true"></Label>
+        <Label class="text-left p-l-15 p-r-15" text="Cache directory absolute path: "></Label>
+        <Label class="text-left font-weight-bold p-l-15 p-r-15 p-b-15" [text]="cacheDir" textWrap="true"></Label>
+        <Label class="h3 text-left p-l-15 p-r-15" text="Files associated with this Context's application package: " textWrap="true"></Label>
+        <ListView class="list-group" [items]="fileList" height="176">
+            <ng-template let-item="item">
+                <Label class="list-group-item active" [text]="'file name: ' + item" textWrap="true"></Label>
+            </ng-template>
+        </ListView>
+        <!-- << app-android-specifics-html -->
+        <GridLayout rows="*" columns="*, auto">
+            <Label class="text-left p-15" col="0" text="Battery Life via Broadcast Receiver: "></Label>
+            <Label class="text-left font-weight-bold p-15" col="1" [text]="batteryLife + '%'" textWrap="true"></Label>
+        </GridLayout>
+    </StackLayout>
 
-            <Label class="h3 text-left p-l-15 p-r-15" text="files associated with this Context's application package: "></Label>
-            <ListView class="list-group" [items]="fileList" height="176">
-                <ng-template let-item="item">
-                    <Label class="list-group-item active" [text]="'file name: ' + item" textWrap="true"></Label>
-                </ng-template>
-            </ListView>
-            <!-- << app-android-specifics-html -->
-
-            <GridLayout rows="*" columns="*, auto">
-                <Label class="text-left p-15" col="0" text="Battery Life via Broadcast Receiver: "></Label>
-                <Label class="text-left font-weight-bold p-15" col="1" [text]="batteryLife + '%'" textWrap="true"></Label>
-            </GridLayout>
-        </StackLayout>
-    </ScrollView>
     <StackLayout [visibility]="!isItemVisible ? 'visible' : 'collapsed'">
         <Label class="h3 text-left p-15" text="This examle is Android specific and can be executed only on Android device!" textWrap="true"></Label>
     </StackLayout>

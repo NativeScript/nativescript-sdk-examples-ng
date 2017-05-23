@@ -1,5 +1,6 @@
 // >> switch-event-handle-code
 import { Component } from "@angular/core";
+import { Switch } from "ui/switch";
 
 @Component({
     moduleId: module.id,
@@ -7,25 +8,24 @@ import { Component } from "@angular/core";
     styleUrls: ["./../switch.style.css"],
 })
 export class BasicSwitchComponent {
-    public fSwitchValue = false;
-    public sSwitchValue = true;
+    public firstSwitchState = "OFF";
+    public secondSwitchState = "ON";
 
-    public firstSwitchState = "off";
-    public secondSwitchState = "on";
-
-    public FirstCheckChange(result) {
-        if (result) {
-            this.firstSwitchState = "on";
+    public onFirstChecked(args) {
+        let firstSwitch = <Switch>args.object;
+        if (firstSwitch.checked) {
+            this.firstSwitchState = "ON";
         } else {
-            this.firstSwitchState = "off";
+            this.firstSwitchState = "OFF";
         }
     }
 
-    public SecondCheckChange(result) {
-        if (result) {
-            this.secondSwitchState = "on";
+    public onSecondChecked(args) {
+        let secondSwitch = <Switch>args.object;
+        if (secondSwitch.checked) {
+            this.secondSwitchState = "ON";
         } else {
-            this.secondSwitchState = "off";
+            this.secondSwitchState = "OFF";
         }
     }
 }

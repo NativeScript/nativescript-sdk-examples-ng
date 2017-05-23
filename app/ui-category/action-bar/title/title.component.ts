@@ -6,8 +6,8 @@ import { RouterExtensions } from "nativescript-angular/router";
     templateUrl: "./title.component.html"
 })
 export class TitleComponent {
-    constructor(private routerExtensions: RouterExtensions) {
-    }
+
+    constructor(private routerExtensions: RouterExtensions) { }
 
     public goBack() {
         this.routerExtensions.backToPreviousPage();

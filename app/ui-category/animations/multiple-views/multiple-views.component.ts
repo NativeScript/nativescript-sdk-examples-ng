@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 import { Page } from "ui/page";
 import { View } from "ui/core/view";
-import * as animationModule from "ui/animation";
+import { Animation, AnimationDefinition } from "ui/animation";
 
 let view1: View;
 let view2: View;
@@ -14,8 +14,8 @@ let view4: View;
     styleUrls: ["./../style.css"],
 })
 export class MultipleViewsComponent implements OnInit {
-    constructor(private page: Page) {
-    }
+
+    constructor(private page: Page) { }
 
     ngOnInit() {
         view1 = this.page.getViewById<View>("view1");
@@ -26,36 +26,36 @@ export class MultipleViewsComponent implements OnInit {
 
     // >> animate-multiple-views-simultaneously-code
     animate() {
-        let definitions = new Array<animationModule.AnimationDefinition>();
-        let a1: animationModule.AnimationDefinition = {
+        let definitions = new Array<AnimationDefinition>();
+        let a1: AnimationDefinition = {
             target: view1,
             translate: { x: 200, y: 0 },
             duration: 3000
         };
         definitions.push(a1);
 
-        let a2: animationModule.AnimationDefinition = {
+        let a2: AnimationDefinition = {
             target: view2,
             translate: { x: 0, y: 200 },
             duration: 3000
         };
         definitions.push(a2);
 
-        let a3: animationModule.AnimationDefinition = {
+        let a3: AnimationDefinition = {
             target: view3,
             translate: { x: -200, y: 0 },
             duration: 3000
         };
         definitions.push(a3);
 
-        let a4: animationModule.AnimationDefinition = {
+        let a4: AnimationDefinition = {
             target: view4,
             translate: { x: 0, y: -200 },
             duration: 3000
         };
         definitions.push(a4);
 
-        let animationSet = new animationModule.Animation(definitions);
+        let animationSet = new Animation(definitions);
 
         animationSet.play().then(() => {
             console.log("Animation finished");

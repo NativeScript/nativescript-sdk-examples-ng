@@ -1,4 +1,5 @@
 import { Component } from "@angular/core";
+import { Slider } from "ui/slider";
 
 @Component({
     moduleId: module.id,
@@ -6,4 +7,18 @@ import { Component } from "@angular/core";
     styleUrls: ["./../style.css"]
 })
 export class BasicSliderComponent {
+    public currentValue: number = 10;
+    public fontSize: number = 20;
+
+    public onSliderValueChange(args) {
+        let slider = <Slider>args.object;
+
+        this.currentValue = slider.value;
+    }
+
+    public onSecondSliderChange(args) {
+        let slider = <Slider>args.object;
+
+        this.fontSize = slider.value;
+    }
 }

@@ -1,9 +1,9 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
-    <Label class="h3 p-15 text-left" text="Apply tap gesture inside the box"></Label>
+    <Label text="Apply tap gesture inside the box" class="h3 p-15 text-left"></Label>
     <!-- >> tap-html -->
-    <GridLayout class="bg-primary p-15 m-15" width="200" height="200" (tap)="onTap($event)">
+    <GridLayout (tap)="onTap($event)" class="bg-primary p-15 m-15" width="200" height="200">
         <!-- >> (hide) -->
-        <Image class="img-rounded" src="res://icon" stretch="none"></Image>
+        <Image src="res://icon" stretch="none" class="img-rounded"></Image>
         <!-- << (hide) -->
     </GridLayout>
     <!-- << tap-html -->

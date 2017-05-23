@@ -1,5 +1,6 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
     <!-- >> creating-datepicker-html -->
-    <DatePicker #datePicker (loaded)="configure(datePicker)" verticalAlignment="center"></DatePicker>
+    <DatePicker (loaded)="onPickerLoaded($event)" (dateChange)="onDateChanged($event)" 
+    (dayChange)="onDayChanged($event)" (monthChange)="onMonthChanged($event)" (yearChange)="onYearChanged($event)" verticalAlignment="center"></DatePicker>
     <!-- << creating-datepicker-html -->
 </StackLayout>

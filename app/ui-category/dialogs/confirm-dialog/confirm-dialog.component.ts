@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import * as dialogs from "ui/dialogs";
+import { confirm } from "ui/dialogs";
 
 @Component({
     moduleId: module.id,
@@ -15,7 +15,8 @@ export class ConfirmDialogComponent {
             cancelButtonText: "No",
             neutralButtonText: "Cancel"
         };
-        dialogs.confirm(options).then((result: boolean) => {
+
+        confirm(options).then((result: boolean) => {
             console.log(result);
         });
         // << confirm-dialog-code

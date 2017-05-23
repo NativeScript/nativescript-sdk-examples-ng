@@ -1,4 +1,4 @@
-import { Component, NgZone, OnInit, OnDestroy } from "@angular/core";
+import { Component, OnInit, OnDestroy } from "@angular/core";
 // >> connectivity-import-code
 import * as connectivity from "connectivity";
 // << connectivity-import-code
@@ -10,7 +10,7 @@ import * as connectivity from "connectivity";
 export class UsingConnectivityExampleComponent implements OnInit, OnDestroy {
     public connectionType: string;
 
-    constructor(private zone: NgZone) {
+    constructor() {
         // >> connectivity-gettype-code
         let connectionType = connectivity.getConnectionType();
         switch (connectionType) {
@@ -32,24 +32,22 @@ export class UsingConnectivityExampleComponent implements OnInit, OnDestroy {
     ngOnInit() {
         // >> connectivity-start-code
         connectivity.startMonitoring((newConnectionType: number) => {
-            this.zone.run(() => {
-                switch (newConnectionType) {
-                    case connectivity.connectionType.none:
-                        this.connectionType = "None";
-                        console.log("Connection type changed to none.");
-                        break;
-                    case connectivity.connectionType.wifi:
-                        this.connectionType = "Wi-Fi";
-                        console.log("Connection type changed to WiFi.");
-                        break;
-                    case connectivity.connectionType.mobile:
-                        this.connectionType = "Mobile";
-                        console.log("Connection type changed to mobile.");
-                        break;
-                    default:
-                        break;
-                }
-            });
+            switch (newConnectionType) {
+                case connectivity.connectionType.none:
+                    this.connectionType = "None";
+                    console.log("Connection type changed to none.");
+                    break;
+                case connectivity.connectionType.wifi:
+                    this.connectionType = "Wi-Fi";
+                    console.log("Connection type changed to WiFi.");
+                    break;
+                case connectivity.connectionType.mobile:
+                    this.connectionType = "Mobile";
+                    console.log("Connection type changed to mobile.");
+                    break;
+                default:
+                    break;
+            }
         });
         // << connectivity-start-code
     }

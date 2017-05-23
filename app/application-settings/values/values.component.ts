@@ -1,6 +1,16 @@
 import { Component } from "@angular/core";
 // >> app-settings-code
-import * as appSettings from "application-settings";
+import {
+    getBoolean,
+    setBoolean,
+    getNumber,
+    setNumber,
+    getString,
+    setString,
+    hasKey,
+    remove,
+    clear
+} from "application-settings";
 // << app-settings-code
 
 @Component({
@@ -16,73 +26,73 @@ export class ValuesExampleComponent {
 
     constructor() {
         // >> app-settings-bool-code
-        appSettings.setBoolean("isTurnedOn", true);
-        this.isTurnedOn = appSettings.getBoolean("isTurnedOn", true);
+        setBoolean("isTurnedOn", true);
+        this.isTurnedOn = getBoolean("isTurnedOn", true);
         // << app-settings-bool-code
 
         // >> app-settings-string-code
-        appSettings.setString("username", "Wolfgang");
-        this.username = appSettings.getString("username");
+        setString("username", "Wolfgang");
+        this.username = getString("username");
         // << app-settings-string-code
 
         // >> app-settings-number-code
-        appSettings.setNumber("locationX", 54.321);
-        this.locationX = parseFloat(appSettings.getNumber("locationX").toFixed(3));
+        setNumber("locationX", 54.321);
+        this.locationX = parseFloat(getNumber("locationX").toFixed(3));
         // << app-settings-number-code
 
         // >> app-settings-default-value-code
         // will return "No string value" if there is no value for "noSuchKey"
-        this.someKey = appSettings.getString("noSuchKey", "No string value");
+        this.someKey = getString("noSuchKey", "No string value");
         // << app-settings-default-value-code
 
         // >> app-settings-no-value-code
         // will return undefined if there is no value for "noSuchKey"
-        let defaultValue = appSettings.getString("noSuchKey");
+        let defaultValue = getString("noSuchKey");
         console.log(defaultValue);
         // << app-settings-no-value-code
 
         // >> app-settings-no-key-code
         // will return false if there is no value for "noBoolKey"
-        this.noBoolKey = appSettings.hasKey("noBoolKey");
+        this.noBoolKey = hasKey("noBoolKey");
         // << app-settings-no-key-code
     }
 
     public onSetSettings() {
-        appSettings.setBoolean("isTurnedOn", true);
-        this.isTurnedOn = appSettings.getBoolean("isTurnedOn");
+        setBoolean("isTurnedOn", true);
+        this.isTurnedOn = getBoolean("isTurnedOn");
 
-        appSettings.setString("username", "Wolfgang");
-        this.username = appSettings.getString("username");
+        setString("username", "Wolfgang");
+        this.username = getString("username");
 
-        appSettings.setNumber("locationX", 54.321);
-        this.locationX = parseFloat(appSettings.getNumber("locationX").toFixed(2));
+        setNumber("locationX", 54.321);
+        this.locationX = parseFloat(getNumber("locationX").toFixed(2));
 
-        appSettings.setString("noSuchKey", "New Value!");
-        this.someKey = appSettings.getString("noSuchKey", "No string value");
+        setString("noSuchKey", "New Value!");
+        this.someKey = getString("noSuchKey", "No string value");
 
-        appSettings.setBoolean("noBoolKey", true);
-        this.noBoolKey = appSettings.hasKey("noBoolKey");
+        setBoolean("noBoolKey", true);
+        this.noBoolKey = hasKey("noBoolKey");
     }
 
     public onClearSettings() {
         // >> app-settings-remove-key-code
-        appSettings.remove("isTurnedOn");
+        remove("isTurnedOn");
         // << app-settings-remove-key-code
 
         // >> app-settings-remove-all-code
-        appSettings.clear();
+        clear();
         // << app-settings-remove-all-code
 
-        appSettings.setBoolean("isTurnedOn", false);
-        this.isTurnedOn = appSettings.getBoolean("isTurnedOn", false);
+        setBoolean("isTurnedOn", false);
+        this.isTurnedOn = getBoolean("isTurnedOn", false);
 
-        appSettings.setString("username", "Default name");
-        this.username = appSettings.getString("username");
+        setString("username", "Default name");
+        this.username = getString("username");
 
-        appSettings.setNumber("locationX", 0.00);
-        this.locationX = parseFloat(appSettings.getNumber("locationX").toFixed(2));
+        setNumber("locationX", 0.00);
+        this.locationX = parseFloat(getNumber("locationX").toFixed(2));
 
-        this.someKey = appSettings.getString("noSuchKey", "No string value");
-        this.noBoolKey = appSettings.hasKey("noBoolKey");
+        this.someKey = getString("noSuchKey", "No string value");
+        this.noBoolKey = hasKey("noBoolKey");
     }
 }

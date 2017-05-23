@@ -1,6 +1,6 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
 	<GridLayout rows="auto, *">
-		<ListView class="list-group" [items]="items" row="1">
+		<ListView row="1" [items]="items" class="list-group" >
 			<ng-template let-item="item" let-odd="odd" let-even="even" >
 				<StackLayout [class.odd]="odd" [class.even]="even">
 					<sdk-child-component [data]="item"></sdk-child-component>

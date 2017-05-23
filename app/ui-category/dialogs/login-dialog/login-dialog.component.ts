@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import * as dialogs from "ui/dialogs";
+import { login, LoginResult } from "ui/dialogs";
 
 @Component({
     moduleId: module.id,
@@ -16,7 +16,8 @@ export class LoginDialogComponent {
             okButtonText: "Ok",
             cancelButtonText: "Cancel"
         };
-        dialogs.login(options).then((loginResult: dialogs.LoginResult) => {
+
+        login(options).then((loginResult: LoginResult) => {
             console.log(loginResult.result);
         });
         // << login-dialog-code

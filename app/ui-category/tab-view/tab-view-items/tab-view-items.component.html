@@ -1,5 +1,10 @@
-<GridLayout sdkExampleTitle sdkToggleNavButton>
-	<!-- >> tabview-html -->
-	<TabView #tabView [items]="tabviewitems" (selectedIndexChanged)="tabViewIndexChange(tabView.selectedIndex)"></TabView>
-	<!-- << tabview-html -->
-</GridLayout>
+<!-- >> tabview-html -->
+<TabView selectedIndex="0" (selectedIndexChange)="onIndexChanged($event)" sdkExampleTitle sdkToggleNavButton>
+	<StackLayout *tabItem="{title: 'NativeScript',  iconSource: 'res://logo_white_bg'}">
+		<Label text="TabView item with Icon" textWrap="true" class="h2 m-x-auto" color="blue"></Label>
+	</StackLayout>
+	<StackLayout *tabItem="titleAndIcon">
+		<Label text="TabView item with observable title and icon" textWrap="true" class="h2 m-x-auto" color="blue"></Label>
+	</StackLayout>
+</TabView>
+<!-- << tabview-html -->

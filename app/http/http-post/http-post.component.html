@@ -11,7 +11,8 @@
 
     <Button class="btn btn-primary btn-active" text="Submit" (tap)="submit()"></Button>
     <GridLayout class="bg-primary p-15 m-15" rows="*, *" columns="*" borderRadius="2">
-        <Label row="0" class="text-center p-15" text="Data successfully send by user: " [visibility]="isItemVisible ? 'visible' : 'collapsed'" verticalAligment="center" colSpan="2" textWrap="true"></Label>
+        <Label row="0" class="text-center p-15" text="Data successfully send by user: " [visibility]="isItemVisible ? 'visible' : 'collapsed'"
+            verticalAligment="center" colSpan="2" textWrap="true"></Label>
         <Label row="1" class="h1 text-center p-15" [text]="message" verticalAligment="center" colSpan="2" textWrap="true"></Label>
     </GridLayout>
 </StackLayout>

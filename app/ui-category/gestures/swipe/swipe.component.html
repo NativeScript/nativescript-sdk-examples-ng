@@ -1,7 +1,7 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
-    <Label class="h3 p-15 text-left" text="Apply swipe gesture inside the box"></Label>
+    <Label text="Apply swipe gesture inside the box" class="h3 p-15 text-left" ></Label>
     <!-- >> swipe-html -->
-    <GridLayout class="bg-primary p-15 m-15" width="200" height="200" (swipe)="onSwipe($event)"></GridLayout>
+    <GridLayout (swipe)="onSwipe($event)" class="bg-primary p-15 m-15" width="200" height="200"></GridLayout>
     <!-- << swipe-html -->
-    <Label class="h3 p-l-15 p-r-15 p-t-15 text-left" [text]="'Swipe direction : ' + direction" textWrap="true"></Label>
+    <Label [text]="'Swipe direction : ' + direction" textWrap="true" class="h3 p-l-15 p-r-15 p-t-15 text-left" ></Label>
 </StackLayout>

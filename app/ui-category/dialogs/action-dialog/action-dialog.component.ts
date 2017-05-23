@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import * as dialogs from "ui/dialogs";
+import { action } from "ui/dialogs";
 
 @Component({
     moduleId: module.id,
@@ -14,7 +14,8 @@ export class ActionDialogComponent {
             cancelButtonText: "Cancel",
             actions: ["Human", "Elf", "Dwarf", "Orc", "Unicorn"]
         };
-        dialogs.action(options).then((result) => {
+
+        action(options).then((result) => {
             console.log(result);
         });
         // << action-dialog-code

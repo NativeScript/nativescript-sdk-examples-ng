@@ -1,7 +1,7 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
-    <GridLayout >
+    <GridLayout>
         <!-- >> listview-create-html -->
-        <ListView [items]="countries" class="list-group" (itemTap)="onItemTap($event)">
+        <ListView [items]="countries" (itemTap)="onItemTap($event)" class="list-group">
             <ng-template let-country="item" let-i="index" let-odd="odd" let-even="even">
                 <GridLayout class="list-group-item">
                     <Label [text]="country.name"></Label>

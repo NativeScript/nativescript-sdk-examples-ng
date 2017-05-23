@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { Page } from "ui/page";
 import { SearchBar } from "ui/search-bar";
 import { isAndroid } from "platform";
 
@@ -8,17 +7,26 @@ import { isAndroid } from "platform";
     templateUrl: "./search-bar-binding.component.html"
 })
 export class SearchBarBindingComponent {
-    public searchPhrase = "";
+    searchPhrase: string = "";
 
-    constructor(private page: Page) { }
+    public searchBarLoaded(args) {
+        let searchBar = <SearchBar>args.object;
+        searchBar.dismissSoftInput();
 
-    public searchBarLoaded() {
-        let searchbarComponent: SearchBar = <SearchBar>this.page.getViewById("searchbar");
-        console.log(searchbarComponent);
-        searchbarComponent.dismissSoftInput();
         if (isAndroid) {
-            searchbarComponent.android.clearFocus();
+            searchBar.android.clearFocus();
         }
-        searchbarComponent.text = "";
+
+        searchBar.text = "";
+    }
+
+    public onTextChange(args) {
+        let searchBar = <SearchBar>args.object;
+        this.searchPhrase = "Current search query: " + searchBar.text;
+    }
+
+    public onSubmit(args) {
+        let searchBar = <SearchBar>args.object;
+        this.searchPhrase = "Submited search query: " + searchBar.text;
     }
 }

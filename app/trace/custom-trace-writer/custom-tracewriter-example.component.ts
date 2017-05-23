@@ -7,6 +7,7 @@ import { isUndefined } from "utils/types";
 // >> trace-create-custom-writer
 class TimestampConsoleWriter {
     public array = [];
+
     public write(message, category, type) {
         if (!console) {
             return;

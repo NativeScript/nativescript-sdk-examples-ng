@@ -2,15 +2,15 @@
     <StackLayout class="example-container">
         <!-- >> disable-switch -->
         <GridLayout rows="auto auto" columns="* *" class="m-5">
-            <Label class="h3 m-15"
+            <Label row="0" col="0" 
                 [text]="switch.isEnabled ? 'enabled' : 'disabled'"
-                textWrap="true" row="0" col="0"></Label>
+                textWrap="true" class="h3 m-15"></Label>
             <Switch #switch class="m-15" row="0" col="1"></Switch>
 
-            <Button class="btn btn-primary btn-active"
+            <Button row="3" col="0" colSpan="2" 
                 [text]="switch.isEnabled ? 'Disable switch' : 'Enable switch'"
                 (tap)="switch.isEnabled = !switch.isEnabled"
-                row="3" col="0" colSpan="2" horizontalAlignment="stretch"></Button>
+                horizontalAlignment="stretch" class="btn btn-primary btn-active"></Button>
         </GridLayout>
         <!-- << disable-switch -->
     </StackLayout>
