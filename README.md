@@ -18,7 +18,7 @@ We hope you will enjoy using this resource, if you have any feedback please [ope
 
 ### Run the app from source code
 ```
-git clone --depth 1 git@github.com:NativeScript/nativescript-sdk-examples-ng.git
+git clone --depth 1 https://github.com/NativeScript/nativescript-sdk-examples-ng.git
 cd nativescript-sdk-examples-ng
 tns run android|ios
 ```
