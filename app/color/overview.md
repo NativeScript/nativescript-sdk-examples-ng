@@ -1,3 +1,9 @@
+---
+title: Color Module Overview
+description: Color Module NativeScript code samples
+position: 2
+slug: nativescript-code-samples-color
+---
 Represents a color object. Stores all color components (alpha (opacity), red, green, blue) in a [0..255] range.
 
 **API Reference for the** [Color Class](https://docs.nativescript.org/api-reference/classes/_color_.color.html)
