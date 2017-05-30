@@ -3,8 +3,6 @@ import { Link } from "./../../link";
 
 let menuLinks = [
     new Link("Tap event", "/button/tap-event"),
-    new Link("Text", "/button/text"),
-    new Link("Binding text", "/button/binding-text"),
 ];
 
 @Component({
