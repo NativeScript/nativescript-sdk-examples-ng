@@ -1,9 +1,3 @@
----
-title: Image Overview
-description: Image NativeScript code samples
-position: 23
-slug: nativescript-code-samples-image
----
 The Image widget shows an image. You can load the image from an ImageSource or from a URL.
 
 **API Reference for** [Image Class](http://docs.nativescript.org/api-reference/modules/_ui_image_.html)
