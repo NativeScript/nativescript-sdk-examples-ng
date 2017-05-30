@@ -11,7 +11,7 @@ import { Label } from "ui/label";
     styleUrls: ["./style.css"]
 })
 export class BasicWebViewComponent implements AfterViewInit {
-    public webViewSrc: string = "https://www.nativescript.org/";
+    public webViewSrc: string = "https://docs.nativescript.org/";
 
     @ViewChild("myWebView") webViewRef: ElementRef;
     @ViewChild("urlField") urlFieldRef: ElementRef;
