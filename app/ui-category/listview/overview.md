@@ -1,3 +1,9 @@
+---
+title: ListView Overview
+description: ListView NativeScript code samples
+position: 27
+slug: nativescript-code-samples-listview
+---
 Using a ListView control inside Angular 2 app requires some special attention due to the complexity of the NativeScript ListView control, with custom item templates, bindings and so on. 
 
 The NativeScript-angular plugin provides a custom Angular 2 component which simplifies the way native ListView is used. 

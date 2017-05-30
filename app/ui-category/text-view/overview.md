@@ -1,3 +1,9 @@
+---
+title: TextView Overview
+description: TextView NativeScript code samples
+position: 37
+slug: nativescript-code-samples-textview
+---
 The TextView component can be used to type large text in your app. The component can also be used show any content by setting the `editable` property to `false`.
 
 **API Reference for the** [TextView Class](http://docs.nativescript.org/api-reference/modules/_ui_text_view_.html)
