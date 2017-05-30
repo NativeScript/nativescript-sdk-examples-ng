@@ -1,9 +1,3 @@
----
-title: SegementedBar Overview
-description: SegementedBar NativeScript code samples
-position: 32
-slug: nativescript-code-samples-segementedbar
----
 Using a SegementedBar inside an Angular 2 project gives you a simple way to define a collection of tabbed views.
 The SegmentedBar’s `selectedIndexChange` property notifies you for every changes of the component’s `selectedIndex`.
 

@@ -1,9 +1,3 @@
----
-title: NativeScript Camera Plugin Overview
-description: NativeScript Camera Plugin Module NativeScript code samples
-position: 3
-slug: nativescript-code-samples-camera-plugin
----
 NativeScript plugin to empower using device camera.
 
 ## Install the camera plugin as dependency

@@ -1,9 +1,3 @@
----
-title: ListPicker Overview
-description: ListPicker NativeScript code samples
-position: 26
-slug: nativescript-code-samples-listpicker
----
 Spinner type module with listed options.
 Using a ListPicker requires the "ui/list-picker" module.
 

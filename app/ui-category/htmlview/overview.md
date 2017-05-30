@@ -1,9 +1,3 @@
----
-title: HtmlView Overview
-description: HtmlView NativeScript code samples
-position: 22
-slug: nativescript-code-samples-htmlview
----
 The HtmlView represents a view with HTML content. Use this component instead of a WebView when you want to show static HTML content.
 
 **API Reference for the** [HtmlView Class](http://docs.nativescript.org/api-reference/modules/_ui_html_view_.html)

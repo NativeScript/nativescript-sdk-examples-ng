@@ -1,9 +1,3 @@
----
-title: File System Module Overview
-description: File System Module NativeScript code samples
-position: 5
-slug: nativescript-code-samples-filesystem
----
 File System module provides high-level abstractions for file system entities 
 such as files, folders, known folders, paths, separators, etc.
 
