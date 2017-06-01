@@ -70,7 +70,7 @@
     "rimraf": "^2.5.3",
     "tar.gz": "^1.0.5",
     "tns-platform-declarations": "^3.0.1",
-    "tslint": "^5.2.0",
+    "tslint": "5.2.0",
     "typescript": "~2.3.2",
     "webpack": "~2.5.1",
     "webpack-sources": "~0.2.3"
