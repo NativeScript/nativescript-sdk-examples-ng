@@ -1,4 +1,28 @@
 <StackLayout class="modal-view-style" sdkExampleTitle sdkToggleNavButton>
     <DatePicker id="datePicker"></DatePicker>
+
+    <Label text="Type = {{type}}"></Label>
+
+    <!--ngSwitch-->
+    <StackLayout [ngSwitch]="type">
+        <Label text="Type is true using ngSwitch"
+            *ngSwitchCase='true'>
+        </Label>
+        <Label text="Type is not true using ngSwitch"
+            *ngSwitchDefault>
+        </Label>
+    </StackLayout>
+
+    <!--ngSwitch-->
+    <StackLayout [ngSwitch]="type">
+        <Label text="Type is true using ngIf"
+            *ngIf="type">
+        </Label>
+        <Label text="Type is not true using ngIf"
+            *ngIf="!type">
+        </Label>
+    </StackLayout>
+
+    <Button class="btn btn-primary" (tap)="changeType()" text="NGIF ISSUE: change boolean value of 'type'"></Button>
     <Button class="btn btn-primary btn-active" text="Submit" (tap)="submit()"></Button>
 </StackLayout>
