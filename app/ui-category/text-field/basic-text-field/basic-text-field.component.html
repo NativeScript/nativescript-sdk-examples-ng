@@ -38,9 +38,15 @@
 					<TextField class="input input-border" autocorrect="false" hint="Without auto-correct" text="" row="14" col="1" returnKeyType="next"></TextField>
 				</StackLayout>
 				<StackLayout class="input-field">
+					<Label class="label" text="Setting Max text length(max 3 characters)"  textWrap="true"></Label>
+					<TextField class="input input-border" maxLength="3" hint="With maxLength" text=""  returnKeyType="done"></TextField>
+					<Label class="label" text="Setting Max text length(max 3 characters) with secure='true'"  textWrap="true"></Label>
+					<TextField class="input input-border" maxLength="3" hint="maxLength with secure='true'" text="" secure="true" returnKeyType="done"></TextField>
+				</StackLayout>
+				<StackLayout class="input-field">
 					<Label class="label" text="Colors and Border style" row="15" col="0" textWrap="true"></Label>
 					<TextField class="input input-border" autocorrect="false" hint="Default hint color" text="" row="15" col="1" returnKeyType="next"></TextField>
-					<TextField class="input input-border" autocorrect="false" placeholderColor="#0066cc" hint="Hint text color" text="" row="16"
+					<TextField class="input input-border" autocorrect="false"  style.placeholderColor="#0066cc" hint="Hint text color" text="" row="16"
 						col="1" returnKeyType="next"></TextField>
 					<TextField class="input input-border" autocorrect="false" hint="Default hint color" text="Default text color" row="17" col="1"
 						returnKeyType="next"></TextField>
