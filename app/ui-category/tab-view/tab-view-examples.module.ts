@@ -4,6 +4,8 @@ import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { TabViewExamplesComponent } from "./tab-view-examples.component";
 import { BasicTabViewComponent } from "./basic-tab-view/basic-tab-view.component";
 import { TabViewItemsComponent } from "./tab-view-items/tab-view-items.component";
+import { CustomizingTabViewItemsComponent } from "./customizing-tab-view-items/customizing-tab-view-items.component";
+import { BindingTabViewItemsComponent } from "./binding-tab-view-items/binding-tab-view-items.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 export const routerConfig = [
@@ -20,6 +22,16 @@ export const routerConfig = [
         path: "items",
         component: TabViewItemsComponent,
         data: { title: "TabView items" }
+    },
+    {
+        path: "customizing",
+        component: CustomizingTabViewItemsComponent,
+        data: { title: "Customizing Tab View" }
+    },
+    {
+        path: "binding",
+        component: BindingTabViewItemsComponent,
+        data: { title: "Binding (Two-way) TabView selectedIndex" }
     }
 ];
 
@@ -35,7 +47,9 @@ export const routerConfig = [
     declarations: [
         TabViewExamplesComponent,
         BasicTabViewComponent,
-        TabViewItemsComponent
+        TabViewItemsComponent,
+        CustomizingTabViewItemsComponent,
+        BindingTabViewItemsComponent
     ]
 })
 

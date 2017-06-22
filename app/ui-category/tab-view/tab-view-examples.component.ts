@@ -4,7 +4,8 @@ import { Link } from "./../../link";
 let menuLinks = [
     new Link("Basic TabView", "/tab-view/basic"),
     new Link("TabView items", "/tab-view/items"),
-
+    new Link("Customizing Tab View", "/tab-view/customizing"),
+    new Link("Binding (Two-way) TabView selectedIndex", "/tab-view/binding"),
 ];
 
 @Component({
