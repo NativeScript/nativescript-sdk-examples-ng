@@ -8,6 +8,10 @@ require("@angular/forms");
 require("@angular/http");
 require("@angular/router");
 
+require("nativescript-angular/animations");
 require("nativescript-angular/platform-static");
-require("nativescript-angular/forms");
 require("nativescript-angular/router");
+require("nativescript-angular/forms");
+
+require("nativescript-googlemaps");
+
