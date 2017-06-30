@@ -1,15 +1,15 @@
-/platforms
-/hooks
-/node_modules
-/lib
-/debugger
-/dist
+platforms
+hooks
+node_modules
+lib
+debugger
+dist
+report
 
-/app/**/*.map
-/app/**/*.js
+app/**/*.map
+app/**/*.js
 
 .DS_Store
 **/*.log
 tags
 
-ers.txt

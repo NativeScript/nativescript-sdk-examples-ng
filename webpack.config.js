@@ -1,5 +1,7 @@
 const { resolve, join  } = require("path");
 
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+
 const webpack = require("webpack");
 const nsWebpack = require("nativescript-dev-webpack");
 const nativescriptTarget = require("nativescript-dev-webpack/nativescript-target");
@@ -48,7 +50,11 @@ module.exports = env => {
             modules: [
                 "node_modules/tns-core-modules",
                 "node_modules",
-            ]
+            ],
+
+            alias: {
+                '~': resolve("./app")
+            },
         },
         node: {
             // Disable node shims that conflict with NativeScript
@@ -138,6 +144,14 @@ function getRules() {
 
 function getPlugins(platform, env) {
     let plugins = [
+        new BundleAnalyzerPlugin({
+            analyzerMode: "static",
+            openAnalyzer: false,
+            generateStatsFile: true,
+            reportFilename: join(__dirname, "report", `${platform}-report.html`),
+            statsFilename: join(__dirname, "report", `${platform}-stats.json`),
+        }),
+
         new ExtractTextPlugin(mainSheet),
 
         // Vendor libs go to the vendor.js chunk
