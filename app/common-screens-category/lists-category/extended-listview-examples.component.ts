@@ -10,8 +10,7 @@ let menuLinks = [
     new Link("Multi line items - bigger thumbs", "/extended-listview/multi-line-big"),
     new Link("Grouped two lines items", "/extended-listview/grouped-two-lines"),
     new Link("Cards", "/extended-listview/cards-listview"),
-    new Link("Horizontal scrolling", "/extended-listview/horizontal-scrolling"),
-    new Link("Header with map", "/extended-listview/header-with-map"),
+    new Link("Horizontal scrolling", "/extended-listview/horizontal-scrolling")
 ];
 
 @Component({

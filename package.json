@@ -40,7 +40,6 @@
     "nativescript-angular": "next",
     "nativescript-camera": "~3.0.0",
     "nativescript-geolocation": "^3.0.0",
-    "nativescript-googlemaps": "^3.0.1",
     "nativescript-intl": "~3.0.0",
     "nativescript-theme-core": "^1.0.4",
     "reflect-metadata": "~0.1.8",
