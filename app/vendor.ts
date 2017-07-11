@@ -13,5 +13,3 @@ require("nativescript-angular/platform-static");
 require("nativescript-angular/router");
 require("nativescript-angular/forms");
 
-require("nativescript-googlemaps");
-
