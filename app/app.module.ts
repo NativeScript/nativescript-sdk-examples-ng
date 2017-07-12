@@ -12,7 +12,6 @@ import { AppComponent } from "./app.component";
 // << (hide)
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
 import { registerElement } from "nativescript-angular/element-registry";
-import { TnsGoogleMaps } from "nativescript-googlemaps";
 import { isIOS } from "platform";
 
 declare var GMSServices: any;
@@ -37,9 +36,3 @@ declare var GMSServices: any;
 })
 // << ngmodule-config
 export class AppModule { }
-
-registerElement("TnsGoogleMaps", () => TnsGoogleMaps);
-
-if (isIOS) {
-    GMSServices.provideAPIKey("AIzaSyDQZOuoz1x-bMki_pbb7AYyU9D8Js4ZpKQ");
-}

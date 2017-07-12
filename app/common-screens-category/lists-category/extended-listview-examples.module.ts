@@ -3,7 +3,6 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { ExtendedListViewExamplesComponent } from "./extended-listview-examples.component";
 import { CardsListViewExampleComponent } from "./cards/cards-listview.component";
-import { HeaderWithMapExampleComponent } from "./header-with-map/header-with-map.component";
 import { HorizontalScrollingExampleComponent } from "./horizontal-scrolling/horizontal-scrolling.component";
 import { MultiLineListViewExampleComponent } from "./multi-line/multi-line.component";
 import { MultiLineBigListViewExampleComponent } from "./multi-line-big/multi-line-big.component";
@@ -23,11 +22,6 @@ export const routerConfig = [
         path: "cards-listview",
         component: CardsListViewExampleComponent,
         data: { title: "Cards listview" }
-    },
-    {
-        path: "header-with-map",
-        component: HeaderWithMapExampleComponent,
-        data: { title: "Header with map" }
     },
     {
         path: "horizontal-scrolling",
@@ -82,7 +76,6 @@ export const routerConfig = [
     declarations: [
         ExtendedListViewExamplesComponent,
         CardsListViewExampleComponent,
-        HeaderWithMapExampleComponent,
         HorizontalScrollingExampleComponent,
         MultiLineListViewExampleComponent,
         MultiLineBigListViewExampleComponent,
