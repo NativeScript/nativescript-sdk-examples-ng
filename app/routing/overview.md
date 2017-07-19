@@ -1,1 +1,1 @@
-Angular 2 routing techniques
+Angular routing techniques
