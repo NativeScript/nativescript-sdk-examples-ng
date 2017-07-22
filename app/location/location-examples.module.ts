@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { LocationExamplesComponent } from "./location-examples.component";
 import { BasicLocationExampleComponent } from "./basic-location-example/basic-location-example";
 import { LocationMonitoringExampleComponent } from "./location-monitoring-example/location-monitoring-example";
@@ -29,7 +29,7 @@ export const routerConfig = [
     imports: [
         TitleAndNavButtonModule,
         NativeScriptFormsModule,
-        NativeScriptModule,
+        NativeScriptCommonModule,
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
     ],

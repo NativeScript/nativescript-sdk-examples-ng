@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { TabViewExamplesComponent } from "./tab-view-examples.component";
 import { BasicTabViewComponent } from "./basic-tab-view/basic-tab-view.component";
 import { TabViewItemsComponent } from "./tab-view-items/tab-view-items.component";
@@ -40,7 +40,7 @@ export const routerConfig = [
     imports: [
         TitleAndNavButtonModule,
         NativeScriptFormsModule,
-        NativeScriptModule,
+        NativeScriptCommonModule,
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
     ],
