@@ -14,10 +14,9 @@ export class BasicSegmentedBarComponent {
     constructor() {
         this.myItems = [];
         for (let i = 1; i < 5; i++) {
-            let tmpSegmentedBar: SegmentedBarItem = <SegmentedBarItem>new SegmentedBarItem();
-            tmpSegmentedBar.title = "Tab " + i;
-
-            this.myItems.push(tmpSegmentedBar);
+            const item = new SegmentedBarItem();
+            item.title = "Tab " + i;
+            this.myItems.push(item);
         }
     }
 
