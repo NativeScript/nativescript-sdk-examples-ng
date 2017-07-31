@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ScrollViewExamplesComponent } from "./scroll-view-examples.component";
 import { ScrollViewHorizontalComponent } from "./horizontal/scroll-view-horizontal.component";
 import { ScrollViewVerticalComponent } from "./vertical/scroll-view-vertical.component";
@@ -33,7 +33,7 @@ export const routerConfig = [
     schemas: [NO_ERRORS_SCHEMA],
     imports: [
         TitleAndNavButtonModule,
-        NativeScriptModule,
+        NativeScriptCommonModule,
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
     ],

@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ExtendedUserProfileExamplesComponent } from "./extended-userprofile-examples.component";
 import { UserFeedExampleComponent } from "./user-feed/user-feed.component";
 import { UserFeedImagesExampleComponent } from "./user-feed-images/user-feed-images.component";
@@ -33,7 +33,7 @@ export const routerConfig = [
     schemas: [NO_ERRORS_SCHEMA],
     imports: [
         TitleAndNavButtonModule,
-        NativeScriptModule,
+        NativeScriptCommonModule,
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
     ],

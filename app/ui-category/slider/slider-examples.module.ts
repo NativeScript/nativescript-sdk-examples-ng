@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptModule } from "nativescript-angular/nativescript.module";
+import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { SliderExamplesComponent } from "./slider-examples.component";
 import { BasicSliderComponent } from "./basic-slider/basic-slider.component";
@@ -28,7 +28,7 @@ export const routerConfig = [
     schemas: [NO_ERRORS_SCHEMA],
     imports: [
         TitleAndNavButtonModule,
-        NativeScriptModule,
+        NativeScriptCommonModule,
         NativeScriptFormsModule,
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
