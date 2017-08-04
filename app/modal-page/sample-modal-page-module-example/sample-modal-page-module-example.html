@@ -1,16 +1,23 @@
 <!-- >> add-modal-dialog-host -->
 <ScrollView sdkExampleTitle sdkToggleNavButton >
     <StackLayout>
-        <Label text='Count the days between the dates' class="m-15" textWrap="true"></Label>
+        <Label text='Count the days between the dates' class="m-15 h2" textWrap="true"></Label>
+
         <Label [text]='startDate | date:"MM/dd/yy"' class="m-15" textWrap="true"></Label>  
-        <Button class="btn btn-primary btn-active" text="Enter Start Date" (tap)="createModelView('start')"></Button>
+        <Button class="btn btn-primary btn-active" text="Enter Start Date" (tap)="getStartDate()"></Button>
+
         <Label [text]='endDate | date:"MM/dd/yy"' class="m-15" textWrap="true"></Label>   
-        <Button class="btn btn-primary btn-active" text="Enter End Date" (tap)="createModelView('end')"></Button>
-        <Label [text]='"Days: "+days' class="m-15" textWrap="true"></Label> 
-        <Button class="btn btn-primary btn-active" text="Count Days" (tap)="findDays()"></Button>
-        <Label [text]='"Date: "+date| date:"MM/dd/yy"' class="m-15" textWrap="true"></Label>
-        <Label [text]='"Day: "+weekday' class="m-15" textWrap="true"></Label>
-        <Button class="btn btn-primary btn-active" text="Enter Date" (tap)="createModelView('findTheDay')"></Button>   
+        <Button class="btn btn-primary btn-active" text="Enter End Date" (tap)="getEndDate()"></Button>
+
+        <Label [text]='"Days: " + days' class="m-15" textWrap="true"></Label> 
+        <Button class="btn btn-primary btn-active" text="Count Days" (tap)="countDays()"></Button>
+
+
+        <Label text='Use different date formats' class="m-15 h2" textWrap="true"></Label>
+
+        <Label [text]='"Date: " + (selectedDate | date: "MM/dd/yy")' class="m-15" textWrap="true"></Label>
+        <Label [text]='"Weekday: " + (selectedDate | date: "EEEE")' class="m-15" textWrap="true"></Label>
+        <Button class="btn btn-primary btn-active" text="Enter Date" (tap)="getDate()"></Button>   
     </StackLayout>
 </ScrollView>
 <!-- << add-modal-dialog-host -->
