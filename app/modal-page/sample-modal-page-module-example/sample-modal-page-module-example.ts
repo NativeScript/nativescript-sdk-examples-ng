@@ -3,6 +3,10 @@ import { Component, ViewContainerRef } from "@angular/core";
 import { DatePicker } from "ui/date-picker";
 import { ModalViewComponent } from "./modal-view";
 
+const millisecondsInADay = 24 * 60 * 60 * 1000;
+const dayDiff = (firstDate, secondDate) =>
+    Math.round((secondDate - firstDate) / millisecondsInADay);
+
 @Component({
     moduleId: module.id,
     providers: [ModalDialogService],
@@ -11,54 +15,72 @@ import { ModalViewComponent } from "./modal-view";
 export class SampleModalPageModuleExampleComponent {
     public startDate: Date;
     public endDate: Date;
-    public date: Date;
+    public selectedDate: Date;
     public days: number;
-    public weekday: string;
-    public weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 
-    constructor(private _modalService: ModalDialogService, private vcRef: ViewContainerRef) {
-        let oneDay = 24 * 60 * 60 * 1000;
-        this.startDate = new Date("2015-12-12");
-        this.endDate = new Date();
-        this.date = new Date();
-        this.days = Math.round(Math.abs((this.startDate.getTime() - this.endDate.getTime()) / (oneDay)));
-        this.weekday = this.weekdays[this.date.getDay()];
+    constructor(private modalService: ModalDialogService, private vcRef: ViewContainerRef) {
+        this.resetDates();
     }
 
-    createModelView(args) {
-        let that = this;
-        let currentDate = new Date();
-        let options: ModalDialogOptions = {
+    getStartDate() {
+        this.createModelView().then(result => {
+            if (this.validate(result)) {
+                this.startDate = result;
+            }
+        }).catch(error => this.handleError(error));
+    }
+
+    getEndDate() {
+        this.createModelView().then(result => {
+            if (this.validate(result)) {
+                this.endDate = result;
+            }
+        }).catch(error => this.handleError(error));
+    }
+
+    // >> returning-result
+    getDate() {
+        this.createModelView().then(result => {
+            if (this.validate(result)) {
+                this.selectedDate = result;
+            }
+        }).catch(error => this.handleError(error));
+    }
+
+    private createModelView(): Promise<any> {
+        const today = new Date();
+        const options: ModalDialogOptions = {
             viewContainerRef: this.vcRef,
-            context: currentDate.toDateString(),
-            fullscreen: false
+            context: today.toDateString(),
+            fullscreen: false,
         };
-        // >> returning-result
-        this._modalService.showModal(ModalViewComponent, options)
-            .then((dateresult: Date) => {
-                console.log("date result " + dateresult);
-                // >> (hide)
-                if (args === "start") {
-                    this.startDate = dateresult;
-                } else if (args === "end") {
-                    this.endDate = dateresult;
-                } else if (args === "findTheDay") {
-                    this.date = dateresult;
-                    this.weekday = this.weekdays[this.date.getDay()];
-                }
-                // << (hide)
-            });
-        // << returning-result
-    }
 
-    findDays() {
-        let oneDay = 24 * 60 * 60 * 1000;
+        return this.modalService.showModal(ModalViewComponent, options);
+    }
+    // << returning-result
+
+    countDays() {
         if (this.startDate.getTime() > this.endDate.getTime()) {
             alert("Enter correct end date");
         } else {
-            let tmpDays = Math.round(Math.abs((this.startDate.getTime() - this.endDate.getTime()) / (oneDay)));
-            console.log(tmpDays);
-            this.days = tmpDays;
+            this.days = dayDiff(this.startDate, this.endDate);
         }
+    }
+
+    private resetDates() {
+        this.startDate = new Date("2015-12-12");
+        this.endDate = new Date();
+        this.selectedDate = new Date();
+        this.days = dayDiff(this.startDate, this.endDate);
+    }
+
+    private validate(result: any) {
+        return !!result;
+    }
+
+    private handleError(error: any) {
+        this.resetDates();
+        alert("Please try again!");
+        console.dir(error);
     }
 }
