@@ -1,9 +1,9 @@
 Content page with paralax scrolling effect
 
-HTML
+TypeScript
 <snippet id='content-paralax-page-code'/>
 
-TypeScript
+HTML
 <snippet id='content-paralax-page-html'/>
 
 
