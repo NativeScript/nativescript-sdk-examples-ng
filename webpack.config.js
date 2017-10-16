@@ -1,14 +1,16 @@
 const { resolve, join  } = require("path");
 
-const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
-
 const webpack = require("webpack");
 const nsWebpack = require("nativescript-dev-webpack");
 const nativescriptTarget = require("nativescript-dev-webpack/nativescript-target");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
+const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
+const { NativeScriptWorkerPlugin } = require("nativescript-worker-loader/NativeScriptWorkerPlugin");
 
 const { AotPlugin } = require("@ngtools/webpack");
+
+const ngToolsWebpackOptions = { tsConfigPath: "tsconfig.aot.json" };
 
 const mainSheet = `app.css`;
 
@@ -55,6 +57,10 @@ module.exports = env => {
             alias: {
                 '~': resolve("./app")
             },
+
+            // This will not follow symlinks to their original location,
+            // and will enable us to work with symlinked packages during development.
+            symlinks: false
         },
         node: {
             // Disable node shims that conflict with NativeScript
@@ -132,26 +138,21 @@ function getRules() {
 
         // Compile TypeScript files with ahead-of-time compiler.
         {
-            test: /\.ts$/,
-            loaders: [
-                "nativescript-dev-webpack/tns-aot-loader",
-                "@ngtools/webpack",
+            test: /.ts$/,
+            use: [
+                { loader: "nativescript-dev-webpack/tns-aot-loader" },
+                {
+                    loader: "@ngtools/webpack",
+                    options: ngToolsWebpackOptions,
+                },
             ]
-        }
+        },
 
     ];
 }
 
 function getPlugins(platform, env) {
     let plugins = [
-        new BundleAnalyzerPlugin({
-            analyzerMode: "static",
-            openAnalyzer: false,
-            generateStatsFile: true,
-            reportFilename: join(__dirname, "report", `${platform}-report.html`),
-            statsFilename: join(__dirname, "report", `${platform}-stats.json`),
-        }),
-
         new ExtractTextPlugin(mainSheet),
 
         // Vendor libs go to the vendor.js chunk
@@ -179,13 +180,26 @@ function getPlugins(platform, env) {
             "./vendor",
             "./bundle",
         ]),
+        
+        // Support for web workers since v3.2
+        new NativeScriptWorkerPlugin(),
+
+        // Generate report files for bundles content
+        new BundleAnalyzerPlugin({
+            analyzerMode: "static",
+            openAnalyzer: false,
+            generateStatsFile: true,
+            reportFilename: join(__dirname, "report", `report.html`),
+            statsFilename: join(__dirname, "report", `stats.json`),
+        }),
 
         // Angular AOT compiler
-        new AotPlugin({
-            tsConfigPath: "tsconfig.aot.json",
-            entryModule: resolve(__dirname, "app/app.module#AppModule"),
-            typeChecking: false
-        }),
+        new AotPlugin(
+            Object.assign({
+                entryModule: resolve(__dirname, "app/app.module#AppModule"),
+                typeChecking: false
+            }, ngToolsWebpackOptions)
+        ),
 
         // Resolve .ios.css and .android.css component stylesheets, and .ios.html and .android component views
         new nsWebpack.UrlResolvePlugin({
