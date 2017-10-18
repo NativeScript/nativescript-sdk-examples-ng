@@ -29,26 +29,26 @@
     }
   },
   "dependencies": {
-    "@angular/animations": "~4.2.6",
-    "@angular/common": "~4.2.6",
-    "@angular/compiler": "~4.2.6",
-    "@angular/core": "~4.2.6",
-    "@angular/forms": "~4.2.6",
-    "@angular/http": "~4.2.6",
-    "@angular/platform-browser": "~4.2.6",
-    "@angular/router": "~4.2.6",
+    "@angular/animations": "~4.4.1",
+    "@angular/common": "~4.4.1",
+    "@angular/compiler": "~4.4.1",
+    "@angular/core": "~4.4.1",
+    "@angular/forms": "~4.4.1",
+    "@angular/http": "~4.4.1",
+    "@angular/platform-browser": "~4.4.1",
+    "@angular/router": "~4.4.1",
     "nativescript-angular": "next",
-    "nativescript-camera": "~3.0.0",
-    "nativescript-geolocation": "^3.0.0",
+    "nativescript-camera": "~3.1.2",
+    "nativescript-geolocation": "^4.1.1",
     "nativescript-intl": "~3.0.0",
     "nativescript-theme-core": "^1.0.4",
     "reflect-metadata": "~0.1.8",
-    "rxjs": "^5.4.0",
+    "rxjs": "^5.0.1",
     "tns-core-modules": "next",
-    "zone.js": "^0.8.11"
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "~4.2.6",
+    "@angular/compiler-cli": "~4.4.1",
     "@ngtools/webpack": "~1.5.3",
     "babel-traverse": "6.11.4",
     "babel-types": "6.11.1",
@@ -73,7 +73,8 @@
     "typescript": "~2.3.4",
     "webpack": "~2.6.1",
     "webpack-bundle-analyzer": "^2.8.2",
-    "webpack-sources": "~1.0.1"
+    "webpack-sources": "~1.0.1",
+    "nativescript-worker-loader": "~0.8.1"
   },
   "scripts": {
     "pretsc": "npm install",
