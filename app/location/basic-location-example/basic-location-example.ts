@@ -38,6 +38,7 @@ export class BasicLocationExampleComponent {
         }, function (e) {
             console.log("Location error received: " + (e.message || e));
         });
+        // << check-is-service-enabled
     }
 
     public getDistance() {
