@@ -47,7 +47,7 @@ export class BasicTextFieldComponent implements OnInit {
         this.isButtonVisible = true;
         this.isItemVisible = true;
 
-        setTimeout(function(){
+        setTimeout(function() {
             textFielsBDate.dismissSoftInput();
         }, 100);
 
@@ -58,7 +58,7 @@ export class BasicTextFieldComponent implements OnInit {
         this.isButtonVisible = true;
         this.isItemVisible = true;
 
-        setTimeout(function(){
+        setTimeout(function() {
             textFielsBDate.dismissSoftInput();
         }, 100);
     }
