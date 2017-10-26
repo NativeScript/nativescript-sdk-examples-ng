@@ -1,7 +1,4 @@
-TimePicker can be easily configured by setting the required properties.
-
-HTML
-<snippet id='creating-timepicker-html'/>
+Timer method `setInterval` can be used to apply recurring action on given interval in miliseconds
 
 TypeScript
-<snippet id='time-picker-configure-code'/>
+<snippet id='set-interval-example'/>

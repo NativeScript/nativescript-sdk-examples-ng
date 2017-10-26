@@ -1,4 +1,4 @@
-TimePicker can be easily configured by setting the required properties.
+Timer method `setTimeout` can be used to delay the execution of an action in miliseconds.
 
 TypeScript
-<snippet id='settimeout-time-picker-configure-code'/>
+<snippet id='settimeout-timer-code'/>
