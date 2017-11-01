@@ -23,5 +23,15 @@ export class BindingTabViewItemsComponent {
             this.items.push(new DataItem("item " + i));
         }
     }
+
+    changeTab() {
+        if (this.tabSelectedIndex === 0) {
+            this.tabSelectedIndex = 1;
+        } else if (this.tabSelectedIndex === 1) {
+            this.tabSelectedIndex = 2;
+        } else if (this.tabSelectedIndex === 2) {
+            this.tabSelectedIndex = 0;
+        }
+    }
 }
 // << binding-tab-view-code
