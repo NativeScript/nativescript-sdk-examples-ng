@@ -3,6 +3,7 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { TabViewExamplesComponent } from "./tab-view-examples.component";
 import { BasicTabViewComponent } from "./basic-tab-view/basic-tab-view.component";
+import { TabViewIconFontsComponent } from "./tab-view-icon-fonts/tab-view-icon-fonts.component";
 import { TabViewItemsComponent } from "./tab-view-items/tab-view-items.component";
 import { CustomizingTabViewItemsComponent } from "./customizing-tab-view-items/customizing-tab-view-items.component";
 import { BindingTabViewItemsComponent } from "./binding-tab-view-items/binding-tab-view-items.component";
@@ -32,6 +33,11 @@ export const routerConfig = [
         path: "binding",
         component: BindingTabViewItemsComponent,
         data: { title: "Binding (Two-way) TabView selectedIndex" }
+    },
+    {
+        path: "icon-fonts",
+        component: TabViewIconFontsComponent,
+        data: { title: "Using icon font in TabView" }
     }
 ];
 
@@ -49,7 +55,8 @@ export const routerConfig = [
         BasicTabViewComponent,
         TabViewItemsComponent,
         CustomizingTabViewItemsComponent,
-        BindingTabViewItemsComponent
+        BindingTabViewItemsComponent,
+        TabViewIconFontsComponent
     ]
 })
 
