@@ -9,7 +9,6 @@ require("@angular/http");
 require("@angular/router");
 
 require("nativescript-angular/platform-static");
-require("nativescript-angular/animations");
 require("nativescript-angular/router");
 require("nativescript-angular/forms");
 
