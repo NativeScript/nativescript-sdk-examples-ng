@@ -29,7 +29,6 @@
     }
   },
   "dependencies": {
-    "@angular/animations": "~4.4.1",
     "@angular/common": "~4.4.1",
     "@angular/compiler": "~4.4.1",
     "@angular/core": "~4.4.1",
