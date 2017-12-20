@@ -12,17 +12,11 @@ export class HttpGetComponent implements OnInit {
     public userAgent: string;
     public origin: string;
     public url: string;
-    public status: number;
-    public statusText: string;
-    public dateHeader: string;
-    public typeHeader: string;
-    public serverHeader: string;
 
     constructor(private myService: MyHttpGetService) { }
 
     ngOnInit() {
         this.extractData();
-        this.extractResponseInfo();
     }
 
     extractData() {
@@ -31,19 +25,6 @@ export class HttpGetComponent implements OnInit {
                 this.onGetDataSuccess(result);
             }, (error) => {
                 this.onGetDataError(error);
-            });
-    }
-
-    extractResponseInfo() {
-        this.myService.getResponseInfo()
-            .subscribe(res => {
-                this.status = res.status;
-                this.statusText = res.statusText;
-                this.typeHeader = res.headers.get("Content-Type");
-                this.dateHeader = res.headers.get("Date");
-                this.serverHeader = res.headers.get("Server");
-            }, (error) => {
-                console.log("onGetResponseInfo" + error);
             });
     }
 
@@ -61,4 +42,3 @@ export class HttpGetComponent implements OnInit {
     }
 }
 // << http-get-component
-
