@@ -9,7 +9,7 @@ import { ObservableArray } from "data/observable-array";
 })
 export class SignupDataEntryExampleComponent  {
     // >> dataentry-signup-code
-    public secureproperty= true;
+    public secureproperty = true;
 
     public onFacebookLoginTap() {
         console.log("login with facebook");
