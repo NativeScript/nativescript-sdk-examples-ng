@@ -35,7 +35,7 @@ export class BasicTextFieldComponent  {
         // Gets or sets the autocapitalization type. Options: "none" | "words" | "sentences" | "allcharacters"
         console.log(textField.autocapitalizationType);
 
-        // Gets or sets a value indicating when the text property will be updated. 
+        // Gets or sets a value indicating when the text property will be updated.
         console.log(textField.updateTextTrigger);
         // Gets or sets whether the instance is editable.
         console.log(textField.editable);
