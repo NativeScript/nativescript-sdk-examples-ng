@@ -1,93 +1,86 @@
-<!-- >> sample-ui-textfield-html -->
-<GridLayout rows="*" columns="*" sdkExampleTitle sdkToggleNavButton>
-	<ScrollView row="0" col="0">
-		<GridLayout rows="*" columns="*">
-			<StackLayout class="form">
-				<StackLayout class="input-field">
-					<Label class="label" text="Focused  TextField" row="1" col="0" textWrap="true"></Label>
-					<TextField class="input input-border" id="firstTextFieldId" hint="Focused TextField" text="" row="1" col="1"></TextField>
-				</StackLayout>
-				<StackLayout class="input-field">
-					<Label class="label" text="Autocapitalization" row="2" col="0" textWrap="true"></Label>
-					<TextField class="input input-border" #stf hint="allCharacters" autocorrect="false" text="" autocapitalizationType="allCharacters"
-						row="2" col="1"></TextField>
-					<TextField class="input input-border" #stf hint="none" autocorrect="false" text="" autocapitalizationType="none" row="3"
-						col="1"></TextField>
-					<TextField class="input input-border" #stf hint="sentences" autocorrect="false" text="" autocapitalizationType="sentences"
-						row="4" col="1"></TextField>
-					<TextField class="input input-border" #stf hint="words" autocorrect="false" text="" autocapitalizationType="words" row="5"
-						col="1"></TextField>
-				</StackLayout>
-				<StackLayout class="input-field">
-					<Label class="label" text="Passwords field" row="6" col="0" textWrap="true"></Label>
-					<TextField class="input input-border" hint="Default" autocorrect="false" secure="true" text="" row="6" col="1" returnKeyType="next"></TextField>
-					<TextField class="input input-border" hint="With text color" hintColor="#cc0000" color="#cc0000" autocorrect="false" secure="true"
-						text="" row="7" col="1" returnKeyType="next"></TextField>
-				</StackLayout>
-				<StackLayout class="input-field">
-					<Label class="label" text="Keyboard types" row="8" col="0" textWrap="true"></Label>
-					<TextField class="input input-border" autocorrect="false" hint="done" text="" row="8" col="1" returnKeyType="done"></TextField>
-					<TextField class="input input-border" autocorrect="false" hint="go" text="" row="9" col="1" returnKeyType="go"></TextField>
-					<TextField class="input input-border" autocorrect="false" hint="next" text="" row="10" col="1" returnKeyType="next"></TextField>
-					<TextField class="input input-border" autocorrect="false" hint="search" text="" row="11" col="1" returnKeyType="search"></TextField>
-					<TextField class="input input-border" autocorrect="false" hint="send" text="" row="12" col="1" returnKeyType="send"></TextField>
-				</StackLayout>
-				<StackLayout class="input-field">
-					<Label class="label" text="Auto-correct" row="13" col="0" textWrap="true"></Label>
-					<TextField class="input input-border" autocorrect="true" hint="With auto-correct" text="" row="13" col="1" returnKeyType="next"></TextField>
-					<TextField class="input input-border" autocorrect="false" hint="Without auto-correct" text="" row="14" col="1" returnKeyType="next"></TextField>
-				</StackLayout>
-				<StackLayout class="input-field">
-					<Label class="label" text="Setting Max text length(max 3 characters)"  textWrap="true"></Label>
-					<TextField class="input input-border" maxLength="3" hint="With maxLength" text=""  returnKeyType="done"></TextField>
-					<Label class="label" text="Setting Max text length(max 3 characters) with secure='true'"  textWrap="true"></Label>
-					<TextField class="input input-border" maxLength="3" hint="maxLength with secure='true'" text="" secure="true" returnKeyType="done"></TextField>
-				</StackLayout>
-				<StackLayout class="input-field">
-					<Label class="label" text="Colors and Border style" row="15" col="0" textWrap="true"></Label>
-					<TextField class="input input-border" autocorrect="false" hint="Default hint color" text="" row="15" col="1" returnKeyType="next"></TextField>
-					<TextField class="input input-border" autocorrect="false"  style.placeholderColor="#0066cc" hint="Hint text color" text="" row="16"
-						col="1" returnKeyType="next"></TextField>
-					<TextField class="input input-border" autocorrect="false" hint="Default hint color" text="Default text color" row="17" col="1"
-						returnKeyType="next"></TextField>
-					<TextField class="input input-border" autocorrect="false" hint=" Blue Text Color" color="#0066cc" text="Text color" row="18"
-						col="1" returnKeyType="next"></TextField>
-					<TextField class="input" autocorrect="false" hint="Set Border Width" text="Set Border Width" borderWidth="5" borderColor="#6666ff"
-						row="19" col="1" returnKeyType="next"></TextField>
-					<TextField class="input" autocorrect="false" hint="Green Border Color" text="Green Border Color" borderWidth="2" borderColor="#339933"
-						row="20" col="1" returnKeyType="next"></TextField>
-					<TextField class="input" autocorrect="false" hint="Set Border Radius" text="Set Border Radius" borderWidth="2" borderRadius="40"
-						borderColor="#6666ff" row="21" col="1" returnKeyType="next"></TextField>
-				</StackLayout>
-				<StackLayout class="input-field">
-					<Label class="label" text="TextAlignment" row="22" col="0" textWrap="true"></Label>
-					<TextField class="input input-border" autocorrect="false" hint="left" text="left" textAlignment="left" row="22" col="1" returnKeyType="next"></TextField>
-					<TextField class="input input-border" autocorrect="false" hint="center" text="center" textAlignment="center" row="23" col="1"
-						returnKeyType="next"></TextField>
-					<TextField class="input input-border" autocorrect="false" hint="right" text="right" textAlignment="right" row="24" col="1"
-						returnKeyType="next"></TextField>
-				</StackLayout>
-				<StackLayout class="input-field">
-					<Label class="label" text="FontSize" row="25" col="0" textWrap="true"></Label>
-					<TextField class="input input-border" autocorrect="false" hint="Set FontSize" text="" fontSize="27" row="25" col="1" returnKeyType="next"></TextField>
-				</StackLayout>
-				<StackLayout class="input-field">
-					<Label class="label" text="FontFamily" row="26" col="0" textWrap="true"></Label>
-					<TextField autocorrect="false" fontFamily="serif" hint="serif" text="serif" class="input input-border" row="26" col="1" returnKeyType="next"></TextField>
-					<TextField autocorrect="false" fontFamily="sans-serif" hint="sans-serif" text="sans-serif" class="input input-border" row="27" col="1" returnKeyType="next"></TextField>
-					<TextField autocorrect="false" fontFamily="monospace" hint="monospace" text="monospace" class="input input-border" row="28" col="1" returnKeyType="next"></TextField>
-				</StackLayout>
-				<StackLayout class="input-field">
-					<Label class="label" text="Date" row="29" col="0" textWrap="true"></Label>
-					<TextField class="input input-border" id="textFieldBDate" hint="Enter date" [text]='birthDate | date:"MM/dd/yy"' (tap)="showDatePicker()"
-						row="29" col="1" returnKeyType="done" (returnPress)="submit()"></TextField>
-				</StackLayout>
-			</StackLayout>
-		</GridLayout>
-	</ScrollView>
-	<StackLayout backgroundColor="white" [visibility]="isItemVisible ? 'visible' : 'collapsed'" row="0" col="0">
-		<DatePicker class="m-15" id="datePicker" #dp [visibility]="isItemVisible ? 'visible' : 'collapsed'"></DatePicker>
-		<Button class="btn btn-primary btn-active" text="Tap to enter the date" (tap)="enterDate()" [visibility]="isButtonVisible ? 'visible' : 'collapsed'"></Button>
+<ScrollView sdkExampleTitle sdkToggleNavButton>
+	<StackLayout class="form">
+		<StackLayout class="input-field">
+			<Label class="label" text="Focused  TextField" textWrap="true"></Label>
+			<TextField class="input input-border" (loaded)="firstTfLoaded($event)" hint="Focused TextField" text=""></TextField>
+		</StackLayout>
+		<StackLayout class="input-field">
+			<Label class="label" text="Autocapitalization" textWrap="true"></Label>
+			<TextField class="input input-border" #stf hint="allCharacters" autocorrect="false" text="" autocapitalizationType="allCharacters"></TextField>
+			<TextField class="input input-border" #stf hint="none" autocorrect="false" text="" autocapitalizationType="none"></TextField>
+			<TextField class="input input-border" #stf hint="sentences" autocorrect="false" text="" autocapitalizationType="sentences"></TextField>
+			<TextField class="input input-border" #stf hint="words" autocorrect="false" text="" autocapitalizationType="words"></TextField>
+		</StackLayout>
+		<StackLayout class="input-field">
+			<Label class="label" text="Passwords field" row="6" col="0" textWrap="true"></Label>
+			<TextField class="input input-border" hint="Default" autocorrect="false" secure="true" text="" returnKeyType="next"></TextField>
+			<TextField class="input input-border" hint="With text color" hintColor="#cc0000" color="#cc0000" autocorrect="false" secure="true"
+			 text="" returnKeyType="next"></TextField>
+		</StackLayout>
+		<StackLayout class="input-field">
+			<Label class="label" text="Keyboard types" row="8" col="0" textWrap="true"></Label>
+			<TextField class="input input-border" autocorrect="false" hint="done" text="" returnKeyType="done"></TextField>
+			<TextField class="input input-border" autocorrect="false" hint="go" text="" returnKeyType="go"></TextField>
+			<TextField class="input input-border" autocorrect="false" hint="next" text="" returnKeyType="next"></TextField>
+			<TextField class="input input-border" autocorrect="false" hint="search" text="" returnKeyType="search"></TextField>
+			<TextField class="input input-border" autocorrect="false" hint="send" text="" returnKeyType="send"></TextField>
+		</StackLayout>
+		<StackLayout class="input-field">
+			<Label class="label" text="Auto-correct" row="13" col="0" textWrap="true"></Label>
+			<TextField class="input input-border" autocorrect="true" hint="With auto-correct" text="" returnKeyType="next"></TextField>
+			<TextField class="input input-border" autocorrect="false" hint="Without auto-correct" text="" returnKeyType="next"></TextField>
+		</StackLayout>
+		<StackLayout class="input-field">
+			<Label class="label" text="Setting Max text length(max 3 characters)" textWrap="true"></Label>
+			<TextField class="input input-border" maxLength="3" hint="With maxLength" text="" returnKeyType="done"></TextField>
+			<Label class="label" text="Setting Max text length(max 3 characters) with secure='true'" textWrap="true"></Label>
+			<TextField class="input input-border" maxLength="3" hint="maxLength with secure='true'" text="" secure="true" returnKeyType="done"></TextField>
+		</StackLayout>
+		<StackLayout class="input-field">
+			<Label class="label" text="Colors and Border style" row="15" col="0" textWrap="true"></Label>
+			<TextField class="input input-border" autocorrect="false" hint="Default hint color" text="" returnKeyType="next"></TextField>
+			<TextField class="input input-border" autocorrect="false" style.placeholderColor="#0066cc" hint="Hint text color" text=""
+			 returnKeyType="next"></TextField>
+			<TextField class="input input-border" autocorrect="false" hint="Default hint color" text="Default text color" returnKeyType="next"></TextField>
+			<TextField class="input input-border" autocorrect="false" hint=" Blue Text Color" color="#0066cc" text="Text color" returnKeyType="next"></TextField>
+			<TextField class="input" autocorrect="false" hint="Set Border Width" text="Set Border Width" borderWidth="5" borderColor="#6666ff"
+			 returnKeyType="next"></TextField>
+			<TextField class="input" autocorrect="false" hint="Green Border Color" text="Green Border Color" borderWidth="2" borderColor="#339933"
+			 returnKeyType="next"></TextField>
+			<TextField class="input" autocorrect="false" hint="Set Border Radius" text="Set Border Radius" borderWidth="2" borderRadius="40"
+			 borderColor="#6666ff" returnKeyType="next"></TextField>
+		</StackLayout>
+		<StackLayout class="input-field">
+			<Label class="label" text="TextAlignment" row="22" col="0" textWrap="true"></Label>
+			<TextField class="input input-border" autocorrect="false" hint="left" text="left" textAlignment="left" returnKeyType="next"></TextField>
+			<TextField class="input input-border" autocorrect="false" hint="center" text="center" textAlignment="center" returnKeyType="next"></TextField>
+			<TextField class="input input-border" autocorrect="false" hint="right" text="right" textAlignment="right" returnKeyType="next"></TextField>
+		</StackLayout>
+		<StackLayout class="input-field">
+			<Label class="label" text="FontSize" textWrap="true"></Label>
+			<TextField class="input input-border" autocorrect="false" hint="Set FontSize" text="" fontSize="27" returnKeyType="next"></TextField>
+		</StackLayout>
+		<StackLayout class="input-field">
+			<Label class="label" text="FontFamily" row="26" col="0" textWrap="true"></Label>
+			<TextField autocorrect="false" fontFamily="serif" hint="serif" text="serif" class="input input-border" returnKeyType="next"></TextField>
+			<TextField autocorrect="false" fontFamily="sans-serif" hint="sans-serif" text="sans-serif" class="input input-border" returnKeyType="next"></TextField>
+			<TextField autocorrect="false" fontFamily="monospace" hint="monospace" text="monospace" class="input input-border" returnKeyType="next"></TextField>
+		</StackLayout>
+		<StackLayout class="input-field">
+			<Label class="label" text="Date" textWrap="true"></Label>
+			<!-- >> sample-ui-textfield-html -->
+			<TextField hint="Enter date" 
+					   [text]='birthDate | date:"MM/dd/yy"' 
+					   secure="false"
+					   keyboardType="datetime"
+					   returnKeyType="done" 
+					   (returnPress)="onReturnPress($event)"
+					   autocorrect="false"
+					   maxLength="10"
+					   (focus)="onFocus($event)" 
+					   (blur)="onBlur($event)" 
+					   class="input input-border"></TextField>
+			<!-- << sample-ui-textfield-html -->
+		</StackLayout>
 	</StackLayout>
-</GridLayout>
-<!-- << sample-ui-textfield-html -->
+</ScrollView>
