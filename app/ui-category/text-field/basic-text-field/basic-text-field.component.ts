@@ -8,6 +8,7 @@ import { setTimeout } from "timer";
     templateUrl: "./basic-text-field.component.html"
 })
 export class BasicTextFieldComponent  {
+    public birthDate;
 
     // >> textfield-handle-submit-event
     firstTfLoaded(args) {
