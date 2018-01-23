@@ -1,17 +1,22 @@
 <!-- >> binding-tab-view-html -->
 <TabView [(ngModel)]="tabSelectedIndex" selectedColor="#FF0000" iosIconRenderingMode="alwaysOriginal" sdkExampleTitle sdkToggleNavButton>
-    <StackLayout *tabItem="{title: 'Profile', iconSource: 'res://icon'}" >
-        <ListView [items]="items">
-            <ng-template let-item="item">
-            	<Label [text]="item.itemDesc"></Label>
-            </ng-template>
-        </ListView>
+    <StackLayout *tabItem="{title: 'Profile', iconSource: 'res://icon'}">
+        <StackLayout>
+            <Label [text]="'Profile Tab (tabSelectedIndex = '+ tabSelectedIndex +')'" class="h2 m-t-16 text-center" textWrap="true"></Label>
+            <Button text="Change Tab via ngModel" (tap)="changeTab()" class="btn btn-primary btn-active"></Button>
+        </StackLayout>
     </StackLayout>
     <StackLayout *tabItem="{title: 'Stats'}">
-    	<Label text="Second tab item"></Label>
+        <StackLayout>
+            <Label [text]="'Stats Tab (tabSelectedIndex = '+ tabSelectedIndex +')'" class="h2 m-t-16 text-center" textWrap="true"></Label>
+            <Button text="Change Tab via ngModel" (tap)="changeTab()" class="btn btn-primary btn-active"></Button>
+        </StackLayout>
     </StackLayout>
     <StackLayout *tabItem="{title: 'Settings'}">
-    	<Label text="Third tab item"></Label>
+        <StackLayout>
+            <Label [text]="'Settings Tab (tabSelectedIndex = '+ tabSelectedIndex +')'" class="h2 m-t-16 text-center" textWrap="true"></Label>
+            <Button text="Change Tab via ngModel" (tap)="changeTab()" class="btn btn-primary btn-active"></Button>
+        </StackLayout>
     </StackLayout>
 </TabView>
 <!-- << binding-tab-view-html -->

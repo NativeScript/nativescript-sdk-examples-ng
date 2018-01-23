@@ -3,6 +3,7 @@ import { Component } from "@angular/core";
 import { Location, getCurrentLocation, isEnabled, distance, enableLocationRequest } from "nativescript-geolocation";
 // << import-geolocation-plugin
 import { SegmentedBarItem } from "ui/segmented-bar";
+import { Accuracy } from "ui/enums";
 
 @Component({
     moduleId: module.id,
@@ -28,13 +29,16 @@ export class BasicLocationExampleComponent {
 
     public isLocationEnabled() {
         // >> check-is-service-enabled
-        let isEnabledProperty = isEnabled();
+        isEnabled().then(function (isLocationEnabled) {
+            let message = "Location services are not available";
+            if (isLocationEnabled) {
+                message = "Location services are available";
+            }
+            alert(message);
+        }, function (e) {
+            console.log("Location error received: " + (e.message || e));
+        });
         // << check-is-service-enabled
-        let message = "Location services are not available";
-        if (isEnabledProperty) {
-            message = "Location services are available";
-        }
-        alert(message);
     }
 
     public getDistance() {
@@ -55,7 +59,10 @@ export class BasicLocationExampleComponent {
 
     public getLocationOnce() {
         // >> get-current-location
-        getCurrentLocation({ timeout: 500 })
+        getCurrentLocation({
+            desiredAccuracy: Accuracy.high,
+            timeout: 5000
+         })
             .then(location => {
                 console.log("Location received: " + location);
                 this.startpointLatitude = location.latitude;

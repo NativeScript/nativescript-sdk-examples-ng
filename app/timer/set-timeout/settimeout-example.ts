@@ -1,4 +1,4 @@
-// >> settimeout-time-picker-configure-code
+
 import { Component } from "@angular/core";
 import { EventData } from "data/observable";
 import { setInterval, setTimeout, clearInterval } from "timer";
@@ -26,10 +26,12 @@ export class SetTimeoutComponent {
         let button = <Button>args.object;
         button.backgroundColor = new Color("#3078FE");
 
+        // >> settimeout-timer-code
         setTimeout(() => {
             this.counter--;
             button.backgroundColor = new Color("#30BCFF");
         }, 1000);
+        // << settimeout-timer-code
     }
 }
-// << settimeout-time-picker-configure-code
+

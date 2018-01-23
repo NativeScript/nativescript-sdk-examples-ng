@@ -6,6 +6,7 @@ let menuLinks = [
     new Link("TabView items", "/tab-view/items"),
     new Link("Customizing Tab View", "/tab-view/customizing"),
     new Link("Binding (Two-way) TabView selectedIndex", "/tab-view/binding"),
+    new Link("Using icon font in TabView", "/tab-view/icon-fonts"),
 ];
 
 @Component({

@@ -1,4 +1,4 @@
-// >> time-picker-configure-code
+
 import { Component } from "@angular/core";
 import { setInterval, setTimeout, clearInterval } from "timer";
 
@@ -17,10 +17,13 @@ export class SetIntervalComponent {
     constructor() {
         this.buttoncolor = "blue";
         let that = this;
+
+         // >> set-interval-example
         this.id = setInterval(() => {
             let randNumber = Math.floor(Math.random() * (that.color.length));
             that.buttoncolor = that.color[randNumber];
         }, 1000);
+        // << set-interval-example
     }
 
     public onButtonTap(args) {
@@ -30,13 +33,15 @@ export class SetIntervalComponent {
             this.buttonText = "Enable color change";
         } else {
             let that = this;
+
             this.id = setInterval(() => {
                 let randNumber = Math.floor(Math.random() * (that.color.length));
                 that.buttoncolor = that.color[randNumber];
             }, 1000);
+
             this.status = true;
             this.buttonText = "Disable color change";
         }
     }
 }
-// << time-picker-configure-code
+

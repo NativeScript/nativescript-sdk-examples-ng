@@ -2,7 +2,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
-import { NativeScriptHttpModule } from "nativescript-angular/http";
+import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 
 import { HttpExamplesComponent } from "./http-examples.component";
 
@@ -29,7 +29,7 @@ export const routerConfig = [
     schemas: [NO_ERRORS_SCHEMA],
     imports: [
         TitleAndNavButtonModule,
-        NativeScriptHttpModule,
+        NativeScriptHttpClientModule,
         NativeScriptFormsModule,
         NativeScriptCommonModule,
         NativeScriptRouterModule,

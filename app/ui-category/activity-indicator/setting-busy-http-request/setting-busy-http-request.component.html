@@ -1,0 +1,17 @@
+<GridLayout sdkExampleTitle sdkToggleNavButton rows=" auto auto, auto, auto, auto" columns="*, 2*">
+    <!-- >> activity-indicator-setting-busy-html -->
+    <Label class="p-15" row="0" col="0" colSpan="2" textAlignment="center" text="The response of the HTTP request will be returned with 5 sec. delay." textWrap="true"></Label>
+    
+    <Label class="p-15" row="1" col="0" text="IP" textWrap="true"></Label>
+    <Label class="p-15" row="2" col="0" text="Status" textWrap="true"></Label>
+    <Label class="p-15" row="3" col="0" text="Slept" textWrap="true"></Label>
+    <Label class="p-15" row="4" col="0" text="Response" textWrap="true"></Label>
+
+    <Label class="p-15" row="1" col="1" [text]="originatingIp" textWrap="true"></Label>
+    <Label class="p-15" row="2" col="1" [text]="status" textWrap="true"></Label>
+    <Label class="p-15" row="3" col="1" text="{{ slept + ' seconds'}}" textWrap="true"></Label>
+    <Label class="p-15" row="4" col="1" [text]="response" textWrap="true"></Label>
+    
+    <ActivityIndicator row="0" rowSpan="5" colSpan="2" #activityIndicator [busy]="isBusy" class="activity-indicator"></ActivityIndicator>
+    <!-- << activity-indicator-setting-busy-html -->
+</GridLayout>

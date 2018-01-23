@@ -3,6 +3,7 @@ import { Component } from "@angular/core";
 import { Location, enableLocationRequest, watchLocation, clearWatch } from "nativescript-geolocation";
 // << import-geolocation-plugin-monitoring
 import { SegmentedBarItem } from "ui/segmented-bar";
+import { Accuracy } from "ui/enums";
 
 @Component({
     moduleId: module.id,
@@ -20,6 +21,12 @@ export class LocationMonitoringExampleComponent {
     public monitorSpeed: string = "0";
 
     constructor() {
+        this.options = {
+            desiredAccuracy: Accuracy.high,
+            updateDistance: 0.1,
+            updateTime: 3000,
+            minimumUpdateTime: 100
+        };
         enableLocationRequest(true);
     }
 
