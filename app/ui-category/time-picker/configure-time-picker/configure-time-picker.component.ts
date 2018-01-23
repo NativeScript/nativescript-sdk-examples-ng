@@ -13,5 +13,9 @@ export class ConfigureTimePickerComponent {
         timePicker.hour = 9;
         timePicker.minute = 25;
     }
+
+    onTimeChanged(args) {
+        console.log(args.value);
+    }
     // << time-picker-configure-code
 }
