@@ -1,5 +1,5 @@
 ### Create Image via HTML
-The `src` property can accpets local and remote paths. 
+The `src` property can accept local and remote paths. 
 It can also accept paths and `ImageSource` instances bind via code behind.
 <snippet id='creating-image-html'/>
 
@@ -7,7 +7,7 @@ It can also accept paths and `ImageSource` instances bind via code behind.
 <snippet id='creating-image-code'/>
 
 ### Background Image via CSS
-Use property `background-image` to apply imags via CSS.
+Use property `background-image` to apply image via CSS.
 <snippet id='css-load-background'/>
 <snippet id='load-image-css'/>
 
