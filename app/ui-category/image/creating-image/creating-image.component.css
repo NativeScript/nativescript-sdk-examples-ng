@@ -1,12 +1,12 @@
 /* >> css-load-background */
-#layoutBackgroundImageURL{
+.layoutBackgroundImageURL{
     background-image: url("https://docs.nativescript.org/img/cli-getting-started/angular/chapter0/NativeScript_logo.png");
     background-repeat: no-repeat;
     height: 120;
     margin: 15;
 }
 
-#layoutBackgroundImageFromFolder{
+.layoutBackgroundImageFromFolder{
     background-image: url("~/images/logo.png");
     background-repeat: no-repeat;
     height: 60;
@@ -14,7 +14,7 @@
 }
 
 
-#layoutBackgroundImageFromRes{
+.layoutBackgroundImageFromRes{
     background-image: url("res://logo_white_bg");
     background-repeat: no-repeat;
     height: 100;

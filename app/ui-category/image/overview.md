@@ -1,4 +1,7 @@
-The Image widget shows an image. You can load the image from an ImageSource or from a URL.
+The `Image` widget shows an image in your mobile application. 
+We can load the image from an `ImageSource` or from a URL using the `src` property.
+Behind the `Image` module stands `UIImage` on iOS and `android.widget.ImageView` on Android.
+As working with images is an essential part for each mobile application following [the best practices](https://docs.nativescript.org/best-practices/images-optimisations) is a must.
 
 **API Reference for** [Image Class](http://docs.nativescript.org/api-reference/modules/_ui_image_.html)
 
