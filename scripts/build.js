@@ -59,6 +59,9 @@ function gatherArticles(cwd, appDir, articlesDir, jenkinsPosition) {
     });
 
     subDirs.forEach(function (subDir) {
+        console.log("------------------------list sunDirs----------------------------------");
+        console.log(subDir);
+        console.log("----------------------------------------------------------");
         var currentDir = path.join(articlesDir, subDir);
         currentDir = updateSubfoldersName(currentDir);
         fs.mkdirSync(currentDir);
@@ -69,7 +72,9 @@ function gatherArticles(cwd, appDir, articlesDir, jenkinsPosition) {
         var components = glob.sync(subDirPath + "/*/overview.md").filter(function (file) { 
             return !path.parse(file).dir.endsWith(CATEGORY);
         }).sort(compareFiles);  
-
+        console.log("------------------------components----------------------------------");
+        console.log(components);
+        console.log("----------------------------------------------------------");
         getComponents(cwd, components, currentDir, jenkinsPosition);
         gatherArticles(cwd, subDirPath, currentDir, jenkinsPosition);
     });
@@ -92,7 +97,12 @@ function getComponents(cwd, components, currentDir, jenkinsPosition) {
    components.forEach(function (overview) {
             var componentDirName = path.dirname(overview);
             var componentHeader = path.basename(componentDirName);
-
+            console.log("------------------------overview----------------------------------");
+            console.log(overview);
+            console.log(overview.replace("overview.md", ""));
+            console.log("Component header "+componentHeader);
+            console.log("componentDirName "+componentDirName)
+            console.log("----------------------------------------------------------");
             // Create the component article file, i.e. button.md
             var componentArticleFile = path.join(currentDir, componentHeader + ".md");
 
@@ -160,6 +170,22 @@ function getComponents(cwd, components, currentDir, jenkinsPosition) {
                 // Horizontal Line
                 fs.appendFileSync(componentArticleFile, "---\n\n",  {encoding:'utf8'});
             });
+
+            //End.md
+            var subDirPath = overview.replace("overview.md", "");
+                var end =path.join(subDirPath, "end.md");
+            fs.ensureDir(end)
+            .then(() => {
+                console.log("end------"+end);
+                var endContents = fs.readFileSync(end,  {encoding:'utf8'});
+                console.log("endContents------"+endContents);
+                fs.appendFileSync(componentArticleFile, endContents + "\n\n",  {encoding:'utf8'});
+              })
+              .catch(err => {
+                console.error(err)
+              })
+                
+           
         });
 }
 
