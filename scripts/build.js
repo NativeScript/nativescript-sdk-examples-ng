@@ -68,8 +68,7 @@ function gatherArticles(cwd, appDir, articlesDir, jenkinsPosition) {
         // Gather all component overviews in the subdirs - ui-category, ui-extended-category
         var components = glob.sync(subDirPath + "/*/overview.md").filter(function (file) { 
             return !path.parse(file).dir.endsWith(CATEGORY);
-        }).sort(compareFiles);  
-
+        }).sort(compareFiles);
         getComponents(cwd, components, currentDir, jenkinsPosition);
         gatherArticles(cwd, subDirPath, currentDir, jenkinsPosition);
     });
@@ -92,7 +91,6 @@ function getComponents(cwd, components, currentDir, jenkinsPosition) {
    components.forEach(function (overview) {
             var componentDirName = path.dirname(overview);
             var componentHeader = path.basename(componentDirName);
-
             // Create the component article file, i.e. button.md
             var componentArticleFile = path.join(currentDir, componentHeader + ".md");
 
@@ -160,6 +158,12 @@ function getComponents(cwd, components, currentDir, jenkinsPosition) {
                 // Horizontal Line
                 fs.appendFileSync(componentArticleFile, "---\n\n",  {encoding:'utf8'});
             });
+
+            //End.md
+            var subDirPath = overview.replace("/overview.md", "");
+            var end = path.join(subDirPath, "end.md");
+            var endContents = fs.readFileSync(end,  {encoding:'utf8'});
+            fs.appendFileSync(componentArticleFile, endContents + "\n\n",  {encoding:'utf8'}); 
         });
 }
 
