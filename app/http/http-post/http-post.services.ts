@@ -17,10 +17,11 @@ export class MyHttpPostService {
     }
 
     private createRequestOptions() {
-        let headers = new HttpHeaders();
-        headers.set("AuthKey", "my-key");
-        headers.set("AuthToken", "my-token");
-        headers.set("Content-Type", "application/json");
+        let headers = new HttpHeaders({
+            "AuthKey": "my-key",
+            "AuthToken": "my-token",
+            "Content-Type": "application/json"
+        });
         return headers;
     }
 }

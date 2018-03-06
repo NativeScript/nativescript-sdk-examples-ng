@@ -35,11 +35,12 @@ export class SettingBusyHttpRequestComponent implements AfterViewInit {
     }
 
     private createRequestHeader() {
-        let headers = new HttpHeaders();
         // set headers here e.g.
-        headers.append("AuthKey", "my-key");
-        headers.append("AuthToken", "my-token");
-        headers.append("Content-Type", "application/json");
+        let headers = new HttpHeaders({
+            "AuthKey": "my-key",
+            "AuthToken": "my-token",
+            "Content-Type": "application/json"
+        });
 
         return headers;
     }
