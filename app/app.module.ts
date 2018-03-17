@@ -3,7 +3,7 @@
 // >> (hide)
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { NgModule, NO_ERRORS_SCHEMA, NgModuleFactoryLoader } from "@angular/core";
-import { NativeScriptRouterModule, NSModuleFactoryLoader } from "nativescript-angular/router";
+import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 import { routes } from "./app.routes";
@@ -29,7 +29,6 @@ declare var GMSServices: any;
     ],
     providers: [
         ModalDialogService,
-        { provide: NgModuleFactoryLoader, useClass: NSModuleFactoryLoader }
     ]
 })
 // << ngmodule-config
