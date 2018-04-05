@@ -7,6 +7,8 @@ import { TabViewIconFontsComponent } from "./tab-view-icon-fonts/tab-view-icon-f
 import { TabViewItemsComponent } from "./tab-view-items/tab-view-items.component";
 import { CustomizingTabViewItemsComponent } from "./customizing-tab-view-items/customizing-tab-view-items.component";
 import { BindingTabViewItemsComponent } from "./binding-tab-view-items/binding-tab-view-items.component";
+import { TabsLimitComponent } from "./tabs-limit/tabs-limit.component";
+import { TabsPositionComponent } from "./tabs-position/tabs-position.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 export const routerConfig = [
@@ -38,6 +40,16 @@ export const routerConfig = [
         path: "icon-fonts",
         component: TabViewIconFontsComponent,
         data: { title: "Using icon font in TabView" }
+    },
+    {
+        path: "tabs-limit",
+        component: TabsLimitComponent,
+        data: { title: "Tabs limit(Android)" }
+    },
+    {
+        path: "tabs-position",
+        component: TabsPositionComponent,
+        data: { title: "Tabs position(Android)" }
     }
 ];
 
@@ -56,7 +68,9 @@ export const routerConfig = [
         TabViewItemsComponent,
         CustomizingTabViewItemsComponent,
         BindingTabViewItemsComponent,
-        TabViewIconFontsComponent
+        TabViewIconFontsComponent,
+        TabsLimitComponent,
+        TabsPositionComponent
     ]
 })
 
