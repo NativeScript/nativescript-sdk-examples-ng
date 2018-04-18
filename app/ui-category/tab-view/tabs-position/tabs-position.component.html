@@ -1,0 +1,30 @@
+<!-- >> tabs-position-html -->
+<GridLayout sdkExampleTitle sdkToggleNavButton>
+	<TabView selectedIndex="0"  (selectedIndexChange)="onIndexChanged($event)" androidTabsPosition="bottom"  >
+		<StackLayout *tabItem="{title: 'First Tab'}">
+			<Label text="First Tab" class="m-15 h2 text-left" color="blue"></Label>
+			<ScrollView>
+				<Label [text]="content" textWrap="true" class="m-15"></Label>
+			</ScrollView>
+		</StackLayout>
+		<StackLayout *tabItem="{title: 'Second Tab'}">
+			<Label text="Second Tab" class="m-15 h2 text-left" color="blue"></Label>
+			<ScrollView>
+				<Label [text]="content" textWrap="true" class="m-15"></Label>
+			</ScrollView>
+		</StackLayout>
+		<StackLayout *tabItem="{title: 'Third Tab'}">
+			<Label text="Third Tab" class="m-15 h2 text-left" color="blue"></Label>
+			<ScrollView>
+				<Label [text]="content" textWrap="true" class="m-15"></Label>
+			</ScrollView>
+		</StackLayout>
+		<StackLayout *tabItem="{title: 'Fourth Tab'}">
+			<Label text="Fourth Tab" class="m-15 h2 text-left" color="blue"></Label>
+			<ScrollView>
+				<Label [text]="content" textWrap="true" class="m-15"></Label>
+			</ScrollView>
+		</StackLayout>
+	</TabView>
+</GridLayout>
+<!-- << tabs-position-html -->
