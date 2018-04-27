@@ -1,6 +1,6 @@
 // >> using-async-pipe-code
 import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { Observable as RxObservable } from "rxjs/Observable";
+import { Observable as RxObservable } from "rxjs";
 
 export class DataItem {
     constructor(public id: number, public name: string) { }

@@ -1,7 +1,6 @@
 // >> http-post-service
 import { Injectable } from "@angular/core";
-import { Observable as RxObservable } from "rxjs/Observable";
-import "rxjs/add/operator/map";
+import { Observable as RxObservable } from "rxjs";
 import { HttpClient, HttpHeaders, HttpResponse } from "@angular/common/http";
 
 @Injectable()
@@ -12,8 +11,7 @@ export class MyHttpPostService {
 
     postData(data: any) {
         let options = this.createRequestOptions();
-        return this.http.post(this.serverUrl, { data }, { headers: options })
-            .map(res => res);
+        return this.http.post(this.serverUrl, { data }, { headers: options });
     }
 
     private createRequestOptions() {
