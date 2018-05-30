@@ -1,4 +1,4 @@
-import { Component, OnInit, NgModule } from "@angular/core";
+import { Component, OnInit, NgModule, ViewChild, ElementRef } from "@angular/core";
 import { ModalDialogParams } from "nativescript-angular/modal-dialog";
 import { DatePicker } from "ui/date-picker";
 import { Page } from "ui/page";
@@ -10,19 +10,13 @@ import { Page } from "ui/page";
 })
 export class ModalViewComponent implements OnInit {
     public currentdate: Date;
-
+    @ViewChild("datepicker") datePickerElement: ElementRef;
     constructor(private params: ModalDialogParams, private page: Page) {
         this.currentdate = new Date(params.context);
-
-        this.page.on("unloaded", () => {
-            // using the unloaded event to close the modal when there is user interaction
-            // e.g. user taps outside the modal page
-            this.params.closeCallback();
-        });
     }
 
     ngOnInit() {
-        let datePicker: DatePicker = <DatePicker>this.page.getViewById<DatePicker>("datePicker");
+        let datePicker: DatePicker = <DatePicker>this.datePickerElement.nativeElement;
         datePicker.year = this.currentdate.getFullYear();
         datePicker.month = this.currentdate.getMonth() + 1;
         datePicker.day = this.currentdate.getDate();
@@ -31,7 +25,9 @@ export class ModalViewComponent implements OnInit {
     }
 
     public submit() {
-        let datePicker: DatePicker = <DatePicker>this.page.getViewById<DatePicker>("datePicker");
+        let datePicker: DatePicker = <DatePicker>this.datePickerElement.nativeElement;
+        console.log("date result");
+        console.log(datePicker.date);
         this.params.closeCallback(datePicker.date);
     }
 }
