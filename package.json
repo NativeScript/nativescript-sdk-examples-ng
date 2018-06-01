@@ -22,10 +22,10 @@
   "nativescript": {
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-ios": {
-      "version": "next"
+      "version": "4.2.0-2018-06-01-02"
     },
     "tns-android": {
-      "version": "next"
+      "version": "4.2.0-2018-05-31-01"
     }
   },
   "dependencies": {

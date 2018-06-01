@@ -1,4 +1,4 @@
-Modal Dialog
+Modal Dialog Navigation
 
 @NgModule config
 <snippet id='ngmodule-config'/>
