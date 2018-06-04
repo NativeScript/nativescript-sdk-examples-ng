@@ -2,7 +2,8 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../link";
 
 let menuLinks = [
-    new Link("Modal page example", "/modal-page/sample-modal-page")
+    new Link("Modal page example", "/modal-page/sample-modal-page"),
+    new Link("Modal page navigation", "/modal-page/modal-page-navigation")
 ];
 
 @Component({
