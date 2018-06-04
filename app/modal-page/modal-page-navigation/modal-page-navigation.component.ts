@@ -5,7 +5,6 @@ import { HomeModalViewComponent } from "./home-modal-view.component";
 import { Page } from "tns-core-modules/ui/page/page";
 
 @Component({
-    selector: "modal-page-navigation",
     moduleId: module.id,
     providers: [ModalDialogService],
     templateUrl: "./modal-page-navigation.component.html"
@@ -16,7 +15,7 @@ export class ModalPageNavigationComponent implements OnInit {
         private _vcRef: ViewContainerRef) { }
 
     ngOnInit(): void { }
-
+    // >> opening-modal-page
     onTap(): void {
         const options: ModalDialogOptions = {
             viewContainerRef: this._vcRef,
@@ -29,4 +28,5 @@ export class ModalPageNavigationComponent implements OnInit {
                 console.log(result);
             });
     }
+    // << opening-modal-page
 }
