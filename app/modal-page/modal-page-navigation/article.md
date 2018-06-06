@@ -8,6 +8,10 @@ Defining the `page-router-outlet` for the modal page's main component and naviga
 <snippet id='main-modal-page'/>
 <snippet id='main-modal-page-code'/>
 
+Definig modal page innner component's routes
+
+<snippet id='main-modal-page'/>
+
 Defining the first inner modal page
 
 <snippet id='first-modal-page'/>
