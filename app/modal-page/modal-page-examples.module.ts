@@ -21,6 +21,7 @@ export const routerConfig = [
         component: SampleModalPageModuleExampleComponent,
         data: { title: "Sample modal page" }
     },
+    // >> modal-page-routes
     {
         path: "modal-page-navigation",
         component: ModalPageNavigationComponent,
@@ -34,6 +35,7 @@ export const routerConfig = [
             }
         ]
     }
+    // << modal-page-routes
 ];
 
 @NgModule({
