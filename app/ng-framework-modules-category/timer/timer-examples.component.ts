@@ -1,16 +1,17 @@
 import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { Link } from "./../link";
+import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Nested routers", "/routing/nested-routers"),
+    new Link("setInterval example", "/timer/setinterval"),
+    new Link("setTimeout example", "/timer/settimeout")
 ];
 
 @Component({
     moduleId: module.id,
-    templateUrl: "./../examples-list.component.html",
+    templateUrl: "./../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class RoutingExamplesComponent {
+export class TimerExamplesComponent {
     public links: Array<Link>;
 
     constructor() {

@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("FPS Meter usage", "/ns-framework-modules-category/fps-meter/fps-meter-usage")
+    new Link("FPS Meter usage", "/fps-meter/fps-meter-usage")
 ];
 
 @Component({

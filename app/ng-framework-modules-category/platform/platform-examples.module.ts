@@ -3,7 +3,7 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { PlatformExamplesComponent } from "./platform-examples.component";
 import { PlatformModuleExampleComponent } from "./platform-module-example/platform-module-example";
-import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {

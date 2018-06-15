@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Creating Colors", "/ns-framework-modules-category/color/creating-colors"),
+    new Link("Creating Colors", "/color/creating-colors"),
 ];
 
 @Component({

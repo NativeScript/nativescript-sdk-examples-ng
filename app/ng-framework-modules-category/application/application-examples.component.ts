@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Checking Target Platform", "/ns-framework-modules-category/application/check-target"),
-    new Link("Using Android Specifics", "/ns-framework-modules-category/application/using-android"),
-    new Link("Using iOS Specifics", "/ns-framework-modules-category/application/using-ios"),
+    new Link("Checking Target Platform", "/application/check-target"),
+    new Link("Using Android Specifics", "/application/using-android"),
+    new Link("Using iOS Specifics", "/application/using-ios"),
 ];
 
 @Component({

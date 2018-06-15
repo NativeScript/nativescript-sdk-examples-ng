@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { Link } from "./../link";
+import { Link } from "./../../link";
 
 let menuLinks = [
     new Link("Trace Specific categories", "/trace/trace-writer-categories"),
@@ -8,7 +8,7 @@ let menuLinks = [
 
 @Component({
     moduleId: module.id,
-    templateUrl: "./../examples-list.component.html",
+    templateUrl: "./../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TraceExamplesComponent {

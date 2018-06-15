@@ -137,22 +137,22 @@ export const routes = [
     },
     {
         path: "application",
-        loadChildren: "./application/application-examples.module#ApplicationExamplesModule",
+        loadChildren: "./ng-framework-modules-category/application/application-examples.module#ApplicationExamplesModule",
         data: { title: "Application" }
     },
     {
         path: "application-settings",
-        loadChildren: "./application-settings/application-settings-examples.module#ApplicationSettingsExamplesModule",
+        loadChildren: "./ng-framework-modules-category/application-settings/application-settings-examples.module#ApplicationSettingsExamplesModule",
         data: { title: "Application Settings" }
     },
     {
         path: "camera",
-        loadChildren: "./camera/camera-examples.module#CameraExamplesModule",
+        loadChildren: "./ng-hardware-аccess-category/camera/camera-examples.module#CameraExamplesModule",
         data: { title: "Camera" }
     },
     {
         path: "color",
-        loadChildren: "./color/color-examples.module#ColorExamplesModule",
+        loadChildren: "./ng-framework-modules-category/color/color-examples.module#ColorExamplesModule",
         data: { title: "Color" }
     },
     {
@@ -162,12 +162,12 @@ export const routes = [
     },
     {
         path: "trace",
-        loadChildren: "./trace/trace-examples.module#TraceExamplesModule",
+        loadChildren: "./ng-framework-modules-category/trace/trace-examples.module#TraceExamplesModule",
         data: { title: "Trace Module" }
     },
     {
         path: "timer",
-        loadChildren: "./timer/timer-examples.module#TimerExamplesModule",
+        loadChildren: "./ng-framework-modules-category/timer/timer-examples.module#TimerExamplesModule",
         data: { title: "Timer Module" }
     },
     {
@@ -192,47 +192,47 @@ export const routes = [
     },
     {
         path: "connectivity",
-        loadChildren: "./connectivity/connectivity-examples.module#ConnectivityExamplesModule",
+        loadChildren: "./ng-framework-modules-category/connectivity/connectivity-examples.module#ConnectivityExamplesModule",
         data: { title: "Connectivity" }
     },
     {
         path: "file-system",
-        loadChildren: "./file-system/file-system-examples.module#FetchExamplesModule",
+        loadChildren: "./ng-framework-modules-category/file-system/file-system-examples.module#FetchExamplesModule",
         data: { title: "File System" }
     },
     {
         path: "location",
-        loadChildren: "./location/location-examples.module#LocationExamplesModule",
+        loadChildren: "./ng-hardware-аccess-category/location/location-examples.module#LocationExamplesModule",
         data: { title: "Location" }
     },
     {
         path: "modal-page",
-        loadChildren: "./modal-page/modal-page-examples.module#ModalPageExamplesModule",
+        loadChildren: "./ng-ui-widgets-categorymodal-page/modal-page-examples.module#ModalPageExamplesModule",
         data: { title: "Modal page" }
     },
     {
         path: "color",
-        loadChildren: "./color/color-examples.module#ColorExamplesModule",
+        loadChildren: "./ng-framework-modules-category/color/color-examples.module#ColorExamplesModule",
         data: { title: "Color" }
     },
     {
         path: "http",
-        loadChildren: "./http/http-examples.module#HttpExamplesModule",
+        loadChildren: "./ng-framework-modules-category/http/http-examples.module#HttpExamplesModule",
         data: { title: "HTTP Module" }
     },
     {
         path: "fps-meter",
-        loadChildren: "./fps-meter/fps-meter-examples.module#FpsExamplesModule",
+        loadChildren: "./ng-framework-modules-category/fps-meter/fps-meter-examples.module#FpsExamplesModule",
         data: { title: "FPS Meter" }
     },
     {
         path: "platform",
-        loadChildren: "./platform/platform-examples.module#PlatformExamplesModule",
+        loadChildren: "./ng-framework-modules-category/platform/platform-examples.module#PlatformExamplesModule",
         data: { title: "Platform Module" }
     },
     {
         path: "routing",
-        loadChildren: "./routing/routing-examples.module#RoutingExamplesModule",
+        loadChildren: "./ng-framework-modules-category/routing/routing-examples.module#RoutingExamplesModule",
         data: { title: "Angular routing" }
     }
 ];

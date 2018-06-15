@@ -1,16 +1,16 @@
 import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { Link } from "./../link";
+import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Platform module example", "/platform/platform-module")
+    new Link("Nested routers", "/routing/nested-routers"),
 ];
 
 @Component({
     moduleId: module.id,
-    templateUrl: "./../examples-list.component.html",
+    templateUrl: "./../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class PlatformExamplesComponent {
+export class RoutingExamplesComponent {
     public links: Array<Link>;
 
     constructor() {

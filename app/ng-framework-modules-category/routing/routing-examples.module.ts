@@ -9,7 +9,7 @@ import { NestedRoutersComponent } from "./nested-routers/nested-routers.componen
 import { SubRouteOneComponent } from "./nested-routers/sub-route-one.component";
 import { SubRouteTwoComponent } from "./nested-routers/sub-route-two.component";
 
-import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {

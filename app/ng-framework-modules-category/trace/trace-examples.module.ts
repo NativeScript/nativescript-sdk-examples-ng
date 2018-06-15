@@ -7,7 +7,7 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { TraceExamplesComponent } from "./trace-examples.component";
 import { CustomTraceWriterExampleComponent } from "./custom-trace-writer/custom-tracewriter-example.component";
 import { TraceSpecificCategoriesExampleComponent } from "./trace-specific-categories/trace-specific-categories-example.component";
-import { TitleAndNavButtonModule } from "../directives/title-and-nav-button.module";
+import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
     {

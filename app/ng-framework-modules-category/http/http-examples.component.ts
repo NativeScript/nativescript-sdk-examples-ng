@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("HTTP POST", "/ns-framework-modules-category/http/http-post"),
-    new Link("HTTP GET", "/ns-framework-modules-category/http/http-get")
+    new Link("HTTP POST", "/http/http-post"),
+    new Link("HTTP GET", "/http/http-get")
 ];
 
 @Component({
