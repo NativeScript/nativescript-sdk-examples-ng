@@ -207,7 +207,7 @@ export const routes = [
     },
     {
         path: "modal-page",
-        loadChildren: "./ng-ui-widgets-categorymodal-page/modal-page-examples.module#ModalPageExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/modal-page/modal-page-examples.module#ModalPageExamplesModule",
         data: { title: "Modal page" }
     },
     {
