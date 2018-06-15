@@ -7,167 +7,167 @@ export const routes = [
     },
     {
         path: "action-bar",
-        loadChildren: "./ui-category/action-bar/action-bar-examples.module#ActionBarExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/action-bar/action-bar-examples.module#ActionBarExamplesModule",
         data: { title: "ActionBar" }
     },
     {
         path: "activity-indicator",
-        loadChildren: "./ui-category/activity-indicator/activity-indicator-examples.module#ActivityIndicatorExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/activity-indicator/activity-indicator-examples.module#ActivityIndicatorExamplesModule",
         data: { title: "ActivityIndicator" }
     },
     {
         path: "animations",
-        loadChildren: "./ui-category/animations/animations-examples.module#AnimationsExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/animations/animations-examples.module#AnimationsExamplesModule",
         data: { title: "Animations" }
     },
     {
         path: "button",
-        loadChildren: "./ui-category/button/button-examples.module#ButtonExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/button/button-examples.module#ButtonExamplesModule",
         data: { title: "Button" }
     },
     {
         path: "date-picker",
-        loadChildren: "./ui-category/date-picker/date-picker-examples.module#DatePickerExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/date-picker/date-picker-examples.module#DatePickerExamplesModule",
         data: { title: "DatePicker" }
     },
     {
         path: "dialogs",
-        loadChildren: "./ui-category/dialogs/dialogs-examples.module#DialogsExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/dialogs/dialogs-examples.module#DialogsExamplesModule",
         data: { title: "Dialogs" }
     },
     {
         path: "formatted-string",
-        loadChildren: "./ui-category/formatted-string/formated-string-examples.module#FormattedStringExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/formatted-string/formated-string-examples.module#FormattedStringExamplesModule",
         data: { title: "Formatted String" }
     },
     {
         path: "gestures",
-        loadChildren: "./ui-category/gestures/gestures-examples.module#GesturesExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/gestures/gestures-examples.module#GesturesExamplesModule",
         data: { title: "Gestures" }
     },
     {
         path: "html-view",
-        loadChildren: "./ui-category/htmlview/htmlview-examples.module#HtmlViewExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/htmlview/htmlview-examples.module#HtmlViewExamplesModule",
         data: { title: "HtmlView" }
     },
     {
         path: "image",
-        loadChildren: "./ui-category/image/image-examples.module#ImageExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/image/image-examples.module#ImageExamplesModule",
         data: { title: "Image" }
     },
     {
         path: "label",
-        loadChildren: "./ui-category/label/label-examples.module#LabelExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/label/label-examples.module#LabelExamplesModule",
         data: { title: "Label" }
     },
     {
         path: "layouts",
-        loadChildren: "./ui-category/layouts/layouts-examples.module#LayoutsExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/layouts/layouts-examples.module#LayoutsExamplesModule",
         data: { title: "Layouts" }
     },
     {
         path: "list-picker",
-        loadChildren: "./ui-category/listpicker/listpicker-examples.module#ListPickerExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/listpicker/listpicker-examples.module#ListPickerExamplesModule",
         data: { title: "ListPicker" }
     },
     {
         path: "list-view",
-        loadChildren: "./ui-category/listview/listview-examples.module#ListViewExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/listview/listview-examples.module#ListViewExamplesModule",
         data: { title: "ListView" }
     },
     {
         path: "progress",
-        loadChildren: "./ui-category/progress/progress-examples.module#ProgressExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/progress/progress-examples.module#ProgressExamplesModule",
         data: { title: "Progress" }
     },
     {
         path: "scroll-view",
-        loadChildren: "./ui-category/scroll-view/scroll-view-examples.module#ScrollViewExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/scroll-view/scroll-view-examples.module#ScrollViewExamplesModule",
         data: { title: "ScrollView" }
     },
     {
         path: "search-bar",
-        loadChildren: "./ui-category/search-bar/search-bar-examples.module#SearchBarExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/search-bar/search-bar-examples.module#SearchBarExamplesModule",
         data: { title: "SearchBar" }
     },
     {
         path: "segmented-bar",
-        loadChildren: "./ui-category/segmented-bar/segmented-bar-examples.module#SegmentedBarExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/segmented-bar/segmented-bar-examples.module#SegmentedBarExamplesModule",
         data: { title: "SegmentedBar" }
     },
     {
         path: "slider",
-        loadChildren: "./ui-category/slider/slider-examples.module#SliderExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/slider/slider-examples.module#SliderExamplesModule",
         data: { title: "Slider" }
     },
     {
         path: "style",
-        loadChildren: "./ui-category/style/style-examples.module#StyleExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/style/style-examples.module#StyleExamplesModule",
         data: { title: "Style" }
     },
     {
         path: "switch",
-        loadChildren: "./ui-category/switch/switch-examples.module#SwitchExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/switch/switch-examples.module#SwitchExamplesModule",
         data: { title: "Switch" }
     },
     {
         path: "tab-view",
-        loadChildren: "./ui-category/tab-view/tab-view-examples.module#TabViewExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/tab-view/tab-view-examples.module#TabViewExamplesModule",
         data: { title: "TabView" }
     },
     {
         path: "text-field",
-        loadChildren: "./ui-category/text-field/text-field-examples.module#TextFieldExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/text-field/text-field-examples.module#TextFieldExamplesModule",
         data: { title: "TextField" }
     },
     {
         path: "text-view",
-        loadChildren: "./ui-category/text-view/text-view-examples.module#TextViewExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/text-view/text-view-examples.module#TextViewExamplesModule",
         data: { title: "TextView" }
     },
     {
         path: "time-picker",
-        loadChildren: "./ui-category/time-picker/time-picker-examples.module#TimePickerExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/time-picker/time-picker-examples.module#TimePickerExamplesModule",
         data: { title: "TimePicker" }
     },
     {
         path: "web-view",
-        loadChildren: "./ui-category/web-view/web-view-examples.module#WebViewExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/web-view/web-view-examples.module#WebViewExamplesModule",
         data: { title: "WebView" }
     },
     {
         path: "application",
-        loadChildren: "./application/application-examples.module#ApplicationExamplesModule",
+        loadChildren: "./ng-framework-modules-category/application/application-examples.module#ApplicationExamplesModule",
         data: { title: "Application" }
     },
     {
         path: "application-settings",
-        loadChildren: "./application-settings/application-settings-examples.module#ApplicationSettingsExamplesModule",
+        loadChildren: "./ng-framework-modules-category/application-settings/application-settings-examples.module#ApplicationSettingsExamplesModule",
         data: { title: "Application Settings" }
     },
     {
         path: "camera",
-        loadChildren: "./camera/camera-examples.module#CameraExamplesModule",
+        loadChildren: "./ng-hardware-аccess-category/camera/camera-examples.module#CameraExamplesModule",
         data: { title: "Camera" }
     },
     {
         path: "color",
-        loadChildren: "./color/color-examples.module#ColorExamplesModule",
+        loadChildren: "./ng-framework-modules-category/color/color-examples.module#ColorExamplesModule",
         data: { title: "Color" }
     },
     {
         path: "angular-directives",
-        loadChildren: "./ui-category/ng-directives/ng-directives-examples.module#NgDirectivesExamplesModule",
+        loadChildren: "./ng-ui-widgets-category/ng-directives/ng-directives-examples.module#NgDirectivesExamplesModule",
         data: { title: "Angular directives" }
     },
     {
         path: "trace",
-        loadChildren: "./trace/trace-examples.module#TraceExamplesModule",
+        loadChildren: "./ng-framework-modules-category/trace/trace-examples.module#TraceExamplesModule",
         data: { title: "Trace Module" }
     },
     {
         path: "timer",
-        loadChildren: "./timer/timer-examples.module#TimerExamplesModule",
+        loadChildren: "./ng-framework-modules-category/timer/timer-examples.module#TimerExamplesModule",
         data: { title: "Timer Module" }
     },
     {
@@ -192,47 +192,47 @@ export const routes = [
     },
     {
         path: "connectivity",
-        loadChildren: "./connectivity/connectivity-examples.module#ConnectivityExamplesModule",
+        loadChildren: "./ng-framework-modules-category/connectivity/connectivity-examples.module#ConnectivityExamplesModule",
         data: { title: "Connectivity" }
     },
     {
         path: "file-system",
-        loadChildren: "./file-system/file-system-examples.module#FetchExamplesModule",
+        loadChildren: "./ng-framework-modules-category/file-system/file-system-examples.module#FetchExamplesModule",
         data: { title: "File System" }
     },
     {
         path: "location",
-        loadChildren: "./location/location-examples.module#LocationExamplesModule",
+        loadChildren: "./ng-hardware-аccess-category/location/location-examples.module#LocationExamplesModule",
         data: { title: "Location" }
     },
     {
         path: "modal-page",
-        loadChildren: "./modal-page/modal-page-examples.module#ModalPageExamplesModule",
+        loadChildren: "./ng-ui-widgets-categorymodal-page/modal-page-examples.module#ModalPageExamplesModule",
         data: { title: "Modal page" }
     },
     {
         path: "color",
-        loadChildren: "./color/color-examples.module#ColorExamplesModule",
+        loadChildren: "./ng-framework-modules-category/color/color-examples.module#ColorExamplesModule",
         data: { title: "Color" }
     },
     {
         path: "http",
-        loadChildren: "./http/http-examples.module#HttpExamplesModule",
+        loadChildren: "./ng-framework-modules-category/http/http-examples.module#HttpExamplesModule",
         data: { title: "HTTP Module" }
     },
     {
         path: "fps-meter",
-        loadChildren: "./fps-meter/fps-meter-examples.module#FpsExamplesModule",
+        loadChildren: "./ng-framework-modules-category/fps-meter/fps-meter-examples.module#FpsExamplesModule",
         data: { title: "FPS Meter" }
     },
     {
         path: "platform",
-        loadChildren: "./platform/platform-examples.module#PlatformExamplesModule",
+        loadChildren: "./ng-framework-modules-category/platform/platform-examples.module#PlatformExamplesModule",
         data: { title: "Platform Module" }
     },
     {
         path: "routing",
-        loadChildren: "./routing/routing-examples.module#RoutingExamplesModule",
+        loadChildren: "./ng-framework-modules-category/routing/routing-examples.module#RoutingExamplesModule",
         data: { title: "Angular routing" }
     }
 ];
