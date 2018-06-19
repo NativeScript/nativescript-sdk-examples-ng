@@ -147,7 +147,7 @@ export const routes = [
     },
     {
         path: "camera",
-        loadChildren: "./ng-hardware-аccess-category/camera/camera-examples.module#CameraExamplesModule",
+        loadChildren: "./ng-hardware-access-category/camera/camera-examples.module#CameraExamplesModule",
         data: { title: "Camera" }
     },
     {
@@ -202,7 +202,7 @@ export const routes = [
     },
     {
         path: "location",
-        loadChildren: "./ng-hardware-аccess-category/location/location-examples.module#LocationExamplesModule",
+        loadChildren: "./ng-hardware-access-category/location/location-examples.module#LocationExamplesModule",
         data: { title: "Location" }
     },
     {
