@@ -46,7 +46,7 @@ import { Page } from "ui/page";
 export class ButtonTextComponent {
 }
 ```
- - (Optional) Make а screenshot of your example named `image.png` and add it to the example directory. Here is an image with android and ios phone screenshots:
+ - (Optional) Make a screenshot of your example named `image.png` and add it to the example directory. Here is an image with android and ios phone screenshots:
 
 |Image|
 |---|
