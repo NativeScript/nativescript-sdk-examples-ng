@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { prompt, PromptResult, inputType } from "ui/dialogs";
+import { prompt, PromptResult, inputType, PromptOptions } from "ui/dialogs";
 
 @Component({
     moduleId: module.id,
@@ -8,12 +8,15 @@ import { prompt, PromptResult, inputType } from "ui/dialogs";
 export class PromptDialogComponent {
     displayPromptDialog() {
         // >> prompt-dialog-code
-        let options = {
-            title: "Name",
-            defaultText: "Enter your name",
+        let options: PromptOptions = {
+            title: "Hey There",
+            defaultText: " Enter your mood ",
+            message: "How you doin'",
             inputType: inputType.text,
-            okButtonText: "Ok",
-            cancelButtonText: "Cancel"
+            okButtonText: "OK",
+            cancelButtonText: "Canvel",
+            neutralButtonText: "Neutral",
+            cancelable: true
         };
 
         prompt(options).then((result: PromptResult) => {
