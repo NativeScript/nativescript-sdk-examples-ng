@@ -14,7 +14,7 @@ export class PromptDialogComponent {
             message: "How you doin'",
             inputType: inputType.text,
             okButtonText: "OK",
-            cancelButtonText: "Canvel",
+            cancelButtonText: "Cancel",
             neutralButtonText: "Neutral",
             cancelable: true
         };
