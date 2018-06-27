@@ -1,0 +1,11 @@
+/* >> icon-font-css-class-def */
+.icon{
+    font-family: icomoon;
+}
+/* << icon-font-css-class-def */
+.border_style{
+    border-width: 5;
+    border-color:black;
+    padding: 5;
+    margin-bottom: 2;
+}

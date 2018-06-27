@@ -23,6 +23,7 @@ let mainMenuLinks = [
     new Link("Style", "/style"),
     new Link("Gestures", "/gestures"),
     new Link("HtmlView", "/html-view"),
+    new Link("IconFonts", "/icon-fonts"),
     new Link("Image", "/image"),
     new Link("Label", "/label"),
     new Link("ListPicker", "/list-picker"),
