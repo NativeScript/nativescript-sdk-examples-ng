@@ -1,0 +1,12 @@
+<GridLayout class="p-15" rows="*" columns="*" sdkExampleTitle sdkToggleNavButton>
+    <!-- >> icon-font-code-behind-html -->
+    <ListView class="icon list-group" [items]="glyphs">
+        <ng-template let-item="item">
+            <GridLayout class="list-group-item active" rows="* *">
+                <Label color="#FF6666" class="m-5 icon" fontSize="34" row="0" textWrap="true" text="{{'Icon: ' + item.icon + ' ' }}"></Label>
+                <Label color="#66ccff" class="m-5" fontSize="18" row="1" textWrap="true" text="{{'Icon code: ' + item.code }}"></Label>
+            </GridLayout>
+        </ng-template>
+    </ListView>
+    <!-- << icon-font-code-behind-html -->
+</GridLayout>

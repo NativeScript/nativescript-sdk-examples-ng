@@ -51,6 +51,11 @@ export const routes = [
         data: { title: "HtmlView" }
     },
     {
+        path: "icon-fonts",
+        loadChildren: "./ng-ui-widgets-category/icon-fonts/iconfonts-examples.module#IconFontsExamplesModule",
+        data: { title: "IconFonts" }
+    },
+    {
         path: "image",
         loadChildren: "./ng-ui-widgets-category/image/image-examples.module#ImageExamplesModule",
         data: { title: "Image" }
