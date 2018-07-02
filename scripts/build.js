@@ -97,13 +97,25 @@ function getComponents(cwd, components, currentDir, jenkinsPosition) {
             var componentPrettyHeader = prettify(componentHeader);
 
             // Jenkins Header
-            fs.appendFileSync(componentArticleFile, "---\n",  {encoding:'utf8'});
-            fs.appendFileSync(componentArticleFile, "title: " + componentPrettyHeader + "\n",  {encoding:'utf8'});
-            fs.appendFileSync(componentArticleFile, "description: " + componentPrettyHeader + " SDK Examples" + "\n",  {encoding:'utf8'});
-            fs.appendFileSync(componentArticleFile, "position: " + jenkinsPosition++  + "\n",  {encoding:'utf8'});
-            fs.appendFileSync(componentArticleFile, "slug: " + componentHeader + "\n",  {encoding:'utf8'});
-            fs.appendFileSync(componentArticleFile, "---\n\n",  {encoding:'utf8'});
+            // MetaData.md
+            var subDirPath = overview.replace("/overview.md", "");
+            var pathExists = fs.existsSync(path.join(subDirPath, "metadata.md"));
 
+            if (pathExists) {
+            var metadata = path.join(subDirPath, "metadata.md");
+            var metadataContents = fs.readFileSync(metadata, { encoding: 'utf8' });
+                fs.appendFileSync(componentArticleFile, metadataContents , { encoding: 'utf8' });
+                fs.appendFileSync("\n\n", { encoding: 'utf8' });
+            }
+            else {
+                fs.appendFileSync(componentArticleFile, "---\n",  {encoding:'utf8'});
+                fs.appendFileSync(componentArticleFile, "title: " + componentPrettyHeader + "\n",  {encoding:'utf8'});
+                fs.appendFileSync(componentArticleFile, "description: " + componentPrettyHeader + " SDK Examples" + "\n",  {encoding:'utf8'});
+                fs.appendFileSync(componentArticleFile, "position: " + jenkinsPosition++  + "\n",  {encoding:'utf8'});
+                fs.appendFileSync(componentArticleFile, "slug: " + componentHeader + "\n",  {encoding:'utf8'});
+                fs.appendFileSync(componentArticleFile, "---\n\n",  {encoding:'utf8'});
+            }
+            
             // Component Markdown Header
             fs.appendFileSync(componentArticleFile, "# " + componentPrettyHeader + "\n\n",  {encoding:'utf8'});
 
