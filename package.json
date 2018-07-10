@@ -66,7 +66,7 @@
     "tns-platform-declarations": "^3.3.0",
     "tslint": "^5.4.2",
     "typescript": "~2.7.2",
-    "@angular-devkit/build-angular": "~0.7.0-rc.0"
+    "@ngtools/webpack": "6.1.0-rc.0"
   },
   "scripts": {
     "pretsc": "npm install",
