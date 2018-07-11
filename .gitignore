@@ -13,6 +13,5 @@ app/**/*.js
 **/*.log
 tags
 
-webpack.config.js
 tsconfig.esm.json
 
