@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Content page (auto hide/show image)", "/content-screens/content-scrollable"),
+    new Link("Content page (auto hide or show image)", "/content-screens/content-scrollable"),
 ];
 
 @Component({
