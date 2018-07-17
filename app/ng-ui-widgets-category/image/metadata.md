@@ -1,6 +1,6 @@
 ---
-title: ImageCache
-description: The ImageCache module contains Cache class, which provides the functionality for caching the source for the already downloaded images and allows their reuse. The example demonstrates the basics scenario, where this functionality is used.
-position: 28
-slug: image-cache-ng
+title: Image
+description: The Image is UI widget, which is a common abstraction over iOS's UIImage and Android's widget.ImageView.  The component allows loading an image from different resources(URL, ImageSource, image from the resource folder or while providing the relative path to the image file) via its src property.
+position: 27
+slug: image-ng
 ---
