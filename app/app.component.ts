@@ -4,9 +4,7 @@ import { Component } from "@angular/core";
     moduleId: module.id,
     selector: "sdk-app",
     template: `
-        <GridLayout>
-            <page-router-outlet></page-router-outlet>
-        </GridLayout>
+        <page-router-outlet></page-router-outlet>
     `
 })
 
