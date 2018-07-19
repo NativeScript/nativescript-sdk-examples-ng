@@ -67,5 +67,16 @@
 	<string>UIStatusBarStyleLightContent</string>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string><your app id></string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>examplesgo</string>
+            </array>
+        </dict>
+    </array>
 </dict>
 </plist>
