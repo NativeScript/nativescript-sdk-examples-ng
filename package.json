@@ -48,7 +48,7 @@
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "~6.1.0-beta.1",
+    "@angular/compiler-cli": "~6.1.0-rc.0",
     "babel-traverse": "6.26.0",
     "babel-types": "6.26.0",
     "babylon": "6.10.0",
@@ -66,7 +66,7 @@
     "tns-platform-declarations": "^3.3.0",
     "tslint": "^5.4.2",
     "typescript": "~2.7.2",
-    "@ngtools/webpack": "6.1.0-rc.0"
+    "@ngtools/webpack": "~6.1.0-rc.2"
   },
   "scripts": {
     "pretsc": "npm install",
