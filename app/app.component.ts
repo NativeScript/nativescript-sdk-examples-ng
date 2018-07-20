@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import {hasKey, getString, remove} from "application-settings";
+import {hasKey, getString, remove, setString} from "application-settings";
 import {RouterExtensions} from "nativescript-angular/router";
 import * as app from "application"
 @Component({
@@ -16,27 +16,42 @@ export class AppComponent {
     ngAfterViewInit(){
         app.on(app.launchEvent, (args: app.ApplicationEventData) => {
             if (args.ios) {
-                // For iOS applications, args.ios is UIApplication.
                 this.launchExample();
             }
         })
         app.on(app.resumeEvent, (args: app.ApplicationEventData) => {
             if (args.android) {
-                // For Android applications, args.android is an android activity class.
-                console.log("Activity: " + args.android);
                 var intent = args.android.getIntent();
-                console.log("Intent Data: ");
-                console.log(intent);
-                let value = intent.getStringExtra("gotoexample");
+                let value = intent.getData();
                 if(value){
-                    console.log(intent.getStringExtra("gotoexample"));
+                    this.getParams(value);
+                    this.launchExample();
                 }
                 
             } else if (args.ios) {
-                // For iOS applications, args.ios is UIApplication.
                 this.launchExample();
             }
         })
+    }
+
+    private getParams(url){
+                var resulturl:string = url.toString();
+                if(resulturl.substring(0,10)=="examplesgo"){
+                    let value = this.getParameterByName("gotoexample", resulturl);
+                    if(value){
+                        console.log(value);
+                        setString("gotoexample", value);
+                    }
+                }
+            
+    }
+    private getParameterByName(name, url) {
+                name = name.replace(/[\[\]]/g, "\\$&");
+                var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+                    results = regex.exec(url);
+                if (!results) return null;
+                if (!results[2]) return '';
+                return results[2].replace(/\+/g, " ");
     }
     public launchExample(){
         if(hasKey("gotoexample")){
