@@ -1,7 +1,7 @@
-import { Component } from "@angular/core";
+import { Component, AfterViewInit } from "@angular/core";
 import { hasKey, getString, remove } from "application-settings";
 import { RouterExtensions } from "nativescript-angular/router";
-import * as app from "application"
+import * as app from "application";
 import { DeepLinkData } from "./shared/deep-link-data";
 @Component({
     moduleId: module.id,
@@ -11,18 +11,18 @@ import { DeepLinkData } from "./shared/deep-link-data";
     `
 })
 
-export class AppComponent {
+export class AppComponent implements AfterViewInit {
     constructor(private router: RouterExtensions) { }
 
     ngAfterViewInit() {
         app.on(app.resumeEvent, (args: app.ApplicationEventData) => {
             if (args.android) {
-                new DeepLinkData("", args.android);
+                const dld = new DeepLinkData("", args.android);
                 this.launchExample();
             } else if (args.ios) {
                 this.launchExample();
             }
-        })
+        });
     }
     public launchExample() {
         if (hasKey("gotoexample")) {

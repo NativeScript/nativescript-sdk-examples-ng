@@ -1,9 +1,9 @@
-import {DeepLinkData} from "../shared/deep-link-data";
+import { DeepLinkData } from "../shared/deep-link-data";
 export class MyDelegate extends UIResponder implements UIApplicationDelegate {
-    public static ObjCProtocols = [UIApplicationDelegate];
+    public static objCProtocols = [UIApplicationDelegate];
 
     applicationHandleOpenURL(application: UIApplication, url: NSURL): boolean {
-        new DeepLinkData(url);
+        const dld = new DeepLinkData(url);
         return true;
     }
 }
