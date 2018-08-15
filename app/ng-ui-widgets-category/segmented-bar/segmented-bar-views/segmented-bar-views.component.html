@@ -1,15 +1,15 @@
 <StackLayout sdkExampleTitle sdkToggleNavButton>
 	<!-- >> segmentedbar-show-views -->
 	<SegmentedBar [items]="items" (selectedIndexChange)="onSelectedIndexChange($event)" class="m-5" ></SegmentedBar>
-	<GridLayout [visibility]="selectedIndex = 0 ? 'visible' : 'collapsed'" backgroundColor="white">
+	<GridLayout [visibility]="selectedIndex === 0 ? 'visible' : 'collapsed'" backgroundColor="white">
 		<Label [text]="'The new selectedIndex is: ' + selectedIndex" class="m-15 h3 p-5 text-center"></Label>
 	</GridLayout>
 
-	<GridLayout rows="*" [visibility]="selectedIndex = 1 ? 'visible' : 'collapsed'" backgroundColor="green">
+	<GridLayout rows="*" [visibility]="selectedIndex === 1 ? 'visible' : 'collapsed'" backgroundColor="green">
 		<Label [text]="'The new selectedIndex is: ' + selectedIndex" class="m-15 h3 p-5 text-center" color="white"></Label>
 	</GridLayout>
 
-	<GridLayout rows="*" [visibility]="selectedIndex = 2 ? 'visible' : 'collapsed'" backgroundColor="red">
+	<GridLayout rows="*" [visibility]="selectedIndex === 2 ? 'visible' : 'collapsed'" backgroundColor="red">
 		<Label [text]="'The new selectedIndex is: ' + selectedIndex" class="m-15 h3 p-5 text-center" color="white"></Label>
 	</GridLayout>
 	<!-- << segmentedbar-show-views -->
