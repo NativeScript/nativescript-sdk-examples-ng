@@ -10,7 +10,9 @@ import { ModalViewComponent } from "./sample-modal-page-module-example/modal-vie
 import { HomeModalViewComponent } from "./modal-page-navigation/home-modal-view.component";
 import { HomeModalViewContentComponent } from "./modal-page-navigation/home-modal-view-content.component";
 import { SecondModalViewContentComponent } from "./modal-page-navigation/second-modal-view-content.component";
-
+import { MainViewComponent } from "./modal-page-actionbar/main-view.component";
+import { ModalRootComponent } from "./modal-page-actionbar/modal-root.component";
+import { ModalViewActionBarComponent } from "./modal-page-actionbar/modal-view.component";
 export const routerConfig = [
     {
         path: "",
@@ -34,8 +36,20 @@ export const routerConfig = [
                 path: "second-modal", component: SecondModalViewContentComponent
             }
         ]
-    }
+    },
     // << modal-page-routes
+    // >> modal-page-routes-actionbar
+    {
+        path: "modal-view-actionbar",
+        component: MainViewComponent,
+        data: { title: "Main page" },
+        children: [
+            {
+                path: "modal-view", component: ModalViewActionBarComponent
+            }
+        ]
+    }
+    // << modal-page-routes-actionbar
 ];
 
 @NgModule({
@@ -53,9 +67,12 @@ export const routerConfig = [
         ModalViewComponent,
         HomeModalViewComponent,
         HomeModalViewContentComponent,
-        SecondModalViewContentComponent
+        SecondModalViewContentComponent,
+        MainViewComponent,
+        ModalRootComponent,
+        ModalViewActionBarComponent
     ],
-    entryComponents: [ModalViewComponent, HomeModalViewComponent]
+    entryComponents: [ModalViewComponent, HomeModalViewComponent, ModalRootComponent]
 })
 
 export class ModalPageExamplesModule {

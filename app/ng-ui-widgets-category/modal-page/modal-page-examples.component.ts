@@ -3,7 +3,8 @@ import { Link } from "./../../link";
 
 let menuLinks = [
     new Link("Modal page example", "/modal-page/sample-modal-page"),
-    new Link("Modal page navigation", "/modal-page/modal-page-navigation")
+    new Link("Modal page navigation", "/modal-page/modal-page-navigation"),
+    new Link("Modal page ActionBar", "/modal-page/modal-view-actionbar")
 ];
 
 @Component({
