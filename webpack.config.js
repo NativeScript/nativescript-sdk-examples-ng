@@ -225,7 +225,7 @@ module.exports = env => {
             new AngularCompilerPlugin({
                 hostReplacementPaths: nsWebpack.getResolver([platform, "tns"]),
                 entryModule: resolve(appPath, "app.module#AppModule"),
-                tsConfigPath: join(__dirname, "tsconfig.esm.json"),
+                tsConfigPath: join(__dirname, "tsconfig.tns.json"),
                 skipCodeGeneration: !aot,
                 sourceMap: !!sourceMap,
             }),
