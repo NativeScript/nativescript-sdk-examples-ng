@@ -14,4 +14,4 @@ app/**/*.js
 tags
 
 tsconfig.esm.json
-
+package-lock.json
