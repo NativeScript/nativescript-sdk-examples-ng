@@ -23,6 +23,9 @@
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-android": {
       "version": "4.2.0"
+    },
+    "tns-ios": {
+      "version": "4.2.0"
     }
   },
   "dependencies": {
@@ -52,8 +55,8 @@
     "glob": "^7.1.2",
     "lazy": "1.0.11",
     "markdown-snippet-injector": "^0.2.0",
-    "nativescript-dev-typescript": "next",
-    "nativescript-dev-webpack": "next",
+    "nativescript-dev-typescript": "^0.7.2",
+    "nativescript-dev-webpack": "^0.15.1",
     "opener": "^1.4.1",
     "rimraf": "^2.5.3",
     "tar.gz": "^1.0.5",

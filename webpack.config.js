@@ -3,7 +3,6 @@ const { join, relative, resolve, sep } = require("path");
 const webpack = require("webpack");
 const nsWebpack = require("nativescript-dev-webpack");
 const nativescriptTarget = require("nativescript-dev-webpack/nativescript-target");
-const { nsReplaceBootstrap } = require("nativescript-dev-webpack/transformers/ns-replace-bootstrap");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const CopyWebpackPlugin = require("copy-webpack-plugin");
 const { BundleAnalyzerPlugin } = require("webpack-bundle-analyzer");
@@ -47,17 +46,10 @@ module.exports = env => {
     const appFullPath = resolve(projectRoot, appPath);
     const appResourcesFullPath = resolve(projectRoot, appResourcesPath);
 
-    const entryModule = `${nsWebpack.getEntryModule(appFullPath)}.ts`;
+    const entryModule = aot ?
+        nsWebpack.getAotEntryModule(appFullPath) : 
+        `${nsWebpack.getEntryModule(appFullPath)}.ts`;
     const entryPath = `.${sep}${entryModule}`;
-
-    const ngCompilerPlugin = new AngularCompilerPlugin({
-        hostReplacementPaths: nsWebpack.getResolver([platform, "tns"]),
-        platformTransformers: aot ? [nsReplaceBootstrap(() => ngCompilerPlugin)] : null,
-        mainPath: resolve(appPath, entryModule),
-        tsConfigPath: join(__dirname, "tsconfig.esm.json"),
-        skipCodeGeneration: !aot,
-        sourceMap: !!sourceMap,
-    });
 
     const config = {
         mode: uglify ? "production" : "development",
@@ -115,7 +107,7 @@ module.exports = env => {
                         test: (module, chunks) => {
                             const moduleName = module.nameForCondition ? module.nameForCondition() : '';
                             return /[\\/]node_modules[\\/]/.test(moduleName) ||
-                                appComponents.some(comp => comp === moduleName);
+                                    appComponents.some(comp => comp === moduleName);
                         },
                         enforce: true,
                     },
@@ -203,9 +195,10 @@ module.exports = env => {
             // Define useful constants like TNS_WEBPACK
             new webpack.DefinePlugin({
                 "global.TNS_WEBPACK": "true",
+                "process": undefined,
             }),
             // Remove all files from the out dir.
-            new CleanWebpackPlugin([`${dist}/**/*`]),
+            new CleanWebpackPlugin([ `${dist}/**/*` ]),
             // Copy native app resources to out dir.
             new CopyWebpackPlugin([
                 {
@@ -228,12 +221,18 @@ module.exports = env => {
             // For instructions on how to set up workers with webpack
             // check out https://github.com/nativescript/worker-loader
             new NativeScriptWorkerPlugin(),
-            ngCompilerPlugin,
+
+            new AngularCompilerPlugin({
+                hostReplacementPaths: nsWebpack.getResolver([platform, "tns"]),
+                entryModule: resolve(appPath, "app.module#AppModule"),
+                tsConfigPath: join(__dirname, "tsconfig.esm.json"),
+                skipCodeGeneration: !aot,
+                sourceMap: !!sourceMap,
+            }),
             // Does IPC communication with the {N} CLI to notify events when running in watch mode.
             new nsWebpack.WatchStateLoggerPlugin(),
         ],
     };
-
 
     if (report) {
         // Generate report files for bundles content
