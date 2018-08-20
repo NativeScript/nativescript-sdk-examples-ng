@@ -6,7 +6,9 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 
 import { HttpExamplesComponent } from "./http-examples.component";
 
+import { HttpDeleteComponent } from "./http-delete/http-delete.component";
 import { HttpGetComponent } from "./http-get/http-get.component";
+import { HttpPutComponent } from "./http-put/http-put.component";
 import { HttpPostComponent } from "./http-post/http-post.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
@@ -16,12 +18,20 @@ export const routerConfig = [
         component: HttpExamplesComponent
     },
     {
+        path: "http-delete",
+        component: HttpDeleteComponent
+    },
+    {
         path: "http-get",
         component: HttpGetComponent
     },
     {
         path: "http-post",
         component: HttpPostComponent
+    },
+    {
+        path: "http-put",
+        component: HttpPutComponent
     }
 ];
 
@@ -37,8 +47,10 @@ export const routerConfig = [
     ],
     declarations: [
         HttpExamplesComponent,
+        HttpDeleteComponent,
         HttpGetComponent,
-        HttpPostComponent
+        HttpPostComponent,
+        HttpPutComponent
     ]
 })
 
