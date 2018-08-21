@@ -1,26 +1,29 @@
-// >> http-get-component
+// >> http-put-component
 import { Component, OnInit } from "@angular/core";
-import { MyHttpGetService } from "./http-get.services";
+import { MyHttpDeleteService } from "./http-delete.service";
 
 @Component({
+    selector: "sdk-http-delete",
     moduleId: module.id,
-    templateUrl: "./http-get.component.html",
-    providers: [MyHttpGetService]
+    templateUrl: "./http-delete.component.html",
+    providers: [MyHttpDeleteService]
 })
-export class HttpGetComponent implements OnInit {
-    public host: string;
-    public userAgent: string;
-    public origin: string;
-    public url: string;
 
-    constructor(private myService: MyHttpGetService) { }
+export class HttpDeleteComponent implements OnInit {
+    host: string;
+    userAgent: string;
+    origin: string;
+    url: string;
+    data: string;
+
+    constructor(private myService: MyHttpDeleteService) { }
 
     ngOnInit() {
         this.extractData();
     }
 
     extractData() {
-        this.myService.getData()
+        this.myService.deleteData()
             .subscribe((result) => {
                 this.onGetDataSuccess(result);
             }, (error) => {
@@ -33,6 +36,7 @@ export class HttpGetComponent implements OnInit {
         this.userAgent = res.headers["User-Agent"];
         this.origin = res.origin;
         this.url = res.url;
+        this.data = res.data;
     }
 }
-// << http-get-component
+// << http-put-component

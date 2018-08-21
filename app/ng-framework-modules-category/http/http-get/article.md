@@ -9,9 +9,9 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
     ]
 ```
 
-Creating a service file to keep our HTTP logic separated from our component file (which does not need to know details on how we fetch our data)
+Using the GET method by creating a service file to keep the HTTP logic separated from the component file (which does not need to know details on how you fetch the data).
 <snippet id='http-get-service'/>
 
-Finally, we can provide our service in our component. Note that the services should be explicitly declared in `providers`
-and then should be provided as an argument in our component's constructor
+Finally, you can provide the service in the component. Note that the services should be explicitly declared in `providers`
+and then should be provided as an argument in the component's constructor
 <snippet id='http-get-component'/>

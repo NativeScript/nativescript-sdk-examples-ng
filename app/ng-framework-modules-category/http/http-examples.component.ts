@@ -3,7 +3,9 @@ import { Link } from "./../../link";
 
 let menuLinks = [
     new Link("HTTP POST", "/http/http-post"),
-    new Link("HTTP GET", "/http/http-get")
+    new Link("HTTP GET", "/http/http-get"),
+    new Link("HTTP PUT", "/http/http-put"),
+    new Link("HTTP DELETE", "/http/http-delete")
 ];
 
 @Component({

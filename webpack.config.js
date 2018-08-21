@@ -195,6 +195,7 @@ module.exports = env => {
             // Define useful constants like TNS_WEBPACK
             new webpack.DefinePlugin({
                 "global.TNS_WEBPACK": "true",
+                "process": undefined,
             }),
             // Remove all files from the out dir.
             new CleanWebpackPlugin([ `${dist}/**/*` ]),
@@ -211,7 +212,6 @@ module.exports = env => {
                 { from: "fonts/**" },
                 { from: "**/*.jpg" },
                 { from: "**/*.png" },
-                { from: "ng-ui-widgets-category/web-view/web-view-html/**/*.html" },
             ], { ignore: [`${relative(appPath, appResourcesFullPath)}/**`] }),
             // Generate a bundle starter script and activate it in package.json
             new nsWebpack.GenerateBundleStarterPlugin([

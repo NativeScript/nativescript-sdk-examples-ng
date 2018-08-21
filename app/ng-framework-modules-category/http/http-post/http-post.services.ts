@@ -16,8 +16,6 @@ export class MyHttpPostService {
 
     private createRequestOptions() {
         let headers = new HttpHeaders({
-            "AuthKey": "my-key",
-            "AuthToken": "my-token",
             "Content-Type": "application/json"
         });
         return headers;

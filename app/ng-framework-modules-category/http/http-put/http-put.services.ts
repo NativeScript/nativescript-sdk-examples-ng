@@ -1,27 +1,25 @@
-// >> http-get-service
+// >> http-delete-service
 import { Injectable } from "@angular/core";
-import { HttpClient, HttpHeaders, HttpResponse } from "@angular/common/http";
+import { HttpClient, HttpHeaders } from "@angular/common/http";
 
 @Injectable()
-export class MyHttpGetService {
-    private serverUrl = "https://httpbin.org/get";
+export class MyHttpPutService {
+    private serverUrl = "https://httpbin.org/put";
 
     constructor(private http: HttpClient) { }
 
-    getData() {
+    putData() {
         let headers = this.createRequestHeader();
-        return this.http.get(this.serverUrl, { headers: headers });
+        return this.http.put(this.serverUrl, { headers: headers });
     }
 
     private createRequestHeader() {
         // set headers here e.g.
         let headers = new HttpHeaders({
-            "AuthKey": "my-key",
-            "AuthToken": "my-token",
             "Content-Type": "application/json",
          });
 
         return headers;
     }
 }
-// << http-get-service
+// << http-delete-service

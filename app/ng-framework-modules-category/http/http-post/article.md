@@ -9,7 +9,7 @@ import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
     ]
 ```
 
-Creating a service file to keep our HTTP logic separated from our component file (which does not need to know details on how we fetch our data)
+Using the POST method by creating a service file to keep the HTTP logic separated from the component file.
 <snippet id='http-post-service'/>
 
 Finally, we can provide our service in our component. Note that the services should be explicitly declared in `providers`

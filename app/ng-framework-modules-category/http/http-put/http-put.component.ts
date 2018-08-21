@@ -1,26 +1,29 @@
-// >> http-get-component
+// >> http-put-component
 import { Component, OnInit } from "@angular/core";
-import { MyHttpGetService } from "./http-get.services";
+import { MyHttpPutService } from "./http-put.services";
 
 @Component({
+    selector: "sdk-http-put",
     moduleId: module.id,
-    templateUrl: "./http-get.component.html",
-    providers: [MyHttpGetService]
+    templateUrl: "./http-put.component.html",
+    providers: [MyHttpPutService]
 })
-export class HttpGetComponent implements OnInit {
-    public host: string;
-    public userAgent: string;
-    public origin: string;
-    public url: string;
 
-    constructor(private myService: MyHttpGetService) { }
+export class HttpPutComponent implements OnInit {
+    host: string;
+    userAgent: string;
+    origin: string;
+    url: string;
+    data: string;
+
+    constructor(private myService: MyHttpPutService) { }
 
     ngOnInit() {
         this.extractData();
     }
 
     extractData() {
-        this.myService.getData()
+        this.myService.putData()
             .subscribe((result) => {
                 this.onGetDataSuccess(result);
             }, (error) => {
@@ -33,6 +36,7 @@ export class HttpGetComponent implements OnInit {
         this.userAgent = res.headers["User-Agent"];
         this.origin = res.origin;
         this.url = res.url;
+        this.data = res.data;
     }
 }
-// << http-get-component
+// << http-put-component
