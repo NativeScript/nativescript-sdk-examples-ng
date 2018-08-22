@@ -3,9 +3,11 @@
         <!-- >> listview-create-html -->
         <ListView [items]="countries" (itemTap)="onItemTap($event)" class="list-group">
             <ng-template let-country="item" let-i="index" let-odd="odd" let-even="even">
-                <GridLayout class="list-group-item">
+                <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.)-->
+                <StackLayout orientation="horizontal" class="list-group-item">
+                    <Label text="Country: " textWrap="true"></Label>
                     <Label [text]="country.name"></Label>
-                </GridLayout>
+                </StackLayout>
             </ng-template>
         </ListView>
         <!-- << listview-create-html -->
