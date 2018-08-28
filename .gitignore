@@ -13,5 +13,5 @@ app/**/*.js
 **/*.log
 tags
 
-tsconfig.esm.json
+tsconfig.tns.json
 package-lock.json
