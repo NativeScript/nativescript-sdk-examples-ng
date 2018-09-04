@@ -48,4 +48,4 @@ The value you pass `ios.systemIcon` should be a number from the UIBarButtonSyste
 
 ### Android
 
-You can set the `android.systemIcon` attribute to the name of the system drawable resource to be displayed. Use this property instead of ActionItem.icon if you want to dispaly a built-in Android system icon. The value should be a string such as `ic_menu_search` if you want to display the built-in Android Menu Search icon for example. For a full list of Android drawable names, please visit http://androiddrawables.com.
+You can set the `android.systemIcon` attribute to the name of the system drawable resource to be displayed. Use this property instead of ActionItem.icon if you want to dispaly a built-in Android system icon. The value should be a string such as `ic_menu_search` if you want to display the built-in Android Menu Search icon for example. For a full list of Android drawable names, please visit https://developer.android.com/reference/android/R.drawable.
