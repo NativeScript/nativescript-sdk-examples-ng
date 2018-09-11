@@ -1,0 +1,10 @@
+Label{
+    background-color: lightblue;
+    text-align: center
+}
+.indicator{
+    background-color: rgba(176, 170, 170, 0.5);
+}
+.innerContainer{
+    vertical-align: middle;
+} 
