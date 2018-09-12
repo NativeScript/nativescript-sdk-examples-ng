@@ -12,11 +12,11 @@ import { Label } from "tns-core-modules/ui/label";
     templateUrl: "./web-view-gestures.component.html"
 })
 export class WebViewGesturesComponent {
-    public webViewSrc = '<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>';
+    public webViewSrc = "<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>";
     public touchResult = "Touch: x: _ y: _";
     public panResult = "Pan: deltaX: _ deltaY: _";
 
-    public onWebViewLoaded(webargs){
+    public onWebViewLoaded(webargs) {
         const webview = webargs.object;
         if (isAndroid) {
             webview.android.getSettings().setDisplayZoomControls(false);

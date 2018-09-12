@@ -11,17 +11,17 @@ import { WebView, LoadEventData } from "tns-core-modules/ui/web-view";
     templateUrl: "./web-view-events.component.html"
 })
 export class WebViewEventsComponent {
-    public webViewSrc = 'https://www.nativescript.org/';
+    public webViewSrc = "https://www.nativescript.org/";
     public isItemVisible = true;
 
     @ViewChild("webview") webViewElement: ElementRef;
-    private firstUrl = 'https://google.com/';
-    private secondUrl = 'https://www.nativescript.org/'
+    private firstUrl = "https://google.com/";
+    private secondUrl = "https://www.nativescript.org/";
 
-    public onLoadStarted(args: LoadEventData){
+    public onLoadStarted(args: LoadEventData) {
         this.isItemVisible = true;
         let message;
-        if(!args.error){
+        if (!args.error) {
             // >> (hide)
             console.log("--------------------------------------");
             console.log("Load Start");
@@ -31,7 +31,7 @@ export class WebViewEventsComponent {
             console.log("--------------------------------------");
             // << (hide)
             message = "WebView started loading of " + args.url;
-        } else{
+        } else {
             // >> (hide)
             console.log("--------------------------------------");
             console.log(`EventName: ${args.eventName}`);
@@ -41,11 +41,11 @@ export class WebViewEventsComponent {
             message = "Error loading " + args.url + ": " + args.error;
         }
         console.log(message);
-        
+
     }
-    public onLoadFinished(args: LoadEventData){
+    public onLoadFinished(args: LoadEventData) {
         let message;
-        if(!args.error){
+        if (!args.error) {
             // >> (hide)
             console.log("--------------------------------------");
             console.log("Load Finished");
@@ -55,7 +55,7 @@ export class WebViewEventsComponent {
             console.log("--------------------------------------");
             // << (hide)
             message = "WebView finished loading of " + args.url;
-        } else{
+        } else {
             // >> (hide)
             console.log("--------------------------------------");
             console.log(`EventName: ${args.eventName}`);
@@ -67,7 +67,7 @@ export class WebViewEventsComponent {
         console.log(message);
         // >> (hide)
         setTimeout(() => {
-            this.isItemVisible = false
+            this.isItemVisible = false;
         }, 500);
         // << (hide)
     }
@@ -80,8 +80,8 @@ export class WebViewEventsComponent {
         this.webViewSrc = this.secondUrl;
     }
 
-    public onReload(){
-        const webview:WebView = <WebView>this.webViewElement.nativeElement;
+    public onReload() {
+        const webview: WebView = <WebView> this.webViewElement.nativeElement;
         webview.reload();
     }
 
