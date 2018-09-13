@@ -12,7 +12,7 @@ import { Label } from "ui/label";
 })
 export class BasicWebViewComponent implements AfterViewInit {
     public webViewSrc: string = "https://docs.nativescript.org/";
-
+    public enabled: boolean = false;
     @ViewChild("myWebView") webViewRef: ElementRef;
     @ViewChild("urlField") urlFieldRef: ElementRef;
     @ViewChild("labelResult") labelResultRef: ElementRef;
@@ -39,12 +39,20 @@ export class BasicWebViewComponent implements AfterViewInit {
         let webview: WebView = this.webViewRef.nativeElement;
         if (webview.canGoBack) {
             webview.goBack();
+            this.enabled = true;
         }
     }
-
+    goForward() {
+        let webview: WebView = this.webViewRef.nativeElement;
+        if (webview.canGoForward) {
+            webview.goForward();
+        } else {
+            this.enabled = false;
+        }
+    }
     submit(args: string) {
         let textField: TextField = this.urlFieldRef.nativeElement;
-
+        this.enabled = false;
         if (args.substring(0, 4) === "http") {
             this.webViewSrc = args;
             textField.dismissSoftInput();
