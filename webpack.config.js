@@ -42,7 +42,11 @@ module.exports = env => {
         uglify, // --env.uglify
         report, // --env.report
         sourceMap, // --env.sourceMap
+        hmr, // --env.hmr,
     } = env;
+    const externals = (env.externals || []).map((e) => { // --env.externals
+        return new RegExp(e + ".*");
+    });
 
     const appFullPath = resolve(projectRoot, appPath);
     const appResourcesFullPath = resolve(projectRoot, appResourcesPath);
@@ -62,6 +66,7 @@ module.exports = env => {
     const config = {
         mode: uglify ? "production" : "development",
         context: appFullPath,
+        externals,
         watchOptions: {
             ignored: [
                 appResourcesFullPath,
@@ -203,6 +208,7 @@ module.exports = env => {
             // Define useful constants like TNS_WEBPACK
             new webpack.DefinePlugin({
                 "global.TNS_WEBPACK": "true",
+                "process": undefined,
             }),
             // Remove all files from the out dir.
             new CleanWebpackPlugin([`${dist}/**/*`]),
@@ -216,6 +222,7 @@ module.exports = env => {
             ]),
             // Copy assets to out dir. Add your own globs as needed.
             new CopyWebpackPlugin([
+                { from: "ng-ui-widgets-category/web-view/web-view-html/*.html" },
                 { from: "fonts/**" },
                 { from: "**/*.jpg" },
                 { from: "**/*.png" },
@@ -262,6 +269,10 @@ module.exports = env => {
             projectRoot,
             webpackConfig: config,
         }));
+    }
+
+    if (hmr) {
+        config.plugins.push(new webpack.HotModuleReplacementPlugin());
     }
 
     return config;
