@@ -1,0 +1,24 @@
+<GridLayout sdkExampleTitle sdkToggleNavButton>
+    <!-- >> tab-view-navigation-ng-html -->
+    <TabView [(ngModel)]="tabSelectedIndex" (selectedIndexChanged)="onSelectedIndexChanged($event)">
+        <StackLayout *tabItem="{title: 'Profile'}">
+            <StackLayout>
+                <Label [text]="tabSelectedIndexResult" class="h2 m-t-16 text-center" textWrap="true"></Label>
+                <Button text="Change Tab via ngModel" (tap)="changeTab()" class="btn btn-primary btn-active"></Button>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout *tabItem="{title: 'Stats'}">
+            <StackLayout>
+                <Label [text]="tabSelectedIndexResult" class="h2 m-t-16 text-center" textWrap="true"></Label>
+                <Button text="Change Tab via ngModel" (tap)="changeTab()" class="btn btn-primary btn-active"></Button>
+            </StackLayout>
+        </StackLayout>
+        <StackLayout *tabItem="{title: 'Settings'}">
+            <StackLayout>
+                <Label [text]="tabSelectedIndexResult" class="h2 m-t-16 text-center" textWrap="true"></Label>
+                <Button text="Change Tab via ngModel" (tap)="changeTab()" class="btn btn-primary btn-active"></Button>
+            </StackLayout>
+        </StackLayout>
+    </TabView>
+    <!-- << tab-view-navigation-ng-html -->
+</GridLayout>
