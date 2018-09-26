@@ -29,6 +29,34 @@ function compareFiles(leftFile, rightFile) {
     return l.localeCompare(r, "en-US");
 }
 
+// Sort the examples based on the example-order defined in metadata.md. The missing example will be sort aphabetically at the end
+// Example:
+// metadata.md - action-bar
+// example-order: title, action-items
+function orderExamples (array, order, dirName) {
+    var customSortArray = [];
+    order.forEach(function(item){
+        var index = array.indexOf(dirName+"/"+item+"/article.md");
+        if(index >= 0){
+            customSortArray.push(array[index]);
+            array.splice(index, 1);
+        }
+    }); 
+    customSortArray.sort( function (first, second) {
+      var First = path.basename(path.dirname(first)), Second = path.basename(path.dirname(second));
+      
+      if (order.indexOf(First) > order.indexOf(Second)) {
+        return 1;
+      } else {
+        return -1;
+      }
+      
+    });
+    array = array.sort(compareFiles);
+    var resultArray = customSortArray.concat(array);
+    return resultArray;
+};
+
 function build() {
     // Re-create the `dist` dir
     var cwd = process.cwd();
@@ -96,16 +124,25 @@ function getComponents(cwd, components, currentDir, jenkinsPosition) {
 
             var componentPrettyHeader = prettify(componentHeader);
 
+            var componentArticlesOrder = [];
             // Jenkins Header
             // MetaData.md
             var subDirPath = overview.replace("/overview.md", "");
             var pathExists = fs.existsSync(path.join(subDirPath, "metadata.md"));
 
             if (pathExists) {
-            var metadata = path.join(subDirPath, "metadata.md");
-            var metadataContents = fs.readFileSync(metadata, { encoding: 'utf8' });
-                fs.appendFileSync(componentArticleFile, metadataContents , { encoding: 'utf8' });
-                fs.appendFileSync("\n\n", { encoding: 'utf8' });
+                var metadata = path.join(subDirPath, "metadata.md");
+                var metadataContents = fs.readFileSync(metadata, { encoding: 'utf8' });
+                var metadataSplit = metadataContents.split("---");
+                fs.appendFileSync(componentArticleFile, "---\n", { encoding: 'utf8' });
+                fs.appendFileSync(componentArticleFile, metadataSplit[1] , { encoding: 'utf8' });
+                fs.appendFileSync(componentArticleFile, "---\n\n", { encoding: 'utf8' });
+
+                if(metadataSplit[2].indexOf("example-order") >=0){
+                    var exampleOrderString = metadataSplit[2].split(":");
+                    var orderString  = exampleOrderString[1].replace(/\s/g,'');
+                    componentArticlesOrder = orderString.split(",");
+                }
             }
             else {
                 fs.appendFileSync(componentArticleFile, "---\n",  {encoding:'utf8'});
@@ -132,7 +169,12 @@ function getComponents(cwd, components, currentDir, jenkinsPosition) {
                 fs.appendFileSync(componentArticleFile, "![Image](img/" + newImageFileName + " \"Image\")\n\n",  {encoding:'utf8'});
             }
 
-            var articles = glob.sync(componentDirName + "/**/article.md").sort(compareFiles);
+            var articles = [];
+            if(componentArticlesOrder.length >0){
+                articles = orderExamples(glob.sync(componentDirName + "/**/article.md"), componentArticlesOrder, componentDirName);
+            } else{
+                articles = glob.sync(componentDirName + "/**/article.md").sort(compareFiles);
+            }
 
             // Append each example to the big article file.
             articles.forEach(function (article) {
