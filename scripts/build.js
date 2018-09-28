@@ -41,16 +41,6 @@ function orderExamples (array, order, dirName) {
             customSortArray.push(array[index]);
             array.splice(index, 1);
         }
-    }); 
-    customSortArray.sort( function (first, second) {
-      var First = path.basename(path.dirname(first)), Second = path.basename(path.dirname(second));
-      
-      if (order.indexOf(First) > order.indexOf(Second)) {
-        return 1;
-      } else {
-        return -1;
-      }
-      
     });
     array = array.sort(compareFiles);
     var resultArray = customSortArray.concat(array);
