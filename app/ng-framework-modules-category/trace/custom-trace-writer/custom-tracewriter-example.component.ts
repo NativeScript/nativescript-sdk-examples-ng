@@ -1,7 +1,15 @@
 import { Component } from "@angular/core";
 // >> trace-customtracewriter-imports
-import { setCategories, enable, categories, messageType, clearWriters, addWriter, disable } from "trace";
-import { isUndefined } from "utils/types";
+import {
+    setCategories,
+    enable,
+    categories,
+    messageType,
+    clearWriters,
+    addWriter,
+    disable
+} from "tns-core-modules/trace";
+import { isUndefined } from "tns-core-modules/utils/types";
 // << trace-customtracewriter-imports
 
 // >> trace-create-custom-writer

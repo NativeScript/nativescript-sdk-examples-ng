@@ -1,4 +1,5 @@
 
+// >> tab-view-navigation-ng-code
 import { Component } from "@angular/core";
 import { alert } from "tns-core-modules/ui/dialogs";
 import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view";
@@ -8,7 +9,6 @@ import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view";
     templateUrl: "./navigation.component.html",
 })
 export class NavigationComponent {
-    // >> tab-view-navigation-ng-code
     public tabSelectedIndex: number;
     public tabSelectedIndexResult: string;
 
@@ -44,5 +44,6 @@ export class NavigationComponent {
                 });
         }
     }
-    // << tab-view-navigation-ng-code
+
 }
+// << tab-view-navigation-ng-code

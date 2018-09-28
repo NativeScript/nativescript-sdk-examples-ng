@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
-import { TextField } from "ui/text-field";
-import { setTimeout } from "timer";
+import { TextField } from "tns-core-modules/ui/text-field";
+import { setTimeout } from "tns-core-modules/timer";
 
 @Component({
     moduleId: module.id,
@@ -12,6 +12,7 @@ export class BasicTextFieldComponent  {
 
     // >> textfield-handle-submit-event
     firstTfLoaded(args) {
+        // import { TextField } from "tns-core-modules/ui/text-field";
         let firstTextfield = <TextField>args.object;
         setTimeout(() => {
             firstTextfield.focus(); // Shows the soft input method, ususally a soft keyboard.

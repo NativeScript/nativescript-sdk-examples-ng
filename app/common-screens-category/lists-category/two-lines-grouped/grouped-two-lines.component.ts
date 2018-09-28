@@ -1,7 +1,5 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
-import { ItemEventData } from "ui/list-view";
-import { ObservableArray } from "data/observable-array";
-
+import { ItemEventData } from "tns-core-modules/ui/list-view";
 import { mockedCounties } from "../mock-dataItems";
 
 // >> grouped-listview-two-lines-code

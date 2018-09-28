@@ -1,6 +1,6 @@
 
 import { Component } from "@angular/core";
-import { setInterval, setTimeout, clearInterval } from "timer";
+import { setInterval, clearInterval } from "tns-core-modules/timer";
 
 @Component({
     moduleId: module.id,

@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { confirm } from "ui/dialogs";
+import { confirm } from "tns-core-modules/ui/dialogs";
 
 @Component({
     moduleId: module.id,

@@ -1,8 +1,8 @@
 import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
-import { ScrollEventData } from "ui/scroll-view";
-import { Page } from "ui/page";
-import { Image } from "ui/image";
-import { FlexboxLayout } from "ui/layouts/flexbox-layout";
+import { ScrollEventData } from "tns-core-modules/ui/scroll-view";
+import { Page } from "tns-core-modules/ui/page";
+import { Image } from "tns-core-modules/ui/image";
+import { FlexboxLayout } from "tns-core-modules/ui/layouts/flexbox-layout";
 
 // >> content-paralax-page-code
 @Component({

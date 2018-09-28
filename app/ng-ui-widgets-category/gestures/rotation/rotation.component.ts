@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
-import { GridLayout } from "ui/layouts/grid-layout";
+import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
 // >> rotation-code
-import { RotationGestureEventData } from "ui/gestures";
+import { RotationGestureEventData } from "tns-core-modules/ui/gestures";
 
 @Component({
     moduleId: module.id,
@@ -12,7 +12,6 @@ export class RotationExampleComponent {
     public state: number;
 
     onRotation(args: RotationGestureEventData) {
-        console.log("Rotation!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);

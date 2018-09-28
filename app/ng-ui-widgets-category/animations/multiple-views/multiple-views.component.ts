@@ -1,7 +1,7 @@
-import { Component, OnInit } from "@angular/core";
-import { Page } from "ui/page";
-import { View } from "ui/core/view";
-import { Animation, AnimationDefinition } from "ui/animation";
+import { Component, AfterViewInit } from "@angular/core";
+import { Page } from "tns-core-modules/ui/page";
+import { View } from "tns-core-modules/ui/core/view";
+import { Animation, AnimationDefinition } from "tns-core-modules/ui/animation";
 
 let view1: View;
 let view2: View;
@@ -13,11 +13,11 @@ let view4: View;
     templateUrl: "./multiple-views.component.html",
     styleUrls: ["./../style.css"],
 })
-export class MultipleViewsComponent implements OnInit {
+export class MultipleViewsComponent implements AfterViewInit {
 
     constructor(private page: Page) { }
 
-    ngOnInit() {
+    ngAfterViewInit() {
         view1 = this.page.getViewById<View>("view1");
         view2 = this.page.getViewById<View>("view2");
         view3 = this.page.getViewById<View>("view3");
@@ -25,6 +25,7 @@ export class MultipleViewsComponent implements OnInit {
     }
 
     // >> animate-multiple-views-simultaneously-code
+    // import { Animation, AnimationDefinition } from "tns-core-modules/ui/animation";
     animate() {
         let definitions = new Array<AnimationDefinition>();
         let a1: AnimationDefinition = {

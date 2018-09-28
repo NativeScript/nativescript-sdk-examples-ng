@@ -1,8 +1,7 @@
 // >> double-tap-code
 import { Component } from "@angular/core";
-import { GestureEventData } from "ui/gestures";
-
-import { GridLayout } from "ui/layouts/grid-layout";
+import { GestureEventData } from "tns-core-modules/ui/gestures";
+import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
 
 @Component({
     moduleId: module.id,
@@ -11,7 +10,6 @@ import { GridLayout } from "ui/layouts/grid-layout";
 export class DoubleTapExampleComponent {
 
     onDoubleTap(args: GestureEventData) {
-        console.log("DoubleTap!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);

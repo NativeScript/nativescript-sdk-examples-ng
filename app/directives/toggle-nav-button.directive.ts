@@ -1,10 +1,10 @@
 import { ActivatedRoute } from "@angular/router";
 import { Directive, OnInit } from "@angular/core";
-import { EventData } from "data/observable";
-import { NavigationButton } from "ui/action-bar";
-import { Page } from "ui/page";
+import { EventData } from "tns-core-modules/data/observable";
+import { NavigationButton } from "tns-core-modules/ui/action-bar";
+import { Page } from "tns-core-modules/ui/page";
 import { RouterExtensions } from "nativescript-angular/router";
-import * as app from "application";
+import * as app from "tns-core-modules/application";
 
 @Directive({
     selector: "[sdkToggleNavButton]"

@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { Slider } from "ui/slider";
+import { Slider } from "tns-core-modules/ui/slider";
 
 @Component({
     moduleId: module.id,

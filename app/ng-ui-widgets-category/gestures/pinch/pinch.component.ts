@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
-import { GridLayout } from "ui/layouts/grid-layout";
+import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
 // >> pinch-code
-import { PinchGestureEventData } from "ui/gestures";
+import { PinchGestureEventData } from "tns-core-modules/ui/gestures";
 
 let startScale = 1;
 
@@ -14,7 +14,6 @@ export class PinchExampleComponent {
     public state: number;
 
     onPinch(args: PinchGestureEventData) {
-        console.log("Pinch!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);
@@ -22,7 +21,6 @@ export class PinchExampleComponent {
 
         this.scale = args.scale;
         this.state = args.state;
-
         // >> (hide)
         let grid = <GridLayout>args.object;
 
@@ -32,7 +30,7 @@ export class PinchExampleComponent {
             grid.scaleX = newScale;
             grid.scaleY = newScale;
         }
-         // << (hide)
+        // << (hide)
     }
 }
 // << pinch-code

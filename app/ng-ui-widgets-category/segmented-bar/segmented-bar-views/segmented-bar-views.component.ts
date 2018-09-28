@@ -1,6 +1,6 @@
 // >> segmentedbar-items-setting-visibility
 import { Component } from "@angular/core";
-import { SegmentedBar, SegmentedBarItem } from "ui/segmented-bar";
+import { SegmentedBar, SegmentedBarItem } from "tns-core-modules/ui/segmented-bar";
 
 @Component({
     moduleId: module.id,

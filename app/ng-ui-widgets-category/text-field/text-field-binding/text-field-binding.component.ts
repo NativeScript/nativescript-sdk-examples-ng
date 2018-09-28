@@ -1,6 +1,6 @@
 // >> textfield-binding-show-result
 import { Component } from "@angular/core";
-import { TextField } from "ui/text-field";
+import { TextField } from "tns-core-modules/ui/text-field";
 
 @Component({
     moduleId: module.id,

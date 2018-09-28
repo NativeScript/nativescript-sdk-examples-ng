@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
-import { ItemEventData } from "ui/list-view";
+import { ItemEventData } from "tns-core-modules/ui/list-view";
 import { mockedCounties } from "../mock-dataItems";
 
 // >> multi-line-grouped-code

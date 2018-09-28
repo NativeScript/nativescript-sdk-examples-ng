@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from "@angular/core";
-import { hasKey, getString, remove } from "application-settings";
+import { hasKey, getString, remove } from "tns-core-modules/application-settings";
 import { RouterExtensions } from "nativescript-angular/router";
-import * as app from "application";
+import * as app from "tns-core-modules/application";
 import { DeepLinkData } from "./shared/deep-link-data";
 @Component({
     moduleId: module.id,

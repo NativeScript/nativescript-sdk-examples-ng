@@ -4,5 +4,4 @@ import { Component } from "@angular/core";
     moduleId: module.id,
     templateUrl: "./create-formatted-string.component.html"
 })
-export class CreateFormattedStringComponent {
-}
+export class CreateFormattedStringComponent { }

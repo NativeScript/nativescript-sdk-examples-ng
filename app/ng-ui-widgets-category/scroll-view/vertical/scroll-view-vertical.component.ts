@@ -4,5 +4,4 @@ import { Component } from "@angular/core";
     moduleId: module.id,
     templateUrl: "./scroll-view-vertical.component.html"
 })
-export class ScrollViewVerticalComponent {
-}
+export class ScrollViewVerticalComponent { }

@@ -1,6 +1,6 @@
 import { Directive } from "@angular/core";
 import { ActivatedRoute } from "@angular/router";
-import { Page } from "ui/page";
+import { Page } from "tns-core-modules/ui/page";
 
 @Directive({
     selector: "[sdkExampleTitle]"

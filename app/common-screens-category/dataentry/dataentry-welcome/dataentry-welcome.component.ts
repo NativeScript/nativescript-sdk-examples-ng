@@ -1,5 +1,4 @@
 import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
-import { ObservableArray } from "data/observable-array";
 
 // >> dataentry-wellcome-login-code
 @Component({

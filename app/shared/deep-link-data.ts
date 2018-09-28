@@ -1,5 +1,5 @@
-import { setString } from "application-settings";
-import { isAndroid, isIOS } from "platform";
+import { setString } from "tns-core-modules/application-settings";
+import { isAndroid, isIOS } from "tns-core-modules/platform";
 
 export class DeepLinkData {
     constructor(url: any, androidActivity?: any) {

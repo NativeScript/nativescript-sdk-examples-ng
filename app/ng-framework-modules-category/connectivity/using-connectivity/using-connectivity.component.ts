@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 // >> connectivity-import-code
-import * as connectivity from "connectivity";
+import * as connectivity from "tns-core-modules/connectivity";
 // << connectivity-import-code
 @Component({
     moduleId: module.id,
@@ -23,6 +23,9 @@ export class UsingConnectivityExampleComponent implements OnInit, OnDestroy {
             case connectivity.connectionType.mobile:
                 this.connectionType = "Mobile";
                 break;
+            // case connectivity.connectionType.bluetooth:
+            //     this.connectionType = "Bluetooth"; // Example comng with NativeScript 5.x.x
+            //     break;
             default:
                 break;
         }

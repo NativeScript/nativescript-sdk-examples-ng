@@ -1,7 +1,7 @@
 // >> creating-label-code
 import { Component } from "@angular/core";
-import { EventData } from "data/observable";
-import { Label } from "ui/label";
+import { EventData } from "tns-core-modules/data/observable";
+import { Label } from "tns-core-modules/ui/label";
 
 @Component({
     moduleId: module.id,

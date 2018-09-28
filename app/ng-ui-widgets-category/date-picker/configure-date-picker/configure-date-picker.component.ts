@@ -1,7 +1,6 @@
 // >> date-picker-configure-code
 import { Component } from "@angular/core";
-import { DatePicker } from "ui/date-picker";
-import { EventData } from "data/observable";
+import { DatePicker } from "tns-core-modules/ui/date-picker";
 
 @Component({
     moduleId: module.id,
@@ -20,27 +19,23 @@ export class ConfigureDatePickerComponent {
     }
 
     onDateChanged(args) {
-        console.log("Date changed");
-        console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);
+        console.log("Date New value: " + args.value);
+        console.log("Date value: " + args.oldValue);
     }
 
     onDayChanged(args) {
-        console.log("Day changed");
-        console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);
+        console.log("Day New value: " + args.value);
+        console.log("Day Old value: " + args.oldValue);
     }
 
     onMonthChanged(args) {
-        console.log("Month changed");
-        console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);
+        console.log("Month New value: " + args.value);
+        console.log("Month Old value: " + args.oldValue);
     }
 
     onYearChanged(args) {
-        console.log("Year changed");
-        console.log("New value: " + args.value);
-        console.log("Old value: " + args.oldValue);
+        console.log("Year New value: " + args.value);
+        console.log("Year Old value: " + args.oldValue);
     }
 }
 // << date-picker-configure-code

@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
-import { SearchBar } from "ui/search-bar";
-import { isAndroid } from "platform";
+import { SearchBar } from "tns-core-modules/ui/search-bar";
+import { isAndroid } from "tns-core-modules/platform";
 
 @Component({
     moduleId: module.id,

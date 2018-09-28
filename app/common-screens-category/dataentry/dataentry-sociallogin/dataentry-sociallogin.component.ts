@@ -1,5 +1,4 @@
-import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
-import { ObservableArray } from "data/observable-array";
+import { Component, ChangeDetectionStrategy } from "@angular/core";
 
 @Component({
     moduleId: module.id,

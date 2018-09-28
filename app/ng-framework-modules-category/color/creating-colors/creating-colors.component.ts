@@ -1,7 +1,7 @@
 // tslint:disable:no-bitwise
 import { Component, PipeTransform, Pipe } from "@angular/core";
 // >> creating-colors-code
-import { Color } from "color";
+import { Color } from "tns-core-modules/color";
 // << creating-colors-code
 
 @Pipe({
