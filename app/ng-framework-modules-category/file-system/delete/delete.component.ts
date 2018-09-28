@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> fs-delete-import-code
-import * as fs from "file-system";
+import * as fs from "tns-core-modules/file-system";
 // << fs-delete-import-code
 @Component({
     moduleId: module.id,

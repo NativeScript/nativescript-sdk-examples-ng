@@ -1,10 +1,9 @@
 
 // >> clear-search-bar-submit
 import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { SearchBar } from "ui/search-bar";
-// >> (hide)
-import { ObservableArray } from "data/observable-array";
-// << (hide)
+import { SearchBar } from "tns-core-modules/ui/search-bar";
+import { ObservableArray } from "tns-core-modules/data/observable-array";
+
 class DataItem {
     constructor(public name: string) { }
 }

@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> swipe-code
-import { SwipeGestureEventData } from "ui/gestures";
+import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
 
 @Component({
     moduleId: module.id,

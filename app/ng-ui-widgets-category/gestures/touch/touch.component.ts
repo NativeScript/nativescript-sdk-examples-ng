@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> touch-code
-import { TouchGestureEventData } from "ui/gestures";
+import { TouchGestureEventData } from "tns-core-modules/ui/gestures";
 
 @Component({
     moduleId: module.id,

@@ -4,7 +4,7 @@ import { Component, ViewContainerRef, OnInit } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 import { ActivatedRoute } from "@angular/router";
 import { ModalDialogParams } from "nativescript-angular/modal-dialog";
-import { Page } from "ui/page";
+import { Page } from "tns-core-modules/ui/page";
 
 @Component({
     moduleId: module.id,

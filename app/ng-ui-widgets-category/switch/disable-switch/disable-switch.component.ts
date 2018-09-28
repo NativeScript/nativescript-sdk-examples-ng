@@ -1,5 +1,4 @@
 import { Component, ViewChild, ElementRef } from "@angular/core";
-import { Switch } from "ui/switch";
 
 @Component({
     moduleId: module.id,

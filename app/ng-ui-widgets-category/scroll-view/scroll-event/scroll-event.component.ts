@@ -1,7 +1,7 @@
 // >> scroll-view-event-code
 import { Component } from "@angular/core";
-import { setTimeout } from "timer";
-import { ScrollEventData } from "ui/scroll-view";
+import { setTimeout } from "tns-core-modules/timer";
+import { ScrollEventData } from "tns-core-modules/ui/scroll-view";
 
 @Component({
     moduleId: module.id,

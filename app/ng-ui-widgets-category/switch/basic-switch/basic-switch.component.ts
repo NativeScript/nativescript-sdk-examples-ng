@@ -1,6 +1,6 @@
 // >> switch-event-handle-code
 import { Component } from "@angular/core";
-import { Switch } from "ui/switch";
+import { Switch } from "tns-core-modules/ui/switch";
 
 @Component({
     moduleId: module.id,

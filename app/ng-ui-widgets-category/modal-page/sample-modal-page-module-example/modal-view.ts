@@ -1,9 +1,8 @@
-import { Component, OnInit, NgModule, ViewChild, ElementRef } from "@angular/core";
-import { ModalDialogParams } from "nativescript-angular/modal-dialog";
-import { DatePicker } from "ui/date-picker";
-import { Page } from "ui/page";
-
 // >> passing-parameters
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { ModalDialogParams } from "nativescript-angular/modal-dialog";
+import { DatePicker } from "tns-core-modules/ui/date-picker";
+
 @Component({
     moduleId: module.id,
     templateUrl: "./modal-view.html",
@@ -11,7 +10,8 @@ import { Page } from "ui/page";
 export class ModalViewComponent implements OnInit {
     public currentdate: Date;
     @ViewChild("datepicker") datePickerElement: ElementRef;
-    constructor(private params: ModalDialogParams, private page: Page) {
+
+    constructor(private params: ModalDialogParams) {
         this.currentdate = new Date(params.context);
     }
 

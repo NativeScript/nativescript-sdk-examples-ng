@@ -1,6 +1,6 @@
 // >> using-selected-index-code
 import { Component } from "@angular/core";
-import { ListPicker } from "ui/list-picker";
+import { ListPicker } from "tns-core-modules/ui/list-picker";
 
 let pokemonList = ["Bulbasaur", "Parasect", "Venonat", "Venomoth", "Diglett",
 "Dugtrio", "Meowth", "Persian", "Psyduck", "Arcanine", "Poliwrath", "Machoke"];

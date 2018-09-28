@@ -1,6 +1,6 @@
 // >> using-ngif-platform-code
 import { Component, OnInit } from "@angular/core";
-import * as application from "application";
+import * as application from "tns-core-modules/application";
 
 @Component({
     moduleId: module.id,

@@ -1,6 +1,6 @@
 import { Component, NgZone } from "@angular/core";
 // >> fps-meter-module-import
-import { start, removeCallback, addCallback, stop } from "fps-meter";
+import { start, removeCallback, addCallback, stop } from "tns-core-modules/fps-meter";
 // << fps-meter-module-import
 
 @Component({

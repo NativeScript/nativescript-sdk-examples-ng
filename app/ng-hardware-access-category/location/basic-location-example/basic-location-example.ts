@@ -2,8 +2,7 @@ import { Component } from "@angular/core";
 // >> import-geolocation-plugin
 import { Location, getCurrentLocation, isEnabled, distance, enableLocationRequest } from "nativescript-geolocation";
 // << import-geolocation-plugin
-import { SegmentedBarItem } from "ui/segmented-bar";
-import { Accuracy } from "ui/enums";
+import { Accuracy } from "tns-core-modules/ui/enums";
 
 @Component({
     moduleId: module.id,

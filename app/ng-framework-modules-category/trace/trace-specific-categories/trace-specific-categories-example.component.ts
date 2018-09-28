@@ -10,9 +10,9 @@ import {
     isEnabled,
     write,
     clearWriters
-} from "trace";
+} from "tns-core-modules/trace";
 // << import-trace-methods
-import { setTimeout } from "timer";
+import { setTimeout } from "tns-core-modules/timer";
 
 @Component({
     moduleId: module.id,

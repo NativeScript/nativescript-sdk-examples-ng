@@ -1,6 +1,6 @@
 // >> search-bar-submit-event-code
 import { Component } from "@angular/core";
-import { SearchBar } from "ui/search-bar";
+import { SearchBar } from "tns-core-modules/ui/search-bar";
 
 @Component({
     moduleId: module.id,

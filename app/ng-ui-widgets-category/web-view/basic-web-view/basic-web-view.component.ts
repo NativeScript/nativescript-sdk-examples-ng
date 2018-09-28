@@ -1,9 +1,8 @@
 // >> setting-url-webview
 import { Component, OnInit, AfterViewInit, ViewChild, ElementRef } from "@angular/core";
-import { WebView, LoadEventData } from "ui/web-view";
-import { Page } from "ui/page";
-import { TextField } from "ui/text-field";
-import { Label } from "ui/label";
+import { WebView, LoadEventData } from "tns-core-modules/ui/web-view";
+import { TextField } from "tns-core-modules/ui/text-field";
+import { Label } from "tns-core-modules/ui/label";
 
 @Component({
     moduleId: module.id,

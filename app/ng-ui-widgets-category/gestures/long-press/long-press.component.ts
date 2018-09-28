@@ -1,8 +1,7 @@
 import { Component } from "@angular/core";
-import { GridLayout } from "ui/layouts/grid-layout";
-
+import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
 // >> long-press-code
-import { GestureEventData } from "ui/gestures";
+import { GestureEventData } from "tns-core-modules/ui/gestures";
 
 @Component({
     moduleId: module.id,
@@ -10,7 +9,6 @@ import { GestureEventData } from "ui/gestures";
 })
 export class LongPressExampleComponent {
     onLongPress(args: GestureEventData) {
-        console.log("LongPress!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);

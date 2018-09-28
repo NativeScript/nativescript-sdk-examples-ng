@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { ActivityIndicator } from "ui/activity-indicator";
+import { ActivityIndicator } from "tns-core-modules/ui/activity-indicator";
 
 @Component({
     moduleId: module.id,

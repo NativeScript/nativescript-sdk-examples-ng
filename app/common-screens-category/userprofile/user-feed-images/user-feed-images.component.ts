@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, OnInit, Input } from "@angular/core";
-import { ObservableArray } from "data/observable-array";
+import { ObservableArray } from "tns-core-modules/data/observable-array";
 import { mockedDataArray } from "../mock-dataItems";
 
 // >> ext-listview-cards-code

@@ -1,7 +1,6 @@
 import { Component, OnInit } from "@angular/core";
-import { Page } from "ui/page";
-import { StackLayout } from "ui/layouts/stack-layout";
-import { Label } from "ui/label";
+import { Page } from "tns-core-modules/ui/page";
+import { StackLayout } from "tns-core-modules/ui/layouts/stack-layout";
 
 @Component({
     moduleId: module.id,
@@ -12,8 +11,6 @@ export class ApplyStyleCodeComponent implements OnInit {
     constructor(private page: Page) { }
 
     ngOnInit() {
-        let layout: StackLayout = this.page.getViewById<StackLayout>("mainlayout");
-
         // >> setting-style-via-code
         this.page.css = "#labelStyle{ background-color: #564448; color: white} button {font-size: 36; color: blue;}" +
                         " .message {font-size: 36; color: #284848; text-align: center; margin: 0 20;}";
@@ -33,6 +30,4 @@ export class ApplyStyleCodeComponent implements OnInit {
     public onTap() {
         this.counter--;
     }
-
 }
-

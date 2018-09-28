@@ -1,7 +1,6 @@
 import { Component, ChangeDetectionStrategy, Input } from "@angular/core";
-import { ObservableArray } from "data/observable-array";
+import { ObservableArray } from "tns-core-modules/data/observable-array";
 import { mockedDataArray } from "../mock-dataItems";
-import { ItemEventData } from "ui/list-view";
 
 // >> userprofile-user-feed-code
 @Component({

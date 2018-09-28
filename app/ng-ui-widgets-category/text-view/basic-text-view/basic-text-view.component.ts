@@ -1,7 +1,7 @@
 // >> textview-edit-disable-code
 import { Component } from "@angular/core";
-import { TextView } from "ui/text-view";
-import { isAndroid } from "platform";
+import { TextView } from "tns-core-modules/ui/text-view";
+import { isAndroid } from "tns-core-modules/platform";
 
 @Component({
     moduleId: module.id,

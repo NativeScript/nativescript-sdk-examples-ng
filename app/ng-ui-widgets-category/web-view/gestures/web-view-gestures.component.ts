@@ -2,7 +2,6 @@
 // >> webview-ts-gestures
 import { Component, ViewChild, ElementRef } from "@angular/core";
 import { isAndroid } from "tns-core-modules/platform";
-import { Label } from "tns-core-modules/ui/label";
 
 @Component({
     moduleId: module.id,

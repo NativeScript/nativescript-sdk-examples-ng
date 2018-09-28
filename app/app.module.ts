@@ -2,7 +2,7 @@
 // >> ngmodule-config
 // >> (hide)
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
-import { NgModule, NO_ERRORS_SCHEMA, NgModuleFactoryLoader } from "@angular/core";
+import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
@@ -10,10 +10,6 @@ import { routes } from "./app.routes";
 import { AppComponent } from "./app.component";
 // << (hide)
 import { ModalDialogService } from "nativescript-angular/modal-dialog";
-import { registerElement } from "nativescript-angular/element-registry";
-import { isIOS } from "platform";
-
-declare var GMSServices: any;
 
 @NgModule({
     schemas: [NO_ERRORS_SCHEMA],

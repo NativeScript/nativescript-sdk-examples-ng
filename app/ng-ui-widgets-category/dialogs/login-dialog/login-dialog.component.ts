@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { login, LoginResult } from "ui/dialogs";
+import { login, LoginResult } from "tns-core-modules/ui/dialogs";
 
 @Component({
     moduleId: module.id,

@@ -1,9 +1,9 @@
 
 import { Component } from "@angular/core";
-import { EventData } from "data/observable";
-import { setInterval, setTimeout, clearInterval } from "timer";
-import { Color } from "color";
-import { Button } from "ui/button";
+import { EventData } from "tns-core-modules/data/observable";
+import { setTimeout } from "tns-core-modules/timer";
+import { Color } from "tns-core-modules/color";
+import { Button } from "tns-core-modules/ui/button";
 @Component({
     moduleId: module.id,
     styleUrls: ["./settimeout-example.css"],

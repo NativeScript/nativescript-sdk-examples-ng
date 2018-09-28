@@ -1,12 +1,13 @@
+// >> time-picker-configure-code
 import { Component } from "@angular/core";
-import { TimePicker } from "ui/time-picker";
+import { TimePicker } from "tns-core-modules/ui/time-picker";
 
 @Component({
     moduleId: module.id,
     templateUrl: "./configure-time-picker.component.html"
 })
 export class ConfigureTimePickerComponent {
-    // >> time-picker-configure-code
+
     onPickerLoaded(args) {
         let timePicker = <TimePicker>args.object;
 
@@ -17,5 +18,5 @@ export class ConfigureTimePickerComponent {
     onTimeChanged(args) {
         console.log(args.value);
     }
-    // << time-picker-configure-code
 }
+// << time-picker-configure-code

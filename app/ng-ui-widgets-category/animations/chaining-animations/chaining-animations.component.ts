@@ -1,12 +1,11 @@
 import { Component } from "@angular/core";
-import { View } from "ui/core/view";
+import { View } from "tns-core-modules/ui/core/view";
 
 @Component({
     moduleId: module.id,
     templateUrl: "./chaining-animations.component.html"
 })
 export class ChainingAnimationsComponent {
-
     // >> chaining-animations-code
     animate(target: View) {
         let duration = 300;

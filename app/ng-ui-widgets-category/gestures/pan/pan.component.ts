@@ -1,7 +1,6 @@
 import { Component } from "@angular/core";
-
 // >> pan-code
-import { PanGestureEventData } from "ui/gestures";
+import { PanGestureEventData } from "tns-core-modules/ui/gestures";
 
 @Component({
     moduleId: module.id,
@@ -13,7 +12,6 @@ export class PanExampleComponent {
     public state: number;
 
     onPan(args: PanGestureEventData) {
-        console.log("Pan!");
         console.log("Object that triggered the event: " + args.object);
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);

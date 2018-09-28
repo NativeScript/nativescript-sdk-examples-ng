@@ -1,7 +1,7 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
 import { mockedDataArray } from "../mock-dataItems";
-import { EventData } from "data/observable";
-import { ScrollView, ScrollEventData } from "ui/scroll-view";
+import { EventData } from "tns-core-modules/data/observable";
+import { ScrollView, ScrollEventData } from "tns-core-modules/ui/scroll-view";
 
 // >> ext-horizontal-lists-code
 @Component({

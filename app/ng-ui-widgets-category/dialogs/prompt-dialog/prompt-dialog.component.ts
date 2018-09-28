@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { prompt, PromptResult, inputType, PromptOptions } from "ui/dialogs";
+import { prompt, PromptResult, inputType, PromptOptions } from "tns-core-modules/ui/dialogs";
 
 @Component({
     moduleId: module.id,

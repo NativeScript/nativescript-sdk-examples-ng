@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 // >> fs-update-import-code
-import * as fs from "file-system";
+import * as fs from "tns-core-modules/file-system";
 // << fs-update-import-code
 @Component({
     moduleId: module.id,

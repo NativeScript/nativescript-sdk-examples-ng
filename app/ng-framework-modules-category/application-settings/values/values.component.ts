@@ -10,7 +10,7 @@ import {
     hasKey,
     remove,
     clear
-} from "application-settings";
+} from "tns-core-modules/application-settings";
 // << app-settings-code
 
 @Component({

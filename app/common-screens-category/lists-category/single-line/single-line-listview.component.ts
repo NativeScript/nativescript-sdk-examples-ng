@@ -1,5 +1,5 @@
 import { Component, ChangeDetectionStrategy, OnInit } from "@angular/core";
-import { ItemEventData } from "ui/list-view";
+import { ItemEventData } from "tns-core-modules/ui/list-view";
 import { mockedDataArray, Country } from "../mock-dataItems";
 
 // >> ext-listview-basic-code

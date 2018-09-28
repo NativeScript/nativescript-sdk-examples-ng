@@ -1,9 +1,7 @@
 import { Component } from "@angular/core";
-import { Color } from "color";
-import { Label } from "ui/label";
-import { AbsoluteLayout } from "ui/layouts/absolute-layout";
-
-import * as enums from "ui/enums";
+import { Color } from "tns-core-modules/color";
+import { Label } from "tns-core-modules/ui/label";
+import * as enums from "tns-core-modules/ui/enums";
 
 @Component({
     moduleId: module.id,

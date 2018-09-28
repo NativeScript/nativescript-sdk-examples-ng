@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
-import { android as androidApp, ios as iosApp } from "application";
-import { ios as iosUtils } from "utils/utils";
+import { android as androidApp, ios as iosApp } from "tns-core-modules/application";
+import { ios as iosUtils } from "tns-core-modules/utils/utils";
 
 @Component({
     moduleId: module.id,

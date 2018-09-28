@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { android as androidApp, ios as iosApp } from "application";
+import { android as androidApp, ios as iosApp } from "tns-core-modules/application";
 
 @Component({
     moduleId: module.id,

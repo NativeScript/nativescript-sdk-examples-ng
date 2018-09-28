@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> import-platform-module
-import { isAndroid, isIOS, device, screen } from "platform";
+import { isAndroid, isIOS, device, screen } from "tns-core-modules/platform";
 // << import-platform-module
 // >> get-screen-device-info
 class DeviceInfo {

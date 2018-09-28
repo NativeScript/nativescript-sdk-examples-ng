@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 
 // >> camera-module-init-code
-import { ImageAsset } from "image-asset";
+import { ImageAsset } from "tns-core-modules/image-asset";
 import { takePicture, requestPermissions, isAvailable } from "nativescript-camera";
 // << camera-module-init-code
 
