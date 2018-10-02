@@ -189,6 +189,13 @@ function getComponents(cwd, components, currentDir, jenkinsPosition) {
 
                     fs.appendFileSync(componentArticleFile, "![Image](img/" + newArticleImageFileName + " \"Image\")\n\n",  {encoding:'utf8'});
                 }
+                let articleImages = glob.sync(articleDirName + "/*.png");
+                articleImages.forEach(function(imagePath){
+                    let stringSplitResult = imagePath.split("/");
+                    let imageName = stringSplitResult[stringSplitResult.length - 1];
+                    let joined = path.join(imgDir, imageName);
+                    fs.copySync(imagePath, joined);
+                })
 
                 // Links
                 var githubDirUrl = pjson.homepage + "/edit/master/" + path.relative(cwd, articleDirName).replace(/\\/g, "/");
