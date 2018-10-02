@@ -3,7 +3,7 @@
         <!-- >> listview-create-html -->
         <ListView [items]="countries" (itemTap)="onItemTap($event)" class="list-group">
             <ng-template let-country="item" let-i="index" let-odd="odd" let-even="even">
-                <!-- The item template can only have a single root view container (e.g. GriLayout, StackLayout, etc.)-->
+                <!-- The item template can only have a single root view container (e.g. GridLayout, StackLayout, etc.)-->
                 <StackLayout orientation="horizontal" class="list-group-item">
                     <Label text="Country: " textWrap="true"></Label>
                     <Label [text]="country.name"></Label>
