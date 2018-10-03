@@ -1,4 +1,4 @@
- // >> opening-modal-page
+ // >> opening-modal-view
 import { Component, ViewContainerRef } from "@angular/core";
 import { ModalDialogOptions, ModalDialogService } from "nativescript-angular/modal-dialog";
 import { HomeModalViewComponent } from "./home-modal-view.component";
@@ -6,9 +6,9 @@ import { HomeModalViewComponent } from "./home-modal-view.component";
 @Component({
     moduleId: module.id,
     providers: [ModalDialogService],
-    templateUrl: "./modal-page-navigation.component.html"
+    templateUrl: "./modal-view-navigation.component.html"
 })
-export class ModalPageNavigationComponent {
+export class ModalViewNavigationComponent {
     constructor(private _modalService: ModalDialogService, private _vcRef: ViewContainerRef) { }
 
     onTap(): void {
@@ -23,5 +23,5 @@ export class ModalPageNavigationComponent {
                 console.log(result);
             });
     }
-    // << opening-modal-page
+    // << opening-modal-view
 }

@@ -1,4 +1,4 @@
-// >> main-modal-page-code
+// >> main-modal-view-code
 import { Component, OnInit } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 import { ActivatedRoute } from "@angular/router";
@@ -16,4 +16,4 @@ export class HomeModalViewComponent implements OnInit {
         this._routerExtensions.navigate(["modal"], { relativeTo: this._activeRoute });
     }
 }
-// << main-modal-page-code
+// << main-modal-view-code

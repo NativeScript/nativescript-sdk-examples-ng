@@ -211,9 +211,9 @@ export const routes = [
         data: { title: "Location" }
     },
     {
-        path: "modal-page",
-        loadChildren: "./ng-ui-widgets-category/modal-page/modal-page-examples.module#ModalPageExamplesModule",
-        data: { title: "Modal page" }
+        path: "modal-view",
+        loadChildren: "./ng-ui-category/modal-view-ng/modal-view-examples.module#ModalViewExamplesModule",
+        data: { title: "Modal view" }
     },
     {
         path: "color",
