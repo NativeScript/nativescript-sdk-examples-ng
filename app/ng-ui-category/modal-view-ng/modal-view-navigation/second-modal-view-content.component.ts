@@ -1,4 +1,4 @@
-// >> second-modal-page-code
+// >> second-modal-view-code
 import { Component } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 import { ModalDialogParams } from "nativescript-angular/modal-dialog";
@@ -18,4 +18,4 @@ export class SecondModalViewContentComponent  {
         this._params.closeCallback("return value");
     }
 }
-// << second-modal-page-code
+// << second-modal-view-code

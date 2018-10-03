@@ -1,6 +1,5 @@
 import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/modal-dialog";
 import { Component, ViewContainerRef } from "@angular/core";
-import { DatePicker } from "ui/date-picker";
 import { ModalViewComponent } from "./modal-view";
 
 const millisecondsInADay = 24 * 60 * 60 * 1000;
@@ -10,9 +9,9 @@ const dayDiff = (firstDate, secondDate) =>
 @Component({
     moduleId: module.id,
     providers: [ModalDialogService],
-    templateUrl: "./sample-modal-page-module-example.html"
+    templateUrl: "./sample-modal-view-module-example.html"
 })
-export class SampleModalPageModuleExampleComponent {
+export class SampleModalViewModuleExampleComponent {
     public startDate: Date;
     public endDate: Date;
     public selectedDate: Date;

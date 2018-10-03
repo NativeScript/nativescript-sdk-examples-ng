@@ -1,6 +1,6 @@
 // tslint:disable:max-line-length
-// >> first-modal-page-code
-import { Component, ViewContainerRef, OnInit } from "@angular/core";
+// >> first-modal-view-code
+import { Component, OnInit } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 import { ActivatedRoute } from "@angular/router";
 import { ModalDialogParams } from "nativescript-angular/modal-dialog";
@@ -22,4 +22,4 @@ export class HomeModalViewContentComponent implements OnInit {
         this._params.closeCallback("return value");
     }
 }
-// << first-modal-page-code
+// << first-modal-view-code

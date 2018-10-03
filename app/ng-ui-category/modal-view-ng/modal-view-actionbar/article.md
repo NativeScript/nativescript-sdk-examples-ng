@@ -1,12 +1,12 @@
 Modal Dialog with ActionBar
 
-Defining the main view component
+Defining the main page component
 <snippet id='main-view-html'/>
 <snippet id='main-view-code'/>
 
-Definig modal page innner component's routes
+Definig modal view innner component's routes
 
-<snippet id='modal-page-routes-actionbar'/>
+<snippet id='modal-view-routes-actionbar'/>
 
 Defining the modal root component
 <snippet id='modal-root-html'/>

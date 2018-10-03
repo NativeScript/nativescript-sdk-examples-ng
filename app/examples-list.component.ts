@@ -41,7 +41,7 @@ let mainMenuLinks = [
     new Link("Color", "/color"),
     new Link("Connectivity", "/connectivity"),
     new Link("File System", "/file-system"),
-    new Link("Modal page", "/modal-page"),
+    new Link("Modal view", "/modal-view"),
     new Link("ListView (extended examples)", "/extended-listview"),
     new Link("DataEntry (extended examples)", "/dataentry"),
     new Link("User Profile (extended examples)", "/userprofile"),

@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Modal page example", "/modal-page/sample-modal-page"),
-    new Link("Modal page navigation", "/modal-page/modal-page-navigation"),
-    new Link("Modal page ActionBar", "/modal-page/modal-view-actionbar")
+    new Link("Modal view example", "/modal-view/sample-modal-view"),
+    new Link("Modal view navigation", "/modal-view/modal-view-navigation"),
+    new Link("Modal view ActionBar", "/modal-view/modal-view-actionbar")
 ];
 
 @Component({
@@ -12,7 +12,7 @@ let menuLinks = [
     templateUrl: "./../../examples-list.component.html",
     changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ModalPageExamplesComponent {
+export class ModalViewExamplesComponent {
     public links: Array<Link>;
 
     constructor() {
