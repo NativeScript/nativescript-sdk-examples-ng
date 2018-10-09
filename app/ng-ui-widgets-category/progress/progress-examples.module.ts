@@ -4,6 +4,7 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ProgressExamplesComponent } from "./progress-examples.component";
 import { CreatingProgressComponent } from "./creating-progress/creating-progress.component";
 import { SettingProgressComponent } from "./setting-progress/setting-progress.component";
+import { StyleProgressComponent } from "./style-progress/style-progress.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -20,6 +21,11 @@ export const routerConfig = [
         path: "setting-progress",
         component: SettingProgressComponent,
         data: { title: "Set up Progress" }
+    },
+    {
+        path: "style-progress",
+        component: StyleProgressComponent,
+        data: { title: "Style Progress" }
     }
 ];
 
@@ -34,7 +40,8 @@ export const routerConfig = [
     declarations: [
         ProgressExamplesComponent,
         CreatingProgressComponent,
-        SettingProgressComponent
+        SettingProgressComponent,
+        StyleProgressComponent
     ]
 })
 

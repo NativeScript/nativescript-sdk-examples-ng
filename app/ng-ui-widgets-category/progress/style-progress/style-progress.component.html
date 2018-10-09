@@ -1,0 +1,12 @@
+<StackLayout sdkExampleTitle sdkToggleNavButton>
+    <GridLayout rows="*">
+        <StackLayout verticalAlign="center" height="100">
+            <!-- >> progress-style-html -->
+            <Progress [value]="progressValue" 
+                      (valueChanged)="onValueChanged($event)" 
+                      maxValue="100" class="m-20">
+            </Progress>
+            <!-- << progress-style-html -->
+        </StackLayout>
+    </GridLayout>
+</StackLayout>

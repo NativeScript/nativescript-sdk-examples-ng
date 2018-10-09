@@ -3,7 +3,8 @@ import { Link } from "./../../link";
 
 let menuLinks = [
     new Link("Create Progress", "/progress/creating-progress"),
-    new Link("Set up Progress", "/progress/setting-progress")
+    new Link("Set up Progress", "/progress/setting-progress"),
+    new Link("Style Progress", "/progress/style-progress")
 ];
 
 @Component({
