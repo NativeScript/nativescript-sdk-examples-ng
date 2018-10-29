@@ -30,11 +30,8 @@ export class BasicTextViewComponent {
         alert("Text: " + this.tvtext);
     }
 
-    submit(args) {
-        let textview: TextView = <TextView>args.object;
-        if (isAndroid) {
-            textview.android.clearFocus();
-        }
+    submit() {
+        alert(this.tvtext);
     }
 }
 // << textview-edit-disable-code
