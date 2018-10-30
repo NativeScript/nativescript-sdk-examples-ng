@@ -3,7 +3,6 @@
 		<!-- >> textview-html -->
 		<Button [text]="buttonText" class="btn btn-primary btn-active" (tap)="disableTextView()"></Button>
 		<Button text="Show text" class="btn btn-outline btn-active" (tap)="showText()"></Button>
-		<Button text="Submit" class="btn btn-outline btn-active" (tap)="submit()"></Button>
 		<StackLayout class="input-field">
 			<Label text="Enter text:" class="label"></Label>
 			<TextView [(ngModel)]="tvtext" hint="Enter some text" [editable]="editState"
