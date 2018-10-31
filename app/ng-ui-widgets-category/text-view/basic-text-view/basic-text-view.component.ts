@@ -1,7 +1,5 @@
 // >> textview-edit-disable-code
 import { Component } from "@angular/core";
-import { TextView } from "tns-core-modules/ui/text-view";
-import { isAndroid } from "tns-core-modules/platform";
 
 @Component({
     moduleId: module.id,
@@ -28,13 +26,6 @@ export class BasicTextViewComponent {
 
     showText() {
         alert("Text: " + this.tvtext);
-    }
-
-    submit(args) {
-        let textview: TextView = <TextView>args.object;
-        if (isAndroid) {
-            textview.android.clearFocus();
-        }
     }
 }
 // << textview-edit-disable-code
