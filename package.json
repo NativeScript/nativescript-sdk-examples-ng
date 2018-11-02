@@ -22,10 +22,10 @@
   "nativescript": {
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-android": {
-      "version": "4.2.0"
+      "version": "5.0.0"
     },
     "tns-ios": {
-      "version": "4.2.0"
+      "version": "5.0.0"
     }
   },
   "dependencies": {
@@ -37,14 +37,14 @@
     "@angular/platform-browser": "~6.1.0",
     "@angular/platform-browser-dynamic": "~6.1.0",
     "@angular/router": "~6.1.0",
-    "nativescript-angular": "^6.1.0",
+    "nativescript-angular": "^6.2.0",
     "nativescript-camera": "^4.0.2",
     "nativescript-geolocation": "^4.3.0",
     "nativescript-intl": "~3.0.0",
     "nativescript-theme-core": "^1.0.4",
     "reflect-metadata": "~0.1.8",
-    "rxjs": "~6.0.0 || >=6.1.0",
-    "tns-core-modules": "^4.2.0",
+    "rxjs": "^6.0.0",
+    "tns-core-modules": "^5.0.1",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
@@ -56,7 +56,7 @@
     "lazy": "1.0.11",
     "markdown-snippet-injector": "^0.2.0",
     "nativescript-dev-typescript": "^0.7.2",
-    "nativescript-dev-webpack": "rc",
+    "nativescript-dev-webpack": "^0.16.3",
     "opener": "^1.4.1",
     "rimraf": "^2.5.3",
     "tar.gz": "^1.0.5",
