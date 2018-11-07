@@ -1,6 +1,8 @@
 import { Component, OnInit } from "@angular/core";
 import { ImageSource, fromBase64, fromFile } from "tns-core-modules/image-source";
+// >> import-image-module
 import { Image } from "tns-core-modules/ui/image";
+// << import-image-module
 import { Label } from "tns-core-modules/ui/label";
 import { StackLayout } from "tns-core-modules/ui/layouts/stack-layout";
 
