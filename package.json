@@ -38,7 +38,7 @@
     "@angular/platform-browser-dynamic": "~6.1.0",
     "@angular/router": "~6.1.0",
     "nativescript-angular": "^6.2.0",
-    "nativescript-camera": "^4.0.2",
+    "nativescript-camera": "~4.0.2",
     "nativescript-geolocation": "^4.3.0",
     "nativescript-intl": "~3.0.0",
     "nativescript-theme-core": "^1.0.4",
