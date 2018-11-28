@@ -2,9 +2,9 @@ Add the following `test.html`for the WebView exmaple via the ollowing line in `w
 
 ```JS
 new CopyWebpackPlugin([
-    { from: "ng-ui-widgets-category/web-view/web-view-html/*.html" }, // Add this line
-    { from: "fonts/**" },
-    { from: "**/*.jpg" },
-    { from: "**/*.png" },
+    { from: { glob: "ng-ui-widgets-category/web-view/web-view-html/*.html"} },
+    { from: { glob: "fonts/**" } },
+    { from: { glob: "**/*.jpg" } },
+    { from: { glob: "**/*.png" } },
 ]
 ```
