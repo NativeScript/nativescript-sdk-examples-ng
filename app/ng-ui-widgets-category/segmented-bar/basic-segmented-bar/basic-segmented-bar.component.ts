@@ -21,8 +21,8 @@ export class BasicSegmentedBarComponent {
     }
 
     public onSelectedIndexChange(args) {
-        let segmetedBar = <SegmentedBar>args.object;
-        this.prop = "Item" + (segmetedBar.selectedIndex + 1);
+        let segmentedBar = <SegmentedBar>args.object;
+        this.prop = "Item" + (segmentedBar.selectedIndex + 1);
     }
 }
 // << add-segmentedbar-items
