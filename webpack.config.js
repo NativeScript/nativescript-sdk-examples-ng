@@ -129,9 +129,9 @@ module.exports = env => {
             minimize: !!uglify,
             minimizer: [
                 new UglifyJsPlugin({
+                    parallel: true,
+                    cache: true,
                     uglifyOptions: {
-                        parallel: true,
-                        cache: true,
                         output: {
                             comments: false,
                         },
@@ -188,9 +188,9 @@ module.exports = env => {
                 { test: /\.css$/, exclude: /[\/|\\]app\.css$/, use: "raw-loader" },
                 { test: /\.scss$/, exclude: /[\/|\\]app\.scss$/, use: ["raw-loader", "resolve-url-loader", "sass-loader"] },
 
-                // Compile TypeScript files with ahead-of-time compiler.
                 {
-                    test: /.ts$/, use: [
+                    test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
+                    use: [
                         "nativescript-dev-webpack/moduleid-compat-loader",
                         "@ngtools/webpack",
                     ]
@@ -222,10 +222,10 @@ module.exports = env => {
             ]),
             // Copy assets to out dir. Add your own globs as needed.
             new CopyWebpackPlugin([
-                { from: "ng-ui-widgets-category/web-view/web-view-html/*.html" },
-                { from: "fonts/**" },
-                { from: "**/*.jpg" },
-                { from: "**/*.png" },
+                { from: { glob: "ng-ui-widgets-category/web-view/web-view-html/*.html"} },
+                { from: { glob: "fonts/**" } },
+                { from: { glob: "**/*.jpg" } },
+                { from: { glob: "**/*.png" } },
             ], { ignore: [`${relative(appPath, appResourcesFullPath)}/**`] }),
             // Generate a bundle starter script and activate it in package.json
             new nsWebpack.GenerateBundleStarterPlugin([

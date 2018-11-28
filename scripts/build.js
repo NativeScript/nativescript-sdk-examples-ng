@@ -1,13 +1,10 @@
 "use strict";
-
 var process = require("process");
 var path = require("path");
 var fs = require('fs-extra');
 var glob = require("glob");
 var rimraf = require("rimraf");
 var pjson = require('../package.json');
-var child_process = require('child_process');
-var targz = require('tar.gz');
 
 const CATEGORY = "-category";
 
