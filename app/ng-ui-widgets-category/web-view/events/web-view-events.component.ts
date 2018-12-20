@@ -11,12 +11,12 @@ import { WebView, LoadEventData } from "tns-core-modules/ui/web-view";
     templateUrl: "./web-view-events.component.html"
 })
 export class WebViewEventsComponent {
-    public webViewSrc = "https://www.nativescript.org/";
+    public webViewSrc = "https://docs.nativescript.org/";
     public isItemVisible = true;
 
     @ViewChild("webview") webViewElement: ElementRef;
     private firstUrl = "https://google.com/";
-    private secondUrl = "https://www.nativescript.org/";
+    private secondUrl = "https://docs.nativescript.org/";
 
     public onLoadStarted(args: LoadEventData) {
         this.isItemVisible = true;
@@ -41,7 +41,11 @@ export class WebViewEventsComponent {
             message = "Error loading " + args.url + ": " + args.error;
         }
         console.log(message);
-
+        // >> (hide)
+        setTimeout(() => {
+            this.isItemVisible = false;
+        }, 1000);
+        // << (hide)
     }
     public onLoadFinished(args: LoadEventData) {
         let message;
@@ -65,11 +69,6 @@ export class WebViewEventsComponent {
             message = "Error loading " + args.url + ": " + args.error;
         }
         console.log(message);
-        // >> (hide)
-        setTimeout(() => {
-            this.isItemVisible = false;
-        }, 500);
-        // << (hide)
     }
 
     public loadFirst() {
