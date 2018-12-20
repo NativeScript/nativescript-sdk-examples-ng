@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { login, LoginResult } from "tns-core-modules/ui/dialogs";
+import { login, LoginOptions, LoginResult } from "tns-core-modules/ui/dialogs";
 
 @Component({
     moduleId: module.id,
@@ -8,13 +8,16 @@ import { login, LoginResult } from "tns-core-modules/ui/dialogs";
 export class LoginDialogComponent {
     displayLoginDialog() {
         // >> login-dialog-code
-        let options = {
-            title: "Login",
-            message: "Login",
-            username: "john_doe",
-            password: "",
-            okButtonText: "Ok",
-            cancelButtonText: "Cancel"
+        let options: LoginOptions = {
+            title: "Login Form",
+            message: "Enter your credentials",
+            okButtonText: "Login",
+            cancelButtonText: "Cancel",
+            neutralButtonText: "Neutral",
+            userNameHint: "Enter your username",
+            passwordHint: "Enter your password",
+            userName: "john_doe",
+            password: "123456"
         };
 
         login(options).then((loginResult: LoginResult) => {
