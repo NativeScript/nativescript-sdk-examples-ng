@@ -4,7 +4,8 @@ import { Link } from "./../../link";
 let menuLinks = [
     new Link("Horizontal orientation", "/scroll-view/horizontal"),
     new Link("Vertical orientation", "/scroll-view/vertical"),
-    new Link("Scroll event", "/scroll-view/scroll-event")
+    new Link("Scroll event", "/scroll-view/scroll-event"),
+    new Link("Enable/Disable scroll", "/scroll-view/is-scroll-enabled")
 ];
 
 @Component({
