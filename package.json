@@ -23,6 +23,9 @@
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-android": {
       "version": "5.1.0"
+    },
+    "tns-ios": {
+      "version": "5.1.0"
     }
   },
   "dependencies": {

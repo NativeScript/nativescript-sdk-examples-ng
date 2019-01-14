@@ -5,6 +5,7 @@ import { ScrollViewExamplesComponent } from "./scroll-view-examples.component";
 import { ScrollViewHorizontalComponent } from "./horizontal/scroll-view-horizontal.component";
 import { ScrollViewVerticalComponent } from "./vertical/scroll-view-vertical.component";
 import { ScrollEventComponent } from "./scroll-event/scroll-event.component";
+import { ScrollViewIsEnabledComponent } from "./is-scroll-enabled/is-scroll-enabled.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -26,6 +27,11 @@ export const routerConfig = [
         path: "scroll-event",
         component: ScrollEventComponent,
         data: { title: "Scroll event" }
+    },
+    {
+        path: "is-scroll-enabled",
+        component: ScrollViewIsEnabledComponent,
+        data: { title: "Enable/Disable scroll" }
     }
 ];
 
@@ -41,7 +47,8 @@ export const routerConfig = [
         ScrollViewExamplesComponent,
         ScrollViewHorizontalComponent,
         ScrollViewVerticalComponent,
-        ScrollEventComponent
+        ScrollEventComponent,
+        ScrollViewIsEnabledComponent
     ]
 })
 
