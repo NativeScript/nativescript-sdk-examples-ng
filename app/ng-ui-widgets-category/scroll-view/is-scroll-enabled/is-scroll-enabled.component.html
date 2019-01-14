@@ -1,7 +1,7 @@
 <!-- >> scroll-view-is-enabled-html -->
 <GridLayout sdkExampleTitle sdkToggleNavButton rows="100 *">
-    <Button text="{{isScrollEnabledProperty ? 'Disable scroll' : 'Enable scroll'}}" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
-    <ScrollView [isScrollEnabled]="isScrollEnabledProperty" row="1">
+    <Button text="{{scrollEnabled ? 'Disable scroll' : 'Enable scroll'}}" (tap)="onTap()" class="btn btn-primary btn-active"></Button>
+    <ScrollView [isScrollEnabled]="scrollEnabled" row="1">
         <GridLayout class="m-15" rows="auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto auto">
             <Label class="h3 m-5" height="50" row="0" text="Title 1"></Label>
             <Label class="h3 m-5" height="50" row="1" text="Title 2"></Label>

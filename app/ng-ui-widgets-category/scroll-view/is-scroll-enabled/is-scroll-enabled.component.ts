@@ -6,10 +6,10 @@ import { Component } from "@angular/core";
 })
 export class ScrollViewIsEnabledComponent {
     // >> scroll-view-is-enabled-code
-    isScrollEnabledProperty: boolean = true;
+    scrollEnabled: boolean = true;
 
     onTap() {
-        this.isScrollEnabledProperty = !this.isScrollEnabledProperty;
+        this.scrollEnabled = !this.scrollEnabled;
     }
     // << scroll-view-is-enabled-code
 }
