@@ -21,8 +21,8 @@ export class SegmentedBarViewsComponent {
     }
 
     public onSelectedIndexChange(args) {
-        let segmetedBar = <SegmentedBar>args.object;
-        this.selectedIndex = segmetedBar.selectedIndex;
+        let segmentedBar = <SegmentedBar>args.object;
+        this.selectedIndex = segmentedBar.selectedIndex;
     }
 
 }
