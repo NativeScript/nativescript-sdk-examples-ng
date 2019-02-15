@@ -1,4 +1,2 @@
-Use the following code in case you need to check somewhere in your code the platform you are running against:
-
-Basic usage of the `application` module in a component:
+Basic usage of the `application` module in a component to apply different code on Android and iOS
 <snippet id='app-check-target-code'/>

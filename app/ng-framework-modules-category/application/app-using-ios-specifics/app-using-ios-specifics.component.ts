@@ -15,6 +15,17 @@ export class AppUsingIosExampleComponent {
     constructor() {
 
         if (iosApp) {
+            // >> app-class-properties-ios
+            // https://developer.apple.com/documentation/uikit/uiapplicationdelegate?language=objc
+            let delegate = iosApp.delegate; // the iOS application delegate
+
+            let nativeApp = iosApp.nativeApp; // The native iOS app
+
+            // https://developer.apple.com/documentation/uikit/uiwindow/1621581-rootviewcontroller?language=objc
+            let rootController = iosApp.rootController; // the iOS rootViewController
+
+            let window = iosApp.window; // UIWindow
+            // << app-class-properties-ios
 
             this.isItemVisible = true;
             this.batteryLife = 0;
