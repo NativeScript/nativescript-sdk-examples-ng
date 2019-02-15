@@ -15,8 +15,8 @@ export class CreatingListPickerComponent {
     public picked: string;
 
     constructor() {
-        for (let i = 0; i < pokemonList.length; i++) {
-            this.pokemons.push(pokemonList[i]);
+        for (let pokemon of pokemonList) {
+            this.pokemons.push(pokemon);
         }
     }
 
