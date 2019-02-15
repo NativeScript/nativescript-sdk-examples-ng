@@ -21,6 +21,7 @@ export class AppUsingAndroidExampleComponent {
             this.isItemVisible = true;
 
             // >> app-class-properties
+            // import { android as androidApp } from "tns-core-modules/application";
             let isPaused = androidApp.paused; // e.g. false
             let packageName = androidApp.packageName; // The package ID e.g. org.nativescript.nativescriptsdkexamplesng
             let nativeApp = androidApp.nativeApp; // The native APplication reference

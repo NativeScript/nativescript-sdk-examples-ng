@@ -16,6 +16,8 @@ export class AppUsingIosExampleComponent {
 
         if (iosApp) {
             // >> app-class-properties-ios
+            // import { ios as iosApp } from "tns-core-modules/application";
+
             // https://developer.apple.com/documentation/uikit/uiapplicationdelegate?language=objc
             let delegate = iosApp.delegate; // the iOS application delegate
 
