@@ -1,4 +1,4 @@
-## Application MOdule iOS Specific Properties
+### Application Module iOS Specific Properties
 
 The application module provides a number of iOS specific properties to access the iOS app, delegate and root view controller, etc..
 <snippet id='app-class-properties-ios'/>
