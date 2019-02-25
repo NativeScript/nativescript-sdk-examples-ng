@@ -20,10 +20,24 @@ export class AppUsingAndroidExampleComponent {
             console.log("We are running on Android device!");
             this.isItemVisible = true;
 
+            // >> app-class-properties
+            // import { android as androidApp } from "tns-core-modules/application";
+            let isPaused = androidApp.paused; // e.g. false
+            let packageName = androidApp.packageName; // The package ID e.g. org.nativescript.nativescriptsdkexamplesng
+            let nativeApp = androidApp.nativeApp; // The native APplication reference
+            let foregroundActivity = androidApp.foregroundActivity; // The current Activity reference
+            let currentContext = androidApp.currentContext; // The current Android context
+            let context = androidApp.context; console.log(context); // The current Android context
+            // << app-class-properties
+
             // >> app-android-dirs-code
             this.fileList = [];
             this.appContext = androidApp.context;
+
+            // https://developer.android.com/reference/android/content/Context.html#getFilesDir()
             this.filesDir = this.appContext.getFilesDir();
+
+            // https://developer.android.com/reference/android/content/Context.html#getCacheDir()
             this.cacheDir = this.appContext.getCacheDir();
 
             let files = this.appContext.fileList();
@@ -37,8 +51,9 @@ export class AppUsingAndroidExampleComponent {
             this.batteryLife = "0";
             let that = this;
 
+            // Broadcast Receiver https://developer.android.com/reference/android/content/BroadcastReceiver
             androidApp.registerBroadcastReceiver(android.content.Intent.ACTION_BATTERY_CHANGED,
-                function onReceiveCallback(context: android.content.Context, intent: android.content.Intent) {
+                function onReceiveCallback(androidContext: android.content.Context, intent: android.content.Intent) {
                     let level = intent.getIntExtra(android.os.BatteryManager.EXTRA_LEVEL, -1);
                     let scale = intent.getIntExtra(android.os.BatteryManager.EXTRA_SCALE, -1);
                     let percent = (level / scale) * 100.0;
@@ -50,6 +65,12 @@ export class AppUsingAndroidExampleComponent {
             console.log("We are running on iOS device");
             this.isItemVisible = false;
         }
+    }
+
+    unregister() {
+        // >> app-android-broadcast-unregister-code
+        androidApp.unregisterBroadcastReceiver(android.content.Intent.ACTION_BATTERY_CHANGED);
+        // << app-android-broadcast-unregister-code
     }
 }
 
