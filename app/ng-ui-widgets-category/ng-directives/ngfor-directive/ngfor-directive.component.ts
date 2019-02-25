@@ -1,7 +1,7 @@
+// >> ngfor-bind-items-code
 import { Component } from "@angular/core";
 import { fruits } from "./fruits";
 
-// >> ngfor-bind-items-code
 @Component({
     moduleId: module.id,
     templateUrl: "./ngfor-directive.component.html",
