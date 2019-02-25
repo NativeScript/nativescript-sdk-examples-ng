@@ -2,7 +2,13 @@
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 
-@Injectable()
+@Injectable(
+    // Instead of providers array you can use provideIn
+    // Learn more https://angular.io/guide/providers
+    // {
+    //     providedIn: "root" 
+    // }
+)
 export class MyHttpGetService {
     private serverUrl = "https://httpbin.org/get";
 

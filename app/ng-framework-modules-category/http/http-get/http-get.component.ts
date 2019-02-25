@@ -5,7 +5,7 @@ import { MyHttpGetService } from "./http-get.services";
 @Component({
     moduleId: module.id,
     templateUrl: "./http-get.component.html",
-    providers: [MyHttpGetService]
+    providers: [MyHttpGetService] // using the providers array
 })
 export class HttpGetComponent implements OnInit {
     public host: string;
