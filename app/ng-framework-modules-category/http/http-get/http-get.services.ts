@@ -6,7 +6,7 @@ import { HttpClient, HttpHeaders } from "@angular/common/http";
     // Instead of providers array you can use provideIn
     // Learn more https://angular.io/guide/providers
     // {
-    //     providedIn: "root" 
+    //     providedIn: "root"
     // }
 )
 export class MyHttpGetService {
