@@ -19,7 +19,7 @@ Reading values that are not set before not providing default value
 <snippet id='app-settings-no-value-code'/>
 
 Checking for existence of value for key
-<snippet id='app-settings-no-key-code '/>
+<snippet id='app-settings-no-key-code'/>
 
 Removing value for key
 <snippet id='app-settings-remove-key-code'/>
