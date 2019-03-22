@@ -1,5 +1,3 @@
-
-# Icon Fonts
 While bitmap images are great, they present challenges in designing mobile applications. Images increase the size of the application if they are embedded in it. If not, they require additional http requests in order to be fetched. Images consume memory. Furthermore, bitmap images do not scale well. If scaled up, they will lose quality. If scaled down, they will waste space. On the other hand, fonts scale well, do not require additional http requests for each glyph and do not increase memory usage significantly. Icon fonts contain icons instead of alphabet characters and can be used instead of images in mobile applications.
 
 ## Using Icon Fonts in NativeScript
