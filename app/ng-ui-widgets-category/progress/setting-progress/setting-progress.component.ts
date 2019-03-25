@@ -1,6 +1,6 @@
 // >> progress-setting-code
 import { Component } from "@angular/core";
-import { Progress } from "ui/progress";
+import { Progress } from "tns-core-modules/ui/progress";
 
 @Component({
     moduleId: module.id,

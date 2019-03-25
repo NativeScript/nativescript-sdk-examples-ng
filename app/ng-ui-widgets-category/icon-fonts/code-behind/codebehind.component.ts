@@ -8,7 +8,8 @@ import { Component } from "@angular/core";
 })
 
 export class CodeBehindFontsExampleComponent {
-    public glyphs = [];
+    glyphs = [];
+
     constructor() {
         for (let charCode = 0xe903; charCode <= 0xeaea; charCode++) {
             let glyph = {

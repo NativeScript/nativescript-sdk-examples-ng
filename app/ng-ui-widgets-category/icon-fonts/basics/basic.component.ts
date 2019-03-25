@@ -6,8 +6,4 @@ import { Component } from "@angular/core";
     styleUrls: ["./basic.css"],
 })
 
-export class BasicIconFontsExampleComponent {
-
-    constructor() {
-    }
-}
+export class BasicIconFontsExampleComponent { }
