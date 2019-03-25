@@ -4,7 +4,7 @@
 .my-label {
     border-radius: 5;
     color: white;
-    font-family: FontAwesome;
+    font-family: "fa-regular-400";
     font-size: 24;
     vertical-align: middle;
 }

@@ -1,71 +1,22 @@
-<GridLayout class="p-15" rows="*" columns="*" sdkExampleTitle sdkToggleNavButton>
-    <!-- >> icon-font-html-def -->
-    <ScrollView>
-        <GridLayout rows="auto auto auto auto auto auto auto" columns="">
-            <StackLayout class="border_style" row="0">
-                <Label color="#66ccff" class="m-5 icon" fontSize="34" textWrap="true">
-                    <FormattedString>
-                        <Span text="Icon code: "></Span>
-                        <Span text="&#xe903;" fontAttributes="Bold"></Span>
-                    </FormattedString>
-                </Label>
-                <Label color="#FF6666" class="m-5" fontSize="18" textWrap="true" text="Icon code: e903" class="icon"></Label>
-            </StackLayout>
-            <StackLayout class="border_style" row="1">
-                <Label color="#66ccff" class="m-5 icon" fontSize="34" textWrap="true">
-                    <FormattedString>
-                        <Span text="Icon code: "></Span>
-                        <Span text="&#xe908;" fontAttributes="Bold"></Span>
-                    </FormattedString>
-                </Label>
-                <Label color="#FF6666" class="m-5" fontSize="18" textWrap="true" text="Icon code: e908" class="icon"></Label>
-            </StackLayout>
-            <StackLayout class="border_style" row="2">
-                <Label color="#66ccff" class="m-5 icon" fontSize="34" textWrap="true">
-                    <FormattedString>
-                        <Span text="Icon code: "></Span>
-                        <Span text="&#xe90b;" fontAttributes="Bold"></Span>
-                    </FormattedString>
-                </Label>
-                <Label color="#FF6666" class="m-5" fontSize="18" textWrap="true" text="Icon code: e90b" class="icon"></Label>
-            </StackLayout>
-            <StackLayout class="border_style" row="3">
-                <Label color="#66ccff" class="m-5 icon" fontSize="34" textWrap="true">
-                    <FormattedString>
-                        <Span text="Icon code: "></Span>
-                        <Span text="&#xe90c;" fontAttributes="Bold"></Span>
-                    </FormattedString>
-                </Label>
-                <Label color="#FF6666" class="m-5" fontSize="18" textWrap="true" text="Icon code: e90c" class="icon"></Label>
-            </StackLayout>
-            <StackLayout class="border_style" row="4">
-                <Label color="#66ccff" class="m-5 icon" fontSize="34" textWrap="true">
-                    <FormattedString>
-                        <Span text="Icon code: "></Span>
-                        <Span text="&#xe914;" fontAttributes="Bold"></Span>
-                    </FormattedString>
-                </Label>
-                <Label color="#FF6666" class="m-5" fontSize="18" textWrap="true" text="Icon code: e914" class="icon"></Label>
-            </StackLayout>
-            <StackLayout class="border_style" row="5">
-                <Label color="#66ccff" class="m-5 icon" fontSize="34" textWrap="true">
-                    <FormattedString>
-                        <Span text="Icon code: "></Span>
-                        <Span text="&#xe915;" fontAttributes="Bold"></Span>
-                    </FormattedString>
-                </Label>
-                <Label color="#FF6666" class="m-5" fontSize="18" textWrap="true" text="Icon code: e915" class="icon"></Label>
-            </StackLayout>
-            <StackLayout class="border_style" row="6">
-                <Label color="#66ccff" class="m-5 icon" fontSize="34" textWrap="true">
-                    <FormattedString>
-                        <Span text="Icon code: "></Span>
-                        <Span text="&#xe916;" fontAttributes="Bold"></Span>
-                    </FormattedString>
-                </Label>
-                <Label color="#FF6666" class="m-5" fontSize="18" textWrap="true" text="Icon code: e916" class="icon"></Label>
-            </StackLayout>
-        </GridLayout>
-    </ScrollView>
-    <!-- << icon-font-html-def -->
-</GridLayout>
+
+<StackLayout class="m-16">
+    <Label text="Icon Fonts demonstration" class="h3"></Label>
+
+    <!-- >> icon-font-xml-def -->
+    <!-- Using fa-regular-400.ttf -->
+    <Label text="&#xf019;" class="far"></Label>
+
+    <!-- Using fa-brands-400.ttf -->
+    <Label text="&#xf39e;" class="fab"></Label>
+
+    <!-- Using fa-solid-900.ttf with FormattedString -->
+    <Label class="fas" textWrap="true">
+        <FormattedString>
+            <Span text="&#xf053;" fontAttributes="Bold"></Span>
+        </FormattedString>
+    </Label>
+    
+    <!-- Using IcoMoon-Free.ttf -->
+    <Label text="&#xe904;" class="ico"></Label>
+    <!-- << icon-font-xml-def -->
+</StackLayout>

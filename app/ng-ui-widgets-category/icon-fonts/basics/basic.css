@@ -1,6 +1,18 @@
 /* >> icon-font-css-class-def */
-.icon{
-    font-family: icomoon;
+.far {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+}
+
+.fab {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+}
+
+.ico {
+    font-family: "IcoMoon-Free";
 }
 /* << icon-font-css-class-def */
 .border_style{
@@ -8,4 +20,10 @@
     border-color:black;
     padding: 5;
     margin-bottom: 2;
+}
+
+Label {
+    font-size: 18;
+    color: #66ccff;
+    margin: 8;
 }

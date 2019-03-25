@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import * as imageSource from "image-source";
+import * as imageSource from "tns-core-modules/image-source";
 // >> fs-read-import-code
 import * as fs from "tns-core-modules/file-system";
 // << fs-read-import-code

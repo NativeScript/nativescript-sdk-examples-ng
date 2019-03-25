@@ -1,1 +1,13 @@
 ﻿@import '~nativescript-theme-core/css/core.light.css';
+
+.fa {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+}
+
+.fa-brands {
+    font-family: "Font Awesome 5 Brands", "fa-brands-400";
+}
+
+.fa-solid {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+}

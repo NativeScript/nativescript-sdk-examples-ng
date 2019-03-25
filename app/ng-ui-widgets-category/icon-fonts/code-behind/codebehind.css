@@ -1,5 +1,27 @@
 /* >> icon-font-code-behind-css */
-.icon{
-    font-family: icomoon;
+/*
+  File name: IcoMoon-Free.ttf
+  Font name: IcoMoon-Free
+*/
+.ico {
+    font-family: 'IcoMoon-Free';
+    font-size: 48;
 }
+ 
+ /* only for reference, is NOT working in this example (due to wrong glyph codes) 
+ .fa {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+    font-size: 48;
+ }
+ */
 /* << icon-font-code-behind-css */
+
+Label.icon {
+    font-size: 34;
+    color: #FF6666;
+}
+
+Label {
+    font-size: 18;
+    color: #66ccff;
+}
