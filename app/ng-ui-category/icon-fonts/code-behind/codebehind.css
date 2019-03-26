@@ -24,4 +24,5 @@ Label.icon {
 Label {
     font-size: 18;
     color: #66ccff;
+    margin: 8 32 8 23;
 }
