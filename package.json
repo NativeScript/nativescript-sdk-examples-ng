@@ -22,7 +22,7 @@
   "nativescript": {
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-ios": {
-      "version": "5.3.0-rc-2019-03-25-101854-01"
+      "version": "5.4.0-2019-03-26-093523-01"
     }
   },
   "dependencies": {

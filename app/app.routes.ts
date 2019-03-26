@@ -52,7 +52,7 @@ export const routes = [
     },
     {
         path: "icon-fonts",
-        loadChildren: "./ng-ui-widgets-category/icon-fonts/iconfonts-examples.module#IconFontsExamplesModule",
+        loadChildren: "./ng-ui-category/icon-fonts/iconfonts-examples.module#IconFontsExamplesModule",
         data: { title: "IconFonts" }
     },
     {

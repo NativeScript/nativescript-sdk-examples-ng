@@ -2,9 +2,9 @@
     <!-- >> icon-font-code-behind-html -->
     <ListView [items]="glyphs">
         <ng-template let-item="item">
-            <StackLayout orientation="horizontal">
+            <StackLayout orientation="horizontal" horizontalAlignment="center">
                 <Label [text]="item.icon" class="ico"></Label>
-                <Label [text]="item.code" class="m-l-8"></Label>
+                <Label [text]="item.code"></Label>
             </StackLayout>
         </ng-template>
     </ListView>
