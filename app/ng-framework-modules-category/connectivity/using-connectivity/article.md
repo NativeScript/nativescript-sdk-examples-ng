@@ -1,11 +1,11 @@
-Import connectivity module
+### Import Connectivity Module
 <snippet id='connectivity-import-code'/>
 
-Getting connection type
+### Getting Connection Type
 <snippet id='connectivity-gettype-code'/>
 
-Start monitoring connection type.
+### Start Monitoring Connection Type.
 <snippet id='connectivity-start-code'/>
 
-Stop monitoring connection type.
+### Stop Monitoring Connection Type.
 <snippet id='connectivity-stop-code'/>
