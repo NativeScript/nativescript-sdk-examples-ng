@@ -5,6 +5,7 @@ let menuLinks = [
     new Link("Checking Target Platform", "/application/check-target"),
     new Link("Using Android Specifics", "/application/using-android"),
     new Link("Using iOS Specifics", "/application/using-ios"),
+    new Link("Application Events", "/application/application-events")
 ];
 
 @Component({
