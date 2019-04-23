@@ -5,6 +5,7 @@ import { ApplicationExamplesComponent } from "./application-examples.component";
 import { AppCheckingTargetExampleComponent } from "./app-checking-target/app-checking-target.component";
 import { AppUsingAndroidExampleComponent } from "./app-using-android-specifics/app-using-android-specifics.component";
 import { AppUsingIosExampleComponent } from "./app-using-ios-specifics/app-using-ios-specifics.component";
+import { ApplicationEventsComponent } from "./application-events/application-events.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -26,6 +27,11 @@ export const routerConfig = [
         path: "using-ios",
         component: AppUsingIosExampleComponent,
         data: { title: "Using iOS Specifics" }
+    },
+    {
+        path: "application-events",
+        component: ApplicationEventsComponent,
+        data: { title: "Application Events" }
     }
 ];
 
