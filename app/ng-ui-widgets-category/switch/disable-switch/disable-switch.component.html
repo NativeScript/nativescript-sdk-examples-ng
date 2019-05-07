@@ -1,17 +1,9 @@
-<StackLayout sdkExampleTitle sdkToggleNavButton>
-    <StackLayout class="example-container">
-        <!-- >> disable-switch -->
-        <GridLayout rows="auto auto" columns="* *" class="m-5">
-            <Label row="0" col="0" 
-                [text]="switch.isEnabled ? 'enabled' : 'disabled'"
-                textWrap="true" class="h3 m-15"></Label>
-            <Switch #switch class="m-15" row="0" col="1"></Switch>
+<StackLayout sdkExampleTitle sdkToggleNavButton class="example-container">
+    <Label [text]="switch.isEnabled ? 'enabled' : 'disabled'" textWrap="true" class="h3 m-15"></Label>
+    <!-- >> disable-switch -->
+    <Switch #switch isEnabled="true" class="m-15"></Switch>
 
-            <Button row="3" col="0" colSpan="2" 
-                [text]="switch.isEnabled ? 'Disable switch' : 'Enable switch'"
-                (tap)="switch.isEnabled = !switch.isEnabled"
-                horizontalAlignment="stretch" class="btn btn-primary btn-active"></Button>
-        </GridLayout>
-        <!-- << disable-switch -->
-    </StackLayout>
+    <Button [text]="switch.isEnabled ? 'Disable switch' : 'Enable switch'" (tap)="switch.isEnabled = !switch.isEnabled"
+        horizontalAlignment="stretch" class="btn btn-primary btn-active"></Button>
+    <!-- << disable-switch -->
 </StackLayout>

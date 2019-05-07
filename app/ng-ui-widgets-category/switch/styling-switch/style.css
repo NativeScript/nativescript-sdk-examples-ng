@@ -1,14 +1,14 @@
 /* >> switch-style-css */
-.firstSwitchStyle{
-    background-color: #FFFF66;
-}
-
 .secondSwitchStyle{
-    background-color: #CCFFFF;
+    color: yellow;
+    background-color: green;
+    off-background-color: red;
 }
 
 .thirdSwitchStyle{
-    opacity: 0.5;
-    background-color: #8C489F;
+    opacity: 0.8;
+    color: darkblue;
+    background-color: lightseagreen;
+    off-background-color: orangered;
 }
 /* << switch-style-css */
