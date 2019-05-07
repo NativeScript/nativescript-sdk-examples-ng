@@ -8,6 +8,7 @@ import { AppUsingIosExampleComponent } from "./app-using-ios-specifics/app-using
 import { ApplicationEventsComponent } from "./application-events/application-events.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
+
 export const routerConfig = [
     {
         path: "",
@@ -47,7 +48,8 @@ export const routerConfig = [
         ApplicationExamplesComponent,
         AppCheckingTargetExampleComponent,
         AppUsingAndroidExampleComponent,
-        AppUsingIosExampleComponent
+        AppUsingIosExampleComponent,
+        ApplicationEventsComponent
     ]
 })
 

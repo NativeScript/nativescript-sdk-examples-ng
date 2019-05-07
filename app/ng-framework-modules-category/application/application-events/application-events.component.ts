@@ -24,7 +24,7 @@ let launchListener,
 
 @Component({
     moduleId: module.id,
-    templateUrl: "./app-checking-target.component.html"
+    templateUrl: "./application-events.component.html"
 })
 export class ApplicationEventsComponent {
     public isItemVisible: boolean;
