@@ -1,6 +1,6 @@
-// >> switch-event-handle-code
 import { Component } from "@angular/core";
 import { Switch } from "tns-core-modules/ui/switch";
+import { EventData } from "tns-core-modules/data/observable";
 
 @Component({
     moduleId: module.id,
@@ -8,11 +8,11 @@ import { Switch } from "tns-core-modules/ui/switch";
     styleUrls: ["./../switch.style.css"],
 })
 export class BasicSwitchComponent {
-    public firstSwitchState = "OFF";
-    public secondSwitchState = "ON";
+    firstSwitchState = "OFF";
+    secondSwitchState = "ON";
 
-    public onFirstChecked(args) {
-        let firstSwitch = <Switch>args.object;
+    onFirstChecked(args) {
+        let firstSwitch = args.object as Switch;
         if (firstSwitch.checked) {
             this.firstSwitchState = "ON";
         } else {
@@ -20,13 +20,21 @@ export class BasicSwitchComponent {
         }
     }
 
-    public onSecondChecked(args) {
-        let secondSwitch = <Switch>args.object;
-        if (secondSwitch.checked) {
+    // >> switch-event-handle-code
+    // import { Switch } from "tns-core-modules/ui/switch";
+    // import { EventData } from "tns-core-modules/data/observable";
+
+    onCheckedChange(args: EventData) {
+        let mySwitch = args.object as Switch;
+        let isChecked = mySwitch.checked; // boolean
+        // >> (hide)
+        if (isChecked) {
             this.secondSwitchState = "ON";
         } else {
             this.secondSwitchState = "OFF";
         }
+        // << (hide)
     }
+    // << switch-event-handle-code
 }
-// << switch-event-handle-code
+

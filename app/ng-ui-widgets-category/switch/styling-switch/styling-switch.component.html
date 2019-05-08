@@ -1,22 +1,13 @@
-<StackLayout sdkExampleTitle sdkToggleNavButton>
-	<StackLayout class="example-container">
-		<!-- >> switch-styling-html -->
-		<GridLayout rows="auto auto auto" columns="* auto" class="m-5">
-			<Label class="h3 m-15" [text]="switch1.checked" textWrap="true" row="0" col="0"></Label>
-			<Switch #switch1 class="m-15 firstSwitchStyle" checked="true"
-				(checkedChange)="switch1.checked"
-				row="0" col="1"></Switch>
-
-			<Label class="h3 m-15" [text]="switch2.checked" textWrap="true" row="1" col="0"></Label>
-			<Switch #switch2 class="m-15 secondSwitchStyle" checked="false"
-				(checkedChange)="switch2.checked"
-				row="1" col="1"></Switch>
-
-			<Label class="h3 m-15" [text]="switch3.checked" textWrap="true" row="2" col="0"></Label>
-			<Switch #switch3 class="m-15 thirdSwitchStyle" checked="true"
-				(checkedChange)="switch3.checked"
-				row="2" col="1"></Switch>
-		</GridLayout>
-		<!-- << switch-styling-html -->
-	</StackLayout>
+<StackLayout sdkExampleTitle sdkToggleNavButton class="example-container">
+	<!-- >> switch-styling-html -->
+	<!-- Styling via inline properties ---->
+	<Switch color="yellow" backgroundColor="green" offBackgroundColor="red">
+	</Switch>
+	<!-- Styling via CSS class (see CSS file) ---->
+	<Switch class="m-15 secondSwitchStyle" checked="true">
+	</Switch>
+	<!-- Applying style & opacity via CSS class ---->
+	<Switch class="m-15 thirdSwitchStyle" checked="true">
+	</Switch>
+	<!-- << switch-styling-html -->
 </StackLayout>
