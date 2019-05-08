@@ -45,6 +45,7 @@ export const routerConfig = [
         NativeScriptRouterModule.forChild(routerConfig)
     ],
     declarations: [
+        ApplicationEventsComponent,
         ApplicationExamplesComponent,
         AppCheckingTargetExampleComponent,
         AppUsingAndroidExampleComponent,

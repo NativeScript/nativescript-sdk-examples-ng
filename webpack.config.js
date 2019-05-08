@@ -255,15 +255,8 @@ module.exports = env => {
                 "global.TNS_WEBPACK": "true",
                 "process": undefined,
             }),
-            // Copy native app resources to out dir.
-            new CopyWebpackPlugin([
-                {
-                    from: `${appResourcesFullPath}/${appResourcesPlatformDir}`,
-                    to: `${dist}/App_Resources/${appResourcesPlatformDir}`,
-                    context: projectRoot
-                },
-            ]),
-            
+            // Remove all files from the out dir.
+            new CleanWebpackPlugin([`${dist}/**/*`]),
             // Copy assets to out dir. Add your own globs as needed.
             new CopyWebpackPlugin([
                 { from: { glob: "ng-ui-widgets-category/web-view/web-view-html/*.html"} },

@@ -1,16 +1,11 @@
 {
     "compilerOptions": {
-        "noEmitOnError": true,
-        "noEmitHelpers": true,
-        "target": "es5",
         "module": "commonjs",
-        "declaration": false,
-        "noImplicitAny": false,
-        "noImplicitUseStrict": true,
+        "target": "es5",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "pretty": true,
-        "skipLibCheck": true,
+        "noEmitHelpers": true,
+        "noEmitOnError": true,
         "lib": [
             "es6",
             "dom",
@@ -18,10 +13,6 @@
         ],
         "baseUrl": ".",
         "paths": {
-            "*": [
-                "./node_modules/tns-core-modules/*",
-                "./node_modules/*"
-            ],
             "~/*": [
                 "app/*"
             ]
