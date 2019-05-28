@@ -9,7 +9,7 @@ import { DatePicker } from "tns-core-modules/ui/date-picker";
 })
 export class ModalViewComponent implements OnInit {
     public currentdate: Date;
-    @ViewChild("datepicker", { read: ElementRef, static: false }) datePickerElement: ElementRef;
+    @ViewChild("datepicker", { read: ElementRef, static: true }) datePickerElement: ElementRef;
 
     constructor(private params: ModalDialogParams) {
         this.currentdate = new Date(params.context);
