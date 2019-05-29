@@ -29,14 +29,14 @@
     }
   },
   "dependencies": {
-    "@angular/common": "8.0.0-rc.5",
-    "@angular/compiler": "8.0.0-rc.5",
-    "@angular/core": "8.0.0-rc.5",
-    "@angular/forms": "8.0.0-rc.5",
+    "@angular/common": "8.0.0",
+    "@angular/compiler": "8.0.0",
+    "@angular/core": "8.0.0",
+    "@angular/forms": "8.0.0",
     "@angular/http": "8.0.0-beta.10",
-    "@angular/platform-browser": "8.0.0-rc.5",
-    "@angular/platform-browser-dynamic": "8.0.0-rc.5",
-    "@angular/router": "8.0.0-rc.5",
+    "@angular/platform-browser": "8.0.0",
+    "@angular/platform-browser-dynamic": "8.0.0",
+    "@angular/router": "8.0.0",
     "nativescript-angular": "next",
     "nativescript-camera": "^4.4.0",
     "nativescript-geolocation": "^5.0.0",
@@ -48,8 +48,8 @@
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "8.0.0-rc.5",
-    "@ngtools/webpack": "8.0.0-rc.4",
+    "@angular/compiler-cli": "8.0.0",
+    "@ngtools/webpack": "8.0.0",
     "codelyzer": "^3.0.1",
     "fs-extra": "^0.30.0",
     "glob": "^7.1.3",
