@@ -14,7 +14,7 @@ export class WebViewEventsComponent {
     public webViewSrc = "https://docs.nativescript.org/";
     public isItemVisible = true;
 
-    @ViewChild("webview") webViewElement: ElementRef;
+    @ViewChild("webview", { read: ElementRef, static: false }) webViewElement: ElementRef;
     private firstUrl = "https://google.com/";
     private secondUrl = "https://docs.nativescript.org/";
 

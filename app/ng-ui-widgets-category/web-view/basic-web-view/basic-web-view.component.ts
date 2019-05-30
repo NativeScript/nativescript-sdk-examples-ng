@@ -12,9 +12,9 @@ import { Label } from "tns-core-modules/ui/label";
 export class BasicWebViewComponent implements AfterViewInit {
     public webViewSrc: string = "https://docs.nativescript.org/";
     public enabled: boolean = false;
-    @ViewChild("myWebView") webViewRef: ElementRef;
-    @ViewChild("urlField") urlFieldRef: ElementRef;
-    @ViewChild("labelResult") labelResultRef: ElementRef;
+    @ViewChild("myWebView", { read: ElementRef, static: false }) webViewRef: ElementRef;
+    @ViewChild("urlField", { read: ElementRef, static: false }) urlFieldRef: ElementRef;
+    @ViewChild("labelResult", { read: ElementRef, static: false }) labelResultRef: ElementRef;
 
     ngAfterViewInit() {
         let webview: WebView = this.webViewRef.nativeElement;

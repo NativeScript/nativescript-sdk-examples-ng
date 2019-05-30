@@ -16,8 +16,8 @@ export class ContentScrollablePageExampleComponent implements OnInit {
     public image: Image;
     public flex: FlexboxLayout;
 
-    @ViewChild("img") img: ElementRef;
-    @ViewChild("content") content: ElementRef;
+    @ViewChild("img", { read: ElementRef, static: false }) img: ElementRef;
+    @ViewChild("content", { read: ElementRef, static: false }) content: ElementRef;
 
     constructor(public page: Page) {
         this.page.backgroundSpanUnderStatusBar = true;
