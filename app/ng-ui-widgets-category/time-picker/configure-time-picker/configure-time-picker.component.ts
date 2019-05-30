@@ -16,6 +16,7 @@ export class ConfigureTimePickerComponent {
     }
 
     onTimeChanged(args) {
+        console.log(typeof(args.value))
         console.log(args.value);
     }
 }
