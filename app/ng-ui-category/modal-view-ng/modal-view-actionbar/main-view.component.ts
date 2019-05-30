@@ -1,6 +1,7 @@
+// >> main-view-code
+// main-view.component.ts
 import { Component, OnInit, ViewContainerRef } from "@angular/core";
 import { ModalDialogOptions, ModalDialogService } from "nativescript-angular/modal-dialog";
-
 import { ModalRootComponent } from "./modal-root.component";
 
 @Component({
@@ -14,7 +15,7 @@ export class MainViewComponent implements OnInit {
         private _vcRef: ViewContainerRef) { }
 
     ngOnInit(): void { }
-    // >> main-view-code
+
     onTap(): void {
         const options: ModalDialogOptions = {
             viewContainerRef: this._vcRef,
@@ -27,5 +28,5 @@ export class MainViewComponent implements OnInit {
                 console.log(result);
             });
     }
-    // << main-view-code
 }
+// << main-view-code

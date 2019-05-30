@@ -1,4 +1,4 @@
- // >> opening-modal-view
+// >> opening-modal-view
 import { Component, ViewContainerRef } from "@angular/core";
 import { ModalDialogOptions, ModalDialogService } from "nativescript-angular/modal-dialog";
 import { HomeModalViewComponent } from "./home-modal-view.component";
@@ -23,5 +23,5 @@ export class ModalViewNavigationComponent {
                 console.log(result);
             });
     }
-    // << opening-modal-view
 }
+// << opening-modal-view
