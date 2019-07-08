@@ -17,6 +17,7 @@ let mainMenuLinks = [
     new Link("Slider", "/slider"),
     new Link("Switch", "/switch"),
     new Link("TabView", "/tab-view"),
+    new Link("BottomNavigation", "/bottom-navigation"),
     new Link("TextField", "/text-field"),
     new Link("TextView", "/text-view"),
     new Link("WebView", "/web-view"),
