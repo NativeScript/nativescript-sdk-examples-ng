@@ -4,6 +4,4 @@ import { Component } from "@angular/core";
     moduleId: module.id,
     templateUrl: "./usage.component.html"
 })
-export class UsageComponent {
-
-}
+export class UsageComponent { }
