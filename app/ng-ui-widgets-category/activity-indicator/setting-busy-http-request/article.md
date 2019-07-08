@@ -1,4 +1,4 @@
-Extended example, desmostrating how to use ActivityIndicator during HTTP request
+Extended example, demonstrating how to use ActivityIndicator during HTTP request
 
 Setting an activity indicator in the HTML:
 <snippet id='activity-indicator-setting-busy-html'/>
