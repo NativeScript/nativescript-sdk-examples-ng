@@ -8,6 +8,8 @@ import { BottomNavigationExamplesComponent } from "./bottom-navigation-examples.
 import { UsageComponent } from "./usage/usage.component";
 import { ThemingComponent } from "./theming/theming.component";
 import { EventsComponent } from "./events/events.component";
+import { PropertiesComponent } from "./properties/properties.component";
+
 export const routerConfig = [
     {
         path: "",
@@ -27,6 +29,11 @@ export const routerConfig = [
         path: "events",
         component: EventsComponent,
         data: { title: "Events" }
+    },
+    {
+        path: "properties",
+        component: PropertiesComponent,
+        data: { title: "Properties" }
     }
 ];
 @NgModule({
@@ -42,6 +49,7 @@ export const routerConfig = [
         BottomNavigationExamplesComponent,
         EventsComponent,
         UsageComponent,
+        PropertiesComponent,
         ThemingComponent
     ]
 })
