@@ -1,4 +1,4 @@
-> **Disclaimer:** The `BottomNavigation` component is currently in **Beta** version. The component is being actively developed - use [the tracking issue](https://github.com/NativeScript/NativeScript/issues/6967) for details about the ongoing implementation.
+> **Disclaimer:** The `BottomNavigation` component is currently **Beta** version. The component is being actively developed - use [the tracking issue](https://github.com/NativeScript/NativeScript/issues/6967) for details about the ongoing implementation.
 
 The `BottomNavigation` component provides a simple way to navigate between different views while providing common UI for both iOS and Android platforms.  The recommended scenario suitable for `BottomNavigation` is a high level navigation with 3 to 5 tabs each with separate function. For additional information and details about bottom navigation refer to [the Material Design guidelines](https://material.io/design/components/bottom-navigation.html#usage).
 

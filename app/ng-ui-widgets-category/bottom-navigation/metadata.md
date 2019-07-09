@@ -1,6 +1,7 @@
 ---
-title: Button
-description: The Button provides abstraction over Android's widget.Button and iOS's UIButton. This component can be defined via HTML and we can set up its text value and set up tap event handler, which will be fired on button click.
+title: BottomNavigation
+description: The NativeScript's BottomNavigation component provides a simple way to navigate between different views while providing common UI for both iOS and Android platforms.  The recommended scenario suitable for BottomNavigation is a high level navigaiton with 3 to 5 tabs each with separate function.
 position: 44
 slug: bottom-navigation-ng
 ---
+example-order: usage, theming, properties, events, tips-and-tricks
