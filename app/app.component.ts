@@ -6,9 +6,7 @@ import { DeepLinkData } from "./shared/deep-link-data";
 @Component({
     moduleId: module.id,
     selector: "sdk-app",
-    template: `
-        <page-router-outlet></page-router-outlet>
-    `
+    template: `<page-router-outlet></page-router-outlet>`
 })
 
 export class AppComponent implements AfterViewInit {

@@ -126,6 +126,11 @@ export const routes = [
         data: { title: "Bottom Navigation" }
     },
     {
+        path: "tabs",
+        loadChildren: "./ng-ui-widgets-category/tabs/tabs-examples.module#TabsExamplesModule",
+        data: { title: "Tabs" }
+    },
+    {
         path: "text-field",
         loadChildren: "./ng-ui-widgets-category/text-field/text-field-examples.module#TextFieldExamplesModule",
         data: { title: "TextField" }
