@@ -11,13 +11,13 @@
 
     Example:
 
-    - Let's assume that the TabContentItem[1] is selected (`selectedIndex = 1`) and `offscreenTabLimit` is set to 1.
+    - Let's assume that the `TabContentItem[1]` is selected (`selectedIndex = 1`) and `offscreenTabLimit` is set to 1.
 
         **Result:** The content for TabContentItem[0] and TabContentItem[2] will be pre-loaded.
 
-    - Select TabContentItem[2] (`selectedIndex = 2`).
+    - Select `TabContentItem[2]` - for exmaple`selectedIndex = 2`.
 
-        **Result:** TabContentItem[0] will be unloaded and TabContentItem[3] will be pre-loaded.
+        **Result:** `TabContentItem[0]` will be unloaded and `TabContentItem[3]` will be pre-loaded.
 
 - `tabsPosition: "top" | "bottom";` - Gets or sets the position state of the Tabs.
 
