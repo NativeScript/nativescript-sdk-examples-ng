@@ -24,7 +24,7 @@ export class EventsComponent {
 
             this._zone.run(() => {
                 this.selectedIndex = newIndex;
-            })
+            });
         });
     }
 }
