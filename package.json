@@ -21,11 +21,11 @@
   "license": "Apache-2.0",
   "nativescript": {
     "id": "org.nativescript.nativescriptsdkexamplesng",
-    "tns-ios": {
-      "version": "next"
-    },
     "tns-android": {
-      "version": "next"
+      "version": "5.4.0"
+    },
+    "tns-ios": {
+      "version": "5.4.2"
     }
   },
   "dependencies": {
@@ -37,14 +37,14 @@
     "@angular/platform-browser": "8.0.0",
     "@angular/platform-browser-dynamic": "8.0.0",
     "@angular/router": "8.0.0",
-    "nativescript-angular": "next",
-    "nativescript-camera": "^4.4.0",
-    "nativescript-geolocation": "^5.0.0",
+    "nativescript-angular": "8.0.1",
+    "nativescript-camera": "^4.5.0",
+    "nativescript-geolocation": "^5.1.0",
     "nativescript-intl": "~3.0.0",
-    "nativescript-theme-core": "^1.0.4",
+    "nativescript-theme-core": "^1.0.6",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.3.3",
-    "tns-core-modules": "next",
+    "tns-core-modules": "5.4.3",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
@@ -55,12 +55,12 @@
     "glob": "^7.1.3",
     "lazy": "1.0.11",
     "markdown-snippet-injector": "^0.2.2",
-    "nativescript-dev-typescript": "next",
-    "nativescript-dev-webpack": "next",
+    "nativescript-dev-typescript": "0.10.0",
+    "nativescript-dev-webpack": "0.24.1",
     "opener": "^1.4.1",
     "rimraf": "^2.5.3",
     "tar.gz": "^1.0.5",
-    "tns-platform-declarations": "next",
+    "tns-platform-declarations": "5.4.3",
     "tslint": "^5.11.0",
     "typescript": "~3.4.5"
   },
