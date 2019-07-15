@@ -1,0 +1,14 @@
+/* >> action-bar-icon-fonts-css-ng */
+.font-awesome {
+    font-family: "Font Awesome 5 Free", "fa-regular-400";
+}
+/* << action-bar-icon-fonts-css-ng */
+.font-size {
+    font-size: 48;
+    width: 48;
+    height: 48;
+}
+
+.color {
+    color: blue;
+}

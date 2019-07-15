@@ -2,7 +2,8 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Create Image", "/image/creating-image")
+    new Link("Create Image", "/image/creating-image"),
+    new Link("Icon fonts", "/image/icon-fonts")
 ];
 
 @Component({

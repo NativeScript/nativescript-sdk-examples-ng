@@ -6,7 +6,7 @@ import { ActionItemsComponent } from "./action-items/action-items.component";
 import { NavigationButtonComponent } from "./navigation-button/navigation-button.component";
 import { TitleComponent } from "./title/title.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
-
+import { IconFontsComponent } from "./icon-fonts/icon-fonts.component";
 export const routerConfig = [
     {
         path: "",
@@ -26,6 +26,11 @@ export const routerConfig = [
         path: "title",
         component: TitleComponent,
         data: { title: "ActionBar title" }
+    },
+    {
+        path: "icon-fonts",
+        component: IconFontsComponent,
+        data: { title: "Icon fonts" }
     }
 ];
 
@@ -41,7 +46,8 @@ export const routerConfig = [
         ActionBarExamplesComponent,
         ActionItemsComponent,
         NavigationButtonComponent,
-        TitleComponent
+        TitleComponent,
+        IconFontsComponent
     ]
 })
 
