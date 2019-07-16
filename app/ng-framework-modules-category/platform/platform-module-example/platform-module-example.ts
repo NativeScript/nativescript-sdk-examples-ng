@@ -41,7 +41,7 @@ export class PlatformModuleExampleComponent {
     constructor() {
         this.deviceInformation = new DeviceInfo(
             device.model,
-            device.model,
+            device.deviceType,
             device.os,
             device.osVersion,
             device.sdkVersion,
