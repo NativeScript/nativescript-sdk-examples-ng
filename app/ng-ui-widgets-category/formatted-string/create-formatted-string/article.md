@@ -6,7 +6,7 @@ TextField with formatted string
 <snippet id='formatted-string-textfield-html'/>
 
 TextView with formatted string
-<snippet id="formatted-string-textview-html"/>
+<snippet id='formatted-string-textview-html'/>
 
 Button with formatted string
-<snippet id="formatted-string-button-html"/>
+<snippet id='formatted-string-button-html'/>
