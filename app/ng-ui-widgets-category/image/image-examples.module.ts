@@ -4,6 +4,7 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ImageExamplesComponent } from "./image-examples.component";
 import { CreatingImageExampleComponent } from "./creating-image/creating-image.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
+import { IconFontsExampleComponent } from "./icon-fonts/icon-fonts.component";
 
 export const routerConfig = [
     {
@@ -14,6 +15,11 @@ export const routerConfig = [
         path: "creating-image",
         component: CreatingImageExampleComponent,
         data: { title: "Create Image" }
+    },
+    {
+        path: "icon-fonts",
+        component: IconFontsExampleComponent,
+        data: { title: "Icon fonts" }
     }
 ];
 
@@ -27,7 +33,8 @@ export const routerConfig = [
     ],
     declarations: [
         ImageExamplesComponent,
-        CreatingImageExampleComponent
+        CreatingImageExampleComponent,
+        IconFontsExampleComponent
     ]
 })
 

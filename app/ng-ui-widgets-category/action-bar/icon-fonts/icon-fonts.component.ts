@@ -3,10 +3,11 @@ import { RouterExtensions } from "nativescript-angular/router";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "./action-items.component.html"
+    templateUrl: "./icon-fonts.component.html",
+    styleUrls: ["./icon-fonts.component.css"]
 
 })
-export class ActionItemsComponent {
+export class IconFontsComponent {
 
     constructor(private routerExtensions: RouterExtensions) { }
 

@@ -4,7 +4,8 @@ import { Link } from "./../../link";
 let menuLinks = [
     new Link("Action items", "/action-bar/action-items"),
     new Link("Navigation button", "/action-bar/navigation-button"),
-    new Link("Title", "/action-bar/title")
+    new Link("Title", "/action-bar/title"),
+    new Link("Icon fonts", "/action-bar/icon-fonts")
 ];
 
 @Component({
