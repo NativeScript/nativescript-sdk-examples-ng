@@ -1,8 +1,6 @@
-The title of the ActionBar can be easily set by its corresponding property - `title`. You can additionally set an icon to use in your ActionBar on Android with the `icon` property.
+### Icon Fonts in ActionBar
 
-Here’s what a basic usage of the `title` and `icon` properties looks like:
-<snippet id='action-bar-title-icon-html'/>
+Using the `font://` prefix, you can load a resource in the ActionItem while setting up an icon code provided by an icon font. By setting up this prefix, a new image will be generated, which will be set as an ActionItem's `icon` resource. While using this functionality, we need to specify the `font-size`, which will calculate the size of the generated image base on the device's dpi.
 
-The icon can only be set in Android platform. It is hidden by default, but you can explicitly control its visibility with the `android.iconVisibility' property.
-
-Furthermore, the title can be customized by placing a content component (button, label, layout-components, etc.) directly in the ActionBar.
+<snippet id='actionbar-icon-fonts-html'/>
+<snippet id='actionbar-icon-fonts-css-ng'/>

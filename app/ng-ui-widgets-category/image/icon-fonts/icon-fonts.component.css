@@ -1,9 +1,9 @@
-/* >> css-image-icon-fonts */
 Image {
     height: 60;
     margin: 16;
     width: 60;
 }
+/* >> image-icon-fonts-css-ng */
 .font-awesome {
     font-family: "Font Awesome 5 Free", "fa-regular-400";
 }
@@ -11,8 +11,7 @@ Image {
 .font-size {
     font-size: 96;
 }
-
+/* << image-icon-fonts-css-ng */
 .color {
     color: blue;
 }
-/* << css-image-icon-fonts */
