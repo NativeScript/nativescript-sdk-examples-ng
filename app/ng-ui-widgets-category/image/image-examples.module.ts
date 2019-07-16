@@ -4,7 +4,7 @@ import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ImageExamplesComponent } from "./image-examples.component";
 import { CreatingImageExampleComponent } from "./creating-image/creating-image.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
-import {IconFontsExampleComponent} from "./icon-fonts/icon-fonts.component";
+import { IconFontsExampleComponent } from "./icon-fonts/icon-fonts.component";
 
 export const routerConfig = [
     {
