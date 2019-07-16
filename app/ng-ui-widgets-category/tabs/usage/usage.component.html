@@ -1,0 +1,31 @@
+<GridLayout sdkExampleTitle sdkToggleNavButton>
+    <!-- >> tabs-usage-html -->
+    <Tabs selectedIndex="1">
+
+        <!-- The bottom tab UI is created via TabStrip (the containier) and TabStripItem (for each tab)-->
+        <TabStrip>
+            <TabStripItem title="Home" iconSource="res://baseline_home_black_18pt"></TabStripItem>
+            <TabStripItem title="Account" iconSource="res://baseline_account_balance_black_18pt"></TabStripItem>
+            <TabStripItem title="Search" iconSource="res://baseline_search_black_18pt"></TabStripItem>
+        </TabStrip>
+
+        <!-- The number of TabContentItem components should corespond to the number of TabStripItem components -->
+        <TabContentItem>
+            <GridLayout>
+                <Label text="Home Page" class="h2 text-center"></Label>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <Label text="Account Page" class="h2 text-center"></Label>
+            </GridLayout>
+        </TabContentItem>
+        <TabContentItem>
+            <GridLayout>
+                <Label text="Search Page" class="h2 text-center"></Label>
+            </GridLayout>
+        </TabContentItem>
+
+    </Tabs>
+    <!-- << tabs-usage-html -->
+</GridLayout>
