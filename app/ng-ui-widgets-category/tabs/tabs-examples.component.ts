@@ -5,7 +5,8 @@ let menuLinks = [
     new Link("Events", "/tabs/events"),
     new Link("Usage", "/tabs/usage"),
     new Link("Properties", "/tabs/properties"),
-    new Link("Theming", "/tabs/theming")
+    new Link("Theming", "/tabs/theming"),
+    new Link("Tips & Tricks", "/tabs/tips-and-tricks")
 ];
 
 @Component({

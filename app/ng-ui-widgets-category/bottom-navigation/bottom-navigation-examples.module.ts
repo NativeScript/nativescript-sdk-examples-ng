@@ -9,6 +9,7 @@ import { UsageComponent } from "./usage/usage.component";
 import { ThemingComponent } from "./theming/theming.component";
 import { EventsComponent } from "./events/events.component";
 import { PropertiesComponent } from "./properties/properties.component";
+import { BottomNavTipsAndTricksComponent } from  "./tips-and-tricks/tips-and-tricks.component";
 
 export const routerConfig = [
     {
@@ -34,6 +35,11 @@ export const routerConfig = [
         path: "properties",
         component: PropertiesComponent,
         data: { title: "Properties" }
+    },
+    {
+        path: "tips-and-tricks",
+        component: BottomNavTipsAndTricksComponent,
+        data: { title: "Tips & Tricks" }
     }
 ];
 @NgModule({
@@ -50,7 +56,8 @@ export const routerConfig = [
         EventsComponent,
         UsageComponent,
         PropertiesComponent,
-        ThemingComponent
+        ThemingComponent,
+        BottomNavTipsAndTricksComponent
     ]
 })
 
