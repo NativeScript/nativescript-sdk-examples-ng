@@ -1,6 +1,4 @@
 import { Component, ViewChild, ElementRef } from "@angular/core";
-// import { Page } from "tns-core-modules/ui/page";
-// import { View } from "tns-core-modules/ui/core/view";
 import { AnimationCurve  } from "tns-core-modules/ui/enums";
 
 
