@@ -5,6 +5,7 @@ let menuLinks = [
     new Link("Animate properties", "/animations/animating-properties"),
     new Link("Chaining animation", "/animations/chaining-animations"),
     new Link("Animate multiple views", "/animations/multiple-views"),
+    new Link("Animating Width & Height Properties", "/animations/width-height-properties"),
 ];
 
 @Component({

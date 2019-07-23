@@ -1,0 +1,9 @@
+Label {
+  color: white;
+  background-color:blue;
+  border-radius: 20;
+  margin: 16;
+  padding: 8;
+  horizontal-align: center;
+  vertical-align: top;
+}
