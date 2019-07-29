@@ -22,30 +22,30 @@
   "nativescript": {
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-android": {
-      "version": "6.0.0"
+      "version": "6.0.1"
     },
     "tns-ios": {
       "version": "6.0.1"
     }
   },
   "dependencies": {
-    "@angular/common": "8.0.0",
-    "@angular/compiler": "8.0.0",
-    "@angular/core": "8.0.0",
-    "@angular/forms": "8.0.0",
+    "@angular/common": "~8.0.0",
+    "@angular/compiler": "~8.0.0",
+    "@angular/core": "~8.0.0",
+    "@angular/forms": "~8.0.0",
     "@angular/http": "8.0.0-beta.10",
-    "@angular/platform-browser": "8.0.0",
-    "@angular/platform-browser-dynamic": "8.0.0",
-    "@angular/router": "8.0.0",
-    "nativescript-angular": "8.0.2",
+    "@angular/platform-browser": "~8.0.0",
+    "@angular/platform-browser-dynamic": "~8.0.0",
+    "@angular/router": "~8.0.0",
+    "nativescript-angular": "~8.0.3",
     "nativescript-camera": "^4.5.0",
     "nativescript-geolocation": "^5.1.0",
     "nativescript-intl": "~3.0.0",
     "nativescript-theme-core": "^1.0.6",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.3.3",
-    "tns-core-modules": "6.0.1",
-    "zone.js": "0.9.1"
+    "tns-core-modules": "~6.0.3",
+    "zone.js": "^0.9.1"
   },
   "devDependencies": {
     "@angular/compiler-cli": "8.0.0",
@@ -55,13 +55,13 @@
     "glob": "^7.1.3",
     "lazy": "1.0.11",
     "markdown-snippet-injector": "^0.2.2",
-    "nativescript-dev-webpack": "1.0.1",
+    "nativescript-dev-webpack": "~1.0.2",
     "opener": "^1.4.1",
     "rimraf": "^2.5.3",
     "tar.gz": "^1.0.5",
     "tns-platform-declarations": "6.0.1",
     "tslint": "^5.11.0",
-    "typescript": "3.4.5"
+    "typescript": "~3.4.5"
   },
   "scripts": {
     "pretsc": "npm install",
