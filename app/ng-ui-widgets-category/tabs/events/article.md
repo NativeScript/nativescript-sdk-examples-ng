@@ -10,9 +10,9 @@ constructor(private _zone: NgZone) { }
 
 // .. more code follows here
 
-tabs.on(Tabs.selectedIndexChangedEvent, (data: SelectedIndexChangedEventData) => {
+tabs.on(Tabs.selectedIndexChangedEvent, (args: SelectedIndexChangedEventData) => {
     // manually wrapping in the NgZone when using the event via code-behind (otherwise this.selectedIndex won't be updated in the UI)
     this._zone.run(() => {
-        this.selectedIndex = newIndex;
+        this.selectedIndex = args.newIndex;
     });
 });

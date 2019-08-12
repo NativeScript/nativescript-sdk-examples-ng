@@ -10,10 +10,10 @@ constructor(private _zone: NgZone) { }
 
 // .. more code follows here
 
-bottomNavigation.on(BottomNavigation.selectedIndexChangedEvent, (data: SelectedIndexChangedEventData) => {
+bottomNavigation.on(BottomNavigation.selectedIndexChangedEvent, (args: SelectedIndexChangedEventData) => {
     // manually wrap in the NgZone when using the event via code-behind
     this._zone.run(() => {
-        this.selectedIndex = newIndex;
+        this.selectedIndex = args.newIndex;
     });
 });
 ```
