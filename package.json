@@ -22,10 +22,10 @@
   "nativescript": {
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-android": {
-      "version": "6.1.0-2019-08-16-111945-03"
+      "version": "next"
     },
     "tns-ios": {
-      "version": "6.1.0-2019-08-15-135151-01"
+      "version": "next"
     }
   },
   "dependencies": {
@@ -37,14 +37,14 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
-    "nativescript-angular": "^8.2.0-next-2019-08-13-170403-02",
+    "nativescript-angular": "next",
     "nativescript-camera": "^4.5.0",
     "nativescript-geolocation": "^5.1.0",
     "nativescript-intl": "~3.0.0",
     "nativescript-theme-core": "^1.0.6",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.4.0",
-    "tns-core-modules": "^6.1.0-next-2019-08-18-231654-03",
+    "tns-core-modules": "next",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
@@ -55,7 +55,7 @@
     "glob": "^7.1.3",
     "lazy": "1.0.11",
     "markdown-snippet-injector": "^0.2.2",
-    "nativescript-dev-webpack": "^1.2.0-next-2019-08-14-181951-02",
+    "nativescript-dev-webpack": "next",
     "opener": "^1.4.1",
     "rimraf": "^2.5.3",
     "tar.gz": "^1.0.5",
