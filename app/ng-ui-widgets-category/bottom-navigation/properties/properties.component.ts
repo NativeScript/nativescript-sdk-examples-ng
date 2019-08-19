@@ -66,7 +66,7 @@ export class PropertiesComponent {
         for (let index = 0; index < 3; index++) {
             const item: TabContentItem = new TabContentItem();
             // The createContent is a custom method that returns a StackLayout with a Label as a chils
-            item.view = this.createContent(index);
+            item.content = this.createContent(index);
             arr.push(item);
         }
 
