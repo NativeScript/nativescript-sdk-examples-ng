@@ -3,11 +3,25 @@
 
     <!-- TabStripItem supports the CSS pseudo selector :active (see theming-page.css) -->
     <TabStrip>
-        <TabStripItem class="tabstripitem-active" title="Home" iconSource="res://baseline_home_black_24pt">
-        </TabStripItem>
+        <TabStripItem class="tabstripitem-active" title="Home" iconSource="res://baseline_home_black_24pt"></TabStripItem>
         <TabStripItem class="tabstripitem-active" title="Account" iconSource="res://baseline_account_balance_black_24pt"></TabStripItem>
-        <TabStripItem class="tabstripitem-active" title="Search" iconSource="res://baseline_search_black_24pt">
-        </TabStripItem>
+        <TabStripItem class="tabstripitem-active" title="Search" iconSource="res://baseline_search_black_24pt"></TabStripItem>
+
+        <!-- Alternatively we can use the extended syntax to create icons with Icon Fonts -->
+        <!-- 
+            <TabStripItem>
+                <Label text="Home"></Label>
+                <Image src="font://&#xf015;" class="fas"></Image>
+            </TabStripItem>
+            <TabStripItem class="special">
+                <Label text="Account"></Label>
+                <Image src="font://&#xf007;" class="fas"></Image>
+            </TabStripItem>
+            <TabStripItem class="special">
+                <Label text="Search"></Label>
+                <Image src="font://&#xf00e;" class="fas"></Image>
+            </TabStripItem> 
+        -->
     </TabStrip>
 
     <!-- TabContentItem supports the CSS property `color` -->
