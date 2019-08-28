@@ -3,14 +3,18 @@ import { RouterExtensions } from "nativescript-angular/router";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "./action-items.component.html"
+    templateUrl: "./usage.component.html"
 
 })
-export class ActionItemsComponent {
+export class ActionBarUsageComponent {
 
     constructor(private routerExtensions: RouterExtensions) { }
 
     public goBack() {
         this.routerExtensions.backToPreviousPage();
+    }
+
+    openSettings() {
+        // implement the cusotm logic
     }
 }

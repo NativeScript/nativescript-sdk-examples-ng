@@ -2,10 +2,10 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Action items", "/action-bar/action-items"),
-    new Link("Navigation button", "/action-bar/navigation-button"),
-    new Link("Title", "/action-bar/title"),
-    new Link("Icon fonts", "/action-bar/icon-fonts")
+    new Link("Usage", "/action-bar/usage"),
+    // new Link("Navigation button", "/action-bar/navigation-button"),
+    // new Link("Title", "/action-bar/title"),
+    // new Link("Icon fonts", "/action-bar/icon-fonts")
 ];
 
 @Component({

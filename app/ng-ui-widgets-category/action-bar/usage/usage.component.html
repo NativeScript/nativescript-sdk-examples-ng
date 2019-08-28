@@ -1,15 +1,22 @@
 <!-- >> action-bar-action-items-html -->
-<ActionBar android:title="Title">
+<!-- <ActionBar title="Title">
     <ActionItem text="left item" ios.position="left"></ActionItem>
     <ActionItem text="Item" ios.position="right" android.position="popup"></ActionItem>
-    <!-- >> action-bar-custom-action-item-html -->
+
     <ActionItem>
         <Label class="m-5" text="Custom item" color="#8C489F"></Label>
     </ActionItem>
-    <!-- << action-bar-custom-action-item-html -->
-    <!-- >> action-bar-platform-specific-icons-html -->
+
     <ActionItem ios.systemIcon="12" android.systemIcon="ic_menu_search"></ActionItem>
-    <!-- << action-bar-platform-specific-icons-html -->
+
     <NavigationButton icon="res://ic_arrow_back_black_24dp" (tap)="goBack()"></NavigationButton>
-</ActionBar>
+</ActionBar> -->
 <!-- << action-bar-action-items-html -->
+
+
+<!-- >> action-bar-basic-usage -->
+<ActionBar title="My Title">
+    <NavigationButton icon="res://ic_arrow_back_black_24dp" (tap)="goBack()"></NavigationButton>
+    <ActionItem icon="font://&#xf013;" class="fas" (tap)="openSettings()"></ActionItem>
+</ActionBar> 
+<!-- << action-bar-basic-usage -->

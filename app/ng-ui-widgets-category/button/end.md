@@ -1,4 +1,3 @@
-
 ## Properties
 
 | Name     | Type    | Description    |
