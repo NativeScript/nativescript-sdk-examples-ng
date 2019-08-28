@@ -22,10 +22,10 @@
   "nativescript": {
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-android": {
-      "version": "next"
+      "version": "6.1.0-2019-08-28-111418-01"
     },
     "tns-ios": {
-      "version": "next"
+      "version": "6.1.0-2019-08-28-095325-02"
     }
   },
   "dependencies": {
@@ -40,7 +40,7 @@
     "nativescript-camera": "^4.5.0",
     "nativescript-geolocation": "^5.1.0",
     "nativescript-intl": "~3.0.0",
-    "nativescript-theme-core": "^1.0.6",
+    "nativescript-theme-core": "^2.0.8",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.4.0",
     "tns-core-modules": "next",
