@@ -5,9 +5,8 @@ import { ActionBarExamplesComponent } from "./action-bar-examples.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 import { ActionBarUsageComponent } from "./usage/usage.component";
-// import { NavigationButtonComponent } from "./navigation-button/navigation-button.component";
-// import { TitleComponent } from "./title/title.component";
-// import { IconFontsComponent } from "./icon-fonts/icon-fonts.component";
+import { ActionBarStylingComponent } from "./styling/styling.component";
+
 export const routerConfig = [
     {
         path: "",
@@ -18,21 +17,11 @@ export const routerConfig = [
         component: ActionBarUsageComponent,
         data: { title: "Usage" }
     },
-    // {
-    //     path: "navigation-button",
-    //     component: NavigationButtonComponent,
-    //     data: { title: "Navigation button" }
-    // },
-    // {
-    //     path: "title",
-    //     component: TitleComponent,
-    //     data: { title: "ActionBar title" }
-    // },
-    // {
-    //     path: "icon-fonts",
-    //     component: IconFontsComponent,
-    //     data: { title: "Icon fonts" }
-    // }
+    {
+        path: "styling",
+        component: ActionBarStylingComponent,
+        data: { title: "Styling" }
+    }
 ];
 
 @NgModule({
@@ -46,9 +35,7 @@ export const routerConfig = [
     declarations: [
         ActionBarExamplesComponent,
         ActionBarUsageComponent,
-        // NavigationButtonComponent,
-        // TitleComponent,
-        // IconFontsComponent
+        ActionBarStylingComponent
     ]
 })
 

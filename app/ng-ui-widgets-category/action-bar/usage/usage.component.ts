@@ -1,3 +1,4 @@
+// >> action-bar-basic-usage-ts
 import { Component } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 
@@ -10,7 +11,7 @@ export class ActionBarUsageComponent {
 
     constructor(private routerExtensions: RouterExtensions) { }
 
-    public goBack() {
+    goBack() {
         this.routerExtensions.backToPreviousPage();
     }
 
@@ -18,3 +19,4 @@ export class ActionBarUsageComponent {
         // implement the cusotm logic
     }
 }
+// << action-bar-basic-usage-ts

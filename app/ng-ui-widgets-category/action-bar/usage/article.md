@@ -1,51 +1,39 @@
-The ActionBar consists of one or more action items that can be declared in markup as follows:
+The `ActionBar` provides a `title` property and can be extended by using one or more `ActionItem` components and a single `NavigationButton`. The `ActionBar` also supports entirely  custom views (see the [Tips and Tricks](#tips-and-tricks) section below).
 
-<snippet id='action-bar-action-items-html'/>
+<snippet id='action-bar-basic-usage'/>
+<snippet id='action-bar-basic-usage-ts'/>
 
-The `position` option is platform-specific. The available values are as follows:
+### ActionItem
 
-* Android - `actionBar`, `actionBarIfRoom` and `popup`. The default is `actionBar`.
-* iOS - `left` and `right`. The default is `left`.
+The `ActionItem` components are supporting the platform-specific `position` and `systemIcon` for iOS and Android.
 
-An ActionItem can be easily customized by placing whichever element you need directly inside.
-<snippet id='action-bar-custom-action-item-html'/>
+```HTML
+<ActionBar title="Action Items">
+    <ActionItem (tap)="onShare()" ios.systemIcon="9" ios.position="left"
+                android.systemIcon="ic_menu_share" android.position="actionBar">
+    </ActionItem>
+    <ActionItem text="delete" (tap)="onDelete()"
+                ios.systemIcon="16" ios.position="right" android.position="popup">
+    </ActionItem>
+</ActionBar>
+```
 
-Furthermore, an item can have platform-specific icons that can be set with the corresponding `systemIcon` value. For example:
-<snippet id='action-bar-platform-specific-icons-html'/>
+- **Android** sets position via **`android.position`**:
 
-### iOS
+    * **`actionBar`**: Puts the item in the `ActionBar`. Action item can be rendered both as text or icon.
+    * **`popup`**: Puts the item in the options menu. Items will be rendered as text.
+    * **`actionBarIfRoom`**: Puts the item in the `ActionBar` if there is room for it. Otherwise, puts it in the options menu.
 
-Set `ios.systemIcon` to a number representing the iOS system item to be displayed. Use this property instead of ActionItem.icon if you want to display a built-in iOS system icon.
+- **iOS** sets position via **`ios.position`**:
 
-> **Note**: `systemIcon` is not supported on NavigationButton components in iOS.
+    * **`left`**: Puts the item on the left side of the `ActionBar`.
+    * **`right`**: Puts the item on the right side of the `ActionBar`.
 
-The value you pass `ios.systemIcon` should be a number from the UIBarButtonSystemItem enumeration:
+### NavigationButton
 
-* 0: Done
-* 1: Cancel
-* 2: Edit
-* 3: Save
-* 4: Add
-* 5: FlexibleSpace
-* 6: FixedSpace
-* 7: Compose
-* 8: Reply
-* 9: Action
-* 10: Organize
-* 11: Bookmarks
-* 12: Search
-* 13: Refresh
-* 14: Stop
-* 15: Camera
-* 16: Trash
-* 17: Play
-* 18: Pause
-* 19: Rewind
-* 20: FastForward
-* 21: Undo
-* 22: Redo
-* 23: PageCurl
+The `NavigationButton` component is a common abstraction over the iOS back button and the Android navigation button.
 
-### Android
+> **iOS Specifics:** The default text of the navigation button is the title of the **previous** page. In iOS, the back button is used explicitly for navigation. It navigates to the previous page and you can't handle the tap event to override this behavior. If you want to place a button on the left side of the ActionBar and handle the tap event (e.g., show slide-out), you can use ActionItem with `ios.position="left"`.
 
-You can set the `android.systemIcon` attribute to the name of the system drawable resource to be displayed. Use this property instead of ActionItem.icon if you want to display a built-in Android system icon. The value should be a string such as `ic_menu_search` if you want to display the built-in Android Menu Search icon for example. For a full list of Android drawable names, please visit https://developer.android.com/reference/android/R.drawable.
+> **Android Specifics:** In Android, you can't set text inside the navigation button. You can use the icon property to set an image (e.g., `~\images\nav-image.png` or `res:\\ic_nav`). You can use `android.systemIcon` to set one of the system icons available in Android. In this case, there is no default behaviour for `NavigationButton` tap event, and we should define manually the callback function, which will be executed.
+

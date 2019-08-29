@@ -3,9 +3,7 @@ import { Link } from "./../../link";
 
 let menuLinks = [
     new Link("Usage", "/action-bar/usage"),
-    // new Link("Navigation button", "/action-bar/navigation-button"),
-    // new Link("Title", "/action-bar/title"),
-    // new Link("Icon fonts", "/action-bar/icon-fonts")
+    new Link("Styling", "/action-bar/styling")
 ];
 
 @Component({

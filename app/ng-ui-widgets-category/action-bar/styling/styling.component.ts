@@ -1,12 +1,11 @@
-// >> navigation-button-back-code
 import { Component } from "@angular/core";
 import { RouterExtensions } from "nativescript-angular/router";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "./navigation-button.component.html"
+    templateUrl: "./styling.component.html"
 })
-export class NavigationButtonComponent {
+export class ActionBarStylingComponent {
 
     constructor(private routerExtensions: RouterExtensions) { }
 
@@ -14,4 +13,3 @@ export class NavigationButtonComponent {
         this.routerExtensions.backToPreviousPage();
     }
 }
-// << navigation-button-back-code

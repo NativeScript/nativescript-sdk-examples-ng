@@ -1,0 +1,17 @@
+<!-- >> actionbar-icon-fonts-html -->
+<!-- The default background-color and color of ActionBar & ActionItem are set through nativescript-theme (if used)-->
+<ActionBar title="Styling">
+      <!-- Explicitly hiding the NavigaitonBar to prevent the default one on iOS-->
+      <NavigationButton visibility="collapsed"></NavigationButton>
+
+      <!-- Using the icon property and Icon Fonts -->
+      <ActionItem position="left" icon="font://&#xf0a8;" class="fas" (tap)="goBack()"></ActionItem>
+
+      <!-- Creating custom views for ActionItem-->
+      <ActionItem ios.position="right">
+            <GridLayout width="100">
+                  <Button text="Theme" class="-primary -rounded-lg"></Button>
+            </GridLayout>
+      </ActionItem>
+</ActionBar>
+<!-- << actionbar-icon-fonts-html -->
