@@ -1,6 +1,3 @@
-
-
-
 ## Properties
 
 | Name     | Type     | Description    |

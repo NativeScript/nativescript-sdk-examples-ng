@@ -2,11 +2,9 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "../../link";
 
 let menuLinks = [
-    new Link("Events", "/bottom-navigation/events"),
     new Link("Usage", "/bottom-navigation/usage"),
-    // new Link("Properties", "/bottom-navigation/properties"),
-    new Link("Theming", "/bottom-navigation/theming"),
-    new Link("Tips & Tricks", "/bottom-navigation/tips-and-tricks")
+    new Link("Styling", "/bottom-navigation/styling"),
+    // new Link("Tips & Tricks", "/bottom-navigation/tips-and-tricks")
 ];
 
 @Component({

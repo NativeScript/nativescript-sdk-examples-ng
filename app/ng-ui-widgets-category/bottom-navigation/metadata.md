@@ -4,4 +4,4 @@ description: The NativeScript's BottomNavigation component provides a simple way
 position: 42
 slug: bottom-navigation-ng
 ---
-example-order: usage, theming, properties, events, tips-and-tricks
+example-order: usage, styling, tips-and-tricks
