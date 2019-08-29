@@ -1,12 +1,12 @@
 
 ## Properties
 
-### ActionBar Properties
+### ActionBar
 
 | Name      | Type     | Description    |
 |:----------|:---------|:---------------|
 | `title`   | `string` | Gets or sets the action bar title. |
-| `titleView` | [`View`](https://docs.nativescript.org/api-reference/classes/_ui_core_view_.view) | Gets or sets the title view. When set - replaces the title with a custom view. |
+| `titleView` | [View](https://docs.nativescript.org/api-reference/classes/_ui_core_view_.view) | Gets or sets the title view. When set - replaces the title with a custom view. |
 
 ### ActionItem 
 | Name     | Type     | Description    |
@@ -19,7 +19,7 @@
 | `android.systemIcon`   | `string` | **Android only** Sets a path to a resource icon ([list of system drawables](https://developer.android.com/reference/android/R.drawable)) |
 
 
-### NavigationButton Properties
+### NavigationButton
 
 | Name     | Type     | Description    |
 |:---------|:---------|:---------------|
@@ -34,13 +34,13 @@
 
 ## API References
 
-| Name               | Type     | API Reference Link |
-|:-------------------|:---------|:-------------------|
-| `ActionBar`        | `Module` | https://docs.nativescript.org/api-reference/modules/_ui_action_bar_ |
-| `ActionBar`        | `Class`  | https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.actionbar |
-| `ActionItem`       | `Class`  | https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.actionitem |
-| `ActionItems`      | `Class`  | https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.actionitems |
-| `NavigationButton` | `Class`  | https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.navigationbutton |
+| Name               | Type     | 
+|:-------------------|:---------|
+| [ActionBar](https://docs.nativescript.org/api-reference/modules/_ui_action_bar_)                 | `Module` | 
+| [ActionBar](https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.actionbar)       | `Class`  | 
+| [ActionItem](https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.actionitem )    | `Class`  | 
+| [ActionItems](https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.actionitems)   | `Class`  |
+| [NavigationButton](https://docs.nativescript.org/api-reference/classes/_ui_action_bar_.navigationbutton) | `Class`  |
 
 ## Native Component
 
