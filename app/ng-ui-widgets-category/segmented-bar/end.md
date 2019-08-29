@@ -1,5 +1,5 @@
 
-**API Reference for the** [SegementedBar Class](http://docs.nativescript.org/api-reference/modules/_ui_segmented_bar_.html)
+**API Reference for the** [SegmentedBar Class](http://docs.nativescript.org/api-reference/modules/_ui_segmented_bar_.html)
 
 **Native Component**
 
