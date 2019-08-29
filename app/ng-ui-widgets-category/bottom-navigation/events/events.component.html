@@ -2,8 +2,14 @@
 <BottomNavigation [selectedIndex]="selectedIndex" (loaded)="onBottomNavLoaded($event)">
         <!-- The bottom tab UI is created via TabStrip (the containier) and TabStripItem (for each tab)-->
         <TabStrip>
-            <TabStripItem title="Home" iconSource="res://baseline_home_black_24pt"></TabStripItem>
-            <TabStripItem title="Account" iconSource="res://baseline_account_balance_black_24pt"></TabStripItem>
+            <TabStripItem>
+                <Label text="Home"></Label>
+                <Image src="font://&#xf015;" class="fas"></Image>
+            </TabStripItem>
+            <TabStripItem class="special">
+                <Label text="Account"></Label>
+                <Image src="font://&#xf007;" class="fas"></Image>
+            </TabStripItem>
         </TabStrip>
 
         <!-- The number of TabContentItem components should corespond to the number of TabStripItem components -->
