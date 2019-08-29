@@ -4,9 +4,18 @@
 
         <!-- The bottom tab UI is created via TabStrip (the containier) and TabStripItem (for each tab)-->
         <TabStrip>
-            <TabStripItem title="Home" iconSource="res://baseline_home_black_18pt"></TabStripItem>
-            <TabStripItem title="Account" iconSource="res://baseline_account_balance_black_18pt"></TabStripItem>
-            <TabStripItem title="Search" iconSource="res://baseline_search_black_18pt"></TabStripItem>
+            <TabStripItem>
+                <Label text="Home"></Label>
+                <Image src="font://&#xf015;" class="fas"></Image>
+            </TabStripItem>
+            <TabStripItem class="special">
+                <Label text="Account"></Label>
+                <Image src="font://&#xf007;" class="fas"></Image>
+            </TabStripItem>
+            <TabStripItem class="special">
+                <Label text="Search"></Label>
+                <Image src="font://&#xf00e;" class="fas"></Image>
+            </TabStripItem>
         </TabStrip>
 
         <!-- The number of TabContentItem components should corespond to the number of TabStripItem components -->
