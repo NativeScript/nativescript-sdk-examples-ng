@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Set busy property", "/activity-indicator/setting-busy"),
-    new Link("Set busy property(during HTTP Request)", "/activity-indicator/setting-busy-http-request")
+    new Link("Usage", "/activity-indicator/usage"),
+    new Link("Styling", "/activity-indicator/styling")
 ];
 
 @Component({

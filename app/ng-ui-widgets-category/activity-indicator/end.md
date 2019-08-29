@@ -1,7 +1,27 @@
 
-**API Reference for** [ActivityIndicator Class](http://docs.nativescript.org/api-reference/modules/_ui_activity_indicator_.html)
 
-**Native Component**
+
+## Properties
+
+| Name     | Type     | Description    |
+|:---------|:---------|:---------------|
+| `busy`   | `boolean` | Gets or sets a value indicating whether the widget is currently displaying progress. |
+
+## Events
+
+| Name        | Description    |
+|:------------|:---------------|
+| `busyChange`| Emitted when the ActivityIndicator busy property is changed.|
+
+## API References
+
+| Name               | Type     | 
+|:-------------------|:---------|
+| [ActivityIndicator](http://docs.nativescript.org/api-reference/modules/_ui_activity_indicator_)           | `Module` | 
+| [ActivityIndicator](https://docs.nativescript.org/api-reference/classes/_ui_activity_indicator_.activityindicator) | `Class` |
+
+
+## Native Component
 
 | Android                | iOS      |
 |:-----------------------|:---------|
