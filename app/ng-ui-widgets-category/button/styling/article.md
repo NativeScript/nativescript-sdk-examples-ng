@@ -1,6 +1,7 @@
 The `Button` component can be styled using CSS or corresponding properties.
 
 <snippet id='button-styling-html'/>
+<snippet id='button-styling-css'/>
 
 ### Specific Styling Properties
 

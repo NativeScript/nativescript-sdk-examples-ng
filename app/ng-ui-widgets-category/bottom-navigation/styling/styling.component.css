@@ -1,15 +1,9 @@
 /* >> bottom-nav-theming-css-ng */
-BottomNavigation.bottom-nav {
-    background-color: orangered;
-    color: gold;
-    font-size: 18;
-}
-
-TabStripItem.tabstripitem-active {
+TabStripItem.tabstripitem {
     background-color: teal;
 }
 
-TabStripItem.tabstripitem-active:active {
+TabStripItem.tabstripitem:active {
     background-color: yellowgreen;
 } 
 
@@ -24,5 +18,14 @@ TabContentItem.second-tabcontent {
 TabContentItem.third-tabcontent {
     background-color: blueviolet;
     color: antiquewhite;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
+}
+
+.t-36 {
+    font-size: 36;
 }
 /* << bottom-nav-theming-css-ng */

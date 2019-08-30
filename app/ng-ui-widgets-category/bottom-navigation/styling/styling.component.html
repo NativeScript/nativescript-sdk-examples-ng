@@ -1,23 +1,24 @@
-<!-- BottomNavigation supports the CSS properties `background-color` and `color` -->
-<BottomNavigation isIconSizeFixed="true" selectedIndex="1" class="bottom-nav">
 
-    <!-- TabStripItem supports the CSS pseudo selector :active (see theming-page.css) -->
+<GridLayout sdkExampleTitle sdkToggleNavButton>
+<!-- >> bottom-nav-theming-html-ng -->
+<BottomNavigation selectedIndex="1">
+
+    <!-- TabStripItem supports the CSS pseudo selector :active (see styling.component.css) -->
     <TabStrip>
-        <TabStripItem>
+        <TabStripItem class="tabstripitem">
             <Label text="Home"></Label>
-            <Image src="font://&#xf015;" class="fas"></Image>
+            <Image src="font://&#xf015;" class="fas t-36"></Image>
         </TabStripItem>
-        <TabStripItem class="special">
+        <TabStripItem class="tabstripitem">
             <Label text="Account"></Label>
-            <Image src="font://&#xf007;" class="fas"></Image>
+            <Image src="font://&#xf007;" class="fas t-36"></Image>
         </TabStripItem>
-        <TabStripItem class="special">
+        <TabStripItem class="tabstripitem">
             <Label text="Search"></Label>
-            <Image src="font://&#xf00e;" class="fas"></Image>
+            <Image src="font://&#xf00e;" class="fas t-36"></Image>
         </TabStripItem>
     </TabStrip>
 
-    <!-- TabContentItem supports the CSS property `color` -->
     <TabContentItem class="first-tabcontent">
         <GridLayout>
             <Label text="Home Page" horizontalAlignment="center" verticalAlignment="middle"></Label>
@@ -33,5 +34,6 @@
             <Label text="Search Page" horizontalAlignment="center" verticalAlignment="middle"></Label>
         </GridLayout>
     </TabContentItem>
-
 </BottomNavigation>
+<!-- << bottom-nav-theming-html-ng -->
+</GridLayout>

@@ -1,10 +1,9 @@
-
 ## Properties
 
 ### BottomNavigation Properties
 
-| Name     | Type     | Description    |
-|----------|----------|----------------|
+| Name      | Type     | Description    |
+|:----------|:---------|:---------------|
 | `items`   | `Array<TabContentItem>` |  Gets or sets the items of the BottomNavigation. |
 | `selectedIndex` | `number` | Gets or sets the selectedIndex of the BottomNavigation. |
 | `tabStrip`| `TabStrip` | Gets or sets the tab strip of the BottomNavigation. |
@@ -13,23 +12,43 @@
 ### TabStrip Properties
 
 | Name     | Type     | Description    |
-|----------|----------|----------------|
+|:---------|:---------|:---------------|
 | `iosIconRenderingMode`   | "automatic" \| "alwaysOriginal" \| "alwaysTemplate" | Gets or sets the icon rendering mode on iOS. |
-| `isIconSizeFixed` | `boolean` | When set to false the icon will have fixed size following the platform-specific design guidelines. Default value: `true`.
+| `isIconSizeFixed` | `boolean` | When set to `true` the icon will have fixed size following the platform-specific design guidelines. Default value: `true`. |
+| `items`   | `Array<TabStripItem>` |  Gets or sets an array of strip items of the TabStrip. |
+
+
 
 ### TabStripItem Properties
 
-| Name     | Type     | Description    |
-|----------|----------|----------------|
-| `text`   | `string` | Gets or sets the label of the button. |
+| Name      | Type     | Description                                    |
+|-----------|----------|------------------------------------------------|
+| `title`   | `string` | Gets or sets the title of the tab strip entry. |
+| `iconSource` | `string` | Gets or sets the icon source of the tab strip entry. Supports local image paths (`~`), resource images (`res://`) and icon fonts (`font://`) |
+| `image`   | `Image` | Gets or sets the image of the tab strip entry.  |
+| `label`   | `Label` | Gets or sets the label of the tab strip entry.  |
 
 
 ## Events
 
-| Name     | Description    |
-|----------|----------------|
-| `select`    | Emitted when an `tabStripItem` is selected. |
-| `unselect`   | Emitted when an `tabStripItem` is unselected. |
+### BottomNavigation Events
+
+| Name                   | Description                                           |
+|:-----------------------|:------------------------------------------------------|
+| `selectedIndexChanged` | Emitted when the `selectedIndex` property is changed. |
+
+### TabStrip Events
+
+| Name                   | Description                 |
+|:-----------------------|:----------------------------|
+| `itemTap` | Emitted when a `TabStripItem` is tapped. |
+
+### TabStripItem Events
+
+| Name                   | Description             |
+|:-----------------------|:------------------------|
+| `tap` | Emitted when a `TabStripItem` is tapped. |
+
 
 ## API References
 

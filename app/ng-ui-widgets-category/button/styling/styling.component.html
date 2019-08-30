@@ -1,8 +1,11 @@
-<StackLayout class="m-15" sdkExampleTitle sdkToggleNavButton>
-    <!-- >> button-styling-html -->
+
+<ScrollView class="m-15" sdkExampleTitle sdkToggleNavButton>
+        <!-- >> button-styling-html -->
     <StackLayout>
         <!-- No styles applied -->
         <Button text="Button"></Button>
+        <!-- Using local CSS class -->
+        <Button text=".my-button" class="my-button"></Button>
         <!-- Using nativescript-theme-core CSS classes -->
         <Button text="Button.-primary" class="-primary"></Button>
         <Button class="-primary">
@@ -20,4 +23,5 @@
         <Button text="Button.-primary[isEnabled=false]" isEnabled="false" class="-primary"></Button>
     </StackLayout>
     <!-- << button-styling-html -->
-</StackLayout>
+</ScrollView>
+
