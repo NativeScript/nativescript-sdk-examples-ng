@@ -4,18 +4,14 @@ import { DatePicker } from "tns-core-modules/ui/date-picker";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "./configure-date-picker.component.html"
+    templateUrl: "./usage.component.html"
 })
-export class ConfigureDatePickerComponent {
+export class DatePickerUsageComponent {
+    minDate: Date = new Date(1975, 0, 29);
+    maxDate: Date = new Date(2045, 4, 12);
 
-    onPickerLoaded(args) {
-        let datePicker = <DatePicker>args.object;
-
-        datePicker.year = 1980;
-        datePicker.month = 2;
-        datePicker.day = 9;
-        datePicker.minDate = new Date(1975, 0, 29);
-        datePicker.maxDate = new Date(2045, 4, 12);
+    onDatePickerLoaded(args) {
+        // const datePicker = args.object as DatePicker;
     }
 
     onDateChanged(args) {

@@ -1,0 +1,10 @@
+/* >> styling-datepicker-css */
+.date-picker {
+    background-color: olivedrab;
+    border-color: burlywood;
+    border-width: 2;
+    border-radius: 10;
+    color: whitesmoke;
+    vertical-align: middle;
+}
+/* << styling-datepicker-css */

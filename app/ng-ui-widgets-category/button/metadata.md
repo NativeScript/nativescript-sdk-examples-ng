@@ -4,4 +4,4 @@ description: The Button is a UI component that displays a button which reacts to
 position: 20
 slug: button-ng
 ---
-example-order: usage, styling, tips-and-tricks
+example-order: usage, styling

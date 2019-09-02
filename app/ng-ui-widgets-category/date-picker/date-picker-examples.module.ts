@@ -2,7 +2,8 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { DatePickerExamplesComponent } from "./date-picker-examples.component";
-import { ConfigureDatePickerComponent } from "./configure-date-picker/configure-date-picker.component";
+import { DatePickerUsageComponent } from "./usage/usage.component";
+import { DatePickerStylingComponent } from "./styling/styling.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -11,9 +12,14 @@ export const routerConfig = [
         component: DatePickerExamplesComponent
     },
     {
-        path: "configure",
-        component: ConfigureDatePickerComponent,
-        data: { title: "Configure DatePicker" }
+        path: "usage",
+        component: DatePickerUsageComponent,
+        data: { title: "Usage" }
+    },
+    {
+        path: "styling",
+        component: DatePickerStylingComponent,
+        data: { title: "Styling" }
     }
 ];
 
@@ -25,7 +31,7 @@ export const routerConfig = [
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
     ],
-    declarations: [DatePickerExamplesComponent, ConfigureDatePickerComponent]
+    declarations: [DatePickerExamplesComponent, DatePickerUsageComponent, DatePickerStylingComponent]
 })
 
 export class DatePickerExamplesModule {

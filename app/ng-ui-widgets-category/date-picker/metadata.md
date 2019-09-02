@@ -4,3 +4,4 @@ description: DatePicker is UI control, which allows choosing a date from a ready
 position: 21
 slug: date-picker-ng
 ---
+example-order: usage, styling

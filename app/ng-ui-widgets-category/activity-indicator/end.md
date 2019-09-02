@@ -9,6 +9,9 @@
 | Name        | Description    |
 |:------------|:---------------|
 | `busyChange`| Emitted when the ActivityIndicator busy property is changed.|
+| `loaded`               | Emitted when the view is loaded.                 |
+| `unloaded`             | Emitted when the view is unloaded.               |
+| `layoutChanged`        | Emitted when the layout bounds of a view changes due to layout processing. |
 
 ## API References
 

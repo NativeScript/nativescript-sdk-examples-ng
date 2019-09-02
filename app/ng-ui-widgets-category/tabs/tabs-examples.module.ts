@@ -6,10 +6,7 @@ import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.m
 
 import { TabsExamplesComponent } from "./tabs-examples.component";
 import { UsageComponent } from "./usage/usage.component";
-import { ThemingComponent } from "./theming/theming.component";
-import { EventsComponent } from "./events/events.component";
-import { PropertiesComponent } from "./properties/properties.component";
-import { TabsTipsAndTricksComponent } from "./tips-and-tricks/tips-and-tricks.component";
+import { TabsStylingComponent } from "./styling/styling.component";
 export const routerConfig = [
     {
         path: "",
@@ -22,25 +19,10 @@ export const routerConfig = [
         data: { title: "Usage" }
     },
     {
-        path: "theming",
-        component: ThemingComponent,
-        data: { title: "Theming" }
+        path: "styling",
+        component: TabsStylingComponent,
+        data: { title: "Styling" }
     },
-    {
-        path: "events",
-        component: EventsComponent,
-        data: { title: "Events" }
-    },
-    {
-        path: "properties",
-        component: PropertiesComponent,
-        data: { title: "Properties" }
-    },
-    {
-        path: "tips-and-tricks",
-        component: TabsTipsAndTricksComponent,
-        data: { title: "Tips & Tricks" }
-    }
 ];
 @NgModule({
     schemas: [NO_ERRORS_SCHEMA],
@@ -53,11 +35,8 @@ export const routerConfig = [
     ],
     declarations: [
         TabsExamplesComponent,
-        EventsComponent,
-        UsageComponent,
-        PropertiesComponent,
-        ThemingComponent,
-        TabsTipsAndTricksComponent
+        TabsStylingComponent,
+        UsageComponent
     ]
 })
 

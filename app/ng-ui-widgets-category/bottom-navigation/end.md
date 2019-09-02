@@ -13,7 +13,7 @@
 
 | Name     | Type     | Description    |
 |:---------|:---------|:---------------|
-| `iosIconRenderingMode`   | "automatic" \| "alwaysOriginal" \| "alwaysTemplate" | Gets or sets the icon rendering mode on iOS. |
+| `iosIconRenderingMode`   | _"automatic"_, _"alwaysOriginal"_, _"alwaysTemplate"_ | Gets or sets the icon rendering mode on iOS. |
 | `isIconSizeFixed` | `boolean` | When set to `true` the icon will have fixed size following the platform-specific design guidelines. Default value: `true`. |
 | `items`   | `Array<TabStripItem>` |  Gets or sets an array of strip items of the TabStrip. |
 
@@ -36,6 +36,9 @@
 | Name                   | Description                                           |
 |:-----------------------|:------------------------------------------------------|
 | `selectedIndexChanged` | Emitted when the `selectedIndex` property is changed. |
+| `loaded`               | Emitted when the view is loaded.                      |
+| `unloaded`             | Emitted when the view is unloaded.                    |
+| `layoutChanged`        | Emitted when the layout bounds of a view changes due to layout processing. |
 
 ### TabStrip Events
 

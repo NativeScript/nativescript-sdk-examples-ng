@@ -12,9 +12,9 @@
 | Name     | Type     | Description    |
 |:---------|:---------|:---------------|
 | `text`   | `string` | Gets or sets the text of the action item. |
-| `icon`   | `string` | Gets or sets the icon of the action item. Supports local images (`~/<image-path>`), resources (`res://`) and icon fonts (`fonts://`)|
-| `ios.position`   | `left` , `right` | Sets the position of the item (default value is `left`). |
-| `android.position`   |  `actionBar`, `popup` , `actionBarIfRoom` | Sets the position of the item (default value is `actionBar`). |
+| `icon`   | `string` | Gets or sets the icon of the action item. Supports local images (`~/`), resources (`res://`) and icon fonts (`fonts://`)|
+| `ios.position`   | `enum`: _"left"_, _"right"_ | Sets the position of the item (default value is `left`). |
+| `android.position`   | `enum`: _"actionBar"_, _"popup"_, _"actionBarIfRoom"_ | Sets the position of the item (default value is `actionBar`). |
 | `ios.systemIcon`   | `number` | **iOS only** Sets the icon of the action item while using [UIBarButtonSystemIcon](https://developer.apple.com/documentation/uikit/uibarbuttonsystemitem) enumeration. |
 | `android.systemIcon`   | `string` | **Android only** Sets a path to a resource icon ( see the [list of Android system drawables](https://developer.android.com/reference/android/R.drawable)) |
 
@@ -30,7 +30,9 @@
 
 | Name        | Description    |
 |:------------|:---------------|
-| `loaded`    | Emitted when the ActionBar is loaded.|
+| `loaded`               | Emitted when the view is loaded.                 |
+| `unloaded`             | Emitted when the view is unloaded.               |
+| `layoutChanged`        | Emitted when the layout bounds of a view changes due to layout processing. |
 
 ## API References
 
