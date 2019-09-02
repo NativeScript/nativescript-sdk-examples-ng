@@ -16,10 +16,11 @@ export class PanExampleComponent {
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);
         console.log("Pan delta: [" + args.deltaX + ", " + args.deltaY + "] state: " + args.state);
-
+        // >> (hide)
         this.deltaX = args.deltaX;
         this.deltaY = args.deltaY;
         this.state = args.state;
+        // << (hide)
     }
 }
 // << pan-code

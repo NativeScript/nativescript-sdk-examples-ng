@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Create HtmlView", "/html-view/creating-html-view")
+    new Link("Usage", "/html-view/usage")
 ];
 
 @Component({

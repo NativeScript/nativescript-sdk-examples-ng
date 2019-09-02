@@ -56,7 +56,7 @@
 
 | Name     | Type    |
 |----------|---------|
-| [Tabs](https://uatdocs.nativescript.org/api-reference/classes/_ui_tabs_.tabs) | `Class` | 
+| [Tabs](https://docs.nativescript.org/api-reference/classes/_ui_tabs_.tabs) | `Class` | 
 | [TabStrip](https://docs.nativescript.org/api-reference/classes/_ui_tab_navigation_tab_strip_.tabstrip) | `Class` |
 | [TabStripItem](https://docs.nativescript.org/api-reference/classes/_ui_tab_navigation_tab_strip_item_.tabstripitem) | `Class` |
 | [TabContentItem](https://docs.nativescript.org/api-reference/classes/_ui_tab_navigation_tab_content_item_.tabcontentitem) | `Class` |

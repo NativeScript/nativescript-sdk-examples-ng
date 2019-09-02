@@ -8,11 +8,11 @@ The second parameter is a function that is called each time the specified gestur
 The function arguments contain additional information about the gesture, if applicable.
 
 List of supported gestures in NativeScript:
- - Tap
- - Double Tap
- - Long Press
- - Swipe
- - Pan
- - Pinch
- - Rotation
- - Touch
+ - [Tap](#tap)
+ - [Double Tap](#double-tap)
+ - [Long Press](#long-press)
+ - [Swipe](#swipe)
+ - [Pan](#pan)
+ - [Pinch](#pinch)
+ - [Rotation](#rotation)
+ - [Touch](#touch)

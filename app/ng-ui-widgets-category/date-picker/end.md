@@ -20,13 +20,14 @@
 
 ## API References
 
-| Name     | Type    | API Reference Link |
-|----------|---------|--------------------|
-| `DatePicker` | `Module` | https://docs.nativescript.org/api-reference/modules/_ui_date_picker_ |
-| `DatePicker` | `Class`  | https://docs.nativescript.org/api-reference/classes/_ui_date_picker_.datepicker |
+| Name     | Type    |
+|----------|---------|
+| [tns-core-modules/ui/date-picker](https://docs.nativescript.org/api-reference/modules/_ui_date_picker_ ) | `Module` |
+| [DatePicker](https://docs.nativescript.org/api-reference/classes/_ui_date_picker_.datepicker) | `Class`  | 
 
 ## Native Component
 
 | Android               | iOS      |
 |:----------------------|:---------|
 | [android.widget.DatePicker](http://developer.android.com/reference/android/widget/DatePicker.html)  | [UIDatePicker](https://developer.apple.com/library/ios/documentation/UIKit/Reference/UIDatePicker_Class/index.html) | 
+

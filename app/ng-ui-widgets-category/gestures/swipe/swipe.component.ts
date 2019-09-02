@@ -1,5 +1,5 @@
-import { Component } from "@angular/core";
 // >> swipe-code
+import { Component } from "@angular/core";
 import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
 
 @Component({
@@ -15,8 +15,9 @@ export class SwipeExampleComponent {
         console.log("View that triggered the event: " + args.view);
         console.log("Event name: " + args.eventName);
         console.log("Swipe Direction: " + args.direction);
-
+        // >> (hide)
         this.direction = args.direction;
+        // << (hide)
     }
 }
 // << swipe-code

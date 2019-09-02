@@ -4,3 +4,4 @@ description: The Dialog module provides a functionality, which allows creating d
 position: 22
 slug: dialogs-ng
 ---
+example-order: alert-dialog, action-dialog, confirm-dialog, login-dialog, prompt-dialog

@@ -15,10 +15,10 @@
 
 ## API References
 
-| Name     | Type    | API Reference Link |
-|----------|---------|--------------------|
-| `Button` | `Class` | http://docs.nativescript.org/api-reference/classes/_ui_button_.button.html |
-
+| Name     | Type    | 
+|----------|---------|
+| [tns-core-modules/ui/button](https://docs.nativescript.org/api-reference/modules/_ui_button_) | `Module` | 
+| [Button](http://docs.nativescript.org/api-reference/classes/_ui_button_.button.html) | `Class` | 
 
 ## Native Component
 
