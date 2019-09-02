@@ -1,0 +1,27 @@
+
+<ScrollView class="m-15" sdkExampleTitle sdkToggleNavButton>
+        <!-- >> button-styling-html -->
+    <StackLayout>
+        <!-- No styles applied -->
+        <Button text="Button"></Button>
+        <!-- Using local CSS class -->
+        <Button text=".my-button" class="my-button"></Button>
+        <!-- Using nativescript-theme-core CSS classes -->
+        <Button text="Button.-primary" class="-primary"></Button>
+        <Button class="-primary">
+            <FormattedString>
+                <Span text="&#xf099;" class="fab"></Span>
+                <Span text=" Button.-primary with icon"></Span>
+            </FormattedString>
+        </Button>
+        <Button text="Button.-outline" class="-outline"></Button>
+        <Button text="Button.-primary.-rounded-sm" class="-primary -rounded-sm"></Button>
+        <Button text="Button.-primary.-rounded-lg" class="-primary -rounded-lg"></Button>
+        <Button text="Button.-outline.-rounded-sm" class="-outline -rounded-sm"></Button>
+        <Button text="Button.-outline.-rounded-lg" class="-outline -rounded-lg"></Button>
+        <Button text="Button.-outline[isEnabled=false]" isEnabled="false" class="-outline"></Button>
+        <Button text="Button.-primary[isEnabled=false]" isEnabled="false" class="-primary"></Button>
+    </StackLayout>
+    <!-- << button-styling-html -->
+</ScrollView>
+

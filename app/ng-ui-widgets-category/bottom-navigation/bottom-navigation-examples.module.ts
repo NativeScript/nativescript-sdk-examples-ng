@@ -5,11 +5,8 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 import { BottomNavigationExamplesComponent } from "./bottom-navigation-examples.component";
-import { UsageComponent } from "./usage/usage.component";
-import { ThemingComponent } from "./theming/theming.component";
-import { EventsComponent } from "./events/events.component";
-import { PropertiesComponent } from "./properties/properties.component";
-import { BottomNavTipsAndTricksComponent } from  "./tips-and-tricks/tips-and-tricks.component";
+import { BottomNavUsageComponent } from "./usage/usage.component";
+import { BottomNavStylingComponent } from "./styling/styling.component";
 
 export const routerConfig = [
     {
@@ -18,28 +15,13 @@ export const routerConfig = [
     },
     {
         path: "usage",
-        component: UsageComponent,
+        component: BottomNavUsageComponent,
         data: { title: "Usage" }
     },
     {
-        path: "theming",
-        component: ThemingComponent,
-        data: { title: "Theming" }
-    },
-    {
-        path: "events",
-        component: EventsComponent,
-        data: { title: "Events" }
-    },
-    {
-        path: "properties",
-        component: PropertiesComponent,
-        data: { title: "Properties" }
-    },
-    {
-        path: "tips-and-tricks",
-        component: BottomNavTipsAndTricksComponent,
-        data: { title: "Tips & Tricks" }
+        path: "styling",
+        component: BottomNavStylingComponent,
+        data: { title: "Styling" }
     }
 ];
 @NgModule({
@@ -53,11 +35,8 @@ export const routerConfig = [
     ],
     declarations: [
         BottomNavigationExamplesComponent,
-        EventsComponent,
-        UsageComponent,
-        PropertiesComponent,
-        ThemingComponent,
-        BottomNavTipsAndTricksComponent
+        BottomNavUsageComponent,
+        BottomNavStylingComponent
     ]
 })
 

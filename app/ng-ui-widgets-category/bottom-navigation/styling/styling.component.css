@@ -1,0 +1,31 @@
+/* >> bottom-nav-theming-css-ng */
+TabStripItem.tabstripitem {
+    background-color: teal;
+}
+
+TabStripItem.tabstripitem:active {
+    background-color: yellowgreen;
+} 
+
+TabContentItem.first-tabcontent {
+    background-color: seashell;
+    color: olive;
+}
+TabContentItem.second-tabcontent {
+    background-color: slategray;
+    color: aquamarine;
+}
+TabContentItem.third-tabcontent {
+    background-color: blueviolet;
+    color: antiquewhite;
+}
+
+.fas {
+    font-family: "Font Awesome 5 Free", "fa-solid-900";
+    font-weight: 900;
+}
+
+.t-36 {
+    font-size: 36;
+}
+/* << bottom-nav-theming-css-ng */

@@ -2,7 +2,8 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Tap event", "/button/tap-event"),
+    new Link("Usage", "/button/usage"),
+    new Link("Styling", "/button/styling"),
 ];
 
 @Component({
