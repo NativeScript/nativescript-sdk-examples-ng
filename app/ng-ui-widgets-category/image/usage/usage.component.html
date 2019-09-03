@@ -1,0 +1,17 @@
+<ScrollView sdkExampleTitle sdkToggleNavButton>
+    <StackLayout height="100%"  class="m-15" backgroundColor="lightgray">
+        <!-- >> image-usage-html -->
+        <!-- Using a resource image (logo_white_bg.png) from App_Resources/<platform> folders -->
+        <Image src="res://logo_white_bg" stretch="aspectFill"></Image>
+
+        <!-- Using local image from app/images/logo.png -->
+        <Image src="~/images/logo.png" stretch="aspectFit"></Image>
+
+        <!-- 
+            Setting loadMode to async will prevent freezing the UI 
+            on Android when loading photos async (e.g. frm online API) 
+        -->
+        <Image src="~/images/logo.png" loadMode="async" stretch="aspectFit"></Image>
+        <!-- << image-usage-html -->
+    </StackLayout>
+</ScrollView>

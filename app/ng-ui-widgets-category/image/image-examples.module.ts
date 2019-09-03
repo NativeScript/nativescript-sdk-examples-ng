@@ -2,9 +2,9 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ImageExamplesComponent } from "./image-examples.component";
-import { CreatingImageExampleComponent } from "./creating-image/creating-image.component";
+import { ImageUsageComponent } from "./usage/usage.component";
+import { ImageStylingComponent } from "./styling/styling.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
-import { IconFontsExampleComponent } from "./icon-fonts/icon-fonts.component";
 
 export const routerConfig = [
     {
@@ -12,14 +12,14 @@ export const routerConfig = [
         component: ImageExamplesComponent
     },
     {
-        path: "creating-image",
-        component: CreatingImageExampleComponent,
-        data: { title: "Create Image" }
+        path: "usage",
+        component: ImageUsageComponent,
+        data: { title: "Usage" }
     },
     {
-        path: "icon-fonts",
-        component: IconFontsExampleComponent,
-        data: { title: "Icon fonts" }
+        path: "styling",
+        component: ImageStylingComponent,
+        data: { title: "Styling" }
     }
 ];
 
@@ -33,8 +33,8 @@ export const routerConfig = [
     ],
     declarations: [
         ImageExamplesComponent,
-        CreatingImageExampleComponent,
-        IconFontsExampleComponent
+        ImageUsageComponent,
+        ImageStylingComponent
     ]
 })
 
