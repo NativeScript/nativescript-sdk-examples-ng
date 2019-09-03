@@ -2,7 +2,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { HtmlViewExamplesComponent } from "./htmlview-examples.component";
-import { CreatingHtmlViewExampleComponent } from "./creating-htmlview/creating-htmlview.component";
+import { HtmlViewUsageComponent } from "./usage/usage.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -11,9 +11,9 @@ export const routerConfig = [
         component: HtmlViewExamplesComponent
     },
     {
-        path: "creating-html-view",
-        component: CreatingHtmlViewExampleComponent,
-        data: { title: "Create HtmlView" }
+        path: "usage",
+        component: HtmlViewUsageComponent,
+        data: { title: "Usage" }
     }
 ];
 
@@ -25,7 +25,7 @@ export const routerConfig = [
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
     ],
-    declarations: [HtmlViewExamplesComponent, CreatingHtmlViewExampleComponent]
+    declarations: [HtmlViewExamplesComponent, HtmlViewUsageComponent]
 })
 
 export class HtmlViewExamplesModule {
