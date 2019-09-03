@@ -3,8 +3,8 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { ListPickerExamplesComponent } from "./listpicker-examples.component";
-import { CreatingListPickerComponent } from "./creating-listpicker/creating-listpicker.component";
-import { UsingSelectedIndexExampleComponent } from "./using-selected-index/using-selected-index.component";
+import { ListPickerUsageComponent } from "./usage/usage.component";
+import { ListPickerStylingComponent } from "./styling/styling.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -13,14 +13,14 @@ export const routerConfig = [
         component: ListPickerExamplesComponent
     },
     {
-        path: "creating-list-picker",
-        component: CreatingListPickerComponent,
-        data: { title: "Create ListPicker" }
+        path: "usage",
+        component: ListPickerUsageComponent,
+        data: { title: "Usage" }
     },
     {
-        path: "using-selected-index",
-        component: UsingSelectedIndexExampleComponent,
-        data: { title: "Using selected index" }
+        path: "styling",
+        component: ListPickerStylingComponent,
+        data: { title: "Styling" }
     }
 ];
 
@@ -35,8 +35,8 @@ export const routerConfig = [
     ],
     declarations: [
         ListPickerExamplesComponent,
-        CreatingListPickerComponent,
-        UsingSelectedIndexExampleComponent
+        ListPickerUsageComponent,
+        ListPickerStylingComponent
     ]
 })
 

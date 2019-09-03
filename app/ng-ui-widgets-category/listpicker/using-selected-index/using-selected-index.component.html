@@ -1,9 +1,0 @@
-<GridLayout rows="auto, auto" sdkExampleTitle sdkToggleNavButton>
-        <!-- >> using-selected-index-html -->
-        <StackLayout row="0">
-                <Label text="Use the slider to change ListPicker's selectedIndex" textWrap="true" class="h3 p-15 text-left"></Label>
-                <Slider [minValue]="0" [maxValue]="pokemons.length - 1" [(ngModel)]="index" class="slider"></Slider>
-        </StackLayout>
-        <ListPicker row="1" [items]="pokemons" [selectedIndex]="index" (selectedIndexChange)="selectedIndexChanged($event)" class="p-15 picker"></ListPicker>
-        <!-- << using-selected-index-html -->
-</GridLayout>

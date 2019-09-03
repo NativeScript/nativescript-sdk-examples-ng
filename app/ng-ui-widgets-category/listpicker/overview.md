@@ -1,2 +1,1 @@
-Spinner type module with listed options.
-Using a ListPicker requires the "ui/list-picker" module.
+The `ListPicker` is a spinner type component for listing options.

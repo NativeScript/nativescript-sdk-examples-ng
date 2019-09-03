@@ -6,4 +6,4 @@ import { Component } from "@angular/core";
     templateUrl: "./styling.component.html"
 
 })
-export class ImageStylingComponent  { }
+export class ImageStylingComponent { }

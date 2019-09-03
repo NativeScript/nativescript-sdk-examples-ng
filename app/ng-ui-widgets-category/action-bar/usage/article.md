@@ -1,4 +1,4 @@
-The `ActionBar` provides a `title` property and can be extended by using one or more `ActionItem` components and a single `NavigationButton`. The `ActionBar` also supports entirely  custom views (see the [Tips and Tricks](#tips-and-tricks) section below).
+The `ActionBar` provides a `title` property and can be extended by using one or more `ActionItem` components and a single `NavigationButton`.
 
 <snippet id='action-bar-basic-usage'/>
 <snippet id='action-bar-basic-usage-ts'/>

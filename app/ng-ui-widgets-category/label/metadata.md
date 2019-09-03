@@ -4,3 +4,4 @@ description: The Label in NativeScript is an abstraction over Android's widget.T
 position: 29
 slug: label-ng
 ---
+example-order: usage, styling

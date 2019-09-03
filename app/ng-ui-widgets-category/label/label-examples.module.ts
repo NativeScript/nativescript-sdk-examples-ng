@@ -2,7 +2,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { LabelExamplesComponent } from "./label-examples.component";
-import { CreatingLabelComponent } from "./creating-label/creating-label.component";
+import { LabelUsageComponent } from "./usage/usage.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -11,9 +11,9 @@ export const routerConfig = [
         component: LabelExamplesComponent
     },
     {
-        path: "creating-label",
-        component: CreatingLabelComponent,
-        data: { title: "Create Label" }
+        path: "usage",
+        component: LabelUsageComponent,
+        data: { title: "Usage" }
     }
 ];
 
@@ -27,7 +27,7 @@ export const routerConfig = [
     ],
     declarations: [
         LabelExamplesComponent,
-        CreatingLabelComponent
+        LabelUsageComponent
     ]
 })
 
