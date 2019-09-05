@@ -21,7 +21,7 @@ export class ListViewTipsComponent {
     }
 
     templateSelector(item: Item, index: number, items: any) {
-        return index%2 === 0 ? "red" : "green";
+        return index % 2 === 0 ? "red" : "green";
     }
 }
 // << listview-customize-code
