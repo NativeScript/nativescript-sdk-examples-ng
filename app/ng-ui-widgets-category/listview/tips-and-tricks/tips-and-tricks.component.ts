@@ -1,5 +1,5 @@
 // >> listview-customize-code
-import { Component, Input, OnChanges, SimpleChanges } from "@angular/core";
+import { Component, Input, OnChanges, SimpleChanges, OnInit } from "@angular/core";
 import { ItemService, Item } from "../usage/usage.service";
 import { ItemEventData } from "tns-core-modules/ui/list-view";
 
@@ -7,7 +7,7 @@ import { ItemEventData } from "tns-core-modules/ui/list-view";
     moduleId: module.id,
     templateUrl: "./tips-and-tricks.component.html"
 })
-export class ListViewTipsComponent {
+export class ListViewTipsComponent implements OnInit {
     items: Array<Item>;
 
     constructor(private _itemService: ItemService) { }

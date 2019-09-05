@@ -1,5 +1,5 @@
 // >> update-child-component-code
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 import { ItemService, Item } from "../usage/usage.service";
 
 @Component({
@@ -7,7 +7,7 @@ import { ItemService, Item } from "../usage/usage.service";
     templateUrl: "./styling.component.html",
     styleUrls: ["./styling.component.css"]
 })
-export class ListViewStylingComponent {
+export class ListViewStylingComponent implements OnInit {
     public items: Array<Item> = [];
 
     constructor(private _itemService: ItemService) { }
