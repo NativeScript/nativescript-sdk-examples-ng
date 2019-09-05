@@ -4,3 +4,4 @@ description: ListView component is an abstraction over iOS's UITableView and And
 position: 32
 slug: list-view-ng
 ---
+example-order: usage, styling, tips-and-tricks
