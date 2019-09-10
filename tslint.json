@@ -2,9 +2,6 @@
   "rulesDirectory": [
     "node_modules/codelyzer"
   ],
-  "extends": [
-    "@phenomnomnominal/angular-lazy-routes-fix"
-  ],
   "rules":{
     "no-lazy-module-paths": [true],
     "directive-selector": [true, "attribute", "sdk", "camelCase"],
