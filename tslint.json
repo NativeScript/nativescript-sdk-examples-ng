@@ -3,6 +3,7 @@
     "node_modules/codelyzer"
   ],
   "rules":{
+    "no-lazy-module-paths": [true],
     "directive-selector": [true, "attribute", "sdk", "camelCase"],
     "component-selector": [true, "element", "sdk", "kebab-case"],
     "use-input-property-decorator": true,
