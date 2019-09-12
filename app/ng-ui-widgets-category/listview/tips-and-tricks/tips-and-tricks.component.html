@@ -1,0 +1,26 @@
+
+<GridLayout rows="*, *" sdkExampleTitle sdkToggleNavButton>
+    <!-- >> listview-customize-html -->
+    <ListView [items]="items" class="list-group" [itemTemplateSelector]="templateSelector" row="0">
+        <ng-template nsTemplateKey="red" let-item="item" let-i="index">
+            <GridLayout>
+                <Label [text]="item.name" backgroundColor="red" color="white"></Label>
+            </GridLayout>
+        </ng-template>
+    
+        <ng-template nsTemplateKey="green" let-item="item" let-i="index">
+            <GridLayout>
+                <Label [text]="item.name" backgroundColor="green" color="yellow"></Label>
+            </GridLayout>
+        </ng-template>
+    </ListView> 
+    <!-- << listview-customize-html -->
+
+    <!-- >> listview-child-comp-html -->
+    <ListView [items]="items" class="list-group" row="1">
+        <ng-template let-item="item">
+            <sdk-child-component [data]="item"></sdk-child-component>
+        </ng-template>
+    </ListView>
+    <!-- << listview-child-comp-html -->
+</GridLayout>

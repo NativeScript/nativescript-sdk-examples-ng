@@ -2,10 +2,9 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ListViewExamplesComponent } from "./listview-examples.component";
-import { CreatingListViewComponent } from "./creating-listview/creating-listview.component";
-import { CustomizingListViewComponent } from "./customizing-listview/customizing-listview.component";
-import { UsingAsyncPipeComponent } from "./using-async-pipe/using-async-pipe.component";
-import { UpdateChildComponent, ItemComponent } from "./update-child-component/update-child-component.component";
+import { ListViewUsageComponent } from "./usage/usage.component";
+import { ListViewTipsComponent, SdkChildComponent } from "./tips-and-tricks/tips-and-tricks.component";
+import { ListViewStylingComponent } from "./styling/styling.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -14,24 +13,19 @@ export const routerConfig = [
         component: ListViewExamplesComponent
     },
     {
-        path: "creating-list-view",
-        component: CreatingListViewComponent,
-        data: { title: "Create ListView" }
+        path: "usage",
+        component: ListViewUsageComponent,
+        data: { title: "Usage" }
     },
     {
-        path: "customizing-list-view",
-        component: CustomizingListViewComponent,
-        data: { title: "Customizing ListView" }
+        path: "styling",
+        component: ListViewStylingComponent,
+        data: { title: "Styling" }
     },
     {
-        path: "using-async-pipe",
-        component: UsingAsyncPipeComponent,
-        data: { title: "Using async pipe" }
-    },
-    {
-        path: "update-child-component",
-        component: UpdateChildComponent,
-        data: { title: "Update child component" }
+        path: "tips",
+        component: ListViewTipsComponent,
+        data: { title: "Tips and Tricks" }
     }
 ];
 
@@ -44,12 +38,11 @@ export const routerConfig = [
         NativeScriptRouterModule.forChild(routerConfig)
     ],
     declarations: [
-        ItemComponent,
         ListViewExamplesComponent,
-        CreatingListViewComponent,
-        CustomizingListViewComponent,
-        UsingAsyncPipeComponent,
-        UpdateChildComponent
+        ListViewUsageComponent,
+        ListViewStylingComponent,
+        ListViewTipsComponent,
+        SdkChildComponent
     ]
 })
 

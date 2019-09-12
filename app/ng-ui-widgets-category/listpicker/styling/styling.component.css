@@ -1,0 +1,12 @@
+/* >> picker-styling-css */
+.picker {
+    background-color: blanchedalmond;
+    color: red;
+    border-color: brown;
+    border-radius: 20;
+    border-width: 2;
+    width: 200;
+    height: 100;
+    vertical-align: middle;
+}
+/* << picker-styling-css */

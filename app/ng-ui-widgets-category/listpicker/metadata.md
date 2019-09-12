@@ -4,3 +4,4 @@ description: ListPicker is UI spinner type widget, which allows displaying a lis
 position: 31
 slug: list-picker-ng
 ---
+example-order: usage, styling

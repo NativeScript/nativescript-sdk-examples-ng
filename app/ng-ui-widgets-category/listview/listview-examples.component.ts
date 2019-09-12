@@ -2,10 +2,9 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Create ListView", "/list-view/creating-list-view"),
-    new Link("Customize ListView", "/list-view/customizing-list-view"),
-    new Link("Update Child Component", "/list-view/update-child-component"),
-    new Link("Use async pipe", "/list-view/using-async-pipe")
+    new Link("Usage", "/list-view/usage"),
+    new Link("Styling", "/list-view/styling"),
+    new Link("Tips and Tricks", "/list-view/tips"),
 ];
 
 @Component({
