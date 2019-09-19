@@ -1,7 +1,7 @@
 {
     "android": {
         "v8Flags": "--expose_gc",
-        "markingMode": "none"
+        "markingMode": "full"
     },
     "name": "nativescript-sdk-examples-ng",
     "main": "main.js",
