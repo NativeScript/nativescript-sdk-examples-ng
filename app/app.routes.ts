@@ -186,26 +186,6 @@ export const routes = [
         data: { title: "Timer Module" }
     },
     {
-        path: "content-screens",
-        loadChildren: () => import("./common-screens-category/content-screens/content-screens-examples.module").then(m => m.ContentScreensExamplesModule),
-        data: { title: "Content Screens" }
-    },
-    {
-        path: "dataentry",
-        loadChildren: () => import("./common-screens-category/dataentry/extended-dataentry-examples.module").then(m => m.ExtendedDataentryExamplesModule),
-        data: { title: "Data Entry (extended examples)" }
-    },
-    {
-        path: "extended-listview",
-        loadChildren: () => import("./common-screens-category/lists-category/extended-listview-examples.module").then(m => m.ExtendedListViewExamplesModule),
-        data: { title: "ListView (extended examples)" }
-    },
-    {
-        path: "userprofile",
-        loadChildren: () => import("./common-screens-category/userprofile/extended-userprofile-examples.module").then(m => m.ExtendedUserProfileExamplesModule),
-        data: { title: "User Profile (extended examples)" }
-    },
-    {
         path: "connectivity",
         loadChildren: () => import("./ng-framework-modules-category/connectivity/connectivity-examples.module").then(m => m.ConnectivityExamplesModule),
         data: { title: "Connectivity" }
