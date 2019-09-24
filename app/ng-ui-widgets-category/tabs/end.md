@@ -16,7 +16,7 @@
 | `iosIconRenderingMode`   | _"automatic"_, _"alwaysOriginal"_, _"alwaysTemplate"_ | Gets or sets the icon rendering mode on iOS. |
 | `isIconSizeFixed` | `boolean` | When set to `true` the icon will have fixed size following the platform-specific design guidelines. Default value: `true`. |
 | `items`   | `Array<TabStripItem>` |  Gets or sets an array of strip items of the TabStrip. |
-
+| `highlightColor`   |  |  Gets or sets the inderline color of the selected TabStripItem. |
 
 ### TabStripItem Properties
 
