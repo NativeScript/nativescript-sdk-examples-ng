@@ -47,7 +47,6 @@ let mainMenuLinks = [
     new Link("ListView (extended examples)", "/extended-listview"),
     new Link("DataEntry (extended examples)", "/dataentry"),
     new Link("User Profile (extended examples)", "/userprofile"),
-    new Link("Content Screens", "/content-screens"),
     new Link("Camera", "/camera"),
     new Link("Angular routing", "/routing")
 ];
