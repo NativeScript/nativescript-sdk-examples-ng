@@ -2,10 +2,8 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ScrollViewExamplesComponent } from "./scroll-view-examples.component";
-import { ScrollViewHorizontalComponent } from "./horizontal/scroll-view-horizontal.component";
-import { ScrollViewVerticalComponent } from "./vertical/scroll-view-vertical.component";
-import { ScrollEventComponent } from "./scroll-event/scroll-event.component";
-import { ScrollViewIsEnabledComponent } from "./is-scroll-enabled/is-scroll-enabled.component";
+import { UsageComponent } from "./usage/usage.component";
+import { TipsAndTricksComponent } from "./tips-and-tricks/tips-and-tricks.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -14,24 +12,14 @@ export const routerConfig = [
         component: ScrollViewExamplesComponent
     },
     {
-        path: "horizontal",
-        component: ScrollViewHorizontalComponent,
-        data: { title: "Horizontal orientation" }
+        path: "usage",
+        component: UsageComponent,
+        data: { title: "Usage" }
     },
     {
-        path: "vertical",
-        component: ScrollViewVerticalComponent,
-        data: { title: "Vertical orientation" }
-    },
-    {
-        path: "scroll-event",
-        component: ScrollEventComponent,
-        data: { title: "Scroll event" }
-    },
-    {
-        path: "is-scroll-enabled",
-        component: ScrollViewIsEnabledComponent,
-        data: { title: "Enable/Disable scroll" }
+        path: "tips-and-tricks",
+        component: TipsAndTricksComponent,
+        data: { title: "Tips and Tricks" }
     }
 ];
 
@@ -45,10 +33,8 @@ export const routerConfig = [
     ],
     declarations: [
         ScrollViewExamplesComponent,
-        ScrollViewHorizontalComponent,
-        ScrollViewVerticalComponent,
-        ScrollEventComponent,
-        ScrollViewIsEnabledComponent
+        UsageComponent,
+        TipsAndTricksComponent
     ]
 })
 
