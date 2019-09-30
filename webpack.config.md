@@ -1,4 +1,4 @@
-Add the `test.html`for the WebView exmaple via the following line in `webpack.config.js`
+Add the `test.html` for the WebView examples via the following line in `webpack.config.js`
 
 ```JS
 new CopyWebpackPlugin([
