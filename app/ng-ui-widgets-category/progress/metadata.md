@@ -4,3 +4,4 @@ description: The Progress class provides an abstraction over the iOS's UIProgres
 position: 34
 slug: progress-ng
 ---
+example-order: usage, styling, tips-and-tricks

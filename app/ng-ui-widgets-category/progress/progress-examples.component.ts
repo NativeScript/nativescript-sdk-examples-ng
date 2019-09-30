@@ -2,9 +2,9 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Create Progress", "/progress/creating-progress"),
-    new Link("Set up Progress", "/progress/setting-progress"),
-    new Link("Style Progress", "/progress/style-progress")
+    new Link("Usage", "/progress/usage"),
+    new Link("Style Progress", "/progress/styling"),
+    new Link("Set up Progress", "/progress/tips-and-tricks")
 ];
 
 @Component({
