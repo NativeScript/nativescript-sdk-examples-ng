@@ -25,4 +25,7 @@ TabContentItem.third-tabcontent {
     background-color: blueviolet;
     color: antiquewhite;
 }
+Tabs TabStrip{
+    highlight-color: red;
+}
 /* << tabs-theming-css-ng */
