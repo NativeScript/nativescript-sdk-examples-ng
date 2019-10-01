@@ -1,3 +1,4 @@
+### Scroll Event
 
 Using `scroll` event to track the scroll position via `scrollX` and `scrollY` from `ScrollEventData`.
 
@@ -24,7 +25,6 @@ Example 1 (`ListView` in `ScrollView`):
 
 Example 2 (`ScrollView` in `ListView`): 
 ```HTML
-
 <ListView [items]="countries">
     <ng-template let-country="item" let-i="index" let-odd="odd" let-even="even">
         <StackLayout>
