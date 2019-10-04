@@ -2,9 +2,9 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ProgressExamplesComponent } from "./progress-examples.component";
-import { CreatingProgressComponent } from "./creating-progress/creating-progress.component";
-import { SettingProgressComponent } from "./setting-progress/setting-progress.component";
-import { StyleProgressComponent } from "./style-progress/style-progress.component";
+import { UsageComponent } from "./usage/usage.component";
+import { TipsAndTricksComponent } from "./tips-and-tricks/tips-and-tricks.component";
+import { StylingComponent } from "./styling/styling.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -13,19 +13,19 @@ export const routerConfig = [
         component: ProgressExamplesComponent
     },
     {
-        path: "creating-progress",
-        component: CreatingProgressComponent,
-        data: { title: "Create Progress" }
+        path: "usage",
+        component: UsageComponent,
+        data: { title: "Usage" }
     },
     {
-        path: "setting-progress",
-        component: SettingProgressComponent,
-        data: { title: "Set up Progress" }
+        path: "tips-and-tricks",
+        component: TipsAndTricksComponent,
+        data: { title: "Tips and Tricks" }
     },
     {
-        path: "style-progress",
-        component: StyleProgressComponent,
-        data: { title: "Style Progress" }
+        path: "styling",
+        component: StylingComponent,
+        data: { title: "Styling" }
     }
 ];
 
@@ -39,9 +39,9 @@ export const routerConfig = [
     ],
     declarations: [
         ProgressExamplesComponent,
-        CreatingProgressComponent,
-        SettingProgressComponent,
-        StyleProgressComponent
+        UsageComponent,
+        TipsAndTricksComponent,
+        StylingComponent
     ]
 })
 
