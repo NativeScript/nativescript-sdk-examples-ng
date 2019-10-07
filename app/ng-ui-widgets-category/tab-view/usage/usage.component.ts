@@ -6,7 +6,7 @@ import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view";
     moduleId: module.id,
     templateUrl: "./basic-tab-view.component.html"
 })
-export class BasicTabViewComponent { 
+export class BasicTabViewComponent {
     onSelectedIndexchanged(args: SelectedIndexChangedEventData) {
         let newIndex = args.newIndex;
     }
