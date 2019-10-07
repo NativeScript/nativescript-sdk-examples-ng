@@ -1,0 +1,8 @@
+<StackLayout sdkExampleTitle sdkToggleNavButton>
+    <!-- >> basic-search-bar-html -->
+    <SearchBar hint="Enter search term here ..."
+                [text]="searchPhrase" (textChange)="onTextChanged($event)" 
+                (clear)="onClear($event)" (submit)="onSubmit($event)">
+    </SearchBar>
+    <!-- << basic-search-bar-html -->
+</StackLayout>

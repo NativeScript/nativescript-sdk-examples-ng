@@ -2,9 +2,8 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Basic SearchBar", "/search-bar/basic"),
-    new Link("Clear SearchBar", "/search-bar/clear"),
-    new Link("SearchBar binding", "/search-bar/binding")
+    new Link("Usage", "/search-bar/usage"),
+    new Link("Styling", "/search-bar/styling")
 ];
 
 @Component({
