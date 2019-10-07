@@ -4,3 +4,4 @@ description: SegmentedBar component allows defining a collection of clickable vi
 position: 38
 slug: segmented-bar-ng
 ---
+example-order: usage, styling

@@ -3,8 +3,8 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { SliderExamplesComponent } from "./slider-examples.component";
-import { BasicSliderComponent } from "./basic-slider/basic-slider.component";
-import { SliderAccessValueComponent } from "./slider-access-value-code/slider-access-value.component";
+import { UsageComponent } from "./usage/usage.component";
+import { StylingComponent } from "./styling/styling.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -13,14 +13,14 @@ export const routerConfig = [
         component: SliderExamplesComponent
     },
     {
-        path: "basic",
-        component: BasicSliderComponent,
-        data: { title: "Basic Slider" }
+        path: "usage",
+        component: UsageComponent,
+        data: { title: "Usage" }
     },
     {
-        path: "value",
-        component: SliderAccessValueComponent,
-        data: { title: "Slider's value" }
+        path: "styling",
+        component: StylingComponent,
+        data: { title: "Styling" }
     }
 ];
 
@@ -35,8 +35,8 @@ export const routerConfig = [
     ],
     declarations: [
         SliderExamplesComponent,
-        BasicSliderComponent,
-        SliderAccessValueComponent
+        UsageComponent,
+        StylingComponent
     ]
 })
 

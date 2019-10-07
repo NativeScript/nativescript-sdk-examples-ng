@@ -2,9 +2,8 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { SwitchExamplesComponent } from "./switch-examples.component";
-import { BasicSwitchComponent } from "./basic-switch/basic-switch.component";
-import { DisableSwitchComponent } from "./disable-switch/disable-switch.component";
-import { StylingSwitchComponent } from "./styling-switch/styling-switch.component";
+import { BasicSwitchComponent } from "./usage/usage.component";
+import { StylingSwitchComponent } from "./styling/styling-switch.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -13,19 +12,14 @@ export const routerConfig = [
         component: SwitchExamplesComponent
     },
     {
-        path: "basic",
+        path: "usage",
         component: BasicSwitchComponent,
-        data: { title: "Basic Switch" }
-    },
-    {
-        path: "disable",
-        component: DisableSwitchComponent,
-        data: { title: "Disable Switch component" }
+        data: { title: "Usage" }
     },
     {
         path: "styling",
         component: StylingSwitchComponent,
-        data: { title: "Styling Switch component" }
+        data: { title: "Styling" }
     }
 ];
 
@@ -40,7 +34,6 @@ export const routerConfig = [
     declarations: [
         SwitchExamplesComponent,
         BasicSwitchComponent,
-        DisableSwitchComponent,
         StylingSwitchComponent
     ]
 })

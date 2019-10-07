@@ -2,8 +2,8 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Basic SegmentedBar", "/segmented-bar/basic"),
-    new Link("SegmentedBar view change", "/segmented-bar/views")
+    new Link("Usage", "/segmented-bar/usage"),
+    new Link("Styling", "/segmented-bar/styling")
 ];
 
 @Component({

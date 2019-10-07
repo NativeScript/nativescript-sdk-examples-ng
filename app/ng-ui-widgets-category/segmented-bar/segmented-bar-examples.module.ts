@@ -2,8 +2,8 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { SegmentedBarExamplesComponent } from "./segmented-bar-examples.component";
-import { BasicSegmentedBarComponent } from "./basic-segmented-bar/basic-segmented-bar.component";
-import { SegmentedBarViewsComponent } from "./segmented-bar-views/segmented-bar-views.component";
+import { BasicSegmentedBarComponent } from "./usage/usage.component";
+import { SegmentedBarViewsComponent } from "./styling/styling.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -12,14 +12,14 @@ export const routerConfig = [
         component: SegmentedBarExamplesComponent
     },
     {
-        path: "basic",
+        path: "usage",
         component: BasicSegmentedBarComponent,
-        data: { title: "Basic SegmentedBar" }
+        data: { title: "Usage" }
     },
     {
-        path: "views",
+        path: "styling",
         component: SegmentedBarViewsComponent,
-        data: { title: "SegmentedBar views" }
+        data: { title: "Styling" }
     }
 ];
 

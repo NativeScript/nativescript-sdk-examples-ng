@@ -2,9 +2,8 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { SearchBarExamplesComponent } from "./search-bar-examples.component";
-import { BasicSearchBarComponent } from "./basic-search-bar/basic-search-bar.component";
-import { ClearSearchBarComponent } from "./clear-search-bar/clear-search-bar.component";
-import { SearchBarBindingComponent } from "./search-bar-binding/search-bar-binding.component";
+import { UsageComponent } from "./usage/usage.component";
+import { StylingComponent } from "./styling/styling.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -13,19 +12,14 @@ export const routerConfig = [
         component: SearchBarExamplesComponent
     },
     {
-        path: "basic",
-        component: BasicSearchBarComponent,
-        data: { title: "Basic SearchBar" }
+        path: "usage",
+        component: UsageComponent,
+        data: { title: "Usage" }
     },
     {
-        path: "clear",
-        component: ClearSearchBarComponent,
-        data: { title: "Clear SearchBar" }
-    },
-    {
-        path: "binding",
-        component: SearchBarBindingComponent,
-        data: { title: "SearchBar property binding" }
+        path: "styling",
+        component: StylingComponent,
+        data: { title: "Styling" }
     }
 ];
 
@@ -39,9 +33,8 @@ export const routerConfig = [
     ],
     declarations: [
         SearchBarExamplesComponent,
-        BasicSearchBarComponent,
-        ClearSearchBarComponent,
-        SearchBarBindingComponent
+        UsageComponent,
+        StylingComponent
     ]
 })
 
