@@ -1,9 +1,0 @@
-<StackLayout sdkExampleTitle sdkToggleNavButton class="example-container">
-    <Label [text]="switch.isEnabled ? 'enabled' : 'disabled'" textWrap="true" class="h3 m-15"></Label>
-    <!-- >> disable-switch -->
-    <Switch #switch isEnabled="true" class="m-15"></Switch>
-
-    <Button [text]="switch.isEnabled ? 'Disable switch' : 'Enable switch'" (tap)="switch.isEnabled = !switch.isEnabled"
-        horizontalAlignment="stretch" class="btn btn-primary btn-active"></Button>
-    <!-- << disable-switch -->
-</StackLayout>

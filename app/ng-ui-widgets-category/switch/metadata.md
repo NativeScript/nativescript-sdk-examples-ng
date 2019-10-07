@@ -4,3 +4,4 @@ description: The Switch component represents control, which can have two states(
 position: 41
 slug: switch-ng
 ---
+example-order: usage, styling

@@ -2,15 +2,13 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Basic Switch", "/switch/basic"),
-    new Link("Disable Switch", "/switch/disable"),
-    new Link("Styling Switch", "/switch/styling")
+    new Link("Usage", "/switch/usage"),
+    new Link("Styling", "/switch/styling")
 ];
 
 @Component({
     moduleId: module.id,
     templateUrl: "./../../examples-list.component.html",
-    styleUrls: ["./switch.style.css"],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SwitchExamplesComponent {
