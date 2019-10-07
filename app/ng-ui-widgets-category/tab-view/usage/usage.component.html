@@ -1,6 +1,6 @@
 <GridLayout sdkExampleTitle sdkToggleNavButton>
 	<!-- >> basic-tab-view-html -->
-	<TabView id="tabViewContainer">
+	<TabView selectedIndex="0" (selectedIndexChanged)="onSelectedIndexchanged($event)">
 		<StackLayout *tabItem="{title: 'First Tab', iconSource: 'res://icon'}">
 			<StackLayout>
 				<Label text="First Tab" textWrap="true" class="m-15 h2 text-left" color="blue"></Label>
