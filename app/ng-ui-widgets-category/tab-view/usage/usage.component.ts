@@ -4,7 +4,7 @@ import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view";
 
 @Component({
     moduleId: module.id,
-    templateUrl: "./basic-tab-view.component.html"
+    templateUrl: "./usage.component.html"
 })
 export class BasicTabViewComponent {
     onSelectedIndexchanged(args: SelectedIndexChangedEventData) {

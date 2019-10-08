@@ -1,13 +1,13 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { TabViewExamplesComponent } from "./tab-view-examples.component";
 import { BasicTabViewComponent } from "./usage/usage.component";
 import { StylingComponent } from "./styling/styling.component";
 import { TipsAndTrciksComponent } from "./tips-and-tricks/tips-and-tricks.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
-import { NativeScriptFormsModule } from "nativescript-angular/forms";
-import { TipsAndTricksComponent } from "../scroll-view/tips-and-tricks/tips-and-tricks.component";
+
 export const routerConfig = [
     {
         path: "",
@@ -43,7 +43,7 @@ export const routerConfig = [
         TabViewExamplesComponent,
         BasicTabViewComponent,
         StylingComponent,
-        TipsAndTricksComponent
+        TipsAndTrciksComponent
     ]
 })
 
