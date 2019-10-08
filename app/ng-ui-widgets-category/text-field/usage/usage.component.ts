@@ -1,23 +1,14 @@
-import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+// >> textfield-handle-submit-event
+import { Component } from "@angular/core";
 import { TextField } from "tns-core-modules/ui/text-field";
 import { setTimeout } from "tns-core-modules/timer";
 
 @Component({
     moduleId: module.id,
-    styleUrls: ["./../text-field.style.css"],
-    templateUrl: "./basic-text-field.component.html"
+    templateUrl: "./usage.component.html"
 })
-export class BasicTextFieldComponent  {
-    public birthDate;
-
-    // >> textfield-handle-submit-event
-    firstTfLoaded(args) {
-        // import { TextField } from "tns-core-modules/ui/text-field";
-        let firstTextfield = <TextField>args.object;
-        setTimeout(() => {
-            firstTextfield.focus(); // Shows the soft input method, ususally a soft keyboard.
-        }, 100);
-    }
+export class UsageComponent {
+    name = "";
 
     onReturnPress(args) {
         // returnPress event will be triggered when user submits a value
@@ -60,5 +51,6 @@ export class BasicTextFieldComponent  {
         // blur event will be triggered when the user leaves the TextField
         let textField = <TextField>args.object;
     }
-    // << textfield-handle-submit-event
+
 }
+// << textfield-handle-submit-event

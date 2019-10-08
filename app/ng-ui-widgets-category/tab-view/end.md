@@ -4,7 +4,7 @@
 
 | Name     | Type     | Description    |
 |:---------|:---------|:---------------|
-| `androidOffscreenTabLimit` | `number` | Gets or sets the number of tabs that should be retained to either side of the current tab in the view hierarchy in an idle state. Tabs beyond this limit will be recreated from the TabView when needed. |
+| `androidOffscreenTabLimit` | `number` | Gets or sets the number of tabs that should be retained to either side of the current tab in the view hierarchy in an idle state. |
 | `androidSelectedTabHighlightColor` | `Color` | Gets or sets the color of the horizontal line drawn below the currently selected tab on Android. |
 | `iosIconRenderingMode` | _"automatic"_, _"alwaysOriginal"_, _"alwaysTemplate"_ | Gets or sets the icon rendering mode on iOS. |
 | `items` | `Array<TabViewItem>` | Gets or sets the items of the TabView. |

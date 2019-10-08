@@ -1,0 +1,15 @@
+<GridLayout sdkExampleTitle sdkToggleNavButton>
+	<!-- >> sample-ui-textfield-html -->
+	<TextField hint="Enter Date" 
+			   [text]='name' 
+			   secure="false"
+			   keyboardType="datetime"
+			   returnKeyType="done" 
+			   (returnPress)="onReturnPress($event)"
+			   autocorrect="false"
+			   maxLength="10"
+			   (focus)="onFocus($event)" 
+			   (blur)="onBlur($event)">
+	</TextField>
+	<!-- << sample-ui-textfield-html -->
+</GridLayout>

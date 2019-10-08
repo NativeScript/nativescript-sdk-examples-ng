@@ -24,7 +24,7 @@ export const routerConfig = [
         data: { title: "Styling Tab View" }
     },
     {
-        path: "tips-andt-tricks",
+        path: "tips-and-tricks",
         component: TipsAndTrciksComponent,
         data: { title: "Tips and Tricks" }
     }
