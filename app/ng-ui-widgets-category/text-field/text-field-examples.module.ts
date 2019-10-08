@@ -25,36 +25,6 @@ export const routerConfig = [
 
 @NgModule({
     schemas: [NO_ERRORS_SCHEMA],
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     imports: [
         TitleAndNavButtonModule,
         NativeScriptCommonModule,
