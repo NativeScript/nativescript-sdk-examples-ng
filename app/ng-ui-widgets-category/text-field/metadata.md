@@ -4,3 +4,4 @@ description: TextField component is an abstraction over iOS's UITextField  and A
 position: 43
 slug: text-field-ng
 ---
+example-order: usage, styling
