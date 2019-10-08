@@ -54,7 +54,7 @@ export class SampleModalViewModuleExampleComponent {
             fullscreen: false,
         };
 
-        // showModal returns a promise with the received paramerters from the modal page
+        // showModal returns a promise with the received parameters from the modal page
         return this.modalService.showModal(ModalViewComponent, options);
     }
     // << returning-result
