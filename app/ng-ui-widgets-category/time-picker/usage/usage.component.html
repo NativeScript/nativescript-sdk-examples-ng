@@ -1,0 +1,13 @@
+<GridLayout sdkExampleTitle sdkToggleNavButton>
+	<!-- >> creating-timepicker-html -->
+	<TimePicker hour="9"
+				minute="25"
+				maxHour="23"
+				maxMinute="59"
+				minuteInterval="5"
+				(timeChange)="onTimeChanged($event)">
+	</TimePicker>
+	<!-- Alternatively, you could use the time property with a Date object -->
+	<!-- <TimePicker [time]="todayObj" (timeChange)="onTimeChanged($event)"></TimePicker> -->
+	<!-- << creating-timepicker-html -->
+</GridLayout>
