@@ -3,7 +3,7 @@ import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 import { TextViewExamplesComponent } from "./text-view-examples.component";
-import { BasicTextViewComponent } from "./basic-text-view/basic-text-view.component";
+import { UsageComponent } from "./usage/usage.component"
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -12,9 +12,9 @@ export const routerConfig = [
         component: TextViewExamplesComponent
     },
     {
-        path: "basic",
-        component: BasicTextViewComponent,
-        data: { title: "Basic TextView" }
+        path: "usage",
+        component: UsageComponent,
+        data: { title: "Usage" }
     }
 ];
 
@@ -27,7 +27,7 @@ export const routerConfig = [
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
     ],
-    declarations: [TextViewExamplesComponent, BasicTextViewComponent]
+    declarations: [TextViewExamplesComponent, UsageComponent]
 })
 
 export class TextViewExamplesModule {

@@ -4,3 +4,4 @@ description: TextView component is an abstraction over iOS's UITextView and Andr
 position: 44
 slug: text-view-ng
 ---
+example-order: usage, styling
