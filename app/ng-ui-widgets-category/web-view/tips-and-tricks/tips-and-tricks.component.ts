@@ -1,33 +1,31 @@
 // tslint:disable:max-line-length
 // >> webview-ts-gestures
-import { Component, ViewChild, ElementRef } from "@angular/core";
+import { Component } from "@angular/core";
 import { isAndroid } from "tns-core-modules/platform";
 
 @Component({
     moduleId: module.id,
-    // >> (hide)
-    styleUrls: ["./style.css"],
-    // << (hide)
-    templateUrl: "./web-view-gestures.component.html"
+    templateUrl: "./tips-and-tricks.component.html"
 })
-export class WebViewGesturesComponent {
-    public webViewSrc = "<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>";
-    public touchResult = "Touch: x: _ y: _";
-    public panResult = "Pan: deltaX: _ deltaY: _";
+export class TipsAndTricksComponent {
+    webViewSrc = "<!DOCTYPE html><html><body><h1>My First Heading</h1><p>My first paragraph.</p></body></html>";
+    touchResult = "Touch: x: _ y: _";
+    panResult = "Pan: deltaX: _ deltaY: _";
 
-    public onWebViewLoaded(webargs) {
+    onWebViewLoaded(webargs) {
         const webview = webargs.object;
         if (isAndroid) {
+            // Disabled the native zoom control (to enable gestures on Android)
             webview.android.getSettings().setDisplayZoomControls(false);
         }
     }
 
-    public webViewTouch(args) {
+    webViewTouch(args) {
         this.touchResult = `Touch: x: ${args.getX().toFixed(3)} y: ${args.getY().toFixed(3)}`;
         console.log(`Touch: x: ${args.getX().toFixed(3)} y: ${args.getY().toFixed(3)}`);
     }
 
-    public webViewPan(args) {
+    webViewPan(args) {
         this.panResult = `Pan: deltaX: ${args.deltaX.toFixed(3)} deltaY: ${args.deltaY.toFixed(3)}`;
         console.log(`Pan: deltaX: ${args.deltaX.toFixed(3)} deltaY: ${args.deltaY.toFixed(3)}`);
     }

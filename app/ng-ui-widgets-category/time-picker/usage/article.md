@@ -1,8 +1,4 @@
-TimePicker can be easily configured by setting the required properties.
-The example below demonstrates how to set up the initial `hour` and `minute` for the TimePicker component and how to handle selected time change via `timeChange` event.
-The `hour` and `minute` expects integer values and the `timeChange` will return a value of type Date.
-HTML
-<snippet id='creating-timepicker-html'/>
+The `TimePicker` component can be configured by  `hour` and `minute` (accepts `number` values) or alternatively by setting the `date` property (accepts a `Date` object).
 
-TypeScript
+<snippet id='creating-timepicker-html'/>
 <snippet id='time-picker-configure-code'/>
