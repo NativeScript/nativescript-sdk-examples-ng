@@ -2,7 +2,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { ApplicationSettingsExamplesComponent } from "./application-settings-examples.component";
-import { ValuesExampleComponent } from "./values/values.component";
+import { UsageComponent } from "./usage/usage.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -11,9 +11,9 @@ export const routerConfig = [
         component: ApplicationSettingsExamplesComponent
     },
     {
-        path: "values",
-        component: ValuesExampleComponent,
-        data: { title: "Check The Target Platform" }
+        path: "usage",
+        component: UsageComponent,
+        data: { title: "Usage" }
     }
 ];
 
@@ -25,7 +25,7 @@ export const routerConfig = [
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
 ],
-    declarations: [ApplicationSettingsExamplesComponent, ValuesExampleComponent]
+    declarations: [ApplicationSettingsExamplesComponent, UsageComponent]
 })
 
 export class ApplicationSettingsExamplesModule {
