@@ -3,10 +3,9 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { WebViewExamplesComponent } from "./web-view-examples.component";
-import { BasicWebViewComponent } from "./basic-web-view/basic-web-view.component";
+import { UsageComponent } from "./usage/usage.component";
+import { TipsAndTricksComponent } from "./tips-and-tricks/tips-and-tricks.component";
 import { WebViewHtmlComponent } from "./web-view-html/web-view-html.component";
-import { WebViewGesturesComponent } from "./gestures/web-view-gestures.component";
-import { WebViewEventsComponent } from "./events/web-view-events.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -15,24 +14,19 @@ export const routerConfig = [
         component: WebViewExamplesComponent
     },
     {
-        path: "basic",
-        component: BasicWebViewComponent,
-        data: { title: "Basic WebView" }
+        path: "usage",
+        component: UsageComponent,
+        data: { title: "Usage" }
     },
     {
-        path: "html",
+        path: "tips-and-tricks",
+        component: TipsAndTricksComponent,
+        data: { title: "Tips and Tricks" }
+    },
+    {
+        path: "html-file",
         component: WebViewHtmlComponent,
-        data: { title: "HTML as source of WebView" }
-    },
-    {
-        path: "gestures",
-        component: WebViewGesturesComponent,
-        data: { title: "WebView - Gestures" }
-    },
-    {
-        path: "events",
-        component: WebViewEventsComponent,
-        data: { title: "WebView - Events" }
+        data: { title: "Using HTML file" }
     }
 ];
 
@@ -44,7 +38,7 @@ export const routerConfig = [
         NativeScriptRouterModule,
         NativeScriptRouterModule.forChild(routerConfig)
     ],
-    declarations: [WebViewExamplesComponent, BasicWebViewComponent, WebViewHtmlComponent, WebViewGesturesComponent, WebViewEventsComponent]
+    declarations: [WebViewExamplesComponent, UsageComponent, TipsAndTricksComponent, WebViewHtmlComponent]
 })
 
 export class WebViewExamplesModule { }

@@ -2,10 +2,9 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Basic WebView", "/web-view/basic"),
-    new Link("HTML as source of WebView", "/web-view/html"),
-    new Link("WebView - Gestures", "/web-view/gestures"),
-    new Link("WebView - Events", "/web-view/events")
+    new Link("Usage", "/web-view/usage"),
+    new Link("Tips & Tricks", "/web-view/tips-and-tricks"),
+    new Link("WebVIew with HTML File", "/web-view/html-file"),
 ];
 
 @Component({

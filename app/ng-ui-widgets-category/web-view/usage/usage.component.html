@@ -1,0 +1,8 @@
+<GridLayout rows="*" columns="*" sdkExampleTitle sdkToggleNavButton>
+    <!-- >> web-events-html -->
+    <WebView [src]="webViewSrc" 
+             (loadStarted)="onLoadStarted($event)" 
+             (loadFinished)="onLoadFinished($event)">
+    </WebView>
+    <!-- << web-events-html -->
+</GridLayout>

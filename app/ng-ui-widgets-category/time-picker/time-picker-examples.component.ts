@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Configure TimePicker", "/time-picker/configure")
+    new Link("Usage", "/time-picker/usage")
 ];
 
 @Component({

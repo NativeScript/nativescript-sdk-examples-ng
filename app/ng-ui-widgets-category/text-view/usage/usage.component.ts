@@ -3,12 +3,9 @@ import { Component } from "@angular/core";
 
 @Component({
     moduleId: module.id,
-    // >> (hide)
-    styleUrls: ["./style.css"],
-    // << (hide)
-    templateUrl: "./basic-text-view.component.html"
+    templateUrl: "./usage.component.html"
 })
-export class BasicTextViewComponent {
+export class UsageComponent {
 
     public editState = true;
     public tvtext = "";
