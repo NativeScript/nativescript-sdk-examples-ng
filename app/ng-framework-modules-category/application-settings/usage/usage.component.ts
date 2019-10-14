@@ -36,10 +36,10 @@ export class UsageComponent {
 
     onClearß() {
         // Removing a single entry via its key name
-        remove("isTurnedOn"); 
+        remove("isTurnedOn");
 
         // Clearing the whole application-settings for this app
-        clear(); 
+        clear();
     }
 }
 // << app-settings-code
