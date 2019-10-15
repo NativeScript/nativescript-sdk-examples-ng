@@ -9,7 +9,7 @@ import { Slider } from "tns-core-modules/ui/slider";
 export class UsageComponent {
     onSliderValueChange(args) {
         let slider = <Slider>args.object;
-        console.log(`Slider new value ${args.newValue}`);
+        console.log(`Slider new value ${args.value}`);
     }
 }
 // << basic-slider-tsc
