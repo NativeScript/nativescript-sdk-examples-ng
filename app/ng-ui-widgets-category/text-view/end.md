@@ -29,7 +29,6 @@
 |:-----------------------|:------------------------------------------------------|
 | `blur` | Emitted when the text field is unfocused. |
 | `focus` | Emitted when the text field is focused. |
-| `returnPress` | Emitted when the return key is tapped. |
 | `textChange` | Emitted when there is a new text input. |
 
 ## API References
