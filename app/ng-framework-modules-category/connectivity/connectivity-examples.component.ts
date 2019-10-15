@@ -2,7 +2,7 @@ import { Component, ChangeDetectionStrategy } from "@angular/core";
 import { Link } from "./../../link";
 
 let menuLinks = [
-    new Link("Using Connectivity", "/connectivity/using-connectivity"),
+    new Link("Usage", "/connectivity/usage"),
 ];
 
 @Component({
