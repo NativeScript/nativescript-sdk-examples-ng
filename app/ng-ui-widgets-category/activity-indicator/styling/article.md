@@ -2,6 +2,6 @@ The `ActivityIndicator` supports styling the `color` (default value is `blue`) a
 
 <snippet id='activity-indicator-styling-html'/>
 
-| **nativescript-theme-core** CSS class  |  Description    |
+| **@nativescript/theme** CSS class  |  Description    |
 |:---------------------------------------|:----------------|
 | `activity-indicator`                   | Styles the `color` of the indicator in sync with the main theme color. |

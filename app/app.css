@@ -1,6 +1,6 @@
 ﻿
-@import '~nativescript-theme-core/css/core.css';
-@import '~nativescript-theme-core/css/forest.css';
+@import '~@nativescript/theme/css/core.css';
+@import '~@nativescript/theme/css/forest.css';
 
 .far {
     font-family: "Font Awesome 5 Free", "fa-regular-400";

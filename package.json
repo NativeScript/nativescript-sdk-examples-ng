@@ -22,7 +22,7 @@
   "nativescript": {
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-android": {
-      "version": "6.1.0"
+      "version": "6.2.0-2019-10-16-170919-03"
     },
     "tns-ios": {
       "version": "6.1.0"
@@ -36,25 +36,25 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
-    "nativescript-angular": "~8.2.0",
+    "@nativescript/theme": "^2.1.2",
+    "nativescript-angular": "8.3.0-next-2019-10-17-143908-01",
     "nativescript-camera": "^4.5.0",
     "nativescript-geolocation": "^5.1.0",
     "nativescript-intl": "~3.0.0",
-    "nativescript-theme-core": "^2.0.9",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.4.0",
-    "tns-core-modules": "6.1.0",
+    "tns-core-modules": "6.3.0-next-2019-10-17-174536-07",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "8.2.0",
-    "@ngtools/webpack": "8.2.0",
+    "@angular/compiler-cli": "~8.2.0",
+    "@ngtools/webpack": "~8.2.0",
     "codelyzer": "^3.0.1",
     "fs-extra": "^0.30.0",
     "glob": "^7.1.3",
     "lazy": "1.0.11",
     "markdown-snippet-injector": "^0.2.2",
-    "nativescript-dev-webpack": "~1.2.0",
+    "nativescript-dev-webpack": "1.4.0-next-2019-10-17-185549-03",
     "opener": "^1.4.1",
     "rimraf": "^2.5.3",
     "tar.gz": "^1.0.5",
@@ -75,6 +75,7 @@
     "update-webpack": "./node_modules/.bin/update-ns-webpack --deps --configs",
     "update-angular": "./node_modules/.bin/update-app-ng-deps",
     "update-app-ng-deps": "update-app-ng-deps",
-    "ns-verify-bundle": "ns-verify-bundle"
+    "ns-verify-bundle": "ns-verify-bundle",
+    "update-ns-webpack": "update-ns-webpack"
   }
 }
