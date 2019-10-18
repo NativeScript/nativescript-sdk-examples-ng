@@ -3,8 +3,7 @@ import { Link } from "./../../link";
 
 let menuLinks = [
     new Link("Usage", "/web-view/usage"),
-    new Link("Tips & Tricks", "/web-view/tips-and-tricks"),
-    new Link("WebView with HTML File", "/web-view/html-file"),
+    new Link("Tips & Tricks", "/web-view/tips-and-tricks")
 ];
 
 @Component({

@@ -5,4 +5,4 @@ The styling properties for the `Swtich` control are as follows:
 
 <snippet id='switch-styling-html'/>
 
-> Note: When using `nativescript-theme-core` the default style will be set according to the used theme (no need to set additional CSS classes).
+> Note: When using `@nativescript/theme` the default style will be set according to the used theme (no need to set additional CSS classes).
