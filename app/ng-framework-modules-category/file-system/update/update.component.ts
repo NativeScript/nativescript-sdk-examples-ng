@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 // >> fs-update-import-code
-import * as fs from "tns-core-modules/file-system";
+import { knownFolders, path, File, Folder } from "tns-core-modules/file-system";
 // << fs-update-import-code
 @Component({
     moduleId: module.id,
@@ -8,9 +8,9 @@ import * as fs from "tns-core-modules/file-system";
 })
 export class UpdateExampleComponent implements OnInit {
 
-    public documents: fs.Folder;
-    public file: fs.File;
-    public myFolder: fs.Folder;
+    public documents: Folder;
+    public file: File;
+    public myFolder: Folder;
 
     public fileName: string = "TestFileName";
     public fileSuccessMessage: string;
@@ -21,7 +21,7 @@ export class UpdateExampleComponent implements OnInit {
     public isFolderItemVisible: boolean = false;
 
     ngOnInit() {
-        this.documents = fs.knownFolders.documents();
+        this.documents = knownFolders.documents();
         this.file = this.documents.getFile("TestFileName.txt");
         this.myFolder = this.documents.getFolder("TestFolderName");
     }

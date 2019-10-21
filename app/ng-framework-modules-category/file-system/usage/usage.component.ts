@@ -1,11 +1,11 @@
 import { Component } from "@angular/core";
 // >> fs-create-import-code
-import { knownFolders, File, Folder } from "tns-core-modules/file-system";
+import { knownFolders, path, File, Folder } from "tns-core-modules/file-system";
 // << fs-create-import-code
 
 @Component({
     moduleId: module.id,
-    templateUrl: "./create.component.html"
+    templateUrl: "./usage.component.html"
 })
 export class CreateExampleComponent {
     public folderName: string;

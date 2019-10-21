@@ -1,9 +1,9 @@
 // >> connectivity-start-code
 import { Component, OnInit, OnDestroy } from "@angular/core";
-import { 
-    getConnectionType, 
-    startMonitoring, 
-    stopMonitoring 
+import {
+    getConnectionType,
+    startMonitoring,
+    stopMonitoring
 } from "tns-core-modules/connectivity";
 import * as connectivityModule from "tns-core-modules/connectivity";
 
