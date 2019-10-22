@@ -3,7 +3,7 @@ import { Link } from "./../../link";
 
 let menuLinks = [
     new Link("Paths", "/file-system/paths"),
-    new Link("Create", "/file-system/create"),
+    new Link("Create", "/file-system/usage"),
     new Link("Read", "/file-system/read"),
     new Link("Update", "/file-system/update"),
     new Link("Delete", "/file-system/delete")

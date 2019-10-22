@@ -1,4 +1,4 @@
-// >> http-put-component
+// >> http-delete-component
 import { Component, OnInit } from "@angular/core";
 import { MyHttpDeleteService } from "./http-delete.service";
 
@@ -39,4 +39,4 @@ export class HttpDeleteComponent implements OnInit {
         this.data = res.data;
     }
 }
-// << http-put-component
+// << http-delete-component

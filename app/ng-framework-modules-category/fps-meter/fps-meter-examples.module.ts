@@ -5,7 +5,7 @@ import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
 import { FpsExamplesComponent } from "./fps-meter-examples.component";
 
-import { FpsMeterUsageComponent } from "./fps-meter-usage/fps-meter";
+import { FpsMeterUsageComponent } from "./usage/usage.component";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -14,9 +14,9 @@ export const routerConfig = [
         component: FpsExamplesComponent
     },
     {
-        path: "fps-meter-usage",
+        path: "usage",
         component: FpsMeterUsageComponent,
-        data: { title: "FPS meter" }
+        data: { title: "Usage" }
     }
 ];
 

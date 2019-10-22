@@ -11,7 +11,7 @@
 | Name     | Type    | 
 |----------|---------|
 | [tns-core-modules/connectivity](https://docs.nativescript.org/api-reference/modules/_connectivity_.html) | `Module` | 
-| [connectionTypoe](https://docs.nativescript.org/api-reference/enums/_connectivity_.connectiontype) | `Enum` | 
+| [connectionType](https://docs.nativescript.org/api-reference/enums/_connectivity_.connectiontype) | `Enum` | 
 
 ## Native Component
 

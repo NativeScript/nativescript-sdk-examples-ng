@@ -2,7 +2,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { FileSystemExamplesComponent } from "./file-system-examples.component";
-import { CreateExampleComponent } from "./create/create.component";
+import { CreateExampleComponent } from "./usage/usage.component";
 import { DeleteExampleComponent } from "./delete/delete.component";
 import { PathsExampleComponent } from "./paths/paths.component";
 import { ReadExampleComponent } from "./read/read.component";
@@ -15,9 +15,9 @@ export const routerConfig = [
         component: FileSystemExamplesComponent
     },
     {
-        path: "create",
+        path: "usage",
         component: CreateExampleComponent,
-        data: { title: "Create" }
+        data: { title: "Usage" }
     },
     {
         path: "delete",

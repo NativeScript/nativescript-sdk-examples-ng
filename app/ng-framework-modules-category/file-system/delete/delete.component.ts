@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> fs-delete-import-code
-import * as fs from "tns-core-modules/file-system";
+import { File, Folder, knownFolders } from "tns-core-modules/file-system";
 // << fs-delete-import-code
 @Component({
     moduleId: module.id,
@@ -8,14 +8,14 @@ import * as fs from "tns-core-modules/file-system";
 })
 export class DeleteExampleComponent {
 
-    public documents: fs.Folder;
-    public file: fs.File;
-    public myFolder: fs.Folder;
+    public documents: Folder;
+    public file: File;
+    public myFolder: Folder;
 
     public resultMessage: string = "";
 
     constructor() {
-        this.documents = fs.knownFolders.documents();
+        this.documents = knownFolders.documents();
         this.myFolder = this.documents.getFolder("TestFolderName");
         this.file = this.myFolder.getFile("TestFileName.txt");
     }
@@ -70,7 +70,7 @@ export class DeleteExampleComponent {
     }
 
     public onReset() {
-        this.documents = fs.knownFolders.documents();
+        this.documents = knownFolders.documents();
         this.myFolder = this.documents.getFolder("TestFolderName");
         this.file = this.myFolder.getFile("TestFileName.txt");
         this.resultMessage = "Successfully reset!";
