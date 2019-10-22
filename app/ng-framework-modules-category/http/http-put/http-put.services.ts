@@ -1,4 +1,4 @@
-// >> http-delete-service
+// >> http-put-service
 import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 
@@ -22,4 +22,4 @@ export class MyHttpPutService {
         return headers;
     }
 }
-// << http-delete-service
+// << http-put-service

@@ -2,7 +2,7 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptRouterModule } from "nativescript-angular/router";
 import { NativeScriptCommonModule } from "nativescript-angular/common";
 import { PlatformExamplesComponent } from "./platform-examples.component";
-import { PlatformModuleExampleComponent } from "./platform-module-example/platform-module-example";
+import { PlatformModuleExampleComponent } from "./usage/platform-module-example";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 export const routerConfig = [
@@ -11,9 +11,9 @@ export const routerConfig = [
         component: PlatformExamplesComponent
     },
     {
-        path: "platform-module",
+        path: "usage",
         component: PlatformModuleExampleComponent,
-        data: { title: "Using platform module" }
+        data: { title: "Usage" }
     }
 ];
 

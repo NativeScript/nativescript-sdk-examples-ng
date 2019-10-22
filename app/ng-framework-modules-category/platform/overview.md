@@ -1,1 +1,1 @@
-Information about the current device and screen are defined in the platform module
+Information and details about the current device, and screen resolution & density are accessible via the `platform` module.
