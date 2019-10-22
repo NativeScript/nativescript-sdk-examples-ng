@@ -8,10 +8,10 @@ import { MyHttpGetService } from "./http-get.services";
     providers: [MyHttpGetService] // using the providers array
 })
 export class HttpGetComponent implements OnInit {
-    public host: string;
-    public userAgent: string;
-    public origin: string;
-    public url: string;
+    host: string;
+    userAgent: string;
+    origin: string;
+    url: string;
 
     constructor(private myService: MyHttpGetService) { }
 
