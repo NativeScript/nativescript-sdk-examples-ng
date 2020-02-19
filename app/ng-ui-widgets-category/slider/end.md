@@ -10,7 +10,7 @@
 
 | Name     | Description    |
 |----------|----------------|
-| `selectedIndexChanged`  | Emitted when the selected index is changed (via interaction or programmatically). |
+| `valueChange`  | Emitted when the selected index is changed (via interaction or programmatically). |
 
 
 ## API References
