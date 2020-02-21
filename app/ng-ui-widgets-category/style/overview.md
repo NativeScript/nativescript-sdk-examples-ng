@@ -1,3 +1,3 @@
-Styling the app is important for every appication. In NativeScript there are two possible option to attached style in the project.
-The most common way to style elements in the app is to define the styles inside `CSS` file and to set class name or id name to the components in the `HTML`, which you want to style.
-Another way is to attached styles in the TypeScript code, while using `css` property of the `Page` component.
+Styling the app is important for every application. In NativeScript there are two ways to apply styles.
+The most common way to style elements in the app is to define styles in a CSS file and use classes or IDs in the component HTML.
+Another way is to apply styles in the TypeScript code, using the `css` property of the `Page` component.
