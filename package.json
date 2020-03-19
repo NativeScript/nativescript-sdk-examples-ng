@@ -22,10 +22,10 @@
   "nativescript": {
     "id": "org.nativescript.nativescriptsdkexamplesng",
     "tns-android": {
-      "version": "6.2.0-2019-10-16-170919-03"
+      "version": "6.5.0"
     },
     "tns-ios": {
-      "version": "6.1.0"
+      "version": "6.5.0"
     }
   },
   "dependencies": {
@@ -36,14 +36,15 @@
     "@angular/platform-browser": "~8.2.0",
     "@angular/platform-browser-dynamic": "~8.2.0",
     "@angular/router": "~8.2.0",
+    "@nativescript/core": "^6.5.0",
     "@nativescript/theme": "^2.1.2",
-    "nativescript-angular": "8.3.0-next-2019-10-17-143908-01",
+    "nativescript-angular": "^8.21.0",
     "nativescript-camera": "^4.5.0",
     "nativescript-geolocation": "^5.1.0",
     "nativescript-intl": "~3.0.0",
     "reflect-metadata": "~0.1.12",
     "rxjs": "^6.4.0",
-    "tns-core-modules": "6.3.0-next-2019-10-17-174536-07",
+    "tns-core-modules": "^6.5.0",
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
@@ -54,11 +55,11 @@
     "glob": "^7.1.3",
     "lazy": "1.0.11",
     "markdown-snippet-injector": "^0.2.2",
-    "nativescript-dev-webpack": "1.4.0-next-2019-10-17-185549-03",
+    "nativescript-dev-webpack": "^1.5.1",
     "opener": "^1.4.1",
     "rimraf": "^2.5.3",
     "tar.gz": "^1.0.5",
-    "tns-platform-declarations": "6.0.1",
+    "tns-platform-declarations": "^6.4.2",
     "tslint": "^5.11.0",
     "typescript": "~3.5.3"
   },
