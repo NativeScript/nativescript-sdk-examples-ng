@@ -1,11 +1,9 @@
 /* >> bottom-nav-theming-css-ng */
-TabStripItem.tabstripitem {
-    background-color: teal;
+TabStrip {
+    selected-item-color: blueviolet;
+    un-selected-item-color: brown;
+    highlight-color: gold;
 }
-
-TabStripItem.tabstripitem:active {
-    background-color: yellowgreen;
-} 
 
 TabContentItem.first-tabcontent {
     background-color: seashell;
