@@ -6,8 +6,12 @@
 |:----------|:---------|:---------------|
 | `items`   | `Array<TabContentItem>` |  Gets or sets the items of the BottomNavigation. |
 | `selectedIndex` | `number` | Gets or sets the selectedIndex of the BottomNavigation. |
+| `swipeEnabled` | `boolean` | Gets or sets the swipe enabled state of the Tabs. |
+| `offscreenTabLimit` | `number` | Gets or sets the number of offscreen preloaded tabs of the Tabs. |
 | `tabStrip`| `TabStrip` | Gets or sets the tab strip of the BottomNavigation. |
 |` tabsPosition` | _"top"_, _"bottom"_ | Gets or sets the position state of the Tabs. Default value: **top** |
+|` iOSTabBarItemsAlignment` | _"leading"_, _"justified"_, _"center"_, _"centerSelected"_  | **iOS Only:** Gets or set the MDCTabBarAlignment of the tab bar icons in iOS. Default value: **justified** |
+
 
 ### TabStrip Properties
 
@@ -16,16 +20,18 @@
 | `iosIconRenderingMode`   | _"automatic"_, _"alwaysOriginal"_, _"alwaysTemplate"_ | Gets or sets the icon rendering mode on iOS. |
 | `isIconSizeFixed` | `boolean` | When set to `true` the icon will have fixed size following the platform-specific design guidelines. Default value: `true`. |
 | `items`   | `Array<TabStripItem>` |  Gets or sets an array of strip items of the TabStrip. |
-| `highlightColor`   |  |  Gets or sets the underline color of the selected TabStripItem. |
+| `highlightColor`   | `Color` |  Gets or sets the underline color of the selected TabStripItem. |
+| `selectedItemColor`   | `Color` |  Gets or sets the color of the selected items in the tab strip. |
+| `unSelectedItemColor`   | `Color` |  Gets or sets the color of the non-selected items in the tab strip. |
+
 
 ### TabStripItem Properties
 
 | Name      | Type     | Description                                    |
 |-----------|----------|------------------------------------------------|
 | `title`   | `string` | Gets or sets the title of the tab strip entry. |
-| `iconSource` | `string` | Gets or sets the icon source of the tab strip entry. Supports local image paths (`~`), resource images (`res://`) and icon fonts (`font://`) |
-| `image`   | `Image` | Gets or sets the image of the tab strip entry.  |
-| `label`   | `Label` | Gets or sets the label of the tab strip entry.  |
+| `iconSource` | `string` | Gets or sets the icon source of the tab strip entry. Supports local image paths (`~`), resource images (`res://`) and icon fonts (`font://`). **Note:** To be used for programmatic creation of Tabs |
+| `iconClass` | `string` | Gets or sets the CSS class name of the icon in the tab strip entry. **Note:** To be used for programmatic creation of Tabs |
 
 
 ## Events
@@ -67,4 +73,4 @@
 
 | Android               | iOS      |
 |:----------------------|:---------|
-| [FrameLayout](https://developer.android.com/reference/android/widget/FrameLayout) | [UITabViewController](https://developer.apple.com/documentation/uikit/uitabbarcontroller?language=objc) | 
+| [FrameLayout](https://developer.android.com/reference/android/widget/FrameLayout) | [MDCTabBar](https://material.io/develop/ios/components/tabs/api-docs/Classes/MDCTabBar.html) | 

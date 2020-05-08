@@ -1,17 +1,9 @@
 /* >> tabs-theming-css-ng */
-Tabs.bottom-nav {
-    background-color: orangered;
-    color: gold;
-    font-size: 24;
+TabStrip {
+    selected-item-color: blueviolet;
+    un-selected-item-color: brown;
+    highlight-color: gold;
 }
-
-TabStripItem.tabstripitem-active {
-    background-color: teal;
-}
-
-TabStripItem.tabstripitem-active:active {
-    background-color: yellowgreen;
-} 
 
 TabContentItem.first-tabcontent {
     background-color: seashell;
@@ -24,8 +16,5 @@ TabContentItem.second-tabcontent {
 TabContentItem.third-tabcontent {
     background-color: blueviolet;
     color: antiquewhite;
-}
-Tabs TabStrip{
-    highlight-color: red;
 }
 /* << tabs-theming-css-ng */
