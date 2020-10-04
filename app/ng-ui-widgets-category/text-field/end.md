@@ -9,7 +9,7 @@
 | `lineHeight` | `number` | Gets or sets line height style property. |
 | `maxLength` | `number` | Gets or sets the max number of symbols allowed as input. |
 | `returnKeyType` | [`ReturnKeyType`](https://docs.nativescript.org/api-reference/modules/_ui_editor_text_base_#returnkeytype) | Gets or sets the soft keyboard return key flavor. |
-| `secure` | `string` | Gets or sets if a text field is for password entry. |
+| `secure` | `string` | Gets or sets if a text field is for password entry. Possible values: true or false |
 | `text` | `string` | Gets or sets the text. |
 | `textAlignment` | `TextAlignment` | Gets or sets the text alignment. |
 | `textDecoration` | `TextDecoration` | Gets or sets the text decoration. |
