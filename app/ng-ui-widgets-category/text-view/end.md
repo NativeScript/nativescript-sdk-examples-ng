@@ -6,7 +6,7 @@
 | `autocorrect` | `boolean` | Enables or disables autocorrection. |
 | `keyboardType` | [`KeyboardType`](https://docs.nativescript.org/api-reference/modules/_ui_editor_text_base_#keyboardtype) | Gets or sets the soft keyboard type |
 | `letterSpacing` | `number` | Gets or sets letter space style property. |
-| `lineHiehgt` | `number` | Gets or sets line height style property. |
+| `lineHeight` | `number` | Gets or sets line height style property. |
 | `maxLength` | `number` | Gets or sets the max number of symbols allowed as input. |
 | `returnKeyType` | [`ReturnKeyType`](https://docs.nativescript.org/api-reference/modules/_ui_editor_text_base_#returnkeytype) | Gets or sets the soft keyboard return key flavor. |
 | `secure` | `string` | Gets or sets if a text field is for password entry. |
