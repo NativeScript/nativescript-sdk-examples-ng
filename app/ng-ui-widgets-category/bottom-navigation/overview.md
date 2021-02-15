@@ -7,7 +7,7 @@ The `BottomNavigation` component roundup:
 Component Primary Objectives:
 - Used for High Level navigation.
 - Good for UX structure with 3 to 5 different options.
-- Greater control over styling (copared to `TabVIew`).
+- Greater control over styling (compared to `TabVIew`).
 
 Limitations 
 - No navigation transitions.
