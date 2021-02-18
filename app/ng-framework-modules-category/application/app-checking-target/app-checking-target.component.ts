@@ -1,6 +1,6 @@
 // >> app-check-target-code
 import { Component } from "@angular/core";
-import { isAndroid, isIos } from "@nativescript/core";
+import { isAndroid, isIOS } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -13,7 +13,7 @@ export class AppCheckingTargetExampleComponent {
         if (isAndroid) {
             console.log("We are running on Android device!");
             this.isItemVisible = true;
-        } else if (isIos) {
+        } else if (isIOS) {
             console.log("We are running on iOS device");
             this.isItemVisible = false;
         }

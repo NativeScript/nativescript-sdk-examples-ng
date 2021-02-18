@@ -1,5 +1,11 @@
 import { Component } from "@angular/core";
-import { Application, LaunchEventData, OrientationChangedEventData, UnhandledErrorEventData } from "@nativescript/core";
+import {
+    Application,
+    ApplicationEventData,
+    LaunchEventData,
+    OrientationChangedEventData,
+    UnhandledErrorEventData
+} from "@nativescript/core";
 
 let launchListener,
     suspendListener,

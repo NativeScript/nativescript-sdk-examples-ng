@@ -1,7 +1,6 @@
 import { Component, AfterViewInit } from "@angular/core";
-import { hasKey, getString, remove } from "@nativescript/core";
 import { RouterExtensions } from "@nativescript/angular";
-import { Application } from "@nativescript/core";
+import { Application, ApplicationEventData, ApplicationSettings } from "@nativescript/core";
 import { DeepLinkData } from "./shared/deep-link-data";
 @Component({
     moduleId: module.id,
@@ -13,7 +12,7 @@ export class AppComponent implements AfterViewInit {
     constructor(private router: RouterExtensions) { }
 
     ngAfterViewInit() {
-        Application.on(Application.resumeEvent, (args: Application.ApplicationEventData) => {
+        Application.on(Application.resumeEvent, (args: ApplicationEventData) => {
             if (args.android) {
                 const dld = new DeepLinkData("", args.android);
                 this.launchExample();
@@ -23,9 +22,9 @@ export class AppComponent implements AfterViewInit {
         });
     }
     public launchExample() {
-        if (hasKey("gotoexample")) {
-            let value = getString("gotoexample");
-            remove("gotoexample");
+        if (ApplicationSettings.hasKey("gotoexample")) {
+            let value = ApplicationSettings.getString("gotoexample");
+            ApplicationSettings.remove("gotoexample");
             this.router.navigate([value]);
         }
     }

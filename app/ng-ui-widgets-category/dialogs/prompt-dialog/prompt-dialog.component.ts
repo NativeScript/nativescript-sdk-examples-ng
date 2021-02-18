@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { Dialogs } from "@nativescript/core";
+import { capitalizationType, Dialogs, inputType, PromptOptions, PromptResult } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -9,7 +9,7 @@ export class PromptDialogComponent {
     displayPromptDialog() {
         // >> prompt-dialog-code
         // import { Dialogs } from "@nativescript/core";
-        let options: Dialogs.PromptOptions = {
+        let options: PromptOptions = {
             title: "Hey There",
             defaultText: " Enter your mood ",
             message: "How you doin'",
@@ -17,11 +17,11 @@ export class PromptDialogComponent {
             cancelButtonText: "Cancel",
             neutralButtonText: "Neutral",
             cancelable: true,
-            inputType: Dialogs.inputType.text, // email, number, text, password, or email
-            capitalizationType: Dialogs.capitalizationType.sentences // all. none, sentences or words
+            inputType: inputType.text, // email, number, text, password, or email
+            capitalizationType: capitalizationType.sentences // all. none, sentences or words
         };
 
-        Dialogs.prompt(options).then((result: Dialogs.PromptResult) => {
+        Dialogs.prompt(options).then((result: PromptResult) => {
             console.log("Hello, " + result.text);
         });
         // << prompt-dialog-code
