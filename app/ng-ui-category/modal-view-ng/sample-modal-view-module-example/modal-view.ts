@@ -1,6 +1,6 @@
 // >> passing-parameters
 import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
-import { ModalDialogParams } from "nativescript-angular/modal-dialog";
+import { ModalDialogParams } from "@nativescript/angular";
 import { DatePicker } from "@nativescript/core";
 
 @Component({

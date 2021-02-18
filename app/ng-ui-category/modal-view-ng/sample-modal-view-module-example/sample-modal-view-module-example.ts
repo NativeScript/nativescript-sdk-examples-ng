@@ -1,4 +1,4 @@
-import { ModalDialogService, ModalDialogOptions } from "nativescript-angular/modal-dialog";
+import { ModalDialogService, ModalDialogOptions } from "@nativescript/angular";
 import { Component, ViewContainerRef } from "@angular/core";
 import { ModalViewComponent } from "./modal-view";
 

@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
 import { StyleExamplesComponent } from "./style-examples.component";
 import { ApplyStyleCodeComponent } from "./apply-style-via-code/apply-style-code.component";
 import { StyleCSSFileComponent } from "./style-css-file/style-css-file.component";

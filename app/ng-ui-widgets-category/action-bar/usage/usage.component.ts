@@ -1,6 +1,6 @@
 // >> action-bar-basic-usage-ts
 import { Component } from "@angular/core";
-import { RouterExtensions } from "nativescript-angular/router";
+import { RouterExtensions } from "@nativescript/angular";
 
 @Component({
     moduleId: module.id,

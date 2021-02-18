@@ -1,8 +1,8 @@
 // tslint:disable:max-line-length
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
-import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
+import { NativeScriptFormsModule } from "@nativescript/angular";
 
 import { TraceExamplesComponent } from "./trace-examples.component";
 import { CustomTraceWriterExampleComponent } from "./custom-trace-writer/custom-tracewriter-example.component";

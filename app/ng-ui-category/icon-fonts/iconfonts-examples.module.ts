@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
 import { IconFontsExamplesComponent } from "./iconfonts-examples.component";
 import { BasicIconFontsExampleComponent } from "./basics/basic.component";
 import { CodeBehindFontsExampleComponent } from "./code-behind/codebehind.component";

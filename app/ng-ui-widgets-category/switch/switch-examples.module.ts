@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
 import { SwitchExamplesComponent } from "./switch-examples.component";
 import { BasicSwitchComponent } from "./usage/usage.component";
 import { StylingSwitchComponent } from "./styling/styling-switch.component";

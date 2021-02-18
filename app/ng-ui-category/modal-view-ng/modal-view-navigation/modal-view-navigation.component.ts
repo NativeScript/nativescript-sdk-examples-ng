@@ -1,6 +1,6 @@
 // >> opening-modal-view
 import { Component, ViewContainerRef } from "@angular/core";
-import { ModalDialogOptions, ModalDialogService } from "nativescript-angular/modal-dialog";
+import { ModalDialogOptions, ModalDialogService } from "@nativescript/angular";
 import { HomeModalViewComponent } from "./home-modal-view.component";
 
 @Component({

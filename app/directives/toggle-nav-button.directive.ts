@@ -1,7 +1,7 @@
 import { ActivatedRoute } from "@angular/router";
 import { Directive, OnInit } from "@angular/core";
 import { EventData, NavigationButton, Page, isAndroid, isIOS } from "@nativescript/core";
-import { RouterExtensions } from "nativescript-angular/router";
+import { RouterExtensions } from "@nativescript/angular";
 
 @Directive({
     selector: "[sdkToggleNavButton]"

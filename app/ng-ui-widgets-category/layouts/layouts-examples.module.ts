@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
 import { LayoutsExamplesComponent } from "./layouts-examples.component";
 import { AbsoluteLayoutComponent } from "./absolute-layout/absolute-layout.component";
 import { DockLayoutComponent } from "./dock-layout/dock-layout.component";

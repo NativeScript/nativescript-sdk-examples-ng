@@ -1,6 +1,6 @@
 import { Component, AfterViewInit } from "@angular/core";
 import { hasKey, getString, remove } from "@nativescript/core";
-import { RouterExtensions } from "nativescript-angular/router";
+import { RouterExtensions } from "@nativescript/angular";
 import { Application } from "@nativescript/core";
 import { DeepLinkData } from "./shared/deep-link-data";
 @Component({

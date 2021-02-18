@@ -1,9 +1,9 @@
 // tslint:disable:max-line-length
 // >> modal-view-actionbar-code
 import { Component, OnInit } from "@angular/core";
-import { RouterExtensions } from "nativescript-angular/router";
+import { RouterExtensions } from "@nativescript/angular";
 import { ActivatedRoute } from "@angular/router";
-import { ModalDialogParams } from "nativescript-angular/modal-dialog";
+import { ModalDialogParams } from "@nativescript/angular";
 import { Page } from "@nativescript/core";
 
 @Component({
