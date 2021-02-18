@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> import-geolocation-plugin
-import { Location, getCurrentLocation, isEnabled, distance, enableLocationRequest } from "nativescript-geolocation";
+import { Location, getCurrentLocation, isEnabled, distance, enableLocationRequest } from "@nativescript/geolocation";
 // << import-geolocation-plugin
 import { Enums } from "@nativescript/core";
 

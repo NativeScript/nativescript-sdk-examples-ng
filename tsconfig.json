@@ -2,34 +2,32 @@
     "compilerOptions": {
         "module": "esnext",
         "target": "es2017",
+        "moduleResolution": "node",
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
         "noEmitHelpers": true,
         "noEmitOnError": true,
         "skipLibCheck": true,
         "lib": [
-            "es6",
-            "dom",
-            "es2015.iterable",
-            "es2017"
+            "es2018", "es2017", "dom", "es6"
         ],
         "baseUrl": ".",
         "paths": {
             "~/*": [
                 "app/*"
             ]
-        },
-        "moduleResolution": "node",
-        "removeComments": false
+        }
     },
     "include": [
         "app/**/*.ts"
     ],
     "files": [
-        "./references.d.ts"
+        "./references.d.ts",
+        "./app/main.ts"
     ],
     "exclude": [
         "node_modules",
-        "platforms"
+        "platforms",
+        "e2e"
     ]
 }

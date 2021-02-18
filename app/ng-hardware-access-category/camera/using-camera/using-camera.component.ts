@@ -2,8 +2,7 @@ import { Component } from "@angular/core";
 
 // >> camera-module-init-code
 import { ImageAsset } from "@nativescript/core";
-// TODO: fix nativescript-camera package
-// import { takePicture, requestPermissions, isAvailable } from "nativescript-camera";
+import { takePicture, requestPermissions, isAvailable } from "@nativescript/camera";
 // << camera-module-init-code
 
 @Component({
@@ -26,29 +25,26 @@ export class UsingCameraExampleComponent {
             saveToGallery: this.saveToGallery
         };
 
-        // TODO: fix nativescript-camera package
-        // takePicture(options)
-        //     .then(imageAsset => {
-        //         this.imageTaken = imageAsset;
-        //         console.log("Size: " + imageAsset.options.width + "x" + imageAsset.options.height);
-        //     }).catch(err => {
-        //         console.log(err.message);
-        //     });
+        takePicture(options)
+            .then(imageAsset => {
+                this.imageTaken = imageAsset;
+                console.log("Size: " + imageAsset.options.width + "x" + imageAsset.options.height);
+            }).catch(err => {
+                console.log(err.message);
+            });
     }
     // << camera-module-photo-code
 
     // >> camera-module-perm-code
     onRequestPermissions() {
-        // TODO: fix nativescript-camera package
-        // requestPermissions();
+        requestPermissions();
     }
     // << camera-module-perm-code
 
     // >> camera-module-avai-code
     onCheckForCamera() {
-        // TODO: fix nativescript-camera package
-        // let isCameraAvailable = isAvailable();
-        // console.log("Is camera hardware available: " + isCameraAvailable);
+        let isCameraAvailable = isAvailable();
+        console.log("Is camera hardware available: " + isCameraAvailable);
     }
     // << camera-module-avai-code
 }

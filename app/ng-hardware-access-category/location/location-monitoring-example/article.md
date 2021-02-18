@@ -1,4 +1,4 @@
-Import `nativescript-geolocation` plugin
+Import `@nativescript/geolocation` plugin
 <snippet id='import-geolocation-plugin-monitoring'/>
 
 Receive continuous location updates

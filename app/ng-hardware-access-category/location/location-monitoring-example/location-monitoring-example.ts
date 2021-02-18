@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> import-geolocation-plugin-monitoring
-import { Location, enableLocationRequest, watchLocation, clearWatch } from "nativescript-geolocation";
+import { Location, enableLocationRequest, watchLocation, clearWatch } from "@nativescript/geolocation";
 // << import-geolocation-plugin-monitoring
 import { Enums } from "@nativescript/core";
 
