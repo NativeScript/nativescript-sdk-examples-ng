@@ -23,8 +23,10 @@
         "removeComments": false
     },
     "include": [
-        "./reference.d.ts",
         "app/**/*.ts"
+    ],
+    "files": [
+        "./references.d.ts"
     ],
     "exclude": [
         "node_modules",

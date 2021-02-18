@@ -20,6 +20,7 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
+    "@angular/animations": "11.2.1",
     "@angular/common": "11.2.1",
     "@angular/compiler": "11.2.1",
     "@angular/core": "11.2.1",
@@ -27,6 +28,7 @@
     "@angular/platform-browser": "11.2.1",
     "@angular/platform-browser-dynamic": "11.2.1",
     "@angular/router": "11.2.1",
+    "@nativescript/angular": "11.0.1",
     "@nativescript/core": "7.2.1",
     "@nativescript/theme": "3.0.1",
     "nativescript-camera": "4.5.0",
@@ -34,9 +36,7 @@
     "nativescript-intl": "4.0.2",
     "reflect-metadata": "0.1.13",
     "rxjs": "6.6.3",
-    "zone.js": "0.11.4",
-    "@nativescript/webpack": "4.1.0",
-    "@nativescript/angular": "11.0.1"
+    "zone.js": "0.11.4"
   },
   "devDependencies": {
     "@angular/compiler-cli": "11.2.1",
@@ -53,7 +53,8 @@
     "typescript": "4.1.5",
     "@nativescript/ios": "7.2.0",
     "@nativescript/android": "7.0.1",
-    "@nativescript/types": "7.2.0"
+    "@nativescript/types": "7.2.0",
+    "@nativescript/webpack": "4.1.0"
   },
   "scripts": {
     "pretsc": "npm install",

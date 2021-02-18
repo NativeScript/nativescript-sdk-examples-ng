@@ -1,5 +1,7 @@
 import { DeepLinkData } from "../shared/deep-link-data";
-export class MyDelegate extends UIResponder implements UIApplicationDelegate {
+
+@NativeClass
+class MyDelegate extends UIResponder implements UIApplicationDelegate {
     // tslint:disable-next-line
     public static ObjCProtocols = [UIApplicationDelegate];
 
@@ -8,3 +10,6 @@ export class MyDelegate extends UIResponder implements UIApplicationDelegate {
         return true;
     }
 }
+
+export {MyDelegate};
+
