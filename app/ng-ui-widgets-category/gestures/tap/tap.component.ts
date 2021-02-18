@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
-import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
+import { GridLayout } from "@nativescript/core";
 // >> tap-code
-import { GestureEventData } from "tns-core-modules/ui/gestures";
+import { GestureEventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

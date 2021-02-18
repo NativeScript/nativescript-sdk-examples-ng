@@ -1,7 +1,6 @@
 // >> switch-event-handle-code
 import { Component } from "@angular/core";
-import { EventData } from "tns-core-modules/data/observable";
-import { Switch } from "tns-core-modules/ui/switch";
+import { EventData, Switch } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

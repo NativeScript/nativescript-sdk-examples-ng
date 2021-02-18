@@ -1,16 +1,6 @@
 // >> app-settings-code
 import { Component } from "@angular/core";
-import {
-    getBoolean,
-    setBoolean,
-    getNumber,
-    setNumber,
-    getString,
-    setString,
-    hasKey,
-    remove,
-    clear
-} from "tns-core-modules/application-settings";
+import { ApplicationSettings } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -19,27 +9,27 @@ import {
 export class UsageComponent {
 
     constructor() {
-        setBoolean("isTurnedOn", true);
-        setString("username", "Wolfgang");
-        setNumber("locationX", 54.321);
+        ApplicationSettings.setBoolean("isTurnedOn", true);
+        ApplicationSettings.setString("username", "Wolfgang");
+        ApplicationSettings.setNumber("locationX", 54.321);
 
-        const isTurnedOn: boolean = getBoolean("isTurnedOn");
-        const username: string = getString("username");
-        const locationX: number = getNumber("locationX");
+        const isTurnedOn: boolean = ApplicationSettings.getBoolean("isTurnedOn");
+        const username: string = ApplicationSettings.getString("username");
+        const locationX: number = ApplicationSettings.getNumber("locationX");
 
         // Will return "No string value" if there is no value for "noSuchKey"
-        const someKey: string = getString("noSuchKey", "No string value");
+        const someKey: string = ApplicationSettings.getString("noSuchKey", "No string value");
 
         // Will return false if there is no key with name "noSuchKey"
-        let isKeExisting: boolean = hasKey("noSuchKey");
+        let isKeExisting: boolean = ApplicationSettings.hasKey("noSuchKey");
     }
 
     onClearß() {
         // Removing a single entry via its key name
-        remove("isTurnedOn");
+        ApplicationSettings.remove("isTurnedOn");
 
         // Clearing the whole application-settings for this app
-        clear();
+        ApplicationSettings.clear();
     }
 }
 // << app-settings-code

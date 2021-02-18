@@ -1,6 +1,6 @@
 // >> scroll-view-event-code
 import { Component } from "@angular/core";
-import { ScrollView, ScrollEventData } from "tns-core-modules/ui/scroll-view";
+import { ScrollView, ScrollEventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

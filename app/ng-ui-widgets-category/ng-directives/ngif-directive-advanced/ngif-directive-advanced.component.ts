@@ -1,6 +1,6 @@
 // >> using-ngif-platform-code
 import { Component, OnInit } from "@angular/core";
-import * as application from "tns-core-modules/application";
+import { isAndroid, isIOS } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -11,10 +11,10 @@ export class NgIfAdvancedComponent implements OnInit {
     public isIos: boolean;
 
     ngOnInit() {
-        if (application.ios) {
+        if (isIOS) {
             this.isAndroid = false;
             this.isIos = true;
-        } else if (application.android) {
+        } else if (isAndroid) {
             this.isAndroid = true;
             this.isIos = false;
         }

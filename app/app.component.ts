@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from "@angular/core";
-import { hasKey, getString, remove } from "tns-core-modules/application-settings";
+import { hasKey, getString, remove } from "@nativescript/core";
 import { RouterExtensions } from "nativescript-angular/router";
-import * as app from "tns-core-modules/application";
+import { Application } from "@nativescript/core";
 import { DeepLinkData } from "./shared/deep-link-data";
 @Component({
     moduleId: module.id,
@@ -13,7 +13,7 @@ export class AppComponent implements AfterViewInit {
     constructor(private router: RouterExtensions) { }
 
     ngAfterViewInit() {
-        app.on(app.resumeEvent, (args: app.ApplicationEventData) => {
+        Application.on(Application.resumeEvent, (args: Application.ApplicationEventData) => {
             if (args.android) {
                 const dld = new DeepLinkData("", args.android);
                 this.launchExample();

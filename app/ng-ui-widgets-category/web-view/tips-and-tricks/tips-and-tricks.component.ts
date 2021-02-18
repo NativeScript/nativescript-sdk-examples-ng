@@ -1,7 +1,7 @@
 // tslint:disable:max-line-length
 // >> webview-ts-gestures
 import { Component } from "@angular/core";
-import { isAndroid } from "tns-core-modules/platform";
+import { isAndroid } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

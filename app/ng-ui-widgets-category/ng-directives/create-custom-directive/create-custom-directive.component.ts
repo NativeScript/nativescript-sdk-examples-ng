@@ -1,6 +1,6 @@
 // >> custom-directive-code
 import { Component, Directive, ViewContainerRef, TemplateRef, Inject } from "@angular/core";
-import { Device, platformNames } from "tns-core-modules/platform";
+import { Device, platformNames } from "@nativescript/core";
 import { DEVICE } from "nativescript-angular/platform-providers";
 
 @Directive({ selector: "[sdkIfAndroid]" })

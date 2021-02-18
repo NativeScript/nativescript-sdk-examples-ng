@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
-import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
+import { GridLayout } from "@nativescript/core";
 // >> rotation-code
-import { RotationGestureEventData } from "tns-core-modules/ui/gestures";
+import { RotationGestureEventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

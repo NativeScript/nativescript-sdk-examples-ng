@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { prompt, PromptResult, PromptOptions, inputType, capitalizationType } from "tns-core-modules/ui/dialogs";
+import { Dialogs } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -8,16 +8,8 @@ import { prompt, PromptResult, PromptOptions, inputType, capitalizationType } fr
 export class PromptDialogComponent {
     displayPromptDialog() {
         // >> prompt-dialog-code
-        /*
-        import {
-            prompt,
-            PromptResult,
-            PromptOptions,
-            inputType,
-            capitalizationType
-        } from "tns-core-modules/ui/dialogs";
-        */
-        let options: PromptOptions = {
+        // import { Dialogs } from "@nativescript/core";
+        let options: Dialogs.PromptOptions = {
             title: "Hey There",
             defaultText: " Enter your mood ",
             message: "How you doin'",
@@ -25,11 +17,11 @@ export class PromptDialogComponent {
             cancelButtonText: "Cancel",
             neutralButtonText: "Neutral",
             cancelable: true,
-            inputType: inputType.text, // email, number, text, password, or email
-            capitalizationType: capitalizationType.sentences // all. none, sentences or words
+            inputType: Dialogs.inputType.text, // email, number, text, password, or email
+            capitalizationType: Dialogs.capitalizationType.sentences // all. none, sentences or words
         };
 
-        prompt(options).then((result: PromptResult) => {
+        Dialogs.prompt(options).then((result: Dialogs.PromptResult) => {
             console.log("Hello, " + result.text);
         });
         // << prompt-dialog-code

@@ -1,15 +1,6 @@
 import { Component } from "@angular/core";
 // >> trace-customtracewriter-imports
-import {
-    setCategories,
-    enable,
-    categories,
-    messageType,
-    clearWriters,
-    addWriter,
-    disable
-} from "tns-core-modules/trace";
-import { isUndefined } from "tns-core-modules/utils/types";
+import { Trace, Utils } from "@nativescript/core";
 // << trace-customtracewriter-imports
 
 // >> trace-create-custom-writer
@@ -20,10 +11,10 @@ class TimestampConsoleWriter {
         if (!console) {
             return;
         }
-        let msgType = isUndefined(type) ? messageType.log : type;
+        let msgType = Utils.isUndefined(type) ? Trace.messageType.log : type;
 
         switch (msgType) {
-            case messageType.log:
+            case Trace.messageType.log:
                 this.array.push({
                     "messageType": "log",
                     "date": new Date().toISOString(),
@@ -31,7 +22,7 @@ class TimestampConsoleWriter {
                     "category": category
                 });
                 break;
-            case messageType.info:
+            case Trace.messageType.info:
                 this.array.push({
                     "messageType": "info",
                     "date": new Date().toISOString(),
@@ -39,7 +30,7 @@ class TimestampConsoleWriter {
                     "category": category
                 });
                 break;
-            case messageType.warn:
+            case Trace.messageType.warn:
                 this.array.push({
                     "messageType": "warning",
                     "date": new Date().toISOString(),
@@ -47,7 +38,7 @@ class TimestampConsoleWriter {
                     "category": category
                 });
                 break;
-            case messageType.error:
+            case Trace.messageType.error:
                 this.array.push({
                     "messageType": "error",
                     "date": new Date().toISOString(),
@@ -71,13 +62,13 @@ export class CustomTraceWriterExampleComponent {
     public customwriter: TimestampConsoleWriter;
 
     constructor() {
-        disable();
+        Trace.disable();
         // >> trace-add-custom-writer
-        setCategories(categories.Navigation);
-        enable();
+        Trace.setCategories(Trace.categories.Navigation);
+        Trace.enable();
         this.customwriter = new TimestampConsoleWriter();
-        clearWriters();
-        addWriter(this.customwriter);
+        Trace.clearWriters();
+        Trace.addWriter(this.customwriter);
         // << trace-add-custom-writer
     }
 }

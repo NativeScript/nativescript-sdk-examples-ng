@@ -1,6 +1,6 @@
 // >> basic-slider-tsc
 import { Component } from "@angular/core";
-import { Slider } from "tns-core-modules/ui/slider";
+import { Slider } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

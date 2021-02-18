@@ -1,10 +1,10 @@
 import { platformNativeScriptDynamic } from "nativescript-angular/platform";
 import { AppModule } from "./app.module";
-import { ios } from "tns-core-modules/application";
-import { isIOS } from "tns-core-modules/platform";
+import { Application } from "@nativescript/core";
+import { isIOS } from "@nativescript/core";
 import { MyDelegate } from "./delegate/my-delegate";
 
 if (isIOS) {
-    ios.delegate = MyDelegate;
+    Application.ios.delegate = MyDelegate;
 }
 platformNativeScriptDynamic().bootstrapModule(AppModule);

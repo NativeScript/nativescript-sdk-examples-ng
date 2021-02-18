@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> fs-create-import-code
-import { knownFolders, path, File, Folder } from "tns-core-modules/file-system";
+import { knownFolders, path, File, Folder } from "@nativescript/core";
 // << fs-create-import-code
 
 @Component({

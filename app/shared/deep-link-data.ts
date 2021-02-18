@@ -1,5 +1,4 @@
-import { setString } from "tns-core-modules/application-settings";
-import { isAndroid, isIOS } from "tns-core-modules/platform";
+import { ApplicationSettings, isAndroid, isIOS } from "@nativescript/core";
 
 export class DeepLinkData {
     constructor(url: any, androidActivity?: any) {
@@ -14,7 +13,7 @@ export class DeepLinkData {
         if (resulturl.substring(0, 10) === "examplesgo") {
             let value = this.getParameterByName("gotoexample", resulturl);
             if (value) {
-                setString("gotoexample", value);
+                ApplicationSettings.setString("gotoexample", value);
             }
         }
 

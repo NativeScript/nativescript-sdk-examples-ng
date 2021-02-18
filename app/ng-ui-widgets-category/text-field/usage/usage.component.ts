@@ -1,7 +1,6 @@
 // >> textfield-handle-submit-event
 import { Component } from "@angular/core";
-import { TextField } from "tns-core-modules/ui/text-field";
-import { setTimeout } from "tns-core-modules/timer";
+import { TextField, Utils } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -37,7 +36,7 @@ export class UsageComponent {
         // Limits input to a certain number of characters.
         console.log(textField.maxLength);
 
-        setTimeout(() => {
+        Utils.setTimeout(() => {
             textField.dismissSoftInput(); // Hides the soft input method, ususally a soft keyboard.
         }, 100);
     }

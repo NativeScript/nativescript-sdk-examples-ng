@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { alert } from "tns-core-modules/ui/dialogs";
+import { Dialogs } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -14,7 +14,7 @@ export class AlertDialogComponent {
             okButtonText: "OK"
         };
 
-        alert(options).then(() => {
+        Dialogs.alert(options).then(() => {
             console.log("Race chosen!");
         });
         // << alert-dialog-code

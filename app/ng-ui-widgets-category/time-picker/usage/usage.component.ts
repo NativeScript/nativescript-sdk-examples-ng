@@ -1,6 +1,6 @@
 // >> time-picker-configure-code
 import { Component } from "@angular/core";
-import { TimePicker } from "tns-core-modules/ui/time-picker";
+import { TimePicker } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

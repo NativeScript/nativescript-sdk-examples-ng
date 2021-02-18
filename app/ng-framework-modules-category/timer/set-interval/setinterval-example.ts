@@ -1,6 +1,6 @@
 
 import { Component } from "@angular/core";
-import { setInterval, clearInterval } from "tns-core-modules/timer";
+import { Utils } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -19,7 +19,7 @@ export class SetIntervalComponent {
         let that = this;
 
          // >> set-interval-example
-        this.id = setInterval(() => {
+        this.id = Utils.setInterval(() => {
             let randNumber = Math.floor(Math.random() * (that.color.length));
             that.buttoncolor = that.color[randNumber];
         }, 1000);
@@ -28,13 +28,13 @@ export class SetIntervalComponent {
 
     public onButtonTap(args) {
         if (this.status) {
-            clearInterval(this.id);
+            Utils.clearInterval(this.id);
             this.status = false;
             this.buttonText = "Enable color change";
         } else {
             let that = this;
 
-            this.id = setInterval(() => {
+            this.id = Utils.setInterval(() => {
                 let randNumber = Math.floor(Math.random() * (that.color.length));
                 that.buttoncolor = that.color[randNumber];
             }, 1000);

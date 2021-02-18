@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> pan-code
-import { PanGestureEventData } from "tns-core-modules/ui/gestures";
+import { PanGestureEventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { action } from "tns-core-modules/ui/dialogs";
+import { Dialogs } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -15,7 +15,7 @@ export class ActionDialogComponent {
             actions: ["Human", "Elf", "Dwarf", "Orc", "Unicorn"]
         };
 
-        action(options).then((result) => {
+        Dialogs.action(options).then((result) => {
             console.log(result);
         });
         // << action-dialog-code

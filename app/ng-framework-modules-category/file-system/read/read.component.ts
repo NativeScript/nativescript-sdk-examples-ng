@@ -1,7 +1,7 @@
 import { Component, OnInit } from "@angular/core";
-import * as imageSource from "tns-core-modules/image-source";
+import { ImageSource } from "@nativescript/core";
 // >> fs-read-import-code
-import { knownFolders, path, File, Folder } from "tns-core-modules/file-system";
+import { knownFolders, path, File, Folder } from "@nativescript/core";
 // << fs-read-import-code
 
 @Component({
@@ -81,7 +81,7 @@ export class ReadExampleComponent implements OnInit {
 
     public onReadSync() {
         // >> fs-read-sync-code
-        let image = imageSource.fromResource("icon");
+        let image = ImageSource.fromResourceSync("icon");
         let folder = knownFolders.documents();
         let myPath = path.join(folder.path, "Test.png");
         let saved = image.saveToFile(myPath, "png");

@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { ListPicker } from "tns-core-modules/ui/list-picker";
+import { ListPicker } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

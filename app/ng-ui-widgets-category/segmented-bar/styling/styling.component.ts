@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { SegmentedBarItem } from "tns-core-modules/ui/segmented-bar";
+import { SegmentedBarItem } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

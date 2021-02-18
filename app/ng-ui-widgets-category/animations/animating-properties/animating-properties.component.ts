@@ -1,7 +1,5 @@
 import { Component } from "@angular/core";
-import { Color } from "tns-core-modules/color";
-import { Label } from "tns-core-modules/ui/label";
-import * as enums from "tns-core-modules/ui/enums";
+import { Color, Enums, Label } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -19,7 +17,7 @@ export class AnimatingPropertiesComponent {
             duration: 3000,
             delay: 20,
             iterations: 5,
-            curve: enums.AnimationCurve.easeIn
+            curve: Enums.AnimationCurve.easeIn
         }).then(() => {
             console.log("Animation finished.");
         }).catch((e) => {

@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
-import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
+import { GridLayout } from "@nativescript/core";
 // >> pinch-code
-import { PinchGestureEventData } from "tns-core-modules/ui/gestures";
+import { PinchGestureEventData } from "@nativescript/core";
 // >> (hide)
 let startScale = 1;
 // << (hide)

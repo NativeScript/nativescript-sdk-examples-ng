@@ -1,9 +1,8 @@
 // tslint:disable:no-bitwise
 // >> creating-colors-code
 import { Component } from "@angular/core";
-import { Color } from "tns-core-modules/color";
-import * as colors from "tns-core-modules/color/known-colors";
-import { isKnownName } from "tns-core-modules/color/known-colors";
+import { OrangeRed, isKnownName } from "@nativescript/core/color/known-colors";
+import { Color } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -31,7 +30,7 @@ export class UsageComponent {
         }
 
         // Using supported known colors from tns-core-modules/color/known-colors
-        let colorKnownName = new Color(colors.OrangeRed);
+        let colorKnownName = new Color(OrangeRed);
     }
 }
 // << creating-colors-code

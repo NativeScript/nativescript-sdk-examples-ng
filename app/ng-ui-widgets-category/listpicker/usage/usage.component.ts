@@ -1,7 +1,6 @@
 // >> creating-listpicker-code
 import { Component } from "@angular/core";
-import { EventData } from "tns-core-modules/data/observable";
-import { ListPicker } from "tns-core-modules/ui/list-picker";
+import { EventData, ListPicker } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

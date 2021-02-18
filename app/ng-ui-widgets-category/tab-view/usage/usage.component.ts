@@ -1,6 +1,6 @@
 // >> tab-view-require
 import { Component } from "@angular/core";
-import { SelectedIndexChangedEventData } from "tns-core-modules/ui/tab-view";
+import { SelectedIndexChangedEventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

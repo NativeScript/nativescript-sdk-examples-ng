@@ -1,6 +1,6 @@
 // >> date-picker-configure-code
 import { Component } from "@angular/core";
-import { DatePicker } from "tns-core-modules/ui/date-picker";
+import { DatePicker } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
