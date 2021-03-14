@@ -1,9 +1,5 @@
-
 import { Component } from "@angular/core";
-import { EventData } from "tns-core-modules/data/observable";
-import { setTimeout } from "tns-core-modules/timer";
-import { Color } from "tns-core-modules/color";
-import { Button } from "tns-core-modules/ui/button";
+import { Button, Color, EventData, Utils } from "@nativescript/core";
 @Component({
     moduleId: module.id,
     styleUrls: ["./settimeout-example.css"],
@@ -16,7 +12,7 @@ export class SetTimeoutComponent {
         let button = <Button>args.object;
         button.backgroundColor = new Color("#3078FE");
 
-        setTimeout(() => {
+        Utils.setTimeout(() => {
             this.counter++;
             button.backgroundColor = new Color("#30BCFF");
         }, 1000);
@@ -27,7 +23,7 @@ export class SetTimeoutComponent {
         button.backgroundColor = new Color("#3078FE");
 
         // >> settimeout-timer-code
-        setTimeout(() => {
+        Utils.setTimeout(() => {
             this.counter--;
             button.backgroundColor = new Color("#30BCFF");
         }, 1000);

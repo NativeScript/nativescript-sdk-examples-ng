@@ -1,7 +1,6 @@
 // >> textview-edit-disable-code
 import { Component } from "@angular/core";
-import { EventData } from "tns-core-modules/data/observable";
-import { TextView } from "tns-core-modules/ui/text-view";
+import { EventData, TextView } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

@@ -1,7 +1,7 @@
 // >> passing-parameters
 import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
-import { ModalDialogParams } from "nativescript-angular/modal-dialog";
-import { DatePicker } from "tns-core-modules/ui/date-picker";
+import { ModalDialogParams } from "@nativescript/angular";
+import { DatePicker } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

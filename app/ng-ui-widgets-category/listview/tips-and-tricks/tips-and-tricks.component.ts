@@ -1,7 +1,7 @@
 // >> listview-customize-code
 import { Component, Input, OnChanges, SimpleChanges, OnInit } from "@angular/core";
 import { ItemService, Item } from "../usage/usage.service";
-import { ItemEventData } from "tns-core-modules/ui/list-view";
+import { ItemEventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

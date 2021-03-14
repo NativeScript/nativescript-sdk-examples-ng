@@ -1,8 +1,8 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
 import { ButtonExamplesComponent } from "./button-examples.component";
-import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { NativeScriptFormsModule } from "@nativescript/angular";
 import { TitleAndNavButtonModule } from "../../directives/title-and-nav-button.module";
 
 import { ButtonUsageComponent } from "./usage/usage.component";

@@ -1,6 +1,6 @@
 // >> app-check-target-code
 import { Component } from "@angular/core";
-import { android as androidApp, ios as iosApp } from "tns-core-modules/application";
+import { isAndroid, isIOS } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -10,10 +10,10 @@ export class AppCheckingTargetExampleComponent {
     public isItemVisible: boolean;
 
     constructor() {
-        if (androidApp) {
+        if (isAndroid) {
             console.log("We are running on Android device!");
             this.isItemVisible = true;
-        } else if (iosApp) {
+        } else if (isIOS) {
             console.log("We are running on iOS device");
             this.isItemVisible = false;
         }

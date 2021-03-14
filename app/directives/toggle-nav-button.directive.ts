@@ -1,10 +1,7 @@
 import { ActivatedRoute } from "@angular/router";
 import { Directive, OnInit } from "@angular/core";
-import { EventData } from "tns-core-modules/data/observable";
-import { NavigationButton } from "tns-core-modules/ui/action-bar";
-import { Page } from "tns-core-modules/ui/page";
-import { RouterExtensions } from "nativescript-angular/router";
-import * as app from "tns-core-modules/application";
+import { EventData, NavigationButton, Page, isAndroid, isIOS } from "@nativescript/core";
+import { RouterExtensions } from "@nativescript/angular";
 
 @Directive({
     selector: "[sdkToggleNavButton]"
@@ -23,12 +20,12 @@ export class ToggleNavButtonDirective implements OnInit {
         let navigationButton = new NavigationButton();
         navigationButton.visibility = "visible";
 
-        if (app.android) {
+        if (isAndroid) {
             navigationButton.icon = "res://ic_arrow_back_black_24dp";
             navigationButton.on("tap", (args: EventData) => {
                 this.routerExtensions.backToPreviousPage();
             });
-        } else if (app.ios) {
+        } else if (isIOS) {
             navigationButton.text = "";
         }
 

@@ -1,6 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 // >> fs-update-import-code
-import { knownFolders, path, File, Folder } from "tns-core-modules/file-system";
+import { knownFolders, path, File, Folder } from "@nativescript/core";
 // << fs-update-import-code
 @Component({
     moduleId: module.id,

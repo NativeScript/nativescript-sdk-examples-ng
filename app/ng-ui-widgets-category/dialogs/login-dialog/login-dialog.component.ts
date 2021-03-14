@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { login, LoginOptions, LoginResult } from "tns-core-modules/ui/dialogs";
+import { Dialogs, LoginOptions, LoginResult } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -20,7 +20,7 @@ export class LoginDialogComponent {
             password: "123456"
         };
 
-        login(options).then((loginResult: LoginResult) => {
+        Dialogs.login(options).then((loginResult: LoginResult) => {
             console.log(loginResult.result);
         });
         // << login-dialog-code

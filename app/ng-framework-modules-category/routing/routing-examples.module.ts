@@ -1,7 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
-import { NativeScriptFormsModule } from "nativescript-angular/forms";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
+import { NativeScriptFormsModule } from "@nativescript/angular";
 
 import { RoutingExamplesComponent } from "./routing-examples.component";
 import { NestedRoutersComponent } from "./nested-routers/nested-routers.component";

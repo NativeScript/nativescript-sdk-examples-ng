@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { android as androidApp, ios as iosApp } from "tns-core-modules/application";
+import { Application, isAndroid, isIOS } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -13,19 +13,19 @@ export class AppUsingIosExampleComponent {
 
     constructor() {
 
-        if (iosApp) {
+        if (isIOS) {
             // >> app-class-properties-ios
-            // import { ios as iosApp } from "tns-core-modules/application";
+            // import { Application } from "@nativescript/core";
 
             // https://developer.apple.com/documentation/uikit/uiapplicationdelegate?language=objc
-            let delegate = iosApp.delegate; // the iOS application delegate
+            let delegate = Application.ios.delegate; // the iOS application delegate
 
-            let nativeApp = iosApp.nativeApp; // The native iOS app
+            let nativeApp = Application.ios.nativeApp; // The native iOS app
 
             // https://developer.apple.com/documentation/uikit/uiwindow/1621581-rootviewcontroller?language=objc
-            let rootController = iosApp.rootController; // the iOS rootViewController
+            let rootController = Application.ios.rootController; // the iOS rootViewController
 
-            let window = iosApp.window; // UIWindow
+            let window = Application.ios.window; // UIWindow
             // << app-class-properties-ios
 
             this.isItemVisible = true;
@@ -36,7 +36,7 @@ export class AppUsingIosExampleComponent {
             this.batteryLife = +(UIDevice.currentDevice.batteryLevel * 100);
 
             let that = this;
-            let observer = iosApp.addNotificationObserver(UIDeviceBatteryLevelDidChangeNotification,
+            let observer = Application.ios.addNotificationObserver(UIDeviceBatteryLevelDidChangeNotification,
                 function onReceiveCallback(notification: NSNotification) {
                     that.batteryLife = +(UIDevice.currentDevice.batteryLevel * 100);
                 });
@@ -45,10 +45,10 @@ export class AppUsingIosExampleComponent {
             if (this.goodToRemove) {
                 // >> app-ios-observer-remove-code
                 // When no longer needed, remove the notification observer
-                iosApp.removeNotificationObserver(observer, UIDeviceBatteryLevelDidChangeNotification);
+                Application.ios.removeNotificationObserver(observer, UIDeviceBatteryLevelDidChangeNotification);
                 // << app-ios-observer-remove-code
             }
-        } else if (androidApp) {
+        } else if (isAndroid) {
             this.isItemVisible = false;
         }
     }

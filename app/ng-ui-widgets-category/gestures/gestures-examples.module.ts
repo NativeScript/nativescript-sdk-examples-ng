@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
 import { GesturesExamplesComponent } from "./gestures-examples.component";
 import { DoubleTapExampleComponent } from "./double-tap/double-tap.component";
 import { LongPressExampleComponent } from "./long-press/long-press.component";

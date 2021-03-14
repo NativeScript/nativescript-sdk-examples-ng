@@ -1,7 +1,6 @@
 // >> import-image-module
 import { Component } from "@angular/core";
-import { ImageSource, fromBase64, fromFile } from "tns-core-modules/image-source";
-import { Image } from "tns-core-modules/ui/image";
+import { Image, ImageSource } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

@@ -1,6 +1,6 @@
 // >> add-segmentedbar-items
 import { Component, ChangeDetectionStrategy } from "@angular/core";
-import { SegmentedBar, SegmentedBarItem, SelectedIndexChangedEventData } from "tns-core-modules/ui/segmented-bar";
+import { SegmentedBar, SegmentedBarItem, SelectedIndexChangedEventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

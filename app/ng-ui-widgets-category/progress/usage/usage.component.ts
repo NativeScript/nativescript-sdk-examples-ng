@@ -1,7 +1,6 @@
 // >> progress-create-code
 import { Component } from "@angular/core";
-import { EventData } from "tns-core-modules/data/observable";
-import { Progress } from "tns-core-modules/ui/progress";
+import { EventData, Progress } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

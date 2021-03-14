@@ -1,6 +1,6 @@
 // >> swipe-code
 import { Component } from "@angular/core";
-import { SwipeGestureEventData } from "tns-core-modules/ui/gestures";
+import { SwipeGestureEventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

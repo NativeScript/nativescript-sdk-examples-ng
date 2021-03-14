@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
 import { ListViewExamplesComponent } from "./listview-examples.component";
 import { ListViewUsageComponent } from "./usage/usage.component";
 import { ListViewTipsComponent, SdkChildComponent } from "./tips-and-tricks/tips-and-tricks.component";

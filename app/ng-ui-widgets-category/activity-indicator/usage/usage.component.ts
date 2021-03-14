@@ -1,7 +1,6 @@
 // >> activity-indicator-setting-busy-tsc
 import { Component } from "@angular/core";
-import { ActivityIndicator } from "tns-core-modules/ui/activity-indicator";
-import { EventData } from "tns-core-modules/data/observable";
+import { ActivityIndicator, EventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

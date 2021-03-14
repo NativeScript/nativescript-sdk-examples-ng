@@ -1,7 +1,7 @@
 In order to use the Angular's `HttpClient` module the first thing to do is to import our NativeScript wrapper in the respective module file. 
 
 ```TypeScript
-import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+import { NativeScriptHttpClientModule } from "@nativescript/angular";
 
 @NgModule({
     imports: [

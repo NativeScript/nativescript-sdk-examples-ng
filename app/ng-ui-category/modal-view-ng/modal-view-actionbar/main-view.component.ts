@@ -1,7 +1,7 @@
 // >> main-view-code
 // main-view.component.ts
 import { Component, OnInit, ViewContainerRef } from "@angular/core";
-import { ModalDialogOptions, ModalDialogService } from "nativescript-angular/modal-dialog";
+import { ModalDialogOptions, ModalDialogService } from "@nativescript/angular";
 import { ModalRootComponent } from "./modal-root.component";
 
 @Component({

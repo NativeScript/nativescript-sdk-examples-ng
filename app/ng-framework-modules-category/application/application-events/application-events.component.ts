@@ -1,16 +1,11 @@
 import { Component } from "@angular/core";
 import {
-    on,
+    Application,
     ApplicationEventData,
-    launchEvent, LaunchEventData,
-    resumeEvent,
-    exitEvent,
-    uncaughtErrorEvent, UnhandledErrorEventData,
-    displayedEvent,
-    lowMemoryEvent,
-    orientationChangedEvent, OrientationChangedEventData,
-    suspendEvent
-} from "tns-core-modules/application";
+    LaunchEventData,
+    OrientationChangedEventData,
+    UnhandledErrorEventData
+} from "@nativescript/core";
 
 let launchListener,
     suspendListener,
@@ -33,35 +28,35 @@ export class ApplicationEventsComponent {
         launchListener = (args: LaunchEventData) => {
             console.log("The appication was launched!");
         };
-        on(launchEvent, launchListener);
+        Application.on(Application.launchEvent, launchListener);
         // << application-events-launch-ng
 
         // >> application-events-suspend-ng
         suspendListener = (args: ApplicationEventData) => {
             console.log("The appication was suspended!");
         };
-        on(suspendEvent, suspendListener);
+        Application.on(Application.suspendEvent, suspendListener);
         // << application-events-suspend-ng
 
         // >> application-events-resume-ng
         resumeListener = (args: ApplicationEventData) => {
             console.log("The appication was resumed!");
         };
-        on(resumeEvent, resumeListener);
+        Application.on(Application.resumeEvent, resumeListener);
         // << application-events-resume-ng
 
         // >> application-events-exit-ng
         exitListener = (args: ApplicationEventData) => {
             console.log("The appication was closed!");
         };
-        on(exitEvent, exitListener);
+        Application.on(Application.exitEvent, exitListener);
         // << application-events-exit-ng
 
         // >> application-events-displayed-ng
         displayedListener = (args: ApplicationEventData) => {
             console.log("NativeScript displayedEvent!");
         };
-        on(displayedEvent, displayedListener);
+        Application.on(Application.displayedEvent, displayedListener);
         // << application-events-displayed-ng
 
         // >> application-events-low-memory-ng
@@ -69,7 +64,7 @@ export class ApplicationEventsComponent {
             // the instance that has raised the event
             console.log("Instance: ", args.object);
         };
-        on(lowMemoryEvent, lowMemoryListener);
+        Application.on(Application.lowMemoryEvent, lowMemoryListener);
         // << application-events-low-memory-ng
 
         // >> application-events-orientation-ng
@@ -77,7 +72,7 @@ export class ApplicationEventsComponent {
             // orientationChangedEventData.newValue: "portrait" | "landscape" | "unknown"
             console.log("Orientation: ", args.newValue);
         };
-        on(orientationChangedEvent, orientationChangedListener);
+        Application.on(Application.orientationChangedEvent, orientationChangedListener);
         // << application-events-orientation-ng
 
         // >> application-events-error-ng
@@ -85,7 +80,7 @@ export class ApplicationEventsComponent {
             // UnhandledErrorEventData.error: NativeScriptError
             console.log("NativeScript Error: ", args.error);
         };
-        on(uncaughtErrorEvent, uncaughtErrorListener);
+        Application.on(Application.uncaughtErrorEvent, uncaughtErrorListener);
         // << application-events-error-ng
     }
 }

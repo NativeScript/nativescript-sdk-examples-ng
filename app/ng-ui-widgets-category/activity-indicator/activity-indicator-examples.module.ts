@@ -1,7 +1,7 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
-import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
+import { NativeScriptHttpClientModule } from "@nativescript/angular";
 import { ActivityIndicatorExamplesComponent } from "./activity-indicator-examples.component";
 import { ActivityIndicatorUsageComponent } from "./usage/usage.component";
 import { ActivityIndicatorStylingComponent } from "./styling/styling.component";

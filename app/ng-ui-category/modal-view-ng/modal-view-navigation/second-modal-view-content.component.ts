@@ -1,7 +1,7 @@
 // >> second-modal-view-code
 import { Component } from "@angular/core";
-import { RouterExtensions } from "nativescript-angular/router";
-import { ModalDialogParams } from "nativescript-angular/modal-dialog";
+import { RouterExtensions } from "@nativescript/angular";
+import { ModalDialogParams } from "@nativescript/angular";
 
 @Component({
     moduleId: module.id,

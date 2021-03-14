@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
 import { SegmentedBarExamplesComponent } from "./segmented-bar-examples.component";
 import { BasicSegmentedBarComponent } from "./usage/usage.component";
 import { SegmentedBarViewsComponent } from "./styling/styling.component";

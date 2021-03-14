@@ -1,11 +1,11 @@
 // >> custom-directive-code
 import { Component, Directive, ViewContainerRef, TemplateRef, Inject } from "@angular/core";
-import { Device, platformNames } from "tns-core-modules/platform";
-import { DEVICE } from "nativescript-angular/platform-providers";
+import { IDevice, platformNames } from "@nativescript/core";
+import { DeviceToken } from "@nativescript/angular";
 
 @Directive({ selector: "[sdkIfAndroid]" })
 export class IfAndroidDirective {
-    constructor( @Inject(DEVICE) device: Device, container: ViewContainerRef, templateRef: TemplateRef<Object>) {
+    constructor( @Inject(DeviceToken) device: IDevice, container: ViewContainerRef, templateRef: TemplateRef<Object>) {
         if (device.os === platformNames.android) {
             container.createEmbeddedView(templateRef);
         }
@@ -14,7 +14,7 @@ export class IfAndroidDirective {
 
 @Directive({ selector: "[sdkIfIos]" })
 export class IfIosDirective {
-    constructor( @Inject(DEVICE) device: Device, container: ViewContainerRef, templateRef: TemplateRef<Object>) {
+    constructor( @Inject(DeviceToken) device: IDevice, container: ViewContainerRef, templateRef: TemplateRef<Object>) {
         if (device.os === platformNames.ios) {
             container.createEmbeddedView(templateRef);
         }

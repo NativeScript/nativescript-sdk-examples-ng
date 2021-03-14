@@ -1,6 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
 import { ApplicationExamplesComponent } from "./application-examples.component";
 import { AppCheckingTargetExampleComponent } from "./app-checking-target/app-checking-target.component";
 import { AppUsingAndroidExampleComponent } from "./app-using-android-specifics/app-using-android-specifics.component";

@@ -1,7 +1,7 @@
 // tslint:disable:max-line-length
 import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
-import { NativeScriptRouterModule } from "nativescript-angular/router";
-import { NativeScriptCommonModule } from "nativescript-angular/common";
+import { NativeScriptRouterModule } from "@nativescript/angular";
+import { NativeScriptCommonModule } from "@nativescript/angular";
 import { ModalViewExamplesComponent } from "./modal-view-examples.component";
 import { SampleModalViewModuleExampleComponent } from "./sample-modal-view-module-example/sample-modal-view-module-example";
 import { ModalViewNavigationComponent } from "./modal-view-navigation/modal-view-navigation.component";

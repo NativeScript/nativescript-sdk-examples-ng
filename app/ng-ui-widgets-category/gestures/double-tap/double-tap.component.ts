@@ -1,7 +1,6 @@
 // >> double-tap-code
 import { Component } from "@angular/core";
-import { GestureEventData } from "tns-core-modules/ui/gestures";
-import { GridLayout } from "tns-core-modules/ui/layouts/grid-layout";
+import { GestureEventData, GridLayout } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

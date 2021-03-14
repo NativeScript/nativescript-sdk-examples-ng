@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 // >> fs-delete-import-code
-import { File, Folder, knownFolders } from "tns-core-modules/file-system";
+import { File, Folder, knownFolders } from "@nativescript/core";
 // << fs-delete-import-code
 @Component({
     moduleId: module.id,

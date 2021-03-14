@@ -1,7 +1,7 @@
 import { Component, AfterViewInit } from "@angular/core";
-import { Page } from "tns-core-modules/ui/page";
-import { View } from "tns-core-modules/ui/core/view";
-import { Animation, AnimationDefinition } from "tns-core-modules/ui/animation";
+import { Page } from "@nativescript/core";
+import { View } from "@nativescript/core";
+import { Animation, AnimationDefinition } from "@nativescript/core";
 
 let view1: View;
 let view2: View;
@@ -25,7 +25,7 @@ export class MultipleViewsComponent implements AfterViewInit {
     }
 
     // >> animate-multiple-views-simultaneously-code
-    // import { Animation, AnimationDefinition } from "tns-core-modules/ui/animation";
+    // import { Animation, AnimationDefinition } from "@nativescript/core";
     animate() {
         let definitions = new Array<AnimationDefinition>();
         let a1: AnimationDefinition = {

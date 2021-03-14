@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { confirm } from "tns-core-modules/ui/dialogs";
+import { Dialogs } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -16,7 +16,7 @@ export class ConfirmDialogComponent {
             neutralButtonText: "Cancel"
         };
 
-        confirm(options).then((result: boolean) => {
+        Dialogs.confirm(options).then((result: boolean) => {
             console.log(result);
         });
         // << confirm-dialog-code

@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 // >> import-geolocation-plugin-monitoring
-import { Location, enableLocationRequest, watchLocation, clearWatch } from "nativescript-geolocation";
+import { Location, enableLocationRequest, watchLocation, clearWatch } from "@nativescript/geolocation";
 // << import-geolocation-plugin-monitoring
-import { Accuracy } from "tns-core-modules/ui/enums";
+import { Enums } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -21,7 +21,7 @@ export class LocationMonitoringExampleComponent {
 
     constructor() {
         this.options = {
-            desiredAccuracy: Accuracy.high,
+            desiredAccuracy: Enums.Accuracy.high,
             updateDistance: 0.1,
             updateTime: 3000,
             minimumUpdateTime: 100

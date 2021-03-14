@@ -1,7 +1,7 @@
 // tslint:disable:max-line-length
 // >> webview-ts-events
 import { Component } from "@angular/core";
-import { WebView, LoadEventData } from "tns-core-modules/ui/web-view";
+import { WebView, LoadEventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

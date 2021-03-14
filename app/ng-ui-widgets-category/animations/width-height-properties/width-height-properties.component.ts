@@ -1,6 +1,5 @@
 import { Component, ViewChild, ElementRef } from "@angular/core";
-import { AnimationCurve  } from "tns-core-modules/ui/enums";
-
+import { Enums } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -16,7 +15,7 @@ export class WidthHeightPropertiesComponent {
         this.view.nativeElement.animate({
             width: 320,
             duration: 1000,
-            curve: AnimationCurve.easeIn
+            curve: Enums.AnimationCurve.easeIn
         });
     }
 
@@ -24,7 +23,7 @@ export class WidthHeightPropertiesComponent {
         this.view.nativeElement.animate({
             height: 400,
             duration: 1000,
-            curve: AnimationCurve.easeIn
+            curve: Enums.AnimationCurve.easeIn
         });
     }
     // << animation-properties-width-height-ng

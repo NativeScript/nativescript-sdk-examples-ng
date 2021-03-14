@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { View } from "tns-core-modules/ui/core/view";
+import { View } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

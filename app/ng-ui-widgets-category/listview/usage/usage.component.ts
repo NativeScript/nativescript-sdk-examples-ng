@@ -1,7 +1,7 @@
 // >> listview-create-code-component
 import { Component, OnInit } from "@angular/core";
 import { ItemService, Item } from "./usage.service";
-import { ItemEventData } from "tns-core-modules/ui/list-view";
+import { ItemEventData } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

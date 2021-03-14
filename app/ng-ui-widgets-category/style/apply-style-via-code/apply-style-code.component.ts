@@ -1,6 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { Page } from "tns-core-modules/ui/page";
-import { StackLayout } from "tns-core-modules/ui/layouts/stack-layout";
+import { Page, StackLayout } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,

@@ -1,8 +1,8 @@
 import { Component } from "@angular/core";
 // >> import-geolocation-plugin
-import { Location, getCurrentLocation, isEnabled, distance, enableLocationRequest } from "nativescript-geolocation";
+import { Location, getCurrentLocation, isEnabled, distance, enableLocationRequest } from "@nativescript/geolocation";
 // << import-geolocation-plugin
-import { Accuracy } from "tns-core-modules/ui/enums";
+import { Enums } from "@nativescript/core";
 
 @Component({
     moduleId: module.id,
@@ -59,7 +59,7 @@ export class BasicLocationExampleComponent {
     public getLocationOnce() {
         // >> get-current-location
         getCurrentLocation({
-            desiredAccuracy: Accuracy.high,
+            desiredAccuracy: Enums.Accuracy.high,
             timeout: 5000
          })
             .then(location => {
